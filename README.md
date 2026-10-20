@@ -1,4 +1,4 @@
-# CityLens
+#San Diego CityLens — An Agentic Neighborhood Intelligence Platform
 
 ### Know Before You Move. Stay Informed After.
 
