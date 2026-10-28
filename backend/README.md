@@ -2,7 +2,6 @@
 
 PostgreSQL 17 + PostGIS runs in Docker with persistent storage, exposed only on
 localhost port 54329. Python imports the CSV; SQL performs spatial counting.
-The existing `Database.py` contains design notes and is left intact.
 
 From the repository root in PowerShell:
 
