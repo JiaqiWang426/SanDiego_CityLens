@@ -77,7 +77,7 @@ def main():
     count.add_argument('--end', required=True)
     count.add_argument('--exclude-linked-duplicates', action='store_true')
     args = parser.parse_args()
-    with psycopg.connect(os.environ['DATABASE_URL']) as conn:
+    with psycopg.connect(os.environ['DATABASE_URL'], connect_timeout=10) as conn:
         if args.command == 'init':
             initialize(conn)
         elif args.command == 'load':

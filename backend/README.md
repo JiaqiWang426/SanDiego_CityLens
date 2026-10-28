@@ -1,5 +1,25 @@
 # Local data infrastructure
 
+## Pandas reference comparison
+
+Install `backend/requirements.txt`, then run this from the repository root:
+
+```powershell
+.\.venv\Scripts\python.exe backend/pandas_reference.py backend/get_it_done_requests_CD1_datasd.csv --lat 32.84 --lng -117.25 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00' --compare-sql
+.\.venv\Scripts\python.exe -m unittest discover -s backend -p test_pandas_reference.py
+```
+
+`--compare-sql` uses `DATABASE_URL` and reports both counts plus `match`;
+it exits with status 1 on disagreement. Omit it to run without a database.
+The database must contain the same CSV state: older retained imports can cause
+differences. The pandas function reads CSV data independently and uses WGS84
+ellipsoidal distance, rather than a spherical approximation. Extremely close
+radius-boundary cases can still differ due to floating-point precision.
+Both paths keep the last repeated ID, use `[start, end)`, and interpret source
+timestamps as Los Angeles time. Importable function:
+`count_service_requests_pandas(df, latitude, longitude, radius_meters, start_time, end_time, exclude_linked_duplicates=False)`.
+Read the CSV with `pd.read_csv(path, dtype=str, keep_default_na=False)`.
+
 PostgreSQL 17 + PostGIS runs in Docker with persistent storage, exposed only on
 localhost port 54329. Python imports the CSV; SQL performs spatial counting.
 
@@ -13,7 +33,7 @@ docker compose up -d --wait
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
 $dbPassword = (Get-Content .env | Where-Object { $_ -like 'CITYLENS_DB_PASSWORD=*' }) -replace '^CITYLENS_DB_PASSWORD=', ''
-$env:DATABASE_URL = "postgresql://citylens:$([uri]::EscapeDataString($dbPassword))@localhost:54329/citylens"
+$env:DATABASE_URL = "postgresql://citylens:$([uri]::EscapeDataString($dbPassword))@127.0.0.1:54329/citylens"
 .\.venv\Scripts\python.exe backend/db.py init
 .\.venv\Scripts\python.exe backend/db.py load backend/get_it_done_requests_CD1_datasd.csv
 .\.venv\Scripts\python.exe backend/test_database.py
