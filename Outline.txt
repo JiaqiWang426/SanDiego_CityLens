@@ -1,0 +1,47 @@
+Frontend — User Interface
+
+Addresses · Preferences · Questions · Reports
+
+API Request / Response
+
+1. API & User Context
+
+Validate input · Resolve addresses · Manage session state
+
+
+2. Agent Orchestrator
+
+LLM · Planning · Tool Selection · Reasoning
+
+
+Plan investigation
+
+
+Choose tools
+
+
+Analyze results
+
+
+Decide next step
+
+
+
+
+
+3. Tools & Evidence Retrieval
+
+Geospatial queries · Statistics · Transit analysis · Comparisons
+
+
+4. Data Infrastructure
+
+Public Datasets → ETL → PostgreSQL / PostGIS
+
+
+5. Verification & Report Generation
+
+Validate calculations · Check sources · Structure output
+
+
+Evidence-backed Neighborhood Report
