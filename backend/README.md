@@ -1,11 +1,48 @@
 # Local data infrastructure
 
+## Database structure and query tools
+
+```text
+backend/
+  sql/
+    schema.sql                         # Extensions, tables, constraints, indexes
+    tools/
+      count_service_requests.sql       # Callable counting function
+```
+
+`python backend/db.py init` executes `sql/schema.sql` first, then all `.sql`
+files directly inside `sql/tools/` in alphabetical filename order, in one
+transaction. Add each new query function in a separate tool file using
+`CREATE OR REPLACE FUNCTION`. Initialization can be repeated without reloading
+CSV data. Existing table changes still require explicit migrations; deleting
+a tool file does not remove its installed function from the database.
+
+## Raw data layout
+
+Store source CSVs by data domain:
+
+```text
+backend/
+  Raw Data/
+    Get it done/
+      get_it_done_requests_CD1_datasd.csv
+```
+
+Add separate folders under `Raw Data` for other domains as they are introduced.
+The current loader and pandas reference interpret Get It Done columns only;
+other domains will need their own schema mappings and importers.
+Both commands default to the CSV shown above when the positional CSV path is
+omitted. Defaults resolve relative to the scripts, not the working directory.
+To select another Get It Done CSV, pass its path in quotes because these
+directory names contain spaces. Each loader invocation imports one file;
+it does not automatically scan folders or merge every CSV.
+
 ## Pandas reference comparison
 
 Install `backend/requirements.txt`, then run this from the repository root:
 
 ```powershell
-.\.venv\Scripts\python.exe backend/pandas_reference.py backend/get_it_done_requests_CD1_datasd.csv --lat 32.84 --lng -117.25 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00' --compare-sql
+.\.venv\Scripts\python.exe backend/pandas_reference.py "backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv" --lat 32.84 --lng -117.25 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00' --compare-sql
 .\.venv\Scripts\python.exe -m unittest discover -s backend -p test_pandas_reference.py
 ```
 
@@ -35,7 +72,7 @@ python -m venv .venv
 $dbPassword = (Get-Content .env | Where-Object { $_ -like 'CITYLENS_DB_PASSWORD=*' }) -replace '^CITYLENS_DB_PASSWORD=', ''
 $env:DATABASE_URL = "postgresql://citylens:$([uri]::EscapeDataString($dbPassword))@127.0.0.1:54329/citylens"
 .\.venv\Scripts\python.exe backend/db.py init
-.\.venv\Scripts\python.exe backend/db.py load backend/get_it_done_requests_CD1_datasd.csv
+.\.venv\Scripts\python.exe backend/db.py load "backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv"
 .\.venv\Scripts\python.exe backend/test_database.py
 .\.venv\Scripts\python.exe backend/db.py count --lat 32.8 --lng -117.2 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00'
 ```

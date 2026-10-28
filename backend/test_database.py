@@ -4,6 +4,12 @@ import psycopg
 
 
 def main():
+    """Check SQL behavior using controlled records, then roll back data changes.
+
+    Intended for a local development database: DELETE takes locks and can
+    interfere with concurrent work. Rollback restores table data, but identity
+    sequence values consumed by the test are not restored by PostgreSQL.
+    """
     with psycopg.connect(os.environ['DATABASE_URL']) as conn:
         try:
             # Temporarily hide real records; rollback restores them after verification.
@@ -11,6 +17,9 @@ def main():
             run = conn.execute("""INSERT INTO citylens.ingestions
                 (source_file,sha256,source_rows,distinct_requests)
                 VALUES ('test','test',5,5) RETURNING id""").fetchone()[0]
+            # Five cases isolate time start/end, parent exclusion, distance,
+            # and missing location. Explicit UTC offsets avoid session timezone
+            # dependencies. Only start and child should match the base query.
             conn.execute("""INSERT INTO citylens.service_requests
                 (service_request_id,parent_id,requested_at,location,raw_record,ingestion_id)
                 SELECT id,parent,ts::timestamptz,
@@ -31,6 +40,8 @@ def main():
             assert count() == 2, 'Check inclusive start, exclusive end, distance, missing location'
             assert count(True) == 1, 'Check exclusion of linked submissions'
             assert count(radius=0) == 2, 'Check exact coordinate'
+            # Each nested transaction creates a savepoint. An expected SQL
+            # error rolls back to it so subsequent checks can still execute.
             for params in [(91,-117,800), (32,-181,800), (32,-117,-1)]:
                 try:
                     with conn.transaction():
@@ -43,6 +54,7 @@ def main():
                     raise AssertionError('Expected invalid parameter rejection')
             print('Database integration checks passed (rolled back).')
         finally:
+            # Restore the original records even when an assertion fails.
             conn.rollback()
 
 
