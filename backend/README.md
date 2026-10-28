@@ -1,16 +1,24 @@
 # Local data infrastructure
 
+Traffic collision ingestion, geocoding, and query tools are documented in
+[TRAFFIC_COLLISIONS.md](TRAFFIC_COLLISIONS.md).
+
 ## Database structure and query tools
 
 ```text
 backend/
   sql/
     schema.sql                         # Extensions, tables, constraints, indexes
+    traffic_collisions.sql             # Additional collision tables and indexes
     tools/
       count_service_requests.sql       # Callable counting function
+      010_filter_traffic_collisions.sql # Shared collision filters
+      020_get_traffic_collisions.sql    # Bounded retrieval
+      030_aggregate_traffic_collisions.sql # Calendar counts
 ```
 
-`python backend/db.py init` executes `sql/schema.sql` first, then all `.sql`
+`python backend/db.py init` executes `sql/schema.sql`, then
+`sql/traffic_collisions.sql`, then all `.sql`
 files directly inside `sql/tools/` in alphabetical filename order, in one
 transaction. Add each new query function in a separate tool file using
 `CREATE OR REPLACE FUNCTION`. Initialization can be repeated without reloading
@@ -26,11 +34,13 @@ backend/
   Raw Data/
     Get it done/
       get_it_done_requests_CD1_datasd.csv
+    Traffic collision/
+      pd_collisions_datasd.csv
 ```
 
 Add separate folders under `Raw Data` for other domains as they are introduced.
-The current loader and pandas reference interpret Get It Done columns only;
-other domains will need their own schema mappings and importers.
+`db.py load` and the pandas reference interpret Get It Done columns only;
+`collision_ingest.py` separately loads traffic collision records.
 Both commands default to the CSV shown above when the positional CSV path is
 omitted. Defaults resolve relative to the scripts, not the working directory.
 To select another Get It Done CSV, pass its path in quotes because these

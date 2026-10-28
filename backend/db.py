@@ -23,7 +23,8 @@ def initialize(conn):
 
     The caller owns the transaction. IF NOT EXISTS makes object creation
     repeatable; it does not migrate an existing table to a changed structure.
-    Tool files execute in alphabetical filename order after sql/schema.sql.
+    sql/traffic_collisions.sql adds collision tables after sql/schema.sql.
+    Tool files then execute in alphabetical filename order.
     CREATE OR REPLACE updates existing query function definitions. Tools should
     depend on the schema rather than each other; if dependencies are introduced,
     filenames must explicitly order their creation (for example, 010_ then 020_).
@@ -33,6 +34,7 @@ def initialize(conn):
     # The caller commits all definitions together or rolls back on failure.
     # Resolve from the script location so init works from any working directory.
     conn.execute((sql_dir / 'schema.sql').read_text(encoding='utf-8'))
+    conn.execute((sql_dir / 'traffic_collisions.sql').read_text(encoding='utf-8'))
     for tool_file in sorted((sql_dir / 'tools').glob('*.sql')):
         conn.execute(tool_file.read_text(encoding='utf-8'))
 
