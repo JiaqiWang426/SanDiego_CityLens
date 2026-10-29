@@ -1,3 +1,13 @@
+Development Status
+
+Phase 0 — Functional Prototype
+
+The initial data infrastructure and evidence-grounded AI agent are implemented, including spatial database queries, structured agent planning, deterministic verification, location comparisons, and a local evaluation interface.
+
+Current development focuses on expanding analytical capabilities, improving data coverage, and evaluating agent reliability.
+
+See AGENT.md for implementation details.
+
 #San Diego CityLens — An Agentic Neighborhood Intelligence Platform
 
 ### Know Before You Move. Stay Informed After.
