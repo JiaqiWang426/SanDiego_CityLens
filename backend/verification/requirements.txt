@@ -1,0 +1,4 @@
+# Verification-only dependencies. Runtime dependencies (pandas, pyproj,
+# psycopg) come from backend/requirements.txt and are not repeated here.
+-r ../requirements.txt
+pytest>=8,<10

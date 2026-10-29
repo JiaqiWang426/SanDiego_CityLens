@@ -1,3 +1,8 @@
 psycopg[binary]>=3.2,<4
 pandas>=2.2,<4
 pyproj>=3.7,<4
+fastapi>=0.115,<1
+pydantic>=2.10,<3
+langgraph>=1,<2
+openai>=2,<3
+uvicorn>=0.34,<1

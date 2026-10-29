@@ -1,3 +1,5 @@
+-- [010_filter_traffic_collisions.sql] finds rows that meet the given requirements
+
 -- Internal uncapped filtering primitive shared by retrieval and aggregation.
 -- Agent callers should use the bounded public functions below, not this helper.
 -- Date interval is required and half-open; query timestamps should have offsets.
@@ -5,8 +7,8 @@
 -- Spatial results include only geocoded approximate points; NULL locations do
 -- not match. Nonspatial results still include unresolved collision records.
 CREATE OR REPLACE FUNCTION citylens.filter_traffic_collisions(
-    start_time timestamptz, end_time timestamptz,
-    latitude float8 DEFAULT NULL, longitude float8 DEFAULT NULL,
+    start_time timestamptz, end_time timestamptz, -- Required date interval: start included, end excluded
+    latitude float8 DEFAULT NULL, longitude float8 DEFAULT NULL, -- geographic filter; supply all three together
     radius_meters float8 DEFAULT NULL,
     min_injured integer DEFAULT NULL, max_injured integer DEFAULT NULL,
     min_killed integer DEFAULT NULL, max_killed integer DEFAULT NULL,
@@ -18,7 +20,7 @@ BEGIN
         OR NOT isfinite(start_time) OR NOT isfinite(end_time) THEN
         RAISE EXCEPTION 'An increasing finite time interval is required' USING ERRCODE='22023';
     END IF;
-    IF num_nonnulls(latitude,longitude,radius_meters) NOT IN (0,3)
+    IF num_nonnulls(latitude,longitude,radius_meters) NOT IN (0,3) -- This checks that the geographic parameters are either all omitted or all supplied.
         OR (latitude IS NOT NULL AND NOT latitude BETWEEN -90 AND 90)
         OR (longitude IS NOT NULL AND NOT longitude BETWEEN -180 AND 180)
         OR (radius_meters IS NOT NULL AND NOT radius_meters BETWEEN 0 AND 50000)

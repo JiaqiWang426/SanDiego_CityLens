@@ -1,0 +1,28 @@
+{
+  "question": "Compare apartments A and B based on Get It Done reports and traffic collisions.",
+  "locations": [
+    {
+      "id": "A",
+      "label": null,
+      "latitude": 32.84,
+      "longitude": -117.25
+    },
+    {
+      "id": "B",
+      "label": null,
+      "latitude": 32.85,
+      "longitude": -117.24
+    }
+  ],
+  "radius_meters": 800.0,
+  "time_range": {
+    "start": "2026-01-01T00:00:00-08:00",
+    "end": "2026-03-01T00:00:00-08:00",
+    "calendar_timezone": "America/Los_Angeles"
+  },
+  "preferences": [
+    "traffic_collisions",
+    "service_requests"
+  ],
+  "conversation_id": null
+}

@@ -1,7 +1,7 @@
 """Initialize PostGIS, import a City Get It Done CSV, or count nearby requests.
 
 Data flow: CSV -> temporary JSON staging table -> normalized request table.
-DATABASE_URL selects the database; sql/schema.sql defines storage, while
+DATABASE_URL selects the database; sql/get_it_done.sql defines storage, while
 sql/tools/*.sql defines callable query functions.
 This module performs basic structural validation, not a source-quality audit.
 It does not establish citywide coverage, real-world issue counts, or repairs.
@@ -23,7 +23,7 @@ def initialize(conn):
 
     The caller owns the transaction. IF NOT EXISTS makes object creation
     repeatable; it does not migrate an existing table to a changed structure.
-    sql/traffic_collisions.sql adds collision tables after sql/schema.sql.
+    sql/traffic_collisions.sql adds collision tables after sql/get_it_done.sql.
     Tool files then execute in alphabetical filename order.
     CREATE OR REPLACE updates existing query function definitions. Tools should
     depend on the schema rather than each other; if dependencies are introduced,
@@ -33,7 +33,7 @@ def initialize(conn):
     sql_dir = Path(__file__).resolve().parent / 'sql'
     # The caller commits all definitions together or rolls back on failure.
     # Resolve from the script location so init works from any working directory.
-    conn.execute((sql_dir / 'schema.sql').read_text(encoding='utf-8'))
+    conn.execute((sql_dir / 'get_it_done.sql').read_text(encoding='utf-8'))
     conn.execute((sql_dir / 'traffic_collisions.sql').read_text(encoding='utf-8'))
     for tool_file in sorted((sql_dir / 'tools').glob('*.sql')):
         conn.execute(tool_file.read_text(encoding='utf-8'))

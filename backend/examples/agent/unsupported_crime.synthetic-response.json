@@ -1,0 +1,18 @@
+{
+  "status": "unsupported",
+  "intent": "unsupported_dimension",
+  "answer": "The requested dimensions are unavailable in Phase 0; no proxy statistics were substituted.",
+  "comparison": null,
+  "claims": [],
+  "evidence": [],
+  "limitations": [
+    "The requested dimensions are unavailable in Phase 0; no proxy statistics were substituted."
+  ],
+  "limitation_codes": [
+    "unsupported_dimension"
+  ],
+  "unsupported_dimensions": [
+    "crime"
+  ],
+  "tool_trace_id": "trace_aa4ddbd2b9754442b885bfce66eee4ff"
+}

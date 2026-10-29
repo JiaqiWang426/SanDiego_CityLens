@@ -1,4 +1,4 @@
--- Deterministic pagination; no arbitrary SQL is supplied by agent callers.
+-- 010 defines which records match. 020 controls how many matching records are returned and in what order.
 CREATE OR REPLACE FUNCTION citylens.get_traffic_collisions(
     start_time timestamptz, end_time timestamptz,
     latitude float8 DEFAULT NULL, longitude float8 DEFAULT NULL,

@@ -1,0 +1,132 @@
+{
+  "status": "partial",
+  "intent": "location_summary",
+  "answer": "These findings describe records in the imported datasets. Scope: within 800 meters of each selected pin, from 2026-01-01T00:00:00-08:00 (inclusive) to 2026-03-01T00:00:00-08:00 (exclusive); calendar timezone America/Los_Angeles. A: 7 imported, geocoded police collision reports matched the recorded query filters [ev_2f2529da03e340b5ad015cbe16a72889]. Coverage and freshness are unknown. Unlocated collision reports are excluded; collision positions are block-approximate. Zero matches do not establish absence of incidents.",
+  "comparison": null,
+  "claims": [
+    {
+      "claim_id": "cl_e9cb360d0d264493ba2f19f13c901ad4",
+      "text": "A: 7 imported, geocoded police collision reports matched the recorded query filters [ev_2f2529da03e340b5ad015cbe16a72889].",
+      "claim_type": "record_count",
+      "evidence_ids": [
+        "ev_2f2529da03e340b5ad015cbe16a72889"
+      ],
+      "metric": "geocoded_collision_report_count",
+      "value": 7,
+      "limitations": [
+        "Geographic completeness and source freshness are not verified.",
+        "Import timestamps do not establish source freshness; upserts retain older records.",
+        "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+        "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+        "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+        "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+        "Missing calendar buckets are zero-filled matches, not verified data coverage."
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_2f2529da03e340b5ad015cbe16a72889",
+      "query_id": "q_b49044c7df2c4817bd9b8756a667af48",
+      "domain": "traffic_collisions",
+      "source_table": "citylens.traffic_collisions",
+      "source_dataset": "police_recorded_traffic_collisions",
+      "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+      "tool": "aggregate_traffic_collisions",
+      "tool_version": "1",
+      "metric": "geocoded_collision_report_count",
+      "metric_definition": "Stored geocoded police-collision report IDs in the selected radius and half-open interval.",
+      "value": 7,
+      "unit": "reports",
+      "location_id": "A",
+      "scope": {
+        "latitude": 32.84,
+        "longitude": -117.25,
+        "radius_meters": 800.0,
+        "start_inclusive": "2026-01-01T00:00:00-08:00",
+        "end_exclusive": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null,
+        "period": "month"
+      },
+      "provenance": {
+        "import_ids": null,
+        "source_file_sha256": null,
+        "source_freshness_verified": false,
+        "data_as_of": null,
+        "dataset_import_ids": [],
+        "dataset_imports": [],
+        "dataset_imports_truncated": false,
+        "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+      },
+      "quality": {
+        "completeness": "unknown",
+        "coordinate_precision": "block_approximate",
+        "unlocated_within_radius": "not_determinable",
+        "dataset_records": 30,
+        "dataset_located_records": 20,
+        "dataset_dated_records": 28,
+        "dataset_observed_start": null,
+        "dataset_observed_end": null
+      },
+      "status": "partial",
+      "executed_at": "2026-10-29T05:52:29.542952Z",
+      "elapsed_ms": 0.0,
+      "buckets": [
+        {
+          "period_start": "2026-01-01T00:00:00-08:00",
+          "period_end": "2026-02-01T00:00:00-08:00",
+          "report_count": 7,
+          "located_count": 7,
+          "unknown_injury_count": 1,
+          "unknown_fatality_count": 0,
+          "source_bucket_present": true
+        },
+        {
+          "period_start": "2026-02-01T00:00:00-08:00",
+          "period_end": "2026-03-01T00:00:00-08:00",
+          "report_count": 0,
+          "located_count": 0,
+          "unknown_injury_count": 0,
+          "unknown_fatality_count": 0,
+          "source_bucket_present": false
+        }
+      ],
+      "records": [],
+      "pagination": null,
+      "caveats": [
+        "Geographic completeness and source freshness are not verified.",
+        "Import timestamps do not establish source freshness; upserts retain older records.",
+        "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+        "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+        "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+        "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+        "Missing calendar buckets are zero-filled matches, not verified data coverage."
+      ],
+      "error_code": null
+    }
+  ],
+  "limitations": [
+    "Geographic completeness and source freshness are not verified.",
+    "Import timestamps do not establish source freshness; upserts retain older records.",
+    "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+    "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+    "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+    "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+    "Missing calendar buckets are zero-filled matches, not verified data coverage."
+  ],
+  "limitation_codes": [
+    "coverage_unknown",
+    "freshness_unknown"
+  ],
+  "unsupported_dimensions": [],
+  "tool_trace_id": "trace_5d3e012c80a04705b362b34cba5f9037"
+}

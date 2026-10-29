@@ -1,5 +1,10 @@
 # Local data infrastructure
 
+The runnable Phase 0 Agent API, setup instructions, examples, and test commands
+are documented in [AGENT.md](AGENT.md).
+To open the frontend, inspect tool logs/evidence, and independently execute SQL
+tools, follow [EVALUATION.md](EVALUATION.md).
+
 Traffic collision ingestion, geocoding, and query tools are documented in
 [TRAFFIC_COLLISIONS.md](TRAFFIC_COLLISIONS.md).
 
@@ -8,16 +13,40 @@ Traffic collision ingestion, geocoding, and query tools are documented in
 ```text
 backend/
   sql/
-    schema.sql                         # Extensions, tables, constraints, indexes
-    traffic_collisions.sql             # Additional collision tables and indexes
+    get_it_done.sql
+    traffic_collisions.sql
     tools/
-      count_service_requests.sql       # Callable counting function
-      010_filter_traffic_collisions.sql # Shared collision filters
-      020_get_traffic_collisions.sql    # Bounded retrieval
-      030_aggregate_traffic_collisions.sql # Calendar counts
+      count_service_requests.sql
+      010_filter_traffic_collisions.sql
+      020_get_traffic_collisions.sql
+      030_aggregate_traffic_collisions.sql
 ```
 
-`python backend/db.py init` executes `sql/schema.sql`, then
+The two files directly under `sql/` create storage for each subject:
+
+| File | Subject | What it sets up |
+| --- | --- | --- |
+| [get_it_done.sql](sql/get_it_done.sql) | Get It Done service requests | Stores current request records and import history, and adds indexes to speed up location and date searches. Also enables PostGIS and creates the shared `citylens` namespace. |
+| [traffic_collisions.sql](sql/traffic_collisions.sql) | Police-recorded traffic collisions | Stores current collision reports, an archive of every imported source row, import history, and approximate geocoding results. Adds indexes for location, date, and street searches. |
+
+The files under `sql/tools/` define functions for answering questions:
+
+| Tool file | Subject | When to use it | What it returns |
+| --- | --- | --- | --- |
+| [count_service_requests.sql](sql/tools/count_service_requests.sql) | Get It Done service requests | Ask “How many requests were submitted within 800 meters of this coordinate during January?” Optionally exclude submissions explicitly linked to a parent request. | One number: the count of matching request IDs. This is a count of reports, not necessarily distinct physical problems. |
+| [010_filter_traffic_collisions.sql](sql/tools/010_filter_traffic_collisions.sql) | Traffic collisions: shared selection rules | Internal helper that selects reports by date, optional radius, injury/fatality counts, hit-and-run status or level, and primary or intersecting street. Both collision tools below reuse these rules. | All matching collision records, without a result limit. Intended as a building block rather than the agent-facing retrieval tool. |
+| [020_get_traffic_collisions.sql](sql/tools/020_get_traffic_collisions.sql) | Traffic collisions: individual reports | Ask “Show me the collision reports matching these conditions.” Use it to inspect records, source fields, and geocoding information. | A page of reports, ordered by occurrence time and report ID. Returns up to 100 records by default, at most 1,000 per call; an offset lets callers request later pages. |
+| [030_aggregate_traffic_collisions.sql](sql/tools/030_aggregate_traffic_collisions.sql) | Traffic collisions: trends over time | Ask “How many matching reports occurred each month?” Group by day, week, month, quarter, or year using a specified calendar timezone. | One summary row per period with matching reports: total reports, reports with coordinates, and reports with unknown injury/fatality counts. Counts all matches, not just one retrieval page. Empty periods are omitted. |
+
+For collisions, `010` chooses **which reports match**, `020` returns **individual
+reports to inspect**, and `030` returns **counts over time**. The numeric prefixes
+ensure the shared filter is created before the functions that depend on it.
+The date interval includes its start and excludes its end. Geographic queries
+exclude records without coordinates; collision coordinates are approximate
+because source addresses are anonymized to block level. A zero spatial count
+does not establish that no collisions occurred.
+
+`python backend/db.py init` executes `sql/get_it_done.sql`, then
 `sql/traffic_collisions.sql`, then all `.sql`
 files directly inside `sql/tools/` in alphabetical filename order, in one
 transaction. Add each new query function in a separate tool file using
@@ -39,7 +68,7 @@ backend/
 ```
 
 Add separate folders under `Raw Data` for other domains as they are introduced.
-`db.py load` and the pandas reference interpret Get It Done columns only;
+`db.py load` interprets Get It Done columns only;
 `collision_ingest.py` separately loads traffic collision records.
 Both commands default to the CSV shown above when the positional CSV path is
 omitted. Defaults resolve relative to the scripts, not the working directory.
@@ -47,25 +76,7 @@ To select another Get It Done CSV, pass its path in quotes because these
 directory names contain spaces. Each loader invocation imports one file;
 it does not automatically scan folders or merge every CSV.
 
-## Pandas reference comparison
-
-Install `backend/requirements.txt`, then run this from the repository root:
-
-```powershell
-.\.venv\Scripts\python.exe backend/pandas_reference.py "backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv" --lat 32.84 --lng -117.25 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00' --compare-sql
-.\.venv\Scripts\python.exe -m unittest discover -s backend -p test_pandas_reference.py
-```
-
-`--compare-sql` uses `DATABASE_URL` and reports both counts plus `match`;
-it exits with status 1 on disagreement. Omit it to run without a database.
-The database must contain the same CSV state: older retained imports can cause
-differences. The pandas function reads CSV data independently and uses WGS84
-ellipsoidal distance, rather than a spherical approximation. Extremely close
-radius-boundary cases can still differ due to floating-point precision.
-Both paths keep the last repeated ID, use `[start, end)`, and interpret source
-timestamps as Los Angeles time. Importable function:
-`count_service_requests_pandas(df, latitude, longitude, radius_meters, start_time, end_time, exclude_linked_duplicates=False)`.
-Read the CSV with `pd.read_csv(path, dtype=str, keep_default_na=False)`.
+## Local database setup
 
 PostgreSQL 17 + PostGIS runs in Docker with persistent storage, exposed only on
 localhost port 54329. Python imports the CSV; SQL performs spatial counting.

@@ -1,0 +1,3 @@
+service_request_id,service_request_parent_id,sap_notification_number,date_requested,case_age_days,case_record_type,service_name,service_name_detail,date_closed,status,lat,lng,street_address,zipcode,council_district,comm_plan_code,comm_plan_name,park_name,case_origin,referred,iamfloc,floc,public_description
+9400007,,,2026-01-15 10:00:00.000,1,TSW,Pothole,,,Closed,32.80000000,-117.20000000,1 Test St,92109,1,27,PACIFIC BEACH,,Mobile,,,,
+9400008,,,,1,TSW,Pothole,,,Closed,32.80000000,-117.20000000,1 Test St,92109,1,27,PACIFIC BEACH,,Mobile,,,,

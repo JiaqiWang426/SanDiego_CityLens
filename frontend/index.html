@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CityLens · Evaluation desk</title><link rel="stylesheet" href="/assets/styles.css"><script src="/assets/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/">CITY<span>LENS</span></a><span class="tag">SAN DIEGO / PHASE 0</span><a href="/docs" target="_blank" rel="noopener">API documentation ↗</a></header>
+<main>
+<div class="intro"><div><p class="eyebrow">FOLLOW THE EVIDENCE</p><h1>Ask. Inspect. Verify.</h1><p>Explore civic records, follow every tool call, and check the numbers yourself.</p></div><div id="configuration" class="configuration" aria-live="polite">Checking configuration…</div></div>
+<div class="workspace">
+<section class="panel inputs"><h2>Investigation</h2>
+<div class="presets"><button type="button" data-preset="count">Collision count</button><button type="button" data-preset="compare">Compare A / B</button><button type="button" data-preset="crime">Unsupported crime</button></div>
+<form id="investigate">
+<label for="question">Your question</label><textarea id="question" rows="4" required maxlength="4000">How many traffic collisions were recorded near location A during this period?</textarea>
+<div class="location"><h3>Location A</h3><div class="pair"><div><label for="lat-a">Latitude</label><input id="lat-a" type="number" step="any" value="32.84" required></div><div><label for="lng-a">Longitude</label><input id="lng-a" type="number" step="any" value="-117.25" required></div></div></div>
+<label class="check"><input id="compare" type="checkbox"> Include location B</label>
+<div id="location-b" class="location" hidden><h3>Location B</h3><div class="pair"><div><label for="lat-b">Latitude</label><input id="lat-b" type="number" step="any" value="32.85"></div><div><label for="lng-b">Longitude</label><input id="lng-b" type="number" step="any" value="-117.24"></div></div></div>
+<label for="radius">Radius in meters</label><input id="radius" type="number" min="0" max="50000" value="800" required>
+<label for="start">Start timestamp · inclusive</label><input id="start" value="2026-01-01T00:00:00-08:00" required>
+<label for="end">End timestamp · exclusive</label><input id="end" value="2026-03-01T00:00:00-08:00" required>
+<label for="timezone">Calendar timezone</label><input id="timezone" value="America/Los_Angeles" required>
+<p class="hint">Timestamps require an explicit offset. Coordinates are supplied pins, not geocoded addresses.</p>
+<fieldset><legend>Requested domains (optional)</legend><label class="check"><input id="domain-collisions" type="checkbox"> Traffic collisions</label><label class="check"><input id="domain-requests" type="checkbox"> Get It Done requests</label></fieldset>
+<button class="primary" type="submit" id="ask">Ask the agent →</button>
+</form>
+<details class="manual"><summary>Run a SQL tool without the LLM</summary>
+<p class="hint">Uses the scope above and one selected location. Executes only the three approved read-only functions.</p>
+<label for="manual-tool">Tool</label><select id="manual-tool"><option value="aggregate_traffic_collisions">Aggregate traffic collisions</option><option value="count_service_requests">Count Get It Done requests</option><option value="get_traffic_collisions">Get collision records (page)</option></select>
+<div class="pair"><div><label for="manual-location">Location</label><select id="manual-location"><option>A</option><option>B</option></select></div><div><label for="period">Period</label><select id="period"><option>month</option><option>day</option><option>week</option><option>quarter</option><option>year</option></select></div></div>
+<label class="check"><input id="exclude" type="checkbox"> Exclude parent-linked service requests</label>
+<label for="filters">Collision filters · JSON</label><textarea id="filters" rows="3" spellcheck="false">{}</textarea>
+<p class="hint">Example: {"min_injured": 1, "hit_run": true}. Unknown counts stay unknown.</p>
+<button type="button" id="manual-run">Execute SQL tool</button>
+</details>
+</section>
+<section class="results" aria-label="Investigation results">
+<div class="panel statusbar"><span id="status" role="status">Ready for an investigation</span><button id="download" type="button" disabled>Download JSON</button></div>
+<div id="error" class="error" role="alert" hidden></div>
+<div class="tabs" role="tablist" aria-label="Result views"><button class="active" role="tab" aria-selected="true" data-tab="answer">Answer</button><button role="tab" aria-selected="false" data-tab="calls">Tool calls</button><button role="tab" aria-selected="false" data-tab="evidence">Evidence</button><button role="tab" aria-selected="false" data-tab="verify">SQL verification</button><button role="tab" aria-selected="false" data-tab="json">Raw JSON</button></div>
+<div id="answer" class="panel view"><p class="eyebrow">THE AGENT’S RESPONSE</p><h2>Your findings will appear here.</h2><p class="muted">Start with a collision count, compare two pins, or test an unsupported question. Each numerical claim links back to evidence and its executed query.</p><div class="notice">Counts describe imported records. They do not establish safety or service quality. Collision positions are approximate; unlocated reports are excluded from radius searches.</div></div>
+<div id="calls" class="panel view" hidden></div><div id="evidence" class="panel view" hidden></div>
+<div id="verify" class="panel view" hidden><h2>Independent SQL verification</h2><p>After an investigation, replay a tool call with exactly the same arguments, or use the manual runner on the left. Neither path calls the LLM.</p><p class="muted">A replay uses current database contents, not a historical snapshot. You can also copy the read-only SQL into psql or pgAdmin using your reader login.</p><div id="verification-result"></div></div>
+<div id="json" class="panel view" hidden><pre id="raw-json">No response yet.</pre></div>
+</section></div>
+</main><footer>CityLens evaluation desk · Local development interface · No hidden LLM reasoning is displayed.</footer>
+</body></html>
