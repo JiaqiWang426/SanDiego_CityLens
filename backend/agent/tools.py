@@ -12,6 +12,7 @@ from psycopg.rows import dict_row
 from pydantic import Field
 
 from .models import CollisionFilters, Location, Model, TimeRange, ToolName, ToolLog
+from .diagnostics import log_failure
 
 
 class ToolCall(Model):
@@ -47,6 +48,38 @@ REGISTRY = {
 }
 
 
+class ReaderRoleMissing(PermissionError):
+    """The required reader group is absent, rather than merely not granted."""
+
+
+def database_failure_code(exc: Exception,stage: str) -> str:
+    """libpq often omits SQLSTATE on startup failures; never log its raw text."""
+    state=getattr(exc,'sqlstate',None) or ''
+    if isinstance(exc,ReaderRoleMissing):
+        return 'reader_role_missing'
+    if isinstance(exc,PermissionError):
+        return 'reader_role_required'
+    if state.startswith('28'):
+        return 'database_authentication_failed'
+    if isinstance(exc,psycopg.OperationalError) and stage=='connect':
+        message=str(exc).lower()  # Classify in memory, never expose credentials.
+        if any(marker in message for marker in ('authentication failed','no password supplied',
+                'password is required','no pg_hba.conf entry')) or ('role ' in message and 'does not exist' in message):
+            return 'database_authentication_failed'
+        return 'database_connection_failed'
+    if isinstance(exc,psycopg.errors.InsufficientPrivilege):
+        return 'database_permission_denied'
+    if isinstance(exc,psycopg.errors.UndefinedFunction):
+        return 'database_function_missing'
+    if isinstance(exc,psycopg.errors.QueryCanceled):
+        return 'tool_timeout'
+    if isinstance(exc,psycopg.errors.LockNotAvailable):
+        return 'database_lock_timeout'
+    if state.startswith('08') or isinstance(exc,psycopg.OperationalError):
+        return 'database_connection_lost'
+    return 'database_execution_failed'
+
+
 def ensure_reader(conn: psycopg.Connection) -> None:
     """Fail closed for owner/admin/write-capable credentials, even in read-only TX.
 
@@ -54,6 +87,10 @@ def ensure_reader(conn: psycopg.Connection) -> None:
     inspect effective privileges, including grants inherited through PUBLIC.
     No permissions are changed here. Setup SQL is a separately reviewed step.
     """
+    # to_regrole returns NULL for a missing group instead of raising from
+    # pg_has_role. No role or permission changes occur in this check.
+    if conn.execute("SELECT to_regrole('citylens_agent_reader')").fetchone()[0] is None:
+        raise ReaderRoleMissing('Reader group is not installed')
     safe = conn.execute('''SELECT NOT (rolsuper OR rolcreaterole OR rolcreatedb
         OR rolreplication OR rolbypassrls),
         pg_has_role(current_user, 'citylens_agent_reader', 'USAGE'),
@@ -169,28 +206,27 @@ class DatabaseTools:
             result.status='unavailable'
             result.error_code='database_not_configured'
             return result
+        stage='connect'
         try:
             with psycopg.connect(self.database_url,connect_timeout=3) as conn:
+                stage='transaction_setup'
                 conn.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY')
                 conn.execute("SET LOCAL statement_timeout='10s'")
                 conn.execute("SET LOCAL lock_timeout='2s'")
+                stage='reader_check'
                 ensure_reader(conn)
+                stage='query'
                 result.rows=execute_query(conn,call)
+                stage='metadata'
                 result.metadata=dataset_metadata(conn,call.name)
                 if result.metadata['dataset_records']==0:
                     result.status='unavailable'
                     result.rows=[]
                     result.error_code='dataset_empty'
-        except PermissionError:
+        except (PermissionError,psycopg.Error) as exc:
             result.status='error'
-            result.error_code='reader_role_required'
-        except psycopg.errors.QueryCanceled:
-            result.status='error'
-            result.error_code='tool_timeout'
-        except psycopg.Error:
-            # Never echo connection strings, passwords, SQL errors or raw fields.
-            result.status='error'
-            result.error_code='database_tool_failed'
+            result.error_code=database_failure_code(exc,stage)
+            log_failure(result.error_code,exc,stage=stage,query_id=result.query_id)
         finally:
             result.elapsed_ms=(time.perf_counter()-started)*1000
         return result

@@ -1,6 +1,8 @@
 # CityLens Phase 0 Agent
 
 Implemented against [AGENT_SPECIFICATION.md](../AGENT_SPECIFICATION.md).
+For audited integration fixes, diagnostic codes, exact test results, manual
+reader-role setup and the gated live smoke command, see [AUDIT_FIXES.md](AUDIT_FIXES.md).
 This is a runnable FastAPI + LangGraph + OpenAI backend, with deterministic
 database tools and numerical verification. Live OpenAI calls require your key
 and enabled structured-output model. No mock planner is enabled in the app.
@@ -148,7 +150,10 @@ PUBLIC grants are inherited: review them separately before deployment. The
 uncapped helper requires EXECUTE for invoker-rights SQL composition, but is never
 an LLM-facing tool. These application functions do not elevate role privileges.
 
-Configure environment variables in the shell (no automatic `.env` loading):
+Configure the repository-root `.env` as described in
+[README.md](README.md#environment-configuration). It loads automatically before
+settings are initialized. File values override existing shell variables. The
+following shell configuration is an alternative only for keys absent from `.env`:
 
 ```powershell
 # Supply your actual values; URL-encode special characters in the DB password.

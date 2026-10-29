@@ -165,6 +165,11 @@ def main():
     parser.add_argument('csv', type=Path, nargs='?', default=DEFAULT_CSV)
     parser.add_argument('--batch-size', type=int, default=2000)
     args = parser.parse_args()
+    if __package__:
+        from .config import load_environment
+    else:
+        from config import load_environment
+    load_environment()
     with psycopg.connect(os.environ['DATABASE_URL'], connect_timeout=10) as conn:
         stats = load_collisions(conn,args.csv,args.batch_size)
     print(json.dumps(stats))

@@ -6,3 +6,4 @@ pydantic>=2.10,<3
 langgraph>=1,<2
 openai>=2,<3
 uvicorn>=0.34,<1
+python-dotenv>=1.2,<2

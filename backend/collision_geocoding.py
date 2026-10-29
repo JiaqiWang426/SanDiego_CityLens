@@ -155,6 +155,11 @@ def main():
     parser.add_argument('--limit',type=int,default=25)
     parser.add_argument('--benchmark',default='Public_AR_Current')
     args = parser.parse_args()
+    if __package__:
+        from .config import load_environment
+    else:
+        from config import load_environment
+    load_environment()
     with psycopg.connect(os.environ['DATABASE_URL'],connect_timeout=10,autocommit=True) as conn:
         print(json.dumps(geocode_pending(conn,CensusGeocoder(args.benchmark),args.limit)))
 

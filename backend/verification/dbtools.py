@@ -58,7 +58,10 @@ def mask(text: str, url: str) -> str:
 
 def run_cli(url: str, *args: str, timeout: int = 900) -> subprocess.CompletedProcess:
     """Run a production command line with DATABASE_URL pointed at the test DB."""
-    env = {**os.environ, "DATABASE_URL": url, "PYTHONIOENCODING": "utf-8"}
+    # Tests select a guarded isolated DB. Never let a developer's root .env
+    # redirect a maintenance subprocess to imported development records.
+    env = {**os.environ, "DATABASE_URL": url, "PYTHONIOENCODING": "utf-8",
+           "PYTHON_DOTENV_DISABLED": "1"}
     proc = subprocess.run([PYTHON, *args], cwd=BACKEND.parent, env=env, capture_output=True,
                           text=True, encoding="utf-8", errors="replace", timeout=timeout)
     proc.stdout, proc.stderr = mask(proc.stdout, url), mask(proc.stderr, url)

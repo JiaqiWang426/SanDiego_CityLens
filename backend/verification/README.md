@@ -35,6 +35,10 @@ The database tests use a throwaway PostGIS container. It keeps its data in a
 tmpfs, so it creates no Docker volume and never touches the development
 database on port 54329.
 
+Maintenance CLI subprocesses explicitly disable dotenv loading with
+`PYTHON_DOTENV_DISABLED=1`, so the repository-root `.env` cannot override the
+guarded test database URL. Normal backend startup still gives `.env` precedence.
+
 ```bash
 PW=$(python -c "import secrets;print(secrets.token_hex(16))")
 docker run -d --name citylens_verify_db -p 127.0.0.1:54330:5432 \

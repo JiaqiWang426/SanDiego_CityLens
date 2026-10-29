@@ -158,6 +158,11 @@ def main():
     count.add_argument('--end', required=True)
     count.add_argument('--exclude-linked-duplicates', action='store_true')
     args = parser.parse_args()
+    if __package__:
+        from .config import load_environment
+    else:
+        from config import load_environment
+    load_environment()
     # Connection timeout bounds connection establishment; statement_timeout
     # below bounds SQL execution. They address different sources of delay.
     # The connection context commits on normal exit and rolls back on errors.

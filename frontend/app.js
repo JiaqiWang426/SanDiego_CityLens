@@ -21,12 +21,12 @@ $("compare").addEventListener("change", () => { $("location-b").hidden = !$("com
 function scope() {
   return {radius_meters: Number($("radius").value), time_range: {start: $("start").value, end: $("end").value, calendar_timezone: $("timezone").value}};
 }
-function location(id) {
+function selectedLocation(id) {
   if (id === "B" && !$("compare").checked) throw new Error("Enable location B before selecting it.");
   return {id, latitude: Number($("lat-" + id.toLowerCase()).value), longitude: Number($("lng-" + id.toLowerCase()).value)};
 }
 function request() {
-  return {question: $("question").value, locations: $("compare").checked ? [location("A"), location("B")] : [location("A")], ...scope(),
+  return {question: $("question").value, locations: $("compare").checked ? [selectedLocation("A"), selectedLocation("B")] : [selectedLocation("A")], ...scope(),
     preferences: [$("domain-collisions").checked ? "traffic_collisions" : null, $("domain-requests").checked ? "service_requests" : null].filter(Boolean)};
 }
 function setBusy(value, message) {
@@ -110,7 +110,7 @@ $("investigate").addEventListener("submit", async event => {
   finally { setBusy(false); }
 });
 $("manual-run").addEventListener("click", async () => {
-  try { const filters = JSON.parse($("filters").value); await executeManual({name:$("manual-tool").value, location:location($("manual-location").value), ...scope(), collision_filters:filters, period:$("period").value, exclude_linked_duplicates:$("exclude").checked, limit:Math.min(100, window.configuredMaxRows || 100)}); }
+  try { const filters = JSON.parse($("filters").value); await executeManual({name:$("manual-tool").value, location:selectedLocation($("manual-location").value), ...scope(), collision_filters:filters, period:$("period").value, exclude_linked_duplicates:$("exclude").checked, limit:Math.min(100, window.configuredMaxRows || 100)}); }
   catch (e) { error(e.message); }
 });
 document.querySelectorAll("[data-preset]").forEach(button => button.addEventListener("click", () => {
@@ -123,7 +123,19 @@ $("download").addEventListener("click", () => {
   const url = URL.createObjectURL(new Blob([json(responseData)], {type:"application/json"}));
   const link = el("a"); link.href = url; link.download = "citylens-investigation.json"; link.click(); URL.revokeObjectURL(url);
 });
-fetch("/api/v1/status").then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(s => {
-  window.configuredMaxRows = s.max_rows;
-  $("configuration").textContent = `OpenAI: ${s.openai_configured ? "configured" : "not configured"} · Database: ${s.database_configured ? "configured" : "not configured"}. Configuration presence only; connectivity is checked on execution.`;
-}).catch(() => { $("configuration").textContent = "Could not read server configuration. Check that FastAPI is running."; });
+async function loadConfiguration() {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
+  try {
+    const response = await fetch("/api/v1/status", {signal: controller.signal});
+    if (!response.ok) throw new Error("Status request failed");
+    const s = await response.json();
+    window.configuredMaxRows = s.max_rows;
+    $("configuration").textContent = `OpenAI: ${s.openai_configured ? "configured" : "not configured"} · Database: ${s.database_configured ? "configured" : "not configured"}. Configuration presence only; connectivity is checked on execution.`;
+  } catch (_) {
+    $("configuration").textContent = "Could not read server configuration within 5 seconds. Check FastAPI and reload the page.";
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+loadConfiguration();

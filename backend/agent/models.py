@@ -11,6 +11,7 @@ Domain = Literal['service_requests', 'traffic_collisions']
 ToolName = Literal['count_service_requests', 'get_traffic_collisions', 'aggregate_traffic_collisions']
 Intent = Literal['location_summary', 'compare_locations', 'collision_trend',
                  'collision_drilldown', 'request_count', 'unsupported_dimension']
+ResponseIntent = Intent | Literal['undetermined']
 Period = Literal['day', 'week', 'month', 'quarter', 'year']
 UnsupportedDimension = Literal['crime','safety','commute','amenities','development',
     'rental_ranking','service_category_breakdown','service_status_breakdown','unavailable_dimension']
@@ -95,6 +96,32 @@ class Plan(Model):
     exclude_linked_duplicates: bool = False
     filter_quote: str | None = Field(default=None, max_length=500)
     unsupported_dimensions: list[UnsupportedDimension] = Field(default_factory=list, max_length=8)
+
+
+class CollisionFiltersOutput(Model):
+    """Provider schema: required nullable fields; validate limits in Plan."""
+    min_injured: int | None
+    max_injured: int | None
+    min_killed: int | None
+    max_killed: int | None
+    hit_run: bool | None
+    street_name: str | None
+    hit_run_level: Literal['FELONY','MISDEMEANOR'] | None
+
+
+class PlanOutput(Model):
+    """Conservative wire schema; no defaults or model-dependent length keywords.
+
+    The internal Plan remains the authority for ranges, bounds and defaults.
+    This schema change does not establish why an earlier live request failed.
+    """
+    intent: Intent
+    tools: list[ToolName]
+    period: Period
+    collision_filters: CollisionFiltersOutput
+    exclude_linked_duplicates: bool
+    filter_quote: str | None
+    unsupported_dimensions: list[UnsupportedDimension]
 
 
 class Scope(Model):
@@ -227,7 +254,7 @@ class ToolLog(Model):
 
 class QueryResponse(Model):
     status: Literal['ok','partial','needs_location','unsupported','error']
-    intent: Intent
+    intent: ResponseIntent
     answer: str
     comparison: Comparison | None = None
     claims: list[Claim] = Field(default_factory=list)

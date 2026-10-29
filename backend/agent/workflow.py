@@ -11,6 +11,7 @@ from langgraph.graph import END, START, StateGraph
 from .evidence import (compare_pair, comparison_claim, make_evidence, record_claim,
                        verify_claims)
 from .llm import LanguageModel, ModelNotConfigured
+from .diagnostics import log_failure,model_failure_code
 from .models import (Claim, Comparison, ComparisonMetric, Composition, EvidenceRecord,
                      Plan, QueryRequest, QueryResponse)
 from .settings import Settings
@@ -165,18 +166,26 @@ class Agent:
         return {'unsupported':unsupported,'stop':stop}
 
     async def build_plan(self,state: AgentState) -> dict:
+        plan=None
+        stage='provider'
         try:
             raw=await asyncio.wait_for(self.model.plan(state['request']),self.settings.llm_timeout_seconds)
+            stage='plan_validation'
             plan=Plan.model_validate(raw.model_dump())
             calls=validated_calls(state['request'],plan,self.settings)
             return {'plan':plan,'calls':calls,'stop':not calls,
                     'unsupported':sorted(set(state['unsupported']+plan.unsupported_dimensions))}
-        except ModelNotConfigured:
-            return {'stop':True,'fatal':True,'codes':state['codes']+['openai_not_configured']}
-        except TimeoutError:
-            return {'stop':True,'fatal':True,'codes':state['codes']+['planning_timeout']}
-        except Exception:
-            return {'stop':True,'fatal':True,'codes':state['codes']+['planning_failed']}
+        except Exception as exc:
+            code=('openai_not_configured' if isinstance(exc,ModelNotConfigured)
+                  else model_failure_code(exc,'planning',stage))
+            log_failure(code,exc,stage=stage,trace_id=state['trace_id'],
+                        secrets=(self.settings.openai_api_key,))
+            update={'stop':True,'fatal':True,'codes':state['codes']+[code]}
+            # Preserve a valid inferred intent even when its execution plan was
+            # rejected. No inference exists for transport/parsing failures.
+            if plan is not None:
+                update['plan']=plan
+            return update
 
     async def execute_tools(self,state: AgentState) -> dict:
         results=[]
@@ -185,8 +194,9 @@ class Agent:
         for call in state['calls']:
             try:
                 result=await asyncio.to_thread(self.tools.execute,call)
-            except Exception:
+            except Exception as exc:
                 result=ToolResult(call,status='error',error_code='tool_execution_failed')
+                log_failure(result.error_code,exc,stage='tool_dispatch',trace_id=state['trace_id'],query_id=result.query_id)
             results.append(result)
         return {'results':results}
 
@@ -195,7 +205,9 @@ class Agent:
         for result in state['results']:
             try:
                 evidence.append(make_evidence(result))
-            except Exception:
+            except Exception as exc:
+                log_failure('invalid_tool_result',exc,stage='evidence_normalization',
+                            trace_id=state['trace_id'],query_id=result.query_id)
                 failed=ToolResult(result.call,status='error',error_code='invalid_tool_result',
                                   query_id=result.query_id,executed_at=result.executed_at)
                 evidence.append(make_evidence(failed))
@@ -230,17 +242,22 @@ class Agent:
         claims=state['claims']
         composition=None
         codes=state['codes']
+        stage='provider'
         if claims:
             try:
                 composition=await asyncio.wait_for(self.model.compose(claims),self.settings.llm_timeout_seconds)
+                stage='composition_validation'
                 ids=composition.ordered_claim_ids
                 if len(ids)!=len(claims) or set(ids)!={c.claim_id for c in claims}:
                     raise ValueError('Composer changed verified claim set')
                 by_id={c.claim_id:c for c in claims}
                 claims=[by_id[key] for key in ids]
-            except Exception:
+            except Exception as exc:
                 composition=None
-                codes=codes+['composition_fallback']
+                code=('composition_claim_set_rejected' if stage=='composition_validation'
+                      else model_failure_code(exc,'composition',stage))
+                log_failure(code,exc,stage=stage,trace_id=state['trace_id'],secrets=(self.settings.openai_api_key,))
+                codes=codes+['composition_fallback',code]
         response=self._response(state,claims,composition,codes)
         return {'response':response}
 
@@ -255,6 +272,10 @@ class Agent:
         for comparison in state.get('comparisons',[]):
             limits.extend(x for x in comparison.limitations if x not in limits)
         errors=[e.error_code for e in evidence if e.error_code]
+        if any(e.domain=='traffic_collisions' and (e.quality.dataset_records or 0)>0
+               and e.quality.dataset_located_records==0 for e in evidence):
+            errors.append('collision_geocoding_incomplete')
+            limits.append('No stored collision report has a usable location; radius queries cannot describe unlocated reports.')
         comparison=Comparison(locations=[loc.id for loc in request.locations],radius_meters=request.radius_meters,
             time_range=request.time_range,metrics=state.get('comparisons',[])) if len(request.locations)==2 else None
         return QueryResponse(status=status,intent=state['plan'].intent,
@@ -285,7 +306,7 @@ class Agent:
 
     def abstain(self,state: AgentState) -> dict:
         fatal=state.get('fatal',False)
-        intent=state['plan'].intent if state.get('plan') else 'unsupported_dimension'
+        intent=state['plan'].intent if state.get('plan') else ('undetermined' if fatal else 'unsupported_dimension')
         text=('The request could not be completed and verified. No numerical conclusion is available.'
               if fatal else 'The requested dimensions are unavailable in Phase 0; no proxy statistics were substituted.')
         return {'response':QueryResponse(status='error' if fatal else 'unsupported',intent=intent,

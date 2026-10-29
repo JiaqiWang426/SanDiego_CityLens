@@ -12,7 +12,10 @@ same backend command below. Asset URLs remain `/assets/...`.
 ## Start
 
 Open PowerShell in the repository root. Install dependencies, then configure
-your existing restricted database login and OpenAI credentials in that shell:
+your existing restricted database login and OpenAI credentials in the root
+`.env` (see [configuration instructions](README.md#environment-configuration)).
+The root `.env` takes precedence over existing shell variables. The shell-based
+alternative below applies only to keys absent from `.env`:
 
 ```powershell
 cd 'E:\Github Projects\SanDiego_CityLens'
@@ -24,8 +27,9 @@ $env:OPENAI_MODEL = 'YOUR_ENABLED_STRUCTURED_OUTPUT_MODEL'
 ```
 
 Open http://127.0.0.1:8000/ in your browser. Keep PowerShell running; Ctrl+C
-stops the server. Restart it after changing environment variables. The app
-does not automatically load `.env`. Database reader setup is explained in
+stops the server. Restart it after changing environment variables or `.env`.
+The root `.env` loads automatically and overrides conflicting process values.
+Database reader setup is explained in
 [AGENT.md](AGENT.md#configuration-and-running). That prepared setup script has
 not been applied to your existing development database. Neither the frontend
 nor verification endpoint bypasses reader permissions or creates/imports data.

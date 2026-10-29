@@ -1,5 +1,44 @@
 # Local data infrastructure
 
+## Environment configuration
+
+The backend automatically loads `.env` from the repository root using
+`python-dotenv`. The path is resolved from `backend/config.py`, not the shell's
+working directory. Values defined in `.env` take precedence over existing process
+environment variables (`override=True`), including explicitly empty file values.
+Process values remain available for keys absent from `.env`. A missing `.env` is OK.
+
+From the repository root:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
+if (-not (Test-Path -LiteralPath .env)) { Copy-Item .env.example .env }
+# Edit .env locally; preserve any values already present.
+.\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
+```
+
+Configure `OPENAI_API_KEY`, `OPENAI_MODEL`, and the restricted-reader
+`AGENT_DATABASE_URL` in `.env`. `CITYLENS_DB_PASSWORD` is the separate Docker
+database administrator password; it is loaded into the environment but never
+used as an agent credential fallback. For maintenance scripts, optionally set
+`DATABASE_URL` separately; do not give the agent administrator credentials.
+URL-encode passwords embedded in database URLs.
+
+FastAPI loads the file during startup, before application settings are created.
+`Settings.from_env()` also loads it for standalone agent commands (including the
+explicitly gated smoke test). The `db.py`, collision ingestion and collision
+geocoding CLI entry points use the same loader before reading their environment.
+Importing the loader or a maintenance module alone does not load secrets or run
+any operation. Loading configuration does not create roles, import data, run
+geocoding or call OpenAI.
+
+Restart FastAPI after editing `.env`, because application settings are cached.
+The next startup reloads file values even if PowerShell still contains conflicting
+variables; there is no need to clear those variables first. `.env`, `.env.*`, `.envrc`,
+`.secrets/` and `secrets.local.*` are ignored by Git; `.env.example` remains
+trackable. Never print or commit real credentials. Configuration loading is
+silent and does not modify `.env`.
+
 The runnable Phase 0 Agent API, setup instructions, examples, and test commands
 are documented in [AGENT.md](AGENT.md).
 To open the frontend, inspect tool logs/evidence, and independently execute SQL
@@ -94,7 +133,7 @@ $dbPassword = (Get-Content .env | Where-Object { $_ -like 'CITYLENS_DB_PASSWORD=
 $env:DATABASE_URL = "postgresql://citylens:$([uri]::EscapeDataString($dbPassword))@127.0.0.1:54329/citylens"
 .\.venv\Scripts\python.exe backend/db.py init
 .\.venv\Scripts\python.exe backend/db.py load "backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv"
-.\.venv\Scripts\python.exe backend/test_database.py
+# Optional tests: see AGENT.md and verification/README.md (use isolated test databases).
 .\.venv\Scripts\python.exe backend/db.py count --lat 32.8 --lng -117.2 --radius 800 --start '2026-01-01T00:00:00-08:00' --end '2026-02-01T00:00:00-08:00'
 ```
 

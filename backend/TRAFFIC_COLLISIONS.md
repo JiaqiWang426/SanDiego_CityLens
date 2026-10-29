@@ -33,6 +33,10 @@ From the repository root, with the same `DATABASE_URL` used for Get It Done:
 .\.venv\Scripts\python.exe -m unittest discover -s backend -p test_collisions.py -v
 ```
 
+Run collision tests with `DATABASE_URL` unset for unit-only execution, or with it
+pointing to an isolated test database. The integration cases write synthetic
+records and must never use the development database credentials.
+
 Initialization creates the original structure, then collision tables, then
 tool definitions in filename order. It does not reload data or modify raw CSVs.
 The test suite uses synthetic records in transactions which are rolled back;

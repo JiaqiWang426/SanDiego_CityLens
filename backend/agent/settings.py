@@ -1,6 +1,8 @@
-"""Environment-only configuration. No .env loading or credential fallback."""
+"""Configuration with repository-root .env values taking precedence."""
 from dataclasses import dataclass
 import os
+
+from ..config import load_environment
 
 
 @dataclass(frozen=True)
@@ -16,6 +18,7 @@ class Settings:
 
     @classmethod
     def from_env(cls):
+        load_environment()
         return cls(database_url=os.getenv('AGENT_DATABASE_URL'),
                    openai_api_key=os.getenv('OPENAI_API_KEY'), model=os.getenv('OPENAI_MODEL'),
                    max_tool_calls=int(os.getenv('AGENT_MAX_TOOL_CALLS','6')),

@@ -19,7 +19,7 @@ def test_responses_parse_and_graph_without_network():
         body=json.loads(req.content)
         bodies.append(body)
         schema=body['text']['format']['name']
-        if schema=='Plan':
+        if schema=='PlanOutput':
             parsed=Plan(intent='location_summary',tools=['aggregate_traffic_collisions'])
         else:
             facts=json.loads(body['input'][1]['content'])

@@ -3,6 +3,7 @@ import asyncio
 from functools import lru_cache
 from uuid import uuid4
 from pathlib import Path
+from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.responses import FileResponse
@@ -14,8 +15,16 @@ from .agent.settings import Settings
 from .agent.tools import DatabaseTools, ToolCall, tool_log
 from .agent.evidence import make_evidence
 from .agent.workflow import Agent
+from .config import load_environment
 
-app=FastAPI(title='San Diego CityLens Phase 0',version='0.1.0')
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    load_environment()
+    yield
+
+
+app=FastAPI(title='San Diego CityLens Phase 0',version='0.1.0',lifespan=lifespan)
 # Resolve the sibling frontend directory independently of the shell's cwd.
 FRONTEND=Path(__file__).resolve().parent.parent/'frontend'
 app.mount('/assets',StaticFiles(directory=FRONTEND),name='assets')
@@ -63,13 +72,13 @@ async def query(request: QueryRequest, agent: Agent=Depends(get_agent)) -> Query
     try:
         return await asyncio.wait_for(agent.query(request),agent.settings.request_timeout_seconds)
     except TimeoutError:
-        return QueryResponse(status='error',intent='location_summary',
+        return QueryResponse(status='error',intent='undetermined',
             answer='The request exceeded its execution budget. No unverified findings are returned.',
             limitations=['Request deadline exceeded.'],limitation_codes=['request_timeout'],
             tool_trace_id='trace_'+uuid4().hex)
     except Exception:
         # Avoid returning stack traces, provider error bodies or credentials.
-        return QueryResponse(status='error',intent='location_summary',
+        return QueryResponse(status='error',intent='undetermined',
             answer='The request could not be completed and verified.',
             limitations=['An internal execution error prevented verification.'],
             limitation_codes=['internal_execution_error'],tool_trace_id='trace_'+uuid4().hex)
