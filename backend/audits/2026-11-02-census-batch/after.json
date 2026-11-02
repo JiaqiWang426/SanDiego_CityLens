@@ -1,0 +1,53 @@
+{
+  "total_records": 78494,
+  "source_digest": "a7b4775715071a198f2574f46f976ee0",
+  "protected_count": 25,
+  "protected_digest": "fb108ba0f037530197a5adb96bae0533",
+  "history": {
+    "collision_imports": [
+      1,
+      "5a5625b43c546664578a80b866099026"
+    ],
+    "collision_source_rows": [
+      78494,
+      "630c867593987023308e2c1360ddb7b4"
+    ]
+  },
+  "pilot_artifacts": {
+    "audits\\2026-11-01-geocoding-pilot\\after.json": "77b8fddbef7fbdb830febb0b9235f3ae6ea4dece2fbeac528ac84ae75e23543c",
+    "audits\\2026-11-01-geocoding-pilot\\agent-tests-final.txt": "5d948e9186dcd2064e7754b2f3bdbbd587d900efbcb13d7b875f21b92c3e9507",
+    "audits\\2026-11-01-geocoding-pilot\\agent-tests.txt": "f0b44796e21f461c80f633a97c4c8586950bc5d5bf812aca2e73c5bf4205875a",
+    "audits\\2026-11-01-geocoding-pilot\\before.json": "b0e6de894cf647e9d772514eb9be73a4806382d61cbcde16f38750bf4f873701",
+    "audits\\2026-11-01-geocoding-pilot\\census-requests.json": "9b73f08c718e6ed5cb7e4548c69dac9eebdb5656c721c550a8bc53559e48b034",
+    "audits\\2026-11-01-geocoding-pilot\\census-responses.json": "d8820db57dfa4ebf2467cea1d2bb73094e6150ba56cf0f32df1c8fed0b3b3c72",
+    "audits\\2026-11-01-geocoding-pilot\\coverage-postflight.json": "c9d8bfd6967f1c68a9ce33e54121185ba65f491bb485663720dbeaff0c5607f9",
+    "audits\\2026-11-01-geocoding-pilot\\failure.json": "010c67da51ad01e72880b477c5a33b21fce8ee95b620a78457118a8d1e3e57c3",
+    "audits\\2026-11-01-geocoding-pilot\\final-checks.json": "657566722612f454519cbdcb059a36eb3577f595eb86fa166a2f45b2157748dd",
+    "audits\\2026-11-01-geocoding-pilot\\independent-sql-checks.json": "576a52e7b2987fc04cbfbb03ddd6dc122e9a21f0b17a6e4e839c2215e89951dc",
+    "audits\\2026-11-01-geocoding-pilot\\legacy-tests.txt": "9f584d6a601cab162c745b86ac084edfbd2247a0a79e78e23030e8406f354db7",
+    "audits\\2026-11-01-geocoding-pilot\\live-postflight.json": "657ba43c4fffc83a543995b8e45574723e1061762c361e9fd92ff2cc6a5bbab4",
+    "audits\\2026-11-01-geocoding-pilot\\live-preflight.json": "b9ccc2cb589bdc0896f183d38664f3d8250264659d78b5002fc67e0935f329c0",
+    "audits\\2026-11-01-geocoding-pilot\\minimum_grants.sql": "4433ea237e621abcaa1f772c3fc01725a00a7168d7033f931aa4586db156c689",
+    "audits\\2026-11-01-geocoding-pilot\\offline-validation-output.txt": "58ba07ebfab55f4f855e5b03ec1d3595d0389b9253b8eec75411d48d3a67b3cc",
+    "audits\\2026-11-01-geocoding-pilot\\pilot-tests.txt": "36a2bf3e708b77d7d5d040d892f25e0aa8f7b4222f648084b7bcdf6431d605f3",
+    "audits\\2026-11-01-geocoding-pilot\\pilot_points.geojson": "ec7d5f93e61c832f9523d3aca825791d0603b0d50e92639cf1a98eda83438135",
+    "audits\\2026-11-01-geocoding-pilot\\preflight-tests.txt": "733efa52624c5a9595e143fd25464e535555bd8ea07cb600ef9b347276f2c6be",
+    "audits\\2026-11-01-geocoding-pilot\\preflight.json": "879c6a733e16987f81517cf6edbd5f696738787ae7c9c7feefefa2d27eb55c69",
+    "audits\\2026-11-01-geocoding-pilot\\PREFLIGHT.md": "e59161810ebff8cd3c306ea598a50d1d21645056abb8ea25f44b81c65fb319ef",
+    "audits\\2026-11-01-geocoding-pilot\\README.md": "e0816a2c50c548294345b472250fe3cec53bddbb276c1ad396ce76e28b3a80a5",
+    "audits\\2026-11-01-geocoding-pilot\\REPORT.md": "0cd16103d4e4dd7939304405022bcd91465fb933cb2914a197af288329df25b9",
+    "audits\\2026-11-01-geocoding-pilot\\results.csv": "a78dedfae5e14a1318829e0e8919de1b1f9824defcb1384d4fee022c0150a7b8",
+    "audits\\2026-11-01-geocoding-pilot\\run.json": "f8f05ce686ff218260e1a5a187ddc9346d4cabb8e0b46c43ec91fe8bc5e564ba",
+    "audits\\2026-11-01-geocoding-pilot\\RUN_STARTED.json": "101a9b1a289a9e7fd839b0938adcb4fa27c9332984ffa3c60184ffd11707b860",
+    "audits\\2026-11-01-geocoding-pilot\\sample.json": "9e238681825cbfed0fa83361c49e819af6c2f776d98b86d18278e7995ebe5f6e",
+    "audits\\2026-11-01-geocoding-pilot\\sangis-layer-schema.json": "4bac5cb9c4d78436d3bdc7abab56c715edd2245967598b71aaeb2a3e173939de",
+    "audits\\2026-11-01-geocoding-pilot\\sangis-requests.json": "9d2d729f449dfdc6b7e6f093a07b55cf2f2242032118a99332cbef567bd9d783",
+    "audits\\2026-11-01-geocoding-pilot\\sangis-roads.json": "576206251e9f9423f9d51c3d42dca492827d102699ceabdbdb443cffd2c0fc0c",
+    "audits\\2026-11-01-geocoding-pilot\\sangis-schema-sample.json": "5f926cc1a2171cd2c6d990c73a1b1245409f90caf1fc8945873fc9faa17fd9dd",
+    "audits\\2026-11-01-geocoding-pilot\\sangis-service-schema.json": "5624006a8183388d604baf04840bc55aebedc6f301238f6b09f457a7aa99e433",
+    "audits\\2026-11-01-geocoding-pilot\\stored-results.json": "6a5be2790db0b58de3c7e9ff2f0786f66e2bb4ce14b0ff7df2417d55a52afe70",
+    "audits\\2026-11-01-geocoding-pilot\\summary.json": "8bebd1cf31d51597bf209aebbd0a7cef97421d5924b606b8a180a605a545a499",
+    "audits\\2026-11-01-geocoding-pilot\\validation-details.json": "e75a5ff3cb88ef4d4f030cac409e3da17558f9af6c9e7e754a1ba27b279f0b14",
+    "audits\\2026-11-01-geocoding-pilot\\verification.sql": "5e9e11043fd746f07755ae9ee77be3db1c2829db55494f3b43f8c03e4adf8e95"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "raw_response_rows": 16226,
+  "unique_output_ids": 16226,
+  "committed_report_updates": 70119,
+  "all_batches_committed": true,
+  "all_preservation_checks_passed": true,
+  "configured_secret_scan": "passed",
+  "focused_tests": {
+    "passed": 38,
+    "failed": 0,
+    "skipped": 0
+  },
+  "no_live_openai_calls": true
+}

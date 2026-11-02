@@ -1,5 +1,8 @@
 # CityLens Phase 0 Agent
 
+Phase 1.1 extends these adapters with service-request grouping and dataset
+metadata; see [PHASE1_1.md](PHASE1_1.md) for the current additive contracts.
+
 Implemented against [AGENT_SPECIFICATION.md](../AGENT_SPECIFICATION.md).
 For audited integration fixes, diagnostic codes, exact test results, manual
 reader-role setup and the gated live smoke command, see [AUDIT_FIXES.md](AUDIT_FIXES.md).
@@ -109,7 +112,7 @@ Discrepancies / decisions relative to the proposed specification:
 | `agent/models.py` | Request, plan, tool-related, evidence, claim, comparison and response contracts |
 | `agent/settings.py` | Environment credentials and bounded execution settings |
 | `agent/llm.py` | One OpenAI model, typed planning and restricted composition |
-| `agent/tools.py` | Three-tool allowlist, SQL binding, read-only/role enforcement, minimal metadata |
+| `agent/tools.py` | Measurement-tool allowlist, dataset metadata, SQL binding and read-only/role enforcement |
 | `agent/evidence.py` | Evidence records, calendar normalization, comparison arithmetic, independent claim checker |
 | `agent/workflow.py` | LangGraph state, nodes, bounded routing, partial/error handling and final verification |
 | `sql/setup_agent_reader.sql` | Optional, manually reviewed least-privilege role setup; not loaded by `db.py init` |
@@ -288,9 +291,9 @@ The preexisting real-data verification report is not a result of this Agent run.
 - A trend returns calendar buckets and descriptive counts, not a causal or
   risk trend assertion. Empty/partial periods must not be treated as verified
   complete periods.
-- Service categories/statuses, full apartment-address resolution, session
-  memory, expanded source catalogs and local coverage tools are deferred to
-  Phase 1. Commute, amenities, development data, ranking/scoring and public
+- Phase 1.1 now supplies service categories/statuses and dataset metadata.
+  Full apartment-address resolution, session memory, expanded source catalogs
+  and local coverage tools remain deferred. Commute, amenities, development data, ranking/scoring and public
   deployment are outside this Phase 0 implementation.
 
 Implementation references: [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs),

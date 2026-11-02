@@ -1,0 +1,33 @@
+{
+  "records": 78494,
+  "source_digest": "a7b4775715071a198f2574f46f976ee0",
+  "nonselected_geocodes_digest": "84ab7fe5e49103137ebe9b20b72189b3",
+  "completed_nonselected_count": 0,
+  "completed_nonselected_digest": null,
+  "statuses": [
+    {
+      "status": "ambiguous",
+      "records": 2,
+      "located": 0,
+      "attempted": 2
+    },
+    {
+      "status": "matched",
+      "records": 19,
+      "located": 19,
+      "attempted": 19
+    },
+    {
+      "status": "no_match",
+      "records": 4,
+      "located": 0,
+      "attempted": 4
+    },
+    {
+      "status": "pending",
+      "records": 78469,
+      "located": 0,
+      "attempted": 0
+    }
+  ]
+}

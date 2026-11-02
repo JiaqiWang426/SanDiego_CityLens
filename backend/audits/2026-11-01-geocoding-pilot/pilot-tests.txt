@@ -1,0 +1,2 @@
+Final offline pilot subset: python -m pytest backend/agent_tests/test_geocoding_pilot.py -q
+25 passed in 1.46s

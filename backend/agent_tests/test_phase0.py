@@ -85,7 +85,7 @@ def test_two_location_symmetric_comparisons_and_swapping():
 
 
 @pytest.mark.parametrize('question',['Which apartment has a lower crime rate?', 'Which is safer?', 'What is the commute time?',
-                                    'How many pothole reports were submitted?', 'How many closed requests were repaired?'])
+                                    'How many closed requests were repaired?'])
 def test_unsupported_does_not_substitute_or_call_tools(question):
     model,tools=FakeModel(),FakeTools()
     result=run(Agent(model,tools,Settings()).query(request(question=question)))
@@ -150,7 +150,7 @@ def test_plan_schema_forbids_unsafe_or_invalid_arguments(change):
 
 def test_tool_budgets_and_quoted_filters():
     req=request(two=True)
-    plan=Plan(intent='compare_locations',tools=list(REGISTRY))
+    plan=Plan(intent='compare_locations',tools=['count_service_requests','aggregate_traffic_collisions','get_traffic_collisions'])
     with pytest.raises(ValueError):
         validated_calls(req,plan,Settings(max_tool_calls=4))
     filtered=Plan(intent='location_summary',tools=['aggregate_traffic_collisions'],

@@ -1,5 +1,9 @@
 # Local data infrastructure
 
+Phase 1.1 aggregation, dataset metadata, geocoding audit/fixes and limitations
+are documented in [PHASE1_1.md](PHASE1_1.md). The dated
+[data audit](audits/2026-11-01-phase1_1/SUMMARY.md) precedes implementation results.
+
 ## Environment configuration
 
 The backend automatically loads `.env` from the repository root using
@@ -59,6 +63,8 @@ backend/
       010_filter_traffic_collisions.sql
       020_get_traffic_collisions.sql
       030_aggregate_traffic_collisions.sql
+      040_aggregate_service_requests.sql
+      050_get_dataset_metadata.sql
 ```
 
 The two files directly under `sql/` create storage for each subject:
@@ -69,6 +75,11 @@ The two files directly under `sql/` create storage for each subject:
 | [traffic_collisions.sql](sql/traffic_collisions.sql) | Police-recorded traffic collisions | Stores current collision reports, an archive of every imported source row, import history, and approximate geocoding results. Adds indexes for location, date, and street searches. |
 
 The files under `sql/tools/` define functions for answering questions:
+
+Phase 1.1 adds `aggregate_service_requests` (group distinct request IDs by service
+name/status, with exact normalized filters) and `get_dataset_metadata` (dataset-wide
+event/import timing, coordinate coverage, status counts and explicitly unknown
+source freshness for both domains). See [the contracts and examples](PHASE1_1.md).
 
 | Tool file | Subject | When to use it | What it returns |
 | --- | --- | --- | --- |

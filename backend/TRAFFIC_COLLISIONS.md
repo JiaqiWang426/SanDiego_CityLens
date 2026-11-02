@@ -1,5 +1,9 @@
 # Traffic collision data infrastructure
 
+Phase 1.1 [audit and metadata](PHASE1_1.md) distinguish unlocated reports, actual
+geocoding statuses and block-approximate points. The offline worker now uses a
+pending-status compare-and-set to protect completed results from slower workers.
+
 This domain uses the **existing CityLens PostgreSQL/PostGIS database**. No
 Get It Done table definitions or records are changed. Existing dependencies
 (`psycopg`) and Python's standard library are sufficient for these modules.
@@ -14,6 +18,9 @@ backend/
   collision_addresses.py             # Reusable textual address normalization
   collision_ingest.py                # CSV parsing, validation, batch upsert
   collision_geocoding.py             # Provider interface, Census adapter, worker
+  census_addresses.py               # Geocoder-only comparison rules; no source hash changes
+  census_batch.py                   # Census batch CSV transport and strict response mapping
+  collision_batch_geocoding.py       # Checkpointed sequential batch worker
   collision_queries.py               # Bounded read-only Python query tools
   sql/
     traffic_collisions.sql           # Collision tables and indexes
@@ -76,6 +83,12 @@ are not transactional, so test runs may leave gaps in import IDs.
 
 ## Approximate geocoding
 
+The [25-record pilot report](audits/2026-11-01-geocoding-pilot/REPORT.md)
+records live Census results, separate SanGIS plausibility diagnostics, and
+read-only Agent tool checks. Provider `matched` is not an accuracy guarantee.
+The pilot's validation scripts read archived responses and road geometry;
+they do not snap points or change database geocoding statuses.
+
 The [City dataset dictionary](https://data.sandiego.gov/datasets/traffic-collisions/)
 states that primary street numbers are abstracted to block level. **No coordinate
 is an exact collision location.** Neither police beat nor street text is used to
@@ -87,8 +100,9 @@ adapter uses the original block number unchanged. It accepts only one matching
 street/number in CA with a supported locality (San Diego or La Jolla), validates
 coordinate bounds, and labels results `block_approximate`. Provider response,
 requested benchmark, input, timestamp, and limitations are preserved. The default
-`Public_AR_Current` benchmark changes over time; the returned response preserves
-the benchmark metadata available at request time.
+`Public_AR_Current` benchmark changes over time. Single-record responses preserve
+returned benchmark metadata; batch CSV does not supply a returned benchmark,
+so the worker records the requested benchmark and leaves the returned value unknown.
 
 Geocoding is **opt-in**, separate from import:
 
@@ -97,17 +111,28 @@ Geocoding is **opt-in**, separate from import:
 .\.venv\Scripts\python.exe backend/collision_geocoding.py --limit 25
 ```
 
+For an explicitly reviewed selection, repeat `--report-id REPORT_ID` for each
+pending record. The number of unique selected IDs must fit `--limit`; all
+updates still require the original address key and pending status. Omitting
+the selector preserves the existing queue ordering. The audit runner
+`python -m backend.scripts.geocoding_pilot run` additionally refuses a repeat
+of the completed pilot; use its `validate` mode to reproduce the report
+without network requests or database writes.
+
 No-match, ambiguous, unsupported, and failed results keep NULL coordinates.
 The Census adapter explicitly does not resolve intersections or missing/zero
 block numbers. It does not discard a cross street and geocode a different input.
 Unsupported records need a suitable local GIS provider or review. A `Provider`
 protocol allows another adapter without changing ingestion or query interfaces.
-No SanGIS layer is downloaded or guessed at in this implementation.
+The production worker uses Census only. The pilot archives a filtered SanGIS
+road subset under its audit directory for offline validation; no GIS dataset
+was added to production tables.
 
-A future adapter can ingest the official
+A future geocoding adapter could use the official
 [SanGIS road centerlines](https://data.sandiego.gov/datasets/gis-roads-all/),
-verify CRS and address-range fields, and locate a unique segment/block or
-intersection. Multiple plausible segments must remain ambiguous. Geometry from
+whose CRS and address-range fields were inspected in the pilot, to locate a unique segment/block or
+intersection. Multiple materially different locations need review; adjoining
+segments on one street alone do not make a Census result ambiguous. Geometry from
 this source would still be approximate, not evidence of an exact crash point.
 
 The worker caches repeated address results within one run, processes a bounded
@@ -115,6 +140,74 @@ queue, and uses optimistic address-key checks to reject stale HTTP responses.
 It uses an autocommit connection so requests do not hold a database transaction.
 Failures are not automatically retried; explicit status reset/review is needed
 before retrying. No bulk network geocoding occurs during setup or import.
+
+## Census batch worker
+
+The [batch deployment report](audits/2026-11-02-census-batch/REPORT.md) records
+the 100-report live test, bulk progress, actual coverage and remaining fallback
+work. The historical 25-record pilot and its statuses are preserved.
+
+From the repository root, start or resume the same checkpointed selection:
+
+```powershell
+.\.venv\Scripts\python.exe -m backend.collision_batch_geocoding
+# Optional: stop after the initial 100-report verification.
+.\.venv\Scripts\python.exe -m backend.collision_batch_geocoding --smoke-only
+```
+
+The root `.env` loader supplies maintenance credentials without printing them.
+The worker uses `DATABASE_URL`, or the existing local Compose maintenance
+identity with `CITYLENS_DB_PASSWORD` on the same database as `AGENT_DATABASE_URL`.
+It never uses the Agent account for writes and never changes database grants.
+
+The default is 2,000 **unique normalized addresses** per batch, deduplicated
+across reports. `--batch-size` accepts 100 through 10,000; input CSV is capped
+at 5,000,000 bytes. Census receives the required ID, street, city, state and
+blank ZIP columns, without a header. The API has a 10,000-record maximum and
+its web form documents a 5 MB file limit. All requests are sequential, with
+180-second timeouts and at most three attempts for transient network/HTTP
+failures, exponential backoff and bounded Retry-After support. Permanent HTTP
+failures stop immediately; exhausted retries leave the current batch pending.
+
+Geocoder-only normalization handles `preType` and all returned direction/type/
+qualifier components, prefix CAMINO/CAM equivalence, whole leading-zero ordinal
+tokens (04TH -> 4TH), and existing street-edge direction/suffix abbreviations.
+No spelling similarity or missing-component matching is applied. Original
+collision fields, displayed normalized addresses and source address keys are
+unchanged. Names such as MT/MOUNT or AVENIDA/AVE are not silently added as aliases.
+
+The batch response is a headerless CSV, not the single-address JSON schema.
+Matched rows have ID, echoed input, match indicator, match type, matched address,
+longitude/latitude pair, TIGER line ID and side. The parser verifies every ID
+and echoed input and accepts reordered rows. Duplicate, unknown or missing IDs,
+unexpected schema, or suspicious coordinate output stop the batch before writes.
+Ordinary no-match and tie results remain unlocated. Basic consistency requires
+the same number, complete normalized street, supported CA locality, valid
+coordinates and the broad San Diego admission envelope. This does not prove
+municipal-boundary membership or exact accident location. Batch CSV provides no
+address-range components; the worker does not invent them.
+
+Validation rejections use existing `ambiguous` status with
+`geocode_details.validation_rejected=true`; native ties are separately counted
+in the summary. Provider invalid/error rows use `error`. No new schema statuses
+are introduced. All accepted points remain `block_approximate`. SanGIS segment
+uniqueness and distance thresholds are **not** acceptance criteria for this
+worker. The earlier pilot's stricter independent assessments remain historical.
+
+Checkpoints under `backend/audits/2026-11-02-census-batch/` contain the frozen
+report-ID/address-key mapping, input and raw response CSVs, parsed results,
+request diagnostics and per-batch commit markers. Commits contain at most 500
+report updates and use the existing pending-status/address-key saver. A resumed
+run reuses archived results and safely skips committed reports. An advisory
+lock prevents concurrent instances of this batch worker. Completed/no-match/
+ambiguous/error records are never reset automatically. To resume, use the same
+command, run directory and configuration; keep all checkpoint files. Existing
+pilot `RUN_STARTED.json` is unrelated and must not be removed.
+
+The summary separates this run's accepted/no-match/tie/validation-rejected/error
+results from dataset-wide coverage. A matched point is a reasonable block
+estimate subject to Census interpolation and source limitations. Unresolved
+addresses and intersections remain for later SanGIS/review work.
 
 Inspect coverage before interpreting radius results:
 

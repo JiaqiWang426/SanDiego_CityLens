@@ -1,0 +1,568 @@
+{
+  "geometryProperties": {
+    "shapeLengthFieldName": "SHAPE__Length",
+    "units": "esriFeet"
+  },
+  "hasZ": false,
+  "features": [
+    {
+      "attributes": {
+        "ljurisdic": "SD",
+        "r_psblock": 20700,
+        "rd30postd": null,
+        "rd30sfx": "ST",
+        "rhighaddr": 4598,
+        "segstat": "M",
+        "lhighaddr": 4599,
+        "rd30name": "CARMELO",
+        "rd30full": "CARMELO ST",
+        "roadsegid": 16106,
+        "funclass": "L",
+        "r_beat": 618,
+        "f_level": 1,
+        "lpsjur": "SD",
+        "l_tract": 7200,
+        "rd20sfx": "ST",
+        "rlowaddr": 4550,
+        "nad83n": 1843708,
+        "lmixaddr": "N",
+        "rpsjur": "SD",
+        "firedriv": "Y",
+        "llowaddr": 4551,
+        "obmh": "N",
+        "l_beat": 618,
+        "midxcoord": 6252062.178,
+        "nad83e": 6252164,
+        "rd20name": "CARMELO",
+        "rd20full": "CARMELO ST",
+        "rd30pred": null,
+        "segclass": "5",
+        "r_zip": 92107,
+        "dedstat": "D",
+        "toycoord": 1843720,
+        "rjurisdic": "SD",
+        "l_block": 3007,
+        "abhiaddr": 4599,
+        "rightway": 0,
+        "frycoord": 1843708,
+        "fnode": 95421,
+        "r_block": 3002,
+        "SHAPE__Length": 203.35461881090825,
+        "pending": "N",
+        "postid": "FJessie",
+        "addsegdt": 323395200000,
+        "speed": 20,
+        "l_zip": 92107,
+        "rmixaddr": "N",
+        "abloaddr": 4550,
+        "tnode": 95406,
+        "subdivid": 0,
+        "frxcoord": 6252164,
+        "postdate": 1313760849000,
+        "length": 203.3543705,
+        "roadid": 4856,
+        "t_level": 1,
+        "l_psblock": 20670,
+        "midycoord": 1843714.019,
+        "oneway": "B",
+        "carto": "5",
+        "toxcoord": 6251961,
+        "rd20pred": null,
+        "r_tract": 7200,
+        "objectid": 1
+      },
+      "geometry": {
+        "paths": [
+          [
+            [
+              -117.25631717920221,
+              32.721281818753404
+            ],
+            [
+              -117.25697754242033,
+              32.72130941158833
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "exceededTransferLimit": true,
+  "hasM": false,
+  "objectIdFieldName": "objectid",
+  "fields": [
+    {
+      "modelName": "objectid",
+      "defaultValue": null,
+      "name": "objectid",
+      "length": 4,
+      "alias": "objectid",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "modelName": "postid",
+      "defaultValue": null,
+      "name": "postid",
+      "length": 255,
+      "alias": "POSTID",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "postdate",
+      "defaultValue": null,
+      "name": "postdate",
+      "length": 29,
+      "alias": "POSTDATE",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "roadsegid",
+      "defaultValue": null,
+      "name": "roadsegid",
+      "alias": "ROADSEGID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "FNODE",
+      "defaultValue": null,
+      "name": "fnode",
+      "alias": "FNODE",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "TNODE",
+      "defaultValue": null,
+      "name": "tnode",
+      "alias": "TNODE",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LENGTH",
+      "defaultValue": null,
+      "name": "length",
+      "alias": "LENGTH",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "ROADID",
+      "defaultValue": null,
+      "name": "roadid",
+      "alias": "ROADID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RIGHTWAY",
+      "defaultValue": null,
+      "name": "rightway",
+      "alias": "RIGHTWAY",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "ADDSEGDT",
+      "defaultValue": null,
+      "name": "addsegdt",
+      "length": 29,
+      "alias": "ADDSEGDT",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "SEGSTAT",
+      "defaultValue": null,
+      "name": "segstat",
+      "length": 1,
+      "alias": "SEGSTAT",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "DEDSTAT",
+      "defaultValue": null,
+      "name": "dedstat",
+      "length": 1,
+      "alias": "DEDSTAT",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "FUNCLASS",
+      "defaultValue": null,
+      "name": "funclass",
+      "length": 1,
+      "alias": "FUNCLASS",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ONEWAY",
+      "defaultValue": "B",
+      "name": "oneway",
+      "length": 1,
+      "alias": "ONEWAY",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "SUBDIVID",
+      "defaultValue": null,
+      "name": "subdivid",
+      "alias": "SUBDIVID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "SEGCLASS",
+      "defaultValue": null,
+      "name": "segclass",
+      "length": 1,
+      "alias": "SEGCLASS",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "LJURISDIC",
+      "defaultValue": null,
+      "name": "ljurisdic",
+      "length": 2,
+      "alias": "LJURISDIC",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "LLOWADDR",
+      "defaultValue": 0,
+      "name": "llowaddr",
+      "alias": "LLOWADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LHIGHADDR",
+      "defaultValue": 0,
+      "name": "lhighaddr",
+      "alias": "LHIGHADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RJURISDIC",
+      "defaultValue": null,
+      "name": "rjurisdic",
+      "length": 2,
+      "alias": "RJURISDIC",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RLOWADDR",
+      "defaultValue": 0,
+      "name": "rlowaddr",
+      "alias": "RLOWADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RHIGHADDR",
+      "defaultValue": 0,
+      "name": "rhighaddr",
+      "alias": "RHIGHADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LMIXADDR",
+      "defaultValue": "N",
+      "name": "lmixaddr",
+      "length": 1,
+      "alias": "LMIXADDR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RMIXADDR",
+      "defaultValue": "N",
+      "name": "rmixaddr",
+      "length": 1,
+      "alias": "RMIXADDR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "PENDING",
+      "defaultValue": null,
+      "name": "pending",
+      "length": 1,
+      "alias": "PENDING",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ABLOADDR",
+      "defaultValue": 0,
+      "name": "abloaddr",
+      "alias": "ABLOADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "ABHIADDR",
+      "defaultValue": 0,
+      "name": "abhiaddr",
+      "alias": "ABHIADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "NAD83N",
+      "defaultValue": null,
+      "name": "nad83n",
+      "alias": "NAD83N",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "NAD83E",
+      "defaultValue": null,
+      "name": "nad83e",
+      "alias": "NAD83E",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "SPEED",
+      "defaultValue": null,
+      "name": "speed",
+      "alias": "SPEED",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "L_ZIP",
+      "defaultValue": null,
+      "name": "l_zip",
+      "alias": "L_ZIP",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_ZIP",
+      "defaultValue": null,
+      "name": "r_zip",
+      "alias": "R_ZIP",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LPSJUR",
+      "defaultValue": null,
+      "name": "lpsjur",
+      "length": 2,
+      "alias": "LPSJUR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RPSJUR",
+      "defaultValue": null,
+      "name": "rpsjur",
+      "length": 2,
+      "alias": "RPSJUR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "CARTO",
+      "defaultValue": null,
+      "name": "carto",
+      "length": 1,
+      "alias": "CARTO",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "OBMH",
+      "defaultValue": "N",
+      "name": "obmh",
+      "length": 1,
+      "alias": "OBMH",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "FIREDRIV",
+      "defaultValue": "Y",
+      "name": "firedriv",
+      "length": 1,
+      "alias": "FIREDRIV",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "L_BLOCK",
+      "defaultValue": null,
+      "name": "l_block",
+      "alias": "L_BLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_BLOCK",
+      "defaultValue": null,
+      "name": "r_block",
+      "alias": "R_BLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "L_TRACT",
+      "defaultValue": null,
+      "name": "l_tract",
+      "alias": "L_TRACT",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_TRACT",
+      "defaultValue": null,
+      "name": "r_tract",
+      "alias": "R_TRACT",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "L_BEAT",
+      "defaultValue": null,
+      "name": "l_beat",
+      "alias": "L_BEAT",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "R_BEAT",
+      "defaultValue": null,
+      "name": "r_beat",
+      "alias": "R_BEAT",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "FRXCOORD",
+      "defaultValue": null,
+      "name": "frxcoord",
+      "alias": "FRXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "FRYCOORD",
+      "defaultValue": null,
+      "name": "frycoord",
+      "alias": "FRYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "MIDXCOORD",
+      "defaultValue": null,
+      "name": "midxcoord",
+      "alias": "MIDXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "MIDYCOORD",
+      "defaultValue": null,
+      "name": "midycoord",
+      "alias": "MIDYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "TOXCOORD",
+      "defaultValue": null,
+      "name": "toxcoord",
+      "alias": "TOXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "TOYCOORD",
+      "defaultValue": null,
+      "name": "toycoord",
+      "alias": "TOYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "F_LEVEL",
+      "defaultValue": 1,
+      "name": "f_level",
+      "alias": "F_LEVEL",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "T_LEVEL",
+      "defaultValue": 1,
+      "name": "t_level",
+      "alias": "T_LEVEL",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "L_PSBLOCK",
+      "defaultValue": null,
+      "name": "l_psblock",
+      "alias": "L_PSBLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "r_psblock",
+      "defaultValue": null,
+      "name": "r_psblock",
+      "alias": "R_PSBLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "rd20pred",
+      "defaultValue": null,
+      "name": "rd20pred",
+      "length": 1,
+      "alias": "RD20PRED",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20name",
+      "defaultValue": null,
+      "name": "rd20name",
+      "length": 20,
+      "alias": "RD20NAME",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20sfx",
+      "defaultValue": null,
+      "name": "rd20sfx",
+      "length": 2,
+      "alias": "RD20SFX",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20full",
+      "defaultValue": null,
+      "name": "rd20full",
+      "length": 25,
+      "alias": "RD20FULL",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30pred",
+      "defaultValue": null,
+      "name": "rd30pred",
+      "length": 2,
+      "alias": "RD30PRED",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30name",
+      "defaultValue": null,
+      "name": "rd30name",
+      "length": 30,
+      "alias": "RD30NAME",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30sfx",
+      "defaultValue": null,
+      "name": "rd30sfx",
+      "length": 4,
+      "alias": "RD30SFX",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30postd",
+      "defaultValue": null,
+      "name": "rd30postd",
+      "length": 2,
+      "alias": "RD30POSTD",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30full",
+      "defaultValue": null,
+      "name": "rd30full",
+      "length": 41,
+      "alias": "RD30FULL",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "defaultValue": null,
+      "name": "SHAPE__Length",
+      "alias": "SHAPE__Length",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "spatialReference": {
+    "latestWkid": 4326,
+    "wkid": 4326
+  },
+  "geometryType": "esriGeometryPolyline"
+}

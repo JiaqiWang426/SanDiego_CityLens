@@ -1,0 +1,156 @@
+{
+  "run_id": "census_batch_3e5fd163749e4b759466a76b63dbfd2f",
+  "started": "2026-11-02T08:12:54.743930+00:00",
+  "config": {
+    "batch_size": 2000,
+    "benchmark": "Public_AR_Current",
+    "timeout": 180,
+    "attempts": 3,
+    "backoff": 5
+  },
+  "protected_ids": [
+    "1607476",
+    "183276",
+    "185499",
+    "187919",
+    "190006",
+    "19203017",
+    "19205779",
+    "19205964",
+    "19206280",
+    "192915",
+    "193527",
+    "20204952",
+    "21204884",
+    "21207785",
+    "22025558",
+    "22201592",
+    "22203409",
+    "23201072",
+    "23204448",
+    "24201057",
+    "25015379",
+    "25201149",
+    "25201589",
+    "25206103",
+    "26205983"
+  ],
+  "smoke_verified": true,
+  "status": "complete",
+  "batches": [
+    "0000-smoke",
+    "0001-bulk",
+    "0002-bulk",
+    "0003-bulk",
+    "0004-bulk",
+    "0005-bulk",
+    "0006-bulk",
+    "0007-bulk",
+    "0008-bulk",
+    "0009-bulk"
+  ],
+  "requests": [
+    {
+      "batch_id": "0000-smoke",
+      "at": "2026-11-02T08:13:00.438471+00:00",
+      "attempt": 1,
+      "addresses": 97,
+      "input_bytes": 5332,
+      "outcome": "response",
+      "seconds": 1.033,
+      "response_bytes": 15454
+    },
+    {
+      "batch_id": "0001-bulk",
+      "at": "2026-11-02T08:14:08.100611+00:00",
+      "attempt": 1,
+      "addresses": 1967,
+      "input_bytes": 107111,
+      "outcome": "response",
+      "seconds": 8.34,
+      "response_bytes": 308476
+    },
+    {
+      "batch_id": "0002-bulk",
+      "at": "2026-11-02T08:14:45.777534+00:00",
+      "attempt": 1,
+      "addresses": 1983,
+      "input_bytes": 107560,
+      "outcome": "response",
+      "seconds": 9.107,
+      "response_bytes": 309902
+    },
+    {
+      "batch_id": "0003-bulk",
+      "at": "2026-11-02T08:15:52.383925+00:00",
+      "attempt": 1,
+      "addresses": 1985,
+      "input_bytes": 107678,
+      "outcome": "response",
+      "seconds": 49.09,
+      "response_bytes": 308537
+    },
+    {
+      "batch_id": "0004-bulk",
+      "at": "2026-11-02T08:16:22.984941+00:00",
+      "attempt": 1,
+      "addresses": 1997,
+      "input_bytes": 108169,
+      "outcome": "response",
+      "seconds": 19.21,
+      "response_bytes": 306744
+    },
+    {
+      "batch_id": "0005-bulk",
+      "at": "2026-11-02T08:16:40.869454+00:00",
+      "attempt": 1,
+      "addresses": 1994,
+      "input_bytes": 108736,
+      "outcome": "response",
+      "seconds": 9.802,
+      "response_bytes": 302572
+    },
+    {
+      "batch_id": "0006-bulk",
+      "at": "2026-11-02T08:16:56.851384+00:00",
+      "attempt": 1,
+      "addresses": 1994,
+      "input_bytes": 109217,
+      "outcome": "response",
+      "seconds": 9.366,
+      "response_bytes": 296807
+    },
+    {
+      "batch_id": "0007-bulk",
+      "at": "2026-11-02T08:17:12.906448+00:00",
+      "attempt": 1,
+      "addresses": 1997,
+      "input_bytes": 109234,
+      "outcome": "response",
+      "seconds": 11.55,
+      "response_bytes": 298218
+    },
+    {
+      "batch_id": "0008-bulk",
+      "at": "2026-11-02T08:17:25.636019+00:00",
+      "attempt": 1,
+      "addresses": 1999,
+      "input_bytes": 109920,
+      "outcome": "response",
+      "seconds": 9.091,
+      "response_bytes": 296888
+    },
+    {
+      "batch_id": "0009-bulk",
+      "at": "2026-11-02T08:17:30.176073+00:00",
+      "attempt": 1,
+      "addresses": 213,
+      "input_bytes": 11846,
+      "outcome": "response",
+      "seconds": 1.478,
+      "response_bytes": 30397
+    }
+  ],
+  "active_seconds": 216.9421316999942,
+  "last_error": null
+}

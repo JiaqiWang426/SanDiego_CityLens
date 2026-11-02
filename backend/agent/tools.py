@@ -4,19 +4,21 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 import time
-from typing import Any
+from typing import Any,Literal
 from uuid import uuid4
 
 import psycopg
 from psycopg.rows import dict_row
 from pydantic import Field
 
-from .models import CollisionFilters, Location, Model, TimeRange, ToolName, ToolLog
+from .models import (CollisionFilters,Location,Model,TimeRange,ToolName,ToolLog,
+                     MeasurementToolName,Domain,ServiceRequestAggregation)
 from .diagnostics import log_failure
+from ..dataset_metadata import DatasetMetadata
 
 
 class ToolCall(Model):
-    name: ToolName
+    name: MeasurementToolName
     location: Location
     radius_meters: float = Field(ge=0, le=50000)
     time_range: TimeRange
@@ -24,11 +26,17 @@ class ToolCall(Model):
     period: str = Field(pattern=r'^(day|week|month|quarter|year)$')
     exclude_linked_duplicates: bool = False
     limit: int = Field(ge=1, le=1000)
+    service_request_aggregation: ServiceRequestAggregation=Field(default_factory=ServiceRequestAggregation)
+
+
+class MetadataCall(Model):
+    name: Literal['get_dataset_metadata']='get_dataset_metadata'
+    domain: Domain
 
 
 @dataclass
 class ToolResult:
-    call: ToolCall
+    call: ToolCall | MetadataCall
     query_id: str = field(default_factory=lambda: 'q_'+uuid4().hex)
     executed_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     elapsed_ms: float = 0
@@ -45,7 +53,11 @@ REGISTRY = {
         'police_recorded_traffic_collisions','https://data.sandiego.gov/datasets/traffic-collisions/'),
     'aggregate_traffic_collisions': ('traffic_collisions','citylens.traffic_collisions',
         'police_recorded_traffic_collisions','https://data.sandiego.gov/datasets/traffic-collisions/'),
+    'aggregate_service_requests': ('service_requests','citylens.service_requests',
+        'get_it_done_requests','https://data.sandiego.gov/datasets/get-it-done-reports/'),
 }
+# Metadata has dataset-wide arguments, not a pretend location/time scope.
+METADATA_REGISTRY={'get_dataset_metadata':MetadataCall}
 
 
 class ReaderRoleMissing(PermissionError):
@@ -119,12 +131,20 @@ def _filters(call: ToolCall) -> tuple:
             f.hit_run_level)
 
 
-def query_spec(call: ToolCall) -> tuple[str, tuple]:
+def query_spec(call: ToolCall | MetadataCall) -> tuple[str, tuple]:
     """Single source for executed SQL and reproducible human inspection."""
+    if isinstance(call,MetadataCall):
+        return ('SELECT citylens.get_dataset_metadata(%s) AS metadata',(call.domain,))
     if call.name == 'count_service_requests':
         return ('SELECT citylens.count_service_requests(%s,%s,%s,%s,%s,%s) AS request_id_count',
             (call.location.latitude,call.location.longitude,call.radius_meters,
              call.time_range.start,call.time_range.end,call.exclude_linked_duplicates))
+    if call.name=='aggregate_service_requests':
+        f=call.service_request_aggregation
+        return ('SELECT * FROM citylens.aggregate_service_requests('+','.join(['%s']*9)+')',
+            (call.location.latitude,call.location.longitude,call.radius_meters,
+             call.time_range.start,call.time_range.end,call.exclude_linked_duplicates,
+             f.group_by,f.service_name,f.status))
     if call.name == 'aggregate_traffic_collisions':
         return ('SELECT * FROM citylens.aggregate_traffic_collisions('+','.join(['%s']*14)+')',
                 (*_filters(call),call.period,call.time_range.calendar_timezone))
@@ -156,7 +176,7 @@ def tool_log(result: ToolResult) -> ToolLog:
         result_rows=rows)
 
 
-def execute_query(conn: psycopg.Connection, call: ToolCall) -> list[dict]:
+def execute_query(conn: psycopg.Connection, call: ToolCall | MetadataCall) -> list[dict]:
     """Invoke existing SQL without duplicating SQL filtering/aggregation logic."""
     with conn.cursor(row_factory=dict_row) as cursor:
         cursor.execute(*query_spec(call))
@@ -170,36 +190,23 @@ def dataset_metadata(conn: psycopg.Connection, name: ToolName) -> dict:
     contributors. Query-specific provenance, coverage and freshness stay unknown.
     SQL identifiers come exclusively from these two hard-coded branches.
     """
-    if name == 'count_service_requests':
-        stats_sql='''SELECT count(*) AS dataset_records,count(location) AS dataset_located_records,
-            count(requested_at) AS dataset_dated_records,min(requested_at) AS dataset_observed_start,
-            max(requested_at) AS dataset_observed_end FROM citylens.service_requests'''
-        imports_sql='''SELECT DISTINCT i.id,i.source_file,i.sha256,i.imported_at
-            FROM citylens.ingestions i JOIN citylens.service_requests r ON r.ingestion_id=i.id
-            ORDER BY i.id DESC LIMIT 101'''
-    else:
-        stats_sql='''SELECT count(*) AS dataset_records,count(location) AS dataset_located_records,
-            count(occurred_at) AS dataset_dated_records,min(occurred_at) AS dataset_observed_start,
-            max(occurred_at) AS dataset_observed_end FROM citylens.traffic_collisions'''
-        imports_sql='''SELECT DISTINCT i.id,i.source_file,i.sha256,i.imported_at
-            FROM citylens.collision_imports i JOIN citylens.traffic_collisions c ON c.import_id=i.id
-            ORDER BY i.id DESC LIMIT 101'''
+    domain=REGISTRY[name][0]
     with conn.cursor(row_factory=dict_row) as cursor:
-        cursor.execute(stats_sql)
-        stats=cursor.fetchone()
-        cursor.execute(imports_sql)
-        imports=cursor.fetchall()
-    return {**stats,'dataset_imports':imports[:100],'dataset_imports_truncated':len(imports)>100}
+        cursor.execute('SELECT citylens.get_dataset_metadata(%s) AS metadata',(domain,))
+        metadata=DatasetMetadata.model_validate(cursor.fetchone()['metadata']).model_dump()
+    imports=metadata['dataset_imports']
+    return {**metadata,'dataset_imports':imports[:100],
+            'dataset_imports_truncated':metadata['dataset_imports_truncated'] or len(imports)>100}
 
 
 class DatabaseTools:
     def __init__(self, database_url: str | None):
         self.database_url=database_url
 
-    def execute(self, call: ToolCall) -> ToolResult:
+    def execute(self, call: ToolCall | MetadataCall) -> ToolResult:
         """One read-only repeatable-read snapshot with bounded statements."""
         # Revalidate at the execution boundary, including injected/test callers.
-        call=ToolCall.model_validate(call.model_dump())
+        call=(MetadataCall if isinstance(call,MetadataCall) else ToolCall).model_validate(call.model_dump())
         result=ToolResult(call)
         started=time.perf_counter()
         if not self.database_url:
@@ -218,8 +225,11 @@ class DatabaseTools:
                 stage='query'
                 result.rows=execute_query(conn,call)
                 stage='metadata'
-                result.metadata=dataset_metadata(conn,call.name)
-                if result.metadata['dataset_records']==0:
+                if isinstance(call,MetadataCall):
+                    result.metadata=DatasetMetadata.model_validate(result.rows[0]['metadata']).model_dump()
+                else:
+                    result.metadata=dataset_metadata(conn,call.name)
+                if not isinstance(call,MetadataCall) and result.metadata['dataset_records']==0:
                     result.status='unavailable'
                     result.rows=[]
                     result.error_code='dataset_empty'

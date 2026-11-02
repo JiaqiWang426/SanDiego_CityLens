@@ -7,7 +7,10 @@ from datetime import datetime
 
 from psycopg.rows import dict_row
 
-from collision_addresses import clean_text, normalize_street_name
+if __package__:
+    from .collision_addresses import clean_text, normalize_street_name
+else:
+    from collision_addresses import clean_text, normalize_street_name
 
 
 def _parameters(start_time, end_time, *, latitude=None, longitude=None,

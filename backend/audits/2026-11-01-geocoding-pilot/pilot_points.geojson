@@ -1,0 +1,363 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.064117661338,
+          32.786943435946
+        ]
+      },
+      "properties": {
+        "report_id": "185499",
+        "address": "6000 COLLEGE AVE, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.692,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.236094691658,
+          32.751429696787
+        ]
+      },
+      "properties": {
+        "report_id": "187919",
+        "address": "4600 NIMITZ BLVD, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 7.18,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.22277797879,
+          32.761128851751
+        ]
+      },
+      "properties": {
+        "report_id": "190006",
+        "address": "500 SEA WORLD DR, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.788,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.101811477248,
+          32.755179995455
+        ]
+      },
+      "properties": {
+        "report_id": "19203017",
+        "address": "4300 EL CAJON BLVD, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 5.849,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.233215342451,
+          32.806502671941
+        ]
+      },
+      "properties": {
+        "report_id": "19205779",
+        "address": "4800 NOYES ST, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.611,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.142103460324,
+          32.748501904033
+        ]
+      },
+      "properties": {
+        "report_id": "19205964",
+        "address": "2100 UNIVERSITY AVE, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 5.806,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.084771569983,
+          32.754943747658
+        ]
+      },
+      "properties": {
+        "report_id": "192915",
+        "address": "4300 51ST ST, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.282,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.064479809121,
+          32.562247421065
+        ]
+      },
+      "properties": {
+        "report_id": "193527",
+        "address": "1900 ISLA DEL CARMEN WAY, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.714,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.084603068788,
+          32.767745131427
+        ]
+      },
+      "properties": {
+        "report_id": "20204952",
+        "address": "5000 COLLWOOD BLVD, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 5.892,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.253978860389,
+          32.784633917704
+        ]
+      },
+      "properties": {
+        "report_id": "21204884",
+        "address": "3800 OCEAN FRONT WALK, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 5.523,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.052076263611,
+          32.750330518912
+        ]
+      },
+      "properties": {
+        "report_id": "21207785",
+        "address": "4000 ARAGON DR, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.253,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.232881999613,
+          32.799552758022
+        ]
+      },
+      "properties": {
+        "report_id": "22025558",
+        "address": "2000 GRAND AVE, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.583,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16104236265,
+          32.718905656568
+        ]
+      },
+      "properties": {
+        "report_id": "22201592",
+        "address": "400 A ST, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.803,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.056335285697,
+          32.565415497771
+        ]
+      },
+      "properties": {
+        "report_id": "23201072",
+        "address": "1700 DEL SUR BLVD, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 77.923,
+        "reasons": [
+          "Distance exceeds diagnostic review threshold"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.06287446666,
+          32.70142508762
+        ]
+      },
+      "properties": {
+        "report_id": "24201057",
+        "address": "6200 SKYLINE DR, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 5.766,
+        "reasons": [
+          "Multiple nearby name-and-block-range-compatible segments"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.085399093089,
+          32.57654654566
+        ]
+      },
+      "properties": {
+        "report_id": "25201149",
+        "address": "2200 CORONADO AVE, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.871,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.160539370916,
+          32.939276479993
+        ]
+      },
+      "properties": {
+        "report_id": "25201589",
+        "address": "7900 PARK VILLAGE RD, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "needs_review",
+        "distance_m": 799.694,
+        "reasons": [
+          "Distance exceeds diagnostic review threshold"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.165486221,
+          32.790691685796
+        ]
+      },
+      "properties": {
+        "report_id": "25206103",
+        "address": "7300 HYATT ST, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.421,
+        "reasons": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.073415521135,
+          32.692837748593
+        ]
+      },
+      "properties": {
+        "report_id": "26205983",
+        "address": "5800 DIVISION ST, SAN DIEGO, CA",
+        "precision": "block_approximate",
+        "assessment": "plausible",
+        "distance_m": 5.445,
+        "reasons": []
+      }
+    }
+  ]
+}

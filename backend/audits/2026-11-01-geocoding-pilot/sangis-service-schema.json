@@ -1,0 +1,120 @@
+{
+  "allowGeometryUpdates": true,
+  "supportsApplyEditsWithGlobalIds": false,
+  "maxRecordCount": 2000,
+  "description": "This dataset comprises road centerlines for all roads in San Diego County. Road centerline information is collected from recorded documents (subdivision and parcel maps) and information provided by local jurisdiction's (Cities in San Diego County, County of San Diego). Road names and address ranges are as designated by the official address coordinator for each jurisdiction. Jurisdictional information is created from spatial overlays with other data layers (e.g. Jurisdiction, Census Tract).The layer contains both public and private roads. Not all roads are shown on official, recorded documents. Centerlines may be included for dedicated public roads even if they have not been constructed. Public road names are the official names as maintained by the addressing authority for the jurisdiction in which the road is located. Official road names may not match the common or local name used to identify the road (e.g. State Route 94 is the official name of certain road segments commonly referred to as Campo Road).Private roads are either named or unnamed. Named private roads are as shown on official recorded documents or as directed by the addressing authority for the jurisdiction in which the road is located. Unnamed private roads are included where requested by the local jurisdiction or by SanGIS JPA members (primarily emergency response dispatch agencies). Roads are comprised of road segments that are individually identified by a unique, and persistent, ID (ROADSEGID). Roads segments are terminated where they intersect with each other, at jurisdictional boundaries (i.e. city limits), certain census tract and law beat boundaries, at locations where road names change, and at other locations as required by SanGIS JPA members. Each road segment terminates at an intersection point that can be found in the ROADS_INTERSECTION layer.Road centerlines do not necessarily follow the centerline of dedicated rights-of-way (ROW). Centerlines are adjusted as needed to fit the actual, constructed roadway. However, many road centerline segments are created initially based on record documents prior to construction and may not have been updated to meet as-built locations. Please notify SanGIS if the actual location differs from that shown. See the SanGIS website for contact information and reporting problems (http://www.sangis.org).Note, the road speeds in this layer are based on road segment class and were published as part of an agreement between San Diego Fire-Rescue, the San Diego County Sheriff's Department, and SanGIS. The average speed is based on heavy fire vehicles and may not represent the posted speed limit.",
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "units": "esriFeet",
+  "supportsAdminApi": true,
+  "maxViewsCount": 20,
+  "syncEnabled": false,
+  "tables": [],
+  "hasVersionedData": false,
+  "supportedAppendSourceFilterFormats": "featureCollection,featureService,pbf,shapefile",
+  "hasViews": false,
+  "layerOverridesEnabled": true,
+  "supportsRelationshipsResource": true,
+  "layers": [
+    {
+      "serviceItemId": "66ca42638c794646aa85f689a613a5f2",
+      "name": "Roads_All",
+      "id": 0,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPolyline"
+    }
+  ],
+  "GUIDFormat": "O",
+  "spatialReference": {
+    "falseM": -100000,
+    "xyTolerance": 0.003280833333333333,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "latestWkid": 2230,
+    "zTolerance": 0.001,
+    "wkid": 102646,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "supportedGUIDFormats": "B,O",
+  "supportsSharedTemplates": true,
+  "serviceItemId": "66ca42638c794646aa85f689a613a5f2",
+  "fullExtent": {
+    "ymin": 1775474.6678674817,
+    "zmin": 0,
+    "xmin": 6151036.999968141,
+    "ymax": 2129009.9998373985,
+    "zmax": 0,
+    "xmax": 6613420.622115061,
+    "spatialReference": {
+      "falseM": -100000,
+      "xyTolerance": 0.003280833333333333,
+      "mUnits": 10000,
+      "zUnits": 10000,
+      "latestWkid": 2230,
+      "zTolerance": 0.001,
+      "wkid": 102646,
+      "xyUnits": 3048.0060960121928,
+      "mTolerance": 0.001,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000
+    }
+  },
+  "enableZDefaults": true,
+  "allowUpdateWithoutMValues": true,
+  "supportedExportFormats": "csv,excel,featureCollection,filegdb,geojson,kml,shapefile,sqlite",
+  "capabilities": "Query,Extract",
+  "supportsAppend": true,
+  "supportsDisconnectedEditing": false,
+  "supportsSyncModelNone": true,
+  "supportsSharedTemplatesRelationshipId": true,
+  "supportedAppendFormats": "featureCollection,featureService,pbf,shapefile",
+  "supportsReturnDeleteResults": true,
+  "currentVersion": 12.1,
+  "advancedEditingCapabilities": {
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportsReturnEditResults": true,
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "supportedQueryFormats": "JSON",
+  "initialExtent": {
+    "ymin": 1757797.9012689858,
+    "xmin": 6127917.818860795,
+    "ymax": 2146686.766435894,
+    "xmax": 6636539.803222407,
+    "spatialReference": {
+      "falseM": -100000,
+      "xyTolerance": 0.003280833333333333,
+      "mUnits": 10000,
+      "zUnits": 10000,
+      "latestWkid": 2230,
+      "zTolerance": 0.001,
+      "wkid": 102646,
+      "xyUnits": 3048.0060960121928,
+      "mTolerance": 0.001,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000
+    }
+  },
+  "serviceDescription": "",
+  "editorTrackingInfo": {
+    "allowOthersToUpdate": true,
+    "enableEditorTracking": false,
+    "allowOthersToDelete": false,
+    "allowOthersToQuery": true,
+    "enableOwnershipAccessControl": false
+  },
+  "hasSyncEnabledViews": false,
+  "copyrightText": "SanGIS using information from documents recorded with the County of San Diego and the addressing authorities in the 18 cities in San Diego County.",
+  "hasSharedTemplates": true,
+  "zDefault": 0,
+  "supportsLayerOverrides": true
+}

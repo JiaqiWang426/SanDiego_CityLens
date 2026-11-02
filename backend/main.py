@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from .agent.llm import OpenAIModel
 from .agent.models import QueryRequest, QueryResponse
 from .agent.settings import Settings
-from .agent.tools import DatabaseTools, ToolCall, tool_log
+from .agent.tools import DatabaseTools, ToolCall, MetadataCall, tool_log
 from .agent.evidence import make_evidence
 from .agent.workflow import Agent
 from .config import load_environment
@@ -52,13 +52,15 @@ def configuration(agent: Agent=Depends(get_agent)):
 
 
 @app.post('/api/v1/tools/run')
-async def run_tool(call: ToolCall,agent: Agent=Depends(get_agent)):
+async def run_tool(call: ToolCall | MetadataCall,agent: Agent=Depends(get_agent)):
     """Human verification without any model call. Fixed SELECT functions only."""
-    if call.limit>agent.settings.max_rows:
+    if isinstance(call,ToolCall) and call.limit>agent.settings.max_rows:
         raise HTTPException(422,detail='Requested limit exceeds configured AGENT_MAX_ROWS')
     try:
         result=await asyncio.wait_for(asyncio.to_thread(agent.tools.execute,call),
                                      agent.settings.request_timeout_seconds)
+        if isinstance(call,MetadataCall):
+            return {'tool_call':tool_log(result),'metadata':result.metadata or None,'evidence':None}
         return {'tool_call':tool_log(result),'evidence':make_evidence(result)}
     except TimeoutError:
         raise HTTPException(504,detail='SQL tool execution deadline exceeded') from None

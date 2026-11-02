@@ -1,0 +1,103 @@
+{
+  "run_id": "census_batch_3e5fd163749e4b759466a76b63dbfd2f",
+  "status": "complete",
+  "started": "2026-11-02T08:12:54.743930+00:00",
+  "updated": "2026-11-02T08:17:34.075588+00:00",
+  "selected_records": 70119,
+  "unique_normalized_addresses": 16226,
+  "total_attempted": 70119,
+  "total_processed": 70119,
+  "matched": 59608,
+  "no_match": 7396,
+  "ambiguous": 544,
+  "rejected_by_validation": 2571,
+  "failed_provider_records": 0,
+  "failed_network_requests": 0,
+  "still_pending": 8350,
+  "eligible_still_pending": 0,
+  "total_records": 78494,
+  "total_with_usable_coordinates": 59627,
+  "database_statuses": {
+    "pending": 8350,
+    "ambiguous": 3117,
+    "no_match": 7400,
+    "matched": 59627
+  },
+  "match_rate": 0.8500976910680415,
+  "coordinate_coverage": 0.7596376793130685,
+  "actual_batches": [
+    {
+      "id": "0000-smoke",
+      "records": 100,
+      "unique_requests": 97,
+      "committed": true
+    },
+    {
+      "id": "0001-bulk",
+      "records": 24458,
+      "unique_requests": 1967,
+      "committed": true
+    },
+    {
+      "id": "0002-bulk",
+      "records": 15023,
+      "unique_requests": 1983,
+      "committed": true
+    },
+    {
+      "id": "0003-bulk",
+      "records": 9708,
+      "unique_requests": 1985,
+      "committed": true
+    },
+    {
+      "id": "0004-bulk",
+      "records": 6806,
+      "unique_requests": 1997,
+      "committed": true
+    },
+    {
+      "id": "0005-bulk",
+      "records": 5035,
+      "unique_requests": 1994,
+      "committed": true
+    },
+    {
+      "id": "0006-bulk",
+      "records": 3616,
+      "unique_requests": 1994,
+      "committed": true
+    },
+    {
+      "id": "0007-bulk",
+      "records": 2878,
+      "unique_requests": 1997,
+      "committed": true
+    },
+    {
+      "id": "0008-bulk",
+      "records": 2282,
+      "unique_requests": 1999,
+      "committed": true
+    },
+    {
+      "id": "0009-bulk",
+      "records": 213,
+      "unique_requests": 213,
+      "committed": true
+    }
+  ],
+  "http_requests": 10,
+  "active_runtime_seconds": 216.942,
+  "last_error": null,
+  "wall_elapsed_seconds": 279.332,
+  "submitted_unique_address_rows": 16226,
+  "failed_due_to_provider_or_network_records": 0,
+  "failed_record_metric_note": "No provider or network failures occurred. Exhausted network retries leave the active batch pending; see failed_network_requests and batch commit flags on a partial run.",
+  "run_unresolved_reason_counts": {
+    "provider_nomatch": 7396,
+    "returned_street_components_differ": 2433,
+    "provider_tie": 544,
+    "returned_number_differs": 138
+  }
+}

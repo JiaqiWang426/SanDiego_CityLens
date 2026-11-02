@@ -1,0 +1,146 @@
+{
+  "selected": 25,
+  "attempted": 25,
+  "census_statuses": {
+    "matched": 19,
+    "no_match": 4,
+    "ambiguous": 2,
+    "error": 0,
+    "unsupported": 0,
+    "pending": 0
+  },
+  "census_status_scope": "Existing adapter classifications; ambiguous also includes a single Census candidate rejected by conservative address checks",
+  "native_census_candidate_records": 21,
+  "native_census_multiple_candidate_records": 0,
+  "failed_status_mapping": "failed means stored error; no separate failed status exists",
+  "independent_assessments": {
+    "plausible": 11,
+    "needs_review": 8,
+    "rejected": 0,
+    "unverified": 6
+  },
+  "provider_match_rate": {
+    "numerator": 19,
+    "denominator": 25,
+    "value": 0.76
+  },
+  "independent_plausibility_rate": {
+    "numerator": 11,
+    "denominator": 25,
+    "value": 0.44
+  },
+  "plausible_among_provider_matches": {
+    "numerator": 11,
+    "denominator": 19,
+    "value": 0.5789473684210527
+  },
+  "road_distances_m": {
+    "count": 19,
+    "minimum": 5.253,
+    "median": 5.766,
+    "maximum": 799.694,
+    "at_most_10m": 17,
+    "between_10_and_50m": 0,
+    "above_50m": 2,
+    "ordered": [
+      5.253,
+      5.282,
+      5.421,
+      5.445,
+      5.523,
+      5.583,
+      5.611,
+      5.692,
+      5.714,
+      5.766,
+      5.788,
+      5.803,
+      5.806,
+      5.849,
+      5.871,
+      5.892,
+      7.18,
+      77.923,
+      799.694
+    ]
+  },
+  "roads_retrieved": 1307,
+  "road_retrieval_complete": true,
+  "census_external_requests": 25,
+  "sangis_validation_external_requests": 2,
+  "external_request_scope": "Census worker and reproducible SanGIS validation fetch only; earlier portal/schema browsing was not fully metered, so entire-session HTTP total is unknown",
+  "runtime_seconds": 37.792,
+  "safety": {
+    "source_records_unchanged": true,
+    "nonselected_geocodes_unchanged": true,
+    "completed_geocodes_unchanged": true
+  },
+  "provider_errors": [],
+  "review_examples": [
+    {
+      "report_id": "187919",
+      "address": "4600 NIMITZ BLVD, SAN DIEGO, CA",
+      "distance_m": 7.18,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "19203017",
+      "address": "4300 EL CAJON BLVD, SAN DIEGO, CA",
+      "distance_m": 5.849,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "19205964",
+      "address": "2100 UNIVERSITY AVE, SAN DIEGO, CA",
+      "distance_m": 5.806,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "20204952",
+      "address": "5000 COLLWOOD BLVD, SAN DIEGO, CA",
+      "distance_m": 5.892,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "21204884",
+      "address": "3800 OCEAN FRONT WALK, SAN DIEGO, CA",
+      "distance_m": 5.523,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "23201072",
+      "address": "1700 DEL SUR BLVD, SAN DIEGO, CA",
+      "distance_m": 77.923,
+      "reasons": [
+        "Distance exceeds diagnostic review threshold"
+      ]
+    },
+    {
+      "report_id": "24201057",
+      "address": "6200 SKYLINE DR, SAN DIEGO, CA",
+      "distance_m": 5.766,
+      "reasons": [
+        "Multiple nearby name-and-block-range-compatible segments"
+      ]
+    },
+    {
+      "report_id": "25201589",
+      "address": "7900 PARK VILLAGE RD, SAN DIEGO, CA",
+      "distance_m": 799.694,
+      "reasons": [
+        "Distance exceeds diagnostic review threshold"
+      ]
+    }
+  ],
+  "note": "Exploratory purposive sample; rates must not be extrapolated to the dataset"
+}

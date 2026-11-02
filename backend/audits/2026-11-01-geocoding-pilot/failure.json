@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-02T06:52:17.169828+00:00",
+  "mode": "verify-tools",
+  "error_type": "ValidationError",
+  "resolved": true,
+  "resolution": "Audit runner ToolCall fixture corrected to supply location.id, period and limit and use calendar_timezone. Failure happened before DB/network operations; subsequent actual adapter and endpoint preflight/postflight passed."
+}

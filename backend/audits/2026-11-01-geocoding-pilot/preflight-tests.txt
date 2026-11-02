@@ -1,0 +1,5 @@
+Worker guards and bounded selection: 8 passed (offline/isolated DB).
+
+Existing repeated-import/geocode lifecycle test:
+.                                                                        [100%]
+1 passed in 0.24s

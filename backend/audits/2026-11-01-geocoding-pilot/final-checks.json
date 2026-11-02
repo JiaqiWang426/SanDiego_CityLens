@@ -1,0 +1,30 @@
+{
+  "csv_records": 25,
+  "unique_reports": 25,
+  "census_requests": 25,
+  "native_candidate_records": 21,
+  "accepted_matches": 19,
+  "unsuccessful_coordinates_null": true,
+  "stored_precision": "block_approximate",
+  "preservation_checks": {
+    "source_records_unchanged": true,
+    "nonselected_geocodes_unchanged": true,
+    "completed_geocodes_unchanged": true
+  },
+  "adapter_and_endpoint_checks": "passed",
+  "automated_tests": {
+    "agent_passed": 152,
+    "legacy_passed": 7,
+    "failed": 0,
+    "skipped": 0
+  },
+  "artifact_secret_scan": "passed",
+  "json_artifacts_valid": true,
+  "not_executed": [
+    "separate 247-case verification suite",
+    "bulk/intersection geocoding",
+    "live OpenAI",
+    "manual ground truth",
+    "grants or role changes"
+  ]
+}

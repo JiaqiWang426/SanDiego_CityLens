@@ -1,0 +1,1725 @@
+[
+  {
+    "address": {
+      "block_number": "2200",
+      "primary_street": "CAM DE LA REINA",
+      "intersecting_street": "",
+      "normalized_address": "2200 CAM DE LA REINA, SAN DIEGO, CA",
+      "address_key": "88549504899febf9a487687ed9159afb0ee4ed5d5a9f61b6446077b3a258edb6"
+    },
+    "result": {
+      "status": "ambiguous",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "2200 CAM DE LA REINA",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "658683201"
+                },
+                "coordinates": {
+                  "x": -117.141843695943,
+                  "y": 32.771578077944
+                },
+                "addressComponents": {
+                  "zip": "92108",
+                  "streetName": "DE LA REINA",
+                  "preType": "CAM",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "1900",
+                  "state": "CA",
+                  "suffixType": "",
+                  "toAddress": "2298",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "2200 CAM DE LA REINA, SAN DIEGO, CA, 92108"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "2200",
+          "primary_street": "CAM DE LA REINA",
+          "intersecting_street": "",
+          "normalized_address": "2200 CAM DE LA REINA, SAN DIEGO, CA",
+          "address_key": "88549504899febf9a487687ed9159afb0ee4ed5d5a9f61b6446077b3a258edb6"
+        },
+        "limitation": "Interpolated block address; not an exact collision location",
+        "reason": "Provider match differs from supplied street, number, or supported locality"
+      }
+    },
+    "finished": "2026-11-02T06:53:04.456025+00:00",
+    "seconds": 0.586
+  },
+  {
+    "address": {
+      "block_number": "800",
+      "primary_street": "04TH AVE",
+      "intersecting_street": "",
+      "normalized_address": "800 04TH AVE, SAN DIEGO, CA",
+      "address_key": "2dc4665473c109ad648e3cf3aaaa41eb89b8d4c61198ce3d033a00750a362236"
+    },
+    "result": {
+      "status": "no_match",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "800 04TH AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": []
+          }
+        },
+        "input": {
+          "block_number": "800",
+          "primary_street": "04TH AVE",
+          "intersecting_street": "",
+          "normalized_address": "800 04TH AVE, SAN DIEGO, CA",
+          "address_key": "2dc4665473c109ad648e3cf3aaaa41eb89b8d4c61198ce3d033a00750a362236"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:05.912058+00:00",
+    "seconds": 0.422
+  },
+  {
+    "address": {
+      "block_number": "6000",
+      "primary_street": "COLLEGE AVE",
+      "intersecting_street": "",
+      "normalized_address": "6000 COLLEGE AVE, SAN DIEGO, CA",
+      "address_key": "4944391adc40ca7f822da33eac9f2ae2ab232d41bf68ff71c4c43dcced44f7b1"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.064117661338,
+      "latitude": 32.786943435946,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "6000 COLLEGE AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195663443"
+                },
+                "coordinates": {
+                  "x": -117.064117661338,
+                  "y": 32.786943435946
+                },
+                "addressComponents": {
+                  "zip": "92120",
+                  "streetName": "COLLEGE",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "6000",
+                  "state": "CA",
+                  "suffixType": "AVE",
+                  "toAddress": "6020",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "6000 COLLEGE AVE, SAN DIEGO, CA, 92120"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "6000",
+          "primary_street": "COLLEGE AVE",
+          "intersecting_street": "",
+          "normalized_address": "6000 COLLEGE AVE, SAN DIEGO, CA",
+          "address_key": "4944391adc40ca7f822da33eac9f2ae2ab232d41bf68ff71c4c43dcced44f7b1"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:07.363912+00:00",
+    "seconds": 0.419
+  },
+  {
+    "address": {
+      "block_number": "4600",
+      "primary_street": "NIMITZ BLVD",
+      "intersecting_street": "",
+      "normalized_address": "4600 NIMITZ BLVD, SAN DIEGO, CA",
+      "address_key": "2e11d75d2c631c009bfd1c48bd4fcc55e9f23e61083ad5a080d7f2eeed1b43a8"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.236094691658,
+      "latitude": 32.751429696787,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "4600 NIMITZ BLVD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "R",
+                  "tigerLineId": "195339446"
+                },
+                "coordinates": {
+                  "x": -117.236094691658,
+                  "y": 32.751429696787
+                },
+                "addressComponents": {
+                  "zip": "92107",
+                  "streetName": "NIMITZ",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "4600",
+                  "state": "CA",
+                  "suffixType": "BLVD",
+                  "toAddress": "4698",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "4600 NIMITZ BLVD, SAN DIEGO, CA, 92107"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "4600",
+          "primary_street": "NIMITZ BLVD",
+          "intersecting_street": "",
+          "normalized_address": "4600 NIMITZ BLVD, SAN DIEGO, CA",
+          "address_key": "2e11d75d2c631c009bfd1c48bd4fcc55e9f23e61083ad5a080d7f2eeed1b43a8"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:08.824781+00:00",
+    "seconds": 0.424
+  },
+  {
+    "address": {
+      "block_number": "500",
+      "primary_street": "SEA WORLD DR",
+      "intersecting_street": "",
+      "normalized_address": "500 SEA WORLD DR, SAN DIEGO, CA",
+      "address_key": "9e9e2705c645180f77141946536aba94c87871933d5b2e6fcbcd1296523553e8"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.22277797879,
+      "latitude": 32.761128851751,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "500 SEA WORLD DR",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195684757"
+                },
+                "coordinates": {
+                  "x": -117.22277797879,
+                  "y": 32.761128851751
+                },
+                "addressComponents": {
+                  "zip": "92109",
+                  "streetName": "SEA WORLD",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "400",
+                  "state": "CA",
+                  "suffixType": "DR",
+                  "toAddress": "598",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "500 SEA WORLD DR, SAN DIEGO, CA, 92109"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "500",
+          "primary_street": "SEA WORLD DR",
+          "intersecting_street": "",
+          "normalized_address": "500 SEA WORLD DR, SAN DIEGO, CA",
+          "address_key": "9e9e2705c645180f77141946536aba94c87871933d5b2e6fcbcd1296523553e8"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:10.278047+00:00",
+    "seconds": 0.416
+  },
+  {
+    "address": {
+      "block_number": "4300",
+      "primary_street": "EL CAJON BLVD",
+      "intersecting_street": "",
+      "normalized_address": "4300 EL CAJON BLVD, SAN DIEGO, CA",
+      "address_key": "29f97b407be5e8bfcd47233dc3437f9e7206e7cc306d31d8fc66cdc1074f4e5e"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.101811477248,
+      "latitude": 32.755179995455,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "4300 EL CAJON BLVD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "612872814"
+                },
+                "coordinates": {
+                  "x": -117.101811477248,
+                  "y": 32.755179995455
+                },
+                "addressComponents": {
+                  "zip": "92105",
+                  "streetName": "EL CAJON",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "4300",
+                  "state": "CA",
+                  "suffixType": "BLVD",
+                  "toAddress": "4330",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "4300 EL CAJON BLVD, SAN DIEGO, CA, 92105"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "4300",
+          "primary_street": "EL CAJON BLVD",
+          "intersecting_street": "",
+          "normalized_address": "4300 EL CAJON BLVD, SAN DIEGO, CA",
+          "address_key": "29f97b407be5e8bfcd47233dc3437f9e7206e7cc306d31d8fc66cdc1074f4e5e"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:11.744952+00:00",
+    "seconds": 0.428
+  },
+  {
+    "address": {
+      "block_number": "4800",
+      "primary_street": "NOYES ST",
+      "intersecting_street": "",
+      "normalized_address": "4800 NOYES ST, SAN DIEGO, CA",
+      "address_key": "6b924621c160bb448e114a45241e5b77836609cfe28e7ad67198f089772439fe"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.233215342451,
+      "latitude": 32.806502671941,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "4800 NOYES ST",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195413150"
+                },
+                "coordinates": {
+                  "x": -117.233215342451,
+                  "y": 32.806502671941
+                },
+                "addressComponents": {
+                  "zip": "92109",
+                  "streetName": "NOYES",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "4800",
+                  "state": "CA",
+                  "suffixType": "ST",
+                  "toAddress": "4898",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "4800 NOYES ST, SAN DIEGO, CA, 92109"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "4800",
+          "primary_street": "NOYES ST",
+          "intersecting_street": "",
+          "normalized_address": "4800 NOYES ST, SAN DIEGO, CA",
+          "address_key": "6b924621c160bb448e114a45241e5b77836609cfe28e7ad67198f089772439fe"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:13.199402+00:00",
+    "seconds": 0.416
+  },
+  {
+    "address": {
+      "block_number": "2100",
+      "primary_street": "UNIVERSITY AVE",
+      "intersecting_street": "",
+      "normalized_address": "2100 UNIVERSITY AVE, SAN DIEGO, CA",
+      "address_key": "c125b7380261a1f547997400e35eaab765575f2c1e241ff915362abe00f598f1"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.142103460324,
+      "latitude": 32.748501904033,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "2100 UNIVERSITY AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "657334620"
+                },
+                "coordinates": {
+                  "x": -117.142103460324,
+                  "y": 32.748501904033
+                },
+                "addressComponents": {
+                  "zip": "92104",
+                  "streetName": "UNIVERSITY",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "2100",
+                  "state": "CA",
+                  "suffixType": "AVE",
+                  "toAddress": "2198",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "2100 UNIVERSITY AVE, SAN DIEGO, CA, 92104"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "2100",
+          "primary_street": "UNIVERSITY AVE",
+          "intersecting_street": "",
+          "normalized_address": "2100 UNIVERSITY AVE, SAN DIEGO, CA",
+          "address_key": "c125b7380261a1f547997400e35eaab765575f2c1e241ff915362abe00f598f1"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:14.631973+00:00",
+    "seconds": 0.408
+  },
+  {
+    "address": {
+      "block_number": "3800",
+      "primary_street": "08TH AVE",
+      "intersecting_street": "",
+      "normalized_address": "3800 08TH AVE, SAN DIEGO, CA",
+      "address_key": "037e8a701d407fb70731ba6c30fe8692aefcef5eac09b3b005894fd07afd8573"
+    },
+    "result": {
+      "status": "no_match",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "3800 08TH AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": []
+          }
+        },
+        "input": {
+          "block_number": "3800",
+          "primary_street": "08TH AVE",
+          "intersecting_street": "",
+          "normalized_address": "3800 08TH AVE, SAN DIEGO, CA",
+          "address_key": "037e8a701d407fb70731ba6c30fe8692aefcef5eac09b3b005894fd07afd8573"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:16.096694+00:00",
+    "seconds": 0.418
+  },
+  {
+    "address": {
+      "block_number": "4300",
+      "primary_street": "51ST ST",
+      "intersecting_street": "",
+      "normalized_address": "4300 51ST ST, SAN DIEGO, CA",
+      "address_key": "3dbfd78d1544a15fd76ad62b22f25bf87321aa53d632c76b19586ef401931d1e"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.084771569983,
+      "latitude": 32.754943747658,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "4300 51ST ST",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195350040"
+                },
+                "coordinates": {
+                  "x": -117.084771569983,
+                  "y": 32.754943747658
+                },
+                "addressComponents": {
+                  "zip": "92115",
+                  "streetName": "51ST",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "4300",
+                  "state": "CA",
+                  "suffixType": "ST",
+                  "toAddress": "4398",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "4300 51ST ST, SAN DIEGO, CA, 92115"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "4300",
+          "primary_street": "51ST ST",
+          "intersecting_street": "",
+          "normalized_address": "4300 51ST ST, SAN DIEGO, CA",
+          "address_key": "3dbfd78d1544a15fd76ad62b22f25bf87321aa53d632c76b19586ef401931d1e"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:17.570299+00:00",
+    "seconds": 0.428
+  },
+  {
+    "address": {
+      "block_number": "1900",
+      "primary_street": "ISLA DEL CARMEN WAY",
+      "intersecting_street": "",
+      "normalized_address": "1900 ISLA DEL CARMEN WAY, SAN DIEGO, CA",
+      "address_key": "7447fc614b6c9207d71ba1b23c23d5cc0956b316d734e57cc7d95f15d1f0fc9b"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.064479809121,
+      "latitude": 32.562247421065,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "1900 ISLA DEL CARMEN WAY",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "R",
+                  "tigerLineId": "195364943"
+                },
+                "coordinates": {
+                  "x": -117.064479809121,
+                  "y": 32.562247421065
+                },
+                "addressComponents": {
+                  "zip": "92173",
+                  "streetName": "ISLA DEL CARMEN",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "1700",
+                  "state": "CA",
+                  "suffixType": "WAY",
+                  "toAddress": "1998",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "1900 ISLA DEL CARMEN WAY, SAN DIEGO, CA, 92173"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "1900",
+          "primary_street": "ISLA DEL CARMEN WAY",
+          "intersecting_street": "",
+          "normalized_address": "1900 ISLA DEL CARMEN WAY, SAN DIEGO, CA",
+          "address_key": "7447fc614b6c9207d71ba1b23c23d5cc0956b316d734e57cc7d95f15d1f0fc9b"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:19.016744+00:00",
+    "seconds": 0.413
+  },
+  {
+    "address": {
+      "block_number": "5000",
+      "primary_street": "COLLWOOD BLVD",
+      "intersecting_street": "",
+      "normalized_address": "5000 COLLWOOD BLVD, SAN DIEGO, CA",
+      "address_key": "4dcbde98816c9d7846174535d8d198bdad106ee1d9f199ef2450950c6c532c3d"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.084603068788,
+      "latitude": 32.767745131427,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "5000 COLLWOOD BLVD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195706986"
+                },
+                "coordinates": {
+                  "x": -117.084603068788,
+                  "y": 32.767745131427
+                },
+                "addressComponents": {
+                  "zip": "92115",
+                  "streetName": "COLLWOOD",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "5000",
+                  "state": "CA",
+                  "suffixType": "BLVD",
+                  "toAddress": "5048",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "5000 COLLWOOD BLVD, SAN DIEGO, CA, 92115"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "5000",
+          "primary_street": "COLLWOOD BLVD",
+          "intersecting_street": "",
+          "normalized_address": "5000 COLLWOOD BLVD, SAN DIEGO, CA",
+          "address_key": "4dcbde98816c9d7846174535d8d198bdad106ee1d9f199ef2450950c6c532c3d"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:20.562734+00:00",
+    "seconds": 0.502
+  },
+  {
+    "address": {
+      "block_number": "3800",
+      "primary_street": "OCEAN FRONT WALK",
+      "intersecting_street": "",
+      "normalized_address": "3800 OCEAN FRONT WALK, SAN DIEGO, CA",
+      "address_key": "ee7d93bc97a2462cecac2b8b84ca809c1cf8978554b52f5397ff29d718a3d9e8"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.253978860389,
+      "latitude": 32.784633917704,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "3800 OCEAN FRONT WALK",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195299699"
+                },
+                "coordinates": {
+                  "x": -117.253978860389,
+                  "y": 32.784633917704
+                },
+                "addressComponents": {
+                  "zip": "92109",
+                  "streetName": "OCEAN FRONT",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "3800",
+                  "state": "CA",
+                  "suffixType": "WALK",
+                  "toAddress": "3818",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "3800 OCEAN FRONT WALK, SAN DIEGO, CA, 92109"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "3800",
+          "primary_street": "OCEAN FRONT WALK",
+          "intersecting_street": "",
+          "normalized_address": "3800 OCEAN FRONT WALK, SAN DIEGO, CA",
+          "address_key": "ee7d93bc97a2462cecac2b8b84ca809c1cf8978554b52f5397ff29d718a3d9e8"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:22.011953+00:00",
+    "seconds": 0.413
+  },
+  {
+    "address": {
+      "block_number": "4000",
+      "primary_street": "ARAGON DR",
+      "intersecting_street": "",
+      "normalized_address": "4000 ARAGON DR, SAN DIEGO, CA",
+      "address_key": "afec8ef404ac9acc44b973a8b5c1dcc4ee175546f45b07119ab1fc22a67f10d9"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.052076263611,
+      "latitude": 32.750330518912,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "4000 ARAGON DR",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195351430"
+                },
+                "coordinates": {
+                  "x": -117.052076263611,
+                  "y": 32.750330518912
+                },
+                "addressComponents": {
+                  "zip": "92115",
+                  "streetName": "ARAGON",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "4000",
+                  "state": "CA",
+                  "suffixType": "DR",
+                  "toAddress": "4298",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "4000 ARAGON DR, SAN DIEGO, CA, 92115"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "4000",
+          "primary_street": "ARAGON DR",
+          "intersecting_street": "",
+          "normalized_address": "4000 ARAGON DR, SAN DIEGO, CA",
+          "address_key": "afec8ef404ac9acc44b973a8b5c1dcc4ee175546f45b07119ab1fc22a67f10d9"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:23.464165+00:00",
+    "seconds": 0.414
+  },
+  {
+    "address": {
+      "block_number": "2000",
+      "primary_street": "GRAND AVE",
+      "intersecting_street": "",
+      "normalized_address": "2000 GRAND AVE, SAN DIEGO, CA",
+      "address_key": "4de54b4a9edbc27888cf28a943c46d9d4c4820e6633a130ad929a54d1388bd81"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.232881999613,
+      "latitude": 32.799552758022,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "2000 GRAND AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195303250"
+                },
+                "coordinates": {
+                  "x": -117.232881999613,
+                  "y": 32.799552758022
+                },
+                "addressComponents": {
+                  "zip": "92109",
+                  "streetName": "GRAND",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "2000",
+                  "state": "CA",
+                  "suffixType": "AVE",
+                  "toAddress": "2098",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "2000 GRAND AVE, SAN DIEGO, CA, 92109"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "2000",
+          "primary_street": "GRAND AVE",
+          "intersecting_street": "",
+          "normalized_address": "2000 GRAND AVE, SAN DIEGO, CA",
+          "address_key": "4de54b4a9edbc27888cf28a943c46d9d4c4820e6633a130ad929a54d1388bd81"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:24.911862+00:00",
+    "seconds": 0.417
+  },
+  {
+    "address": {
+      "block_number": "400",
+      "primary_street": "A ST",
+      "intersecting_street": "",
+      "normalized_address": "400 A ST, SAN DIEGO, CA",
+      "address_key": "64187a5728a96aad3e3559e05e9ffaea2394bf755624b81690fadafd1aaf7077"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.16104236265,
+      "latitude": 32.718905656568,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "400 A ST",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195343592"
+                },
+                "coordinates": {
+                  "x": -117.16104236265,
+                  "y": 32.718905656568
+                },
+                "addressComponents": {
+                  "zip": "92101",
+                  "streetName": "A",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "400",
+                  "state": "CA",
+                  "suffixType": "ST",
+                  "toAddress": "498",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "400 A ST, SAN DIEGO, CA, 92101"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "400",
+          "primary_street": "A ST",
+          "intersecting_street": "",
+          "normalized_address": "400 A ST, SAN DIEGO, CA",
+          "address_key": "64187a5728a96aad3e3559e05e9ffaea2394bf755624b81690fadafd1aaf7077"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:26.389565+00:00",
+    "seconds": 0.431
+  },
+  {
+    "address": {
+      "block_number": "8300",
+      "primary_street": "NAVAJO RD",
+      "intersecting_street": "",
+      "normalized_address": "8300 NAVAJO RD, SAN DIEGO, CA",
+      "address_key": "d54555e544f68614ec245e6b01cd5f275c86c588e397bf56beb454e43dbd887b"
+    },
+    "result": {
+      "status": "no_match",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "8300 NAVAJO RD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": []
+          }
+        },
+        "input": {
+          "block_number": "8300",
+          "primary_street": "NAVAJO RD",
+          "intersecting_street": "",
+          "normalized_address": "8300 NAVAJO RD, SAN DIEGO, CA",
+          "address_key": "d54555e544f68614ec245e6b01cd5f275c86c588e397bf56beb454e43dbd887b"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:27.868357+00:00",
+    "seconds": 0.426
+  },
+  {
+    "address": {
+      "block_number": "1700",
+      "primary_street": "DEL SUR BLVD",
+      "intersecting_street": "",
+      "normalized_address": "1700 DEL SUR BLVD, SAN DIEGO, CA",
+      "address_key": "fce01783265fd59f36a2ce21e1677247c02c8e0c867c0bfa8673e6d313225f19"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.056335285697,
+      "latitude": 32.565415497771,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "1700 DEL SUR BLVD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "R",
+                  "tigerLineId": "195410475"
+                },
+                "coordinates": {
+                  "x": -117.056335285697,
+                  "y": 32.565415497771
+                },
+                "addressComponents": {
+                  "zip": "92173",
+                  "streetName": "DEL SUR",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "1626",
+                  "state": "CA",
+                  "suffixType": "BLVD",
+                  "toAddress": "1736",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "1700 DEL SUR BLVD, SAN DIEGO, CA, 92173"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "1700",
+          "primary_street": "DEL SUR BLVD",
+          "intersecting_street": "",
+          "normalized_address": "1700 DEL SUR BLVD, SAN DIEGO, CA",
+          "address_key": "fce01783265fd59f36a2ce21e1677247c02c8e0c867c0bfa8673e6d313225f19"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:29.353346+00:00",
+    "seconds": 0.433
+  },
+  {
+    "address": {
+      "block_number": "100",
+      "primary_street": "MARKETPLACE AVE",
+      "intersecting_street": "",
+      "normalized_address": "100 MARKETPLACE AVE, SAN DIEGO, CA",
+      "address_key": "66d66188ce9fdcc539f23c0e35b50aafff56bca39f8afb475856bb32b2e1a87e"
+    },
+    "result": {
+      "status": "no_match",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "100 MARKETPLACE AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": []
+          }
+        },
+        "input": {
+          "block_number": "100",
+          "primary_street": "MARKETPLACE AVE",
+          "intersecting_street": "",
+          "normalized_address": "100 MARKETPLACE AVE, SAN DIEGO, CA",
+          "address_key": "66d66188ce9fdcc539f23c0e35b50aafff56bca39f8afb475856bb32b2e1a87e"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:30.830749+00:00",
+    "seconds": 0.435
+  },
+  {
+    "address": {
+      "block_number": "6200",
+      "primary_street": "SKYLINE DR",
+      "intersecting_street": "",
+      "normalized_address": "6200 SKYLINE DR, SAN DIEGO, CA",
+      "address_key": "57cb28659234c2b25c883615eb6ce8b0c305656d6cb328efa8de5ff42341e688"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.06287446666,
+      "latitude": 32.70142508762,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "6200 SKYLINE DR",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195678838"
+                },
+                "coordinates": {
+                  "x": -117.06287446666,
+                  "y": 32.70142508762
+                },
+                "addressComponents": {
+                  "zip": "92114",
+                  "streetName": "SKYLINE",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "6200",
+                  "state": "CA",
+                  "suffixType": "DR",
+                  "toAddress": "6316",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "6200 SKYLINE DR, SAN DIEGO, CA, 92114"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "6200",
+          "primary_street": "SKYLINE DR",
+          "intersecting_street": "",
+          "normalized_address": "6200 SKYLINE DR, SAN DIEGO, CA",
+          "address_key": "57cb28659234c2b25c883615eb6ce8b0c305656d6cb328efa8de5ff42341e688"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:32.305313+00:00",
+    "seconds": 0.416
+  },
+  {
+    "address": {
+      "block_number": "9400",
+      "primary_street": "CAMINO RUIZ",
+      "intersecting_street": "",
+      "normalized_address": "9400 CAMINO RUIZ, SAN DIEGO, CA",
+      "address_key": "1b0f39170e7742dfc4994e58ba129564c7f13dca002b163f46802c3f0180fd53"
+    },
+    "result": {
+      "status": "ambiguous",
+      "provider": "US Census Geocoder",
+      "longitude": null,
+      "latitude": null,
+      "precision": null,
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "9400 CAMINO RUIZ",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195319156"
+                },
+                "coordinates": {
+                  "x": -117.13377048717,
+                  "y": 32.89372811254
+                },
+                "addressComponents": {
+                  "zip": "92126",
+                  "streetName": "RUIZ",
+                  "preType": "CAM",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "9400",
+                  "state": "CA",
+                  "suffixType": "",
+                  "toAddress": "9598",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "9400 CAM RUIZ, SAN DIEGO, CA, 92126"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "9400",
+          "primary_street": "CAMINO RUIZ",
+          "intersecting_street": "",
+          "normalized_address": "9400 CAMINO RUIZ, SAN DIEGO, CA",
+          "address_key": "1b0f39170e7742dfc4994e58ba129564c7f13dca002b163f46802c3f0180fd53"
+        },
+        "limitation": "Interpolated block address; not an exact collision location",
+        "reason": "Provider match differs from supplied street, number, or supported locality"
+      }
+    },
+    "finished": "2026-11-02T06:53:33.766168+00:00",
+    "seconds": 0.417
+  },
+  {
+    "address": {
+      "block_number": "2200",
+      "primary_street": "CORONADO AVE",
+      "intersecting_street": "",
+      "normalized_address": "2200 CORONADO AVE, SAN DIEGO, CA",
+      "address_key": "91239a8e7467787fb0fd0a0fbd3bd9a05df5a45e98c80a3b1c7b482b5450ecf2"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.085399093089,
+      "latitude": 32.57654654566,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "2200 CORONADO AVE",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195357792"
+                },
+                "coordinates": {
+                  "x": -117.085399093089,
+                  "y": 32.57654654566
+                },
+                "addressComponents": {
+                  "zip": "92154",
+                  "streetName": "CORONADO",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "2200",
+                  "state": "CA",
+                  "suffixType": "AVE",
+                  "toAddress": "2298",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "2200 CORONADO AVE, SAN DIEGO, CA, 92154"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "2200",
+          "primary_street": "CORONADO AVE",
+          "intersecting_street": "",
+          "normalized_address": "2200 CORONADO AVE, SAN DIEGO, CA",
+          "address_key": "91239a8e7467787fb0fd0a0fbd3bd9a05df5a45e98c80a3b1c7b482b5450ecf2"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:35.251706+00:00",
+    "seconds": 0.419
+  },
+  {
+    "address": {
+      "block_number": "7900",
+      "primary_street": "PARK VILLAGE RD",
+      "intersecting_street": "",
+      "normalized_address": "7900 PARK VILLAGE RD, SAN DIEGO, CA",
+      "address_key": "f29f403109bcf36c68fb3eb5ef8c750a7ad1b76b13ad31ce0db37fb4bf50dff1"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.160539370916,
+      "latitude": 32.939276479993,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "7900 PARK VILLAGE RD",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "R",
+                  "tigerLineId": "195416939"
+                },
+                "coordinates": {
+                  "x": -117.160539370916,
+                  "y": 32.939276479993
+                },
+                "addressComponents": {
+                  "zip": "92129",
+                  "streetName": "PARK VILLAGE",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "7930",
+                  "state": "CA",
+                  "suffixType": "RD",
+                  "toAddress": "7300",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "7900 PARK VILLAGE RD, SAN DIEGO, CA, 92129"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "7900",
+          "primary_street": "PARK VILLAGE RD",
+          "intersecting_street": "",
+          "normalized_address": "7900 PARK VILLAGE RD, SAN DIEGO, CA",
+          "address_key": "f29f403109bcf36c68fb3eb5ef8c750a7ad1b76b13ad31ce0db37fb4bf50dff1"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:36.764614+00:00",
+    "seconds": 0.468
+  },
+  {
+    "address": {
+      "block_number": "7300",
+      "primary_street": "HYATT ST",
+      "intersecting_street": "",
+      "normalized_address": "7300 HYATT ST, SAN DIEGO, CA",
+      "address_key": "d7f1e1661bb83f51e0d9fb54e7bed245220981110cade1ac74c775f645ddabf2"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.165486221,
+      "latitude": 32.790691685796,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "7300 HYATT ST",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195306518"
+                },
+                "coordinates": {
+                  "x": -117.165486221,
+                  "y": 32.790691685796
+                },
+                "addressComponents": {
+                  "zip": "92111",
+                  "streetName": "HYATT",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "7200",
+                  "state": "CA",
+                  "suffixType": "ST",
+                  "toAddress": "7398",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "7300 HYATT ST, SAN DIEGO, CA, 92111"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "7300",
+          "primary_street": "HYATT ST",
+          "intersecting_street": "",
+          "normalized_address": "7300 HYATT ST, SAN DIEGO, CA",
+          "address_key": "d7f1e1661bb83f51e0d9fb54e7bed245220981110cade1ac74c775f645ddabf2"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:38.240657+00:00",
+    "seconds": 0.422
+  },
+  {
+    "address": {
+      "block_number": "5800",
+      "primary_street": "DIVISION ST",
+      "intersecting_street": "",
+      "normalized_address": "5800 DIVISION ST, SAN DIEGO, CA",
+      "address_key": "074d4b39aa202c2bbe93f279ce8443a67b7981581a9f851bf6c71706a79f1936"
+    },
+    "result": {
+      "status": "matched",
+      "provider": "US Census Geocoder",
+      "longitude": -117.073415521135,
+      "latitude": 32.692837748593,
+      "precision": "block_approximate",
+      "details": {
+        "benchmark_requested": "Public_AR_Current",
+        "response": {
+          "result": {
+            "input": {
+              "address": {
+                "city": "San Diego",
+                "street": "5800 DIVISION ST",
+                "state": "CA"
+              },
+              "benchmark": {
+                "isDefault": true,
+                "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+                "id": "4",
+                "benchmarkName": "Public_AR_Current"
+              }
+            },
+            "addressMatches": [
+              {
+                "tigerLine": {
+                  "side": "L",
+                  "tigerLineId": "195352330"
+                },
+                "coordinates": {
+                  "x": -117.073415521135,
+                  "y": 32.692837748593
+                },
+                "addressComponents": {
+                  "zip": "92114",
+                  "streetName": "DIVISION",
+                  "preType": "",
+                  "city": "SAN DIEGO",
+                  "preDirection": "",
+                  "suffixDirection": "",
+                  "fromAddress": "5800",
+                  "state": "CA",
+                  "suffixType": "ST",
+                  "toAddress": "5898",
+                  "suffixQualifier": "",
+                  "preQualifier": ""
+                },
+                "matchedAddress": "5800 DIVISION ST, SAN DIEGO, CA, 92114"
+              }
+            ]
+          }
+        },
+        "input": {
+          "block_number": "5800",
+          "primary_street": "DIVISION ST",
+          "intersecting_street": "",
+          "normalized_address": "5800 DIVISION ST, SAN DIEGO, CA",
+          "address_key": "074d4b39aa202c2bbe93f279ce8443a67b7981581a9f851bf6c71706a79f1936"
+        },
+        "limitation": "Interpolated block address; not an exact collision location"
+      }
+    },
+    "finished": "2026-11-02T06:53:39.719065+00:00",
+    "seconds": 0.429
+  }
+]

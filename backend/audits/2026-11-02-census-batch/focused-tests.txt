@@ -1,0 +1,4 @@
+Executed: AGENT_TEST_DOCKER=1 python -m pytest backend/agent_tests/test_census_batch.py -q
+36 passed in 5.35s; 0 failed; 0 skipped. Integration used an owned disposable PostGIS container.
+
+Added checkpoint/partial-mapping regression subset: 2 passed, 36 deselected in 1.48s. No network calls.

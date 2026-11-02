@@ -41,8 +41,8 @@ UNSUPPORTED_PATTERNS = {
     'amenities':r'\b(amenit\w*|grocer\w*|restaurants?)\b',
     'development':r'\b(permits?|construction|development)\b',
     'rental_ranking':r'\b(best apartment|rank apartments|rental price)\b',
-    'service_category_breakdown':r'\b(potholes?|streetlights?|graffiti|trash|sidewalks?|service categor\w*)\b',
-    'service_status_breakdown':r'\b(closed requests?|open requests?|repaired|repair completion|request status)\b',
+    # Status grouping is supported; repair-completion claims still are not.
+    'service_status_breakdown':r'\b(repaired|repair completion)\b',
 }
 SUPPORTED_PATTERN=r'\b(collisions?|traffic|crashes?|get it done|service requests?|complaints?|public service|potholes?)\b'
 
@@ -74,8 +74,10 @@ def validated_calls(request: QueryRequest, plan: Plan, settings: Settings) -> li
         raise ValueError('Trends require aggregation')
     if plan.intent=='collision_drilldown' and 'get_traffic_collisions' not in plan.tools:
         raise ValueError('Drilldown requires bounded retrieval')
-    if plan.intent=='request_count' and 'count_service_requests' not in plan.tools:
+    if plan.intent=='request_count' and not {'count_service_requests','aggregate_service_requests'} & set(plan.tools):
         raise ValueError('Request counts require the service counter')
+    if {'count_service_requests','aggregate_service_requests'} <= set(plan.tools):
+        raise ValueError('Select one service-request measurement tool, not both')
     if len(request.locations)==2 and plan.tools and 'get_traffic_collisions' in plan.tools:
         # A page is not a comparable count. Drilldown remains possible, but a
         # two-pin collision comparison also needs authoritative aggregation.
@@ -83,16 +85,33 @@ def validated_calls(request: QueryRequest, plan: Plan, settings: Settings) -> li
             raise ValueError('Two-pin collision plans require aggregation, not page sizes')
     unsupported,_=guard_scope(request)
     unavailable_service=any(x in unsupported for x in ('service_category_breakdown','service_status_breakdown'))
-    if unavailable_service and 'count_service_requests' in plan.tools:
+    category_requested=bool(re.search(r'\b(potholes?|streetlights?|graffiti|trash|sidewalks?|service categor\w*)\b',request.question.lower()))
+    if (unavailable_service or category_requested) and 'count_service_requests' in plan.tools:
         raise ValueError('An all-category count cannot substitute for unavailable service filters')
     for pref,tool in [('service_requests','count_service_requests'),('traffic_collisions','aggregate_traffic_collisions')]:
         if pref=='service_requests' and unavailable_service:
             continue
+        if pref=='service_requests' and 'aggregate_service_requests' in plan.tools:
+            continue
         if pref in request.preferences and tool not in plan.tools:
             raise ValueError('Plan omitted an explicitly requested supported dimension')
-    nondefault=plan.exclude_linked_duplicates or any(v is not None for v in plan.collision_filters.model_dump().values())
+    service=plan.service_request_aggregation
+    if category_requested and 'aggregate_service_requests' not in plan.tools:
+        raise ValueError('Service categories require aggregate_service_requests')
+    specific_service=bool(re.search(r'\b(potholes?|streetlights?|graffiti|trash|sidewalks?)\b',request.question.lower()))
+    if specific_service and service.service_name is None:
+        raise ValueError('A specific service question requires an explicit service_name filter')
+    service_filter=service.service_name is not None or service.status is not None
+    if service_filter and 'aggregate_service_requests' not in plan.tools:
+        raise ValueError('Service filters require aggregate_service_requests')
+    nondefault=plan.exclude_linked_duplicates or service_filter or any(v is not None for v in plan.collision_filters.model_dump().values())
     if nondefault and (not plan.filter_quote or plan.filter_quote not in request.question):
         raise ValueError('Nondefault filters need an exact supporting question quote')
+    if service_filter:
+        quote=' '.join(plan.filter_quote.upper().split())
+        for value in (service.service_name,service.status):
+            if value and ' '.join(value.upper().split()) not in quote:
+                raise ValueError('Service filter must use a label present in the supporting quote')
     if len(plan.tools)*len(request.locations)>settings.max_tool_calls:
         raise ValueError('Tool-call budget exceeded')
     if not plan.tools and not plan.unsupported_dimensions:
@@ -100,6 +119,7 @@ def validated_calls(request: QueryRequest, plan: Plan, settings: Settings) -> li
     return [ToolCall(name=tool,location=loc,radius_meters=request.radius_meters,
         time_range=request.time_range,collision_filters=plan.collision_filters,
         period=plan.period,exclude_linked_duplicates=plan.exclude_linked_duplicates,
+        service_request_aggregation=plan.service_request_aggregation,
         limit=settings.max_rows) for tool in plan.tools for loc in request.locations]
 
 

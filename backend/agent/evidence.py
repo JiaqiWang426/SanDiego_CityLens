@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 from pyproj import Geod
 
 from .models import (Bucket, Claim, ComparisonMetric, EvidenceRecord, Provenance,
-                     Quality, Scope)
+                     Quality, Scope, ServiceRequestGroup)
 from .tools import REGISTRY, ToolResult
 
 COMMON_CAVEATS = [
@@ -88,20 +88,29 @@ def make_evidence(result: ToolResult) -> EvidenceRecord:
         end_exclusive=call.time_range.end,calendar_timezone=call.time_range.calendar_timezone)
     filters=({'exclude_linked_duplicates':call.exclude_linked_duplicates} if domain=='service_requests'
              else call.collision_filters.model_dump())
+    if call.name=='aggregate_service_requests':
+        filters.update(call.service_request_aggregation.model_dump())
+        filters['category_normalization']='uppercase_trim_collapse_whitespace_v1; no_synonym_mapping'
     if call.name=='aggregate_traffic_collisions':
         filters['period']=call.period
     caveats=COMMON_CAVEATS+DOMAIN_CAVEATS[domain]
     imports=result.metadata.get('dataset_imports',[])
     provenance=Provenance(dataset_import_ids=[row['id'] for row in imports],
-        dataset_imports=imports,dataset_imports_truncated=result.metadata.get('dataset_imports_truncated',False))
+        dataset_imports=imports,dataset_imports_truncated=result.metadata.get('dataset_imports_truncated',False),
+        last_successful_local_ingestion_at=result.metadata.get('last_successful_local_ingestion_at'),
+        source_updated_at=result.metadata.get('source_updated_at'))
     quality=Quality(**{k:v for k,v in result.metadata.items() if k in Quality.model_fields},
         coordinate_precision='block_approximate' if domain=='traffic_collisions' else 'source_coordinates_unverified')
-    values=dict(value=None,buckets=[],records=[],pagination=None)
-    if call.name=='count_service_requests':
+    values=dict(value=None,buckets=[],groups=[],records=[],pagination=None)
+    if call.name in {'count_service_requests','aggregate_service_requests'}:
         metric='request_id_count'
         definition='Distinct stored request IDs created in the selected radius and half-open interval.'
         if result.status=='ok':
-            values['value']=result.rows[0]['request_id_count']
+            if call.name=='aggregate_service_requests':
+                groups=[ServiceRequestGroup.model_validate(row) for row in result.rows]
+                values.update(value=sum(row.request_id_count for row in groups),groups=groups)
+            else:
+                values['value']=result.rows[0]['request_id_count']
     elif call.name=='aggregate_traffic_collisions':
         metric='geocoded_collision_report_count'
         definition='Stored geocoded police-collision report IDs in the selected radius and half-open interval.'

@@ -8,7 +8,8 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from pydantic import BaseModel, ConfigDict, Field, AwareDatetime, model_validator
 
 Domain = Literal['service_requests', 'traffic_collisions']
-ToolName = Literal['count_service_requests', 'get_traffic_collisions', 'aggregate_traffic_collisions']
+MeasurementToolName = Literal['count_service_requests', 'get_traffic_collisions', 'aggregate_traffic_collisions','aggregate_service_requests']
+ToolName = MeasurementToolName | Literal['get_dataset_metadata']
 Intent = Literal['location_summary', 'compare_locations', 'collision_trend',
                  'collision_drilldown', 'request_count', 'unsupported_dimension']
 ResponseIntent = Intent | Literal['undetermined']
@@ -87,13 +88,20 @@ class CollisionFilters(Model):
         return self
 
 
+class ServiceRequestAggregation(Model):
+    group_by: Literal['service_name','status','both']='service_name'
+    service_name: str | None=Field(default=None,max_length=200)
+    status: str | None=Field(default=None,max_length=100)
+
+
 class Plan(Model):
     """LLM chooses tools, not database statements or frontend-supplied scope."""
     intent: Intent
-    tools: list[ToolName] = Field(max_length=3)
+    tools: list[MeasurementToolName] = Field(max_length=3)
     period: Period = 'month'
     collision_filters: CollisionFilters = Field(default_factory=CollisionFilters)
     exclude_linked_duplicates: bool = False
+    service_request_aggregation: ServiceRequestAggregation=Field(default_factory=ServiceRequestAggregation)
     filter_quote: str | None = Field(default=None, max_length=500)
     unsupported_dimensions: list[UnsupportedDimension] = Field(default_factory=list, max_length=8)
 
@@ -116,12 +124,22 @@ class PlanOutput(Model):
     This schema change does not establish why an earlier live request failed.
     """
     intent: Intent
-    tools: list[ToolName]
+    tools: list[MeasurementToolName]
     period: Period
     collision_filters: CollisionFiltersOutput
     exclude_linked_duplicates: bool
+    service_request_aggregation: 'ServiceRequestAggregationOutput'
     filter_quote: str | None
     unsupported_dimensions: list[UnsupportedDimension]
+
+
+class ServiceRequestAggregationOutput(Model):
+    group_by: Literal['service_name','status','both']
+    service_name: str | None
+    status: str | None
+
+
+PlanOutput.model_rebuild()
 
 
 class Scope(Model):
@@ -139,6 +157,8 @@ class Provenance(Model):
     source_file_sha256: str | None = None
     source_freshness_verified: bool = False
     data_as_of: AwareDatetime | None = None
+    last_successful_local_ingestion_at: AwareDatetime | None=None
+    source_updated_at: AwareDatetime | None=None
     dataset_import_ids: list[int] = Field(default_factory=list)
     dataset_imports: list[dict] = Field(default_factory=list)
     dataset_imports_truncated: bool = False
@@ -151,6 +171,9 @@ class Quality(Model):
     unlocated_within_radius: Literal['not_determinable'] = 'not_determinable'
     dataset_records: int | None = None
     dataset_located_records: int | None = None
+    dataset_unlocated_records: int | None=None
+    geocoding_coverage: float | None=None
+    geocode_status_breakdown: dict[str,int] | None=None
     dataset_dated_records: int | None = None
     dataset_observed_start: AwareDatetime | None = None
     dataset_observed_end: AwareDatetime | None = None
@@ -172,6 +195,12 @@ class Bucket(Model):
             self.located_count,self.unknown_injury_count,self.unknown_fatality_count)):
             raise ValueError('Bucket diagnostic count exceeds report count')
         return self
+
+
+class ServiceRequestGroup(Model):
+    service_name: str | None
+    status: str | None
+    request_id_count: int=Field(ge=0)
 
 
 class EvidenceRecord(Model):
@@ -196,6 +225,7 @@ class EvidenceRecord(Model):
     executed_at: AwareDatetime
     elapsed_ms: float = Field(ge=0)
     buckets: list[Bucket] = Field(default_factory=list)
+    groups: list[ServiceRequestGroup] = Field(default_factory=list)
     records: list[dict] = Field(default_factory=list)
     pagination: dict | None = None
     caveats: list[str]

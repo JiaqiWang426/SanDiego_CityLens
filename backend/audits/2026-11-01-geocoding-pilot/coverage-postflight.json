@@ -1,0 +1,48 @@
+{
+  "source_address_categories": [
+    [
+      "has_intersection",
+      6840
+    ],
+    [
+      "missing_or_invalid_block",
+      1510
+    ],
+    [
+      "supported_positive_block_no_intersection",
+      70144
+    ]
+  ],
+  "current_statuses": [
+    [
+      "ambiguous",
+      2,
+      0,
+      2
+    ],
+    [
+      "matched",
+      19,
+      19,
+      19
+    ],
+    [
+      "no_match",
+      4,
+      0,
+      4
+    ],
+    [
+      "pending",
+      78469,
+      0,
+      0
+    ]
+  ],
+  "matched_coordinate_extent": [
+    -117.253978860389,
+    -117.052076263611,
+    32.562247421065,
+    32.939276479993
+  ]
+}

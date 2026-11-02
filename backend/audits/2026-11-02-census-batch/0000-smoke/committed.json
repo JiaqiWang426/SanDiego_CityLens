@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-02T08:13:00.738362+00:00",
+  "applied": {
+    "ambiguous": 4,
+    "matched": 86,
+    "no_match": 10
+  },
+  "skipped_by_guard": 0
+}

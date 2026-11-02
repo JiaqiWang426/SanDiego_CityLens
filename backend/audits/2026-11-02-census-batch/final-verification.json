@@ -1,0 +1,104 @@
+{
+  "database_statuses": {
+    "pending": 8350,
+    "ambiguous": 3117,
+    "no_match": 7400,
+    "matched": 59627
+  },
+  "pending_reasons": [
+    [
+      "intersection",
+      6840
+    ],
+    [
+      "missing_or_invalid_positive_block",
+      1510
+    ]
+  ],
+  "run_unresolved_reasons": [
+    [
+      "no_match",
+      "provider_nomatch",
+      7396
+    ],
+    [
+      "ambiguous",
+      "returned_street_components_differ",
+      2433
+    ],
+    [
+      "ambiguous",
+      "provider_tie",
+      544
+    ],
+    [
+      "ambiguous",
+      "returned_number_differs",
+      138
+    ]
+  ],
+  "top_rejected_examples": [
+    [
+      "returned_street_components_differ",
+      "2300 W MISSION BAY DR",
+      "2300 E MISSION BAY DR, SAN DIEGO, CA, 92109",
+      49
+    ],
+    [
+      "returned_street_components_differ",
+      "4400 CAM DE LA PLAZA",
+      "4400 CAMINO DE LA PLZ, SAN DIEGO, CA, 92173",
+      36
+    ],
+    [
+      "returned_street_components_differ",
+      "2400 W MISSION BAY DR",
+      "2400 E MISSION BAY DR, SAN DIEGO, CA, 92109",
+      33
+    ],
+    [
+      "returned_street_components_differ",
+      "4200 CAM DE LA PLAZA",
+      "4200 CAMINO DE LA PLZ, SAN DIEGO, CA, 92173",
+      26
+    ],
+    [
+      "returned_street_components_differ",
+      "1300 W MISSION BAY DR",
+      "1300 E MISSION BAY DR, SAN DIEGO, CA, 92109",
+      23
+    ],
+    [
+      "returned_street_components_differ",
+      "4500 CAM DE LA PLAZA",
+      "4500 CAMINO DE LA PLZ, SAN DIEGO, CA, 92173",
+      22
+    ],
+    [
+      "returned_street_components_differ",
+      "1300 PALM AVE",
+      "1300 W PALM ST, SAN DIEGO, CA, 92101",
+      21
+    ],
+    [
+      "returned_street_components_differ",
+      "2400 HOTEL CIRCLE PL",
+      "2400 HOTEL CIRCLE PL N, SAN DIEGO, CA, 92108",
+      21
+    ]
+  ],
+  "reader_role": [
+    "citylens_agent",
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "metadata_records": 78494,
+  "metadata_located": 59627,
+  "metadata_unlocated": 18867,
+  "spatial_aggregate_total": 2586,
+  "reconciliation": "passed"
+}

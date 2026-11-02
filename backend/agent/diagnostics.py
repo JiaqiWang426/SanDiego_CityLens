@@ -47,6 +47,11 @@ def model_failure_code(exc: Exception, phase: str, stage: str) -> str:
 
 
 REJECTION_REASONS = {
+    'Select one service-request measurement tool, not both':'duplicate_service_measurements',
+    'Service filters require aggregate_service_requests':'service_aggregation_required',
+    'Service categories require aggregate_service_requests':'service_aggregation_required',
+    'A specific service question requires an explicit service_name filter':'service_name_filter_required',
+    'Service filter must use a label present in the supporting quote':'service_filter_label_unverified',
     'Duplicate planned tools':'duplicate_tools',
     'Unsupported intent cannot execute data tools':'unsupported_intent_with_tools',
     'Comparison requires two pins':'comparison_requires_two_locations',

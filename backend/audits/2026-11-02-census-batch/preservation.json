@@ -1,0 +1,8 @@
+{
+  "total_records": true,
+  "source_digest": true,
+  "protected_count": true,
+  "protected_digest": true,
+  "history": true,
+  "pilot_artifacts": true
+}

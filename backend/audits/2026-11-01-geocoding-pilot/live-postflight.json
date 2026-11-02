@@ -1,0 +1,1113 @@
+{
+  "at": "2026-11-02T06:53:43.467454+00:00",
+  "identity": [
+    "citylens_agent",
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "non_administrator": true,
+  "all_tools_passed": true,
+  "adapter_results": [
+    {
+      "call": {
+        "name": "aggregate_service_requests",
+        "location": {
+          "id": "A",
+          "label": "Pilot check",
+          "latitude": 32.84,
+          "longitude": -117.25
+        },
+        "radius_meters": 800.0,
+        "time_range": {
+          "start": "2026-01-01T00:00:00-08:00",
+          "end": "2026-03-01T00:00:00-08:00",
+          "calendar_timezone": "America/Los_Angeles"
+        },
+        "collision_filters": {
+          "min_injured": null,
+          "max_injured": null,
+          "min_killed": null,
+          "max_killed": null,
+          "hit_run": null,
+          "street_name": null,
+          "hit_run_level": null
+        },
+        "period": "month",
+        "exclude_linked_duplicates": false,
+        "limit": 100,
+        "service_request_aggregation": {
+          "group_by": "both",
+          "service_name": null,
+          "status": null
+        }
+      },
+      "query_id": "q_778eb5f5ffb1459682ec473aee326531",
+      "executed_at": "2026-11-02 06:53:41.688927+00:00",
+      "elapsed_ms": 389.7614000015892,
+      "status": "ok",
+      "rows": [
+        {
+          "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+          "status": "IN PROCESS",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "ENCAMPMENT",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "ESD COLLECTIONS",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "GRAFFITI - PUBLIC",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "ILLEGAL DUMPING",
+          "status": "CLOSED",
+          "request_id_count": 3
+        },
+        {
+          "service_name": "MISSED COLLECTION",
+          "status": "CLOSED",
+          "request_id_count": 3
+        },
+        {
+          "service_name": "OTHER",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "OTHER",
+          "status": "REFERRED",
+          "request_id_count": 4
+        },
+        {
+          "service_name": "PARKS ISSUE",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "PAVEMENT MAINTENANCE",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "PAVEMENT MAINTENANCE",
+          "status": "IN PROCESS",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "PAVEMENT MAINTENANCE",
+          "status": "REFERRED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "POTHOLE",
+          "status": "CLOSED",
+          "request_id_count": 11
+        },
+        {
+          "service_name": "ROW MAINTENANCE",
+          "status": "CLOSED",
+          "request_id_count": 2
+        },
+        {
+          "service_name": "ROW MAINTENANCE",
+          "status": "IN PROCESS",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "SIDEWALK REPAIR ISSUE",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "SIDEWALK REPAIR ISSUE",
+          "status": "REFERRED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "STORMWATER",
+          "status": "CLOSED",
+          "request_id_count": 2
+        },
+        {
+          "service_name": "STORMWATER",
+          "status": "IN PROCESS",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "STREET LIGHT MAINTENANCE",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "STREET LIGHT MAINTENANCE",
+          "status": "IN PROCESS",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "STREET SWEEPING",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "TRAFFIC SIGN MAINTENANCE",
+          "status": "CLOSED",
+          "request_id_count": 2
+        },
+        {
+          "service_name": "TRAFFIC SIGNAL ISSUE",
+          "status": "CLOSED",
+          "request_id_count": 15
+        },
+        {
+          "service_name": "TRAFFIC SIGNAL TIMING",
+          "status": "CLOSED",
+          "request_id_count": 1
+        },
+        {
+          "service_name": "TREE MAINTENANCE",
+          "status": "CLOSED",
+          "request_id_count": 2
+        },
+        {
+          "service_name": "VEGETATION ENCROACHMENT",
+          "status": "REFERRED",
+          "request_id_count": 2
+        }
+      ],
+      "metadata": {
+        "domain": "service_requests",
+        "dataset_id": "get_it_done_requests",
+        "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+        "dataset_records": 303225,
+        "dataset_located_records": 303225,
+        "dataset_unlocated_records": 0,
+        "dataset_dated_records": 303225,
+        "dataset_observed_start": "2016-05-20 16:10:00+00:00",
+        "dataset_observed_end": "2026-10-27 05:47:39+00:00",
+        "last_successful_local_ingestion_at": "2026-10-28 06:19:28.788577+00:00",
+        "source_updated_at": null,
+        "source_publication_at": null,
+        "source_freshness_verified": false,
+        "source_timestamp_status": "not_recorded_for_imported_files",
+        "coverage_verified": false,
+        "coverage_scope": "dataset_wide_not_neighborhood",
+        "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+        "geocoding_coverage": null,
+        "coordinate_coverage": 1.0,
+        "geocode_status_breakdown": null,
+        "geocode_precision_breakdown": null,
+        "spatial_accuracy": "source supplied coordinates; positional accuracy not independently verified",
+        "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+        "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)",
+        "latest_import_id": 2,
+        "dataset_imports": [
+          {
+            "id": 2,
+            "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+            "imported_at": "2026-10-28T06:19:28.788577+00:00",
+            "source_file": "get_it_done_requests_CD1_datasd.csv"
+          }
+        ],
+        "dataset_imports_limit": 100,
+        "dataset_imports_truncated": false,
+        "limitations": [
+          "Imported coverage must be checked per source file; no citywide completeness guarantee.",
+          "Counts are user-submitted reports, not maintenance work or completed repairs.",
+          "Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates."
+        ]
+      },
+      "error_code": null
+    },
+    {
+      "call": {
+        "name": "get_dataset_metadata",
+        "domain": "service_requests"
+      },
+      "query_id": "q_1382cb96c560428b9f0ec0f253a7dafa",
+      "executed_at": "2026-11-02 06:53:42.079150+00:00",
+      "elapsed_ms": 287.33100002864376,
+      "status": "ok",
+      "rows": [
+        {
+          "metadata": {
+            "domain": "service_requests",
+            "dataset_id": "get_it_done_requests",
+            "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+            "limitations": [
+              "Imported coverage must be checked per source file; no citywide completeness guarantee.",
+              "Counts are user-submitted reports, not maintenance work or completed repairs.",
+              "Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates."
+            ],
+            "coverage_scope": "dataset_wide_not_neighborhood",
+            "dataset_imports": [
+              {
+                "id": 2,
+                "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+                "imported_at": "2026-10-28T06:19:28.788577+00:00",
+                "source_file": "get_it_done_requests_CD1_datasd.csv"
+              }
+            ],
+            "dataset_records": 303225,
+            "latest_import_id": 2,
+            "spatial_accuracy": "source supplied coordinates; positional accuracy not independently verified",
+            "coverage_verified": false,
+            "source_updated_at": null,
+            "geocoding_coverage": null,
+            "coordinate_coverage": 1.0,
+            "dataset_observed_end": "2026-10-27T05:47:39+00:00",
+            "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+            "dataset_dated_records": 303225,
+            "dataset_imports_limit": 100,
+            "source_publication_at": null,
+            "dataset_observed_start": "2016-05-20T16:10:00+00:00",
+            "dataset_located_records": 303225,
+            "source_timestamp_status": "not_recorded_for_imported_files",
+            "geocode_status_breakdown": null,
+            "dataset_imports_truncated": false,
+            "dataset_unlocated_records": 0,
+            "source_freshness_verified": false,
+            "geocode_precision_breakdown": null,
+            "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+            "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577+00:00",
+            "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)"
+          }
+        }
+      ],
+      "metadata": {
+        "domain": "service_requests",
+        "dataset_id": "get_it_done_requests",
+        "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+        "dataset_records": 303225,
+        "dataset_located_records": 303225,
+        "dataset_unlocated_records": 0,
+        "dataset_dated_records": 303225,
+        "dataset_observed_start": "2016-05-20 16:10:00+00:00",
+        "dataset_observed_end": "2026-10-27 05:47:39+00:00",
+        "last_successful_local_ingestion_at": "2026-10-28 06:19:28.788577+00:00",
+        "source_updated_at": null,
+        "source_publication_at": null,
+        "source_freshness_verified": false,
+        "source_timestamp_status": "not_recorded_for_imported_files",
+        "coverage_verified": false,
+        "coverage_scope": "dataset_wide_not_neighborhood",
+        "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+        "geocoding_coverage": null,
+        "coordinate_coverage": 1.0,
+        "geocode_status_breakdown": null,
+        "geocode_precision_breakdown": null,
+        "spatial_accuracy": "source supplied coordinates; positional accuracy not independently verified",
+        "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+        "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)",
+        "latest_import_id": 2,
+        "dataset_imports": [
+          {
+            "id": 2,
+            "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+            "imported_at": "2026-10-28T06:19:28.788577+00:00",
+            "source_file": "get_it_done_requests_CD1_datasd.csv"
+          }
+        ],
+        "dataset_imports_limit": 100,
+        "dataset_imports_truncated": false,
+        "limitations": [
+          "Imported coverage must be checked per source file; no citywide completeness guarantee.",
+          "Counts are user-submitted reports, not maintenance work or completed repairs.",
+          "Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates."
+        ]
+      },
+      "error_code": null
+    },
+    {
+      "call": {
+        "name": "get_dataset_metadata",
+        "domain": "traffic_collisions"
+      },
+      "query_id": "q_2599126dfd324696b3933b56cb406ad9",
+      "executed_at": "2026-11-02 06:53:42.366772+00:00",
+      "elapsed_ms": 153.10449997195974,
+      "status": "ok",
+      "rows": [
+        {
+          "metadata": {
+            "domain": "traffic_collisions",
+            "dataset_id": "police_recorded_traffic_collisions",
+            "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+            "limitations": [
+              "Police-recorded collisions only; many property-damage and freeway incidents absent.",
+              "Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.",
+              "Block-approximate locations make radius membership uncertain; event dates and local imports are not source updates."
+            ],
+            "coverage_scope": "dataset_wide_not_neighborhood",
+            "dataset_imports": [
+              {
+                "id": 7,
+                "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+                "imported_at": "2026-10-28T09:15:49.310466+00:00",
+                "source_file": "pd_collisions_datasd.csv"
+              }
+            ],
+            "dataset_records": 78494,
+            "latest_import_id": 7,
+            "spatial_accuracy": "block_approximate; source numbers anonymized to blocks; geocoding not exact collision locations",
+            "coverage_verified": false,
+            "source_updated_at": null,
+            "geocoding_coverage": 0.00024205671771090784,
+            "coordinate_coverage": 0.00024205671771090784,
+            "dataset_observed_end": "2026-10-26T23:52:00+00:00",
+            "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+            "dataset_dated_records": 78494,
+            "dataset_imports_limit": 100,
+            "source_publication_at": null,
+            "dataset_observed_start": "2015-03-19T19:00:00+00:00",
+            "dataset_located_records": 19,
+            "source_timestamp_status": "not_recorded_for_imported_files",
+            "geocode_status_breakdown": {
+              "matched": 19,
+              "pending": 78469,
+              "no_match": 4,
+              "ambiguous": 2
+            },
+            "dataset_imports_truncated": false,
+            "dataset_unlocated_records": 78475,
+            "source_freshness_verified": false,
+            "geocode_precision_breakdown": {
+              "not_recorded": 78475,
+              "block_approximate": 19
+            },
+            "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+            "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466+00:00",
+            "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)"
+          }
+        }
+      ],
+      "metadata": {
+        "domain": "traffic_collisions",
+        "dataset_id": "police_recorded_traffic_collisions",
+        "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+        "dataset_records": 78494,
+        "dataset_located_records": 19,
+        "dataset_unlocated_records": 78475,
+        "dataset_dated_records": 78494,
+        "dataset_observed_start": "2015-03-19 19:00:00+00:00",
+        "dataset_observed_end": "2026-10-26 23:52:00+00:00",
+        "last_successful_local_ingestion_at": "2026-10-28 09:15:49.310466+00:00",
+        "source_updated_at": null,
+        "source_publication_at": null,
+        "source_freshness_verified": false,
+        "source_timestamp_status": "not_recorded_for_imported_files",
+        "coverage_verified": false,
+        "coverage_scope": "dataset_wide_not_neighborhood",
+        "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+        "geocoding_coverage": 0.00024205671771090784,
+        "coordinate_coverage": 0.00024205671771090784,
+        "geocode_status_breakdown": {
+          "matched": 19,
+          "pending": 78469,
+          "no_match": 4,
+          "ambiguous": 2
+        },
+        "geocode_precision_breakdown": {
+          "not_recorded": 78475,
+          "block_approximate": 19
+        },
+        "spatial_accuracy": "block_approximate; source numbers anonymized to blocks; geocoding not exact collision locations",
+        "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+        "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)",
+        "latest_import_id": 7,
+        "dataset_imports": [
+          {
+            "id": 7,
+            "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+            "imported_at": "2026-10-28T09:15:49.310466+00:00",
+            "source_file": "pd_collisions_datasd.csv"
+          }
+        ],
+        "dataset_imports_limit": 100,
+        "dataset_imports_truncated": false,
+        "limitations": [
+          "Police-recorded collisions only; many property-damage and freeway incidents absent.",
+          "Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.",
+          "Block-approximate locations make radius membership uncertain; event dates and local imports are not source updates."
+        ]
+      },
+      "error_code": null
+    }
+  ],
+  "endpoint_results": [
+    {
+      "http_status": 200,
+      "body": {
+        "tool_call": {
+          "query_id": "q_03167c038e4d467ea6984850d5277501",
+          "tool": "aggregate_service_requests",
+          "executed_at": "2026-11-02T06:53:42.545210Z",
+          "elapsed_ms": 392.6031999872066,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "aggregate_service_requests",
+            "location": {
+              "id": "A",
+              "label": "Pilot check",
+              "latitude": 32.84,
+              "longitude": -117.25
+            },
+            "radius_meters": 800.0,
+            "time_range": {
+              "start": "2026-01-01T00:00:00-08:00",
+              "end": "2026-03-01T00:00:00-08:00",
+              "calendar_timezone": "America/Los_Angeles"
+            },
+            "collision_filters": {
+              "min_injured": null,
+              "max_injured": null,
+              "min_killed": null,
+              "max_killed": null,
+              "hit_run": null,
+              "street_name": null,
+              "hit_run_level": null
+            },
+            "period": "month",
+            "exclude_linked_duplicates": false,
+            "limit": 100,
+            "service_request_aggregation": {
+              "group_by": "both",
+              "service_name": null,
+              "status": null
+            }
+          },
+          "parameterized_sql": "SELECT * FROM citylens.aggregate_service_requests(%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+          "parameters": [
+            32.84,
+            -117.25,
+            800.0,
+            "2026-01-01T00:00:00-08:00",
+            "2026-03-01T00:00:00-08:00",
+            false,
+            "both",
+            null,
+            null
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT * FROM citylens.aggregate_service_requests(32.84, -117.25,800.0,'2026-01-01 00:00:00-08:00'::timestamptz,'2026-03-01 00:00:00-08:00'::timestamptz,false,'both',NULL,NULL);\nROLLBACK;",
+          "result_rows": [
+            {
+              "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ENCAMPMENT",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ESD COLLECTIONS",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "GRAFFITI - PUBLIC",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ILLEGAL DUMPING",
+              "status": "CLOSED",
+              "request_id_count": 3
+            },
+            {
+              "service_name": "MISSED COLLECTION",
+              "status": "CLOSED",
+              "request_id_count": 3
+            },
+            {
+              "service_name": "OTHER",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "OTHER",
+              "status": "REFERRED",
+              "request_id_count": 4
+            },
+            {
+              "service_name": "PARKS ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "REFERRED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "POTHOLE",
+              "status": "CLOSED",
+              "request_id_count": 11
+            },
+            {
+              "service_name": "ROW MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "ROW MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "SIDEWALK REPAIR ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "SIDEWALK REPAIR ISSUE",
+              "status": "REFERRED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STORMWATER",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "STORMWATER",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET LIGHT MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET LIGHT MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET SWEEPING",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "TRAFFIC SIGN MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "TRAFFIC SIGNAL ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 15
+            },
+            {
+              "service_name": "TRAFFIC SIGNAL TIMING",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "TREE MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "VEGETATION ENCROACHMENT",
+              "status": "REFERRED",
+              "request_id_count": 2
+            }
+          ]
+        },
+        "evidence": {
+          "evidence_id": "ev_2a15c3b1d1984ee29004b0283902add0",
+          "query_id": "q_03167c038e4d467ea6984850d5277501",
+          "domain": "service_requests",
+          "source_table": "citylens.service_requests",
+          "source_dataset": "get_it_done_requests",
+          "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+          "tool": "aggregate_service_requests",
+          "tool_version": "1",
+          "metric": "request_id_count",
+          "metric_definition": "Distinct stored request IDs created in the selected radius and half-open interval.",
+          "value": 64,
+          "unit": "reports",
+          "location_id": "A",
+          "scope": {
+            "latitude": 32.84,
+            "longitude": -117.25,
+            "radius_meters": 800.0,
+            "start_inclusive": "2026-01-01T00:00:00-08:00",
+            "end_exclusive": "2026-03-01T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "filters": {
+            "exclude_linked_duplicates": false,
+            "group_by": "both",
+            "service_name": null,
+            "status": null,
+            "category_normalization": "uppercase_trim_collapse_whitespace_v1; no_synonym_mapping"
+          },
+          "provenance": {
+            "import_ids": null,
+            "source_file_sha256": null,
+            "source_freshness_verified": false,
+            "data_as_of": null,
+            "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577Z",
+            "source_updated_at": null,
+            "dataset_import_ids": [
+              2
+            ],
+            "dataset_imports": [
+              {
+                "id": 2,
+                "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+                "imported_at": "2026-10-28T06:19:28.788577+00:00",
+                "source_file": "get_it_done_requests_CD1_datasd.csv"
+              }
+            ],
+            "dataset_imports_truncated": false,
+            "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+          },
+          "quality": {
+            "completeness": "unknown",
+            "coordinate_precision": "source_coordinates_unverified",
+            "unlocated_within_radius": "not_determinable",
+            "dataset_records": 303225,
+            "dataset_located_records": 303225,
+            "dataset_unlocated_records": 0,
+            "geocoding_coverage": null,
+            "geocode_status_breakdown": null,
+            "dataset_dated_records": 303225,
+            "dataset_observed_start": "2016-05-20T16:10:00Z",
+            "dataset_observed_end": "2026-10-27T05:47:39Z"
+          },
+          "status": "partial",
+          "executed_at": "2026-11-02T06:53:42.545210Z",
+          "elapsed_ms": 392.6031999872066,
+          "buckets": [],
+          "groups": [
+            {
+              "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ENCAMPMENT",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ESD COLLECTIONS",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "GRAFFITI - PUBLIC",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "ILLEGAL DUMPING",
+              "status": "CLOSED",
+              "request_id_count": 3
+            },
+            {
+              "service_name": "MISSED COLLECTION",
+              "status": "CLOSED",
+              "request_id_count": 3
+            },
+            {
+              "service_name": "OTHER",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "OTHER",
+              "status": "REFERRED",
+              "request_id_count": 4
+            },
+            {
+              "service_name": "PARKS ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "PAVEMENT MAINTENANCE",
+              "status": "REFERRED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "POTHOLE",
+              "status": "CLOSED",
+              "request_id_count": 11
+            },
+            {
+              "service_name": "ROW MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "ROW MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "SIDEWALK REPAIR ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "SIDEWALK REPAIR ISSUE",
+              "status": "REFERRED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STORMWATER",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "STORMWATER",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET LIGHT MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET LIGHT MAINTENANCE",
+              "status": "IN PROCESS",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "STREET SWEEPING",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "TRAFFIC SIGN MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "TRAFFIC SIGNAL ISSUE",
+              "status": "CLOSED",
+              "request_id_count": 15
+            },
+            {
+              "service_name": "TRAFFIC SIGNAL TIMING",
+              "status": "CLOSED",
+              "request_id_count": 1
+            },
+            {
+              "service_name": "TREE MAINTENANCE",
+              "status": "CLOSED",
+              "request_id_count": 2
+            },
+            {
+              "service_name": "VEGETATION ENCROACHMENT",
+              "status": "REFERRED",
+              "request_id_count": 2
+            }
+          ],
+          "records": [],
+          "pagination": null,
+          "caveats": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair."
+          ],
+          "error_code": null
+        }
+      }
+    },
+    {
+      "http_status": 200,
+      "body": {
+        "tool_call": {
+          "query_id": "q_2cdc173f18b04b0eb0162df077177849",
+          "tool": "get_dataset_metadata",
+          "executed_at": "2026-11-02T06:53:42.943793Z",
+          "elapsed_ms": 340.66629997687414,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "get_dataset_metadata",
+            "domain": "service_requests"
+          },
+          "parameterized_sql": "SELECT citylens.get_dataset_metadata(%s) AS metadata",
+          "parameters": [
+            "service_requests"
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT citylens.get_dataset_metadata('service_requests') AS metadata;\nROLLBACK;",
+          "result_rows": [
+            {
+              "metadata": {
+                "domain": "service_requests",
+                "dataset_id": "get_it_done_requests",
+                "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+                "limitations": [
+                  "Imported coverage must be checked per source file; no citywide completeness guarantee.",
+                  "Counts are user-submitted reports, not maintenance work or completed repairs.",
+                  "Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates."
+                ],
+                "coverage_scope": "dataset_wide_not_neighborhood",
+                "dataset_imports": [
+                  {
+                    "id": 2,
+                    "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+                    "imported_at": "2026-10-28T06:19:28.788577+00:00",
+                    "source_file": "get_it_done_requests_CD1_datasd.csv"
+                  }
+                ],
+                "dataset_records": 303225,
+                "latest_import_id": 2,
+                "spatial_accuracy": "source supplied coordinates; positional accuracy not independently verified",
+                "coverage_verified": false,
+                "source_updated_at": null,
+                "geocoding_coverage": null,
+                "coordinate_coverage": 1.0,
+                "dataset_observed_end": "2026-10-27T05:47:39+00:00",
+                "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+                "dataset_dated_records": 303225,
+                "dataset_imports_limit": 100,
+                "source_publication_at": null,
+                "dataset_observed_start": "2016-05-20T16:10:00+00:00",
+                "dataset_located_records": 303225,
+                "source_timestamp_status": "not_recorded_for_imported_files",
+                "geocode_status_breakdown": null,
+                "dataset_imports_truncated": false,
+                "dataset_unlocated_records": 0,
+                "source_freshness_verified": false,
+                "geocode_precision_breakdown": null,
+                "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+                "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577+00:00",
+                "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)"
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "service_requests",
+          "dataset_id": "get_it_done_requests",
+          "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+          "dataset_records": 303225,
+          "dataset_located_records": 303225,
+          "dataset_unlocated_records": 0,
+          "dataset_dated_records": 303225,
+          "dataset_observed_start": "2016-05-20T16:10:00+00:00",
+          "dataset_observed_end": "2026-10-27T05:47:39+00:00",
+          "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577+00:00",
+          "source_updated_at": null,
+          "source_publication_at": null,
+          "source_freshness_verified": false,
+          "source_timestamp_status": "not_recorded_for_imported_files",
+          "coverage_verified": false,
+          "coverage_scope": "dataset_wide_not_neighborhood",
+          "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+          "geocoding_coverage": null,
+          "coordinate_coverage": 1.0,
+          "geocode_status_breakdown": null,
+          "geocode_precision_breakdown": null,
+          "spatial_accuracy": "source supplied coordinates; positional accuracy not independently verified",
+          "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+          "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)",
+          "latest_import_id": 2,
+          "dataset_imports": [
+            {
+              "id": 2,
+              "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+              "imported_at": "2026-10-28T06:19:28.788577+00:00",
+              "source_file": "get_it_done_requests_CD1_datasd.csv"
+            }
+          ],
+          "dataset_imports_limit": 100,
+          "dataset_imports_truncated": false,
+          "limitations": [
+            "Imported coverage must be checked per source file; no citywide completeness guarantee.",
+            "Counts are user-submitted reports, not maintenance work or completed repairs.",
+            "Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates."
+          ]
+        },
+        "evidence": null
+      }
+    },
+    {
+      "http_status": 200,
+      "body": {
+        "tool_call": {
+          "query_id": "q_62b0f59452af44099bcd5ff6eb8824c0",
+          "tool": "get_dataset_metadata",
+          "executed_at": "2026-11-02T06:53:43.289731Z",
+          "elapsed_ms": 173.40349999722093,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "get_dataset_metadata",
+            "domain": "traffic_collisions"
+          },
+          "parameterized_sql": "SELECT citylens.get_dataset_metadata(%s) AS metadata",
+          "parameters": [
+            "traffic_collisions"
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT citylens.get_dataset_metadata('traffic_collisions') AS metadata;\nROLLBACK;",
+          "result_rows": [
+            {
+              "metadata": {
+                "domain": "traffic_collisions",
+                "dataset_id": "police_recorded_traffic_collisions",
+                "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+                "limitations": [
+                  "Police-recorded collisions only; many property-damage and freeway incidents absent.",
+                  "Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.",
+                  "Block-approximate locations make radius membership uncertain; event dates and local imports are not source updates."
+                ],
+                "coverage_scope": "dataset_wide_not_neighborhood",
+                "dataset_imports": [
+                  {
+                    "id": 7,
+                    "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+                    "imported_at": "2026-10-28T09:15:49.310466+00:00",
+                    "source_file": "pd_collisions_datasd.csv"
+                  }
+                ],
+                "dataset_records": 78494,
+                "latest_import_id": 7,
+                "spatial_accuracy": "block_approximate; source numbers anonymized to blocks; geocoding not exact collision locations",
+                "coverage_verified": false,
+                "source_updated_at": null,
+                "geocoding_coverage": 0.00024205671771090784,
+                "coordinate_coverage": 0.00024205671771090784,
+                "dataset_observed_end": "2026-10-26T23:52:00+00:00",
+                "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+                "dataset_dated_records": 78494,
+                "dataset_imports_limit": 100,
+                "source_publication_at": null,
+                "dataset_observed_start": "2015-03-19T19:00:00+00:00",
+                "dataset_located_records": 19,
+                "source_timestamp_status": "not_recorded_for_imported_files",
+                "geocode_status_breakdown": {
+                  "matched": 19,
+                  "pending": 78469,
+                  "no_match": 4,
+                  "ambiguous": 2
+                },
+                "dataset_imports_truncated": false,
+                "dataset_unlocated_records": 78475,
+                "source_freshness_verified": false,
+                "geocode_precision_breakdown": {
+                  "not_recorded": 78475,
+                  "block_approximate": 19
+                },
+                "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+                "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466+00:00",
+                "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)"
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "traffic_collisions",
+          "dataset_id": "police_recorded_traffic_collisions",
+          "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+          "dataset_records": 78494,
+          "dataset_located_records": 19,
+          "dataset_unlocated_records": 78475,
+          "dataset_dated_records": 78494,
+          "dataset_observed_start": "2015-03-19T19:00:00+00:00",
+          "dataset_observed_end": "2026-10-26T23:52:00+00:00",
+          "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466+00:00",
+          "source_updated_at": null,
+          "source_publication_at": null,
+          "source_freshness_verified": false,
+          "source_timestamp_status": "not_recorded_for_imported_files",
+          "coverage_verified": false,
+          "coverage_scope": "dataset_wide_not_neighborhood",
+          "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+          "geocoding_coverage": 0.00024205671771090784,
+          "coordinate_coverage": 0.00024205671771090784,
+          "geocode_status_breakdown": {
+            "matched": 19,
+            "pending": 78469,
+            "no_match": 4,
+            "ambiguous": 2
+          },
+          "geocode_precision_breakdown": {
+            "not_recorded": 78475,
+            "block_approximate": 19
+          },
+          "spatial_accuracy": "block_approximate; source numbers anonymized to blocks; geocoding not exact collision locations",
+          "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+          "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)",
+          "latest_import_id": 7,
+          "dataset_imports": [
+            {
+              "id": 7,
+              "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+              "imported_at": "2026-10-28T09:15:49.310466+00:00",
+              "source_file": "pd_collisions_datasd.csv"
+            }
+          ],
+          "dataset_imports_limit": 100,
+          "dataset_imports_truncated": false,
+          "limitations": [
+            "Police-recorded collisions only; many property-damage and freeway incidents absent.",
+            "Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.",
+            "Block-approximate locations make radius membership uncertain; event dates and local imports are not source updates."
+          ]
+        },
+        "evidence": null
+      }
+    }
+  ]
+}

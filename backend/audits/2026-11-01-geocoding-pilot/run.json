@@ -1,0 +1,17 @@
+{
+  "started": "2026-11-02T06:53:03.862407+00:00",
+  "finished": "2026-11-02T06:53:41.654443+00:00",
+  "seconds": 37.792,
+  "census_requests": 25,
+  "safety": {
+    "source_records_unchanged": true,
+    "nonselected_geocodes_unchanged": true,
+    "completed_geocodes_unchanged": true
+  },
+  "stats": {
+    "ambiguous": 2,
+    "no_match": 4,
+    "matched": 19
+  },
+  "selected": 25
+}

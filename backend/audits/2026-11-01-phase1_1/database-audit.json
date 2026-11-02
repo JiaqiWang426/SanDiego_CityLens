@@ -1,0 +1,655 @@
+{
+  "gid": {
+    "total": 303225,
+    "latest": "2026-10-27T05:47:39+00:00",
+    "earliest": "2016-05-20T16:10:00+00:00",
+    "missing_id": 0,
+    "distinct_ids": 303225,
+    "linked_parent": 35913,
+    "empty_location": 0,
+    "missing_status": 0,
+    "missing_service": 424,
+    "raw_missing_lat": 0,
+    "raw_missing_lng": 0,
+    "missing_location": 0,
+    "missing_timestamp": 0,
+    "outside_admission_envelope": 0
+  },
+  "schema": [
+    {
+      "data_type": "bigint",
+      "table_name": "collision_imports",
+      "column_name": "id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "collision_imports",
+      "column_name": "source_file",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "collision_imports",
+      "column_name": "sha256",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "timestamp with time zone",
+      "table_name": "collision_imports",
+      "column_name": "imported_at",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "collision_imports",
+      "column_name": "source_rows",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "collision_imports",
+      "column_name": "accepted_rows",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "collision_imports",
+      "column_name": "rejected_rows",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "collision_source_rows",
+      "column_name": "import_id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "collision_source_rows",
+      "column_name": "row_number",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "collision_source_rows",
+      "column_name": "raw_record",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "collision_source_rows",
+      "column_name": "validation_issues",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "ingestions",
+      "column_name": "id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "ingestions",
+      "column_name": "source_file",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "ingestions",
+      "column_name": "sha256",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "timestamp with time zone",
+      "table_name": "ingestions",
+      "column_name": "imported_at",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "ingestions",
+      "column_name": "source_rows",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "ingestions",
+      "column_name": "distinct_requests",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "service_requests",
+      "column_name": "service_request_id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "service_requests",
+      "column_name": "parent_id",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "timestamp with time zone",
+      "table_name": "service_requests",
+      "column_name": "requested_at",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "service_requests",
+      "column_name": "service_name",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "service_requests",
+      "column_name": "status",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "USER-DEFINED",
+      "table_name": "service_requests",
+      "column_name": "location",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "service_requests",
+      "column_name": "raw_record",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "service_requests",
+      "column_name": "ingestion_id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "report_id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "timestamp with time zone",
+      "table_name": "traffic_collisions",
+      "column_name": "occurred_at",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "police_beat",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "primary_street",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "intersecting_street",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "normalized_address",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "address_key",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "violation_section",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "violation_type",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "charge_desc",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "integer",
+      "table_name": "traffic_collisions",
+      "column_name": "injured",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "integer",
+      "table_name": "traffic_collisions",
+      "column_name": "killed",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "hit_run_level",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "boolean",
+      "table_name": "traffic_collisions",
+      "column_name": "hit_and_run",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "traffic_collisions",
+      "column_name": "raw_record",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "traffic_collisions",
+      "column_name": "validation_issues",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "bigint",
+      "table_name": "traffic_collisions",
+      "column_name": "import_id",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "USER-DEFINED",
+      "table_name": "traffic_collisions",
+      "column_name": "location",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "geocode_status",
+      "is_nullable": "NO"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "geocode_provider",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "text",
+      "table_name": "traffic_collisions",
+      "column_name": "geocode_precision",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "timestamp with time zone",
+      "table_name": "traffic_collisions",
+      "column_name": "geocoded_at",
+      "is_nullable": "YES"
+    },
+    {
+      "data_type": "jsonb",
+      "table_name": "traffic_collisions",
+      "column_name": "geocode_details",
+      "is_nullable": "YES"
+    }
+  ],
+  "indexes": [
+    {
+      "indexdef": "CREATE UNIQUE INDEX service_requests_pkey ON citylens.service_requests USING btree (service_request_id)",
+      "indexname": "service_requests_pkey",
+      "tablename": "service_requests",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX service_requests_location_idx ON citylens.service_requests USING gist (location)",
+      "indexname": "service_requests_location_idx",
+      "tablename": "service_requests",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX service_requests_requested_idx ON citylens.service_requests USING btree (requested_at)",
+      "indexname": "service_requests_requested_idx",
+      "tablename": "service_requests",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX ingestions_pkey ON citylens.ingestions USING btree (id)",
+      "indexname": "ingestions_pkey",
+      "tablename": "ingestions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX collision_source_rows_pkey ON citylens.collision_source_rows USING btree (import_id, row_number)",
+      "indexname": "collision_source_rows_pkey",
+      "tablename": "collision_source_rows",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX traffic_collisions_pkey ON citylens.traffic_collisions USING btree (report_id)",
+      "indexname": "traffic_collisions_pkey",
+      "tablename": "traffic_collisions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX collision_location_idx ON citylens.traffic_collisions USING gist (location)",
+      "indexname": "collision_location_idx",
+      "tablename": "traffic_collisions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX collision_time_idx ON citylens.traffic_collisions USING btree (occurred_at)",
+      "indexname": "collision_time_idx",
+      "tablename": "traffic_collisions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX collision_primary_street_idx ON citylens.traffic_collisions USING btree (primary_street)",
+      "indexname": "collision_primary_street_idx",
+      "tablename": "traffic_collisions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE INDEX collision_cross_street_idx ON citylens.traffic_collisions USING btree (intersecting_street)",
+      "indexname": "collision_cross_street_idx",
+      "tablename": "traffic_collisions",
+      "schemaname": "citylens",
+      "tablespace": null
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX collision_imports_pkey ON citylens.collision_imports USING btree (id)",
+      "indexname": "collision_imports_pkey",
+      "tablename": "collision_imports",
+      "schemaname": "citylens",
+      "tablespace": null
+    }
+  ],
+  "functions": [
+    {
+      "name": "count_service_requests",
+      "arguments": "latitude double precision, longitude double precision, radius_meters double precision, start_time timestamp with time zone, end_time timestamp with time zone, exclude_linked_duplicates boolean"
+    },
+    {
+      "name": "filter_traffic_collisions",
+      "arguments": "start_time timestamp with time zone, end_time timestamp with time zone, latitude double precision, longitude double precision, radius_meters double precision, min_injured integer, max_injured integer, min_killed integer, max_killed integer, hit_run boolean, street_name text, hit_run_level_filter text"
+    },
+    {
+      "name": "get_traffic_collisions",
+      "arguments": "start_time timestamp with time zone, end_time timestamp with time zone, latitude double precision, longitude double precision, radius_meters double precision, min_injured integer, max_injured integer, min_killed integer, max_killed integer, hit_run boolean, street_name text, hit_run_level_filter text, result_limit integer, result_offset integer"
+    },
+    {
+      "name": "aggregate_traffic_collisions",
+      "arguments": "start_time timestamp with time zone, end_time timestamp with time zone, latitude double precision, longitude double precision, radius_meters double precision, min_injured integer, max_injured integer, min_killed integer, max_killed integer, hit_run boolean, street_name text, hit_run_level_filter text, period text, calendar_timezone text"
+    }
+  ],
+  "collisions": {
+    "total": 78494,
+    "latest": "2026-10-26T23:52:00+00:00",
+    "located": 0,
+    "earliest": "2015-03-19T19:00:00+00:00",
+    "attempted": 0,
+    "empty_location": 0,
+    "missing_killed": 0,
+    "missing_injured": 0,
+    "has_intersection": 6840,
+    "missing_location": 78494,
+    "missing_timestamp": 0,
+    "pending_with_location": 0,
+    "missing_primary_street": 1,
+    "matched_without_location": 0
+  },
+  "gid_imports": [
+    {
+      "id": 2,
+      "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+      "imported_at": "2026-10-28T06:19:28.788577+00:00",
+      "source_file": "get_it_done_requests_CD1_datasd.csv",
+      "source_rows": 303226,
+      "distinct_requests": 303225
+    }
+  ],
+  "observed_at": "2026-11-02T05:26:06.594361+00:00",
+  "status_values": [
+    {
+      "status": "Closed",
+      "records": 257854
+    },
+    {
+      "status": "Referred",
+      "records": 35097
+    },
+    {
+      "status": "In Process",
+      "records": 9324
+    },
+    {
+      "status": "New",
+      "records": 950
+    }
+  ],
+  "format_changes": {
+    "status_rows": 0,
+    "service_rows": 0
+  },
+  "service_values": [
+    {
+      "records": 39729,
+      "service_name": "Missed Collection"
+    },
+    {
+      "records": 34098,
+      "service_name": "Illegal Dumping"
+    },
+    {
+      "records": 26415,
+      "service_name": "Parking"
+    },
+    {
+      "records": 21883,
+      "service_name": "Pothole"
+    },
+    {
+      "records": 18276,
+      "service_name": "Parking Violation"
+    },
+    {
+      "records": 17731,
+      "service_name": "Encampment"
+    },
+    {
+      "records": 13292,
+      "service_name": "Other"
+    },
+    {
+      "records": 11614,
+      "service_name": "Shared Mobility Device"
+    },
+    {
+      "records": 11381,
+      "service_name": "Street Light Maintenance"
+    },
+    {
+      "records": 10964,
+      "service_name": "Tree Maintenance"
+    },
+    {
+      "records": 8254,
+      "service_name": "Traffic Signal Issue"
+    },
+    {
+      "records": 7380,
+      "service_name": "Graffiti"
+    },
+    {
+      "records": 6759,
+      "service_name": "Sidewalk Repair Issue"
+    },
+    {
+      "records": 6411,
+      "service_name": "ROW Maintenance"
+    },
+    {
+      "records": 5885,
+      "service_name": "Parks Issue"
+    },
+    {
+      "records": 5289,
+      "service_name": "Traffic Sign Maintenance"
+    },
+    {
+      "records": 5243,
+      "service_name": "Stormwater Code Enforcement"
+    },
+    {
+      "records": 5123,
+      "service_name": "Environmental Services Code Compliance"
+    },
+    {
+      "records": 4828,
+      "service_name": "Parking - 72-Hours"
+    },
+    {
+      "records": 4741,
+      "service_name": "Traffic Engineering"
+    },
+    {
+      "records": 4601,
+      "service_name": "Traffic Signal Timing"
+    },
+    {
+      "records": 4369,
+      "service_name": "Graffiti - Public"
+    },
+    {
+      "records": 3467,
+      "service_name": "Stormwater"
+    },
+    {
+      "records": 3302,
+      "service_name": "Pavement Maintenance"
+    },
+    {
+      "records": 3018,
+      "service_name": "Dead Animal"
+    },
+    {
+      "records": 2650,
+      "service_name": "Street Sweeping"
+    },
+    {
+      "records": 2634,
+      "service_name": "Graffiti - Code Enforcement"
+    },
+    {
+      "records": 2006,
+      "service_name": "Vegetation Encroachment"
+    },
+    {
+      "records": 1684,
+      "service_name": "Trash/Recycling Collection"
+    },
+    {
+      "records": 1398,
+      "service_name": "ESD Collections"
+    },
+    {
+      "records": 1247,
+      "service_name": "STRO Violation"
+    },
+    {
+      "records": 1247,
+      "service_name": "Weed Cleanup"
+    },
+    {
+      "records": 1215,
+      "service_name": "Development Services - Code Enforcement"
+    },
+    {
+      "records": 1170,
+      "service_name": "Street Flooded"
+    },
+    {
+      "records": 1054,
+      "service_name": "Waste on Private Property"
+    },
+    {
+      "records": 844,
+      "service_name": "Oversized Vehicle"
+    },
+    {
+      "records": 815,
+      "service_name": "Right-of-Way Code Enforcement"
+    },
+    {
+      "records": 488,
+      "service_name": "Building and Land Use Enforcement"
+    },
+    {
+      "records": 424,
+      "service_name": ""
+    },
+    {
+      "records": 157,
+      "service_name": "COVID-19"
+    },
+    {
+      "records": 75,
+      "service_name": "Homeless Outreach"
+    },
+    {
+      "records": 57,
+      "service_name": "Graffiti - Private"
+    },
+    {
+      "records": 3,
+      "service_name": "Biohazard"
+    },
+    {
+      "records": 2,
+      "service_name": "Bicycle-Related Issue"
+    },
+    {
+      "records": 2,
+      "service_name": "Container Request"
+    }
+  ],
+  "format_variants": null,
+  "geocode_statuses": [
+    {
+      "records": 78494,
+      "geocode_status": "pending",
+      "geocode_precision": null
+    }
+  ],
+  "collision_imports": [
+    {
+      "id": 7,
+      "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+      "imported_at": "2026-10-28T09:15:49.310466+00:00",
+      "source_file": "pd_collisions_datasd.csv",
+      "source_rows": 78494,
+      "accepted_rows": 78494,
+      "rejected_rows": 0
+    }
+  ]
+}

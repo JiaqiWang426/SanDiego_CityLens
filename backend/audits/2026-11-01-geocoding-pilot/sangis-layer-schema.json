@@ -1,0 +1,1528 @@
+{
+  "isCoGoEnabled": false,
+  "extent": {
+    "ymin": 1775474.6678674817,
+    "zmin": 0,
+    "xmin": 6151036.999968141,
+    "ymax": 2129009.9998373985,
+    "zmax": 0,
+    "xmax": 6613420.622115061,
+    "spatialReference": {
+      "falseM": -100000,
+      "xyTolerance": 0.003280833333333333,
+      "mUnits": 10000,
+      "zUnits": 10000,
+      "latestWkid": 2230,
+      "zTolerance": 0.001,
+      "wkid": 102646,
+      "xyUnits": 3048.0060960121928,
+      "mTolerance": 0.001,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000
+    }
+  },
+  "isDataBranchVersioned": false,
+  "supportsApplyEditsWithGlobalIds": false,
+  "maxRecordCount": 2000,
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "datesInUnknownTimezone": false,
+  "type": "Feature Layer",
+  "syncEnabled": false,
+  "supportsAttachmentsByUploadId": true,
+  "editingInfo": {
+    "lastEditDate": 1791300830236
+  },
+  "relationships": [],
+  "supportedAppendCapabilities": "Features,Attachments",
+  "supportsAttachmentsResizing": true,
+  "cimVersion": "3.7.0",
+  "isDataArchived": false,
+  "id": 0,
+  "spatialReference": {
+    "falseM": -100000,
+    "xyTolerance": 0.003280833333333333,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "latestWkid": 2230,
+    "zTolerance": 0.001,
+    "wkid": 102646,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "supportsSubtypeEditing": true,
+  "supportsStatistics": true,
+  "supportedExportFormats": "csv,excel,featureCollection,filegdb,geojson,kml,shapefile,sqlite",
+  "hasLastEditTime": false,
+  "standardMaxRecordCount": 2000,
+  "isDataVersioned": false,
+  "templates": [
+    {
+      "name": "Roads_All",
+      "description": "",
+      "drawingTool": "esriFeatureEditToolLine",
+      "prototype": {
+        "attributes": {
+          "ljurisdic": null,
+          "r_psblock": null,
+          "rd30postd": null,
+          "rd30sfx": null,
+          "rhighaddr": 0,
+          "rd30full": null,
+          "segstat": null,
+          "lhighaddr": 0,
+          "rd30name": null,
+          "roadsegid": null,
+          "funclass": null,
+          "r_beat": null,
+          "f_level": 1,
+          "lpsjur": null,
+          "l_tract": null,
+          "rd20sfx": null,
+          "rlowaddr": 0,
+          "nad83n": null,
+          "lmixaddr": "N",
+          "rpsjur": null,
+          "firedriv": "Y",
+          "llowaddr": 0,
+          "obmh": "N",
+          "l_beat": null,
+          "midxcoord": null,
+          "nad83e": null,
+          "rd20name": null,
+          "rd20full": null,
+          "rd30pred": null,
+          "segclass": null,
+          "r_zip": null,
+          "dedstat": null,
+          "toycoord": null,
+          "rjurisdic": null,
+          "l_block": null,
+          "abhiaddr": 0,
+          "rightway": null,
+          "frycoord": null,
+          "fnode": null,
+          "r_block": null,
+          "pending": null,
+          "postid": null,
+          "addsegdt": null,
+          "speed": null,
+          "l_zip": null,
+          "rmixaddr": "N",
+          "abloaddr": 0,
+          "tnode": null,
+          "subdivid": null,
+          "frxcoord": null,
+          "postdate": null,
+          "length": null,
+          "roadid": null,
+          "t_level": 1,
+          "l_psblock": null,
+          "midycoord": null,
+          "oneway": "B",
+          "carto": null,
+          "toxcoord": null,
+          "rd20pred": null,
+          "r_tract": null
+        }
+      }
+    }
+  ],
+  "hasGeometryProperties": true,
+  "supportsAdvancedQueries": true,
+  "parentLayer": null,
+  "currentVersion": 12.1,
+  "canScaleSymbols": false,
+  "hasZ": true,
+  "advancedEditingCapabilities": {
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportsReturnEditResults": true,
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "objectIdField": "objectid",
+  "supportsQuantizationEditMode": true,
+  "hasContingentValuesDefinition": false,
+  "name": "Roads_All",
+  "displayField": "rd20name",
+  "supportsCalculate": true,
+  "fields": [
+    {
+      "modelName": "objectid",
+      "nullable": false,
+      "defaultValue": null,
+      "editable": false,
+      "domain": null,
+      "length": 4,
+      "name": "objectid",
+      "alias": "objectid",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "modelName": "postid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "postid",
+      "length": 255,
+      "alias": "POSTID",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "postdate",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "precision": 1,
+      "name": "postdate",
+      "length": 29,
+      "alias": "POSTDATE",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "roadsegid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "roadsegid",
+      "alias": "ROADSEGID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "FNODE",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "fnode",
+      "alias": "FNODE",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "TNODE",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "tnode",
+      "alias": "TNODE",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LENGTH",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "length",
+      "alias": "LENGTH",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "ROADID",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "roadid",
+      "alias": "ROADID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RIGHTWAY",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rightway",
+      "alias": "RIGHTWAY",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "ADDSEGDT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "precision": 1,
+      "name": "addsegdt",
+      "length": 29,
+      "alias": "ADDSEGDT",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "SEGSTAT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Seg Stat",
+        "description": "Seg Status",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "A",
+            "name": "Approved"
+          },
+          {
+            "code": "C",
+            "name": "Constructed"
+          },
+          {
+            "code": "M",
+            "name": "Maintained"
+          },
+          {
+            "code": "R",
+            "name": "Recorded"
+          },
+          {
+            "code": "T",
+            "name": "Tentative"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "segstat",
+      "length": 1,
+      "alias": "SEGSTAT",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "DEDSTAT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Dedication Status",
+        "description": "",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "A",
+            "name": "Abandoned"
+          },
+          {
+            "code": "D",
+            "name": "Dedicated"
+          },
+          {
+            "code": "O",
+            "name": "Offer for dedication"
+          },
+          {
+            "code": "P",
+            "name": "Private street"
+          },
+          {
+            "code": "U",
+            "name": "Undedicated"
+          },
+          {
+            "code": "Q",
+            "name": "Undocumented"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "dedstat",
+      "length": 1,
+      "alias": "DEDSTAT",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "FUNCLASS",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Function Class",
+        "description": "Function of Street",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "1",
+            "name": "Freeway-To-Freeway Ramp"
+          },
+          {
+            "code": "2",
+            "name": "Light (2-Lane) Collector St"
+          },
+          {
+            "code": "3",
+            "name": "Rural Collector Road"
+          },
+          {
+            "code": "4",
+            "name": "Major Road/4-Lane Major Road"
+          },
+          {
+            "code": "5",
+            "name": "Rural Light Collector/Local Rd"
+          },
+          {
+            "code": "6",
+            "name": "Prime (Primary) Arterial"
+          },
+          {
+            "code": "8",
+            "name": "Recreational Parkway"
+          },
+          {
+            "code": "7",
+            "name": "Private Street"
+          },
+          {
+            "code": "9",
+            "name": "Rural Mountain Road"
+          },
+          {
+            "code": "A",
+            "name": "Alley"
+          },
+          {
+            "code": "B",
+            "name": "Class I Bicycle Path"
+          },
+          {
+            "code": "C",
+            "name": "Collector/4-Lane Collector St"
+          },
+          {
+            "code": "D",
+            "name": "Two-Lane Major Street"
+          },
+          {
+            "code": "E",
+            "name": "Expressway"
+          },
+          {
+            "code": "F",
+            "name": "Freeway"
+          },
+          {
+            "code": "L",
+            "name": "Local Street/Cul-de-sac"
+          },
+          {
+            "code": "M",
+            "name": "Military Street Within Base"
+          },
+          {
+            "code": "P",
+            "name": "Paper Street"
+          },
+          {
+            "code": "R",
+            "name": "Freeway/Expressway On/Off Ramp"
+          },
+          {
+            "code": "S",
+            "name": "Six-Lane Major Street"
+          },
+          {
+            "code": "U",
+            "name": "Unpaved Road"
+          },
+          {
+            "code": "T",
+            "name": "Transitway"
+          },
+          {
+            "code": "W",
+            "name": "Pedestrianway/Bikeway"
+          },
+          {
+            "code": "Q",
+            "name": "Undocumented Road"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "funclass",
+      "length": 1,
+      "alias": "FUNCLASS",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ONEWAY",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": "B",
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "OneWay",
+        "description": "OneWay",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "F",
+            "name": "From"
+          },
+          {
+            "code": "T",
+            "name": "To"
+          },
+          {
+            "code": "B",
+            "name": "Both"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "oneway",
+      "length": 1,
+      "alias": "ONEWAY",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "SUBDIVID",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "subdivid",
+      "alias": "SUBDIVID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "SEGCLASS",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Seg Class",
+        "description": "Seg Class",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "1",
+            "name": "Freeway/Expressway"
+          },
+          {
+            "code": "2",
+            "name": "Highway/State Route"
+          },
+          {
+            "code": "3",
+            "name": "Minor Highway/Major Road"
+          },
+          {
+            "code": "4",
+            "name": "Arterial or Collector"
+          },
+          {
+            "code": "5",
+            "name": "Local Street"
+          },
+          {
+            "code": "6",
+            "name": "Unpaved Road"
+          },
+          {
+            "code": "7",
+            "name": "Private Road"
+          },
+          {
+            "code": "8",
+            "name": "Freeway Transition Ramp"
+          },
+          {
+            "code": "9",
+            "name": "Freeway ON/OFF Ramp"
+          },
+          {
+            "code": "A",
+            "name": "Alley"
+          },
+          {
+            "code": "H",
+            "name": "Speed Hump"
+          },
+          {
+            "code": "M",
+            "name": "Military Street Within Base"
+          },
+          {
+            "code": "P",
+            "name": "Paper Street"
+          },
+          {
+            "code": "W",
+            "name": "Walkway"
+          },
+          {
+            "code": "Z",
+            "name": "Named Private Road"
+          },
+          {
+            "code": "K",
+            "name": "Undocumented Road Named"
+          },
+          {
+            "code": "Y",
+            "name": "Undocumented Road Unnamed"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "segclass",
+      "length": 1,
+      "alias": "SEGCLASS",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "LJURISDIC",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "ljurisdic",
+      "length": 2,
+      "alias": "LJURISDIC",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "LLOWADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "llowaddr",
+      "alias": "LLOWADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LHIGHADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "lhighaddr",
+      "alias": "LHIGHADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RJURISDIC",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rjurisdic",
+      "length": 2,
+      "alias": "RJURISDIC",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RLOWADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "rlowaddr",
+      "alias": "RLOWADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "RHIGHADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "rhighaddr",
+      "alias": "RHIGHADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LMIXADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": "N",
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "YesNo",
+        "description": "YesNo",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "Y",
+            "name": "Yes"
+          },
+          {
+            "code": "N",
+            "name": "No"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "lmixaddr",
+      "length": 1,
+      "alias": "LMIXADDR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RMIXADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": "N",
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "YesNo",
+        "description": "YesNo",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "Y",
+            "name": "Yes"
+          },
+          {
+            "code": "N",
+            "name": "No"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "rmixaddr",
+      "length": 1,
+      "alias": "RMIXADDR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "PENDING",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "YesNo",
+        "description": "YesNo",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "Y",
+            "name": "Yes"
+          },
+          {
+            "code": "N",
+            "name": "No"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "pending",
+      "length": 1,
+      "alias": "PENDING",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ABLOADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "abloaddr",
+      "alias": "ABLOADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "ABHIADDR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 0,
+      "domain": null,
+      "name": "abhiaddr",
+      "alias": "ABHIADDR",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "NAD83N",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "nad83n",
+      "alias": "NAD83N",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "NAD83E",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "nad83e",
+      "alias": "NAD83E",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "SPEED",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "speed",
+      "alias": "SPEED",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "L_ZIP",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "l_zip",
+      "alias": "L_ZIP",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_ZIP",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "r_zip",
+      "alias": "R_ZIP",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "LPSJUR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "lpsjur",
+      "length": 2,
+      "alias": "LPSJUR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "RPSJUR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rpsjur",
+      "length": 2,
+      "alias": "RPSJUR",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "CARTO",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Cartographic",
+        "description": "Cartographic Symbols",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "1",
+            "name": "Freeway/Expressway"
+          },
+          {
+            "code": "2",
+            "name": "Highway/State Route"
+          },
+          {
+            "code": "3",
+            "name": "Minor Highway/Major Road"
+          },
+          {
+            "code": "4",
+            "name": "Arterial or Collector"
+          },
+          {
+            "code": "5",
+            "name": "Local Street"
+          },
+          {
+            "code": "6",
+            "name": "Unpaved Road"
+          },
+          {
+            "code": "7",
+            "name": "Private Road"
+          },
+          {
+            "code": "8",
+            "name": "Freeway Transition Ramp"
+          },
+          {
+            "code": "9",
+            "name": "Freeway ON/OFF Ramp"
+          },
+          {
+            "code": "A",
+            "name": "Alley"
+          },
+          {
+            "code": "H",
+            "name": "Speed Hump"
+          },
+          {
+            "code": "M",
+            "name": "Military Street Within Base"
+          },
+          {
+            "code": "P",
+            "name": "Paper Street"
+          },
+          {
+            "code": "W",
+            "name": "Walkway"
+          },
+          {
+            "code": "Q",
+            "name": "Undocumented"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "carto",
+      "length": 1,
+      "alias": "CARTO",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "OBMH",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": "N",
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "YesNo",
+        "description": "YesNo",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "Y",
+            "name": "Yes"
+          },
+          {
+            "code": "N",
+            "name": "No"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "obmh",
+      "length": 1,
+      "alias": "OBMH",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "FIREDRIV",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": "Y",
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Fire Drivable",
+        "description": "Fire Truck Suitability",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "N",
+            "name": "No"
+          },
+          {
+            "code": "Y",
+            "name": "Yes"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "firedriv",
+      "length": 1,
+      "alias": "FIREDRIV",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "L_BLOCK",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "l_block",
+      "alias": "L_BLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_BLOCK",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "r_block",
+      "alias": "R_BLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "L_TRACT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "l_tract",
+      "alias": "L_TRACT",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "R_TRACT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "r_tract",
+      "alias": "R_TRACT",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "L_BEAT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "l_beat",
+      "alias": "L_BEAT",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "R_BEAT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "r_beat",
+      "alias": "R_BEAT",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "FRXCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "frxcoord",
+      "alias": "FRXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "FRYCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "frycoord",
+      "alias": "FRYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "MIDXCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "midxcoord",
+      "alias": "MIDXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "MIDYCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "midycoord",
+      "alias": "MIDYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "TOXCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "toxcoord",
+      "alias": "TOXCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "TOYCOORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "toycoord",
+      "alias": "TOYCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "F_LEVEL",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 1,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "rd_Levels_1",
+        "description": "",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": 0,
+            "name": "0"
+          },
+          {
+            "code": 1,
+            "name": "1"
+          },
+          {
+            "code": 2,
+            "name": "2"
+          },
+          {
+            "code": 3,
+            "name": "3"
+          },
+          {
+            "code": 4,
+            "name": "4"
+          },
+          {
+            "code": 5,
+            "name": "5"
+          },
+          {
+            "code": 6,
+            "name": "6"
+          },
+          {
+            "code": 7,
+            "name": "7"
+          },
+          {
+            "code": 8,
+            "name": "8"
+          },
+          {
+            "code": 9,
+            "name": "9"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "f_level",
+      "alias": "F_LEVEL",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "T_LEVEL",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": 1,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "rd_Levels_1",
+        "description": "",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": 0,
+            "name": "0"
+          },
+          {
+            "code": 1,
+            "name": "1"
+          },
+          {
+            "code": 2,
+            "name": "2"
+          },
+          {
+            "code": 3,
+            "name": "3"
+          },
+          {
+            "code": 4,
+            "name": "4"
+          },
+          {
+            "code": 5,
+            "name": "5"
+          },
+          {
+            "code": 6,
+            "name": "6"
+          },
+          {
+            "code": 7,
+            "name": "7"
+          },
+          {
+            "code": 8,
+            "name": "8"
+          },
+          {
+            "code": 9,
+            "name": "9"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "t_level",
+      "alias": "T_LEVEL",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "modelName": "L_PSBLOCK",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "l_psblock",
+      "alias": "L_PSBLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "r_psblock",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "r_psblock",
+      "alias": "R_PSBLOCK",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "rd20pred",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd20pred",
+      "length": 1,
+      "alias": "RD20PRED",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20name",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd20name",
+      "length": 20,
+      "alias": "RD20NAME",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20sfx",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd20sfx",
+      "length": 2,
+      "alias": "RD20SFX",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd20full",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd20full",
+      "length": 25,
+      "alias": "RD20FULL",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30pred",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd30pred",
+      "length": 2,
+      "alias": "RD30PRED",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30name",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd30name",
+      "length": 30,
+      "alias": "RD30NAME",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30sfx",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd30sfx",
+      "length": 4,
+      "alias": "RD30SFX",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30postd",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd30postd",
+      "length": 2,
+      "alias": "RD30POSTD",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "rd30full",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "rd30full",
+      "length": 41,
+      "alias": "RD30FULL",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "virtual": true,
+      "nullable": true,
+      "editable": false,
+      "defaultValue": null,
+      "domain": null,
+      "name": "SHAPE__Length",
+      "alias": "SHAPE__Length",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "maxRecordCountFactor": 1,
+  "dateFieldsTimeReference": {
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false,
+    "timeZone": "UTC"
+  },
+  "supportsFieldDescriptionProperty": true,
+  "hasM": false,
+  "allowGeometryUpdates": true,
+  "useStandardizedQueries": true,
+  "globalIdField": null,
+  "sourceSpatialReference": {
+    "wkt": "PROJCS[\"NAD_1983_StatePlane_California_VI_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",6561666.666666666],PARAMETER[\"False_Northing\",1640416.666666667],PARAMETER[\"Central_Meridian\",-116.25],PARAMETER[\"Standard_Parallel_1\",32.78333333333333],PARAMETER[\"Standard_Parallel_2\",33.88333333333333],PARAMETER[\"Latitude_Of_Origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]",
+    "falseM": -100000,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "zTolerance": 0.001,
+    "wkid": 2230,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "description": "This dataset comprises road centerlines for all roads in San Diego County. Road centerline information is collected from recorded documents (subdivision and parcel maps) and information provided by local jurisdiction's (Cities in San Diego County, County of San Diego). Road names and address ranges are as designated by the official address coordinator for each jurisdiction. Jurisdictional information is created from spatial overlays with other data layers (e.g. Jurisdiction, Census Tract).The layer contains both public and private roads. Not all roads are shown on official, recorded documents. Centerlines may be included for dedicated public roads even if they have not been constructed. Public road names are the official names as maintained by the addressing authority for the jurisdiction in which the road is located. Official road names may not match the common or local name used to identify the road (e.g. State Route 94 is the official name of certain road segments commonly referred to as Campo Road).Private roads are either named or unnamed. Named private roads are as shown on official recorded documents or as directed by the addressing authority for the jurisdiction in which the road is located. Unnamed private roads are included where requested by the local jurisdiction or by SanGIS JPA members (primarily emergency response dispatch agencies). Roads are comprised of road segments that are individually identified by a unique, and persistent, ID (ROADSEGID). Roads segments are terminated where they intersect with each other, at jurisdictional boundaries (i.e. city limits), certain census tract and law beat boundaries, at locations where road names change, and at other locations as required by SanGIS JPA members. Each road segment terminates at an intersection point that can be found in the ROADS_INTERSECTION layer.Road centerlines do not necessarily follow the centerline of dedicated rights-of-way (ROW). Centerlines are adjusted as needed to fit the actual, constructed roadway. However, many road centerline segments are created initially based on record documents prior to construction and may not have been updated to meet as-built locations. Please notify SanGIS if the actual location differs from that shown. See the SanGIS website for contact information and reporting problems (http://www.sangis.org).Note, the road speeds in this layer are based on road segment class and were published as part of an agreement between San Diego Fire-Rescue, the San Diego County Sheriff's Department, and SanGIS. The average speed is based on heavy fire vehicles and may not represent the posted speed limit.",
+  "syncCanReturnChanges": true,
+  "supportsAsyncDelete": true,
+  "supportsAdminApi": true,
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin"
+  ],
+  "geometryProperties": {
+    "shapeLengthFieldName": "SHAPE__Length",
+    "units": "esriFeet"
+  },
+  "supportsRollbackOnFailureParameter": true,
+  "isDataReplicaTracked": false,
+  "standardMaxRecordCountNoGeometry": 16000,
+  "supportsTruncate": true,
+  "indexes": [
+    {
+      "name": "r3023_sde_rowid_uk",
+      "isUnique": true,
+      "description": "",
+      "fields": "objectid",
+      "isAscending": true
+    },
+    {
+      "name": "a2917_ix1",
+      "isUnique": false,
+      "description": "",
+      "fields": "shape",
+      "isAscending": true
+    }
+  ],
+  "supportedAppendSourceFilterFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "editFieldsInfo": null,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "GUIDFormat": "O",
+  "minScale": 0,
+  "hasAttachments": false,
+  "queryBinsCapabilities": {
+    "supportedNormalizationTypes": [
+      "boxCox",
+      "field",
+      "inverse",
+      "log",
+      "naturalLog",
+      "percentOfTotal",
+      "squareRoot"
+    ],
+    "supportsNormalization": true,
+    "supportsSnapToData": true,
+    "supportsFixedIntervalBin": true,
+    "supportsStackBy": true,
+    "supportsDateBin": true,
+    "supportsSplitBy": true,
+    "supportsClassificationBin": true,
+    "supportsAggIds": true,
+    "supportsReturnFullIntervalBin": true,
+    "supportsFirstDayOfWeek": true,
+    "supportedStatisticTypes": [
+      "count",
+      "sum",
+      "min",
+      "max",
+      "avg",
+      "stddev",
+      "var",
+      "percentile_cont",
+      "percentile_disc"
+    ],
+    "supportsAutoIntervalBin": true,
+    "supportsFixedBoundariesBin": true
+  },
+  "advancedQueryCapabilities": {
+    "supportsSqlExpression": true,
+    "supportsQueryWithResultType": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithCacheHint": false,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsCurrentUserQueries": true,
+    "supportsQueryAttachmentsWithReturnUrl": true,
+    "fullTextSearchCapabilities": {
+      "supportsOperator": true,
+      "supportsSearchOperator": true
+    },
+    "supportsDefaultSR": true,
+    "supportsQueryDateBins": true,
+    "supportsQueryBins": true,
+    "supportsQueryWithLodSR": true,
+    "supportsPaginationOnAggregatedQueries": true,
+    "supportsPagination": true,
+    "supportsMaxRecordCountFactor": true,
+    "supportsDegeneratedQuantizedGeometry": true,
+    "fullTextSearchableFields": [],
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsQueryAttachmentWithTypeWildcard": true,
+    "supportsReturningGeometryProperties": true,
+    "supportsFullTextSearch": true,
+    "supportsQueryWithDistance": true,
+    "supportsLod": true,
+    "supportsQueryAttachmentOrderByFields": true,
+    "supportsCountDistinct": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsQueryAttachments": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryAttachmentsCountOnly": true,
+    "supportsISODOW": true,
+    "supportsOrderByOnlyOnLayerFields": false,
+    "supportsOutFieldSqlExpression": true,
+    "supportsTopFeaturesQuery": true,
+    "supportsReturningGeometryEnvelope": true,
+    "supportsDistinct": true,
+    "supportsReturningGeometryCentroid": false,
+    "supportsQueryAnalytic": true,
+    "supportsPercentileStatistics": true,
+    "supportsISOWeek": true,
+    "supportsHavingClause": true
+  },
+  "subtypeField": "",
+  "supportsValidateSQL": true,
+  "enableZDefaults": true,
+  "serviceItemId": "66ca42638c794646aa85f689a613a5f2",
+  "allowUpdateWithoutMValues": true,
+  "supportsCoordinatesQuantization": true,
+  "types": [],
+  "capabilities": "Query,Extract",
+  "maxScale": 0,
+  "supportsAppend": true,
+  "supportsExceedsLimitStatistics": true,
+  "defaultVisibility": true,
+  "advancedQueryAnalyticCapabilities": {
+    "supportsAsync": true,
+    "supportsLinearRegression": true,
+    "supportsPercentileAnalytic": false
+  },
+  "hasMetadata": true,
+  "supportedAppendFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "tileMaxRecordCount": 2000,
+  "typeIdField": "",
+  "supportsASyncCalculate": true,
+  "supportsVCSProjection": true,
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "sqlParserVersion": "PG_11.4.0",
+  "drawingInfo": {
+    "renderer": {
+      "symbol": {
+        "color": [
+          123,
+          147,
+          54,
+          255
+        ],
+        "width": 1,
+        "style": "esriSLSSolid",
+        "type": "esriSLS"
+      },
+      "type": "simple"
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "geometryField": {
+    "sqlType": "sqlTypeOther",
+    "nullable": true,
+    "editable": true,
+    "name": "shape",
+    "typeName": "st_geometry",
+    "length": 2147483647,
+    "type": "esriFieldTypeGeometry"
+  },
+  "copyrightText": "SanGIS using information from documents recorded with the County of San Diego and the addressing authorities in the 18 cities in San Diego County.",
+  "zDefault": 0,
+  "geometryType": "esriGeometryPolyline",
+  "supportsLayerOverrides": true
+}

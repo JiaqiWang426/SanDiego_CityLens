@@ -1,0 +1,66 @@
+{
+  "columns": [
+    "service_request_id",
+    "service_request_parent_id",
+    "sap_notification_number",
+    "date_requested",
+    "case_age_days",
+    "case_record_type",
+    "service_name",
+    "service_name_detail",
+    "date_closed",
+    "status",
+    "lat",
+    "lng",
+    "street_address",
+    "zipcode",
+    "council_district",
+    "comm_plan_code",
+    "comm_plan_name",
+    "park_name",
+    "case_origin",
+    "referred",
+    "iamfloc",
+    "floc",
+    "public_description"
+  ],
+  "rows": 303226,
+  "distinct_ids": 303225,
+  "district_values": {
+    "1": 303226
+  },
+  "service_distinct_nonempty": 44,
+  "status_values": {
+    "Closed": 257854,
+    "Referred": 35098,
+    "In Process": 9324,
+    "New": 950
+  },
+  "collisions": {
+    "columns": [
+      "REPORT_ID",
+      "DATE_TIME",
+      "POLICE_BEAT",
+      "ADDRESS_NO_PRIMARY",
+      "ADDRESS_PD_PRIMARY",
+      "ADDRESS_ROAD_PRIMARY",
+      "ADDRESS_SFX_PRIMARY",
+      "ADDRESS_PD_INTERSECTING",
+      "ADDRESS_NAME_INTERSECTING",
+      "ADDRESS_SFX_INTERSECTING",
+      "VIOLATION_SECTION",
+      "VIOLATION_TYPE",
+      "CHARGE_DESC",
+      "INJURED",
+      "KILLED",
+      "HIT_RUN_LVL"
+    ],
+    "rows": 78494,
+    "eligible_for_existing_census_adapter": 70144,
+    "has_intersection": 6840,
+    "missing_or_nonpositive_block": 8350,
+    "unsupported_by_existing_census_adapter": 8350,
+    "missing_primary_street": 1,
+    "distinct_ids": 78494
+  }
+}
