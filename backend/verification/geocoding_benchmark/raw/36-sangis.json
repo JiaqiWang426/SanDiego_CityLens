@@ -1,0 +1,199 @@
+{
+  "address_id": "36",
+  "provider": "sangis",
+  "input_address": "1450 El Prado, San Diego, CA",
+  "request_url": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0/query?where=addrnmbr%3D1450+AND+UPPER%28addrname%29+IN+%28%27EL+PRADO%27%29&outFields=objectid%2Caddrnmbr%2Caddrfrac%2Caddrpdir%2Caddrname%2Caddrsfx%2Caddrpostd%2Caddrunit%2Caddrzip%2Ccommunity%2Caddrjur%2Cstate%2Cplacement_location%2Casource%2Capn%2Croadsegid&outSR=4326&returnGeometry=true&resultRecordCount=200&f=json",
+  "fetched_at": "2026-11-03T00:18:46.760076+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "EL PRADO",
+          "addrsfx": null,
+          "addrzip": "92101",
+          "addrpostd": null,
+          "community": "San Diego",
+          "addrpdir": null,
+          "asource": "S",
+          "roadsegid": 204882,
+          "placement_location": "S",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 2424,
+          "apn": "5344500800",
+          "addrnmbr": 1450
+        },
+        "geometry": {
+          "x": -117.15045153453197,
+          "y": 32.73216262956651
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "EL PRADO",
+          "addrsfx": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "asource": "M",
+          "roadsegid": null,
+          "placement_location": "C",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 1208870,
+          "apn": "7602125200",
+          "addrnmbr": 1450
+        },
+        "geometry": {
+          "x": -117.14532310641889,
+          "y": 32.7317294369843
+        }
+      }
+    ],
+    "exceededTransferLimit": false,
+    "hasM": false,
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "modelName": "objectid",
+        "defaultValue": null,
+        "name": "objectid",
+        "length": 4,
+        "alias": "objectid",
+        "type": "esriFieldTypeOID"
+      },
+      {
+        "modelName": "ADDRNMBR",
+        "defaultValue": null,
+        "name": "addrnmbr",
+        "alias": "NUMBER",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "ADDRFRAC",
+        "defaultValue": null,
+        "name": "addrfrac",
+        "length": 3,
+        "alias": "FRACTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPDIR",
+        "defaultValue": null,
+        "name": "addrpdir",
+        "length": 2,
+        "alias": "PREDIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRNAME",
+        "defaultValue": null,
+        "name": "addrname",
+        "length": 30,
+        "alias": "NAME",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRSFX",
+        "defaultValue": null,
+        "name": "addrsfx",
+        "length": 4,
+        "alias": "SUFFIX",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPOSTD",
+        "defaultValue": null,
+        "name": "addrpostd",
+        "length": 2,
+        "alias": "POST_DIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRUNIT",
+        "defaultValue": null,
+        "name": "addrunit",
+        "length": 8,
+        "alias": "UNIT",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRZIP",
+        "defaultValue": null,
+        "name": "addrzip",
+        "length": 5,
+        "alias": "ZIP",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "COMMUNITY",
+        "defaultValue": null,
+        "name": "community",
+        "length": 20,
+        "alias": "POSTAL_COMMUNITY",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRJUR",
+        "defaultValue": null,
+        "name": "addrjur",
+        "length": 2,
+        "alias": "JURISDICTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "STATE",
+        "defaultValue": "CA",
+        "name": "state",
+        "length": 2,
+        "alias": "STATE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "PLACEMENT_LOCATION",
+        "defaultValue": null,
+        "name": "placement_location",
+        "length": 1,
+        "alias": "PLACEMENT_LOCATION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "SOURCE",
+        "defaultValue": null,
+        "name": "asource",
+        "length": 1,
+        "alias": "ASOURCE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "APN",
+        "defaultValue": null,
+        "name": "apn",
+        "length": 10,
+        "alias": "APN",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ROADSEGID",
+        "defaultValue": null,
+        "name": "roadsegid",
+        "alias": "ROADSEGID",
+        "type": "esriFieldTypeInteger"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPoint"
+  },
+  "transport_status": "ok",
+  "latency_ms": 298.141
+}

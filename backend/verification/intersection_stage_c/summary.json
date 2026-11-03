@@ -1,0 +1,212 @@
+{
+  "validation_version": "sangis-stage-c-strict-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "method_version": "sangis-stage-a-local-v2",
+  "validated_at": "2026-11-03T05:59:39.840185+00:00",
+  "stage_b": {
+    "run_manifest_sha256": "c098e0398f2507126efd5d04241f975ece76a8d26f51e6a35ef4cca80dbb47df",
+    "candidate_sha256": "21f56b1bc04220295c9d6a480cbb0c7e093d20ce532e649a3ac8706da9bfc1d6",
+    "accepted_pairs": 2043,
+    "accepted_reports": 4319
+  },
+  "pairs": {
+    "checked": 2043,
+    "pass": 1925,
+    "unknown": 90,
+    "provider_error": 0,
+    "fail": 28
+  },
+  "reports": {
+    "checked": 4319,
+    "pass": 4112,
+    "unknown": 130,
+    "provider_error": 0,
+    "fail": 77
+  },
+  "check_outcomes_pairs": {
+    "topology": {
+      "pass": 2038,
+      "fail": 5
+    },
+    "independent": {
+      "pass": 1929,
+      "unknown": 91,
+      "fail": 23
+    }
+  },
+  "check_outcomes_reports": {
+    "provenance": {
+      "pass": 4319
+    }
+  },
+  "exclusion_reasons_pairs": {
+    "independent:road_name_not_identified_in_independent_source": 91,
+    "independent:named_road_geometry_inconsistent_with_junction": 22,
+    "topology:additional_nonsupported_shared_node": 4,
+    "topology:grade_separation_evidence_in_pair": 2,
+    "topology:incident_segment_far_endpoint_unresolved": 1,
+    "independent:conflicting_directional_name_at_junction": 1
+  },
+  "exclusion_reasons_reports": {
+    "independent:road_name_not_identified_in_independent_source": 131,
+    "independent:named_road_geometry_inconsistent_with_junction": 59,
+    "topology:incident_segment_far_endpoint_unresolved": 11,
+    "topology:additional_nonsupported_shared_node": 4,
+    "independent:conflicting_directional_name_at_junction": 3,
+    "topology:grade_separation_evidence_in_pair": 2
+  },
+  "independent_evidence": {
+    "unique_scopes": 1974,
+    "scope_statuses": {
+      "ok": 1974
+    },
+    "origins": {
+      "reused:prior_interrupted_stage_c": 1910,
+      "reused:stage_b_independent_evidence": 62,
+      "live": 2
+    },
+    "live_attempts": 2,
+    "budget": 400
+  },
+  "coverage": {
+    "denominator": 78494,
+    "existing_matched": 59627,
+    "existing_coverage_percent": 75.9638,
+    "eligible_allowlist_reports": 4112,
+    "projected_matched_if_entire_allowlist_deployed": 63739,
+    "projected_coverage_percent": 81.2024,
+    "projected_gain_percentage_points": 5.2386,
+    "stage_b_proposal_ceiling_percent": 81.4661,
+    "deployed_by_stage_c": 0
+  },
+  "distribution": {
+    "by_year": {
+      "2016": {
+        "pass": 120,
+        "unknown": 2
+      },
+      "2017": {
+        "pass": 16,
+        "unknown": 3
+      },
+      "2018": {
+        "fail": 9,
+        "pass": 266,
+        "unknown": 5
+      },
+      "2019": {
+        "fail": 2,
+        "pass": 319,
+        "unknown": 5
+      },
+      "2020": {
+        "fail": 13,
+        "pass": 360,
+        "unknown": 11
+      },
+      "2021": {
+        "fail": 9,
+        "pass": 496,
+        "unknown": 13
+      },
+      "2022": {
+        "fail": 11,
+        "pass": 474,
+        "unknown": 23
+      },
+      "2023": {
+        "fail": 4,
+        "pass": 526,
+        "unknown": 18
+      },
+      "2024": {
+        "fail": 10,
+        "pass": 508,
+        "unknown": 15
+      },
+      "2025": {
+        "fail": 13,
+        "pass": 520,
+        "unknown": 22
+      },
+      "2026": {
+        "fail": 6,
+        "pass": 507,
+        "unknown": 13
+      }
+    },
+    "by_police_division": {
+      "Central": {
+        "fail": 8,
+        "pass": 870,
+        "unknown": 20
+      },
+      "Eastern": {
+        "fail": 12,
+        "pass": 447,
+        "unknown": 7
+      },
+      "Mid-City": {
+        "fail": 11,
+        "pass": 499
+      },
+      "Northeastern": {
+        "fail": 1,
+        "pass": 257,
+        "unknown": 35
+      },
+      "Northern": {
+        "fail": 24,
+        "pass": 635,
+        "unknown": 20
+      },
+      "Northwestern": {
+        "fail": 2,
+        "pass": 160,
+        "unknown": 11
+      },
+      "Southeastern": {
+        "fail": 3,
+        "pass": 380,
+        "unknown": 6
+      },
+      "Southern": {
+        "fail": 1,
+        "pass": 247,
+        "unknown": 19
+      },
+      "Western": {
+        "fail": 15,
+        "pass": 617,
+        "unknown": 12
+      }
+    }
+  },
+  "quality": {
+    "sample_pairs": 64,
+    "sample_reports": 128,
+    "sample_screening_flags": {
+      "limited_access_or_ramp_context": 5,
+      "near_parallel_named_lines": 3
+    },
+    "population_screening_flags_passed_pairs": {
+      "limited_access_or_ramp_context": 45,
+      "named_road_15_to_30m_from_node": 8,
+      "near_parallel_named_lines": 35,
+      "tiger_named_lines_separated_over_5m": 6
+    },
+    "review_recorded": true,
+    "systematic_issue_detected": false
+  },
+  "collision_updates": 0,
+  "before_state_matches_stage_b": true,
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "deployment_gate": {
+    "allowlist_ready_for_review": true,
+    "requires_separate_explicit_approval": true,
+    "blocking_reasons": []
+  }
+}

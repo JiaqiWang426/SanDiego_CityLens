@@ -1,0 +1,18 @@
+{
+  "validation_version": "sangis-stage-c-strict-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "method_version": "sangis-stage-a-local-v2",
+  "files": {
+    "verification-plan.json": "f5260f3919d610c2041b577cce152f6e1ceaf6a7fbc913e41ac2c4c458b448a5",
+    "validation_results.csv": "5e9caf7e589780d9727d654b257e3f3e6ea73962f3d3223737f2be802086426d",
+    "deployment_allowlist.csv": "5cc1ae3c9cc4a53ca8b400cd777544778233a508c34f4475a33c4d66454e00f8",
+    "deployment_allowlist.sha256": "5cf4b23c773bc688024fa726c019e3be87d8165d1ee57a4db21990877c15776c",
+    "excluded_candidates.csv": "bd92defac1105509dd85822f01763c76cadbbe764efb8b6585ca64034692a76c",
+    "pair-validation.json": "c8ec501f90f9fb3886541ab08411b5cd887d31146347267ace30b5644aa7d2b6",
+    "evidence-index.json": "bca2687480c5bd9a013a22d153a6ccc799cf867bcbc5283173f54b73ef5367aa",
+    "before-state.json": "a7e54e59b3d73639e8e0ccca8294874fe0584548e15fab554bfe18cf5204c508",
+    "quality-sample.json": "d3f3decaf55efc6d7443f2d642dd03f84e6148a5a410f806466b650df86bbd82",
+    "summary.json": "34065715613929255794e689b402cf84ab9b52668849fa020a0de7aba3bec1ce",
+    "quality-review.json": "aa38287ada7bda78824ca6a077e8b2e3296849ee982cb7147151d03fccd0a4fc"
+  }
+}

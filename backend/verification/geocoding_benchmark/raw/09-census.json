@@ -1,0 +1,55 @@
+{
+  "address_id": "09",
+  "provider": "census",
+  "input_address": "3795 Fairmount Ave, San Diego, CA 92105",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3795+Fairmount+Ave&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92105",
+  "fetched_at": "2026-11-03T00:18:23.532422+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92105",
+          "city": "San Diego",
+          "street": "3795 Fairmount Ave",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195347078"
+          },
+          "coordinates": {
+            "x": -117.100834235104,
+            "y": 32.747617122871
+          },
+          "addressComponents": {
+            "zip": "92105",
+            "streetName": "FAIRMOUNT",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "3701",
+            "state": "CA",
+            "suffixType": "AVE",
+            "toAddress": "3799",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "3795 FAIRMOUNT AVE, SAN DIEGO, CA, 92105"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 473.08
+}

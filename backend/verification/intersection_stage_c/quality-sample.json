@@ -1,0 +1,5791 @@
+{
+  "validation_version": "sangis-stage-c-strict-v1",
+  "target": 64,
+  "selection": "Deterministic round robin over every observed value of police division, collision year, SanGIS incident road-class group, directional names and complex (>=4 token) names, among pairs passing all checks. Not a random sample; no population rate is inferred.",
+  "pairs": [
+    {
+      "pair_id": "d74e88fe27cf867effe391aec44daf7df59400856e077c9b1dfb116b1dcbd479",
+      "primary": "FRONT ST",
+      "cross": "W ASH ST",
+      "node_id": 95918,
+      "longitude": -117.16474627257122,
+      "latitude": 32.71988746856442,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2016",
+          "2025"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 9148,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 9152,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 30229,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 30240,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "FRONT ST": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W ASH ST": {
+          "matching_features": 1,
+          "distance_m": 0.052,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "FRONT ST",
+          "W ASH ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/760d5a4e780b92c23531210a7e99f613196ebd4c0c0e42ab0a78b68c23bbb149.json.gz",
+        "sha256": "896a96e8df46a168652e1443215fc3277c09db66a1e18b2c82453998249b50fb",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:47:07.495988+00:00"
+      }
+    },
+    {
+      "pair_id": "da64414eab762af08a6d77b6c2f9846324f45ca0584994dc55000ca8407ed634",
+      "primary": "CAM DEL RIO N",
+      "cross": "MISSION CENTER RD",
+      "node_id": 82057,
+      "longitude": -117.15336368153034,
+      "latitude": 32.7668857498701,
+      "reports": 10,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2018",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          true
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 15210,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 37951,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 2,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 37961,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 135214,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CAM DEL RIO N": {
+          "matching_features": 1,
+          "distance_m": 0.034,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MISSION CENTER RD": {
+          "matching_features": 1,
+          "distance_m": 0.02,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 17,
+        "named_roads_within_30m": [
+          "CAM DEL RIO N",
+          "MISSION CENTER RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 86.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/809826e8113289a29c87ead57c236ed87500dacf1990a9df046c7c57f887ed59.json.gz",
+        "sha256": "04ff39b4dd129d2e1fadb28a6049658a6be382ab724e319f74750835bd0548f3",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:38:31.900506+00:00"
+      }
+    },
+    {
+      "pair_id": "b028b9d5c7e8fed753f40be02acf4b03a22919b7d820767e413fd0f331f11e61",
+      "primary": "BEYER BLVD",
+      "cross": "IRIS AVE",
+      "node_id": 178285,
+      "longitude": -117.06372078659804,
+      "latitude": 32.5691583986779,
+      "reports": 6,
+      "strata": {
+        "division": [
+          "Southern"
+        ],
+        "year": [
+          "2019",
+          "2021",
+          "2024",
+          "2025"
+        ],
+        "road_class": [
+          "freeway_highway_ramp",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 38131,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 214702,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 214709,
+          "segclass": "9",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 214711,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "BEYER BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.0,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "IRIS AVE": {
+          "matching_features": 1,
+          "distance_m": 2.992,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 13,
+        "named_roads_within_30m": [
+          "BEYER BLVD",
+          "IRIS AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 77.9
+      },
+      "screening_flags": [
+        "limited_access_or_ramp_context"
+      ],
+      "evidence": {
+        "file": "responses/4cb15791eb74b6321d68ea31a05fe495b6408b4c083de5ebe7956ad2542cee0e.json.gz",
+        "sha256": "0ef00c780b709726de84f0bae5fee547cdbfef8ec896b5c164bc57f1553f5200",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:47:29.477133+00:00"
+      }
+    },
+    {
+      "pair_id": "6e7e95b2259b32d4522f8d74cde398d08aad81450d27d181bfaef4ebb81b874b",
+      "primary": "PACIFIC HWY",
+      "cross": "W HARBOR DR",
+      "node_id": 97835,
+      "longitude": -117.17105716448421,
+      "latitude": 32.71148226304278,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2023",
+          "2024"
+        ],
+        "road_class": [
+          "major_arterial_collector",
+          "private_alley_military"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 36360,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 159688,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 189112,
+          "segclass": "Z",
+          "segstat": "C",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 218007,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "PACIFIC HWY": {
+          "matching_features": 1,
+          "distance_m": 0.015,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W HARBOR DR": {
+          "matching_features": 1,
+          "distance_m": 0.029,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 7,
+        "named_roads_within_30m": [
+          "PACIFIC HWY",
+          "W HARBOR DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 90.0
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/0218afab3fa19135ed9e409b21e5a8cebc4c4a105923f268ec01b8a9861769b4.json.gz",
+        "sha256": "b9a90048c0399e5ca111da9db2a5370c7a9c7fd4c995812d7ee1ba4a62e0819f",
+        "origin": "reused:stage_b_independent_evidence",
+        "captured_at": "2026-11-03T03:57:24.934198+00:00"
+      }
+    },
+    {
+      "pair_id": "17879e35f0f68534402f6cafe0cc4c4e8d5dbe035cf7c5f9f56c6ad2643812b6",
+      "primary": "1ST AVE",
+      "cross": "BEECH ST",
+      "node_id": 95656,
+      "longitude": -117.16385636197234,
+      "latitude": 32.72092200982915,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2020"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 232,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 252,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11318,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11385,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "1ST AVE": {
+          "matching_features": 1,
+          "distance_m": 0.034,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "BEECH ST": {
+          "matching_features": 1,
+          "distance_m": 0.034,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 18,
+        "named_roads_within_30m": [
+          "1ST AVE",
+          "BEECH ST",
+          "W BEECH ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 90.0
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/80349460253ae7d5e637550ffe8a1e5767535d6b6c4e4db6d807ec685f1ea87d.json.gz",
+        "sha256": "6f7cada91d68634f98478282f4cdc4d93b3f1936c9a391bc23a02b134cfd54c6",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:44:37.445575+00:00"
+      }
+    },
+    {
+      "pair_id": "f463e9a1200ffdd17d0e7b6cd382dbc237ec8fd8bb42b41543229de301db40a9",
+      "primary": "LAKE ARROWHEAD DR",
+      "cross": "LAKE ASHMERE DR",
+      "node_id": 74688,
+      "longitude": -117.0115351069895,
+      "latitude": 32.798499081530636,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 41239,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 41243,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 41249,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 41250,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "LAKE ARROWHEAD DR": {
+          "matching_features": 1,
+          "distance_m": 0.0,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "LAKE ASHMERE DR": {
+          "matching_features": 1,
+          "distance_m": 0.014,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 7,
+        "named_roads_within_30m": [
+          "LAKE ARROWHEAD DR",
+          "LAKE ASHMERE DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.4
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/7d7c25c69f7732f97252743747d718eaeac0b0bb71e6d2d6df7f925a4d2cf4d9.json.gz",
+        "sha256": "826082bf42efd40e8effc023f346e0c0f7b57918a874c82c236c0bb43951c01b",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:33:10.282083+00:00"
+      }
+    },
+    {
+      "pair_id": "cbe4188b49a8606b442ec3aae18894952ce2bbf958e098119165597c18a8eab1",
+      "primary": "35TH ST",
+      "cross": "UNIVERSITY AVE",
+      "node_id": 87256,
+      "longitude": -117.11804824672181,
+      "latitude": 32.74975490999219,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2022"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 4686,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 4690,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 35664,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 35665,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "35TH ST": {
+          "matching_features": 1,
+          "distance_m": 0.023,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "UNIVERSITY AVE": {
+          "matching_features": 1,
+          "distance_m": 0.01,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "35TH ST",
+          "UNIVERSITY AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/25f87c7d7ccc65d664205152a1b986faa6e59d216305981842c3e8daeacc5e4c.json.gz",
+        "sha256": "57eb01f28364ae474a6a863a197ed6f35a780b14b7fe40d8d7935b786c5aea37",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:28:33.195405+00:00"
+      }
+    },
+    {
+      "pair_id": "b67c9785a8c771a47deb6f0ddec160272e3c78e215879bb50aef25b772d7dc16",
+      "primary": "PARK VILLAGE RD",
+      "cross": "RUMEX LN",
+      "node_id": 53377,
+      "longitude": -117.14187500736037,
+      "latitude": 32.94759320420693,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2020",
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 74785,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 74798,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 108574,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 108575,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "PARK VILLAGE RD": {
+          "matching_features": 1,
+          "distance_m": 0.016,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "RUMEX LN": {
+          "matching_features": 1,
+          "distance_m": 0.018,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 12,
+        "named_roads_within_30m": [
+          "PARK VILLAGE RD",
+          "RUMEX LN"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 81.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/589cda0611a65a896b4831ace69b8132688ef2b50bc194804f9c2b5a25bff52a.json.gz",
+        "sha256": "60424f9015ba7240eb97d8327f08a8a64f8922e0b676b1567b1efcd89f93e138",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:37:38.544416+00:00"
+      }
+    },
+    {
+      "pair_id": "87c1d0279c6ecb290067ca8b13fc15789f1967cda6750a4b0f9c5a071f9924ce",
+      "primary": "MAGNOLIA AVE",
+      "cross": "MISSION BAY DR",
+      "node_id": 72732,
+      "longitude": -117.21813544907171,
+      "latitude": 32.80466239372065,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2023"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 44095,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 46650,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 46659,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "MAGNOLIA AVE": {
+          "matching_features": 1,
+          "distance_m": 0.053,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MISSION BAY DR": {
+          "matching_features": 1,
+          "distance_m": 0.016,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 23,
+        "named_roads_within_30m": [
+          "MAGNOLIA AVE",
+          "MISSION BAY DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 76.2
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/356c1e6c498e63e654f0a7bd76c82d7720ef62f3610c8e9bf54d339f1be9f1a6.json.gz",
+        "sha256": "a0a797e65e72501fdded9f3a58e800a018461cda68007161e4c8ddbe864fe497",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:39:24.555832+00:00"
+      }
+    },
+    {
+      "pair_id": "b7197b6b8ea393d55d0fdd093618675c8502f40c9e184910b54c281102a0a2bc",
+      "primary": "CAM DEL SUR",
+      "cross": "FOUR GEE RD",
+      "node_id": 44713,
+      "longitude": -117.12354301077114,
+      "latitude": 33.0212409740711,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Northwestern"
+        ],
+        "year": [
+          "2023",
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 160130,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 202905,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 204312,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 204317,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CAM DEL SUR": {
+          "matching_features": 1,
+          "distance_m": 0.003,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "FOUR GEE RD": {
+          "matching_features": 1,
+          "distance_m": 0.003,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "CAM DEL SUR",
+          "FOUR GEE RD",
+          "PSO DEL SUR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 84.4
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/7c97ceaca1ccb77bc883abf0127bd76792c480b73000c94d669d296cba8bc948.json.gz",
+        "sha256": "89953e64818284d3a0b6e68e3231dc1f8657570d376d8ce21b47591bd1435df0",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:36:16.585850+00:00"
+      }
+    },
+    {
+      "pair_id": "158fe159f62b2a28899b2ab03128ea4778a4178a71879f5d8ecf32c7c35aff68",
+      "primary": "CUMBERLAND ST",
+      "cross": "SEA BREEZE DR",
+      "node_id": 104356,
+      "longitude": -117.06162862649276,
+      "latitude": 32.67606433741317,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southeastern"
+        ],
+        "year": [
+          "2018"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 20894,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 20901,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 57554,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 57555,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CUMBERLAND ST": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "SEA BREEZE DR": {
+          "matching_features": 1,
+          "distance_m": 0.045,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 10,
+        "named_roads_within_30m": [
+          "CUMBERLAND ST",
+          "SEA BREEZE DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.4
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/21147a2039f41f1c0d50581374b0c28547a8e7dca1eef80f948d10fc89b54f15.json.gz",
+        "sha256": "05e2af055e31e6d59b85bb0e180f476f1145e73b2ae46ba0574c5c698735bea5",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:31:09.220878+00:00"
+      }
+    },
+    {
+      "pair_id": "19fabfe2987bf9400c07c23fedbd38e5dc16965b5469c72e0acdc06a636e3da6",
+      "primary": "LEILANI WAY",
+      "cross": "POIPU WAY",
+      "node_id": 114598,
+      "longitude": -117.06966978935134,
+      "latitude": 32.58425572740325,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southern"
+        ],
+        "year": [
+          "2026"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 67322,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 67323,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 67349,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "LEILANI WAY": {
+          "matching_features": 1,
+          "distance_m": 0.03,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "POIPU WAY": {
+          "matching_features": 1,
+          "distance_m": 0.036,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 10,
+        "named_roads_within_30m": [
+          "LEILANI WAY",
+          "POIPU WAY"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/b1f80c09f6c5862a5c84cd4f9b87640018bc8d7a33478eb2fa909fce261faf90.json.gz",
+        "sha256": "1286491c7de57932fa3140bc75f4efbedf7f58a6c47df5bad34df3024e1c48e3",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:27:42.372463+00:00"
+      }
+    },
+    {
+      "pair_id": "37caeaa6e38a673ee3b00f27cf66b53bd927eb84761480fcb6aa48a971df8578",
+      "primary": "BARNETT AVE",
+      "cross": "MENDONCA DR",
+      "node_id": 148637,
+      "longitude": -117.20676636415308,
+      "latitude": 32.74308646753186,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 10695,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 169933,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 169936,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "BARNETT AVE": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MENDONCA DR": {
+          "matching_features": 1,
+          "distance_m": 0.531,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "BARNETT AVE",
+          "MENDONCA DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/64654bce59b1e45e0ecfe506a358454b070a299da945e3fd27e36b8d805430ec.json.gz",
+        "sha256": "9cfdfffb5272d5829bfd6b180061efa9e5a093d154a887854c798f0abf12ece6",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:39:22.060035+00:00"
+      }
+    },
+    {
+      "pair_id": "8057e5c093b99443ad8bd5c8442f3534e65cbadade183fef2e883750c556c749",
+      "primary": "25TH ST",
+      "cross": "G ST",
+      "node_id": 97647,
+      "longitude": -117.14025221538787,
+      "latitude": 32.7126677087209,
+      "reports": 3,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2020",
+          "2022",
+          "2023"
+        ],
+        "road_class": [
+          "freeway_highway_ramp",
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 3649,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 3657,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 2
+        },
+        {
+          "roadsegid": 30590,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 30607,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 131661,
+          "segclass": "9",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "25TH ST": {
+          "matching_features": 1,
+          "distance_m": 0.02,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "G ST": {
+          "matching_features": 1,
+          "distance_m": 0.032,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 15,
+        "named_roads_within_30m": [
+          "25TH ST",
+          "G ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.6
+      },
+      "screening_flags": [
+        "limited_access_or_ramp_context"
+      ],
+      "evidence": {
+        "file": "responses/557c1f9f2623ac373ed43e3bab75a71a697489a0d7365be61efbce1a27c07086.json.gz",
+        "sha256": "ec9a7b4b5c7ec787bccc3f90b816a6b47a87a3e0edfa8a60130940d53264a47d",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:44:20.756818+00:00"
+      }
+    },
+    {
+      "pair_id": "4cdf4f92b4eb740436b704feb9e04e21677570b48b489ad70222967b90ddf7b5",
+      "primary": "CLAIREMONT DR",
+      "cross": "FOX AVE",
+      "node_id": 69612,
+      "longitude": -117.20201858865248,
+      "latitude": 32.817565627667584,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2022"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 18655,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 18662,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 28854,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 29838,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CLAIREMONT DR": {
+          "matching_features": 1,
+          "distance_m": 0.009,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "FOX AVE": {
+          "matching_features": 1,
+          "distance_m": 0.056,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "CLAIREMONT DR",
+          "FEATHER AVE",
+          "FOX AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/e125c0ef12fff2b47229f3f31712964e74915e424dbaca01a3a5da85e44b9509.json.gz",
+        "sha256": "67fe8f715e2f10dc2fc9627e567c53adf669743c25880c9575c258f74a28fe74",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:42:30.159327+00:00"
+      }
+    },
+    {
+      "pair_id": "8ed235ba0edc0153c7df08b3c071384b875b790a5f4cb98c27b4c05a3d0daa78",
+      "primary": "MARKET ST",
+      "cross": "MERLIN DR",
+      "node_id": 98287,
+      "longitude": -117.07106700181973,
+      "latitude": 32.71003916811003,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Southeastern"
+        ],
+        "year": [
+          "2019",
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 5973,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 5975,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 45754,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 45755,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "MARKET ST": {
+          "matching_features": 1,
+          "distance_m": 0.019,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MERLIN DR": {
+          "matching_features": 1,
+          "distance_m": 0.0,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 15,
+        "named_roads_within_30m": [
+          "MARKET ST",
+          "MERLIN DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/91d31a17f54c65abcef98397b4c0fa76de4001f68c8489a65ac37081c65d3838.json.gz",
+        "sha256": "2ba508a505de2a34e14de7732bc4b7c4e3c2e955bd8880909b0afda69c2b4089",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:45:11.806721+00:00"
+      }
+    },
+    {
+      "pair_id": "ee0229085ec26fcbc567d37e13311ac263a65750480f8bc3d61a94106b34d7c8",
+      "primary": "TRUXTUN RD",
+      "cross": "WASP WAY",
+      "node_id": 93427,
+      "longitude": -117.22371242056037,
+      "latitude": 32.72914776126931,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2022"
+        ],
+        "road_class": [
+          "private_alley_military"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 101051,
+          "segclass": "M",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 164705,
+          "segclass": "M",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 164713,
+          "segclass": "M",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 164714,
+          "segclass": "M",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "TRUXTUN RD": {
+          "matching_features": 1,
+          "distance_m": 2.037,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "WASP WAY": {
+          "matching_features": 3,
+          "distance_m": 1.856,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 19,
+        "named_roads_within_30m": [
+          "TRUXTUN RD",
+          "WASP WAY"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 84.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/fc9e4a740701a05e161393e5cd16e375707626b7197c736c9f2e6e0de1a76e61.json.gz",
+        "sha256": "afaa5372ba26b05d08876197d81e45c9fe3aa316fb42748efbf0a69c881257c3",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:46:53.027998+00:00"
+      }
+    },
+    {
+      "pair_id": "187d09e1f7a76edc11be5a82899d8921a693717f0200f8e73d2026f866b7d034",
+      "primary": "HERITAGE RD",
+      "cross": "POGO ROW",
+      "node_id": 115593,
+      "longitude": -116.99676366397634,
+      "latitude": 32.57626237781144,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southern"
+        ],
+        "year": [
+          "2016"
+        ],
+        "road_class": [
+          "local",
+          "private_alley_military"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 34524,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 211525,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 212481,
+          "segclass": "Z",
+          "segstat": "C",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "HERITAGE RD": {
+          "matching_features": 1,
+          "distance_m": 0.031,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "POGO ROW": {
+          "matching_features": 1,
+          "distance_m": 0.043,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 3,
+        "named_roads_within_30m": [
+          "HERITAGE RD",
+          "POGO ROW"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/6fbd944104a0dd662d13b87f57355801b6b76cc819660e068d6ef7e19ae74762.json.gz",
+        "sha256": "61cb2102110a1994e93944f064c39c1c0eb67e0ed04378cd39e887fce5609fe6",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:22.006218+00:00"
+      }
+    },
+    {
+      "pair_id": "811f84305a2d70345010d2234bd9bbe013645a9a5245a584c8b81faf98e467e7",
+      "primary": "17TH ST",
+      "cross": "C ST",
+      "node_id": 96654,
+      "longitude": -117.14858808882896,
+      "latitude": 32.7168152257384,
+      "reports": 10,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2025",
+          "2026"
+        ],
+        "road_class": [
+          "freeway_highway_ramp",
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 3154,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 3156,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14341,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14347,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 131179,
+          "segclass": "9",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "17TH ST": {
+          "matching_features": 2,
+          "distance_m": 0.008,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "C ST": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 36,
+        "named_roads_within_30m": [
+          "17TH ST",
+          "C ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [
+        "limited_access_or_ramp_context"
+      ],
+      "evidence": {
+        "file": "responses/99f62c54387c124c9f999f56f3a7432307e519843dcfb758ed6fd1fe58e21e1c.json.gz",
+        "sha256": "9438e92d862cf12ddf2228b634d3546425a750f2e8be88f4d2e20b63be0f58f6",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:31:12.573055+00:00"
+      }
+    },
+    {
+      "pair_id": "9e9fbf05848bdd29e4f06b81ddc706f1ca9982df757b6a43ff9a842959dbec1f",
+      "primary": "ELM AVE",
+      "cross": "SATURN BLVD",
+      "node_id": 115012,
+      "longitude": -117.09268129267768,
+      "latitude": 32.580645575900725,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southern"
+        ],
+        "year": [
+          "2018"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 3304,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 3309,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 9534,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 9541,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "ELM AVE": {
+          "matching_features": 1,
+          "distance_m": 0.047,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "SATURN BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.027,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "ELM AVE",
+          "SATURN BLVD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/19158e3d0521f7fbc327ef660b494c35ceb2e41e4f2d574e0f4fd890d96f27a2.json.gz",
+        "sha256": "964c4098b603d6cb2907505c20877d06e9a0183c76a4b26090fdbcebdc55d21d",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:43:21.186857+00:00"
+      }
+    },
+    {
+      "pair_id": "0a6449cb9315a3c606a0235dc28517841248f2128d0e28089f824107b79c9044",
+      "primary": "ALBION ST",
+      "cross": "TALBOT ST",
+      "node_id": 95285,
+      "longitude": -117.24181438140135,
+      "latitude": 32.7219331501479,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 7061,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 7062,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 60391,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 60392,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "ALBION ST": {
+          "matching_features": 1,
+          "distance_m": 0.038,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "TALBOT ST": {
+          "matching_features": 1,
+          "distance_m": 0.008,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 22,
+        "named_roads_within_30m": [
+          "ALBION ST",
+          "TALBOT ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/4085e9dced6c0d793ec3262b6c2e29f6338a833cc5d1e22ff2fd9628bedc9fd9.json.gz",
+        "sha256": "b17ee74aff67d29152e8693e9948facdee390656ac6cce58bbd34bd4c47c8ae8",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:37:08.005577+00:00"
+      }
+    },
+    {
+      "pair_id": "a22663f50db54b30f2b495d491fa33c40b263ee7f6e95cb5c9dd5539cb7f77b1",
+      "primary": "CAM RUIZ",
+      "cross": "MIRAMAR RD",
+      "node_id": 57956,
+      "longitude": -117.13370177029026,
+      "latitude": 32.89367123303628,
+      "reports": 4,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2020",
+          "2021",
+          "2024",
+          "2025"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 46338,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 46339,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 69130,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CAM RUIZ": {
+          "matching_features": 1,
+          "distance_m": 0.022,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MIRAMAR RD": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 7,
+        "named_roads_within_30m": [
+          "ANTARES DR",
+          "CAM RUIZ",
+          "MIRAMAR RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.3
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/f6efc5e5892742e7cf2f0d3f24c982a3ba7e88a0e1eda6972311ea28c1d402c5.json.gz",
+        "sha256": "a10eb72cf9c55a961bee91706d6674131b2ad6cedb9f4ae3a3c696121d63b6ce",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:41:37.905752+00:00"
+      }
+    },
+    {
+      "pair_id": "951683d2e17bfa76eda292d3e7c3e80bcb700549d2419cb2e962975216b52af5",
+      "primary": "CABLE ST",
+      "cross": "NIAGARA AVE",
+      "node_id": 88499,
+      "longitude": -117.25005133402702,
+      "latitude": 32.744940607744205,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2021"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 14406,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14408,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 49139,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 49140,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CABLE ST": {
+          "matching_features": 1,
+          "distance_m": 0.0,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "NIAGARA AVE": {
+          "matching_features": 1,
+          "distance_m": 0.054,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 8,
+        "named_roads_within_30m": [
+          "CABLE ST",
+          "NIAGARA AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.3
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/c4da89ca343119184ee8430dde5fce17bf5acab32612fdb154c8831dd04ae9c1.json.gz",
+        "sha256": "7410850e24e81a6594dd35c79349a65de93f8401adc2f5e17c58b4979e74b4cf",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:30:20.176747+00:00"
+      }
+    },
+    {
+      "pair_id": "7e3bc12ff0c6734af2e70530bd943700904853ac266eac7c12981e3c9dc1189b",
+      "primary": "4TH AVE",
+      "cross": "HAWTHORN ST",
+      "node_id": 94157,
+      "longitude": -117.16117062392698,
+      "latitude": 32.727205745208906,
+      "reports": 5,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2020",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 1182,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 1191,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 34244,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 34247,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "4TH AVE": {
+          "matching_features": 1,
+          "distance_m": 0.035,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "HAWTHORN ST": {
+          "matching_features": 1,
+          "distance_m": 0.028,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 13,
+        "named_roads_within_30m": [
+          "4TH AVE",
+          "FOURTH AVE",
+          "HAWTHORN ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/f7e04851ea89d5aca5d4afb3aa78c47cb2b3348e960ab92a94a6deafb34d4ec9.json.gz",
+        "sha256": "a65354896dc5917c75ab7e9b15bcbf56c8f258bb319b6df8ee9d66b4ad71397a",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:36:15.590111+00:00"
+      }
+    },
+    {
+      "pair_id": "8f312eb2f8f95973dfcc45594fcb7af1a05082958b9582bb1c47048b646da34e",
+      "primary": "60TH ST",
+      "cross": "ROCK PL",
+      "node_id": 86862,
+      "longitude": -117.06674678125871,
+      "latitude": 32.75147942315575,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2023"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 5814,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 5815,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 55466,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "60TH ST": {
+          "matching_features": 1,
+          "distance_m": 0.027,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "ROCK PL": {
+          "matching_features": 1,
+          "distance_m": 0.038,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 15,
+        "named_roads_within_30m": [
+          "60TH ST",
+          "ROCK PL"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 79.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/679bded260db9cfeaabff75edabe4ea15585e31722fdbe660ed4a7128f88cfa6.json.gz",
+        "sha256": "44f5bf6d9d23329bac56edd09a848366b26a969e31f3f53fa104cb867a676b26",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:41:55.544185+00:00"
+      }
+    },
+    {
+      "pair_id": "37f6299f1ea1228fef7d73122b29aed38f5bc833a7d469db5ab4c5ae28d01729",
+      "primary": "INDIA ST",
+      "cross": "W REDWOOD ST",
+      "node_id": 91664,
+      "longitude": -117.17455205366575,
+      "latitude": 32.73565681250728,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 37333,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 37336,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 54740,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "INDIA ST": {
+          "matching_features": 1,
+          "distance_m": 0.016,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W REDWOOD ST": {
+          "matching_features": 2,
+          "distance_m": 0.021,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 27,
+        "named_roads_within_30m": [
+          "INDIA ST",
+          "W REDWOOD ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.2
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/cef0135573cbba5c589109fef053ef77f183972dcb885e27ce40a90467ee0a7d.json.gz",
+        "sha256": "bc7931ffb87e3907d3d113b2a6aa2e94693f2b526d63c856f2578b3dc2a6fbb3",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:45:21.903099+00:00"
+      }
+    },
+    {
+      "pair_id": "ed0dcd5bf19d4d8fed36074c7674539a63e6647ad6b0a75c087e638c15034a59",
+      "primary": "GOVERNOR DR",
+      "cross": "STADIUM ST",
+      "node_id": 61751,
+      "longitude": -117.21334797669225,
+      "latitude": 32.85076519998801,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 31965,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 31971,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 59188,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 59189,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "GOVERNOR DR": {
+          "matching_features": 1,
+          "distance_m": 0.022,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "STADIUM ST": {
+          "matching_features": 1,
+          "distance_m": 0.002,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "GOVERNOR DR",
+          "STADIUM ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 87.3
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/e5e1e8fba9a4e6019073a915dd0165f66fd735ae91d6ecd0134865322dc9968f.json.gz",
+        "sha256": "47ae040bb34559e3110c366b6458d87dd19605eb3e39683689d9987c3313ffa9",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:38:30.408856+00:00"
+      }
+    },
+    {
+      "pair_id": "49433a1a2435f492ec7909988471eae32ffa4c400a537a7e1d986f6014788015",
+      "primary": "HAMILTON ST",
+      "cross": "MADISON AVE",
+      "node_id": 83740,
+      "longitude": -117.13636866731933,
+      "latitude": 32.76099249428845,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2026"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 33635,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 33641,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 43905,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 43906,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "HAMILTON ST": {
+          "matching_features": 1,
+          "distance_m": 0.031,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MADISON AVE": {
+          "matching_features": 1,
+          "distance_m": 0.054,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 7,
+        "named_roads_within_30m": [
+          "HAMILTON ST",
+          "MADISON AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/96ca797ea7cbe2fd1b2d2bb7a9a9d7b5ffaf79778fc3e5365eb13c5a777a3bfe.json.gz",
+        "sha256": "bf7c56dba73c8e1ffcda718b5ac5756208ad7bf19a17d0e1280f12913613b6b7",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:41:42.946049+00:00"
+      }
+    },
+    {
+      "pair_id": "e125861da65a98f9b8c71595342a4b32e58d4dfc7cc80008acc4640331567e0c",
+      "primary": "LINCOLN AVE",
+      "cross": "WASHINGTON ST",
+      "node_id": 86597,
+      "longitude": -117.15031665777921,
+      "latitude": 32.751719727753525,
+      "reports": 4,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2020",
+          "2021",
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 42473,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 42474,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 52175,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 55047,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63967,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63971,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "LINCOLN AVE": {
+          "matching_features": 1,
+          "distance_m": 0.016,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "WASHINGTON ST": {
+          "matching_features": 3,
+          "distance_m": 0.041,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 14,
+        "named_roads_within_30m": [
+          "LINCOLN AVE",
+          "PASCOE ST",
+          "RICHMOND ST",
+          "WASHINGTON ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 47.3
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/d493a2d70b38fe7b292ee655abbefe324918cd00111d2592df312843b62a0efc.json.gz",
+        "sha256": "8b8c3bb8525ab1d3f125ae09aaeee33a865570cb1729b541e99e2c68a30640f2",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:02.252848+00:00"
+      }
+    },
+    {
+      "pair_id": "bff0c03d90fedffb62eca67f4d847cb50d0420620bb8cd5433452a169189fc93",
+      "primary": "MONTALVO ST",
+      "cross": "W POINT LOMA BLVD",
+      "node_id": 86407,
+      "longitude": -117.23508098621176,
+      "latitude": 32.75164378566867,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          true
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 47225,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 64254,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 64255,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "MONTALVO ST": {
+          "matching_features": 1,
+          "distance_m": 0.018,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W POINT LOMA BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.019,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 12,
+        "named_roads_within_30m": [
+          "MONTALVO ST",
+          "W POINT LOMA BLVD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 75.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/08b3169e6976347845b163bb1661850c92b3b3859423d61e131caf6b45643326.json.gz",
+        "sha256": "f13ce588361b9661af547770d0f8443ab16a6381574092213cfe8031d480dc7c",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:39:19.041316+00:00"
+      }
+    },
+    {
+      "pair_id": "d86b30dd3d0f13ccffbe9b113227048cbd613835e02698e3a502e33abc711daa",
+      "primary": "CAPEWOOD LN",
+      "cross": "SHOAL CREEK DR",
+      "node_id": 1054154,
+      "longitude": -117.08458144725925,
+      "latitude": 32.97116080353489,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2024"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 21094,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 21095,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 23910,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CAPEWOOD LN": {
+          "matching_features": 1,
+          "distance_m": 3.12,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "SHOAL CREEK DR": {
+          "matching_features": 1,
+          "distance_m": 1.376,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 13,
+        "named_roads_within_30m": [
+          "CAPEWOOD LN",
+          "SHOAL CREEK DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/f5b24e883bf13cad497fea2a17464b587849693706efd1afc64b984fe517825d.json.gz",
+        "sha256": "265153205efa2a396a6ae32df6a0197ade5c16adaa69d0317d6795c715d600f2",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:27:29.687769+00:00"
+      }
+    },
+    {
+      "pair_id": "f0591c018d27655f6995ca5b075d519fc3c3acd005a3653fcaed74c5dbc6b5f9",
+      "primary": "ALBATROSS ST",
+      "cross": "W HAWTHORN ST",
+      "node_id": 94151,
+      "longitude": -117.16572598881794,
+      "latitude": 32.72718575351581,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 7016,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 7017,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 34279,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 34280,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "ALBATROSS ST": {
+          "matching_features": 1,
+          "distance_m": 0.001,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W HAWTHORN ST": {
+          "matching_features": 1,
+          "distance_m": 0.027,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 26,
+        "named_roads_within_30m": [
+          "ALBATROSS ST",
+          "W HAWTHORN ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.1
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/6aeb0b56804f4f82c55254ca7a2a27371fed3540f69593b8a3713f6ef4014cc6.json.gz",
+        "sha256": "72062212b963416849903785a776d2b5074dce3fd9155ceab300fe3ccbdb9c9d",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:28:49.495130+00:00"
+      }
+    },
+    {
+      "pair_id": "f51c6d1ce1811abb14f97e14a81791aa885cae29ef49dcc93576d4d2315079ac",
+      "primary": "STATE ST",
+      "cross": "W C ST",
+      "node_id": 96632,
+      "longitude": -117.16648864142337,
+      "latitude": 32.716724734979415,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2020",
+          "2021"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 14391,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14393,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 54922,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 54923,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "STATE ST": {
+          "matching_features": 1,
+          "distance_m": 0.034,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W C ST": {
+          "matching_features": 2,
+          "distance_m": 0.029,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "STATE ST",
+          "W C ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/3c0472c6211884f63afd956e965435efc99b4af9e557b9b070f4e7327fb5e5aa.json.gz",
+        "sha256": "158d972a9cf12cfc93c1e3cd5a309af27bb0410ed0194c6a46506204e89db6aa",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:30:40.371681+00:00"
+      }
+    },
+    {
+      "pair_id": "6e758ae3a0ba6c50fa68cfae62f02db2c637f43903d58c242ee5391d5c8d9c0e",
+      "primary": "CENTURY PARK CT",
+      "cross": "KEARNY VILLA RD",
+      "node_id": 68389,
+      "longitude": -117.14419703506404,
+      "latitude": 32.823352009838,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2023",
+          "2025"
+        ],
+        "road_class": [
+          "freeway_highway_ramp",
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 27668,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 27672,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 66806,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 103889,
+          "segclass": "9",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CENTURY PARK CT": {
+          "matching_features": 1,
+          "distance_m": 9.147,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "KEARNY VILLA RD": {
+          "matching_features": 1,
+          "distance_m": 0.165,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 20,
+        "named_roads_within_30m": [
+          "CENTURY PARK CT",
+          "KEARNY VILLA RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.9
+      },
+      "screening_flags": [
+        "limited_access_or_ramp_context"
+      ],
+      "evidence": {
+        "file": "responses/52b528aad3fec5253545735a32616dcf5ff3ded36ba0c34a277ada6af08e4489.json.gz",
+        "sha256": "52e54a9c64b99cc58be3122a839f62e4ff477eeab2ab405a9ac2923e7b2ac81b",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:41.806740+00:00"
+      }
+    },
+    {
+      "pair_id": "38783bf6fcee8eb14c33edca0ddd79ba3dab31a7dda02afb42e575022e868741",
+      "primary": "GRIM AVE",
+      "cross": "MYRTLE AVE",
+      "node_id": 89930,
+      "longitude": -117.12822246171645,
+      "latitude": 32.741970594488365,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2016"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 32904,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 32907,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 48510,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 48513,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "GRIM AVE": {
+          "matching_features": 1,
+          "distance_m": 0.043,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MYRTLE AVE": {
+          "matching_features": 2,
+          "distance_m": 0.045,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 14,
+        "named_roads_within_30m": [
+          "GRIM AVE",
+          "MYRTLE AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/61ebd3db7026655c352596fdfa4822396bd92b3f2ac0a3983891ea47a027a82a.json.gz",
+        "sha256": "fa4737a18c3c754d5445236c588d501087295a995110932fb5dd0254cd840670",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:49.942423+00:00"
+      }
+    },
+    {
+      "pair_id": "7bef949aa016676b2df542910ea92605a1ab6b6e426a8717d495053eee60d2bc",
+      "primary": "BERNARDO CENTER DR",
+      "cross": "W BERNARDO DR",
+      "node_id": 46336,
+      "longitude": -117.08875688702234,
+      "latitude": 33.00810351064451,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 6432,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11650,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11655,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "BERNARDO CENTER DR": {
+          "matching_features": 1,
+          "distance_m": 0.04,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W BERNARDO DR": {
+          "matching_features": 1,
+          "distance_m": 0.055,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "BERNARDO CENTER DR",
+          "W BERNARDO DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/e04109085ff370fe89de84db8bf2db4eb5794c08533b8ae9fba1d41d54d682ea.json.gz",
+        "sha256": "859b66ef44575a338f82fe646b1ca97cfcc01e72cea9dc97f69739bacdda2d4d",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:43:50.955200+00:00"
+      }
+    },
+    {
+      "pair_id": "6166af3862f49f50384e78a08e2836c73cc8fe0cf34d0e087b3e6820d9c0035d",
+      "primary": "CLAIREMONT DR",
+      "cross": "DENVER ST",
+      "node_id": 76359,
+      "longitude": -117.2032936484597,
+      "latitude": 32.790427826998695,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2024",
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 18626,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 18638,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 24313,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 24315,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CLAIREMONT DR": {
+          "matching_features": 1,
+          "distance_m": 0.014,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "DENVER ST": {
+          "matching_features": 1,
+          "distance_m": 0.035,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "CLAIREMONT DR",
+          "DENVER ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/9f8300f0d12238962f9b016efc9ae196248c2604803e7d9973fa7c34c5d11701.json.gz",
+        "sha256": "c731c9b5ef4077e5edc2c3bd25a38b0ef85b9495d1c8e178d3eeb40befb09f7f",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:31:02.337785+00:00"
+      }
+    },
+    {
+      "pair_id": "3d2da355aa6d78b0aed1f2c9a9e872f2489cc1069d238d65e90f035342a2f894",
+      "primary": "EASTGATE MALL",
+      "cross": "MIRAMAR RD",
+      "node_id": 58780,
+      "longitude": -117.18636118182603,
+      "latitude": 32.876858301105145,
+      "reports": 4,
+      "strata": {
+        "division": [
+          "Northwestern"
+        ],
+        "year": [
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 35419,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 46325,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 160182,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "EASTGATE MALL": {
+          "matching_features": 1,
+          "distance_m": 0.018,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MIRAMAR RD": {
+          "matching_features": 1,
+          "distance_m": 0.033,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 3,
+        "named_roads_within_30m": [
+          "EASTGATE MALL",
+          "MIRAMAR RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/f9aa773b39419d482068f59b18552703376da59b400cb15987335e34ea499b0a.json.gz",
+        "sha256": "e0730963f09a269d4b1832c0b59183b06db91c02ab97fe830f09ab0453e743df",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:42:45.816148+00:00"
+      }
+    },
+    {
+      "pair_id": "cd28ac135f232d0d6796f9240927ac9465787ca75835eef74ba895ab56a9fa0d",
+      "primary": "BLACKSTONE CT",
+      "cross": "MEADOWBROOK DR",
+      "node_id": 98228,
+      "longitude": -117.03617649088179,
+      "latitude": 32.71067329906924,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southeastern"
+        ],
+        "year": [
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 12157,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 45474,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 45475,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "BLACKSTONE CT": {
+          "matching_features": 1,
+          "distance_m": 0.057,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MEADOWBROOK DR": {
+          "matching_features": 1,
+          "distance_m": 0.024,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 15,
+        "named_roads_within_30m": [
+          "BLACKSTONE CT",
+          "MEADOWBROOK DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 85.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/a29edec987dcc04da4bdeed243a4a2212276b0df110f36d7572a728ef1076f4b.json.gz",
+        "sha256": "32a1858d7a82a9fe56467bab55132d8befbdda79ea110b48131c1b0222709cbf",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:44:56.588213+00:00"
+      }
+    },
+    {
+      "pair_id": "df47ee60ee860542f93e408479581b1d110ebb6828f1fdef86b2a8dfb383f86c",
+      "primary": "E BEYER BLVD",
+      "cross": "OTAY MESA RD",
+      "node_id": 116940,
+      "longitude": -117.04076487511037,
+      "latitude": 32.55824081865529,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southern"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 11815,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 2,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11819,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11844,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 51021,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "E BEYER BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.011,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "OTAY MESA RD": {
+          "matching_features": 1,
+          "distance_m": 0.023,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 14,
+        "named_roads_within_30m": [
+          "BEYER BLVD",
+          "E BEYER BLVD",
+          "OTAY MESA RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 4.6
+      },
+      "screening_flags": [
+        "near_parallel_named_lines"
+      ],
+      "evidence": {
+        "file": "responses/6c5f914d2c1ed1912a3ead8eb2fb70e6437d9052ddad21bc6c1974660920f758.json.gz",
+        "sha256": "db970f97224481306d8fb6fe2ba6affb9cce7f8d2d2cba670afc8beaf7d5700c",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:42:17.736502+00:00"
+      }
+    },
+    {
+      "pair_id": "1758f79571f024a913d4f8c9d59f52e61a5a1d95ee7556a0242be5c936548c1d",
+      "primary": "CANON ST",
+      "cross": "WILLOW ST",
+      "node_id": 94969,
+      "longitude": -117.23470714310865,
+      "latitude": 32.72343307644682,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 15636,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 64592,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 212330,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CANON ST": {
+          "matching_features": 1,
+          "distance_m": 0.001,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "WILLOW ST": {
+          "matching_features": 1,
+          "distance_m": 0.016,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 15,
+        "named_roads_within_30m": [
+          "CANON ST",
+          "WILLOW ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/3242f3e800597239aeda234fd84cd4b05a8ea11585e651397e411589ac38f241.json.gz",
+        "sha256": "bc3994970c81d2708aac22a12d7066f90c9da70733de309606e70dbba2631c50",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:36:57.520562+00:00"
+      }
+    },
+    {
+      "pair_id": "09fae747ad054d808f7488b0b1667f203ba90731cfcba3a1acfb8f6532a9c2a5",
+      "primary": "8TH AVE",
+      "cross": "WASHINGTON ST",
+      "node_id": 87068,
+      "longitude": -117.15742956249153,
+      "latitude": 32.750098218673685,
+      "reports": 5,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2016",
+          "2019",
+          "2020",
+          "2022",
+          "2025"
+        ],
+        "road_class": [
+          "freeway_highway_ramp",
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 2035,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 2039,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63951,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63959,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 133647,
+          "segclass": "9",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "8TH AVE": {
+          "matching_features": 2,
+          "distance_m": 0.041,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "WASHINGTON ST": {
+          "matching_features": 1,
+          "distance_m": 0.018,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 20,
+        "named_roads_within_30m": [
+          "8TH AVE",
+          "WASHINGTON ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 82.0
+      },
+      "screening_flags": [
+        "limited_access_or_ramp_context"
+      ],
+      "evidence": {
+        "file": "responses/57d745d68b89dc6b6698173b2a2f70c3470aa5d28ab77aec976d886951a20683.json.gz",
+        "sha256": "34356202ba8529979586dfe8216461198f6d3699725651b90ff9024b64a47fb4",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:43:23.167103+00:00"
+      }
+    },
+    {
+      "pair_id": "f50e16773dd1aad7e7cba201a18597730a97cca0e4a78e8182f3721d27d15801",
+      "primary": "EL CAJON BLVD",
+      "cross": "OREGON ST",
+      "node_id": 85431,
+      "longitude": -117.13512086976307,
+      "latitude": 32.755295546046064,
+      "reports": 3,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2021",
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 26011,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 26017,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 50842,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 50843,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "EL CAJON BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.05,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "OREGON ST": {
+          "matching_features": 1,
+          "distance_m": 0.012,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "EL CAJON BLVD",
+          "OREGON ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/b1c93bb510626c25b096b35c88c146f7368836bd6988425efcbc6c0dbc87a66a.json.gz",
+        "sha256": "488eeeb1a118b067134de56c86eeb26a3b94328c36fa3954accd433dd8346ef4",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:56.183261+00:00"
+      }
+    },
+    {
+      "pair_id": "f3f1d66b943540c969e4d60ec24490618f4b3183747509af9446f1e256a911ee",
+      "primary": "FRONT ST",
+      "cross": "W WASHINGTON ST",
+      "node_id": 87110,
+      "longitude": -117.1650285587478,
+      "latitude": 32.749896424407574,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2019",
+          "2020"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 30267,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 30268,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63997,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 64002,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "FRONT ST": {
+          "matching_features": 3,
+          "distance_m": 0.041,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W WASHINGTON ST": {
+          "matching_features": 1,
+          "distance_m": 0.047,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 16,
+        "named_roads_within_30m": [
+          "FRONT ST",
+          "W WASHINGTON ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/a988a210ed6d2bbd0cdd9149224672515cbfe2a004162ad97f3289a05492067c.json.gz",
+        "sha256": "8c2d450aa4e4b1c4f8736b1408b19f5ce24c5881340bfa489ee90a3d43dee517",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:41:45.684945+00:00"
+      }
+    },
+    {
+      "pair_id": "35393028d5a9238a040333ea9d263f134bf8f17e7c3bb8d3adb5638fc94efcb0",
+      "primary": "HIDDEN VALLEY RD",
+      "cross": "TORREY PINES RD",
+      "node_id": 61742,
+      "longitude": -117.25081129122256,
+      "latitude": 32.85050307233404,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "major_arterial_collector",
+          "private_alley_military"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 61197,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 61210,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 172218,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 205097,
+          "segclass": "Z",
+          "segstat": "C",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "HIDDEN VALLEY RD": {
+          "matching_features": 2,
+          "distance_m": 0.021,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "TORREY PINES RD": {
+          "matching_features": 1,
+          "distance_m": 0.014,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1200"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 13,
+        "named_roads_within_30m": [
+          "CMT DEL CID",
+          "HIDDEN VALLEY RD",
+          "TORREY PINES RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 17.2
+      },
+      "screening_flags": [
+        "near_parallel_named_lines"
+      ],
+      "evidence": {
+        "file": "responses/7abdbb9a890c67a2b91da46ac1898e91808a96250e1e49393549d390d66638cd.json.gz",
+        "sha256": "ae9f384f8e14c94e9136b52a5d769d8c24d6ffee5db9f981d553c5028b3ddb84",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:28:26.281828+00:00"
+      }
+    },
+    {
+      "pair_id": "b14ca1bcdb05d756ee092c9618b64b8a997e7fc49d561f2e0ab2fbd912b2175c",
+      "primary": "LINDA VISTA RD",
+      "cross": "NAPA ST",
+      "node_id": 82363,
+      "longitude": -117.19697104745102,
+      "latitude": 32.765302747373894,
+      "reports": 5,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2016",
+          "2019",
+          "2022",
+          "2024",
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 42678,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 42679,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 48675,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 48676,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "LINDA VISTA RD": {
+          "matching_features": 1,
+          "distance_m": 0.012,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "NAPA ST": {
+          "matching_features": 1,
+          "distance_m": 0.025,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 19,
+        "named_roads_within_30m": [
+          "LINDA VISTA RD",
+          "NAPA ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 86.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/4faff4f287cf8ef82ecbd01e3f9c21c547f1d69c1bec36510c1cdc931b966ac3.json.gz",
+        "sha256": "075144f07e64d861b279c5959bc1baa3db710d949a4b9e548000ac6942ada73c",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:32:43.918359+00:00"
+      }
+    },
+    {
+      "pair_id": "b1e9f07e5156acb8f2ba3125270906ce85d454cca3f0f2d60058b794b3c97d95",
+      "primary": "4TH AVE",
+      "cross": "B ST",
+      "node_id": 96390,
+      "longitude": -117.16109949329399,
+      "latitude": 32.71780909599989,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2017"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 1176,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 1179,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 9994,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 10000,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "4TH AVE": {
+          "matching_features": 1,
+          "distance_m": 0.046,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "B ST": {
+          "matching_features": 1,
+          "distance_m": 0.011,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "4TH AVE",
+          "B ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/4a5e9cb4bb093565cd7fe88ad0c3ff5eb4bc36cd340dc9fefc1fad81e38e99dc.json.gz",
+        "sha256": "eea5d3a4e4e1d9970e37ed292a04f8426df2ce69ecad2749e44f971a5a52bccd",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:32:02.581357+00:00"
+      }
+    },
+    {
+      "pair_id": "76d43e2567e5c8a35e58fbca56b955ba8b18ce273864a70fac7e2a7d7727cf0a",
+      "primary": "GILMAN DR",
+      "cross": "VIA ALICANTE",
+      "node_id": 59929,
+      "longitude": -117.236263733703,
+      "latitude": 32.86224088865067,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2018"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 31354,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 31355,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 68736,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "GILMAN DR": {
+          "matching_features": 1,
+          "distance_m": 0.028,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "VIA ALICANTE": {
+          "matching_features": 1,
+          "distance_m": 0.005,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 5,
+        "named_roads_within_30m": [
+          "GILMAN DR",
+          "VIA ALICANTE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/d21a8c3d821175ff03ff98592c727d97af6804d20d6e76b1f0d9f41efd8087a3.json.gz",
+        "sha256": "904ccbddf35d87400b2a95f30ad569060e814cf1b7b05ec4a2a7d168a5a4b030",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:44:23.458861+00:00"
+      }
+    },
+    {
+      "pair_id": "da4b5fd964d11dbbf0218c616cc754267a342393c9f98e40c3ae3ef9d8008a33",
+      "primary": "STONECREST BLVD",
+      "cross": "W CANYON AVE",
+      "node_id": 73864,
+      "longitude": -117.1186137607484,
+      "latitude": 32.80125030148722,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2019"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 153840,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 154282,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 192727,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "STONECREST BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.018,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W CANYON AVE": {
+          "matching_features": 1,
+          "distance_m": 0.036,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 20,
+        "named_roads_within_30m": [
+          "STONECREST BLVD",
+          "W CANYON AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.6
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/ecc1e9d97e46c2fbef869a85f088480f6c772d8f2a7c74da84b5941e45a108bb.json.gz",
+        "sha256": "cc815ff0eb673a1c5ccac163987f781644ae2bbb5f35014adc7f43fd664c7d6f",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:38:06.507290+00:00"
+      }
+    },
+    {
+      "pair_id": "a267599f089f8c402697fa59b84534e0b780c13651eb88406b9298b6b0b6a125",
+      "primary": "IDAHO ST",
+      "cross": "MADISON AVE",
+      "node_id": 83744,
+      "longitude": -117.13391288065186,
+      "latitude": 32.76100736418386,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2020",
+          "2023"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 37192,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 37198,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 43908,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 43910,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "IDAHO ST": {
+          "matching_features": 1,
+          "distance_m": 0.011,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "MADISON AVE": {
+          "matching_features": 1,
+          "distance_m": 0.04,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 6,
+        "named_roads_within_30m": [
+          "IDAHO ST",
+          "MADISON AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/a5dc8de0e0de0b46a68febaec3f2de13ee0df62b5a579b5568948fc2ac7cc2f0.json.gz",
+        "sha256": "d84bdb561b1d9e98b96770b9c471ad1b1b12e920fd06fc29dbecf735933f52b0",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:32:59.287133+00:00"
+      }
+    },
+    {
+      "pair_id": "22c1a4c748f348bed1ba4f7bff16c8f8d55e22bb4dd9ff017a29c0b546243641",
+      "primary": "KETTNER BLVD",
+      "cross": "W REDWOOD ST",
+      "node_id": 148428,
+      "longitude": -117.17520746583176,
+      "latitude": 32.73512662872475,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Western"
+        ],
+        "year": [
+          "2021"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 169623,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 169624,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 212964,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "KETTNER BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.781,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "W REDWOOD ST": {
+          "matching_features": 2,
+          "distance_m": 4.574,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 21,
+        "named_roads_within_30m": [
+          "KETTNER BLVD",
+          "W REDWOOD ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 77.4
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/46e5d72bebe1f68df0e09998ee44c779c5c651bcae00c2135d1f944d3339f28b.json.gz",
+        "sha256": "37a947997f730949b73937876ef143236abb30df37d75c33fcd9a537cfc1458c",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:38:26.098831+00:00"
+      }
+    },
+    {
+      "pair_id": "ba6cfc9f8912dd096a2610b3f380666fab6566190152373c5ac2c0ff427a9cda",
+      "primary": "EASTER WAY",
+      "cross": "EASTGATE MALL",
+      "node_id": 58682,
+      "longitude": -117.21110307005154,
+      "latitude": 32.87836966151877,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2022"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 35416,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 35423,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 68288,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "EASTER WAY": {
+          "matching_features": 1,
+          "distance_m": 0.038,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "EASTGATE MALL": {
+          "matching_features": 1,
+          "distance_m": 0.034,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 5,
+        "named_roads_within_30m": [
+          "EASTER WAY",
+          "EASTGATE MALL"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/0bc024790a8e8cf7e7663330e86eed0463a8a5958a8b5bdf409c0f5cdc4cbac5.json.gz",
+        "sha256": "066664d97aa4de9ef382a1e1454cf847752d6c1cff9e63cfed54c129f875182c",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:32:23.648896+00:00"
+      }
+    },
+    {
+      "pair_id": "6950d3f1a41efd59fb296822212c12f0736d236324b5fbca94f72c6739e3faf4",
+      "primary": "ANNRAE ST",
+      "cross": "DONZEE ST",
+      "node_id": 73025,
+      "longitude": -117.1537192764807,
+      "latitude": 32.80408430500644,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2023"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 8255,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 24851,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 24853,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "ANNRAE ST": {
+          "matching_features": 1,
+          "distance_m": 0.043,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "DONZEE ST": {
+          "matching_features": 1,
+          "distance_m": 0.032,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 18,
+        "named_roads_within_30m": [
+          "ANNRAE ST",
+          "DONZEE ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 79.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/30859e0712f968e60219df87249126e9509e513566f768eb28c53340d6744a34.json.gz",
+        "sha256": "5a3b054da9eaa05601f7f280bd93c1737e141e2d0dcc3ab5eb09f960c53bf442",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:40:22.525481+00:00"
+      }
+    },
+    {
+      "pair_id": "1fafdb18e4f2ca420787a525e1cb627952038b063209d6d5d652c25e7958cc6a",
+      "primary": "ACADEMY ST",
+      "cross": "BERYL ST",
+      "node_id": 71759,
+      "longitude": -117.23330092718254,
+      "latitude": 32.80839323316908,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northern"
+        ],
+        "year": [
+          "2024"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 6423,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11738,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 11755,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "ACADEMY ST": {
+          "matching_features": 2,
+          "distance_m": 0.027,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "BERYL ST": {
+          "matching_features": 1,
+          "distance_m": 0.023,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "ACADEMY ST",
+          "BERYL ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 26.7
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/b21ecc6dd6237bd685f895fde8aab0e4c55689e6389dd7a0ac7e2c76e4340405.json.gz",
+        "sha256": "907d2b5d250652609ef7d355eb84aa5a675ca4edfec2794901d7f00cb3bade41",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:37:34.544323+00:00"
+      }
+    },
+    {
+      "pair_id": "1028af4865c3ba9c343b5e7b3c38822150ad62369375cdcd20c7f6738ce0cc0d",
+      "primary": "CASTLE GLEN DR",
+      "cross": "VILLAGE GLEN DR",
+      "node_id": 72815,
+      "longitude": -117.13054949291836,
+      "latitude": 32.804952606860006,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2025"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 63235,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 63236,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 211539,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CASTLE GLEN DR": {
+          "matching_features": 1,
+          "distance_m": 0.063,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "VILLAGE GLEN DR": {
+          "matching_features": 1,
+          "distance_m": 0.043,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 4,
+        "named_roads_within_30m": [
+          "CASTLE GLEN DR",
+          "VILLAGE GLEN DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.8
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/50e39d22adb5330c6c5187c2d1cf28515ec3905ee1efdeb49f08511ef7b7475f.json.gz",
+        "sha256": "766089a7823336b969f9e8491600f829bd267e3f9812405c3327311cd307340e",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:42:47.794958+00:00"
+      }
+    },
+    {
+      "pair_id": "ee1ce5c24607c8ac918b03928ead677791bfc8c320e063682045fc0b63cf6fd5",
+      "primary": "MEADE AVE",
+      "cross": "UTAH ST",
+      "node_id": 84810,
+      "longitude": -117.13265565655422,
+      "latitude": 32.757275641372104,
+      "reports": 3,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2023",
+          "2025",
+          "2026"
+        ],
+        "road_class": [
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 45368,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 45372,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 62243,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 62244,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "MEADE AVE": {
+          "matching_features": 1,
+          "distance_m": 0.04,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "UTAH ST": {
+          "matching_features": 1,
+          "distance_m": 0.032,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 7,
+        "named_roads_within_30m": [
+          "MEADE AVE",
+          "UTAH ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/78e91815c7fec308465d10e76dfb70b5ae171725b706e037c70a3bea5947e415.json.gz",
+        "sha256": "3adb59c44f13c246ad7c9cbc5a353b9bc644fbd4174661c74ce49a9fba7f3aee",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:29:26.073914+00:00"
+      }
+    },
+    {
+      "pair_id": "1ce222c23cd4041dd404aab71d8da97cfc338a710fc7d25779c8e295da604390",
+      "primary": "FARMINGDALE ST",
+      "cross": "SCRIPPS RANCH BLVD",
+      "node_id": 55550,
+      "longitude": -117.09992356941895,
+      "latitude": 32.92405869380371,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2016"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 151592,
+          "segclass": "4",
+          "segstat": "C",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 151619,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 151867,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 159575,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "FARMINGDALE ST": {
+          "matching_features": 1,
+          "distance_m": 0.053,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "SCRIPPS RANCH BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.051,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 14,
+        "named_roads_within_30m": [
+          "FARMINGDALE ST",
+          "SCRIPPS RANCH BLVD",
+          "SPENCERPORT WAY"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 88.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/fb0fc271a6c07001a6f8b414c677959129bdf4e66bcb9fc8dc55a7867a422ca5.json.gz",
+        "sha256": "44297454034c96b9ddca7a9d903840d0b9a136b0d1b54a9c920a5fa390dbe2a0",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:43:25.182587+00:00"
+      }
+    },
+    {
+      "pair_id": "554cb8dad622b94798ebdcb32c6df53603d8e6f1a19b1af42b1dc6725f08c57b",
+      "primary": "CYPRESS CANYON PARK DR",
+      "cross": "POMERADO RD",
+      "node_id": 55828,
+      "longitude": -117.06271345479269,
+      "latitude": 32.92176705545728,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          true
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 25486,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 58998,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 114921,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 163821,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CYPRESS CANYON PARK DR": {
+          "matching_features": 1,
+          "distance_m": 0.042,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "POMERADO RD": {
+          "matching_features": 1,
+          "distance_m": 0.043,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 24,
+        "named_roads_within_30m": [
+          "CYPRESS CANYON PARK DR",
+          "POMERADO RD",
+          "SPRING CANYON RD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 9.1
+      },
+      "screening_flags": [
+        "near_parallel_named_lines"
+      ],
+      "evidence": {
+        "file": "responses/bdeaa65e890d08f5e8c71a66388745f2764d1f1780e3f8b721ed8af4f8ea4451.json.gz",
+        "sha256": "bc8c04fbb6bbed1ec62e9ab62c5198edf711ab36e8be192b409a2b75fcf7961b",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:43:42.612302+00:00"
+      }
+    },
+    {
+      "pair_id": "1ce189a3461ffc1f75bca25a8dc74f33f06b7cc6ea33c2202789563b61fb0887",
+      "primary": "25TH ST",
+      "cross": "C ST",
+      "node_id": 96672,
+      "longitude": -117.14028148819503,
+      "latitude": 32.7168534742806,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2016",
+          "2022"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 3660,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 3663,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14340,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 14362,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "25TH ST": {
+          "matching_features": 1,
+          "distance_m": 0.045,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "C ST": {
+          "matching_features": 1,
+          "distance_m": 0.053,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 6,
+        "named_roads_within_30m": [
+          "25TH ST",
+          "C ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/01c9dac98f86db8516b75ebd53b7dbeee2c94d82f09a16cdda9d6397a0c99477.json.gz",
+        "sha256": "74d3b71a85dc41a0382eff23dca0ad8c2128c90327f49b059248c2b7010d60cd",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:39:54.817594+00:00"
+      }
+    },
+    {
+      "pair_id": "3ec1e4e842faad489264de44e33f9c97aeb00d1ab814fa8fc61ddab2ac238569",
+      "primary": "BOSTON AVE",
+      "cross": "S 40TH ST",
+      "node_id": 101571,
+      "longitude": -117.10813751992151,
+      "latitude": 32.693941681748306,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Southeastern"
+        ],
+        "year": [
+          "2016"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          true
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 5048,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 5049,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 12827,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 12828,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "BOSTON AVE": {
+          "matching_features": 1,
+          "distance_m": 0.035,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "S 40TH ST": {
+          "matching_features": 1,
+          "distance_m": 0.045,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 6,
+        "named_roads_within_30m": [
+          "BOSTON AVE",
+          "S 40TH ST"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 90.0
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/f20775d157f556ab8b3f199f58c7f9105f5cf5942f278a7348a75aa632f65be8.json.gz",
+        "sha256": "4bd27c702c82cbe9092d6cbe78e2c055d115a6f617fadd0325c91b1b9528b25e",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:46:37.112332+00:00"
+      }
+    },
+    {
+      "pair_id": "5eec05634ad588ef1e99c3e70533fbd3ac21d4c4cae511ae062d668a0fdaa570",
+      "primary": "J ST",
+      "cross": "PARK BLVD",
+      "node_id": 98310,
+      "longitude": -117.15373035005842,
+      "latitude": 32.70940064554473,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Central"
+        ],
+        "year": [
+          "2023",
+          "2025"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 2703,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 2704,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 38441,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 38442,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "J ST": {
+          "matching_features": 1,
+          "distance_m": 0.039,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "PARK BLVD": {
+          "matching_features": 1,
+          "distance_m": 0.033,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 11,
+        "named_roads_within_30m": [
+          "J ST",
+          "N 12TH AVE",
+          "PARK BLVD"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.5
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/8978f8ce7ce88475858c2f1cfd869bbc6f07ad319bc749b773c2c86f98928682.json.gz",
+        "sha256": "28be3c4af6d8ddc286e3d4224b7aae884fd2aca1f3e006f9fb3adb5e983cb3ab",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:46:09.682441+00:00"
+      }
+    },
+    {
+      "pair_id": "7aff29be728d344e1fd5077724d7a4db16597850ebc3f815202fd6c0076f494e",
+      "primary": "KEARNY VILLA RD",
+      "cross": "RUFFIN RD",
+      "node_id": 64087,
+      "longitude": -117.12755923300678,
+      "latitude": 32.83974568588658,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Eastern"
+        ],
+        "year": [
+          "2026"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 27655,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 103843,
+          "segclass": "3",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 139264,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 215695,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "KEARNY VILLA RD": {
+          "matching_features": 1,
+          "distance_m": 0.024,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "RUFFIN RD": {
+          "matching_features": 1,
+          "distance_m": 0.032,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 14,
+        "named_roads_within_30m": [
+          "KEARNY VILLA RD",
+          "RUFFIN RD",
+          "WAXIE WAY"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 87.2
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/0897ab967d4f55646e80f56280e53451e84cf1d7d9d9fa1cac0ef89c18827e76.json.gz",
+        "sha256": "b8c27bc8f46aead85eb7dd1b54d804eed0d4e36daea7e16c7e1d1762a9018f1a",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:37:24.254760+00:00"
+      }
+    },
+    {
+      "pair_id": "0a5956714801b0e8b18cf96bbdb263ce45b51e4341fee4790b08c0a295ec898a",
+      "primary": "OHIO ST",
+      "cross": "POLK AVE",
+      "node_id": 86483,
+      "longitude": -117.12892301987557,
+      "latitude": 32.7522120467829,
+      "reports": 2,
+      "strata": {
+        "division": [
+          "Mid-City"
+        ],
+        "year": [
+          "2022",
+          "2026"
+        ],
+        "road_class": [
+          "local"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 50029,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 50034,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 53274,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 53303,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "OHIO ST": {
+          "matching_features": 1,
+          "distance_m": 0.002,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "POLK AVE": {
+          "matching_features": 1,
+          "distance_m": 0.005,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 9,
+        "named_roads_within_30m": [
+          "OHIO ST",
+          "POLK AVE"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 89.9
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/271d66e47c51c46faa158a9be1f0acae2966001f5aa3611e7360d327b4564fbc.json.gz",
+        "sha256": "23b390283e2ca220d9b8920acbe03c0bb3781cb4271c4fb11e52efae03a3321e",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:30:45.099807+00:00"
+      }
+    },
+    {
+      "pair_id": "6b5260de89e55ffea0e0d5038faa7761f0be800bb3339b199b31acad988eac19",
+      "primary": "CAM SANTA FE",
+      "cross": "FLANDERS DR",
+      "node_id": 57222,
+      "longitude": -117.17105088228304,
+      "latitude": 32.90502748778476,
+      "reports": 1,
+      "strata": {
+        "division": [
+          "Northeastern"
+        ],
+        "year": [
+          "2022"
+        ],
+        "road_class": [
+          "local",
+          "major_arterial_collector"
+        ],
+        "directional_name": [
+          false
+        ],
+        "complex_name": [
+          false
+        ]
+      },
+      "incident_segments": [
+        {
+          "roadsegid": 8204,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 8208,
+          "segclass": "5",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 114074,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        },
+        {
+          "roadsegid": 114084,
+          "segclass": "4",
+          "segstat": "M",
+          "f_level": 1,
+          "t_level": 1
+        }
+      ],
+      "tiger_road_checks": {
+        "CAM SANTA FE": {
+          "matching_features": 1,
+          "distance_m": 0.012,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        },
+        "FLANDERS DR": {
+          "matching_features": 1,
+          "distance_m": 0.053,
+          "within_30m_features": 1,
+          "mtfcc": [
+            "S1400"
+          ]
+        }
+      },
+      "tiger_diagnostics": {
+        "response_polyline_features": 6,
+        "named_roads_within_30m": [
+          "CAM SANTA FE",
+          "FLANDERS DR"
+        ],
+        "named_lines_min_separation_m": 0.0,
+        "crossing_angle_degrees": 87.1
+      },
+      "screening_flags": [],
+      "evidence": {
+        "file": "responses/9a7ba90a4586271f6edb32a991802a98f162a099809f4eaf455d1b62047a70e2.json.gz",
+        "sha256": "76ec4d225d568c2c9086c6b289d8cce254479832ef7db7d6dc632e08f85ace3a",
+        "origin": "reused:prior_interrupted_stage_c",
+        "captured_at": "2026-11-03T04:31:10.220859+00:00"
+      }
+    }
+  ]
+}

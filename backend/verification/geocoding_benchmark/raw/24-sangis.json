@@ -1,0 +1,223 @@
+{
+  "address_id": "24",
+  "provider": "sangis",
+  "input_address": "100 Park Plz, San Diego, CA 92101",
+  "request_url": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0/query?where=addrnmbr%3D100+AND+UPPER%28addrname%29+IN+%28%27PARK%27%29&outFields=objectid%2Caddrnmbr%2Caddrfrac%2Caddrpdir%2Caddrname%2Caddrsfx%2Caddrpostd%2Caddrunit%2Caddrzip%2Ccommunity%2Caddrjur%2Cstate%2Cplacement_location%2Casource%2Capn%2Croadsegid&outSR=4326&returnGeometry=true&resultRecordCount=200&f=json",
+  "fetched_at": "2026-11-03T00:18:36.206089+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "PARK",
+          "addrsfx": "BLVD",
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "asource": "M",
+          "roadsegid": null,
+          "placement_location": "C",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 1194614,
+          "apn": "7602147600",
+          "addrnmbr": 100
+        },
+        "geometry": {
+          "x": -117.15234952645207,
+          "y": 32.70790843705777
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "PARK",
+          "addrsfx": "BLVD",
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "asource": "M",
+          "roadsegid": null,
+          "placement_location": "C",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 1219831,
+          "apn": "7602147500",
+          "addrnmbr": 100
+        },
+        "geometry": {
+          "x": -117.1569253884582,
+          "y": 32.70754782994374
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "PARK",
+          "addrsfx": "BLVD",
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "asource": "M",
+          "roadsegid": null,
+          "placement_location": "C",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 1219832,
+          "apn": "7602147501",
+          "addrnmbr": 100
+        },
+        "geometry": {
+          "x": -117.1569253884582,
+          "y": 32.70754782994374
+        }
+      }
+    ],
+    "exceededTransferLimit": false,
+    "hasM": false,
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "modelName": "objectid",
+        "defaultValue": null,
+        "name": "objectid",
+        "length": 4,
+        "alias": "objectid",
+        "type": "esriFieldTypeOID"
+      },
+      {
+        "modelName": "ADDRNMBR",
+        "defaultValue": null,
+        "name": "addrnmbr",
+        "alias": "NUMBER",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "ADDRFRAC",
+        "defaultValue": null,
+        "name": "addrfrac",
+        "length": 3,
+        "alias": "FRACTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPDIR",
+        "defaultValue": null,
+        "name": "addrpdir",
+        "length": 2,
+        "alias": "PREDIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRNAME",
+        "defaultValue": null,
+        "name": "addrname",
+        "length": 30,
+        "alias": "NAME",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRSFX",
+        "defaultValue": null,
+        "name": "addrsfx",
+        "length": 4,
+        "alias": "SUFFIX",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPOSTD",
+        "defaultValue": null,
+        "name": "addrpostd",
+        "length": 2,
+        "alias": "POST_DIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRUNIT",
+        "defaultValue": null,
+        "name": "addrunit",
+        "length": 8,
+        "alias": "UNIT",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRZIP",
+        "defaultValue": null,
+        "name": "addrzip",
+        "length": 5,
+        "alias": "ZIP",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "COMMUNITY",
+        "defaultValue": null,
+        "name": "community",
+        "length": 20,
+        "alias": "POSTAL_COMMUNITY",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRJUR",
+        "defaultValue": null,
+        "name": "addrjur",
+        "length": 2,
+        "alias": "JURISDICTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "STATE",
+        "defaultValue": "CA",
+        "name": "state",
+        "length": 2,
+        "alias": "STATE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "PLACEMENT_LOCATION",
+        "defaultValue": null,
+        "name": "placement_location",
+        "length": 1,
+        "alias": "PLACEMENT_LOCATION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "SOURCE",
+        "defaultValue": null,
+        "name": "asource",
+        "length": 1,
+        "alias": "ASOURCE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "APN",
+        "defaultValue": null,
+        "name": "apn",
+        "length": 10,
+        "alias": "APN",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ROADSEGID",
+        "defaultValue": null,
+        "name": "roadsegid",
+        "alias": "ROADSEGID",
+        "type": "esriFieldTypeInteger"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPoint"
+  },
+  "transport_status": "ok",
+  "latency_ms": 255.129
+}

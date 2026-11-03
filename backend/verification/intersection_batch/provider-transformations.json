@@ -1,0 +1,10 @@
+{
+  "url": "https://geo.sandag.org/server/rest/services/Utilities/Geometry/GeometryServer/findTransformations?f=json&inSR=2230&outSR=4326&numOfResults=3&extentOfInterest=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D",
+  "response": {
+    "error": {
+      "code": 499,
+      "details": [],
+      "message": "Token Required"
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "checked_at": "2026-11-03T04:01:41.791691+00:00",
+  "pairs": 102,
+  "candidate_checks": 119,
+  "study_classifications": {
+    "accepted_candidate": 60,
+    "topology_uncertain": 19,
+    "no_intersection": 12,
+    "multiple_candidates": 11
+  },
+  "candidate_outcomes": {
+    "both_roads_spatially_corroborated": 88,
+    "not_corroborated": 31
+  },
+  "accepted_candidate_checks": 60,
+  "accepted_outcomes": {
+    "both_roads_spatially_corroborated": 45,
+    "not_corroborated": 15
+  },
+  "incident_class_occurrences": {
+    "4": 77,
+    "3": 131,
+    "Z": 12,
+    "5": 144,
+    "7": 4,
+    "9": 24,
+    "M": 6,
+    "A": 2,
+    "2": 3,
+    "P": 1,
+    "1": 14,
+    "H": 5
+  },
+  "accepted_uncorroborated_pairs": [
+    {
+      "pair_id": "83f4533a73a9730d05e1e08912b6dcff7bba19893c2e72f5d5ba7c037164ba82",
+      "primary": "DEL MAR HEIGHTS RD",
+      "cross": "INTERSTATE 5 SB OFF RAMP",
+      "checks": [
+        {
+          "node_id": 53035,
+          "status": "not_corroborated",
+          "road_checks": {
+            "DEL MAR HEIGHTS RD": {
+              "matching_features": 1,
+              "distance_m": 0.018
+            },
+            "INTERSTATE 5 SB OFF RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 13,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "940bccbec69b3fbf8785e419c969c31b308f259f00be242482fe605846473580",
+      "primary": "LA MEDIA RD",
+      "cross": "SAINT ANDREWS AVE",
+      "checks": [
+        {
+          "node_id": 116565,
+          "status": "not_corroborated",
+          "road_checks": {
+            "LA MEDIA RD": {
+              "matching_features": 1,
+              "distance_m": 0.006
+            },
+            "SAINT ANDREWS AVE": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 11,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "5ded189b82fc8133aab067211006092922361811df6d84e87169271496d244fe",
+      "primary": "INTERSTATE 5 SB OFF RAMP",
+      "cross": "SEA WORLD DR",
+      "checks": [
+        {
+          "node_id": 81278,
+          "status": "not_corroborated",
+          "road_checks": {
+            "INTERSTATE 5 SB OFF RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "SEA WORLD DR": {
+              "matching_features": 1,
+              "distance_m": 0.038
+            }
+          },
+          "independent_features": 12,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "3e7e651106ac08617e0315b95de20d95d95d6c38191fc7ee626bdb79a2c2e754",
+      "primary": "AVENIDA DE LAS VISTAS",
+      "cross": "VISTA SANTA ROSALIA",
+      "checks": [
+        {
+          "node_id": 115109,
+          "status": "not_corroborated",
+          "road_checks": {
+            "AVENIDA DE LAS VISTAS": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "VISTA SANTA ROSALIA": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 14,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "60e8676c6a1480417f090e40a36471923bd50ab1c681318d060860cda5484816",
+      "primary": "AVENIDA DE LAS TIENDAS",
+      "cross": "FRIARS RD",
+      "checks": [
+        {
+          "node_id": 81288,
+          "status": "not_corroborated",
+          "road_checks": {
+            "AVENIDA DE LAS TIENDAS": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "FRIARS RD": {
+              "matching_features": 1,
+              "distance_m": 0.051
+            }
+          },
+          "independent_features": 7,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "22d7c346f1360a4ec344fe485984799e0008e5945a44b0b7a5b1f82c5d5fe031",
+      "primary": "25TH ST",
+      "cross": "STATE ROUTE 94 WB OFF RAMP",
+      "checks": [
+        {
+          "node_id": 97446,
+          "status": "not_corroborated",
+          "road_checks": {
+            "25TH ST": {
+              "matching_features": 1,
+              "distance_m": 0.046
+            },
+            "STATE ROUTE 94 WB OFF RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 16,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "55b140fad6c1ac783d3f5a405cbc9e8f432c8e216c139344b0ce5359383ca847",
+      "primary": "CARMEL VISTA RD",
+      "cross": "RUETTE DE VILLE",
+      "checks": [
+        {
+          "node_id": 53773,
+          "status": "not_corroborated",
+          "road_checks": {
+            "CARMEL VISTA RD": {
+              "matching_features": 1,
+              "distance_m": 46.43
+            },
+            "RUETTE DE VILLE": {
+              "matching_features": 1,
+              "distance_m": 0.024
+            }
+          },
+          "independent_features": 10,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "ae548b8eff202e3fdefc42af8584b14dd5739c7d8d74d5291ad590c45a45d8fc",
+      "primary": "DEL SUR RIDGE RD",
+      "cross": "LONE QUAIL RD",
+      "checks": [
+        {
+          "node_id": 154048,
+          "status": "not_corroborated",
+          "road_checks": {
+            "DEL SUR RIDGE RD": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "LONE QUAIL RD": {
+              "matching_features": 1,
+              "distance_m": 0.025
+            }
+          },
+          "independent_features": 7,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "aa7b48ee9cc99f753fcb084a3d740e72fad81123028b17d2e7c52bd4e2623816",
+      "primary": "SUNSET CLIFFS BLVD RAMP",
+      "cross": "W MISSION BAY DR",
+      "checks": [
+        {
+          "node_id": 82452,
+          "status": "not_corroborated",
+          "road_checks": {
+            "SUNSET CLIFFS BLVD RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "W MISSION BAY DR": {
+              "matching_features": 1,
+              "distance_m": 0.017
+            }
+          },
+          "independent_features": 11,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        },
+        {
+          "node_id": 82645,
+          "status": "not_corroborated",
+          "road_checks": {
+            "SUNSET CLIFFS BLVD RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "W MISSION BAY DR": {
+              "matching_features": 1,
+              "distance_m": 19.185
+            }
+          },
+          "independent_features": 17,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "rejected"
+        }
+      ]
+    },
+    {
+      "pair_id": "3e934f6ef846c4150c52371a5582a0281a71aa9f500a56c3d842042483645555",
+      "primary": "INTERSTATE 5 NB OFF RAMP",
+      "cross": "LA JOLLA VILLAGE DR",
+      "checks": [
+        {
+          "node_id": 59027,
+          "status": "not_corroborated",
+          "road_checks": {
+            "INTERSTATE 5 NB OFF RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "LA JOLLA VILLAGE DR": {
+              "matching_features": 1,
+              "distance_m": 0.102
+            }
+          },
+          "independent_features": 13,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "0de93c151695498dc74d307b56529be143bde9ee098e333a4315e899432ee67e",
+      "primary": "CARMEL MOUNTAIN RD",
+      "cross": "VEREDA MAR DEL CORAZON",
+      "checks": [
+        {
+          "node_id": 55718,
+          "status": "not_corroborated",
+          "road_checks": {
+            "CARMEL MOUNTAIN RD": {
+              "matching_features": 1,
+              "distance_m": 0.029
+            },
+            "VEREDA MAR DEL CORAZON": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 12,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "b86f74028ae90adf021e472e81031e5c803c45be1d04e9750bf09f1504fdda56",
+      "primary": "CAMINITO CASCARA",
+      "cross": "RANCHO MISSION RD",
+      "checks": [
+        {
+          "node_id": 78471,
+          "status": "not_corroborated",
+          "road_checks": {
+            "CAMINITO CASCARA": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "RANCHO MISSION RD": {
+              "matching_features": 1,
+              "distance_m": 0.024
+            }
+          },
+          "independent_features": 10,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "cd8877449548060ac49bd2e9d8c973b8b1dbdbc9fb749146f5ac441af61ba71d",
+      "primary": "HISTORIC DECATUR RD",
+      "cross": "SIMS RD",
+      "checks": [
+        {
+          "node_id": 90345,
+          "status": "not_corroborated",
+          "road_checks": {
+            "HISTORIC DECATUR RD": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "SIMS RD": {
+              "matching_features": 1,
+              "distance_m": 0.039
+            }
+          },
+          "independent_features": 9,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "7e57e99ed053da52b1872ab224d257905038f3bddf106c22dd0ad130f8851e44",
+      "primary": "CAM DEL RIO N",
+      "cross": "DISCOVERY PL",
+      "checks": [
+        {
+          "node_id": 176033,
+          "status": "not_corroborated",
+          "road_checks": {
+            "CAM DEL RIO N": {
+              "matching_features": 3,
+              "distance_m": 0.018
+            },
+            "DISCOVERY PL": {
+              "matching_features": 0,
+              "distance_m": null
+            }
+          },
+          "independent_features": 15,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    },
+    {
+      "pair_id": "6b4f126e30b1dbb0f42b5766f62f23b8318e115436e141ffb14c0dbf7ee08dde",
+      "primary": "INTERSTATE 5 NB OFF RAMP",
+      "cross": "ROSELLE ST",
+      "checks": [
+        {
+          "node_id": 178070,
+          "status": "not_corroborated",
+          "road_checks": {
+            "INTERSTATE 5 NB OFF RAMP": {
+              "matching_features": 0,
+              "distance_m": null
+            },
+            "ROSELLE ST": {
+              "matching_features": 1,
+              "distance_m": 0.003
+            }
+          },
+          "independent_features": 21,
+          "grade_or_historical_ground_truth": "not_verified",
+          "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+          "topology_outcome": "supported"
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "systematic_error_discovered": false,
+  "false_positive_rate": null,
+  "safe_deployment_established": false,
+  "limitation": "Exact-name independent spatial proximity is not physical connectivity, surveyed accuracy, or historical ground truth. A stratified nonrandom sample cannot supply a population false-positive rate. Uncorroborated names require review; corroborated grade-separated crossings illustrate the limitation.",
+  "new_source": "US Census TIGERweb Transportation identify; NOT Census address geocoding or a repeat of the Census batch.",
+  "direct_requests": 119,
+  "files": {
+    "independent-plan.json": "22833c2d1fff96fe41ed80b596a9e9cb07e5f1017de4ceb08f83ea86ee3dee89",
+    "independent-validation.json": "4d98e76328ad99182b194c7158ee7ef987b886d29f22ce96af3b531ed451f7e8",
+    "requests.json": "f8342975d6aaa2cf24bc59ed8d04db97c74b6cebc09261f2dd3e657e47bd77c7"
+  }
+}

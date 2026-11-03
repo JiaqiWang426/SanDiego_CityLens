@@ -1,0 +1,55 @@
+{
+  "address_id": "02",
+  "provider": "census",
+  "input_address": "3350 Front St, San Diego, CA 92103",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3350+Front+St&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92103",
+  "fetched_at": "2026-11-03T00:09:34.396993+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92103",
+          "city": "San Diego",
+          "street": "3350 Front St",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "195343085"
+          },
+          "coordinates": {
+            "x": -117.164953584173,
+            "y": 32.740255545403
+          },
+          "addressComponents": {
+            "zip": "92103",
+            "streetName": "FRONT",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "3300",
+            "state": "CA",
+            "suffixType": "ST",
+            "toAddress": "3398",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "3350 FRONT ST, SAN DIEGO, CA, 92103"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 396.176
+}

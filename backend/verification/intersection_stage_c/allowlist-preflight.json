@@ -1,0 +1,31 @@
+{
+  "mode": "read_only_allowlist_preflight",
+  "collision_updates": 0,
+  "checked_at": "2026-11-03T07:54:02.035176+00:00",
+  "validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c",
+  "allowlist_sha256": "5cc1ae3c9cc4a53ca8b400cd777544778233a508c34f4475a33c4d66454e00f8",
+  "allowlist_reports": 4112,
+  "eligibility": {
+    "eligible": 3984,
+    "not_pending_or_already_located": 128
+  },
+  "collision_records_unchanged": true,
+  "original_fields_unchanged": true,
+  "non_allowlist_rows_unchanged": true,
+  "whole_table_unchanged_since_validation": false,
+  "statuses": {
+    "ambiguous": 3117,
+    "pending": 8222,
+    "no_match": 7400,
+    "matched": 59755
+  },
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "deployment_gate": {
+    "allowlist_ready_for_review": true,
+    "requires_separate_explicit_approval": true,
+    "blocking_reasons": []
+  }
+}

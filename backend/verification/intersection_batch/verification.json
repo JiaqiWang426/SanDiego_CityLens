@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-11-03T04:04:59.709802+00:00",
+  "focused_tests": {
+    "passed": 81,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 6.16,
+    "includes": "60 Stage A + 21 Stage B; owned disposable PostGIS integration"
+  },
+  "agent_regression": {
+    "passed": 385,
+    "failed": 0,
+    "skipped": 37,
+    "seconds": 13.39,
+    "skip_reason": "Guarded opt-in database fixtures; Stage B disposable integration separately passed"
+  },
+  "stage_a_replay": {
+    "pairs": 80,
+    "exact_classifications": 80,
+    "exact_node_decisions": 80,
+    "exact_node_evidence": 80
+  },
+  "archived_rest_features": {
+    "roads": 4148,
+    "nodes": 236,
+    "attribute_mismatches": 0
+  },
+  "reference_counts": {
+    "road_segments": 164584,
+    "road_nodes": 130637
+  },
+  "selected_pending_reports": 6840,
+  "complete_pair_reports": 6839,
+  "distinct_complete_canonical_pairs": 3973,
+  "accepted_proposal_reports": 4319,
+  "proposal_deployed": false,
+  "independent_pairs": 102,
+  "independent_checks": 119,
+  "independent_accepted": {
+    "corroborated": 45,
+    "uncorroborated": 15
+  },
+  "independent_offline_replay": {
+    "new_requests": 0,
+    "validation_sha256": "4d98e76328ad99182b194c7158ee7ef987b886d29f22ce96af3b531ed451f7e8",
+    "original_validation_sha256": "4d98e76328ad99182b194c7158ee7ef987b886d29f22ce96af3b531ed451f7e8"
+  },
+  "run_artifact_checksums": "passed",
+  "source_snapshot_checksums": "passed",
+  "independent_response_checksums": "passed",
+  "documentation_links": "passed",
+  "compileall": "passed",
+  "git_diff_check": "passed",
+  "all_collision_rows_unchanged": true,
+  "archived_source_rows_unchanged": true,
+  "existing_matched_records": 59627,
+  "total_collision_records": 78494,
+  "precision_migration_applied": false,
+  "agent_read_only": true,
+  "collision_updates": 0,
+  "census_address_geocoding_requests": 0,
+  "google_geocoding_requests": 0,
+  "deployment_recommended": false,
+  "not_run": [
+    "Historical apply on the working database",
+    "Precision migration on the working database",
+    "Google Geocoding",
+    "Census address batch",
+    "Field survey or historical/aerial ground truth",
+    "Live Agent/LLM requests"
+  ]
+}

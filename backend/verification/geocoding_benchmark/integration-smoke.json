@@ -1,0 +1,1185 @@
+{
+  "passed": true,
+  "live_api_requests": 0,
+  "replayed_live_responses": [
+    {
+      "id": "02",
+      "provider": "census"
+    },
+    {
+      "id": "04",
+      "provider": "census"
+    },
+    {
+      "id": "04",
+      "provider": "sangis"
+    },
+    {
+      "id": "01",
+      "provider": "census"
+    },
+    {
+      "id": "01",
+      "provider": "sangis"
+    }
+  ],
+  "model": "fixture",
+  "sql_calls": 2,
+  "sql_account": "actual restricted Agent reader",
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "all_collision_fields_digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "all_collision_fields_digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "mixed_provider_comparison": {
+    "status": "complete",
+    "message": "Analysis completed for the confirmed, resolved addresses. Numerical findings remain subject to dataset coverage limitations.",
+    "conversation_id": "conversation_1144318a76c64b72a02f7625727f6485",
+    "revision": 1,
+    "original_question": "Compare traffic collisions near 3350 Front St, San Diego, CA 92103 and 9800 Mira Lee Way, San Diego, CA 92126 within 800 meters from May 2 to November 2, 2026.",
+    "locations": [
+      {
+        "id": "A",
+        "source_quote": "3350 Front St",
+        "house_number": "3350",
+        "street_name": "Front",
+        "street_suffix": "St",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA",
+        "postal_code": "92103",
+        "post_direction": null
+      },
+      {
+        "id": "B",
+        "source_quote": "9800 Mira Lee Way",
+        "house_number": "9800",
+        "street_name": "Mira Lee",
+        "street_suffix": "Way",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA",
+        "postal_code": "92126",
+        "post_direction": null
+      }
+    ],
+    "candidates": {},
+    "resolved_locations": [
+      {
+        "candidate_id": "candidate_caa81ef389ee4c3d9b642b1fec7bf74b",
+        "matched_address": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+        "location": {
+          "id": "A",
+          "label": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+          "latitude": 32.740255545403,
+          "longitude": -117.164953584173
+        },
+        "provider": "US Census Geocoder",
+        "precision": "interpolated_address",
+        "benchmark": "Public_AR_Current",
+        "requires_confirmation": false,
+        "mismatch_reason": null,
+        "metadata": {
+          "address_components": {
+            "zip": "92103",
+            "streetName": "FRONT",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "3300",
+            "state": "CA",
+            "suffixType": "ST",
+            "toAddress": "3398",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "tiger_line": {
+            "side": "L",
+            "tigerLineId": "195343085"
+          },
+          "srid": 4326,
+          "precision_basis": "Census address-range interpolation; building accuracy unverified"
+        }
+      },
+      {
+        "candidate_id": "candidate_3a240444e1b14a2c8e903ede488931d4",
+        "matched_address": "9800 MIRA LEE WAY, San Diego, CA 92126",
+        "location": {
+          "id": "B",
+          "label": "9800 MIRA LEE WAY, San Diego, CA 92126",
+          "latitude": 32.92232753316194,
+          "longitude": -117.1183146426874
+        },
+        "provider": "SanGIS Address Points",
+        "precision": "structure",
+        "benchmark": null,
+        "requires_confirmation": false,
+        "mismatch_reason": null,
+        "metadata": {
+          "placement_location": [
+            "S"
+          ],
+          "placement_labels": [
+            "Structure"
+          ],
+          "asource": [
+            "S"
+          ],
+          "source_labels": [
+            "SanGIS"
+          ],
+          "source_features": [
+            {
+              "addrjur": "SD",
+              "x_coord": 6295216.63675,
+              "usng": "11S MS 88939 42682",
+              "orig_oid": 710403,
+              "addrfrac": null,
+              "addrname": "MIRA LEE",
+              "addrsfx": "WAY",
+              "address_type": null,
+              "addrzip": "92126",
+              "addrpostd": null,
+              "community": "San Diego",
+              "addrpdir": null,
+              "addrapnid": "846039",
+              "parcelid": 5325558,
+              "roadsegid": 221662,
+              "asource": "S",
+              "placement_location": "S",
+              "addrunit": null,
+              "y_coord": 1916473.69075,
+              "state": "CA",
+              "objectid": 707287,
+              "apn": "3184103800",
+              "addrnmbr": 9800
+            }
+          ],
+          "feature_count": 1,
+          "srid": 4326,
+          "placement_source_conflict": false,
+          "zip_missing": false,
+          "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+          "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy",
+          "provider_attempts": [
+            {
+              "provider": "US Census Geocoder",
+              "status": "no_match"
+            },
+            {
+              "provider": "SanGIS Address Points",
+              "status": "resolved"
+            }
+          ]
+        }
+      }
+    ],
+    "radius_meters": 800.0,
+    "time_range": {
+      "start": "2026-05-02T00:00:00-07:00",
+      "end": "2026-11-02T00:00:00-08:00",
+      "calendar_timezone": "America/Los_Angeles"
+    },
+    "proposed_plan": {
+      "intent": "compare_locations",
+      "tools": [
+        "aggregate_traffic_collisions"
+      ],
+      "period": "month",
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "exclude_linked_duplicates": false,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null
+      },
+      "filter_quote": null,
+      "unsupported_dimensions": []
+    },
+    "result": {
+      "status": "partial",
+      "intent": "compare_locations",
+      "answer": "This comparison describes imported record counts, not safety or service quality. Locations: A: 3350 FRONT ST, SAN DIEGO, CA, 92103; B: 9800 MIRA LEE WAY, San Diego, CA 92126. Scope: within 800 meters of each selected pin, from 2026-05-02T00:00:00-07:00 (inclusive) to 2026-11-02T00:00:00-08:00 (exclusive); calendar timezone America/Los_Angeles. A: 15 imported, geocoded police collision reports matched the recorded query filters [ev_4258a8870a7f459b99f836f19dda7db5]. B: 8 imported, geocoded police collision reports matched the recorded query filters [ev_12a2159ba8094601bd39b7a681b2cd68]. geocoded_collision_report_count: B minus A is -7 reports [ev_4258a8870a7f459b99f836f19dda7db5, ev_12a2159ba8094601bd39b7a681b2cd68]. Coverage and freshness are unknown. Unlocated collision reports are excluded; collision positions are block-approximate. Zero matches do not establish absence of incidents.",
+      "comparison": {
+        "locations": [
+          "A",
+          "B"
+        ],
+        "radius_meters": 800.0,
+        "time_range": {
+          "start": "2026-05-02T00:00:00-07:00",
+          "end": "2026-11-02T00:00:00-08:00",
+          "calendar_timezone": "America/Los_Angeles"
+        },
+        "metrics": [
+          {
+            "metric": "geocoded_collision_report_count",
+            "location_a": "A",
+            "location_b": "B",
+            "value_a": 15,
+            "value_b": 8,
+            "difference_b_minus_a": -7,
+            "evidence_ids": [
+              "ev_4258a8870a7f459b99f836f19dda7db5",
+              "ev_12a2159ba8094601bd39b7a681b2cd68"
+            ],
+            "overlapping_circles": false,
+            "limitations": [
+              "Geographic completeness and source freshness are not verified.",
+              "Import timestamps do not establish source freshness; upserts retain older records.",
+              "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+              "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+              "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+              "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+              "Missing calendar buckets are zero-filled matches, not verified data coverage."
+            ]
+          }
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "cl_24f16188826240219f4d259822dfbe0b",
+          "text": "A: 15 imported, geocoded police collision reports matched the recorded query filters [ev_4258a8870a7f459b99f836f19dda7db5].",
+          "claim_type": "record_count",
+          "evidence_ids": [
+            "ev_4258a8870a7f459b99f836f19dda7db5"
+          ],
+          "metric": "geocoded_collision_report_count",
+          "value": 15,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+            "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+            "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+            "Missing calendar buckets are zero-filled matches, not verified data coverage."
+          ]
+        },
+        {
+          "claim_id": "cl_419676fb7c864655a71093eb09bfe36e",
+          "text": "B: 8 imported, geocoded police collision reports matched the recorded query filters [ev_12a2159ba8094601bd39b7a681b2cd68].",
+          "claim_type": "record_count",
+          "evidence_ids": [
+            "ev_12a2159ba8094601bd39b7a681b2cd68"
+          ],
+          "metric": "geocoded_collision_report_count",
+          "value": 8,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+            "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+            "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+            "Missing calendar buckets are zero-filled matches, not verified data coverage."
+          ]
+        },
+        {
+          "claim_id": "cl_923912d9783f4986b3c572b314e18ba5",
+          "text": "geocoded_collision_report_count: B minus A is -7 reports [ev_4258a8870a7f459b99f836f19dda7db5, ev_12a2159ba8094601bd39b7a681b2cd68].",
+          "claim_type": "descriptive_comparison",
+          "evidence_ids": [
+            "ev_4258a8870a7f459b99f836f19dda7db5",
+            "ev_12a2159ba8094601bd39b7a681b2cd68"
+          ],
+          "metric": "geocoded_collision_report_count",
+          "value": -7,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+            "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+            "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+            "Missing calendar buckets are zero-filled matches, not verified data coverage."
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "ev_4258a8870a7f459b99f836f19dda7db5",
+          "query_id": "q_d2c575e2e0db4ce1bc84095e02bcefc1",
+          "domain": "traffic_collisions",
+          "source_table": "citylens.traffic_collisions",
+          "source_dataset": "police_recorded_traffic_collisions",
+          "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+          "tool": "aggregate_traffic_collisions",
+          "tool_version": "1",
+          "metric": "geocoded_collision_report_count",
+          "metric_definition": "Stored geocoded police-collision report IDs in the selected radius and half-open interval.",
+          "value": 15,
+          "unit": "reports",
+          "location_id": "A",
+          "scope": {
+            "latitude": 32.740255545403,
+            "longitude": -117.164953584173,
+            "radius_meters": 800.0,
+            "start_inclusive": "2026-05-02T00:00:00-07:00",
+            "end_exclusive": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null,
+            "period": "month"
+          },
+          "provenance": {
+            "import_ids": null,
+            "source_file_sha256": null,
+            "source_freshness_verified": false,
+            "data_as_of": null,
+            "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466Z",
+            "source_updated_at": null,
+            "dataset_import_ids": [
+              7
+            ],
+            "dataset_imports": [
+              {
+                "id": 7,
+                "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+                "imported_at": "2026-10-28T09:15:49.310466+00:00",
+                "source_file": "pd_collisions_datasd.csv"
+              }
+            ],
+            "dataset_imports_truncated": false,
+            "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+          },
+          "quality": {
+            "completeness": "unknown",
+            "coordinate_precision": "block_approximate",
+            "unlocated_within_radius": "not_determinable",
+            "dataset_records": 78494,
+            "dataset_located_records": 59627,
+            "dataset_unlocated_records": 18867,
+            "geocoding_coverage": 0.7596376793130685,
+            "geocode_status_breakdown": {
+              "matched": 59627,
+              "pending": 8350,
+              "no_match": 7400,
+              "ambiguous": 3117
+            },
+            "dataset_dated_records": 78494,
+            "dataset_observed_start": "2015-03-19T19:00:00Z",
+            "dataset_observed_end": "2026-10-26T23:52:00Z"
+          },
+          "status": "partial",
+          "executed_at": "2026-11-03T00:30:39.305951Z",
+          "elapsed_ms": 883.4044000250287,
+          "buckets": [
+            {
+              "period_start": "2026-05-01T00:00:00-07:00",
+              "period_end": "2026-06-01T00:00:00-07:00",
+              "report_count": 3,
+              "located_count": 3,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-06-01T00:00:00-07:00",
+              "period_end": "2026-07-01T00:00:00-07:00",
+              "report_count": 1,
+              "located_count": 1,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-07-01T00:00:00-07:00",
+              "period_end": "2026-08-01T00:00:00-07:00",
+              "report_count": 4,
+              "located_count": 4,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-08-01T00:00:00-07:00",
+              "period_end": "2026-09-01T00:00:00-07:00",
+              "report_count": 3,
+              "located_count": 3,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-09-01T00:00:00-07:00",
+              "period_end": "2026-10-01T00:00:00-07:00",
+              "report_count": 2,
+              "located_count": 2,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-10-01T00:00:00-07:00",
+              "period_end": "2026-11-01T00:00:00-07:00",
+              "report_count": 2,
+              "located_count": 2,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-11-01T00:00:00-07:00",
+              "period_end": "2026-12-01T00:00:00-08:00",
+              "report_count": 0,
+              "located_count": 0,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": false
+            }
+          ],
+          "groups": [],
+          "records": [],
+          "pagination": null,
+          "caveats": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+            "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+            "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+            "Missing calendar buckets are zero-filled matches, not verified data coverage."
+          ],
+          "error_code": null
+        },
+        {
+          "evidence_id": "ev_12a2159ba8094601bd39b7a681b2cd68",
+          "query_id": "q_1ec68510bcfc4e128228f6292e1c41cb",
+          "domain": "traffic_collisions",
+          "source_table": "citylens.traffic_collisions",
+          "source_dataset": "police_recorded_traffic_collisions",
+          "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+          "tool": "aggregate_traffic_collisions",
+          "tool_version": "1",
+          "metric": "geocoded_collision_report_count",
+          "metric_definition": "Stored geocoded police-collision report IDs in the selected radius and half-open interval.",
+          "value": 8,
+          "unit": "reports",
+          "location_id": "B",
+          "scope": {
+            "latitude": 32.92232753316194,
+            "longitude": -117.1183146426874,
+            "radius_meters": 800.0,
+            "start_inclusive": "2026-05-02T00:00:00-07:00",
+            "end_exclusive": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null,
+            "period": "month"
+          },
+          "provenance": {
+            "import_ids": null,
+            "source_file_sha256": null,
+            "source_freshness_verified": false,
+            "data_as_of": null,
+            "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466Z",
+            "source_updated_at": null,
+            "dataset_import_ids": [
+              7
+            ],
+            "dataset_imports": [
+              {
+                "id": 7,
+                "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+                "imported_at": "2026-10-28T09:15:49.310466+00:00",
+                "source_file": "pd_collisions_datasd.csv"
+              }
+            ],
+            "dataset_imports_truncated": false,
+            "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+          },
+          "quality": {
+            "completeness": "unknown",
+            "coordinate_precision": "block_approximate",
+            "unlocated_within_radius": "not_determinable",
+            "dataset_records": 78494,
+            "dataset_located_records": 59627,
+            "dataset_unlocated_records": 18867,
+            "geocoding_coverage": 0.7596376793130685,
+            "geocode_status_breakdown": {
+              "matched": 59627,
+              "pending": 8350,
+              "no_match": 7400,
+              "ambiguous": 3117
+            },
+            "dataset_dated_records": 78494,
+            "dataset_observed_start": "2015-03-19T19:00:00Z",
+            "dataset_observed_end": "2026-10-26T23:52:00Z"
+          },
+          "status": "partial",
+          "executed_at": "2026-11-03T00:30:40.190287Z",
+          "elapsed_ms": 303.01049997797236,
+          "buckets": [
+            {
+              "period_start": "2026-05-01T00:00:00-07:00",
+              "period_end": "2026-06-01T00:00:00-07:00",
+              "report_count": 1,
+              "located_count": 1,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-06-01T00:00:00-07:00",
+              "period_end": "2026-07-01T00:00:00-07:00",
+              "report_count": 2,
+              "located_count": 2,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-07-01T00:00:00-07:00",
+              "period_end": "2026-08-01T00:00:00-07:00",
+              "report_count": 1,
+              "located_count": 1,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-08-01T00:00:00-07:00",
+              "period_end": "2026-09-01T00:00:00-07:00",
+              "report_count": 2,
+              "located_count": 2,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-09-01T00:00:00-07:00",
+              "period_end": "2026-10-01T00:00:00-07:00",
+              "report_count": 2,
+              "located_count": 2,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": true
+            },
+            {
+              "period_start": "2026-10-01T00:00:00-07:00",
+              "period_end": "2026-11-01T00:00:00-07:00",
+              "report_count": 0,
+              "located_count": 0,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": false
+            },
+            {
+              "period_start": "2026-11-01T00:00:00-07:00",
+              "period_end": "2026-12-01T00:00:00-08:00",
+              "report_count": 0,
+              "located_count": 0,
+              "unknown_injury_count": 0,
+              "unknown_fatality_count": 0,
+              "source_bucket_present": false
+            }
+          ],
+          "groups": [],
+          "records": [],
+          "pagination": null,
+          "caveats": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+            "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+            "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+            "Missing calendar buckets are zero-filled matches, not verified data coverage."
+          ],
+          "error_code": null
+        }
+      ],
+      "limitations": [
+        "Geographic completeness and source freshness are not verified.",
+        "Import timestamps do not establish source freshness; upserts retain older records.",
+        "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+        "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+        "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+        "Collision coordinates are block-approximate; radius membership is uncertain near boundaries.",
+        "Missing calendar buckets are zero-filled matches, not verified data coverage.",
+        "User locations are provider estimates: Census interpolation or SanGIS property points. Placement labels do not establish verified building or apartment-unit accuracy."
+      ],
+      "limitation_codes": [
+        "coverage_unknown",
+        "freshness_unknown"
+      ],
+      "unsupported_dimensions": [],
+      "tool_trace_id": "trace_7634e56e97bc44fab8ef945848a3a50e",
+      "execution_plan": [
+        {
+          "name": "aggregate_traffic_collisions",
+          "location": {
+            "id": "A",
+            "label": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+            "latitude": 32.740255545403,
+            "longitude": -117.164953584173
+          },
+          "radius_meters": 800.0,
+          "time_range": {
+            "start": "2026-05-02T00:00:00-07:00",
+            "end": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "collision_filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null
+          },
+          "period": "month",
+          "exclude_linked_duplicates": false,
+          "limit": 100,
+          "service_request_aggregation": {
+            "group_by": "service_name",
+            "service_name": null,
+            "status": null
+          }
+        },
+        {
+          "name": "aggregate_traffic_collisions",
+          "location": {
+            "id": "B",
+            "label": "9800 MIRA LEE WAY, San Diego, CA 92126",
+            "latitude": 32.92232753316194,
+            "longitude": -117.1183146426874
+          },
+          "radius_meters": 800.0,
+          "time_range": {
+            "start": "2026-05-02T00:00:00-07:00",
+            "end": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "collision_filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null
+          },
+          "period": "month",
+          "exclude_linked_duplicates": false,
+          "limit": 100,
+          "service_request_aggregation": {
+            "group_by": "service_name",
+            "service_name": null,
+            "status": null
+          }
+        }
+      ],
+      "tool_calls": [
+        {
+          "query_id": "q_d2c575e2e0db4ce1bc84095e02bcefc1",
+          "tool": "aggregate_traffic_collisions",
+          "executed_at": "2026-11-03T00:30:39.305951Z",
+          "elapsed_ms": 883.4044000250287,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "aggregate_traffic_collisions",
+            "location": {
+              "id": "A",
+              "label": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+              "latitude": 32.740255545403,
+              "longitude": -117.164953584173
+            },
+            "radius_meters": 800.0,
+            "time_range": {
+              "start": "2026-05-02T00:00:00-07:00",
+              "end": "2026-11-02T00:00:00-08:00",
+              "calendar_timezone": "America/Los_Angeles"
+            },
+            "collision_filters": {
+              "min_injured": null,
+              "max_injured": null,
+              "min_killed": null,
+              "max_killed": null,
+              "hit_run": null,
+              "street_name": null,
+              "hit_run_level": null
+            },
+            "period": "month",
+            "exclude_linked_duplicates": false,
+            "limit": 100,
+            "service_request_aggregation": {
+              "group_by": "service_name",
+              "service_name": null,
+              "status": null
+            }
+          },
+          "parameterized_sql": "SELECT * FROM citylens.aggregate_traffic_collisions(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+          "parameters": [
+            "2026-05-02T00:00:00-07:00",
+            "2026-11-02T00:00:00-08:00",
+            32.740255545403,
+            -117.164953584173,
+            800.0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "month",
+            "America/Los_Angeles"
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT * FROM citylens.aggregate_traffic_collisions('2026-05-02 00:00:00-07:00'::timestamptz,'2026-11-02 00:00:00-08:00'::timestamptz,32.740255545403, -117.164953584173,800.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'month','America/Los_Angeles');\nROLLBACK;",
+          "result_rows": [
+            {
+              "period_start": "2026-05-01T07:00:00Z",
+              "collision_count": 3,
+              "located_count": 3,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-06-01T07:00:00Z",
+              "collision_count": 1,
+              "located_count": 1,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-07-01T07:00:00Z",
+              "collision_count": 4,
+              "located_count": 4,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-08-01T07:00:00Z",
+              "collision_count": 3,
+              "located_count": 3,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-09-01T07:00:00Z",
+              "collision_count": 2,
+              "located_count": 2,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-10-01T07:00:00Z",
+              "collision_count": 2,
+              "located_count": 2,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            }
+          ]
+        },
+        {
+          "query_id": "q_1ec68510bcfc4e128228f6292e1c41cb",
+          "tool": "aggregate_traffic_collisions",
+          "executed_at": "2026-11-03T00:30:40.190287Z",
+          "elapsed_ms": 303.01049997797236,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "aggregate_traffic_collisions",
+            "location": {
+              "id": "B",
+              "label": "9800 MIRA LEE WAY, San Diego, CA 92126",
+              "latitude": 32.92232753316194,
+              "longitude": -117.1183146426874
+            },
+            "radius_meters": 800.0,
+            "time_range": {
+              "start": "2026-05-02T00:00:00-07:00",
+              "end": "2026-11-02T00:00:00-08:00",
+              "calendar_timezone": "America/Los_Angeles"
+            },
+            "collision_filters": {
+              "min_injured": null,
+              "max_injured": null,
+              "min_killed": null,
+              "max_killed": null,
+              "hit_run": null,
+              "street_name": null,
+              "hit_run_level": null
+            },
+            "period": "month",
+            "exclude_linked_duplicates": false,
+            "limit": 100,
+            "service_request_aggregation": {
+              "group_by": "service_name",
+              "service_name": null,
+              "status": null
+            }
+          },
+          "parameterized_sql": "SELECT * FROM citylens.aggregate_traffic_collisions(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+          "parameters": [
+            "2026-05-02T00:00:00-07:00",
+            "2026-11-02T00:00:00-08:00",
+            32.92232753316194,
+            -117.1183146426874,
+            800.0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "month",
+            "America/Los_Angeles"
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT * FROM citylens.aggregate_traffic_collisions('2026-05-02 00:00:00-07:00'::timestamptz,'2026-11-02 00:00:00-08:00'::timestamptz,32.92232753316194, -117.1183146426874,800.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'month','America/Los_Angeles');\nROLLBACK;",
+          "result_rows": [
+            {
+              "period_start": "2026-05-01T07:00:00Z",
+              "collision_count": 1,
+              "located_count": 1,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-06-01T07:00:00Z",
+              "collision_count": 2,
+              "located_count": 2,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-07-01T07:00:00Z",
+              "collision_count": 1,
+              "located_count": 1,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-08-01T07:00:00Z",
+              "collision_count": 2,
+              "located_count": 2,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            },
+            {
+              "period_start": "2026-09-01T07:00:00Z",
+              "collision_count": 2,
+              "located_count": 2,
+              "unknown_injured_count": 0,
+              "unknown_killed_count": 0
+            }
+          ]
+        }
+      ]
+    },
+    "diagnostic_codes": [],
+    "geocoding_diagnostics": {
+      "A": {
+        "provider": "US Census Geocoder",
+        "raw_candidate_count": 1,
+        "replayed": true,
+        "http_attempts": 0,
+        "source_capture": "2026-11-03T00:09:34.396993+00:00"
+      },
+      "B": {
+        "provider": "SanGIS Address Points",
+        "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+        "rejections": {},
+        "raw_candidate_count": 1,
+        "distinct_candidate_count": 1,
+        "replayed": true,
+        "http_attempts": 0,
+        "source_capture": "2026-11-03T00:09:36.346201+00:00",
+        "provider_attempts": [
+          {
+            "provider": "US Census Geocoder",
+            "status": "no_match"
+          },
+          {
+            "provider": "SanGIS Address Points",
+            "status": "resolved"
+          }
+        ]
+      }
+    }
+  },
+  "ucsd_9500_requires_confirmation": {
+    "status": "needs_candidate_confirmation",
+    "message": "A provider returned multiple or materially different locations. Explicitly choose and confirm a candidate for each unresolved location. Property or interpolated points are not verified apartment-unit positions.",
+    "conversation_id": "conversation_04c0e97e83e14bb899648ffd5751505b",
+    "revision": 2,
+    "original_question": "Traffic collisions near 9500 Gilman Dr, La Jolla, CA 92093 from May 2 to November 2, 2026.",
+    "locations": [
+      {
+        "id": "A",
+        "source_quote": "9500 Gilman Dr",
+        "house_number": "9500",
+        "street_name": "Gilman",
+        "street_suffix": "Dr",
+        "direction": null,
+        "city": "La Jolla",
+        "state": "CA",
+        "postal_code": "92093",
+        "post_direction": null
+      }
+    ],
+    "candidates": {
+      "A": [
+        {
+          "candidate_id": "candidate_c02ea9343cf74c6fb17cbef4217349e3",
+          "matched_address": "9500 GILMAN DR, La Jolla, CA 92093",
+          "location": {
+            "id": "A",
+            "label": "9500 GILMAN DR, La Jolla, CA 92093",
+            "latitude": 32.88458878729452,
+            "longitude": -117.23961381126536
+          },
+          "provider": "SanGIS Address Points",
+          "precision": "parcel_centroid",
+          "benchmark": null,
+          "requires_confirmation": true,
+          "mismatch_reason": null,
+          "metadata": {
+            "placement_location": [
+              "C"
+            ],
+            "placement_labels": [
+              "Centroid"
+            ],
+            "asource": [
+              "M"
+            ],
+            "source_labels": [
+              "Assessor Master Property Record"
+            ],
+            "source_features": [
+              {
+                "addrjur": "SD",
+                "x_coord": 6257865.13582791,
+                "usng": "11S MS 77588 38517",
+                "orig_oid": 1076750,
+                "addrfrac": null,
+                "addrname": "GILMAN",
+                "addrsfx": "DR",
+                "address_type": null,
+                "addrzip": "92093",
+                "addrpostd": null,
+                "community": "LA JOLLA",
+                "addrpdir": null,
+                "addrapnid": null,
+                "parcelid": 10004183,
+                "roadsegid": null,
+                "asource": "M",
+                "placement_location": "C",
+                "addrunit": null,
+                "y_coord": 1903074.81625632,
+                "state": "CA",
+                "objectid": 1071683,
+                "apn": "7601039705",
+                "addrnmbr": 9500
+              },
+              {
+                "addrjur": "SD",
+                "x_coord": 6257865.13582791,
+                "usng": "11S MS 77588 38517",
+                "orig_oid": 1131527,
+                "addrfrac": null,
+                "addrname": "GILMAN",
+                "addrsfx": "DR",
+                "address_type": null,
+                "addrzip": "92093",
+                "addrpostd": null,
+                "community": "LA JOLLA",
+                "addrpdir": null,
+                "addrapnid": null,
+                "parcelid": 10004183,
+                "roadsegid": null,
+                "asource": "M",
+                "placement_location": "C",
+                "addrunit": null,
+                "y_coord": 1903074.81625632,
+                "state": "CA",
+                "objectid": 1126415,
+                "apn": "7601035100",
+                "addrnmbr": 9500
+              }
+            ],
+            "feature_count": 2,
+            "srid": 4326,
+            "placement_source_conflict": false,
+            "zip_missing": false,
+            "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+            "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy",
+            "provider_attempts": [
+              {
+                "provider": "US Census Geocoder",
+                "status": "no_match"
+              },
+              {
+                "provider": "SanGIS Address Points",
+                "status": "needs_confirmation"
+              }
+            ]
+          }
+        },
+        {
+          "candidate_id": "candidate_67fae29d7ecb4faf8e002481cb525860",
+          "matched_address": "9500 GILMAN DR, La Jolla, CA 92093",
+          "location": {
+            "id": "A",
+            "label": "9500 GILMAN DR, La Jolla, CA 92093",
+            "latitude": 32.87728328608443,
+            "longitude": -117.23618279140439
+          },
+          "provider": "SanGIS Address Points",
+          "precision": "structure",
+          "benchmark": null,
+          "requires_confirmation": true,
+          "mismatch_reason": null,
+          "metadata": {
+            "placement_location": [
+              "S"
+            ],
+            "placement_labels": [
+              "Structure"
+            ],
+            "asource": [
+              "S"
+            ],
+            "source_labels": [
+              "SanGIS"
+            ],
+            "source_features": [
+              {
+                "addrjur": "SD",
+                "x_coord": null,
+                "usng": "11S MS 77907 37707",
+                "orig_oid": 775415,
+                "addrfrac": null,
+                "addrname": "GILMAN",
+                "addrsfx": "DR",
+                "address_type": null,
+                "addrzip": "92093",
+                "addrpostd": null,
+                "community": "La Jolla",
+                "addrpdir": null,
+                "addrapnid": "6037502",
+                "parcelid": 17158,
+                "roadsegid": 133369,
+                "asource": "S",
+                "placement_location": "S",
+                "addrunit": null,
+                "y_coord": null,
+                "state": "CA",
+                "objectid": 771466,
+                "apn": "3440801600",
+                "addrnmbr": 9500
+              }
+            ],
+            "feature_count": 1,
+            "srid": 4326,
+            "placement_source_conflict": false,
+            "zip_missing": false,
+            "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+            "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy",
+            "provider_attempts": [
+              {
+                "provider": "US Census Geocoder",
+                "status": "no_match"
+              },
+              {
+                "provider": "SanGIS Address Points",
+                "status": "needs_confirmation"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "resolved_locations": [],
+    "radius_meters": 800.0,
+    "time_range": {
+      "start": "2026-05-02T00:00:00-07:00",
+      "end": "2026-11-02T00:00:00-08:00",
+      "calendar_timezone": "America/Los_Angeles"
+    },
+    "proposed_plan": {
+      "intent": "location_summary",
+      "tools": [
+        "aggregate_traffic_collisions"
+      ],
+      "period": "month",
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "exclude_linked_duplicates": false,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null
+      },
+      "filter_quote": null,
+      "unsupported_dimensions": []
+    },
+    "result": null,
+    "diagnostic_codes": [],
+    "geocoding_diagnostics": {
+      "A": {
+        "provider": "SanGIS Address Points",
+        "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+        "rejections": {
+          "zip_missing": 4
+        },
+        "raw_candidate_count": 7,
+        "distinct_candidate_count": 2,
+        "replayed": true,
+        "http_attempts": 0,
+        "source_capture": "2026-11-03T00:09:34.006229+00:00",
+        "provider_attempts": [
+          {
+            "provider": "US Census Geocoder",
+            "status": "no_match"
+          },
+          {
+            "provider": "SanGIS Address Points",
+            "status": "needs_confirmation"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "address_id": "16",
+  "provider": "census",
+  "input_address": "4235 Beyer Blvd, San Diego, CA 92173",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4235+Beyer+Blvd&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92173",
+  "fetched_at": "2026-11-03T00:18:29.270065+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92173",
+          "city": "San Diego",
+          "street": "4235 Beyer Blvd",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195738986"
+          },
+          "coordinates": {
+            "x": -117.044073600598,
+            "y": 32.558222233517
+          },
+          "addressComponents": {
+            "zip": "92173",
+            "streetName": "BEYER",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "4201",
+            "state": "CA",
+            "suffixType": "BLVD",
+            "toAddress": "4359",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "4235 BEYER BLVD, SAN DIEGO, CA, 92173"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 418.82
+}

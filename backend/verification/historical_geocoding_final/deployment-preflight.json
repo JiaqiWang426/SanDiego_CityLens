@@ -1,0 +1,21 @@
+{
+  "run_id": "b6da4eb48c3b03c559b2b73db5ffaf80eef19d3a225a3c7d0fe37eb15b962bea",
+  "mode": "final_deployment_preflight",
+  "collision_updates": 0,
+  "counts": {
+    "eligible": 845
+  },
+  "approved_reports": 845,
+  "by_original_status": {
+    "ambiguous": 77,
+    "no_match": 768
+  },
+  "rollout_baseline": {
+    "journaled_updates": 7596,
+    "by_original_status": {
+      "pending": 4132,
+      "no_match": 2999,
+      "ambiguous": 465
+    }
+  }
+}

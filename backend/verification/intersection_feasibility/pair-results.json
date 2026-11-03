@@ -1,0 +1,2244 @@
+[
+  {
+    "primary": "11TH AVE",
+    "cross": "E ST",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 97138,
+        "status": "topology_uncertain",
+        "reasons": [
+          "nonintersection_type_conflicts_with_incident_topology"
+        ],
+        "node_type": "Z",
+        "longitude": -117.1547003688362,
+        "latitude": 32.714700266110185,
+        "incident_segment_ids": [
+          2608,
+          2609,
+          25424,
+          25436
+        ],
+        "primary_segment_ids": [
+          2608,
+          2609
+        ],
+        "cross_segment_ids": [
+          25424,
+          25436
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "6825450a535c20e4",
+    "report_ids": [
+      "25203270"
+    ]
+  },
+  {
+    "primary": "13TH (SB) ST",
+    "cross": "PALM AVE",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "5bac3bf0c5ce7f9d",
+    "report_ids": [
+      "25206203"
+    ]
+  },
+  {
+    "primary": "13TH ST",
+    "cross": "IMPERIAL AVE",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 99029,
+        "status": "topology_uncertain",
+        "reasons": [
+          "grade_separated_levels",
+          "road_status_not_confirmed_constructed",
+          "road_class_requires_review"
+        ],
+        "node_type": "I",
+        "longitude": -117.15280627179055,
+        "latitude": 32.70628371346455,
+        "incident_segment_ids": [
+          2810,
+          2813,
+          29882,
+          29885
+        ],
+        "primary_segment_ids": [
+          2810,
+          2813
+        ],
+        "cross_segment_ids": [
+          29882,
+          29885
+        ],
+        "endpoint_levels": [
+          1,
+          9
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 1,
+    "diagnostics": [],
+    "pair_id": "371bcc7c6380874c",
+    "report_ids": [
+      "24203281"
+    ]
+  },
+  {
+    "primary": "15",
+    "cross": "INTERSTATE 15 SB OFF RAMP",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "e8b5f8e11ba08bdc",
+    "report_ids": [
+      "20203480"
+    ]
+  },
+  {
+    "primary": "30TH ST",
+    "cross": "N PARK WAY",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 88003,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.13007687349159,
+        "latitude": 32.747363051918285,
+        "incident_segment_ids": [
+          4131,
+          4132,
+          49440,
+          49442
+        ],
+        "primary_segment_ids": [
+          4131,
+          4132
+        ],
+        "cross_segment_ids": [
+          49440,
+          49442
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "242251467d3df5ed",
+    "report_ids": [
+      "26037142"
+    ]
+  },
+  {
+    "primary": "39TH ST",
+    "cross": "UNIVERSITY AVE",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 87298,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.11064065340514,
+        "latitude": 32.749698966679134,
+        "incident_segment_ids": [
+          4918,
+          4921,
+          35671,
+          35677
+        ],
+        "primary_segment_ids": [
+          4918,
+          4921
+        ],
+        "cross_segment_ids": [
+          35671,
+          35677
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "1431bea964cb7690",
+    "report_ids": [
+      "186955"
+    ]
+  },
+  {
+    "primary": "41ST ST",
+    "cross": "41ST ST",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "33863e35b01ca5d7",
+    "report_ids": [
+      "21204630"
+    ]
+  },
+  {
+    "primary": "60TH ST",
+    "cross": "IMPERIAL AVE",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 98458,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.06798729974219,
+        "latitude": 32.70935536719854,
+        "incident_segment_ids": [
+          5790,
+          29955,
+          29960
+        ],
+        "primary_segment_ids": [
+          5790
+        ],
+        "cross_segment_ids": [
+          29955,
+          29960
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "90f2e3cb4c5b5a01",
+    "report_ids": [
+      "25203154"
+    ]
+  },
+  {
+    "primary": "7TH AVE",
+    "cross": "BROADWAY",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 96884,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.15835216285805,
+        "latitude": 32.71571510823933,
+        "incident_segment_ids": [
+          1820,
+          1825,
+          13152,
+          13155
+        ],
+        "primary_segment_ids": [
+          1820,
+          1825
+        ],
+        "cross_segment_ids": [
+          13152,
+          13155
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "5419a381204aed34",
+    "report_ids": [
+      "19205976"
+    ]
+  },
+  {
+    "primary": "ADAMS AVE",
+    "cross": "PARK BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 83306,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.14628766807967,
+        "latitude": 32.762475865800845,
+        "incident_segment_ids": [
+          6559,
+          6560,
+          51965,
+          51967
+        ],
+        "primary_segment_ids": [
+          6559,
+          6560
+        ],
+        "cross_segment_ids": [
+          51965,
+          51967
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "a49d7faf014bdfd6",
+    "report_ids": [
+      "26200301"
+    ]
+  },
+  {
+    "primary": "ALABAMA ST",
+    "cross": "E CURBLINE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "c2c249e891c81840",
+    "report_ids": [
+      "22204923"
+    ]
+  },
+  {
+    "primary": "ALAQUINAS DR",
+    "cross": "BEYER BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 116927,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.04453529551006,
+        "latitude": 32.558287332119605,
+        "incident_segment_ids": [
+          11816,
+          11817,
+          51012,
+          51924
+        ],
+        "primary_segment_ids": [
+          51012
+        ],
+        "cross_segment_ids": [
+          11816,
+          11817
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "d63bbd0d867ecd0c",
+    "report_ids": [
+      "20201638"
+    ]
+  },
+  {
+    "primary": "BALBOA AVE",
+    "cross": "BALBOA AVE",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "7caef198ccf53333",
+    "report_ids": [
+      "22204189"
+    ]
+  },
+  {
+    "primary": "BERNARDO HEIGHTS PKWY",
+    "cross": "POMERADO RD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "5d1da8b6686c07e3",
+    "report_ids": [
+      "21205781"
+    ]
+  },
+  {
+    "primary": "BLACK MOUNTAIN RD",
+    "cross": "HILLERY DR",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 56547,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.12433657099555,
+        "latitude": 32.91289704914616,
+        "incident_segment_ids": [
+          69546,
+          189496,
+          189910,
+          219556
+        ],
+        "primary_segment_ids": [
+          189496,
+          219556
+        ],
+        "cross_segment_ids": [
+          69546,
+          189910
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "520bb69be6c08d29",
+    "report_ids": [
+      "21207039"
+    ]
+  },
+  {
+    "primary": "BROADWAY",
+    "cross": "E ALLEY OF 1000 25TH ST",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "2c4aa47e8a6ae698",
+    "report_ids": [
+      "20204471"
+    ]
+  },
+  {
+    "primary": "C ST",
+    "cross": "PARK BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 96655,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.15380484960647,
+        "latitude": 32.716779208267745,
+        "incident_segment_ids": [
+          2713,
+          2715,
+          14343,
+          14344
+        ],
+        "primary_segment_ids": [
+          14343,
+          14344
+        ],
+        "cross_segment_ids": [
+          2713,
+          2715
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "c91c087bd666ed94",
+    "report_ids": [
+      "24204842"
+    ]
+  },
+  {
+    "primary": "CALLE SAUCILLO",
+    "cross": "PASEO LUCIDO",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 47720,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.0678167288088,
+        "latitude": 32.99687641560189,
+        "incident_segment_ids": [
+          44997,
+          44999,
+          65404
+        ],
+        "primary_segment_ids": [
+          65404
+        ],
+        "cross_segment_ids": [
+          44997,
+          44999
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "6f084fcabd2a0441",
+    "report_ids": [
+      "1609125"
+    ]
+  },
+  {
+    "primary": "CALLE TRES LOMAS",
+    "cross": "ROANOKE ST",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 104466,
+        "status": "topology_uncertain",
+        "reasons": [
+          "road_status_not_confirmed_constructed"
+        ],
+        "node_type": "I",
+        "longitude": -117.05495977621774,
+        "latitude": 32.67508222004544,
+        "incident_segment_ids": [
+          14780,
+          14782,
+          55359
+        ],
+        "primary_segment_ids": [
+          14780,
+          14782
+        ],
+        "cross_segment_ids": [
+          55359
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "7e06819094d49ca7",
+    "report_ids": [
+      "21202105"
+    ]
+  },
+  {
+    "primary": "CAM DE LA COSTA",
+    "cross": "LA JOLLA BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 69500,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.27187662142506,
+        "latitude": 32.81757281690493,
+        "incident_segment_ids": [
+          15055,
+          15056,
+          40677,
+          40679
+        ],
+        "primary_segment_ids": [
+          15055,
+          15056
+        ],
+        "cross_segment_ids": [
+          40677,
+          40679
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "72bc67aca24d5a9b",
+    "report_ids": [
+      "26205352"
+    ]
+  },
+  {
+    "primary": "CAM DEL RIO W",
+    "cross": "W",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "ab3ab4491b2668cb",
+    "report_ids": [
+      "24203915"
+    ]
+  },
+  {
+    "primary": "CAM DEL SUR",
+    "cross": "CERRO DEL SUR CT",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "cdf701920b3f8d9a",
+    "report_ids": [
+      "21201142"
+    ]
+  },
+  {
+    "primary": "CAM DEL SUR",
+    "cross": "HIGHLANDS VILLAGE PL",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 51429,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.15260479163689,
+        "latitude": 32.96176292064393,
+        "incident_segment_ids": [
+          166371,
+          179149,
+          209176
+        ],
+        "primary_segment_ids": [
+          166371,
+          209176
+        ],
+        "cross_segment_ids": [
+          179149
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "23f74dbbfcc66159",
+    "report_ids": [
+      "190671"
+    ]
+  },
+  {
+    "primary": "CARMEL MTN RD",
+    "cross": "NCL OF 11600 CARMEL MOUNTAIN RD",
+    "status": "invalid_source",
+    "reason": "descriptive_location_not_two_roads",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "74e9049faea52192",
+    "report_ids": [
+      "25202024"
+    ]
+  },
+  {
+    "primary": "CARMEL VALLEY RD",
+    "cross": "OLD EL CAMINO REAL",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 54526,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.23943241790548,
+        "latitude": 32.933438080143276,
+        "incident_segment_ids": [
+          134898,
+          157278,
+          172432,
+          172442
+        ],
+        "primary_segment_ids": [
+          172432,
+          172442
+        ],
+        "cross_segment_ids": [
+          134898
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "58de3277813b78ef",
+    "report_ids": [
+      "24206581"
+    ]
+  },
+  {
+    "primary": "CARMEL VALLEY RD",
+    "cross": "S/R",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "c02a5559beaabb64",
+    "report_ids": [
+      "25206946"
+    ]
+  },
+  {
+    "primary": "CARROLL CANYON RD",
+    "cross": "CARROLL CANYON RD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "f27d12d6d3ce3dd1",
+    "report_ids": [
+      "25201595"
+    ]
+  },
+  {
+    "primary": "CARROLL CANYON RD",
+    "cross": "OFF-RAMP: I-805 S/B TO CARROLL CANYON RD",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "91c70f4d75e11134",
+    "report_ids": [
+      "23201768"
+    ]
+  },
+  {
+    "primary": "COLLEGE AVE",
+    "cross": "LIVINGSTON ST",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 89951,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.05129546211958,
+        "latitude": 32.74246608687066,
+        "incident_segment_ids": [
+          17394,
+          42922,
+          205517
+        ],
+        "primary_segment_ids": [
+          17394,
+          205517
+        ],
+        "cross_segment_ids": [
+          42922
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "fbe9d5587208edec",
+    "report_ids": [
+      "24206312"
+    ]
+  },
+  {
+    "primary": "CURB LINE",
+    "cross": "GENESEE AVE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "25a759e3eb9f98bd",
+    "report_ids": [
+      "25203604"
+    ]
+  },
+  {
+    "primary": "CURB LINE OF LINDA VISTA RD",
+    "cross": "MORENA BLVD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "12bd1b6b62a13541",
+    "report_ids": [
+      "20202233"
+    ]
+  },
+  {
+    "primary": "DEEP DELL RD",
+    "cross": "PARADISE VALLEY RD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 101410,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.02934337936719,
+        "latitude": 32.695420693815,
+        "incident_segment_ids": [
+          2250,
+          2252,
+          23816,
+          23817
+        ],
+        "primary_segment_ids": [
+          23816,
+          23817
+        ],
+        "cross_segment_ids": [
+          2250,
+          2252
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "a8e073f7592f2851",
+    "report_ids": [
+      "23204809"
+    ]
+  },
+  {
+    "primary": "E EDGE OF THE NORTHBOUND I-5 OFF-RAMP",
+    "cross": "GENESEE AVE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "af18c2dc9653ffc1",
+    "report_ids": [
+      "19204384"
+    ]
+  },
+  {
+    "primary": "ECL",
+    "cross": "N TORREY PINES RD",
+    "status": "invalid_source",
+    "reason": "descriptive_location_not_two_roads",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "b6dcd74fcab869d3",
+    "report_ids": [
+      "20200851"
+    ]
+  },
+  {
+    "primary": "EL CAJON BLVD",
+    "cross": "N BOUND I15 EXIT ONTO EB EL CAJON BLVD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "84bfef0a9a3ef0f6",
+    "report_ids": [
+      "19202080"
+    ]
+  },
+  {
+    "primary": "EL CAMINO REAL",
+    "cross": "SAN DIEGUITO RD",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 49743,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.23114058908648,
+        "latitude": 32.97568293408971,
+        "incident_segment_ids": [
+          221512,
+          221513,
+          221514
+        ],
+        "primary_segment_ids": [
+          221512,
+          221514
+        ],
+        "cross_segment_ids": [
+          221513
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [
+      "invalid_or_out_of_envelope_road_geometry"
+    ],
+    "pair_id": "9e8db964c157600d",
+    "report_ids": [
+      "20049950"
+    ]
+  },
+  {
+    "primary": "EL CAMINO REAL",
+    "cross": "VIA DE LA VALLE",
+    "status": "multiple_candidates",
+    "reason": "multiple_supported_intersection_nodes",
+    "candidates": [
+      {
+        "node_id": 49054,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.22676360132542,
+        "latitude": 32.98318973615317,
+        "incident_segment_ids": [
+          12779,
+          12782,
+          221510
+        ],
+        "primary_segment_ids": [
+          221510
+        ],
+        "cross_segment_ids": [
+          12779,
+          12782
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      },
+      {
+        "node_id": 49110,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.23052624914129,
+        "latitude": 32.982701282990284,
+        "incident_segment_ids": [
+          12784,
+          26278,
+          221511
+        ],
+        "primary_segment_ids": [
+          26278
+        ],
+        "cross_segment_ids": [
+          12784,
+          221511
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 2,
+    "geometric_crossings": 2,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [
+      "invalid_or_out_of_envelope_road_geometry"
+    ],
+    "pair_id": "905847d2bd52bf62",
+    "report_ids": [
+      "23027982"
+    ]
+  },
+  {
+    "primary": "FRIARS RD",
+    "cross": "MISSION VILLAGE DR",
+    "status": "no_intersection",
+    "reason": "no_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 77391,
+        "status": "rejected",
+        "reasons": [
+          "grade_separated_levels",
+          "pseudo_crossing_node"
+        ],
+        "node_type": "P",
+        "longitude": -117.12021410328705,
+        "latitude": 32.78672568066863,
+        "incident_segment_ids": [
+          30170,
+          30173,
+          46864,
+          46866
+        ],
+        "primary_segment_ids": [
+          30170,
+          30173
+        ],
+        "cross_segment_ids": [
+          46864,
+          46866
+        ],
+        "endpoint_levels": [
+          1,
+          2
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 1,
+    "diagnostics": [],
+    "pair_id": "26f196ec89750829",
+    "report_ids": [
+      "20201775"
+    ]
+  },
+  {
+    "primary": "FRIARS RD",
+    "cross": "N/B 163 ONRAMP",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "fd6717cd1867e44b",
+    "report_ids": [
+      "21207870"
+    ]
+  },
+  {
+    "primary": "FRIARS RD",
+    "cross": "VIA LAS CUMBRES",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 82149,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.18364580501648,
+        "latitude": 32.76626942811342,
+        "incident_segment_ids": [
+          30130,
+          53398,
+          232071
+        ],
+        "primary_segment_ids": [
+          30130,
+          232071
+        ],
+        "cross_segment_ids": [
+          53398
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "57f77b98841d3b45",
+    "report_ids": [
+      "20206982"
+    ]
+  },
+  {
+    "primary": "GRAND AVE",
+    "cross": "KENDALL ST",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 74249,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.23658240824132,
+        "latitude": 32.798688826974654,
+        "incident_segment_ids": [
+          32133,
+          32145,
+          39941,
+          39944
+        ],
+        "primary_segment_ids": [
+          32133,
+          32145
+        ],
+        "cross_segment_ids": [
+          39941,
+          39944
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "5487dec9ff4399aa",
+    "report_ids": [
+      "20205820"
+    ]
+  },
+  {
+    "primary": "GROVE AVE",
+    "cross": "SATURN BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 115922,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.09277327606667,
+        "latitude": 32.572834475914576,
+        "incident_segment_ids": [
+          33573,
+          150051,
+          150055,
+          229490
+        ],
+        "primary_segment_ids": [
+          150055
+        ],
+        "cross_segment_ids": [
+          150051,
+          229490
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "9c617bbd06bf6252",
+    "report_ids": [
+      "18200156"
+    ]
+  },
+  {
+    "primary": "I-5 SB",
+    "cross": "NATIONAL AVE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "2f975734c0bf7cbf",
+    "report_ids": [
+      "186369"
+    ]
+  },
+  {
+    "primary": "I-8 E/B ON RAMP",
+    "cross": "W MISSION BAY DR",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "900f18aa8dc60026",
+    "report_ids": [
+      "21205954"
+    ]
+  },
+  {
+    "primary": "IMPERIAL AVE",
+    "cross": "PARK BOULVARD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "21822aa9cc663dc8",
+    "report_ids": [
+      "19201332"
+    ]
+  },
+  {
+    "primary": "IMPERIAL AVE",
+    "cross": "S 45TH ST",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 99551,
+        "status": "topology_uncertain",
+        "reasons": [
+          "road_status_not_confirmed_constructed"
+        ],
+        "node_type": "I",
+        "longitude": -117.09798602731375,
+        "latitude": 32.70415322342726,
+        "incident_segment_ids": [
+          5292,
+          5303,
+          159755,
+          198864,
+          198865
+        ],
+        "primary_segment_ids": [
+          159755,
+          198864
+        ],
+        "cross_segment_ids": [
+          5303
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "f0ca740cd7227de8",
+    "report_ids": [
+      "180966"
+    ]
+  },
+  {
+    "primary": "INGRAHAM ST",
+    "cross": "INTERSTATE RAMP",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "b75a1503e631c91b",
+    "report_ids": [
+      "20201700"
+    ]
+  },
+  {
+    "primary": "INTERSECTION OF INT 805 SB OFFRAMP",
+    "cross": "PALM AVE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "f203a38ba9f331a9",
+    "report_ids": [
+      "21204576"
+    ]
+  },
+  {
+    "primary": "INTERSTATE",
+    "cross": "W MISSION BAY DR",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "5cdc069cf0f488f2",
+    "report_ids": [
+      "21200875"
+    ]
+  },
+  {
+    "primary": "INTERSTATE 15 SB",
+    "cross": "MIRA MESA BLVD",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 56231,
+        "status": "rejected",
+        "reasons": [
+          "grade_separated_levels",
+          "pseudo_crossing_node"
+        ],
+        "node_type": "P",
+        "longitude": -117.11631976971307,
+        "latitude": 32.91710923035098,
+        "incident_segment_ids": [
+          117011,
+          117012,
+          138192,
+          210096
+        ],
+        "primary_segment_ids": [
+          117011,
+          117012
+        ],
+        "cross_segment_ids": [
+          138192,
+          210096
+        ],
+        "endpoint_levels": [
+          1,
+          2
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 1,
+    "diagnostics": [
+      "invalid_or_out_of_envelope_road_geometry"
+    ],
+    "pair_id": "595db6890393b779",
+    "report_ids": [
+      "21012158"
+    ]
+  },
+  {
+    "primary": "IVANHOE EAST AVE",
+    "cross": "TORREY PINES RD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 62842,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.26992670066394,
+        "latitude": 32.844813268906776,
+        "incident_segment_ids": [
+          38245,
+          38247,
+          61189,
+          61190
+        ],
+        "primary_segment_ids": [
+          38245,
+          38247
+        ],
+        "cross_segment_ids": [
+          61189,
+          61190
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "83ded7d619056bdb",
+    "report_ids": [
+      "24206269"
+    ]
+  },
+  {
+    "primary": "JAMACHA RD",
+    "cross": "JAMACHA RD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "706df0e3cdd8e05b",
+    "report_ids": [
+      "24200624"
+    ]
+  },
+  {
+    "primary": "LA JOLLA BLVD",
+    "cross": "N LN",
+    "status": "no_intersection",
+    "reason": "no_supported_physical_node",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "0d2f8fdaed9db806",
+    "report_ids": [
+      "26205591"
+    ]
+  },
+  {
+    "primary": "LA JOLLA SHORES DR",
+    "cross": "TORREY PINES RD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 61803,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.25576252240872,
+        "latitude": 32.85018737242723,
+        "incident_segment_ids": [
+          40779,
+          61206,
+          61207
+        ],
+        "primary_segment_ids": [
+          40779
+        ],
+        "cross_segment_ids": [
+          61206,
+          61207
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "266b5593b09220cd",
+    "report_ids": [
+      "22202482"
+    ]
+  },
+  {
+    "primary": "MAIN ST",
+    "cross": "SAMPSON ST",
+    "status": "topology_uncertain",
+    "reason": "incomplete_or_conflicting_topology_evidence",
+    "candidates": [
+      {
+        "node_id": 101228,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.14166990248748,
+        "latitude": 32.69560435662332,
+        "incident_segment_ids": [
+          44153,
+          44154,
+          56342,
+          56343
+        ],
+        "primary_segment_ids": [
+          44153,
+          44154
+        ],
+        "cross_segment_ids": [
+          56342,
+          56343
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [
+      "invalid_or_out_of_envelope_road_geometry"
+    ],
+    "pair_id": "a1d2ddd01484cc0a",
+    "report_ids": [
+      "26202572"
+    ]
+  },
+  {
+    "primary": "MARTIN AVE",
+    "cross": "S 32ND ST",
+    "status": "multiple_candidates",
+    "reason": "multiple_supported_intersection_nodes",
+    "candidates": [
+      {
+        "node_id": 100526,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.1251873058826,
+        "latitude": 32.699433639375975,
+        "incident_segment_ids": [
+          4458,
+          4459,
+          44961
+        ],
+        "primary_segment_ids": [
+          44961
+        ],
+        "cross_segment_ids": [
+          4458,
+          4459
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      },
+      {
+        "node_id": 100586,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.12518816273817,
+        "latitude": 32.69911151419046,
+        "incident_segment_ids": [
+          4457,
+          4458,
+          44960
+        ],
+        "primary_segment_ids": [
+          44960
+        ],
+        "cross_segment_ids": [
+          4457,
+          4458
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 2,
+    "geometric_crossings": 2,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "da073203a6dc928d",
+    "report_ids": [
+      "20203583"
+    ]
+  },
+  {
+    "primary": "MERCY RD",
+    "cross": "MERCY RD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "9c151b8ea4b00545",
+    "report_ids": [
+      "22207233"
+    ]
+  },
+  {
+    "primary": "MIRA MESA BLVD",
+    "cross": "MIRA MESA BLVD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "3e223dbfc4b1c612",
+    "report_ids": [
+      "23207429"
+    ]
+  },
+  {
+    "primary": "MIRA MESA BLVD",
+    "cross": "SCRANTON RD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 57973,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.20154378879415,
+        "latitude": 32.89270236745487,
+        "incident_segment_ids": [
+          4633,
+          82571,
+          82572,
+          212164
+        ],
+        "primary_segment_ids": [
+          4633,
+          212164
+        ],
+        "cross_segment_ids": [
+          82571,
+          82572
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "b3c9014a58966f3f",
+    "report_ids": [
+      "21206845"
+    ]
+  },
+  {
+    "primary": "N PARK WAY",
+    "cross": "RAY ST",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 87976,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.12921554564285,
+        "latitude": 32.74741866596435,
+        "incident_segment_ids": [
+          49438,
+          49442,
+          54547,
+          54548
+        ],
+        "primary_segment_ids": [
+          49438,
+          49442
+        ],
+        "cross_segment_ids": [
+          54547,
+          54548
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "3161b253df282933",
+    "report_ids": [
+      "21202273"
+    ]
+  },
+  {
+    "primary": "NORMAL ST",
+    "cross": "UNIVERSITY AVE",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 87540,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.14986584983262,
+        "latitude": 32.74845713837883,
+        "incident_segment_ids": [
+          35580,
+          35584,
+          49360
+        ],
+        "primary_segment_ids": [
+          49360
+        ],
+        "cross_segment_ids": [
+          35580,
+          35584
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "55f41d68bca0ae79",
+    "report_ids": [
+      "25203563"
+    ]
+  },
+  {
+    "primary": "OCEAN VIEW BLVD",
+    "cross": "OCEAN VIEW BLVD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "9fe48c75602c6a69",
+    "report_ids": [
+      "24203452"
+    ]
+  },
+  {
+    "primary": "OCEAN VIEW BLVD",
+    "cross": "S 47TH ST",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 100373,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.0937473916286,
+        "latitude": 32.70045808096241,
+        "incident_segment_ids": [
+          5407,
+          5408,
+          49952
+        ],
+        "primary_segment_ids": [
+          49952
+        ],
+        "cross_segment_ids": [
+          5407,
+          5408
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "35a2f591f7614458",
+    "report_ids": [
+      "23206821"
+    ]
+  },
+  {
+    "primary": "PACIFIC HWY",
+    "cross": "SEA WORLD DR",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 81872,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.20867201135957,
+        "latitude": 32.76717146222719,
+        "incident_segment_ids": [
+          36354,
+          74067,
+          74075,
+          76949
+        ],
+        "primary_segment_ids": [
+          36354
+        ],
+        "cross_segment_ids": [
+          74067,
+          74075
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "84d33de50a19d0be",
+    "report_ids": [
+      "21202106"
+    ]
+  },
+  {
+    "primary": "PACIFIC HWY",
+    "cross": "TELEGRAPH PL",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "4fcc2235bb8bf02d",
+    "report_ids": [
+      "23014081"
+    ]
+  },
+  {
+    "primary": "PALM AVE",
+    "cross": "S/B I-5 OFFRAMP",
+    "status": "invalid_source",
+    "reason": "compound_or_incomplete_street_description",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "d9c24079992185ae",
+    "report_ids": [
+      "25202416"
+    ]
+  },
+  {
+    "primary": "PARK BLVD",
+    "cross": "PARK BLVD",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "cceb801f6bc4eca6",
+    "report_ids": [
+      "20206587"
+    ]
+  },
+  {
+    "primary": "PHILL'S BARBECUE PARKING LOT",
+    "cross": "SPORTS ARENA BLVD",
+    "status": "invalid_source",
+    "reason": "descriptive_location_not_two_roads",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "b46ee7c993cfcc30",
+    "report_ids": [
+      "23202723"
+    ]
+  },
+  {
+    "primary": "POMERADO RD",
+    "cross": "SCL RANCHO BERNARDO RD",
+    "status": "invalid_source",
+    "reason": "descriptive_location_not_two_roads",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "1cab59e41f62266f",
+    "report_ids": [
+      "23200261"
+    ]
+  },
+  {
+    "primary": "QUIVIRA RD",
+    "cross": "W MISSION BAY RD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "2efdc197ea9470b5",
+    "report_ids": [
+      "23205926"
+    ]
+  },
+  {
+    "primary": "RANCHO BERNARDO RD",
+    "cross": "W BERNARDO DR",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 44342,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.08214919834674,
+        "latitude": 33.023836916653025,
+        "incident_segment_ids": [
+          6437,
+          6440,
+          12110,
+          210223
+        ],
+        "primary_segment_ids": [
+          12110,
+          210223
+        ],
+        "cross_segment_ids": [
+          6437,
+          6440
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "1856b709ba16546b",
+    "report_ids": [
+      "23206921"
+    ]
+  },
+  {
+    "primary": "S CURB LINE",
+    "cross": "SATURN BLVD",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "3cc201ffa91b84a2",
+    "report_ids": [
+      "23201474"
+    ]
+  },
+  {
+    "primary": "S SCL",
+    "cross": "SATURN BLVD",
+    "status": "invalid_source",
+    "reason": "descriptive_location_not_two_roads",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "2aa84f9a5b0e0c8e",
+    "report_ids": [
+      "20202108"
+    ]
+  },
+  {
+    "primary": "SAMPSON ST",
+    "cross": "SAMPSON ST",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "eb7fba12299df4f4",
+    "report_ids": [
+      "19200595"
+    ]
+  },
+  {
+    "primary": "SORRENTO VALLEY BLVD",
+    "cross": "W CURB LINE",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "dda989896d8e2409",
+    "report_ids": [
+      "23204892"
+    ]
+  },
+  {
+    "primary": "UNKNOWN",
+    "cross": "UNKNOWN",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "c9278503109331ae",
+    "report_ids": [
+      "24207173"
+    ]
+  },
+  {
+    "primary": "VIA DE LA VALLE",
+    "cross": "VIA DEL CANON",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 49229,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.23373151420124,
+        "latitude": 32.981577906606674,
+        "incident_segment_ids": [
+          72146,
+          155693,
+          221511
+        ],
+        "primary_segment_ids": [
+          155693,
+          221511
+        ],
+        "cross_segment_ids": [
+          72146
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "147da529755a7885",
+    "report_ids": [
+      "25201847"
+    ]
+  },
+  {
+    "primary": "VIA DE SAN YSIDRO",
+    "cross": "W SAN YSIDRO BLVD",
+    "status": "accepted_candidate",
+    "reason": "one_supported_physical_node",
+    "candidates": [
+      {
+        "node_id": 117096,
+        "status": "supported",
+        "reasons": [],
+        "node_type": "I",
+        "longitude": -117.0449632590643,
+        "latitude": 32.552471561997166,
+        "incident_segment_ids": [
+          57015,
+          57016,
+          67571
+        ],
+        "primary_segment_ids": [
+          67571
+        ],
+        "cross_segment_ids": [
+          57015,
+          57016
+        ],
+        "endpoint_levels": [
+          1
+        ],
+        "max_endpoint_distance_m": 0.0
+      }
+    ],
+    "shared_node_count": 1,
+    "geometric_crossings": 1,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "fceae64b11598df3",
+    "report_ids": [
+      "22201290"
+    ]
+  },
+  {
+    "primary": "W ALLEY OF 4000 FRONT ST",
+    "cross": "W WASHINGTON ST",
+    "status": "street_not_found",
+    "reason": "complete_road_components_not_found",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "461a50053a19400d",
+    "report_ids": [
+      "25205028"
+    ]
+  },
+  {
+    "primary": "WYATT PL",
+    "cross": "WYATT PL",
+    "status": "invalid_source",
+    "reason": "same_road_twice",
+    "candidates": [],
+    "shared_node_count": 0,
+    "geometric_crossings": 0,
+    "grade_separated_conflicts": 0,
+    "diagnostics": [],
+    "pair_id": "4f7ab65d20760248",
+    "report_ids": [
+      "22203806"
+    ]
+  }
+]

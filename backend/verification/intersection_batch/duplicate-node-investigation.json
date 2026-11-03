@@ -1,0 +1,181 @@
+{
+  "groups": 2,
+  "extra_rows": 7,
+  "duplicates": {
+    "94245": [
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6339272.00013781,
+          "interid": 94245,
+          "created_user": null,
+          "globalid": "{FA1F7351-55FF-4330-9074-1230D7FCC1D4}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1845458.0000134,
+          "objectid": 7550
+        },
+        "geometry": {
+          "x": 6339272.000137806,
+          "y": 1845458.0000133961,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6339272.00013781,
+          "interid": 94245,
+          "created_user": null,
+          "globalid": "{94002348-F52A-4091-827A-0ED2404878FF}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1845458.0000134,
+          "objectid": 39933
+        },
+        "geometry": {
+          "x": 6339272.000137806,
+          "y": 1845458.0000133961,
+          "z": 0
+        }
+      }
+    ],
+    "0": [
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6357366.32385722,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{7B95C204-E99A-44F8-A92F-B060FEF12CA9}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1877994.17411414,
+          "objectid": 36891
+        },
+        "geometry": {
+          "x": 6357366.323857218,
+          "y": 1877994.174114138,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6306702.6538593,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{C88D15ED-B2CA-4B68-AFAD-7ADAE58E7071}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "E",
+          "ycoord": 2017470.38302206,
+          "objectid": 38410
+        },
+        "geometry": {
+          "x": 6306702.653859302,
+          "y": 2017470.383022055,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6357366.32385722,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{EE9E3CCF-F81A-4D4F-9C7A-B006F983C18A}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1877994.17411414,
+          "objectid": 39505
+        },
+        "geometry": {
+          "x": 6357366.323857218,
+          "y": 1877994.174114138,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6329507.77688414,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{BF4233DC-B9E2-4022-926C-E04C2A8CEB32}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1875112.84424689,
+          "objectid": 49565
+        },
+        "geometry": {
+          "x": 6329507.776884139,
+          "y": 1875112.8442468941,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6306702.6538593,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{4406CD03-2F18-4E8C-9589-7C7D114BCE2D}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "E",
+          "ycoord": 2017470.38302206,
+          "objectid": 59856
+        },
+        "geometry": {
+          "x": 6306702.653859302,
+          "y": 2017470.383022055,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6330253.93746531,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{5384B46E-033D-4290-8659-01963530AC82}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "P",
+          "ycoord": 1885083.92732306,
+          "objectid": 75869
+        },
+        "geometry": {
+          "x": 6330253.93746531,
+          "y": 1885083.9273230582,
+          "z": 0
+        }
+      },
+      {
+        "attributes": {
+          "last_edited_user": null,
+          "xcoord": 6329507.77688414,
+          "interid": 0,
+          "created_user": null,
+          "globalid": "{66AAF8AD-F3C4-4335-93F7-DC439AC5FD8F}",
+          "last_edited_date": null,
+          "created_date": null,
+          "type": "I",
+          "ycoord": 1875112.84424689,
+          "objectid": 91582
+        },
+        "geometry": {
+          "x": 6329507.776884139,
+          "y": 1875112.8442468941,
+          "z": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "accepted_review_nodes": 60,
+  "uncorroborated_accepted_nodes": 15,
+  "accepted_nodes_missing_exact_names": 14,
+  "accepted_nodes_with_named_road_spatial_disagreement": 1,
+  "corroborated_grade_conflict_candidate_checks": 5,
+  "warning": "Neither an uncorroborated name nor a corroborated grade-separated crossing is historical collision ground truth. Do not interpret the sample failure fraction as a false-positive rate."
+}

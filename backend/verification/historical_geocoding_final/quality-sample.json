@@ -1,0 +1,6264 @@
+{
+  "method_version": "citylens-final-historical-v1",
+  "pairs": [
+    {
+      "report_id": "23204028",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "c48d74cbf39e5c66628180d2d9f6841e2a8fa425ecc7acb2b98210dea8891f36",
+      "longitude": -117.17324632709287,
+      "latitude": 32.72462068727172,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "N HARBOR DR",
+      "block": 1900,
+      "segment_ids": [
+        33851
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 118.2,
+      "uncertainty_radius_m": 59.2,
+      "address_ranges": [
+        [
+          1900,
+          2098
+        ],
+        [
+          1901,
+          2099
+        ]
+      ],
+      "police_beat": "527",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "b5a23085ca04b0a1d4dbad63006f3c8e2726a76130542b59c66642cb6772b2db",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-07-19T05:26:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24006523",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "fd25b4365de8d92f1f3f3ec7d78e36824727f44810a516dc3aa286a998918001",
+      "longitude": -117.13058365514239,
+      "latitude": 32.77914135618822,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "RIO SAN DIEGO DR",
+      "block": 11000,
+      "segment_ids": [
+        179316,
+        179317
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 203.7,
+      "uncertainty_radius_m": 102.2,
+      "address_ranges": [
+        [
+          11000,
+          11068
+        ],
+        [
+          11001,
+          11069
+        ],
+        [
+          11070,
+          11098
+        ],
+        [
+          11071,
+          11099
+        ]
+      ],
+      "police_beat": "315",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "0d678a88f0a4d372f392865b63a9a44b31351630a975f9f5a96267a77fb3dec9",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-02-15T19:34:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24206071",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "54e2556f8121069185230c52e9b19e75b7947e02f920c9384034d1bd11328aa4",
+      "longitude": -117.09808454504423,
+      "latitude": 32.77468769642013,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "FAIRMOUNT AVE",
+      "block": 5200,
+      "segment_ids": [
+        28552
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 203.2,
+      "uncertainty_radius_m": 101.8,
+      "address_ranges": [
+        [
+          5150,
+          5298
+        ],
+        [
+          5151,
+          5299
+        ]
+      ],
+      "police_beat": "825",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "97dad5264c29a2b7aa12cfb1056af88d1a7792df0f807b48ff55e43202d689aa",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-10-07T16:08:28+00:00",
+      "police_division": "Mid-City",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25206717",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "cbf013b5211b62a3149b7124a70d59a6834a244b68465a3971c9aba5ef75e40f",
+      "longitude": -117.06627343593577,
+      "latitude": 33.000943891892874,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "PASEO LUCIDO",
+      "block": 12700,
+      "segment_ids": [
+        44998
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 225.9,
+      "uncertainty_radius_m": 114.8,
+      "address_ranges": [
+        [
+          12700,
+          12798
+        ],
+        [
+          12701,
+          12799
+        ]
+      ],
+      "police_beat": "234",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 6.44,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "03463c02a8c312cce80fd4ae19f3e8188956d185a07039e7fc71c09a25e889c6",
+      "exclusion_reasons": [
+        "census:census_matched_different_street",
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2025-11-30T22:51:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "182906",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "25549dd9664fe7512b45691f79135854344f33bd6fbd6fcd09f5acaf9e005110",
+      "longitude": -117.15683385773266,
+      "latitude": 32.803283637038064,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LINDA VISTA FRONTAGE RD",
+      "block": 7600,
+      "segment_ids": [
+        138467,
+        138468
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 298.7,
+      "uncertainty_radius_m": 149.4,
+      "address_ranges": [
+        [
+          7600,
+          7628
+        ],
+        [
+          7601,
+          7629
+        ],
+        [
+          7630,
+          7798
+        ]
+      ],
+      "police_beat": "111",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 6.4,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "d568cdb8855a6b1540ba99c820d96f483dc76e72f4d8ddafda3db88ee0dcc825",
+      "exclusion_reasons": [
+        "census:census_matched_different_street",
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2018-04-05T15:36:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19200771",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "e1c819cbd864831c1820560ba024216c39b2f5b40e05b7e39922c688395a8db3",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAMINITO SANTALUZ NORTE",
+      "block": 7900,
+      "segment_ids": [
+        161802,
+        161803
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 584.9,
+      "uncertainty_radius_m": 294.4,
+      "address_ranges": [
+        [
+          7900,
+          7948
+        ],
+        [
+          7901,
+          7949
+        ],
+        [
+          7950,
+          8098
+        ],
+        [
+          7951,
+          8099
+        ]
+      ],
+      "police_beat": "937",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2019-04-06T08:33:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22202745",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "93bb420680a839469933be819cebf18109802a7be8f94691f6d0cdd585a6635b",
+      "longitude": -117.0623863376539,
+      "latitude": 32.6636566487388,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "VALLEY RD",
+      "block": 5900,
+      "segment_ids": [
+        62424
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 153.9,
+      "uncertainty_radius_m": 77.0,
+      "address_ranges": [
+        [
+          5820,
+          5998
+        ],
+        [
+          5821,
+          5999
+        ]
+      ],
+      "police_beat": "438",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "d077d519de6bd05eb95387553801c5d304bab98cec53bbeaffb8b80a3ca0bb37",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-05-08T13:00:48+00:00",
+      "police_division": "Southeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25204745",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "76e679bae377d4f3c8c9ee961262a2fbff8952522a326aa6ddd49ea0dc7af9c5",
+      "longitude": -117.09184791445458,
+      "latitude": 32.60026689448838,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BAY BLVD",
+      "block": 1400,
+      "segment_ids": [
+        10817
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 262.0,
+      "uncertainty_radius_m": 131.2,
+      "address_ranges": [
+        [
+          1400,
+          1498
+        ],
+        [
+          1401,
+          1499
+        ]
+      ],
+      "police_beat": "721",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "4cd0465786b6a24ba7c5c00760fad12bdf81ee29c7c771fb640777e97c5de52e",
+      "exclusion_reasons": [],
+      "occurred_at": "2025-08-27T22:20:02+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26200451",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "417d5605da9321dd6b15bc50505cc9648c0096c1d816c5576e04cf06f08c7a9c",
+      "longitude": -117.24862881660862,
+      "latitude": 32.71949069299972,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LOMALAND DR",
+      "block": 3900,
+      "segment_ids": [
+        43150,
+        214221
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 114.2,
+      "uncertainty_radius_m": 57.1,
+      "address_ranges": [
+        [
+          3900,
+          3930
+        ],
+        [
+          3901,
+          3931
+        ],
+        [
+          3932,
+          4108
+        ],
+        [
+          3933,
+          4109
+        ]
+      ],
+      "police_beat": "617",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "27a36ff96bdc4cab3a8d514f130c9161e9814ea4116e0c0129e79f16afd2906c",
+      "exclusion_reasons": [],
+      "occurred_at": "2026-01-23T16:07:00+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23201694",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "bf5189b4190dd9af82dd0c0d4f4d15519c3da7a50e574dd78016eff780c7b093",
+      "longitude": -117.24551223457227,
+      "latitude": 32.84378242926655,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "VIA CAPRI",
+      "block": 7800,
+      "segment_ids": [
+        62859
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 230.1,
+      "uncertainty_radius_m": 129.2,
+      "address_ranges": [
+        [
+          7790,
+          7898
+        ],
+        [
+          7791,
+          7899
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "873f65f13135f6e5a2e9a2513bebae0af21f0c222cacbcce17eff101c76d1186",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-03-26T22:24:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "187688",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "5b61fad0c36e56cd529ad9d38d7d3d0e496eca874f07c0c9fc80d13c21a5bef1",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DE LA PLAZA",
+      "block": 4200,
+      "segment_ids": [
+        211094
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 603.9,
+      "uncertainty_radius_m": 315.6,
+      "address_ranges": [
+        [
+          4200,
+          4548
+        ],
+        [
+          4201,
+          4549
+        ]
+      ],
+      "police_beat": "712",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2018-10-10T18:00:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "184035",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "6c083d4adf7bba04367492a6639d034555bdc720de6900962a368e74506b8871",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SARANAC ST",
+      "block": 7200,
+      "segment_ids": [
+        57269,
+        57273
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "327",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2018-05-25T18:00:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "180917",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "ee3300f2343cbce45c3f59ba8d47d91b1aec93e51e55f6c7df5738210ef0d82b",
+      "longitude": -117.25437971479549,
+      "latitude": 32.85106134357736,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA SHORES DR",
+      "block": 7900,
+      "segment_ids": [
+        40779,
+        205099
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 305.5,
+      "uncertainty_radius_m": 161.1,
+      "address_ranges": [
+        [
+          7900,
+          7948
+        ],
+        [
+          7901,
+          7949
+        ],
+        [
+          7950,
+          7998
+        ],
+        [
+          7951,
+          7999
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "8ca5fcbd768a9f12f46c82b3ab5137801cb4682e13d2d552264697541671f12f",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-01-26T23:28:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "183167",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "9f7e2cd7c34666c01c4c802f97724a8763b9f9944efd6950e719a1236420ace7",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 12800,
+      "segment_ids": [
+        12048,
+        12049,
+        165208
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 749.3,
+      "uncertainty_radius_m": 375.8,
+      "address_ranges": [
+        [
+          12600,
+          12848
+        ],
+        [
+          12601,
+          12849
+        ],
+        [
+          12850,
+          12878
+        ],
+        [
+          12851,
+          12879
+        ],
+        [
+          12880,
+          12898
+        ],
+        [
+          12881,
+          12899
+        ]
+      ],
+      "police_beat": "233",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2018-04-20T18:25:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19200161",
+      "original_status": "ambiguous",
+      "original_reason": "provider_tie",
+      "phase": "ambiguous_revalidation",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "7d984abc38e91b1e6bae7fafb3e072d836e97b344818451cd0f09dfd11792e74",
+      "longitude": -117.16468071191862,
+      "latitude": 32.71200383885109,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "FRONT ST",
+      "block": 600,
+      "segment_ids": [
+        30233
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 119.8,
+      "uncertainty_radius_m": 59.9,
+      "address_ranges": [
+        [
+          600,
+          698
+        ],
+        [
+          601,
+          699
+        ]
+      ],
+      "police_beat": "522",
+      "beat_check": "agrees",
+      "census_relation": "census_tie_without_candidates",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "c5a216a89a14b281e4dc32244b56a4ab98da1281ef841f2a7f499e54cf9d91db",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-01-24T08:00:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "182544",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "documented_alias_resolved",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "f84499f00d5ecaeb38df71297e0794356a4fbcc74f1d7be00e0b477d1d226344",
+      "longitude": -117.12336400009904,
+      "latitude": 32.899798805810626,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 9700,
+      "segment_ids": [
+        12025
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 285.8,
+      "uncertainty_radius_m": 143.9,
+      "address_ranges": [
+        [
+          9700,
+          9998
+        ],
+        [
+          9701,
+          9999
+        ]
+      ],
+      "police_beat": "242",
+      "beat_check": "agrees",
+      "census_relation": "census_documented_equivalent_street",
+      "census_distance_m": 6.21,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "7857ad029032b067494ba8b3b15fb3c44c37b47a30e717b37ba68905e936d613",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-03-25T21:04:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24040001",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "0b1d74b16b99c623b05152c5b4d5cfee9ed3066926b58b9aaa7c0a61fc1a4fee",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "AVENIDA MAGNIFICA",
+      "block": 9900,
+      "segment_ids": [
+        49124,
+        49125
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 457.1,
+      "uncertainty_radius_m": 237.0,
+      "address_ranges": [
+        [
+          9900,
+          9948
+        ],
+        [
+          9901,
+          9949
+        ],
+        [
+          9950,
+          10098
+        ],
+        [
+          9951,
+          10099
+        ]
+      ],
+      "police_beat": "241",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2024-09-30T01:45:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "183451",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "9062da8596737878a8192956e71386201e8f5d3bc61c69ce47960a7abb1fdc33",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 12300,
+      "segment_ids": [
+        139752,
+        157300
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "233",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2018-04-18T17:57:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24202140",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "8d30544cec20e1ab34e37bda5b04778f871a53c596136f1165f59fc0bce90b08",
+      "longitude": -117.22852987246343,
+      "latitude": 32.76038115217463,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "W MISSION BAY DR",
+      "block": 2200,
+      "segment_ids": [
+        45991,
+        45999
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 278.7,
+      "uncertainty_radius_m": 139.4,
+      "address_ranges": [
+        [
+          2100,
+          2250
+        ],
+        [
+          2101,
+          2249
+        ],
+        [
+          2251,
+          2299
+        ],
+        [
+          2252,
+          2298
+        ]
+      ],
+      "police_beat": "123",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 2753.31,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "52a03bc18514bde040dcc818efbfbe2ce0cb530cf931bab93b87bc0e7e58d5cb",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2024-04-14T22:36:51+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21205138",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "9a499cac7dea2193ae797c3b915c95d5ccce95c9c5320a7793bf41511defad74",
+      "longitude": -117.23807545244799,
+      "latitude": 32.870505298517116,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GILMAN DR",
+      "block": 8900,
+      "segment_ids": [
+        31345,
+        31346,
+        135145
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 289.1,
+      "uncertainty_radius_m": 144.8,
+      "address_ranges": [
+        [
+          8880,
+          8928
+        ],
+        [
+          8881,
+          8929
+        ],
+        [
+          8930,
+          8948
+        ],
+        [
+          8931,
+          8949
+        ],
+        [
+          8950,
+          8998
+        ],
+        [
+          8951,
+          8999
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "b3caa877506e7a51b855ce837e1dc048369d47b47dc35c3958021bb13dec7c29",
+      "exclusion_reasons": [],
+      "occurred_at": "2021-08-08T20:24:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23205937",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "48a918d877693ed07297cc1899866eb2c2fe1d5bb0c90fc2eb3d7615fb8dcaad",
+      "longitude": -117.04625908746857,
+      "latitude": 32.56217144602021,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "AVNDA DE LA CRUZ",
+      "block": 1800,
+      "segment_ids": [
+        67473
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 153.0,
+      "uncertainty_radius_m": 76.5,
+      "address_ranges": [
+        [
+          1840,
+          1908
+        ],
+        [
+          1841,
+          1909
+        ]
+      ],
+      "police_beat": "712",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "93fd5da17cebac8d5f47826bee297e2f51d28a9f49fe40b5e5f0a8f60088a31f",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2023-10-15T11:25:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23202510",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "9222842beb243c467769a2a3456e49357b85c1751e32a91692bece98de2b246a",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BANDY CANYON RD",
+      "block": 17900,
+      "segment_ids": [
+        34943,
+        34944
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "235",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2023-05-05T07:09:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23200650",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "794233efe35ba49485cbfcad81cf2857bf5ed6f01acf1d9d1f1c13dafc852575",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SALK INSTITUTE RD",
+      "block": 3100,
+      "segment_ids": [
+        105184
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 536.9,
+      "uncertainty_radius_m": 268.5,
+      "address_ranges": [
+        [
+          3100,
+          3198
+        ],
+        [
+          3101,
+          3199
+        ]
+      ],
+      "police_beat": "126",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2023-02-03T15:22:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19201720",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "source_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "ae34d249ad925dcef17e3d65e0b4b1f32bf914932b1cc20d3800ad3b759768f9",
+      "longitude": -117.17820715058173,
+      "latitude": 32.73980820627103,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "INDIA ST",
+      "block": 3500,
+      "segment_ids": [
+        37327,
+        37328,
+        37332
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 241.2,
+      "uncertainty_radius_m": 120.6,
+      "address_ranges": [
+        [
+          3500,
+          3548
+        ],
+        [
+          3501,
+          3549
+        ],
+        [
+          3550,
+          3558
+        ],
+        [
+          3551,
+          3559
+        ],
+        [
+          3560,
+          3618
+        ],
+        [
+          3561,
+          3619
+        ]
+      ],
+      "police_beat": "626",
+      "beat_check": "disagrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "40763e8980c77d356ffe3953ae7ca456d99fd408072eb10030036569326810b6",
+      "exclusion_reasons": [
+        "source:police_beat_disagrees_with_block"
+      ],
+      "occurred_at": "2019-06-10T23:58:31+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "192178",
+      "original_status": "pending",
+      "original_reason": null,
+      "phase": "pending_triage",
+      "outcome": "official_abbreviation_intersection",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "e6e3adbe7d2109ba132bc97e64046f27806642e1f463d866c1fcd7d2424b1abd",
+      "longitude": -117.17612121711397,
+      "latitude": 32.82029397596257,
+      "precision": "intersection_approximate",
+      "provider": "SanGIS local topology",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BALBOA AVE / MOUNT ALIFAN DR",
+      "block": null,
+      "segment_ids": [
+        10207,
+        10209,
+        47883,
+        47979
+      ],
+      "node_id": 69056,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "111",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "both_named_roads_within_30m",
+      "independent_evidence_sha256": "2ed70e437e2114e229c23af2264831540aa40a5eda672faa01c2a7285cfb2480",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-04-10T16:45:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "190012",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "98ae067d2208131863f8d1b144584030b0b5b39c38a99bb5e0d71b11c4d1c774",
+      "longitude": -117.17290462914445,
+      "latitude": 32.749673752074244,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "W WASHINGTON ST",
+      "block": 1000,
+      "segment_ids": [
+        63994,
+        63995
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 114.6,
+      "uncertainty_radius_m": 59.5,
+      "address_ranges": [
+        [
+          1000,
+          1048
+        ],
+        [
+          1001,
+          1049
+        ],
+        [
+          1050,
+          1098
+        ],
+        [
+          1051,
+          1099
+        ]
+      ],
+      "police_beat": "626",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 1602.55,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "982a0de6fc31f562ea1156bbd8a34c91e63c2a3e08304c6a8643e14008bfee01",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2015-03-24T10:05:00+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "1607486",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "ee79c47f4407c97b8710e10f9fc61b10c5f418ff1ac2344dd893d8de86c9e58e",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "MORENA BLVD",
+      "block": 4600,
+      "segment_ids": [
+        47581,
+        157607
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 752.7,
+      "uncertainty_radius_m": 376.4,
+      "address_ranges": [
+        [
+          4440,
+          4602
+        ],
+        [
+          4441,
+          4603
+        ],
+        [
+          4604,
+          4698
+        ],
+        [
+          4605,
+          4699
+        ]
+      ],
+      "police_beat": "113",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2016-09-03T18:00:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "181688",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "277551600f533c3a7d833cbe906a803fa304a70ea16128c08ad0cb2687f3c230",
+      "longitude": -117.2415254986797,
+      "latitude": 32.82736558894371,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SOLEDAD MTN RD",
+      "block": 5900,
+      "segment_ids": [
+        58744
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 190.6,
+      "uncertainty_radius_m": 95.6,
+      "address_ranges": [
+        [
+          5900,
+          5998
+        ],
+        [
+          5901,
+          5999
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "ed13d1af75e23ba6363787ad4f3640610256ef28c27479ecd28175618394da7e",
+      "exclusion_reasons": [],
+      "occurred_at": "2017-02-24T21:27:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "188905",
+      "original_status": "ambiguous",
+      "original_reason": "provider_tie",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "81da2740c36f164bfff5c3b540de223cb40c4d03df423cd25df15461fae7713a",
+      "longitude": -117.12960357863052,
+      "latitude": 32.71847997887025,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "30TH ST",
+      "block": 1200,
+      "segment_ids": [
+        4097,
+        4102
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 117.0,
+      "uncertainty_radius_m": 58.9,
+      "address_ranges": [
+        [
+          1200,
+          1228
+        ],
+        [
+          1201,
+          1229
+        ],
+        [
+          1230,
+          1298
+        ],
+        [
+          1231,
+          1299
+        ]
+      ],
+      "police_beat": "723",
+      "beat_check": "disagrees",
+      "census_relation": "census_tie_without_candidates",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "90e29612b890b6430f0f54b03884ea887695c0746f4a137503c0a03a84d6edb8",
+      "exclusion_reasons": [
+        "source:police_beat_disagrees_with_block"
+      ],
+      "occurred_at": "2018-11-17T17:50:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "190248",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "9c96719ff9203d99887503f191ca43d40cb618e980e13d63eb2eb3077be6d87b",
+      "longitude": -117.14467881946405,
+      "latitude": 32.83280876921595,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CLAIREMONT MESA BLVD",
+      "block": 8400,
+      "segment_ids": [
+        157572
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 209.3,
+      "uncertainty_radius_m": 104.7,
+      "address_ranges": [
+        [
+          8264,
+          8498
+        ],
+        [
+          8265,
+          8499
+        ]
+      ],
+      "police_beat": "313",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "12ff3898591470028c3acb463d3c0dcfc99e9424c7c4a6af41e0f0c2e84d533d",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-01-01T16:37:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20202554",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "a2471f4da8cbd3d345bfa6c5faaea476fd3cd129eea84b453cd0a0fbb62f57c9",
+      "longitude": -117.2394945278192,
+      "latitude": 32.871151646674825,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA VILLAGE DR",
+      "block": 2900,
+      "segment_ids": [
+        40809,
+        40810,
+        40812
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 330.8,
+      "uncertainty_radius_m": 166.7,
+      "address_ranges": [
+        [
+          2900,
+          2916
+        ],
+        [
+          2901,
+          2917
+        ],
+        [
+          2918,
+          2932
+        ],
+        [
+          2919,
+          2933
+        ],
+        [
+          2934,
+          2998
+        ],
+        [
+          2935,
+          2999
+        ]
+      ],
+      "police_beat": "126",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "6e075694baa7dcb31e1afe1186a4c11cef9d70ef20bd994b2117b01bdc7277a8",
+      "exclusion_reasons": [],
+      "occurred_at": "2020-05-07T02:33:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21204174",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "9d2d0295a0dd14b8c36004aa9755b6a16eee423fc5271342ff390cf47014dbb8",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA SHORES DR",
+      "block": 8700,
+      "segment_ids": [
+        40784,
+        40785
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 502.6,
+      "uncertainty_radius_m": 251.8,
+      "address_ranges": [
+        [
+          8700,
+          8748
+        ],
+        [
+          8701,
+          8749
+        ],
+        [
+          8750,
+          8798
+        ],
+        [
+          8751,
+          8799
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2021-07-02T17:00:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22204205",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "e83ca064cd34b03665e2a31b3dcfe9c64478c862e8ddf5a338baaafb822070e5",
+      "longitude": -117.27719889082525,
+      "latitude": 32.84483085769706,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "PROSPECT ST",
+      "block": 700,
+      "segment_ids": [
+        53769
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 124.3,
+      "uncertainty_radius_m": 62.4,
+      "address_ranges": [
+        [
+          666,
+          798
+        ],
+        [
+          701,
+          799
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "a6bd9818be43885a3065247ac1f8f0f1008a50b66499c78ac9eaf7c6e54952b1",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-07-24T05:20:45+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23206748",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "29cd4db99856f0208ca98d9250f9011b5c145bb7058385e12d0c5885d94a2d73",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SAN DIEGUITO RD",
+      "block": 15100,
+      "segment_ids": [
+        207578
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 1570.2,
+      "uncertainty_radius_m": 828.3,
+      "address_ranges": [
+        [
+          14450,
+          15498
+        ],
+        [
+          14451,
+          15499
+        ]
+      ],
+      "police_beat": "935",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2023-11-14T01:26:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24201523",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "604f05c80a2060702d6529fa921a36a1dfcfe9d6a021863725181659d278a806",
+      "longitude": -117.0078773638367,
+      "latitude": 32.81425701529916,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GROSSMONT COLLEGE DR",
+      "block": 8800,
+      "segment_ids": [
+        213353
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 263.7,
+      "uncertainty_radius_m": 131.9,
+      "address_ranges": [
+        [
+          8800,
+          8814
+        ],
+        [
+          8801,
+          8815
+        ]
+      ],
+      "police_beat": "324",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "17fa562209554f651371119ec88b76b509c5c1c6484a5617f9412871a71d5033",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-03-14T19:29:24+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25204353",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "21461c471297916f841649cebf73013f7621310a866be874c16680ff8c2d9dfa",
+      "longitude": -117.26796945436803,
+      "latitude": 32.81411593917408,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "FORWARD ST",
+      "block": 500,
+      "segment_ids": [
+        29793,
+        29794
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 81.9,
+      "uncertainty_radius_m": 41.0,
+      "address_ranges": [
+        [
+          500,
+          548
+        ],
+        [
+          501,
+          549
+        ],
+        [
+          550,
+          598
+        ],
+        [
+          551,
+          599
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "3abc270a92d8ce880422cebc80c652f0af0c0a65d5325ed29da63c76c6959d2a",
+      "exclusion_reasons": [],
+      "occurred_at": "2025-08-09T16:47:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26200510",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "69f3fdcedce40cd5f41e8203390aea84b0dad1316237dcb017098689e96a6507",
+      "longitude": -117.27349457564804,
+      "latitude": 32.84837718894094,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "PROSPECT ST",
+      "block": 1100,
+      "segment_ids": [
+        53773,
+        53774,
+        53775,
+        53777
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 198.9,
+      "uncertainty_radius_m": 99.8,
+      "address_ranges": [
+        [
+          1050,
+          1118
+        ],
+        [
+          1051,
+          1119
+        ],
+        [
+          1120,
+          1122
+        ],
+        [
+          1121,
+          1123
+        ],
+        [
+          1124,
+          1128
+        ],
+        [
+          1125,
+          1129
+        ],
+        [
+          1130,
+          1198
+        ],
+        [
+          1131,
+          1199
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "7d69055cebe73c7d79f7117fd5c0a1488f0b679a1d3b86dfd7eb96d20c77b57d",
+      "exclusion_reasons": [],
+      "occurred_at": "2026-01-28T02:48:13+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19206482",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "8e48ff44d0ff4ab848ad59de08310962a045f34b12d0592a7abf918d96d01701",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "HARBOR DR",
+      "block": 2900,
+      "segment_ids": [
+        224274,
+        224296,
+        224297
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 834.6,
+      "uncertainty_radius_m": 418.6,
+      "address_ranges": [
+        [
+          2800,
+          2902
+        ],
+        [
+          2801,
+          2903
+        ],
+        [
+          2904,
+          2948
+        ],
+        [
+          2905,
+          2949
+        ],
+        [
+          2950,
+          3034
+        ],
+        [
+          2951,
+          3035
+        ]
+      ],
+      "police_beat": "511",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2019-12-17T14:22:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22203074",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "19cdb84d89fc2ea839f3e959238f052bf1140429b1ebbc0495dd73faddebbd45",
+      "longitude": -117.01569828563535,
+      "latitude": 32.80329142662691,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "NAVAJO RD",
+      "block": 8400,
+      "segment_ids": [
+        48894
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 379.4,
+      "uncertainty_radius_m": 189.7,
+      "address_ranges": [
+        [
+          8300,
+          8498
+        ],
+        [
+          8301,
+          8499
+        ]
+      ],
+      "police_beat": "324",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "d5f2b7cf4b538145ed3e3a1e12df24fd7aa95ee5249c13fffd4aaaea76b87861",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-05-26T17:25:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "1609624",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "f2289c24d08904465e99657d1fd2bc0dbd1946e76b3fa35337feb77c7c9b474a",
+      "longitude": -117.0835703176442,
+      "latitude": 32.76548939273068,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "COLLWOOD BLVD",
+      "block": 4800,
+      "segment_ids": [
+        19246,
+        19250,
+        19253
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 248.8,
+      "uncertainty_radius_m": 124.7,
+      "address_ranges": [
+        [
+          4800,
+          4808
+        ],
+        [
+          4801,
+          4809
+        ],
+        [
+          4810,
+          4848
+        ],
+        [
+          4811,
+          4849
+        ],
+        [
+          4850,
+          4898
+        ],
+        [
+          4851,
+          4899
+        ]
+      ],
+      "police_beat": "824",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "2e8783c74f612769a9fc8198fa734d1d1b23b106378c868c90d8ccf3923f02c8",
+      "exclusion_reasons": [],
+      "occurred_at": "2016-11-16T16:35:00+00:00",
+      "police_division": "Mid-City",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24204612",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "6e746fe0d5a83897dc72b0518ef424f57917764f41bf0cf80cdd0a58e170c26b",
+      "longitude": -117.14935766716592,
+      "latitude": 32.88667153652411,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "ALESMITH CT",
+      "block": 8900,
+      "segment_ids": [
+        78598
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 130.3,
+      "uncertainty_radius_m": 66.0,
+      "address_ranges": [
+        [
+          8900,
+          9998
+        ],
+        [
+          8901,
+          9999
+        ]
+      ],
+      "police_beat": "243",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "9198a6950881c0635d437c24ca7cc578eba0ef8ae31e223d6a2330a74b77e438",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2024-08-03T22:05:25+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "189272",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "232413e17cf90a8d19385eee5d433d52c60e5fcf737adb0f8168615cfdd7898a",
+      "longitude": -117.27538539966609,
+      "latitude": 32.83210128899978,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "NAUTILUS ST",
+      "block": 500,
+      "segment_ids": [
+        48640,
+        48646
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 235.3,
+      "uncertainty_radius_m": 117.6,
+      "address_ranges": [
+        [
+          500,
+          520
+        ],
+        [
+          501,
+          519
+        ],
+        [
+          521,
+          699
+        ],
+        [
+          522,
+          698
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "675f942b380012ffb5cf8b4c5017c2b4c23f4e473f03cd6d7551706f70067259",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-12-03T09:45:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21201982",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "1e3dad808d6ba385a914d9e41be2189718c63589378afd8e821d7ffe80d4ce64",
+      "longitude": -117.2243582435002,
+      "latitude": 32.98355787208764,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "ARROYO ROSITA",
+      "block": 14800,
+      "segment_ids": [
+        81864
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 21.2,
+      "uncertainty_radius_m": 10.6,
+      "address_ranges": [
+        [
+          14800,
+          14808
+        ],
+        [
+          14801,
+          14809
+        ]
+      ],
+      "police_beat": "935",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "7ed23983a57967ce79dc0aeb65f0c51e3a07dffe67896a81133c8da3f5c88cb0",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2021-04-01T23:34:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24205657",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "4864abb6754f526a7e999c30d955b121b0a287219244a641e12e36dc83c8d5b7",
+      "longitude": -117.09454918910292,
+      "latitude": 32.690258579019414,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "S 47TH ST",
+      "block": 1500,
+      "segment_ids": [
+        5396,
+        5397,
+        5398,
+        5399,
+        51521,
+        51524,
+        51525,
+        51526,
+        51527,
+        210664
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 322.3,
+      "uncertainty_radius_m": 161.9,
+      "address_ranges": [
+        [
+          1500,
+          1508
+        ],
+        [
+          1501,
+          1509
+        ],
+        [
+          1510,
+          1518
+        ],
+        [
+          1511,
+          1519
+        ],
+        [
+          1520,
+          1528
+        ],
+        [
+          1521,
+          1529
+        ],
+        [
+          1530,
+          1538
+        ],
+        [
+          1531,
+          1539
+        ],
+        [
+          1540,
+          1548
+        ],
+        [
+          1541,
+          1549
+        ],
+        [
+          1550,
+          1558
+        ],
+        [
+          1551,
+          1559
+        ],
+        [
+          1560,
+          1568
+        ],
+        [
+          1561,
+          1569
+        ],
+        [
+          1570,
+          1578
+        ],
+        [
+          1571,
+          1579
+        ],
+        [
+          1580,
+          1588
+        ],
+        [
+          1581,
+          1589
+        ],
+        [
+          1590,
+          1598
+        ],
+        [
+          1591,
+          1599
+        ]
+      ],
+      "police_beat": "446",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 3195.06,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "443d9873632883f56d0df3bd6dea7081ed38165554a401dbd171c1f6aceba7a3",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2024-09-19T04:25:00+00:00",
+      "police_division": "Southeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19205274",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "4e25633816c7f11ba13cc51bc237fb901bc079f11510153b00fc46756795d45c",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DE LA PLAZA",
+      "block": 4400,
+      "segment_ids": [
+        211094
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 603.9,
+      "uncertainty_radius_m": 315.6,
+      "address_ranges": [
+        [
+          4200,
+          4548
+        ],
+        [
+          4201,
+          4549
+        ]
+      ],
+      "police_beat": "712",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2019-11-02T02:00:56+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21202293",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "731bd14464258ec7deda8b31af726f167af96eef62d90bcbb46399a6900d126f",
+      "longitude": -117.17397137808051,
+      "latitude": 32.7593005539899,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "HOTEL CIR S",
+      "block": 1200,
+      "segment_ids": [
+        36108
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 59.3,
+      "uncertainty_radius_m": 29.6,
+      "address_ranges": [
+        [
+          1200,
+          1298
+        ],
+        [
+          1201,
+          1299
+        ]
+      ],
+      "police_beat": "623",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "9431565d6a9c919cf2eef30fc6dbe32fe87732fb4ecfc3ea1caad64d5ce71a7b",
+      "exclusion_reasons": [],
+      "occurred_at": "2021-04-08T18:30:00+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "190256",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "b4b203562a64e1886354811c787a1e2b47ebab398aeb7a83db2701f35c6a7059",
+      "longitude": -117.2361166960012,
+      "latitude": 32.86320540204397,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GILMAN DR",
+      "block": 8500,
+      "segment_ids": [
+        31339,
+        31354
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 214.3,
+      "uncertainty_radius_m": 107.8,
+      "address_ranges": [
+        [
+          8500,
+          8514
+        ],
+        [
+          8501,
+          8513
+        ],
+        [
+          8515,
+          8599
+        ],
+        [
+          8516,
+          8598
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "cc897abffc89ff21d2e3b7550a43a8f95e2dcbee9b29a5080f4bfdfe14df295a",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-01-06T03:00:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20201202",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "25a0b83f493e3c9114d49c4a3f34f467df58c14d84b66dcb5ef60b1e215176a6",
+      "longitude": -117.07680301605443,
+      "latitude": 32.94773908553326,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "POWAY RD",
+      "block": 11700,
+      "segment_ids": [
+        46789
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 320.1,
+      "uncertainty_radius_m": 160.1,
+      "address_ranges": [
+        [
+          11700,
+          11798
+        ],
+        [
+          11701,
+          11799
+        ]
+      ],
+      "police_beat": "231",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "e7942bc6869e4093c2f913d74d44e895032522d5e886bd3d9b1d71496253dae6",
+      "exclusion_reasons": [],
+      "occurred_at": "2020-02-18T05:50:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21201296",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "bbd149b393352bf25089925fd1cf15f9173f5b4892f1a287c2bcc1deaf9efd2b",
+      "longitude": -117.00985678009557,
+      "latitude": 32.56888211134897,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "EMERALD CREST",
+      "block": 5300,
+      "segment_ids": [
+        174397
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 119.4,
+      "uncertainty_radius_m": 60.2,
+      "address_ranges": [
+        [
+          5350,
+          5398
+        ],
+        [
+          5351,
+          5399
+        ]
+      ],
+      "police_beat": "725",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "a5616e3e589983f1a19f4f95b6197c55f05142c338b3299ff490c439ad4b1a46",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2021-03-06T03:10:46+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "183069",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "d7d043cc1ae54fd53f2c1bf6eab068e53bd00fc17bc17c9aaf26cd67dc2a1c87",
+      "longitude": -117.2304521222227,
+      "latitude": 32.86809716959913,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "NOBEL DR",
+      "block": 3300,
+      "segment_ids": [
+        66387,
+        188476,
+        188477
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 156.3,
+      "uncertainty_radius_m": 78.3,
+      "address_ranges": [
+        [
+          3300,
+          3356
+        ],
+        [
+          3301,
+          3357
+        ],
+        [
+          3358,
+          3372
+        ],
+        [
+          3359,
+          3373
+        ],
+        [
+          3374,
+          3398
+        ],
+        [
+          3375,
+          3399
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "9f0f4521923fde1524dd72cb6c812d21063c6f4a607958119bae5001e6759255",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-04-17T01:30:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "181554",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "043d9db402c119d26c298fdac9dbc66f57793e5d3df201f080dac3e76a359869",
+      "longitude": -117.12508349737419,
+      "latitude": 32.921415341092924,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 11000,
+      "segment_ids": [
+        12034
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 202.3,
+      "uncertainty_radius_m": 101.2,
+      "address_ranges": [
+        [
+          11000,
+          11098
+        ],
+        [
+          11001,
+          11099
+        ]
+      ],
+      "police_beat": "242",
+      "beat_check": "agrees",
+      "census_relation": "census_documented_equivalent_street",
+      "census_distance_m": 124.92,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "08db44768674fb451b24f6011f97bd49dc0722085d6b19efb57d8e47904eb52d",
+      "exclusion_reasons": [
+        "census:point_not_on_sangis_block"
+      ],
+      "occurred_at": "2018-02-16T16:30:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22200092",
+      "original_status": "ambiguous",
+      "original_reason": "provider_tie",
+      "phase": "ambiguous_revalidation",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "db6f7e062b965d3d599f9d9766e9793f839035c12befe43c5275acd1effa3d9d",
+      "longitude": -117.14947497135547,
+      "latitude": 32.714196298624515,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "16TH ST",
+      "block": 800,
+      "segment_ids": [
+        3054,
+        3055
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 115.5,
+      "uncertainty_radius_m": 57.8,
+      "address_ranges": [
+        [
+          800,
+          848
+        ],
+        [
+          801,
+          849
+        ],
+        [
+          850,
+          898
+        ],
+        [
+          851,
+          899
+        ]
+      ],
+      "police_beat": "521",
+      "beat_check": "agrees",
+      "census_relation": "census_tie_without_candidates",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "cebb89240ff503f549782df2e0a22c86336b6723ea170d0cab710cf94e613512",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-01-06T05:18:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "187575",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "documented_alias_resolved",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "40f799c9adb269fb43589871b5647495d1440885ea157e02fb51f73385ff5f44",
+      "longitude": -117.2357527247183,
+      "latitude": 32.91718782196452,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL MTN RD",
+      "block": 3400,
+      "segment_ids": [
+        137851,
+        175151,
+        175154,
+        213501
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 328.0,
+      "uncertainty_radius_m": 164.0,
+      "address_ranges": [
+        [
+          3300,
+          3400
+        ],
+        [
+          3301,
+          3401
+        ],
+        [
+          3402,
+          3438
+        ],
+        [
+          3403,
+          3439
+        ],
+        [
+          3440,
+          3468
+        ],
+        [
+          3441,
+          3469
+        ],
+        [
+          3470,
+          3498
+        ],
+        [
+          3471,
+          3499
+        ]
+      ],
+      "police_beat": "932",
+      "beat_check": "agrees",
+      "census_relation": "census_documented_equivalent_street",
+      "census_distance_m": 6.25,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "cd76b16c1dfb210e4748946c79bb224ed7715c9845cdca6de14f566fe7ea8037",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-10-02T23:34:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25200041",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "4a279ee831343ce773477db56029ac94f345e27ceaa4e4afd0c592eb94305339",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BEYER BLVD",
+      "block": 2500,
+      "segment_ids": [
+        11835,
+        11836
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 498.4,
+      "uncertainty_radius_m": 250.0,
+      "address_ranges": [
+        [
+          2500,
+          2548
+        ],
+        [
+          2501,
+          2549
+        ],
+        [
+          2550,
+          2698
+        ],
+        [
+          2551,
+          2699
+        ]
+      ],
+      "police_beat": "723",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2025-01-02T20:00:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "186533",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "9062da8596737878a8192956e71386201e8f5d3bc61c69ce47960a7abb1fdc33",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 12300,
+      "segment_ids": [
+        139752,
+        157300
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "233",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2018-08-26T04:41:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21207523",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "1c50f353edbded88db5ce729e0259864105b9ebc707d63e6bff0687cd68722c0",
+      "longitude": -117.16694001390044,
+      "latitude": 32.771478711707715,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DEGRAZIA",
+      "block": 6900,
+      "segment_ids": [
+        67762
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 373.1,
+      "uncertainty_radius_m": 232.1,
+      "address_ranges": [
+        [
+          6900,
+          7298
+        ],
+        [
+          6901,
+          7299
+        ]
+      ],
+      "police_beat": "621",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 7.05,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "e70c7214d96dcb3941791bd6d91f115f2d134d573519f9ee6df07f95a5aa20d5",
+      "exclusion_reasons": [
+        "census:census_matched_different_street",
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2021-11-06T03:00:00+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24040784",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "ca11dcac01029c3155f76fc80b11fab7e084cd6219fb93df0d452dc013bd3c10",
+      "longitude": -117.27451314899022,
+      "latitude": 32.8294981505008,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GRAVILLA ST",
+      "block": 600,
+      "segment_ids": [
+        32575
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 227.5,
+      "uncertainty_radius_m": 113.7,
+      "address_ranges": [
+        [
+          500,
+          698
+        ],
+        [
+          501,
+          699
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "576b8eea27011613fd372bcdffcf78704239604dc609fdec855ba548a7a9df7d",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-10-04T23:17:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20201665",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "4df28a991941737d75ec3fbb81b82d19cce4177ca69927de461c8069132c4862",
+      "longitude": -117.05691257789434,
+      "latitude": 32.70511764128451,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "PASTOR TIMOTHY J WINTERS ST",
+      "block": 6500,
+      "segment_ids": [
+        11538,
+        11539,
+        11540
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 203.8,
+      "uncertainty_radius_m": 101.9,
+      "address_ranges": [
+        [
+          6500,
+          6538
+        ],
+        [
+          6501,
+          6539
+        ],
+        [
+          6540,
+          6588
+        ],
+        [
+          6541,
+          6589
+        ],
+        [
+          6590,
+          6598
+        ],
+        [
+          6591,
+          6599
+        ]
+      ],
+      "police_beat": "452",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "ed0db3dcd0edbdddf1532ed23abcfbb1488ce7587db7a41c36e9a42d206efc06",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2020-03-06T21:07:56+00:00",
+      "police_division": "Southeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21208777",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "6c083d4adf7bba04367492a6639d034555bdc720de6900962a368e74506b8871",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SARANAC ST",
+      "block": 7200,
+      "segment_ids": [
+        57269,
+        57273
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "327",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2021-12-29T02:33:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "183356",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "bf8416e3b767c5262c2a0f44019d93811996644383ef3cc05fea22f979c69303",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA VILLAGE DR",
+      "block": 3900,
+      "segment_ids": [
+        40815
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 486.6,
+      "uncertainty_radius_m": 259.0,
+      "address_ranges": [
+        [
+          3800,
+          4098
+        ],
+        [
+          3801,
+          4099
+        ]
+      ],
+      "police_beat": "115",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2018-04-27T02:14:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22200309",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "source_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "eb6baffe49ca41a26436d17986f143c9702597abf4b659ab24ed7a4ebf924da4",
+      "longitude": -117.11706120330854,
+      "latitude": 32.89338229958231,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "POMERADO RD",
+      "block": 9900,
+      "segment_ids": [
+        46340
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 63.8,
+      "uncertainty_radius_m": 31.9,
+      "address_ranges": [
+        [
+          9900,
+          9902
+        ],
+        [
+          9901,
+          9903
+        ]
+      ],
+      "police_beat": "241",
+      "beat_check": "disagrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "4f8f137ecef2d992baf4e54da5e80c641deb418a597b807f21a6e78d3851e38c",
+      "exclusion_reasons": [
+        "source:police_beat_disagrees_with_block"
+      ],
+      "occurred_at": "2022-01-16T00:21:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19201776",
+      "original_status": "pending",
+      "original_reason": null,
+      "phase": "pending_triage",
+      "outcome": "official_abbreviation_intersection",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "2a2ea0e37a30d76732c95b1d7f6046f336b0f4bc0e9888b458da0d67e441d7dd",
+      "longitude": -117.12478426050806,
+      "latitude": 32.91716568346422,
+      "precision": "intersection_approximate",
+      "provider": "SanGIS local topology",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MOUNTAIN RD / MIRA MESA BLVD",
+      "block": null,
+      "segment_ids": [
+        12032,
+        189941,
+        189943,
+        189956
+      ],
+      "node_id": 56218,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "242",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "both_named_roads_within_30m",
+      "independent_evidence_sha256": "61ee23c0cecbb865fb84fd43b6500f968bde295a96940828ac71279fa4a1189e",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-06-14T00:30:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "1608049",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "e7ab4d770041144e50ab1f683f7ed0d5c5067215135da5b3e2cf779883b1491c",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DEL RIO S",
+      "block": 2500,
+      "segment_ids": [
+        15239
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 755.6,
+      "uncertainty_radius_m": 400.1,
+      "address_ranges": [
+        [
+          2400,
+          2848
+        ],
+        [
+          2401,
+          2849
+        ]
+      ],
+      "police_beat": "315",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2016-09-21T07:01:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "180276",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "e8ee5e4d48387611f43a974bdf434383eb0df48fc4a5e50381977b594d8c5e2f",
+      "longitude": -117.27007047232601,
+      "latitude": 32.814690951120845,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA BLVD",
+      "block": 5600,
+      "segment_ids": [
+        40674,
+        40675
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 227.6,
+      "uncertainty_radius_m": 113.8,
+      "address_ranges": [
+        [
+          5600,
+          5608
+        ],
+        [
+          5601,
+          5609
+        ],
+        [
+          5610,
+          5698
+        ],
+        [
+          5611,
+          5699
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "5f70981c47ba5b922acae54121f9c741fdb6fe089864d24ee9815c926d2dfa75",
+      "exclusion_reasons": [],
+      "occurred_at": "2017-12-29T21:13:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "183506",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "a17f9f0856e67fb636813a17a41cc5b3cd99bcf088c7e5972119c1d9e3c658d6",
+      "longitude": -117.06240459033894,
+      "latitude": 32.56348006369174,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "DAIRY MART RD",
+      "block": 1700,
+      "segment_ids": [
+        23295,
+        23312
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 360.0,
+      "uncertainty_radius_m": 180.0,
+      "address_ranges": [
+        [
+          1700,
+          1718
+        ],
+        [
+          1701,
+          1719
+        ],
+        [
+          1750,
+          1898
+        ],
+        [
+          1751,
+          1899
+        ]
+      ],
+      "police_beat": "712",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "5e12cdb485d74707c53f2ec59339ada5feb6177184c425101c2e43cbd096606d",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-05-06T12:25:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "192041",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "7ee1089d7cb7a072e09cfe8191024b03228188a5b369287fc51f8135c12c63e6",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "TORREY PINES RD",
+      "block": 3200,
+      "segment_ids": [
+        61180
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 438.9,
+      "uncertainty_radius_m": 281.7,
+      "address_ranges": [
+        [
+          2850,
+          3598
+        ],
+        [
+          2851,
+          3599
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2019-04-07T23:30:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20203704",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "a419df1eb7632e74aadf1d93aa3ac6c9f652bb7649bbea67ce4e9327a92b6cba",
+      "longitude": -117.24051944211702,
+      "latitude": 32.93280754967019,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL VALLEY RD",
+      "block": 2900,
+      "segment_ids": [
+        16083,
+        172431,
+        172480,
+        172481
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 152.2,
+      "uncertainty_radius_m": 76.1,
+      "address_ranges": [
+        [
+          2900,
+          2908
+        ],
+        [
+          2901,
+          2909
+        ],
+        [
+          2910,
+          2938
+        ],
+        [
+          2911,
+          2939
+        ],
+        [
+          2940,
+          2948
+        ],
+        [
+          2941,
+          2949
+        ],
+        [
+          2950,
+          3030
+        ],
+        [
+          2951,
+          3031
+        ]
+      ],
+      "police_beat": "933",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "3c0d8aacf67e0c110aacff90e82caab25190ee1ce15a2477c4330ade42fe8d91",
+      "exclusion_reasons": [],
+      "occurred_at": "2020-07-09T01:22:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21208313",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "343c0c0510b83d5b3e60f4219f90411bdf8af21c92e136c72a135449e683075a",
+      "longitude": -117.145171890346,
+      "latitude": 32.97692840103294,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL VALLEY RD",
+      "block": 14200,
+      "segment_ids": [
+        189482,
+        189483
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 253.8,
+      "uncertainty_radius_m": 127.4,
+      "address_ranges": [
+        [
+          14200,
+          14286
+        ],
+        [
+          14201,
+          14287
+        ],
+        [
+          14288,
+          14298
+        ],
+        [
+          14289,
+          14299
+        ]
+      ],
+      "police_beat": "936",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "23a39154d7ae56f67c32507e4d320b99884602fbb584c1513458c8bc8a3dfc9c",
+      "exclusion_reasons": [],
+      "occurred_at": "2021-12-11T06:15:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22203497",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "a2471f4da8cbd3d345bfa6c5faaea476fd3cd129eea84b453cd0a0fbb62f57c9",
+      "longitude": -117.2394945278192,
+      "latitude": 32.871151646674825,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA VILLAGE DR",
+      "block": 2900,
+      "segment_ids": [
+        40809,
+        40810,
+        40812
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 330.8,
+      "uncertainty_radius_m": 166.7,
+      "address_ranges": [
+        [
+          2900,
+          2916
+        ],
+        [
+          2901,
+          2917
+        ],
+        [
+          2918,
+          2932
+        ],
+        [
+          2919,
+          2933
+        ],
+        [
+          2934,
+          2998
+        ],
+        [
+          2935,
+          2999
+        ]
+      ],
+      "police_beat": "126",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "6e075694baa7dcb31e1afe1186a4c11cef9d70ef20bd994b2117b01bdc7277a8",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-06-18T20:06:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23202645",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "e98930387ac22495d4432e7d77de5bd75fabe524b86456a75f08f49ece7e6e19",
+      "longitude": -117.27822301799075,
+      "latitude": 32.838307493994705,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA BLVD",
+      "block": 7400,
+      "segment_ids": [
+        40694
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 184.0,
+      "uncertainty_radius_m": 93.1,
+      "address_ranges": [
+        [
+          7400,
+          7498
+        ],
+        [
+          7401,
+          7499
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "0b6d98697be3732fbc9cbda77752d3c121114d75b80fb986e6c5d8c416bc5db7",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-05-12T22:40:02+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24206055",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "93e94a9439cbdc69702cce985afbc6f64b0273475bbf71895045c8741a37afa7",
+      "longitude": -117.25513650976951,
+      "latitude": 32.82152496596669,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "RUTGERS RD",
+      "block": 5800,
+      "segment_ids": [
+        56180,
+        56193,
+        56194
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 210.1,
+      "uncertainty_radius_m": 107.0,
+      "address_ranges": [
+        [
+          5800,
+          5818
+        ],
+        [
+          5801,
+          5819
+        ],
+        [
+          5820,
+          5828
+        ],
+        [
+          5821,
+          5829
+        ],
+        [
+          5830,
+          5898
+        ],
+        [
+          5831,
+          5899
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "28e357a06ef5fbc1e2998aec16c2e43772b3bed495153f3bcbf1a2a02328dd40",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-10-06T20:23:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25206173",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "85be32374e41ba356f62ad04a32113c692d87e9083e0747af7b141a306a6f13a",
+      "longitude": -117.21431300316846,
+      "latitude": 32.75161682594652,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "MIDWAY DR",
+      "block": 3500,
+      "segment_ids": [
+        45972
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 200.1,
+      "uncertainty_radius_m": 100.1,
+      "address_ranges": [
+        [
+          3500,
+          3598
+        ],
+        [
+          3501,
+          3599
+        ]
+      ],
+      "police_beat": "611",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "ce61c27a6137105ab21a448c116ce47ab5968ba7871e40bc172ffdd15c273864",
+      "exclusion_reasons": [],
+      "occurred_at": "2025-11-03T23:43:01+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26204274",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "ed58e3a7b0de432e5394f48449d1c796cdb4d7f97c006c1fbd8630ee623e7411",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL VALLEY RD",
+      "block": 14100,
+      "segment_ids": [
+        208077
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 1112.3,
+      "uncertainty_radius_m": 568.2,
+      "address_ranges": [
+        [
+          14000,
+          14198
+        ],
+        [
+          14001,
+          14199
+        ]
+      ],
+      "police_beat": "936",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2026-07-30T00:25:39+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23200346",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "45e5a643dff26bc376480a6b0160cafa2c38f801d02489fab2c59e9c8ae99b5b",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "HARBOR DR",
+      "block": 2800,
+      "segment_ids": [
+        224297
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 455.6,
+      "uncertainty_radius_m": 228.7,
+      "address_ranges": [
+        [
+          2800,
+          2902
+        ],
+        [
+          2801,
+          2903
+        ]
+      ],
+      "police_beat": "511",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2023-01-20T15:06:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19201288",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "f9461e0341d25fe721dcfb6819deae453949d2a6890508350ab74713f1b1cef5",
+      "longitude": -117.14600193728165,
+      "latitude": 32.77431566346532,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "RIO SAN DIEGO DR",
+      "block": 8300,
+      "segment_ids": [
+        138567
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 130.1,
+      "uncertainty_radius_m": 65.0,
+      "address_ranges": [
+        [
+          8300,
+          8398
+        ],
+        [
+          8301,
+          8399
+        ]
+      ],
+      "police_beat": "315",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "13c34687d3a0f4d1cae6665e0422010c6840f9ea66be2e3b5812ac530aa23531",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-05-16T00:11:00+00:00",
+      "police_division": "Eastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21207487",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "7bf1b09d0303848da42a8b5cdedf2b795f1db746c20c370ab3e864ad76da3014",
+      "longitude": -117.08159985801433,
+      "latitude": 32.76065582085831,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "COLLWOOD BLVD",
+      "block": 4500,
+      "segment_ids": [
+        19248,
+        19249
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 236.6,
+      "uncertainty_radius_m": 118.5,
+      "address_ranges": [
+        [
+          4500,
+          4578
+        ],
+        [
+          4501,
+          4579
+        ],
+        [
+          4580,
+          4648
+        ],
+        [
+          4581,
+          4649
+        ]
+      ],
+      "police_beat": "824",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 463.48,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "66f719c99ea8b15a314fddd13cb1fc70ad4ce1d978444b3fe02b24af7b72352c",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2021-11-04T02:30:00+00:00",
+      "police_division": "Mid-City",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26032343",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "13efe3232b851876800614561acc461f9bb46e33114636d43c5354bfbcea64b5",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DEL NORTE",
+      "block": 14300,
+      "segment_ids": [
+        20014
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 578.2,
+      "uncertainty_radius_m": 289.1,
+      "address_ranges": [
+        [
+          14300,
+          14598
+        ],
+        [
+          14301,
+          14599
+        ]
+      ],
+      "police_beat": "232",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2026-09-01T00:00:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19203420",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "60c75ae907e27190fa30a7d1ce19583a8fa564f719eada394935e14692cd2ed7",
+      "longitude": -117.26950377795174,
+      "latitude": 32.84193416549534,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CABRILLO AVE",
+      "block": 7500,
+      "segment_ids": [
+        14432
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 157.9,
+      "uncertainty_radius_m": 79.0,
+      "address_ranges": [
+        [
+          7500,
+          7598
+        ],
+        [
+          7501,
+          7599
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "6d36d70245232a3e1909f112cc77e661acf5f03ce2517cf9be1e068a55bfa535",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-08-26T15:00:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23200372",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "eb7ccdd022b040b25b65ee4d3063797fa4bb1d8033b656c8431d657c0c3b71f2",
+      "longitude": -117.2485754207566,
+      "latitude": 32.948707405254055,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "DEL MAR HEIGHTS RD",
+      "block": 2500,
+      "segment_ids": [
+        3692,
+        3693,
+        3696
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 214.6,
+      "uncertainty_radius_m": 107.3,
+      "address_ranges": [
+        [
+          2500,
+          2528
+        ],
+        [
+          2501,
+          2529
+        ],
+        [
+          2530,
+          2548
+        ],
+        [
+          2531,
+          2549
+        ],
+        [
+          2550,
+          2598
+        ],
+        [
+          2551,
+          2599
+        ]
+      ],
+      "police_beat": "933",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "dd6bdfe6bef1c9c3deda2638e6f3a32a851c0273ae8fa43a12adaeac6c7c735c",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-01-21T19:30:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23204495",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "2efef84bf4cf26e3de4b254695ff5776d71f4f123aa7e591c8b0265f2be07a1e",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "S WOODMAN ST",
+      "block": 1700,
+      "segment_ids": [
+        32557,
+        32558
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 476.0,
+      "uncertainty_radius_m": 238.0,
+      "address_ranges": [
+        [
+          1600,
+          1748
+        ],
+        [
+          1601,
+          1749
+        ],
+        [
+          1750,
+          1898
+        ],
+        [
+          1751,
+          1899
+        ]
+      ],
+      "police_beat": "437",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2023-08-10T14:30:00+00:00",
+      "police_division": "Southeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21202594",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "4afa768185b458251d0bf77bee307138bdbf9968f7c5a969aa9e8becc17c5077",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CAM DE LA PLAZA",
+      "block": 4400,
+      "segment_ids": [
+        211094
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 603.9,
+      "uncertainty_radius_m": 315.6,
+      "address_ranges": [
+        [
+          4200,
+          4548
+        ],
+        [
+          4201,
+          4549
+        ]
+      ],
+      "police_beat": "712",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2021-04-29T01:35:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22207044",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "9491867a6c4c9ec20d68f0d693a18f774ea1cfe50d3fb37ccf8054c51be37bb5",
+      "longitude": -117.16038063150938,
+      "latitude": 32.74240536886769,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "5TH AVE",
+      "block": 3500,
+      "segment_ids": [
+        1441,
+        1484
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 205.4,
+      "uncertainty_radius_m": 102.7,
+      "address_ranges": [
+        [
+          3500,
+          3528
+        ],
+        [
+          3501,
+          3529
+        ],
+        [
+          3530,
+          3598
+        ],
+        [
+          3531,
+          3599
+        ]
+      ],
+      "police_beat": "627",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "0a50c7b72120775cdb4cabfecb541669c14a90ef9de3e6a71659e3e1aa7ed29a",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-12-01T22:43:45+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19206303",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "4f0494662ab3c69c77d1750d6cfc5b7ed7114f8cf4bcb0feecf9414c57c2c330",
+      "longitude": -117.24865110976096,
+      "latitude": 32.93130959783864,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL VALLEY RD",
+      "block": 2500,
+      "segment_ids": [
+        16069
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 271.9,
+      "uncertainty_radius_m": 136.0,
+      "address_ranges": [
+        [
+          2500,
+          2598
+        ],
+        [
+          2501,
+          2599
+        ]
+      ],
+      "police_beat": "933",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "0e8d611a10a8e30249b7f43b4c965ccf531a86ca60e4ee99a2998a4ba6cc66c3",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-12-12T01:10:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20204394",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "af34f40974933338038fab1e87581e9fcb4863436adf0aa16b3448b301069144",
+      "longitude": -117.23951285641378,
+      "latitude": 32.76606387197198,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "W MISSION BAY DR",
+      "block": 1300,
+      "segment_ids": [
+        45987
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 321.2,
+      "uncertainty_radius_m": 161.2,
+      "address_ranges": [
+        [
+          1300,
+          1598
+        ],
+        [
+          1301,
+          1599
+        ]
+      ],
+      "police_beat": "123",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 2906.41,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "91de8896a4cb89a3c8aa1b8f64f66015c71dd762e46b1a37061aea904fd51393",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2020-08-09T01:14:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23205242",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "bb4fe1364c313ffb4a65150552cd081be8330f5cce664a867a808361c65b7125",
+      "longitude": -117.24570165727734,
+      "latitude": 32.94916063405941,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "DEL MAR HEIGHTS RD",
+      "block": 2700,
+      "segment_ids": [
+        3697
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 127.4,
+      "uncertainty_radius_m": 63.8,
+      "address_ranges": [
+        [
+          2700,
+          2798
+        ],
+        [
+          2701,
+          2799
+        ]
+      ],
+      "police_beat": "933",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "af62c45eda676102e1293d2da7ee0df65cb401ca9d9c35e3d204c67b91f3c25c",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-09-13T03:29:54+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "190636",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "b83c1cf4c3d4250bf760c3b6ad1c7235bc2edba81d7d3520180fd845c850a794",
+      "longitude": -117.20384757815025,
+      "latitude": 32.84845307026624,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GENESEE AVE",
+      "block": 5900,
+      "segment_ids": [
+        215025,
+        215051
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 282.5,
+      "uncertainty_radius_m": 145.4,
+      "address_ranges": [
+        [
+          5892,
+          5928
+        ],
+        [
+          5893,
+          5929
+        ],
+        [
+          5930,
+          6042
+        ],
+        [
+          5931,
+          6043
+        ]
+      ],
+      "police_beat": "115",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "e9d339d3cf39cf75c912e28e4fdc2e4b7f0d97cfcc35d346942ec85f4bb17668",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-01-19T02:20:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "187116",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "documented_alias_resolved",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "eb263300749fb52ff567a69863cd4f53cc26306bf9ca5dd339d4846c236a5d85",
+      "longitude": -117.22966163447607,
+      "latitude": 32.92143956258002,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "CARMEL MTN RD",
+      "block": 3800,
+      "segment_ids": [
+        137286
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 285.1,
+      "uncertainty_radius_m": 142.6,
+      "address_ranges": [
+        [
+          3800,
+          3898
+        ],
+        [
+          3801,
+          3899
+        ]
+      ],
+      "police_beat": "934",
+      "beat_check": "agrees",
+      "census_relation": "census_documented_equivalent_street",
+      "census_distance_m": 6.22,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "deace085f92153c65a0d0c2a6a19877999221dc9fcb3d69a574778e1a0712550",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-09-17T16:31:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25206662",
+      "original_status": "ambiguous",
+      "original_reason": "provider_tie",
+      "phase": "ambiguous_revalidation",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "3bd345983ea0da707a26c7c411b99000735ea85a29dd0aebd2d5ec99ff0fae99",
+      "longitude": -117.26656030404644,
+      "latitude": 32.84775765892977,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "TORREY PINES RD",
+      "block": 1500,
+      "segment_ids": [
+        61194
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 194.5,
+      "uncertainty_radius_m": 99.9,
+      "address_ranges": [
+        [
+          1500,
+          1598
+        ],
+        [
+          1501,
+          1599
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_tie_without_candidates",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "cfe68d98c215140f63109c610632db10ebe2ee3114b66395ed91207cdd654df6",
+      "exclusion_reasons": [],
+      "occurred_at": "2025-11-28T10:23:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "19202221",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "documented_alias_resolved",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "d4f55cc7dc27e735417297f978f715dd1b14d2ee30ad883065f9c1dbbb7e3b06",
+      "longitude": -117.17675503284707,
+      "latitude": 32.81718553136389,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "MT AGUILAR DR",
+      "block": 6000,
+      "segment_ids": [
+        47943,
+        200670
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": 237.4,
+      "uncertainty_radius_m": 128.6,
+      "address_ranges": [
+        [
+          5900,
+          6016
+        ],
+        [
+          5901,
+          6017
+        ],
+        [
+          6018,
+          6198
+        ],
+        [
+          6019,
+          6199
+        ]
+      ],
+      "police_beat": "111",
+      "beat_check": "agrees",
+      "census_relation": "census_documented_equivalent_street",
+      "census_distance_m": 6.51,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "61a29112d1fa07b2d2fc7f730dfcc6bf33e5076bef7b4fa548134fbecfcbd8af",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-07-06T12:00:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25206149",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "insufficient_evidence",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "d447528ffb8362666758fee51ca0850869b4dba185d18f64d447d8e6a7219161",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "N MISSION BAY DR",
+      "block": 3000,
+      "segment_ids": [
+        216312
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 588.3,
+      "uncertainty_radius_m": 297.2,
+      "address_ranges": [
+        [
+          2898,
+          3098
+        ],
+        [
+          2899,
+          3099
+        ]
+      ],
+      "police_beat": "123",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2025-11-02T16:36:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "187870",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "9062da8596737878a8192956e71386201e8f5d3bc61c69ce47960a7abb1fdc33",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BLACK MTN RD",
+      "block": 12300,
+      "segment_ids": [
+        139752,
+        157300
+      ],
+      "node_id": null,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "233",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2018-10-16T01:54:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "192470",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "bfbda78dce82bee2b1db8e1fb71983f31b42c23b841df56800fd6bf323cc97d8",
+      "longitude": -117.23951285641378,
+      "latitude": 32.76606387197198,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "W MISSION BAY DR",
+      "block": 1400,
+      "segment_ids": [
+        45987
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 321.2,
+      "uncertainty_radius_m": 161.2,
+      "address_ranges": [
+        [
+          1300,
+          1598
+        ],
+        [
+          1301,
+          1599
+        ]
+      ],
+      "police_beat": "123",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 2936.47,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "91de8896a4cb89a3c8aa1b8f64f66015c71dd762e46b1a37061aea904fd51393",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2019-04-08T02:35:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26203478",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "2bffd008285bf17190a169d05c70760ba105eb8ec96d01f2211913752da1c06b",
+      "longitude": -117.27855815047785,
+      "latitude": 32.846416652666946,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "COAST BLVD",
+      "block": 800,
+      "segment_ids": [
+        19066
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 292.3,
+      "uncertainty_radius_m": 166.5,
+      "address_ranges": [
+        [
+          700,
+          898
+        ],
+        [
+          701,
+          899
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "934cc28784acb4c3977dffcbbbedec6a8fe3bfc27ae31860a594e8028e37dfc9",
+      "exclusion_reasons": [],
+      "occurred_at": "2026-06-04T22:20:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25207062",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "insufficient_evidence",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "2c7e47b6822eb325a8c808d0c2c868d22c063a4279558ac36925a5283e3fd086",
+      "longitude": -117.13908571725179,
+      "latitude": 32.910388442830104,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "MARAUDER WAY",
+      "block": 10500,
+      "segment_ids": [
+        69077,
+        69078,
+        69079
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 222.0,
+      "uncertainty_radius_m": 111.7,
+      "address_ranges": [
+        [
+          10500,
+          10538
+        ],
+        [
+          10501,
+          10539
+        ],
+        [
+          10540,
+          10568
+        ],
+        [
+          10541,
+          10569
+        ],
+        [
+          10570,
+          10598
+        ],
+        [
+          10571,
+          10599
+        ]
+      ],
+      "police_beat": "242",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "feb1a88f78325d32cdadc02c7a39650dd3b7060c1c4a37ec4d5c59d9e26208d6",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2025-12-15T22:22:00+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21204061",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "multiple_candidates",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "76abdc13b1266a964ff5babe229b995223a38ccd342cd313e0a2e6a48587f804",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "69TH ST",
+      "block": 1500,
+      "segment_ids": [
+        6053,
+        6071
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "433",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:geographically_separated_compatible_segments"
+      ],
+      "occurred_at": "2021-06-27T13:23:09+00:00",
+      "police_division": "Southeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26200594",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "7ee1089d7cb7a072e09cfe8191024b03228188a5b369287fc51f8135c12c63e6",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "TORREY PINES RD",
+      "block": 3200,
+      "segment_ids": [
+        61180
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 438.9,
+      "uncertainty_radius_m": 281.7,
+      "address_ranges": [
+        [
+          2850,
+          3598
+        ],
+        [
+          2851,
+          3599
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2026-02-02T00:20:52+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "182498",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "source_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "7eec5179d9203b89b46bdd8ea73577713adde5bd00d8ccef9d96016b83120656",
+      "longitude": -117.06286539690237,
+      "latitude": 32.56747317812697,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "BEYER BLVD",
+      "block": 3200,
+      "segment_ids": [
+        214727,
+        214728
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 141.7,
+      "uncertainty_radius_m": 71.7,
+      "address_ranges": [
+        [
+          3200,
+          3296
+        ],
+        [
+          3201,
+          3297
+        ],
+        [
+          3298,
+          3298
+        ],
+        [
+          3299,
+          3299
+        ]
+      ],
+      "police_beat": "723",
+      "beat_check": "disagrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "08c7975030bcebcaabc02510279b5e154c8d64c0aa5fac725a8e5b399f6dea81",
+      "exclusion_reasons": [
+        "source:police_beat_disagrees_with_block"
+      ],
+      "occurred_at": "2018-03-25T13:26:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "191862",
+      "original_status": "pending",
+      "original_reason": null,
+      "phase": "pending_triage",
+      "outcome": "official_abbreviation_intersection",
+      "validation_status": "unknown",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "pending",
+      "source_address_fingerprint": "749684f9c388077ebd898758d8688d1910c67aa4499e14c184d20472f534cdee",
+      "longitude": -116.93589259183804,
+      "latitude": 32.55438427664039,
+      "precision": "intersection_approximate",
+      "provider": "SanGIS local topology",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "MARCONI DR / PASEO DE LAS AMERICAS",
+      "block": null,
+      "segment_ids": [
+        104149,
+        104152,
+        205555
+      ],
+      "node_id": 117060,
+      "name_sources": [
+        "official_rd20full_abbreviation"
+      ],
+      "block_extent_m": null,
+      "uncertainty_radius_m": null,
+      "address_ranges": null,
+      "police_beat": "713",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": "unknown",
+      "independent_reason": "road_name_not_identified_in_independent_source",
+      "independent_evidence_sha256": "cc4aa38a3a9cbaa5940a5001bc052730abab76393389918a2dc1368a109437ef",
+      "exclusion_reasons": [
+        "independent:road_name_not_identified_in_independent_source"
+      ],
+      "occurred_at": "2019-03-26T01:24:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "1607870",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "range_ambiguous",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "no_match",
+      "source_address_fingerprint": "29cd4db99856f0208ca98d9250f9011b5c145bb7058385e12d0c5885d94a2d73",
+      "longitude": null,
+      "latitude": null,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SAN DIEGUITO RD",
+      "block": 15100,
+      "segment_ids": [
+        207578
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 1570.2,
+      "uncertainty_radius_m": 828.3,
+      "address_ranges": [
+        [
+          14450,
+          15498
+        ],
+        [
+          14451,
+          15499
+        ]
+      ],
+      "police_beat": "935",
+      "beat_check": null,
+      "census_relation": null,
+      "census_distance_m": null,
+      "independent_status": null,
+      "independent_reason": null,
+      "independent_evidence_sha256": null,
+      "exclusion_reasons": [
+        "block:block_extent_exceeds_400m"
+      ],
+      "occurred_at": "2016-09-16T00:48:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "180435",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "db61228c9daa4143831c0b1aa4c18b2103a6c6ec2b8f8b650741a3ad22936dba",
+      "longitude": -117.0937559843908,
+      "latitude": 32.58384294696059,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "PALM AVE",
+      "block": 1800,
+      "segment_ids": [
+        28978,
+        28979,
+        28985,
+        28986,
+        28990,
+        222133
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 204.2,
+      "uncertainty_radius_m": 103.6,
+      "address_ranges": [
+        [
+          1800,
+          1818
+        ],
+        [
+          1801,
+          1899
+        ],
+        [
+          1820,
+          1828
+        ],
+        [
+          1830,
+          1838
+        ],
+        [
+          1840,
+          1848
+        ],
+        [
+          1850,
+          1898
+        ]
+      ],
+      "police_beat": "721",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "75a55314c7ca924c3c44f66b8d8dd8fd5756cc9d18450522509ed3e8998938fe",
+      "exclusion_reasons": [],
+      "occurred_at": "2017-12-31T04:15:00+00:00",
+      "police_division": "Southern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "186034",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "eb84328fd54596d822cdfad4a21952ed1eb7d7f20dbe7815140cf3654391e210",
+      "longitude": -117.25994692965811,
+      "latitude": 32.849760658031784,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "TORREY PINES RD",
+      "block": 1900,
+      "segment_ids": [
+        61202
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 117.4,
+      "uncertainty_radius_m": 58.7,
+      "address_ranges": [
+        [
+          1900,
+          1998
+        ],
+        [
+          1901,
+          1999
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "89ff648148284416124129bc0d5434392f23400bc2274d2bc7b833663e8dbcbd",
+      "exclusion_reasons": [],
+      "occurred_at": "2018-08-05T21:20:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "192144",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "463210007e5fbb6e112782832780807c5f34e04b466fce39d12ad52f375c148d",
+      "longitude": -117.2537949503868,
+      "latitude": 32.85309342577246,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA SHORES DR",
+      "block": 8000,
+      "segment_ids": [
+        40781,
+        40782
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 147.2,
+      "uncertainty_radius_m": 73.6,
+      "address_ranges": [
+        [
+          8000,
+          8048
+        ],
+        [
+          8001,
+          8049
+        ],
+        [
+          8050,
+          8098
+        ],
+        [
+          8051,
+          8099
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "f754cefa6309220802eac590500f2f014bcb444a9476e16924b288d6f1141df3",
+      "exclusion_reasons": [],
+      "occurred_at": "2019-04-10T23:25:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "20202790",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "69167e5407198c19cf850b139004943a5d9ac0a87c86cf1e3fc97245f53ee9a0",
+      "longitude": -117.22218676023867,
+      "latitude": 32.756468476862985,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SPORTS ARENA BLVD",
+      "block": 4100,
+      "segment_ids": [
+        216052,
+        216082,
+        216083,
+        216088,
+        216089
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 165.5,
+      "uncertainty_radius_m": 82.8,
+      "address_ranges": [
+        [
+          4084,
+          4106
+        ],
+        [
+          4085,
+          4107
+        ],
+        [
+          4108,
+          4110
+        ],
+        [
+          4109,
+          4111
+        ],
+        [
+          4112,
+          4176
+        ],
+        [
+          4113,
+          4177
+        ],
+        [
+          4178,
+          4186
+        ],
+        [
+          4179,
+          4187
+        ],
+        [
+          4188,
+          4198
+        ],
+        [
+          4189,
+          4199
+        ]
+      ],
+      "police_beat": "611",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "f9c26e44174d056e65d81d7c94dce35ea5bc32e230f842898724dd2187dd5e6a",
+      "exclusion_reasons": [],
+      "occurred_at": "2020-05-22T01:37:00+00:00",
+      "police_division": "Western",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "21204144",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "6f99793084f11475105fb9e4d30954a811160b8863f5b7ad7fca455e9c3c1a86",
+      "longitude": -117.26460170238721,
+      "latitude": 32.84821580690676,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "TORREY PINES RD",
+      "block": 1600,
+      "segment_ids": [
+        61195,
+        61196
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 180.6,
+      "uncertainty_radius_m": 90.4,
+      "address_ranges": [
+        [
+          1600,
+          1678
+        ],
+        [
+          1601,
+          1679
+        ],
+        [
+          1680,
+          1698
+        ],
+        [
+          1681,
+          1699
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "40af0fb20cccd80da4dc98bcdb7cba804704841d1f22fcb01012df81010e2154",
+      "exclusion_reasons": [],
+      "occurred_at": "2021-06-30T18:40:13+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "22204373",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "b277c4f557eff4d39dfdbf61ee8d7e589a0db407bd594fbe84d698cb4f3c0012",
+      "longitude": -117.25347459337337,
+      "latitude": 32.85828047251771,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "LA JOLLA SHORES DR",
+      "block": 8300,
+      "segment_ids": [
+        40788,
+        40789
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 205.5,
+      "uncertainty_radius_m": 102.8,
+      "address_ranges": [
+        [
+          8300,
+          8338
+        ],
+        [
+          8301,
+          8339
+        ],
+        [
+          8340,
+          8398
+        ],
+        [
+          8341,
+          8399
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "502fa03474f507cffc5bc802d65c6fa47c8b04bcdc655206906ef008611eef44",
+      "exclusion_reasons": [],
+      "occurred_at": "2022-08-01T17:35:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23026643",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "6230c685497b15614bb3e8c23e0fdb54e11a1cb1f9ee7be5d262a59269f3785a",
+      "longitude": -117.22977197509915,
+      "latitude": 32.98279306494522,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "VIA DE LA VALLE",
+      "block": 3700,
+      "segment_ids": [
+        12783,
+        12784
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 140.4,
+      "uncertainty_radius_m": 70.2,
+      "address_ranges": [
+        [
+          3700,
+          3748
+        ],
+        [
+          3701,
+          3749
+        ],
+        [
+          3750,
+          3798
+        ],
+        [
+          3751,
+          3799
+        ]
+      ],
+      "police_beat": "935",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "e5ca382ba6598e91b2b99f5483aa6c9b0a13d6a0aa41207b517484bf95383995",
+      "exclusion_reasons": [],
+      "occurred_at": "2023-06-23T05:55:00+00:00",
+      "police_division": "Northwestern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "24014371",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "51d85222b915dc2360bf7a1762f747b9d76c5d7881e561e9679cc66290cddb24",
+      "longitude": -117.07312236277971,
+      "latitude": 32.922716115016435,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "SPRING CANYON RD",
+      "block": 12000,
+      "segment_ids": [
+        59000
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 305.4,
+      "uncertainty_radius_m": 155.0,
+      "address_ranges": [
+        [
+          11900,
+          12048
+        ],
+        [
+          11901,
+          12049
+        ]
+      ],
+      "police_beat": "241",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "6a057f1bd03211185561f2c2dacd58a103b71c1408929aa873a129abaea5a947",
+      "exclusion_reasons": [],
+      "occurred_at": "2024-04-11T07:39:07+00:00",
+      "police_division": "Northeastern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "25203281",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "b4b203562a64e1886354811c787a1e2b47ebab398aeb7a83db2701f35c6a7059",
+      "longitude": -117.2361166960012,
+      "latitude": 32.86320540204397,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "GILMAN DR",
+      "block": 8500,
+      "segment_ids": [
+        31339,
+        31354
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 214.3,
+      "uncertainty_radius_m": 107.8,
+      "address_ranges": [
+        [
+          8500,
+          8514
+        ],
+        [
+          8501,
+          8513
+        ],
+        [
+          8515,
+          8599
+        ],
+        [
+          8516,
+          8598
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "cc897abffc89ff21d2e3b7550a43a8f95e2dcbee9b29a5080f4bfdfe14df295a",
+      "exclusion_reasons": [],
+      "occurred_at": "2025-06-17T06:11:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "26200782",
+      "original_status": "no_match",
+      "original_reason": "provider_nomatch",
+      "phase": "no_match_roadblock",
+      "outcome": "accepted_candidate",
+      "validation_status": "pass",
+      "deployable": true,
+      "deployment_route": "final_allowlist",
+      "proposed_status": "matched",
+      "source_address_fingerprint": "f3db5422816de04f55dea818d01ded81b5b7d9c32ac6501367e45e00f39f839b",
+      "longitude": -117.2556725679617,
+      "latitude": 32.844299271403,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "HILLSIDE DR",
+      "block": 7400,
+      "segment_ids": [
+        214419
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 266.7,
+      "uncertainty_radius_m": 133.9,
+      "address_ranges": [
+        [
+          7400,
+          7502
+        ],
+        [
+          7401,
+          7503
+        ]
+      ],
+      "police_beat": "124",
+      "beat_check": "agrees",
+      "census_relation": "census_no_match",
+      "census_distance_m": null,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "875d106e2e8366d9737147d598bcd3d68c5c693d57fd1ac5e110ef0f8a1c35b2",
+      "exclusion_reasons": [],
+      "occurred_at": "2026-02-11T21:44:00+00:00",
+      "police_division": "Northern",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    },
+    {
+      "report_id": "23203265",
+      "original_status": "ambiguous",
+      "original_reason": "returned_street_components_differ",
+      "phase": "ambiguous_revalidation",
+      "outcome": "street_conflict",
+      "validation_status": "fail",
+      "deployable": false,
+      "deployment_route": "none",
+      "proposed_status": "ambiguous",
+      "source_address_fingerprint": "33cc5970957fe7413621a9ce7d3f9eafdf8da3c030ac96b629edf1414a78e239",
+      "longitude": -117.13382919918104,
+      "latitude": 32.695437197355304,
+      "precision": "block_approximate",
+      "provider": "SanGIS road centerline",
+      "method_version": "citylens-final-historical-v1",
+      "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+      "street": "S 28TH ST",
+      "block": 1000,
+      "segment_ids": [
+        3924,
+        3928,
+        3929,
+        3930
+      ],
+      "node_id": null,
+      "name_sources": [
+        "exact_rd30full"
+      ],
+      "block_extent_m": 108.6,
+      "uncertainty_radius_m": 54.3,
+      "address_ranges": [
+        [
+          1000,
+          1048
+        ],
+        [
+          1001,
+          1049
+        ],
+        [
+          1050,
+          1072
+        ],
+        [
+          1051,
+          1073
+        ],
+        [
+          1074,
+          1078
+        ],
+        [
+          1075,
+          1079
+        ],
+        [
+          1080,
+          1098
+        ],
+        [
+          1081,
+          1099
+        ]
+      ],
+      "police_beat": "512",
+      "beat_check": "agrees",
+      "census_relation": "census_matched_different_street",
+      "census_distance_m": 2214.62,
+      "independent_status": "pass",
+      "independent_reason": "named_road_within_30m",
+      "independent_evidence_sha256": "9685ba67a9a6be202aa5d126d940db1d4af4dddf19223af09c9499f3256c603d",
+      "exclusion_reasons": [
+        "census:census_matched_different_street"
+      ],
+      "occurred_at": "2023-06-13T23:03:00+00:00",
+      "police_division": "Central",
+      "validated_at": "2026-11-03T06:50:55.382436+00:00"
+    }
+  ],
+  "selection": "Deterministic round robin over original status, outcome, name source, extent band, police division and year; includes rejected classes."
+}

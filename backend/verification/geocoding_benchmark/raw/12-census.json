@@ -1,0 +1,55 @@
+{
+  "address_id": "12",
+  "provider": "census",
+  "input_address": "3003 Coronado Ave, San Diego, CA 92154",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3003+Coronado+Ave&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92154",
+  "fetched_at": "2026-11-03T00:18:26.044113+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92154",
+          "city": "San Diego",
+          "street": "3003 Coronado Ave",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195358572"
+          },
+          "coordinates": {
+            "x": -117.068724132034,
+            "y": 32.576866706457
+          },
+          "addressComponents": {
+            "zip": "92154",
+            "streetName": "CORONADO",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "3001",
+            "state": "CA",
+            "suffixType": "AVE",
+            "toAddress": "3099",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "3003 CORONADO AVE, SAN DIEGO, CA, 92154"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 417.75
+}

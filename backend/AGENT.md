@@ -1,5 +1,22 @@
 # CityLens Phase 0 Agent
 
+P1.2 adds [address interpretation and confirmation](P1_2.md) through
+`POST /api/v1/agent/chat` and the frontend's default street-address mode.
+The same configured model produces a structured proposed analysis/address
+interpretation. A new `resolve_locations` entry node on the existing LangGraph
+pauses for explicit confirmation, then uses Census with SanGIS Address Points
+fallback only on legitimate no-match, and the existing analysis nodes. Census
+ambiguity/errors retain their original handling; SanGIS candidates use the same
+confirmation interface. The saved plan is validated against resolved pins without another
+planning call. Coordinate requests still enter at `resolve_scope`.
+See the [provider benchmark](verification/geocoding_benchmark/REPORT.md) for
+coverage, placement limitations and evidence supporting Census as primary.
+
+[P1.2.2](P1_2_2.md) prepares a capped Google experiment and a disabled selective-
+review prototype, without changing this production chain or adding a LangGraph
+node. Live Google use is gated separately from key configuration. Historical
+audit/enrichment proposals remain independent of interactive address resolution.
+
 Phase 1.1 extends these adapters with service-request grouping and dataset
 metadata; see [PHASE1_1.md](PHASE1_1.md) for the current additive contracts.
 
@@ -33,8 +50,10 @@ POST /api/v1/agent/query
   → deterministic rendering + final response verification
 ```
 
-There is one LLM planner/composer, not multiple agents. Graph state is explicit
-and request-local. Conditional edges route unsupported/failed requests to
+There is one configured LLM for interpretation/planning/composition. Analysis
+graph state is explicit and request-local; address conversations additionally
+use bounded process-local pending state with revision checks and 30-minute expiry.
+Conditional edges route unsupported/failed requests to
 abstention; independent tool failures preserve successful evidence. Claims are
 constructed **before** verification; final validation runs **after** composition.
 
@@ -99,10 +118,13 @@ Discrepancies / decisions relative to the proposed specification:
   traceability, not a deterministic proof of semantic interpretation. Clients
   should inspect executed filters for nuanced questions. Source field contents
   never override policy; the model cannot change structured dates or pins.
-- `conversation_id` is accepted for contract compatibility. Follow-up memory,
-  persistence, and cross-request evidence storage are not implemented.
+- The coordinate endpoint accepts `conversation_id` for compatibility and remains
+  stateless. The new chat endpoint retains pending question, scope, plan and
+  address/candidate confirmations in memory. It is not a durable conversation
+  store: restart/reload recovery and sharing across server workers are not implemented.
 - No cross-request cache is used without reliable dataset versioning. Plans are
-  deduplicated within each request. No retries are currently performed.
+  deduplicated within each request. SQL calls are not retried; the interactive
+  SanGIS HTTP adapter permits at most two attempts for transient transport errors.
 
 ## Files
 
@@ -115,6 +137,11 @@ Discrepancies / decisions relative to the proposed specification:
 | `agent/tools.py` | Measurement-tool allowlist, dataset metadata, SQL binding and read-only/role enforcement |
 | `agent/evidence.py` | Evidence records, calendar normalization, comparison arithmetic, independent claim checker |
 | `agent/workflow.py` | LangGraph state, nodes, bounded routing, partial/error handling and final verification |
+| `agent/location_models.py` | Additive chat, address-interpretation and candidate contracts; no LLM coordinate fields |
+| `agent/location_flow.py` | Pending requests, explicit confirmations, corrections, expiry and revision checks |
+| `agent/user_geocoding.py` | Interactive Census candidates and interpolation metadata, separate from collision persistence |
+| `agent/sangis_geocoding.py` | Strict WGS84 Address Points candidates; fallback only after Census no-match |
+| `agent/geocoding_http.py` | Bounded public-provider JSON requests and sanitized transport diagnostics |
 | `sql/setup_agent_reader.sql` | Optional, manually reviewed least-privilege role setup; not loaded by `db.py init` |
 | `agent_tests/` | Mocked/unit, SDK-wire, and isolated PostGIS integration tests |
 | `examples/agent/` | Three request examples and explicitly synthetic response fixtures |

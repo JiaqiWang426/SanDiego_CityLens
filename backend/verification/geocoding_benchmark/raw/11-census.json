@@ -1,0 +1,55 @@
+{
+  "address_id": "11",
+  "provider": "census",
+  "input_address": "3795 31st St, San Diego, CA 92104",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=3795+31st+St&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92104",
+  "fetched_at": "2026-11-03T00:18:25.222366+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92104",
+          "city": "San Diego",
+          "street": "3795 31st St",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195345729"
+          },
+          "coordinates": {
+            "x": -117.127092501133,
+            "y": 32.747288088765
+          },
+          "addressComponents": {
+            "zip": "92104",
+            "streetName": "31ST",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "3701",
+            "state": "CA",
+            "suffixType": "ST",
+            "toAddress": "3799",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "3795 31ST ST, SAN DIEGO, CA, 92104"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 416.75
+}

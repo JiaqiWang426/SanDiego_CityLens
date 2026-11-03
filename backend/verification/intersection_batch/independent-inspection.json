@@ -1,0 +1,6511 @@
+[
+  {
+    "pair_id": "2574ad3265a2d812da791095ec526c2999b4c78bfbba7e4758347a5520b1d9c8",
+    "primary": "LA JOLLA SHORES DR",
+    "cross": "N TORREY PINES RD",
+    "classification": "accepted_candidate",
+    "node_id": 58809,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "N Torrey Pines Rd",
+        "canonical": "N TORREY PINES RD",
+        "distance_m": 0.001
+      },
+      {
+        "name": "La Jolla Shores Dr",
+        "canonical": "LA JOLLA SHORES DR",
+        "distance_m": 0.028
+      },
+      {
+        "name": "Scholars Dr S",
+        "canonical": "SCHOLARS DR S",
+        "distance_m": 52.19
+      },
+      {
+        "name": "Greentree Ln",
+        "canonical": "GREENTREE LN",
+        "distance_m": 95.684
+      },
+      {
+        "name": "La Jolla Farms Rd",
+        "canonical": "LA JOLLA FARMS RD",
+        "distance_m": 100.885
+      },
+      {
+        "name": "Inyaha Ln",
+        "canonical": "INYAHA LN",
+        "distance_m": 186.687
+      },
+      {
+        "name": "Poole St",
+        "canonical": "POOLE ST",
+        "distance_m": 214.344
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "1d6e5939184906b4045c88a136a8e60a376c115e44b66bbd6aadc3bcffb2da10",
+    "primary": "OLD BATTLEFIELD RD",
+    "cross": "W ZOO RD",
+    "classification": "accepted_candidate",
+    "node_id": 34209,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "W Zoo Rd",
+        "canonical": "W ZOO RD",
+        "distance_m": 0.046
+      },
+      {
+        "name": "Old Battlefield Rd",
+        "canonical": "OLD BATTLEFIELD RD",
+        "distance_m": 0.052
+      },
+      {
+        "name": "Rockwood Rd",
+        "canonical": "ROCKWOOD RD",
+        "distance_m": 0.052
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "83f4533a73a9730d05e1e08912b6dcff7bba19893c2e72f5d5ba7c037164ba82",
+    "primary": "DEL MAR HEIGHTS RD",
+    "cross": "INTERSTATE 5 SB OFF RAMP",
+    "classification": "accepted_candidate",
+    "node_id": 53035,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 SB OFF RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.01
+      },
+      {
+        "name": "Del Mar Heights Rd",
+        "canonical": "DEL MAR HEIGHTS RD",
+        "distance_m": 0.018
+      },
+      {
+        "name": "Ruette Le Parc",
+        "canonical": "RUETTE LE PARC",
+        "distance_m": 72.253
+      },
+      {
+        "name": "Ruette Parc Ln",
+        "canonical": "RUETTE PARC LN",
+        "distance_m": 72.253
+      },
+      {
+        "name": "Portofino Dr",
+        "canonical": "PORTOFINO DR",
+        "distance_m": 127.377
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "940bccbec69b3fbf8785e419c969c31b308f259f00be242482fe605846473580",
+    "primary": "LA MEDIA RD",
+    "cross": "SAINT ANDREWS AVE",
+    "classification": "accepted_candidate",
+    "node_id": 116565,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "SAINT ANDREWS AVE"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "La Media Rd",
+        "canonical": "LA MEDIA RD",
+        "distance_m": 0.006
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.052
+      },
+      {
+        "name": "St Andrews Ave",
+        "canonical": "ST ANDREWS AVE",
+        "distance_m": 0.053
+      },
+      {
+        "name": "State Rte 905",
+        "canonical": "STATE RTE 905",
+        "distance_m": 176.973
+      },
+      {
+        "name": "Otay Mesa Rd",
+        "canonical": "OTAY MESA RD",
+        "distance_m": 189.411
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "d1796f7d31a2bd511705a725b3a99cec457bd229db75868d00401364c0deaf04",
+    "primary": "CHAPMAN ST",
+    "cross": "W POINT LOMA BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 85753,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "W Point Loma Blvd",
+        "canonical": "W POINT LOMA BLVD",
+        "distance_m": 0.024
+      },
+      {
+        "name": "Chapman St",
+        "canonical": "CHAPMAN ST",
+        "distance_m": 0.046
+      },
+      {
+        "name": "Loma Riviera Dr",
+        "canonical": "LOMA RIVIERA DR",
+        "distance_m": 51.865
+      },
+      {
+        "name": "Barnard St",
+        "canonical": "BARNARD ST",
+        "distance_m": 86.735
+      },
+      {
+        "name": "Loma Riviera Ln",
+        "canonical": "LOMA RIVIERA LN",
+        "distance_m": 89.648
+      },
+      {
+        "name": "Basilone St",
+        "canonical": "BASILONE ST",
+        "distance_m": 132.495
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 148.348
+      },
+      {
+        "name": "Orleans E",
+        "canonical": "ORLEANS E",
+        "distance_m": 148.348
+      },
+      {
+        "name": "Groton St",
+        "canonical": "GROTON ST",
+        "distance_m": 155.238
+      },
+      {
+        "name": "Loma Riviera Cir",
+        "canonical": "LOMA RIVIERA CIR",
+        "distance_m": 155.645
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "3037788915a4fceb5de54a4a6368b7d97b679a959f9e1cd993b33937cbd66f98",
+    "primary": "COLUMBIA ST",
+    "cross": "W BEECH ST",
+    "classification": "accepted_candidate",
+    "node_id": 95649,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Columbia St",
+        "canonical": "COLUMBIA ST",
+        "distance_m": 0.023
+      },
+      {
+        "name": "W Beech St",
+        "canonical": "W BEECH ST",
+        "distance_m": 0.029
+      },
+      {
+        "name": "India St",
+        "canonical": "INDIA ST",
+        "distance_m": 82.863
+      },
+      {
+        "name": "State St",
+        "canonical": "STATE ST",
+        "distance_m": 84.971
+      },
+      {
+        "name": "W Ash St",
+        "canonical": "W ASH ST",
+        "distance_m": 113.598
+      },
+      {
+        "name": "W Cedar St",
+        "canonical": "W CEDAR ST",
+        "distance_m": 115.19
+      },
+      {
+        "name": "Kettner Blvd",
+        "canonical": "KETTNER BLVD",
+        "distance_m": 166.357
+      },
+      {
+        "name": "Union St",
+        "canonical": "UNION ST",
+        "distance_m": 167.532
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "ca90d89e05c8fc7e23c353612c535fb79b9efe609d0df25202de2fbeabda9997",
+    "primary": "KOLMAR ST",
+    "cross": "VISTA DEL MAR AVE",
+    "classification": "accepted_candidate",
+    "node_id": 67040,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Vista del Mar Ave",
+        "canonical": "VISTA DEL MAR AVE",
+        "distance_m": 0.004
+      },
+      {
+        "name": "Kolmar St",
+        "canonical": "KOLMAR ST",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Neptune Pl",
+        "canonical": "NEPTUNE PL",
+        "distance_m": 45.295
+      },
+      {
+        "name": "Rosemont St",
+        "canonical": "ROSEMONT ST",
+        "distance_m": 79.672
+      },
+      {
+        "name": "Gravilla St",
+        "canonical": "GRAVILLA ST",
+        "distance_m": 81.179
+      },
+      {
+        "name": "Playa del Sur",
+        "canonical": "PLAYA DEL SUR",
+        "distance_m": 150.233
+      },
+      {
+        "name": "Palomar Ave",
+        "canonical": "PALOMAR AVE",
+        "distance_m": 159.701
+      },
+      {
+        "name": "Cam de la Costa",
+        "canonical": "CAM DE LA COSTA",
+        "distance_m": 159.878
+      },
+      {
+        "name": "Playa del Norte",
+        "canonical": "PLAYA DEL NORTE",
+        "distance_m": 181.189
+      },
+      {
+        "name": "Ave Cresta",
+        "canonical": "AVE CRESTA",
+        "distance_m": 182.217
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "48d265dda50926caebac21186c9aa23fbba42be51029215bd144297284abf2c9",
+    "primary": "26TH ST",
+    "cross": "MARKET ST",
+    "classification": "accepted_candidate",
+    "node_id": 97873,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Market St",
+        "canonical": "MARKET ST",
+        "distance_m": 0.361
+      },
+      {
+        "name": "26th St",
+        "canonical": "26TH ST",
+        "distance_m": 0.958
+      },
+      {
+        "name": "Island Ave",
+        "canonical": "ISLAND AVE",
+        "distance_m": 118.315
+      },
+      {
+        "name": "G St",
+        "canonical": "G ST",
+        "distance_m": 118.453
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 158.886
+      },
+      {
+        "name": "Martin Luther King Jr Fwy",
+        "canonical": "MARTIN LUTHER KING JR FWY",
+        "distance_m": 163.813
+      },
+      {
+        "name": "State Rte 94",
+        "canonical": "STATE RTE 94",
+        "distance_m": 163.813
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "fe7fe45394a04f5b550db1c6a24513b26a02a567a10241563641973a33938635",
+    "primary": "E SAN YSIDRO BLVD",
+    "cross": "RAIL CT",
+    "classification": "accepted_candidate",
+    "node_id": 1056256,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.802
+      },
+      {
+        "name": "E San Ysidro Blvd",
+        "canonical": "E SAN YSIDRO BLVD",
+        "distance_m": 13.068
+      },
+      {
+        "name": "Rail Ct",
+        "canonical": "RAIL CT",
+        "distance_m": 13.231
+      },
+      {
+        "name": "I- 5",
+        "canonical": "I- 5",
+        "distance_m": 95.268
+      },
+      {
+        "name": "San Diego Fwy",
+        "canonical": "SAN DIEGO FWY",
+        "distance_m": 95.268
+      },
+      {
+        "name": "E Beyer Blvd",
+        "canonical": "E BEYER BLVD",
+        "distance_m": 159.652
+      },
+      {
+        "name": "Camiones Way",
+        "canonical": "CAMIONES WAY",
+        "distance_m": 245.667
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "22dddcea26899aa59ad85f9bcb45b6f21953e841173cfa1aa508fa4648d85f1f",
+    "primary": "BOSTON AVE",
+    "cross": "S 29TH ST",
+    "classification": "accepted_candidate",
+    "node_id": 101552,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Boston Ave",
+        "canonical": "BOSTON AVE",
+        "distance_m": 0.028
+      },
+      {
+        "name": "S 29th St",
+        "canonical": "S 29TH ST",
+        "distance_m": 0.041
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.05
+      },
+      {
+        "name": "Main St",
+        "canonical": "MAIN ST",
+        "distance_m": 114.591
+      },
+      {
+        "name": "Newton Ave",
+        "canonical": "NEWTON AVE",
+        "distance_m": 121.972
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "5ded189b82fc8133aab067211006092922361811df6d84e87169271496d244fe",
+    "primary": "INTERSTATE 5 SB OFF RAMP",
+    "cross": "SEA WORLD DR",
+    "classification": "accepted_candidate",
+    "node_id": 81278,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 SB OFF RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.028
+      },
+      {
+        "name": "Sea World Dr",
+        "canonical": "SEA WORLD DR",
+        "distance_m": 0.038
+      },
+      {
+        "name": "Tecolote Rd",
+        "canonical": "TECOLOTE RD",
+        "distance_m": 55.865
+      },
+      {
+        "name": "E Mission Bay Dr",
+        "canonical": "E MISSION BAY DR",
+        "distance_m": 68.159
+      },
+      {
+        "name": "W Morena Blvd",
+        "canonical": "W MORENA BLVD",
+        "distance_m": 268.324
+      },
+      {
+        "name": "Knoxville St",
+        "canonical": "KNOXVILLE ST",
+        "distance_m": 279.063
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "937de743a6decf15540d36aa024c5d5551e7aadad61a5ab0b51f2854162a817f",
+    "primary": "CABRILLO MEMORIAL DR",
+    "cross": "MC CLELLAN RD",
+    "classification": "accepted_candidate",
+    "node_id": 185824,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Cabrillo Memorial Dr",
+        "canonical": "CABRILLO MEMORIAL DR",
+        "distance_m": 1.836
+      },
+      {
+        "name": "Mc Clellan Rd",
+        "canonical": "MC CLELLAN RD",
+        "distance_m": 4.19
+      },
+      {
+        "name": "Ryne Rd",
+        "canonical": "RYNE RD",
+        "distance_m": 25.883
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 53.74
+      },
+      {
+        "name": "Patterson Rd",
+        "canonical": "PATTERSON RD",
+        "distance_m": 88.184
+      },
+      {
+        "name": "Whistler Rd",
+        "canonical": "WHISTLER RD",
+        "distance_m": 102.197
+      },
+      {
+        "name": "Cole Rd",
+        "canonical": "COLE RD",
+        "distance_m": 215.473
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f379b9d337329f4aafa4af9c8bfe79323c8013293c23d28e758ec7fedf79bb94",
+    "primary": "E PARK AVE",
+    "cross": "E SAN YSIDRO BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 117101,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "E Park Ave",
+        "canonical": "E PARK AVE",
+        "distance_m": 0.009
+      },
+      {
+        "name": "E San Ysidro Blvd",
+        "canonical": "E SAN YSIDRO BLVD",
+        "distance_m": 0.021
+      },
+      {
+        "name": "Main St",
+        "canonical": "MAIN ST",
+        "distance_m": 37.444
+      },
+      {
+        "name": "W Park Ave",
+        "canonical": "W PARK AVE",
+        "distance_m": 39.574
+      },
+      {
+        "name": "W San Ysidro Blvd",
+        "canonical": "W SAN YSIDRO BLVD",
+        "distance_m": 39.574
+      },
+      {
+        "name": "Pepper Dr",
+        "canonical": "PEPPER DR",
+        "distance_m": 54.275
+      },
+      {
+        "name": "Via de San Ysidro",
+        "canonical": "VIA DE SAN YSIDRO",
+        "distance_m": 83.292
+      },
+      {
+        "name": "Cypress Dr",
+        "canonical": "CYPRESS DR",
+        "distance_m": 99.107
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 100.574
+      },
+      {
+        "name": "W Olive Dr",
+        "canonical": "W OLIVE DR",
+        "distance_m": 104.463
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "d56bcec3f3cd7ffdc4624ff6be172048c2268b726ba5aa3c23ce966f50c64daf",
+    "primary": "A ST",
+    "cross": "W A ST",
+    "classification": "accepted_candidate",
+    "node_id": 96175,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "1st Ave",
+        "canonical": "1ST AVE",
+        "distance_m": 0.03
+      },
+      {
+        "name": "A St",
+        "canonical": "A ST",
+        "distance_m": 0.051
+      },
+      {
+        "name": "W A St",
+        "canonical": "W A ST",
+        "distance_m": 0.058
+      },
+      {
+        "name": "Front St",
+        "canonical": "FRONT ST",
+        "distance_m": 83.155
+      },
+      {
+        "name": "2nd Ave",
+        "canonical": "2ND AVE",
+        "distance_m": 85.905
+      },
+      {
+        "name": "W B St",
+        "canonical": "W B ST",
+        "distance_m": 116.67
+      },
+      {
+        "name": "Ash St",
+        "canonical": "ASH ST",
+        "distance_m": 117.562
+      },
+      {
+        "name": "W Ash St",
+        "canonical": "W ASH ST",
+        "distance_m": 117.567
+      },
+      {
+        "name": "Union St",
+        "canonical": "UNION ST",
+        "distance_m": 164.206
+      },
+      {
+        "name": "3rd Ave",
+        "canonical": "3RD AVE",
+        "distance_m": 170.622
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "3e7e651106ac08617e0315b95de20d95d95d6c38191fc7ee626bdb79a2c2e754",
+    "primary": "AVENIDA DE LAS VISTAS",
+    "cross": "VISTA SANTA ROSALIA",
+    "classification": "accepted_candidate",
+    "node_id": 115109,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "AVENIDA DE LAS VISTAS",
+      "VISTA SANTA ROSALIA"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Ave de Las Vistas",
+        "canonical": "AVE DE LAS VISTAS",
+        "distance_m": 0.016
+      },
+      {
+        "name": "Vis Santa Rosalia",
+        "canonical": "VIS SANTA ROSALIA",
+        "distance_m": 0.026
+      },
+      {
+        "name": "Vis Santa Catarina",
+        "canonical": "VIS SANTA CATARINA",
+        "distance_m": 52.254
+      },
+      {
+        "name": "Vis Santo Domingo",
+        "canonical": "VIS SANTO DOMINGO",
+        "distance_m": 76.787
+      },
+      {
+        "name": "Vis Santa Clara",
+        "canonical": "VIS SANTA CLARA",
+        "distance_m": 79.675
+      },
+      {
+        "name": "Vis San Isidro",
+        "canonical": "VIS SAN ISIDRO",
+        "distance_m": 109.668
+      },
+      {
+        "name": "Vis San Ignacio",
+        "canonical": "VIS SAN IGNACIO",
+        "distance_m": 139.609
+      },
+      {
+        "name": "Vis San Carlos",
+        "canonical": "VIS SAN CARLOS",
+        "distance_m": 153.75
+      },
+      {
+        "name": "Vis San Guadalupe",
+        "canonical": "VIS SAN GUADALUPE",
+        "distance_m": 155.675
+      },
+      {
+        "name": "Vis Santo Thomas",
+        "canonical": "VIS SANTO THOMAS",
+        "distance_m": 156.652
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "2211f37ff0767b1929d20b6e309c749d2a60964cf273ac457cb2403255d7dcb4",
+    "primary": "10TH AVE",
+    "cross": "G ST",
+    "classification": "accepted_candidate",
+    "node_id": 97628,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "G St",
+        "canonical": "G ST",
+        "distance_m": 0.009
+      },
+      {
+        "name": "10th Ave",
+        "canonical": "10TH AVE",
+        "distance_m": 0.044
+      },
+      {
+        "name": "11th Ave",
+        "canonical": "11TH AVE",
+        "distance_m": 85.333
+      },
+      {
+        "name": "9th Ave",
+        "canonical": "9TH AVE",
+        "distance_m": 85.886
+      },
+      {
+        "name": "F St",
+        "canonical": "F ST",
+        "distance_m": 115.723
+      },
+      {
+        "name": "Market St",
+        "canonical": "MARKET ST",
+        "distance_m": 119.741
+      },
+      {
+        "name": "N 10th Ave",
+        "canonical": "N 10TH AVE",
+        "distance_m": 119.741
+      },
+      {
+        "name": "N 11th Ave",
+        "canonical": "N 11TH AVE",
+        "distance_m": 148.14
+      },
+      {
+        "name": "12th Ave",
+        "canonical": "12TH AVE",
+        "distance_m": 170.339
+      },
+      {
+        "name": "Park Blvd",
+        "canonical": "PARK BLVD",
+        "distance_m": 170.339
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "2460a242f5024b28017283e7ce450f4544fa3adc390eda67e0c615586e3c698a",
+    "primary": "N TORREY PINES RD",
+    "cross": "PANGEA DR",
+    "classification": "accepted_candidate",
+    "node_id": 58365,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "N Torrey Pines Rd",
+        "canonical": "N TORREY PINES RD",
+        "distance_m": 0.001
+      },
+      {
+        "name": "Pangea Dr",
+        "canonical": "PANGEA DR",
+        "distance_m": 8.63
+      },
+      {
+        "name": "Estancia la Jolla",
+        "canonical": "ESTANCIA LA JOLLA",
+        "distance_m": 8.631
+      },
+      {
+        "name": "Keeneland Row",
+        "canonical": "KEENELAND ROW",
+        "distance_m": 65.243
+      },
+      {
+        "name": "Hamburg Sq",
+        "canonical": "HAMBURG SQ",
+        "distance_m": 84.917
+      },
+      {
+        "name": "Scholars Dr N",
+        "canonical": "SCHOLARS DR N",
+        "distance_m": 137.913
+      },
+      {
+        "name": "Thurgood Marshall Ln",
+        "canonical": "THURGOOD MARSHALL LN",
+        "distance_m": 138.152
+      },
+      {
+        "name": "Claiborne Sq",
+        "canonical": "CLAIBORNE SQ",
+        "distance_m": 141.483
+      },
+      {
+        "name": "Black Gold Rd",
+        "canonical": "BLACK GOLD RD",
+        "distance_m": 211.365
+      },
+      {
+        "name": "Blackgold Rd",
+        "canonical": "BLACKGOLD RD",
+        "distance_m": 211.365
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "6e7e95b2259b32d4522f8d74cde398d08aad81450d27d181bfaef4ebb81b874b",
+    "primary": "PACIFIC HWY",
+    "cross": "W HARBOR DR",
+    "classification": "accepted_candidate",
+    "node_id": 97835,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Pacific Hwy",
+        "canonical": "PACIFIC HWY",
+        "distance_m": 0.015
+      },
+      {
+        "name": "W Harbor Dr",
+        "canonical": "W HARBOR DR",
+        "distance_m": 0.029
+      },
+      {
+        "name": "W G St",
+        "canonical": "W G ST",
+        "distance_m": 115.482
+      },
+      {
+        "name": "N Harbor Dr",
+        "canonical": "N HARBOR DR",
+        "distance_m": 118.817
+      },
+      {
+        "name": "California St",
+        "canonical": "CALIFORNIA ST",
+        "distance_m": 145.232
+      },
+      {
+        "name": "Kettner Blvd",
+        "canonical": "KETTNER BLVD",
+        "distance_m": 176.231
+      },
+      {
+        "name": "Harbor Ln",
+        "canonical": "HARBOR LN",
+        "distance_m": 214.841
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "60e8676c6a1480417f090e40a36471923bd50ab1c681318d060860cda5484816",
+    "primary": "AVENIDA DE LAS TIENDAS",
+    "cross": "FRIARS RD",
+    "classification": "accepted_candidate",
+    "node_id": 81288,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "AVENIDA DE LAS TIENDAS"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Ave de Las Tiendas",
+        "canonical": "AVE DE LAS TIENDAS",
+        "distance_m": 0.031
+      },
+      {
+        "name": "Friars Rd",
+        "canonical": "FRIARS RD",
+        "distance_m": 0.051
+      },
+      {
+        "name": "W Fashion Valley",
+        "canonical": "W FASHION VALLEY",
+        "distance_m": 93.856
+      },
+      {
+        "name": "Ave del Rio",
+        "canonical": "AVE DEL RIO",
+        "distance_m": 101.012
+      },
+      {
+        "name": "Cmt Degrazia",
+        "canonical": "CMT DEGRAZIA",
+        "distance_m": 211.473
+      },
+      {
+        "name": "Ulric St",
+        "canonical": "ULRIC ST",
+        "distance_m": 270.211
+      },
+      {
+        "name": "Cmt Revueltos",
+        "canonical": "CMT REVUELTOS",
+        "distance_m": 287.466
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "fefad3dd9488c0498e6ab2a94b6cae9b967fa57c60e538d038222557ca05aadb",
+    "primary": "AZUAGA ST",
+    "cross": "RANCHO PENASQUITOS BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 52041,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Rancho Penasquitos Blvd",
+        "canonical": "RANCHO PENASQUITOS BLVD",
+        "distance_m": 0.002
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.034
+      },
+      {
+        "name": "Azuaga St",
+        "canonical": "AZUAGA ST",
+        "distance_m": 0.035
+      },
+      {
+        "name": "State Rte 56",
+        "canonical": "STATE RTE 56",
+        "distance_m": 88.621
+      },
+      {
+        "name": "Ted Williams Fwy",
+        "canonical": "TED WILLIAMS FWY",
+        "distance_m": 88.621
+      },
+      {
+        "name": "Via del Valedor",
+        "canonical": "VIA DEL VALEDOR",
+        "distance_m": 223.772
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "8459dad8e597908d6d0f60aa384176844e9999a8dd8316b3709f9963288e6f35",
+    "primary": "SUNSET CLIFFS BLVD",
+    "cross": "W POINT LOMA BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 86614,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "W Point Loma Blvd",
+        "canonical": "W POINT LOMA BLVD",
+        "distance_m": 0.006
+      },
+      {
+        "name": "Sunset Cliffs Blvd",
+        "canonical": "SUNSET CLIFFS BLVD",
+        "distance_m": 0.015
+      },
+      {
+        "name": "Lotus St",
+        "canonical": "LOTUS ST",
+        "distance_m": 59.072
+      },
+      {
+        "name": "Greene St",
+        "canonical": "GREENE ST",
+        "distance_m": 77.141
+      },
+      {
+        "name": "Voltaire St",
+        "canonical": "VOLTAIRE ST",
+        "distance_m": 145.997
+      },
+      {
+        "name": "Ebers St",
+        "canonical": "EBERS ST",
+        "distance_m": 197.522
+      },
+      {
+        "name": "Muir Ave",
+        "canonical": "MUIR AVE",
+        "distance_m": 228.979
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "de17f85caa2c01ef853fdb7ad4e2ecd7d995bcdaf5b4f24cc19b76270c2f76b7",
+    "primary": "NATIONAL AVE",
+    "cross": "S 39TH ST",
+    "classification": "accepted_candidate",
+    "node_id": 101174,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "National Ave",
+        "canonical": "NATIONAL AVE",
+        "distance_m": 0.017
+      },
+      {
+        "name": "S 39th St",
+        "canonical": "S 39TH ST",
+        "distance_m": 0.038
+      },
+      {
+        "name": "Stewart Ct",
+        "canonical": "STEWART CT",
+        "distance_m": 40.522
+      },
+      {
+        "name": "Burns Ct",
+        "canonical": "BURNS CT",
+        "distance_m": 40.533
+      },
+      {
+        "name": "Wallace Ct",
+        "canonical": "WALLACE CT",
+        "distance_m": 106.903
+      },
+      {
+        "name": "Logan Ave",
+        "canonical": "LOGAN AVE",
+        "distance_m": 113.697
+      },
+      {
+        "name": "Newton Ave",
+        "canonical": "NEWTON AVE",
+        "distance_m": 116.726
+      },
+      {
+        "name": "Blair Ct",
+        "canonical": "BLAIR CT",
+        "distance_m": 141.957
+      },
+      {
+        "name": "Florence St",
+        "canonical": "FLORENCE ST",
+        "distance_m": 215.696
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "c47a8a0ba22a0302fc8a46183d3ef37fc056280e19fac2e1c39d532f6a18b5b1",
+    "primary": "CARMEL VALLEY RD",
+    "cross": "DEL MAR HEIGHTS RD",
+    "classification": "accepted_candidate",
+    "node_id": 148262,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Carmel Valley Rd",
+        "canonical": "CARMEL VALLEY RD",
+        "distance_m": 1.306
+      },
+      {
+        "name": "Village Center Loop Rd",
+        "canonical": "VILLAGE CENTER LOOP RD",
+        "distance_m": 1.433
+      },
+      {
+        "name": "Del Mar Heights Rd",
+        "canonical": "DEL MAR HEIGHTS RD",
+        "distance_m": 2.044
+      },
+      {
+        "name": "Cam Santander",
+        "canonical": "CAM SANTANDER",
+        "distance_m": 80.887
+      },
+      {
+        "name": "Cullen Crest Trl",
+        "canonical": "CULLEN CREST TRL",
+        "distance_m": 83.177
+      },
+      {
+        "name": "Shasta Daisy Trl",
+        "canonical": "SHASTA DAISY TRL",
+        "distance_m": 83.177
+      },
+      {
+        "name": "Cape Jewels Trl",
+        "canonical": "CAPE JEWELS TRL",
+        "distance_m": 95.071
+      },
+      {
+        "name": "Painted Nettles Glen",
+        "canonical": "PAINTED NETTLES GLEN",
+        "distance_m": 151.159
+      },
+      {
+        "name": "Cornflower Trl",
+        "canonical": "CORNFLOWER TRL",
+        "distance_m": 151.311
+      },
+      {
+        "name": "Highlands Pl",
+        "canonical": "HIGHLANDS PL",
+        "distance_m": 161.013
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "6033256493bdbc85ff10848edcdfb7b8311c57fb002a395bc7e68caf39f752ab",
+    "primary": "MISSION GORGE PL",
+    "cross": "MISSION GORGE RD",
+    "classification": "accepted_candidate",
+    "node_id": 78298,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Mission Gorge Rd",
+        "canonical": "MISSION GORGE RD",
+        "distance_m": 0.002
+      },
+      {
+        "name": "Mission Gorge Pl",
+        "canonical": "MISSION GORGE PL",
+        "distance_m": 0.041
+      },
+      {
+        "name": "Mc Mahar Pl",
+        "canonical": "MC MAHAR PL",
+        "distance_m": 146.297
+      },
+      {
+        "name": "Twain Ave",
+        "canonical": "TWAIN AVE",
+        "distance_m": 200.496
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 201.454
+      },
+      {
+        "name": "Decena Dr",
+        "canonical": "DECENA DR",
+        "distance_m": 247.69
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "114b79194c9de24acdc427c1be6805b8ca69da300e9841e38af4305aa3887912",
+    "primary": "CAM DEL RIO W",
+    "cross": "MOORE ST",
+    "classification": "accepted_candidate",
+    "node_id": 85235,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Moore St",
+        "canonical": "MOORE ST",
+        "distance_m": 0.05
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 3.206
+      },
+      {
+        "name": "Cam del Rio W",
+        "canonical": "CAM DEL RIO W",
+        "distance_m": 3.949
+      },
+      {
+        "name": "Greenwood St",
+        "canonical": "GREENWOOD ST",
+        "distance_m": 40.042
+      },
+      {
+        "name": "Riley St",
+        "canonical": "RILEY ST",
+        "distance_m": 66.102
+      },
+      {
+        "name": "Hancock St",
+        "canonical": "HANCOCK ST",
+        "distance_m": 103.314
+      },
+      {
+        "name": "Jefferson St",
+        "canonical": "JEFFERSON ST",
+        "distance_m": 106.945
+      },
+      {
+        "name": "Gaines St",
+        "canonical": "GAINES ST",
+        "distance_m": 171.093
+      },
+      {
+        "name": "Sherman St",
+        "canonical": "SHERMAN ST",
+        "distance_m": 200.717
+      },
+      {
+        "name": "Kurtz St",
+        "canonical": "KURTZ ST",
+        "distance_m": 210.543
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "fcafeab4082f57099a92b699fd4ba6e1093c1d33b257cebac1bfcc3663ce36ee",
+    "primary": "CLINTON ST",
+    "cross": "S 38TH ST",
+    "classification": "accepted_candidate",
+    "node_id": 99492,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Clinton St",
+        "canonical": "CLINTON ST",
+        "distance_m": 0.002
+      },
+      {
+        "name": "S 38th St",
+        "canonical": "S 38TH ST",
+        "distance_m": 0.045
+      },
+      {
+        "name": "Imperial Ave",
+        "canonical": "IMPERIAL AVE",
+        "distance_m": 43.569
+      },
+      {
+        "name": "Superba St",
+        "canonical": "SUPERBA ST",
+        "distance_m": 48.127
+      },
+      {
+        "name": "Harding Ave",
+        "canonical": "HARDING AVE",
+        "distance_m": 93.559
+      },
+      {
+        "name": "Milbrae St",
+        "canonical": "MILBRAE ST",
+        "distance_m": 137.31
+      },
+      {
+        "name": "Superior St",
+        "canonical": "SUPERIOR ST",
+        "distance_m": 144.12
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "22d7c346f1360a4ec344fe485984799e0008e5945a44b0b7a5b1f82c5d5fe031",
+    "primary": "25TH ST",
+    "cross": "STATE ROUTE 94 WB OFF RAMP",
+    "classification": "accepted_candidate",
+    "node_id": 97446,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "STATE ROUTE 94 WB OFF RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "F St",
+        "canonical": "F ST",
+        "distance_m": 0.038
+      },
+      {
+        "name": "25th St",
+        "canonical": "25TH ST",
+        "distance_m": 0.046
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.059
+      },
+      {
+        "name": "Martin Luther King Jr Fwy",
+        "canonical": "MARTIN LUTHER KING JR FWY",
+        "distance_m": 48.475
+      },
+      {
+        "name": "State Rte 94",
+        "canonical": "STATE RTE 94",
+        "distance_m": 48.475
+      },
+      {
+        "name": "Glendale Ave",
+        "canonical": "GLENDALE AVE",
+        "distance_m": 103.904
+      },
+      {
+        "name": "G St",
+        "canonical": "G ST",
+        "distance_m": 115.436
+      },
+      {
+        "name": "E St",
+        "canonical": "E ST",
+        "distance_m": 117.025
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "55b140fad6c1ac783d3f5a405cbc9e8f432c8e216c139344b0ce5359383ca847",
+    "primary": "CARMEL VISTA RD",
+    "cross": "RUETTE DE VILLE",
+    "classification": "accepted_candidate",
+    "node_id": 53773,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [
+      {
+        "road": "CARMEL VISTA RD",
+        "distance_m": 46.43
+      }
+    ],
+    "nearest_observed_names": [
+      {
+        "name": "Carmel View Rd",
+        "canonical": "CARMEL VIEW RD",
+        "distance_m": 0.005
+      },
+      {
+        "name": "High Bluff Dr",
+        "canonical": "HIGH BLUFF DR",
+        "distance_m": 0.023
+      },
+      {
+        "name": "Ruette de Ville",
+        "canonical": "RUETTE DE VILLE",
+        "distance_m": 0.024
+      },
+      {
+        "name": "Carmel Vista Rd",
+        "canonical": "CARMEL VISTA RD",
+        "distance_m": 46.43
+      },
+      {
+        "name": "Cmt el Rincon",
+        "canonical": "CMT EL RINCON",
+        "distance_m": 81.974
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 123.991
+      },
+      {
+        "name": "Ruette Alliante",
+        "canonical": "RUETTE ALLIANTE",
+        "distance_m": 197.727
+      },
+      {
+        "name": "El Camino Real",
+        "canonical": "EL CAMINO REAL",
+        "distance_m": 202.653
+      },
+      {
+        "name": "Cmt Cielo del Mar",
+        "canonical": "CMT CIELO DEL MAR",
+        "distance_m": 257.624
+      },
+      {
+        "name": "Cmt Mira del Mar",
+        "canonical": "CMT MIRA DEL MAR",
+        "distance_m": 281.983
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "efdf5d57e09f4f801190177c0ccfcdb013aaed243ef8b7deec6658e8074887c8",
+    "primary": "COTTONWOOD RD",
+    "cross": "W SAN YSIDRO BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 117059,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "S Cottonwood Rd",
+        "canonical": "S COTTONWOOD RD",
+        "distance_m": 0.007
+      },
+      {
+        "name": "W San Ysidro Blvd",
+        "canonical": "W SAN YSIDRO BLVD",
+        "distance_m": 0.04
+      },
+      {
+        "name": "Cottonwood Rd",
+        "canonical": "COTTONWOOD RD",
+        "distance_m": 0.04
+      },
+      {
+        "name": "Blanche St",
+        "canonical": "BLANCHE ST",
+        "distance_m": 55.105
+      },
+      {
+        "name": "Tennie St",
+        "canonical": "TENNIE ST",
+        "distance_m": 61.461
+      },
+      {
+        "name": "W Hall Ave",
+        "canonical": "W HALL AVE",
+        "distance_m": 89.601
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 120.764
+      },
+      {
+        "name": "Sellsway St",
+        "canonical": "SELLSWAY ST",
+        "distance_m": 140.933
+      },
+      {
+        "name": "Smythe Ave",
+        "canonical": "SMYTHE AVE",
+        "distance_m": 155.447
+      },
+      {
+        "name": "Cll Primera",
+        "canonical": "CLL PRIMERA",
+        "distance_m": 172.756
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "88019a1c040c5a6568c9e5b8e694a53ac06d5794e6fea2d499682782d62c0095",
+    "primary": "NATIONAL AVE",
+    "cross": "S 33RD ST",
+    "classification": "accepted_candidate",
+    "node_id": 101164,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "National Ave",
+        "canonical": "NATIONAL AVE",
+        "distance_m": 0.022
+      },
+      {
+        "name": "S 33rd St",
+        "canonical": "S 33RD ST",
+        "distance_m": 0.038
+      },
+      {
+        "name": "Broad Ave",
+        "canonical": "BROAD AVE",
+        "distance_m": 52.08
+      },
+      {
+        "name": "Logan Ave",
+        "canonical": "LOGAN AVE",
+        "distance_m": 115.818
+      },
+      {
+        "name": "Newton Ave",
+        "canonical": "NEWTON AVE",
+        "distance_m": 141.963
+      },
+      {
+        "name": "Payne St",
+        "canonical": "PAYNE ST",
+        "distance_m": 180.711
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 185.693
+      },
+      {
+        "name": "Escondido Fwy",
+        "canonical": "ESCONDIDO FWY",
+        "distance_m": 188.003
+      },
+      {
+        "name": "State Rte 15",
+        "canonical": "STATE RTE 15",
+        "distance_m": 188.003
+      },
+      {
+        "name": "S Gregory St",
+        "canonical": "S GREGORY ST",
+        "distance_m": 194.06
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "ae548b8eff202e3fdefc42af8584b14dd5739c7d8d74d5291ad590c45a45d8fc",
+    "primary": "DEL SUR RIDGE RD",
+    "cross": "LONE QUAIL RD",
+    "classification": "accepted_candidate",
+    "node_id": 154048,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "DEL SUR RIDGE RD"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Lone Quail Rd",
+        "canonical": "LONE QUAIL RD",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Black Mountain Rd",
+        "canonical": "BLACK MOUNTAIN RD",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Lesar Pl",
+        "canonical": "LESAR PL",
+        "distance_m": 6.913
+      },
+      {
+        "name": "Falcon Bluff St",
+        "canonical": "FALCON BLUFF ST",
+        "distance_m": 91.933
+      },
+      {
+        "name": "Summit Vista Dr",
+        "canonical": "SUMMIT VISTA DR",
+        "distance_m": 123.373
+      },
+      {
+        "name": "Deer Ridge Rd",
+        "canonical": "DEER RIDGE RD",
+        "distance_m": 171.691
+      },
+      {
+        "name": "Cam del Norte",
+        "canonical": "CAM DEL NORTE",
+        "distance_m": 264.894
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "8c700a5c837d8fdfae6899ae83c04e40e6c1d0edd5e29f2416bbfcd0c0d3d379",
+    "primary": "70TH ST",
+    "cross": "MOHAWK ST",
+    "classification": "accepted_candidate",
+    "node_id": 81519,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Mohawk St",
+        "canonical": "MOHAWK ST",
+        "distance_m": 0.006
+      },
+      {
+        "name": "70th St",
+        "canonical": "70TH ST",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 57.663
+      },
+      {
+        "name": "Saranac St",
+        "canonical": "SARANAC ST",
+        "distance_m": 118.579
+      },
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 119.729
+      },
+      {
+        "name": "Manchester Rd",
+        "canonical": "MANCHESTER RD",
+        "distance_m": 145.514
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "aa7b48ee9cc99f753fcb084a3d740e72fad81123028b17d2e7c52bd4e2623816",
+    "primary": "SUNSET CLIFFS BLVD RAMP",
+    "cross": "W MISSION BAY DR",
+    "classification": "accepted_candidate",
+    "node_id": 82452,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "SUNSET CLIFFS BLVD RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "W Mission Bay Dr",
+        "canonical": "W MISSION BAY DR",
+        "distance_m": 0.017
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 12.142
+      },
+      {
+        "name": "Dana Landing Rd",
+        "canonical": "DANA LANDING RD",
+        "distance_m": 30.602
+      },
+      {
+        "name": "Quivira Rd",
+        "canonical": "QUIVIRA RD",
+        "distance_m": 69.129
+      },
+      {
+        "name": "Ingraham St",
+        "canonical": "INGRAHAM ST",
+        "distance_m": 207.27
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "aa7b48ee9cc99f753fcb084a3d740e72fad81123028b17d2e7c52bd4e2623816",
+    "primary": "SUNSET CLIFFS BLVD RAMP",
+    "cross": "W MISSION BAY DR",
+    "classification": "accepted_candidate",
+    "node_id": 82645,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "SUNSET CLIFFS BLVD RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.821
+      },
+      {
+        "name": "W Mission Bay Dr",
+        "canonical": "W MISSION BAY DR",
+        "distance_m": 19.185
+      },
+      {
+        "name": "Ingraham St",
+        "canonical": "INGRAHAM ST",
+        "distance_m": 47.368
+      },
+      {
+        "name": "Quivira Rd",
+        "canonical": "QUIVIRA RD",
+        "distance_m": 85.145
+      },
+      {
+        "name": "Dana Landing Rd",
+        "canonical": "DANA LANDING RD",
+        "distance_m": 102.452
+      },
+      {
+        "name": "Perez Cove Way",
+        "canonical": "PEREZ COVE WAY",
+        "distance_m": 140.999
+      },
+      {
+        "name": "S Shores Rd",
+        "canonical": "S SHORES RD",
+        "distance_m": 204.745
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "66b9e7a089209b47dea4ab4060742185a6a074f43a868e600659ac99dd3e76d5",
+    "primary": "BRANT ST",
+    "cross": "W HAWTHORN ST",
+    "classification": "accepted_candidate",
+    "node_id": 94147,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Brant St",
+        "canonical": "BRANT ST",
+        "distance_m": 0.029
+      },
+      {
+        "name": "W Hawthorn St",
+        "canonical": "W HAWTHORN ST",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.059
+      },
+      {
+        "name": "Union St",
+        "canonical": "UNION ST",
+        "distance_m": 63.79
+      },
+      {
+        "name": "Albatross St",
+        "canonical": "ALBATROSS ST",
+        "distance_m": 85.615
+      },
+      {
+        "name": "W Ivy St",
+        "canonical": "W IVY ST",
+        "distance_m": 114.564
+      },
+      {
+        "name": "W Grape St",
+        "canonical": "W GRAPE ST",
+        "distance_m": 118.141
+      },
+      {
+        "name": "State St",
+        "canonical": "STATE ST",
+        "distance_m": 124.789
+      },
+      {
+        "name": "Front St",
+        "canonical": "FRONT ST",
+        "distance_m": 170.323
+      },
+      {
+        "name": "Curlew St",
+        "canonical": "CURLEW ST",
+        "distance_m": 189.501
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "3e934f6ef846c4150c52371a5582a0281a71aa9f500a56c3d842042483645555",
+    "primary": "INTERSTATE 5 NB OFF RAMP",
+    "cross": "LA JOLLA VILLAGE DR",
+    "classification": "accepted_candidate",
+    "node_id": 59027,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 NB OFF RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "La Jolla Village Dr",
+        "canonical": "LA JOLLA VILLAGE DR",
+        "distance_m": 0.102
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 1.065
+      },
+      {
+        "name": "University Center Ln",
+        "canonical": "UNIVERSITY CENTER LN",
+        "distance_m": 207.771
+      },
+      {
+        "name": "Miramar St",
+        "canonical": "MIRAMAR ST",
+        "distance_m": 272.679
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "a0906e289eb9eb3fe8b6ff76f8b54a619a0120c8e87498fd9efed6d3efa7ef50",
+    "primary": "GENESEE AVE",
+    "cross": "RICHLAND ST",
+    "classification": "accepted_candidate",
+    "node_id": 76226,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Genesee Ave",
+        "canonical": "GENESEE AVE",
+        "distance_m": 0.028
+      },
+      {
+        "name": "Richland St",
+        "canonical": "RICHLAND ST",
+        "distance_m": 0.05
+      },
+      {
+        "name": "N Judson St",
+        "canonical": "N JUDSON ST",
+        "distance_m": 61.899
+      },
+      {
+        "name": "Daniel Ave",
+        "canonical": "DANIEL AVE",
+        "distance_m": 67.572
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 109.419
+      },
+      {
+        "name": "Falvy Ave",
+        "canonical": "FALVY AVE",
+        "distance_m": 110.938
+      },
+      {
+        "name": "Hyatt St",
+        "canonical": "HYATT ST",
+        "distance_m": 113.098
+      },
+      {
+        "name": "Daniel Ct",
+        "canonical": "DANIEL CT",
+        "distance_m": 117.74
+      },
+      {
+        "name": "Fulton St",
+        "canonical": "FULTON ST",
+        "distance_m": 195.512
+      },
+      {
+        "name": "Linda Vista Rd",
+        "canonical": "LINDA VISTA RD",
+        "distance_m": 208.569
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "d3a2816b13abb45de970d6b3995b815fe80419657a68337c92a01b9d29700143",
+    "primary": "MIDWAY DR",
+    "cross": "W POINT LOMA BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 85380,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Sports Arena Blvd",
+        "canonical": "SPORTS ARENA BLVD",
+        "distance_m": 0.007
+      },
+      {
+        "name": "W Point Loma Blvd",
+        "canonical": "W POINT LOMA BLVD",
+        "distance_m": 0.016
+      },
+      {
+        "name": "Midway Dr",
+        "canonical": "MIDWAY DR",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Channel Way",
+        "canonical": "CHANNEL WAY",
+        "distance_m": 84.419
+      },
+      {
+        "name": "Jupiter St",
+        "canonical": "JUPITER ST",
+        "distance_m": 103.037
+      },
+      {
+        "name": "La Salle St",
+        "canonical": "LA SALLE ST",
+        "distance_m": 158.505
+      },
+      {
+        "name": "Duke St",
+        "canonical": "DUKE ST",
+        "distance_m": 179.68
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 205.378
+      },
+      {
+        "name": "Western St",
+        "canonical": "WESTERN ST",
+        "distance_m": 227.769
+      },
+      {
+        "name": "Groton St",
+        "canonical": "GROTON ST",
+        "distance_m": 233.39
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "fed07eee931aea67e21587853ad699bdf2f6c51b4f9abd1f53645f011c879dac",
+    "primary": "IRVING AVE",
+    "cross": "S 28TH ST",
+    "classification": "accepted_candidate",
+    "node_id": 100727,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Irving Ave",
+        "canonical": "IRVING AVE",
+        "distance_m": 0.014
+      },
+      {
+        "name": "S 28th St",
+        "canonical": "S 28TH ST",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 58.123
+      },
+      {
+        "name": "Marcy Ave",
+        "canonical": "MARCY AVE",
+        "distance_m": 83.814
+      },
+      {
+        "name": "Julian Ave",
+        "canonical": "JULIAN AVE",
+        "distance_m": 121.821
+      },
+      {
+        "name": "Logan Ave",
+        "canonical": "LOGAN AVE",
+        "distance_m": 148.309
+      },
+      {
+        "name": "Harrison Ave",
+        "canonical": "HARRISON AVE",
+        "distance_m": 154.526
+      },
+      {
+        "name": "Sicard St",
+        "canonical": "SICARD ST",
+        "distance_m": 176.417
+      },
+      {
+        "name": "S 29th St",
+        "canonical": "S 29TH ST",
+        "distance_m": 258.182
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "0de93c151695498dc74d307b56529be143bde9ee098e333a4315e899432ee67e",
+    "primary": "CARMEL MOUNTAIN RD",
+    "cross": "VEREDA MAR DEL CORAZON",
+    "classification": "accepted_candidate",
+    "node_id": 55718,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "VEREDA MAR DEL CORAZON"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Carmel Mountain Rd",
+        "canonical": "CARMEL MOUNTAIN RD",
+        "distance_m": 0.029
+      },
+      {
+        "name": "Ver Mar de Corazon",
+        "canonical": "VER MAR DE CORAZON",
+        "distance_m": 0.029
+      },
+      {
+        "name": "Verda Mar del Corazon",
+        "canonical": "VERDA MAR DEL CORAZON",
+        "distance_m": 0.029
+      },
+      {
+        "name": "Corte Mar de Corazon",
+        "canonical": "CORTE MAR DE CORAZON",
+        "distance_m": 54.097
+      },
+      {
+        "name": "Corte Belleza",
+        "canonical": "CORTE BELLEZA",
+        "distance_m": 112.342
+      },
+      {
+        "name": "Carmel Mtn Rd",
+        "canonical": "CARMEL MTN RD",
+        "distance_m": 138.132
+      },
+      {
+        "name": "Cll Mar de Armonia",
+        "canonical": "CLL MAR DE ARMONIA",
+        "distance_m": 177.535
+      },
+      {
+        "name": "E Ocean Air Dr",
+        "canonical": "E OCEAN AIR DR",
+        "distance_m": 178.258
+      },
+      {
+        "name": "W Ocean Air Dr",
+        "canonical": "W OCEAN AIR DR",
+        "distance_m": 178.293
+      },
+      {
+        "name": "Laurelcrest Dr",
+        "canonical": "LAURELCREST DR",
+        "distance_m": 191.067
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "843907145e28ce04795532050b2cd80ce19e9c253bba10680d3d93205fbae1a8",
+    "primary": "FASHION VALLEY RD",
+    "cross": "FRIARS RD",
+    "classification": "accepted_candidate",
+    "node_id": 81561,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Friars Rd",
+        "canonical": "FRIARS RD",
+        "distance_m": 0.05
+      },
+      {
+        "name": "Fashion Valley Rd",
+        "canonical": "FASHION VALLEY RD",
+        "distance_m": 0.052
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 134.376
+      },
+      {
+        "name": "W Fashion Valley",
+        "canonical": "W FASHION VALLEY",
+        "distance_m": 149.874
+      },
+      {
+        "name": "Cmt Lujan",
+        "canonical": "CMT LUJAN",
+        "distance_m": 162.501
+      },
+      {
+        "name": "Fashion Hills Blvd",
+        "canonical": "FASHION HILLS BLVD",
+        "distance_m": 195.424
+      },
+      {
+        "name": "Cmt Berdecio",
+        "canonical": "CMT BERDECIO",
+        "distance_m": 244.613
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "69695cb32f1832161856b24e771ced5f64c7d5f2bb7d044cd10b35bc048aa831",
+    "primary": "GENESEE AVE",
+    "cross": "N TORREY PINES RD",
+    "classification": "accepted_candidate",
+    "node_id": 148767,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Co Hwy S21",
+        "canonical": "CO HWY S21",
+        "distance_m": 0.028
+      },
+      {
+        "name": "Genesee Ave",
+        "canonical": "GENESEE AVE",
+        "distance_m": 0.028
+      },
+      {
+        "name": "N Torrey Pines Rd",
+        "canonical": "N TORREY PINES RD",
+        "distance_m": 0.044
+      },
+      {
+        "name": "John Jay Hopkins Dr",
+        "canonical": "JOHN JAY HOPKINS DR",
+        "distance_m": 109.555
+      },
+      {
+        "name": "John Hopkins Ct",
+        "canonical": "JOHN HOPKINS CT",
+        "distance_m": 110.542
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 111.961
+      },
+      {
+        "name": "N Torrey Pines Ct",
+        "canonical": "N TORREY PINES CT",
+        "distance_m": 135.097
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f6fe7c6034579a15330bdacd0c4daea13ea9b1780b9bef75b88008d41bbae872",
+    "primary": "LANING RD",
+    "cross": "N HARBOR DR",
+    "classification": "accepted_candidate",
+    "node_id": 94044,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "N Harbor Dr",
+        "canonical": "N HARBOR DR",
+        "distance_m": 0.005
+      },
+      {
+        "name": "Laning Rd",
+        "canonical": "LANING RD",
+        "distance_m": 0.037
+      },
+      {
+        "name": "Lanning Rd",
+        "canonical": "LANNING RD",
+        "distance_m": 46.909
+      },
+      {
+        "name": "Nixie Way",
+        "canonical": "NIXIE WAY",
+        "distance_m": 58.021
+      },
+      {
+        "name": "Callaghan Cir",
+        "canonical": "CALLAGHAN CIR",
+        "distance_m": 86.852
+      },
+      {
+        "name": "Datum",
+        "canonical": "DATUM",
+        "distance_m": 86.852
+      },
+      {
+        "name": "Tattnal Way",
+        "canonical": "TATTNAL WAY",
+        "distance_m": 134.172
+      },
+      {
+        "name": "Tattnal Ln",
+        "canonical": "TATTNAL LN",
+        "distance_m": 137.943
+      },
+      {
+        "name": "Somers Ln",
+        "canonical": "SOMERS LN",
+        "distance_m": 141.741
+      },
+      {
+        "name": "Hornet Way",
+        "canonical": "HORNET WAY",
+        "distance_m": 155.665
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "3f55c17ee19b06cb5271c9dd74621148e5bc68fbb1ae81ddf36506196d3575bb",
+    "primary": "DEL MAR HEIGHTS RD",
+    "cross": "TORREY RIDGE DR",
+    "classification": "accepted_candidate",
+    "node_id": 52153,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Del Mar Heights Rd",
+        "canonical": "DEL MAR HEIGHTS RD",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Torrey Ridge Dr",
+        "canonical": "TORREY RIDGE DR",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Federman Ln",
+        "canonical": "FEDERMAN LN",
+        "distance_m": 98.105
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 119.435
+      },
+      {
+        "name": "Quinnel Ct",
+        "canonical": "QUINNEL CT",
+        "distance_m": 163.598
+      },
+      {
+        "name": "Graydon Rd",
+        "canonical": "GRAYDON RD",
+        "distance_m": 172.116
+      },
+      {
+        "name": "Torrey Bluff Dr",
+        "canonical": "TORREY BLUFF DR",
+        "distance_m": 172.515
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "b86f74028ae90adf021e472e81031e5c803c45be1d04e9750bf09f1504fdda56",
+    "primary": "CAMINITO CASCARA",
+    "cross": "RANCHO MISSION RD",
+    "classification": "accepted_candidate",
+    "node_id": 78471,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "CAMINITO CASCARA"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Rancho Mission Rd",
+        "canonical": "RANCHO MISSION RD",
+        "distance_m": 0.024
+      },
+      {
+        "name": "Cmt Cascara",
+        "canonical": "CMT CASCARA",
+        "distance_m": 0.035
+      },
+      {
+        "name": "Ward Rd",
+        "canonical": "WARD RD",
+        "distance_m": 56.624
+      },
+      {
+        "name": "Cmt Elegante",
+        "canonical": "CMT ELEGANTE",
+        "distance_m": 65.902
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 135.068
+      },
+      {
+        "name": "Cmt Deporte",
+        "canonical": "CMT DEPORTE",
+        "distance_m": 151.438
+      },
+      {
+        "name": "Cam del Rio N",
+        "canonical": "CAM DEL RIO N",
+        "distance_m": 234.02
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "d1fcd2197d8849897746f86cc3d14922fb26d6996c69e8d0ad3fc0dae269becf",
+    "primary": "SMYTHE AVE",
+    "cross": "W SAN YSIDRO BLVD",
+    "classification": "accepted_candidate",
+    "node_id": 117043,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Smythe Ave",
+        "canonical": "SMYTHE AVE",
+        "distance_m": 0.02
+      },
+      {
+        "name": "W San Ysidro Blvd",
+        "canonical": "W SAN YSIDRO BLVD",
+        "distance_m": 0.041
+      },
+      {
+        "name": "Cottonwood Rd",
+        "canonical": "COTTONWOOD RD",
+        "distance_m": 136.391
+      },
+      {
+        "name": "Blanche St",
+        "canonical": "BLANCHE ST",
+        "distance_m": 136.825
+      },
+      {
+        "name": "W Hall Ave",
+        "canonical": "W HALL AVE",
+        "distance_m": 137.292
+      },
+      {
+        "name": "Sellsway St",
+        "canonical": "SELLSWAY ST",
+        "distance_m": 152.899
+      },
+      {
+        "name": "S Cottonwood Rd",
+        "canonical": "S COTTONWOOD RD",
+        "distance_m": 155.438
+      },
+      {
+        "name": "W Cll Primera",
+        "canonical": "W CLL PRIMERA",
+        "distance_m": 176.969
+      },
+      {
+        "name": "Cll Primera",
+        "canonical": "CLL PRIMERA",
+        "distance_m": 176.969
+      },
+      {
+        "name": "Tennie St",
+        "canonical": "TENNIE ST",
+        "distance_m": 189.504
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "6bd35e7e15d7afda6ac2e6f4fb36dfc67bdf3b001af12e7c882e014de381bd20",
+    "primary": "PACIFIC HWY",
+    "cross": "W A ST",
+    "classification": "accepted_candidate",
+    "node_id": 96162,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Pacific Hwy",
+        "canonical": "PACIFIC HWY",
+        "distance_m": 0.032
+      },
+      {
+        "name": "W A St",
+        "canonical": "W A ST",
+        "distance_m": 0.047
+      },
+      {
+        "name": "California St",
+        "canonical": "CALIFORNIA ST",
+        "distance_m": 92.047
+      },
+      {
+        "name": "Palm Ct",
+        "canonical": "PALM CT",
+        "distance_m": 101.311
+      },
+      {
+        "name": "Grande Palm Ct",
+        "canonical": "GRANDE PALM CT",
+        "distance_m": 101.501
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 102.675
+      },
+      {
+        "name": "W Ash St",
+        "canonical": "W ASH ST",
+        "distance_m": 118.555
+      },
+      {
+        "name": "W B St",
+        "canonical": "W B ST",
+        "distance_m": 166.426
+      },
+      {
+        "name": "Kettner Blvd",
+        "canonical": "KETTNER BLVD",
+        "distance_m": 175.772
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "7f4ba6f5ad9b6ecd4291eab7788b4daf0d1f33b27e73889f5bb85656504df934",
+    "primary": "CAM DE LA REINA",
+    "cross": "MISSION CENTER RD",
+    "classification": "accepted_candidate",
+    "node_id": 81733,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Mission Center Rd",
+        "canonical": "MISSION CENTER RD",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Cam de la Reina",
+        "canonical": "CAM DE LA REINA",
+        "distance_m": 0.061
+      },
+      {
+        "name": "Cam del Rio N",
+        "canonical": "CAM DEL RIO N",
+        "distance_m": 148.787
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 192.339
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "cd8877449548060ac49bd2e9d8c973b8b1dbdbc9fb749146f5ac441af61ba71d",
+    "primary": "HISTORIC DECATUR RD",
+    "cross": "SIMS RD",
+    "classification": "accepted_candidate",
+    "node_id": 90345,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "HISTORIC DECATUR RD"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Decatur Rd",
+        "canonical": "DECATUR RD",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Sims Rd",
+        "canonical": "SIMS RD",
+        "distance_m": 0.039
+      },
+      {
+        "name": "Perry Rd",
+        "canonical": "PERRY RD",
+        "distance_m": 64.885
+      },
+      {
+        "name": "Chauncey Rd",
+        "canonical": "CHAUNCEY RD",
+        "distance_m": 101.159
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 154.581
+      },
+      {
+        "name": "Sellers Plz",
+        "canonical": "SELLERS PLZ",
+        "distance_m": 154.648
+      },
+      {
+        "name": "Cushing Rd",
+        "canonical": "CUSHING RD",
+        "distance_m": 165.588
+      },
+      {
+        "name": "Truxtun Rd",
+        "canonical": "TRUXTUN RD",
+        "distance_m": 177.066
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "9336359aac7d5f1095bf00ef86a1052d28b60f6aca807dc98f811a3174fa1b2c",
+    "primary": "CAM DEL RIO N",
+    "cross": "FAIRMOUNT AVE",
+    "classification": "accepted_candidate",
+    "node_id": 78910,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Fairmount Ave",
+        "canonical": "FAIRMOUNT AVE",
+        "distance_m": 0.2
+      },
+      {
+        "name": "Cam del Rio N",
+        "canonical": "CAM DEL RIO N",
+        "distance_m": 2.44
+      },
+      {
+        "name": "Alvarado Canyon Rd",
+        "canonical": "ALVARADO CANYON RD",
+        "distance_m": 2.607
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 40.326
+      },
+      {
+        "name": "Mission Valley Fwy",
+        "canonical": "MISSION VALLEY FWY",
+        "distance_m": 100.258
+      },
+      {
+        "name": "Mission Gorge Rd",
+        "canonical": "MISSION GORGE RD",
+        "distance_m": 118.637
+      },
+      {
+        "name": "Cam del Rio S",
+        "canonical": "CAM DEL RIO S",
+        "distance_m": 273.034
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "a47f111dfdc2b495cac318b49999c0dd7b43da522c21bbe846420530b06cb931",
+    "primary": "33RD ST",
+    "cross": "N PARK WAY",
+    "classification": "accepted_candidate",
+    "node_id": 178695,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "N Park Way",
+        "canonical": "N PARK WAY",
+        "distance_m": 0.059
+      },
+      {
+        "name": "Boundary St",
+        "canonical": "BOUNDARY ST",
+        "distance_m": 9.951
+      },
+      {
+        "name": "33rd St",
+        "canonical": "33RD ST",
+        "distance_m": 10.138
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 10.345
+      },
+      {
+        "name": "I- 805",
+        "canonical": "I- 805",
+        "distance_m": 93.897
+      },
+      {
+        "name": "Jacob Dekema Fwy",
+        "canonical": "JACOB DEKEMA FWY",
+        "distance_m": 93.897
+      },
+      {
+        "name": "Bancroft St",
+        "canonical": "BANCROFT ST",
+        "distance_m": 98.416
+      },
+      {
+        "name": "University Ave",
+        "canonical": "UNIVERSITY AVE",
+        "distance_m": 122.293
+      },
+      {
+        "name": "Nile St",
+        "canonical": "NILE ST",
+        "distance_m": 148.487
+      },
+      {
+        "name": "Landis St",
+        "canonical": "LANDIS ST",
+        "distance_m": 201.647
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "5a43088f77a7b3c290fc09cf9e5d654197f6ac7c72610dc04a55211cdf889161",
+    "primary": "CAM MIRA DEL MAR",
+    "cross": "CARMEL VIEW RD",
+    "classification": "accepted_candidate",
+    "node_id": 53740,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Cmt Mira del Mar",
+        "canonical": "CMT MIRA DEL MAR",
+        "distance_m": 0.009
+      },
+      {
+        "name": "Cam Mira del Mar",
+        "canonical": "CAM MIRA DEL MAR",
+        "distance_m": 0.009
+      },
+      {
+        "name": "Carmel View Rd",
+        "canonical": "CARMEL VIEW RD",
+        "distance_m": 0.023
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 98.163
+      },
+      {
+        "name": "Carmel Grove Rd",
+        "canonical": "CARMEL GROVE RD",
+        "distance_m": 105.424
+      },
+      {
+        "name": "Cmt Cielo del Mar",
+        "canonical": "CMT CIELO DEL MAR",
+        "distance_m": 242.592
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "b2a03c3467f76b3927516547e9defb3272b1c4c6f9b2fcb2495da9f9bb1e8aea",
+    "primary": "55TH ST",
+    "cross": "AZTEC WALK",
+    "classification": "accepted_candidate",
+    "node_id": 80558,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "55th St",
+        "canonical": "55TH ST",
+        "distance_m": 0.021
+      },
+      {
+        "name": "Aztec Walk",
+        "canonical": "AZTEC WALK",
+        "distance_m": 0.022
+      },
+      {
+        "name": "Plaza Dr",
+        "canonical": "PLAZA DR",
+        "distance_m": 0.022
+      },
+      {
+        "name": "Hardy Ave",
+        "canonical": "HARDY AVE",
+        "distance_m": 77.719
+      },
+      {
+        "name": "Lindo Paseo",
+        "canonical": "LINDO PASEO",
+        "distance_m": 159.327
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 213.156
+      },
+      {
+        "name": "Remington Rd",
+        "canonical": "REMINGTON RD",
+        "distance_m": 229.085
+      },
+      {
+        "name": "Scripps Ter",
+        "canonical": "SCRIPPS TER",
+        "distance_m": 239.79
+      },
+      {
+        "name": "Aztec Circle Dr",
+        "canonical": "AZTEC CIRCLE DR",
+        "distance_m": 259.085
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "0b1b600e5e022e59b9a3793cc8f9432f4e0a920404d62b6ac99087a8acd49099",
+    "primary": "CAM DEL RIO S",
+    "cross": "FAIRMOUNT AVE",
+    "classification": "accepted_candidate",
+    "node_id": 79944,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Fairmount Ave",
+        "canonical": "FAIRMOUNT AVE",
+        "distance_m": 5.949
+      },
+      {
+        "name": "Cam del Rio S",
+        "canonical": "CAM DEL RIO S",
+        "distance_m": 9.344
+      },
+      {
+        "name": "Montezuma Eb on Ra",
+        "canonical": "MONTEZUMA EB ON RA",
+        "distance_m": 49.453
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 91.576
+      },
+      {
+        "name": "Cmt Borde",
+        "canonical": "CMT BORDE",
+        "distance_m": 115.774
+      },
+      {
+        "name": "Cmt Ocio",
+        "canonical": "CMT OCIO",
+        "distance_m": 126.989
+      },
+      {
+        "name": "Cmt Pintoresco",
+        "canonical": "CMT PINTORESCO",
+        "distance_m": 170.456
+      },
+      {
+        "name": "Cmt de la Escena",
+        "canonical": "CMT DE LA ESCENA",
+        "distance_m": 186.593
+      },
+      {
+        "name": "Palo Verde Ter",
+        "canonical": "PALO VERDE TER",
+        "distance_m": 201.012
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "c55f09b88b372a1b073bb0e3bf37b7362455ec64de110bd8fa9a731f86fe98c8",
+    "primary": "INDIA ST",
+    "cross": "W LAUREL ST",
+    "classification": "accepted_candidate",
+    "node_id": 93235,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "India St",
+        "canonical": "INDIA ST",
+        "distance_m": 0.026
+      },
+      {
+        "name": "W Laurel St",
+        "canonical": "W LAUREL ST",
+        "distance_m": 0.028
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 48.557
+      },
+      {
+        "name": "Columbia St",
+        "canonical": "COLUMBIA ST",
+        "distance_m": 81.934
+      },
+      {
+        "name": "Kettner Blvd",
+        "canonical": "KETTNER BLVD",
+        "distance_m": 86.225
+      },
+      {
+        "name": "W Kalmia St",
+        "canonical": "W KALMIA ST",
+        "distance_m": 113.795
+      },
+      {
+        "name": "W Maple St",
+        "canonical": "W MAPLE ST",
+        "distance_m": 118.089
+      },
+      {
+        "name": "State St",
+        "canonical": "STATE ST",
+        "distance_m": 164.483
+      },
+      {
+        "name": "California St",
+        "canonical": "CALIFORNIA ST",
+        "distance_m": 170.237
+      },
+      {
+        "name": "W Juniper St",
+        "canonical": "W JUNIPER ST",
+        "distance_m": 233.693
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "60a30d9d9ef37310d5739a82f63a65c2a1bd513f841473470d6cd9156e465214",
+    "primary": "GENESEE AVE",
+    "cross": "LA JOLLA VILLAGE DR",
+    "classification": "accepted_candidate",
+    "node_id": 59018,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Genesee Ave",
+        "canonical": "GENESEE AVE",
+        "distance_m": 0.031
+      },
+      {
+        "name": "La Jolla Village Dr",
+        "canonical": "LA JOLLA VILLAGE DR",
+        "distance_m": 0.034
+      },
+      {
+        "name": "Executive Sq",
+        "canonical": "EXECUTIVE SQ",
+        "distance_m": 160.321
+      },
+      {
+        "name": "Brooke Ct",
+        "canonical": "BROOKE CT",
+        "distance_m": 172.902
+      },
+      {
+        "name": "Costa Verde Blvd",
+        "canonical": "COSTA VERDE BLVD",
+        "distance_m": 202.789
+      },
+      {
+        "name": "Regents Park Row",
+        "canonical": "REGENTS PARK ROW",
+        "distance_m": 216.43
+      },
+      {
+        "name": "Bus Access Rd",
+        "canonical": "BUS ACCESS RD",
+        "distance_m": 248.326
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "1e82553419d73911154d5c29c14d5f5df266faf7fbc8bd3f9444080fcddafdd5",
+    "primary": "EL CAJON BLVD",
+    "cross": "FILIPO ST",
+    "classification": "accepted_candidate",
+    "node_id": 82345,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 0.006
+      },
+      {
+        "name": "Filipo St",
+        "canonical": "FILIPO ST",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Seminole Dr",
+        "canonical": "SEMINOLE DR",
+        "distance_m": 12.772
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 50.309
+      },
+      {
+        "name": "Aragon Dr",
+        "canonical": "ARAGON DR",
+        "distance_m": 79.282
+      },
+      {
+        "name": "Curry Dr",
+        "canonical": "CURRY DR",
+        "distance_m": 144.471
+      },
+      {
+        "name": "Rolando Blvd",
+        "canonical": "ROLANDO BLVD",
+        "distance_m": 191.399
+      },
+      {
+        "name": "Rolando Ct",
+        "canonical": "ROLANDO CT",
+        "distance_m": 191.399
+      },
+      {
+        "name": "Art St",
+        "canonical": "ART ST",
+        "distance_m": 202.189
+      },
+      {
+        "name": "Catoctin Dr",
+        "canonical": "CATOCTIN DR",
+        "distance_m": 205.732
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "7e57e99ed053da52b1872ab224d257905038f3bddf106c22dd0ad130f8851e44",
+    "primary": "CAM DEL RIO N",
+    "cross": "DISCOVERY PL",
+    "classification": "accepted_candidate",
+    "node_id": 176033,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "DISCOVERY PL"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Cam del Rio N",
+        "canonical": "CAM DEL RIO N",
+        "distance_m": 0.018
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 86.978
+      },
+      {
+        "name": "Mission Valley Fwy",
+        "canonical": "MISSION VALLEY FWY",
+        "distance_m": 169.578
+      },
+      {
+        "name": "Qualcomm Way",
+        "canonical": "QUALCOMM WAY",
+        "distance_m": 189.42
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "b77d4e9053439ac0c423291fd9582891a78889cefd733d6f18a371e29fdfad6e",
+    "primary": "W CANYON AVE",
+    "cross": "W CANYON TER",
+    "classification": "accepted_candidate",
+    "node_id": 73575,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "W Canyon Ave",
+        "canonical": "W CANYON AVE",
+        "distance_m": 0.009
+      },
+      {
+        "name": "W Canyon Ter",
+        "canonical": "W CANYON TER",
+        "distance_m": 0.034
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.036
+      },
+      {
+        "name": "Stonecrest Blvd",
+        "canonical": "STONECREST BLVD",
+        "distance_m": 144.898
+      },
+      {
+        "name": "Daley Center Dr",
+        "canonical": "DALEY CENTER DR",
+        "distance_m": 265.288
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "6b4f126e30b1dbb0f42b5766f62f23b8318e115436e141ffb14c0dbf7ee08dde",
+    "primary": "INTERSTATE 5 NB OFF RAMP",
+    "cross": "ROSELLE ST",
+    "classification": "accepted_candidate",
+    "node_id": 178070,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 NB OFF RAMP"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Roselle St",
+        "canonical": "ROSELLE ST",
+        "distance_m": 0.003
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 1.826
+      },
+      {
+        "name": "Edelweiss St",
+        "canonical": "EDELWEISS ST",
+        "distance_m": 55.105
+      },
+      {
+        "name": "Sorrento Valley Rd",
+        "canonical": "SORRENTO VALLEY RD",
+        "distance_m": 83.476
+      },
+      {
+        "name": "Daffodil St",
+        "canonical": "DAFFODIL ST",
+        "distance_m": 83.795
+      },
+      {
+        "name": "I- 5 Local Byp",
+        "canonical": "I- 5 LOCAL BYP",
+        "distance_m": 122.573
+      },
+      {
+        "name": "Sorrento Valley Bl",
+        "canonical": "SORRENTO VALLEY BL",
+        "distance_m": 139.947
+      },
+      {
+        "name": "Sorrento Valley Blvd",
+        "canonical": "SORRENTO VALLEY BLVD",
+        "distance_m": 165.17
+      },
+      {
+        "name": "Begonia St",
+        "canonical": "BEGONIA ST",
+        "distance_m": 183.73
+      },
+      {
+        "name": "I- 805",
+        "canonical": "I- 805",
+        "distance_m": 239.049
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "07cb9fc278c41ce0724ab20a73f1a3c13db51f2c8d8f60c4606259c590e4b114",
+    "primary": "LANING RD",
+    "cross": "ROSECRANS ST",
+    "classification": "accepted_candidate",
+    "node_id": 92561,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Rosecrans St",
+        "canonical": "ROSECRANS ST",
+        "distance_m": 0.004
+      },
+      {
+        "name": "Laning Rd",
+        "canonical": "LANING RD",
+        "distance_m": 0.039
+      },
+      {
+        "name": "Russell St",
+        "canonical": "RUSSELL ST",
+        "distance_m": 0.039
+      },
+      {
+        "name": "Quimby St",
+        "canonical": "QUIMBY ST",
+        "distance_m": 81.787
+      },
+      {
+        "name": "W Bainbridge Rd",
+        "canonical": "W BAINBRIDGE RD",
+        "distance_m": 83.24
+      },
+      {
+        "name": "Sterne St",
+        "canonical": "STERNE ST",
+        "distance_m": 85.228
+      },
+      {
+        "name": "Bainbridge Ct",
+        "canonical": "BAINBRIDGE CT",
+        "distance_m": 87.904
+      },
+      {
+        "name": "Belknap Way",
+        "canonical": "BELKNAP WAY",
+        "distance_m": 87.904
+      },
+      {
+        "name": "Locust St",
+        "canonical": "LOCUST ST",
+        "distance_m": 117.594
+      },
+      {
+        "name": "Truxtun Rd",
+        "canonical": "TRUXTUN RD",
+        "distance_m": 124.221
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "a28d97bdd08ff033ea3475dfb320a39dbf1ab98788c9dd8d1008c525c3200d0c",
+    "primary": "MAIN ST",
+    "cross": "VESTA ST",
+    "classification": "topology_uncertain",
+    "node_id": 102911,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Vesta St",
+        "canonical": "VESTA ST",
+        "distance_m": 0.005
+      },
+      {
+        "name": "Main St",
+        "canonical": "MAIN ST",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 57.889
+      },
+      {
+        "name": "Dalbergia St",
+        "canonical": "DALBERGIA ST",
+        "distance_m": 119.141
+      },
+      {
+        "name": "Woden St",
+        "canonical": "WODEN ST",
+        "distance_m": 200.743
+      },
+      {
+        "name": "Una St",
+        "canonical": "UNA ST",
+        "distance_m": 201.635
+      },
+      {
+        "name": "Norman Scott Rd",
+        "canonical": "NORMAN SCOTT RD",
+        "distance_m": 220.618
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f4d40a54b6dc14afdd43fabb0407c04b69c4c6b23351b64d3946858a6821f55e",
+    "primary": "GRAND AVE",
+    "cross": "LEE ST",
+    "classification": "topology_uncertain",
+    "node_id": 73579,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [
+      {
+        "road": "LEE ST",
+        "distance_m": 32.57
+      }
+    ],
+    "nearest_observed_names": [
+      {
+        "name": "Grand Ave",
+        "canonical": "GRAND AVE",
+        "distance_m": 0.031
+      },
+      {
+        "name": "Lee St",
+        "canonical": "LEE ST",
+        "distance_m": 32.57
+      },
+      {
+        "name": "Culver St",
+        "canonical": "CULVER ST",
+        "distance_m": 127.515
+      },
+      {
+        "name": "Fogg St",
+        "canonical": "FOGG ST",
+        "distance_m": 168.989
+      },
+      {
+        "name": "Culver Way",
+        "canonical": "CULVER WAY",
+        "distance_m": 178.013
+      },
+      {
+        "name": "Fogg Ct",
+        "canonical": "FOGG CT",
+        "distance_m": 181.611
+      },
+      {
+        "name": "Quincy St",
+        "canonical": "QUINCY ST",
+        "distance_m": 190.556
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 207.68
+      },
+      {
+        "name": "Thomas Ave",
+        "canonical": "THOMAS AVE",
+        "distance_m": 233.103
+      },
+      {
+        "name": "Hornblend St",
+        "canonical": "HORNBLEND ST",
+        "distance_m": 233.876
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "4fc72fabbcc3a889ba9d5ab8015fafdc88e6099de0b67079b2f6f7e3522fc064",
+    "primary": "CAM DE LA PLAZA",
+    "cross": "CAMIONES WAY",
+    "classification": "topology_uncertain",
+    "node_id": 117284,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "CAM DE LA PLAZA"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Camino de la Plz",
+        "canonical": "CAM DE LA PLZ",
+        "distance_m": 2.147
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 2.96
+      },
+      {
+        "name": "Camiones Way",
+        "canonical": "CAMIONES WAY",
+        "distance_m": 4.118
+      },
+      {
+        "name": "I- 805",
+        "canonical": "I- 805",
+        "distance_m": 148.296
+      },
+      {
+        "name": "Jacob Dekema Fwy",
+        "canonical": "JACOB DEKEMA FWY",
+        "distance_m": 148.296
+      },
+      {
+        "name": "Virginia Ave",
+        "canonical": "VIRGINIA AVE",
+        "distance_m": 172.76
+      },
+      {
+        "name": "E Beyer Blvd",
+        "canonical": "E BEYER BLVD",
+        "distance_m": 183.446
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "e71bffc774a20b4bf01bf800e6f92ede427b06f1b692cb1b3cdfc93ec860f62a",
+    "primary": "OCEAN VIEW BLVD",
+    "cross": "S 35TH ST",
+    "classification": "topology_uncertain",
+    "node_id": 100158,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "S 35th St",
+        "canonical": "S 35TH ST",
+        "distance_m": 0.019
+      },
+      {
+        "name": "Ocean View Blvd",
+        "canonical": "OCEAN VIEW BLVD",
+        "distance_m": 0.047
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Pardee Pl",
+        "canonical": "PARDEE PL",
+        "distance_m": 58.484
+      },
+      {
+        "name": "Valle Ave",
+        "canonical": "VALLE AVE",
+        "distance_m": 102.71
+      },
+      {
+        "name": "S Pardee St",
+        "canonical": "S PARDEE ST",
+        "distance_m": 109.94
+      },
+      {
+        "name": "Franklin Ave",
+        "canonical": "FRANKLIN AVE",
+        "distance_m": 137.064
+      },
+      {
+        "name": "Escondido Fwy",
+        "canonical": "ESCONDIDO FWY",
+        "distance_m": 174.957
+      },
+      {
+        "name": "State Rte 15",
+        "canonical": "STATE RTE 15",
+        "distance_m": 174.957
+      },
+      {
+        "name": "S 36th St",
+        "canonical": "S 36TH ST",
+        "distance_m": 184.017
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "cd17a5e30129464947e86824dc31ddd2846e7021e2c13526646188d97d0df5e9",
+    "primary": "GENESEE AVE",
+    "cross": "INTERSTATE 5 SB",
+    "classification": "topology_uncertain",
+    "node_id": 178076,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 SB"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Genesee Ave",
+        "canonical": "GENESEE AVE",
+        "distance_m": 1.143
+      },
+      {
+        "name": "Co Hwy S21",
+        "canonical": "CO HWY S21",
+        "distance_m": 5.104
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 72.788
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "09dffa2ce321e418db97fe6c5bfb9d870f26479fdc04585bcd777f9fff5ced08",
+    "primary": "BALBOA AVE",
+    "cross": "INTERSTATE 805 SB",
+    "classification": "no_intersection",
+    "node_id": 68788,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 805 SB"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 0.02
+      },
+      {
+        "name": "I- 805",
+        "canonical": "I- 805",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Jacob Dekema Fwy",
+        "canonical": "JACOB DEKEMA FWY",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 17.735
+      },
+      {
+        "name": "Ashford St",
+        "canonical": "ASHFORD ST",
+        "distance_m": 197.352
+      },
+      {
+        "name": "Eckstrom Ave",
+        "canonical": "ECKSTROM AVE",
+        "distance_m": 201.834
+      },
+      {
+        "name": "Mustang St",
+        "canonical": "MUSTANG ST",
+        "distance_m": 229.722
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "c901fa0487e3c9887c4faaa1c46cd1c0b80bed88044f90c1223b44b428a60472",
+    "primary": "SEA WORLD DR",
+    "cross": "W MISSION BAY DR",
+    "classification": "no_intersection",
+    "node_id": 83431,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Sea World Dr",
+        "canonical": "SEA WORLD DR",
+        "distance_m": 0.01
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.026
+      },
+      {
+        "name": "W Mission Bay Dr",
+        "canonical": "W MISSION BAY DR",
+        "distance_m": 0.045
+      },
+      {
+        "name": "Perez Cove Way",
+        "canonical": "PEREZ COVE WAY",
+        "distance_m": 91.484
+      },
+      {
+        "name": "S Shores Rd",
+        "canonical": "S SHORES RD",
+        "distance_m": 172.803
+      },
+      {
+        "name": "Sunset Cliffs Blvd",
+        "canonical": "SUNSET CLIFFS BLVD",
+        "distance_m": 181.199
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "67ea5c25720ab999a218eeb064064c3ba258037f29280e30ff5a95dbe9378412",
+    "primary": "CARMEL VALLEY RD",
+    "cross": "INTERSTATE 5 SB",
+    "classification": "topology_uncertain",
+    "node_id": 54607,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 SB"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Carmel Valley Rd",
+        "canonical": "CARMEL VALLEY RD",
+        "distance_m": 0.015
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 30.977
+      },
+      {
+        "name": "State Rte 56",
+        "canonical": "STATE RTE 56",
+        "distance_m": 68.88
+      },
+      {
+        "name": "Ted Williams Fwy",
+        "canonical": "TED WILLIAMS FWY",
+        "distance_m": 68.88
+      },
+      {
+        "name": "Cmt Pointe del Mar",
+        "canonical": "CMT POINTE DEL MAR",
+        "distance_m": 170.827
+      },
+      {
+        "name": "Pointe del Mar Way",
+        "canonical": "POINTE DEL MAR WAY",
+        "distance_m": 170.827
+      },
+      {
+        "name": "Cmt Carmel",
+        "canonical": "CMT CARMEL",
+        "distance_m": 178.24
+      },
+      {
+        "name": "Sorrento Valley Rd",
+        "canonical": "SORRENTO VALLEY RD",
+        "distance_m": 194.763
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "15a43f5aba4c7ae0a7e9b250d1d0cc62ef3289051554467d3ea60d1f98114480",
+    "primary": "INTERSTATE 5 SB",
+    "cross": "LA JOLLA VILLAGE DR",
+    "classification": "topology_uncertain",
+    "node_id": 59050,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "INTERSTATE 5 SB"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "La Jolla Village Dr",
+        "canonical": "LA JOLLA VILLAGE DR",
+        "distance_m": 0.075
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 6.443
+      },
+      {
+        "name": "University Center Ln",
+        "canonical": "UNIVERSITY CENTER LN",
+        "distance_m": 236.567
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "1fcea36ef5d82d4c8de2b870ada6625a9540926b922899f9cb08fd918d89d94b",
+    "primary": "ALEMANIA RD",
+    "cross": "MERCY RD",
+    "classification": "topology_uncertain",
+    "node_id": 54308,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Alemania Rd",
+        "canonical": "ALEMANIA RD",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Mercy Rd",
+        "canonical": "MERCY RD",
+        "distance_m": 0.044
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 89.702
+      },
+      {
+        "name": "Escondido Fwy",
+        "canonical": "ESCONDIDO FWY",
+        "distance_m": 154.661
+      },
+      {
+        "name": "I- 15",
+        "canonical": "I- 15",
+        "distance_m": 154.661
+      },
+      {
+        "name": "Mercy Rd Bp",
+        "canonical": "MERCY RD BP",
+        "distance_m": 235.516
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 71921,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "GARNET AVE"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Moraga Ave",
+        "canonical": "MORAGA AVE",
+        "distance_m": 0.025
+      },
+      {
+        "name": "Monair Dr",
+        "canonical": "MONAIR DR",
+        "distance_m": 106.317
+      },
+      {
+        "name": "Don Lorenzo Dr",
+        "canonical": "DON LORENZO DR",
+        "distance_m": 108.414
+      },
+      {
+        "name": "Mount Laurence Dr",
+        "canonical": "MOUNT LAURENCE DR",
+        "distance_m": 112.023
+      },
+      {
+        "name": "Mount Sandy Dr",
+        "canonical": "MOUNT SANDY DR",
+        "distance_m": 112.622
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 153.624
+      },
+      {
+        "name": "Southview Dr",
+        "canonical": "SOUTHVIEW DR",
+        "distance_m": 156.781
+      },
+      {
+        "name": "Brandywine St",
+        "canonical": "BRANDYWINE ST",
+        "distance_m": 205.941
+      },
+      {
+        "name": "Princeton Ave",
+        "canonical": "PRINCETON AVE",
+        "distance_m": 209.718
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 73186,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 0.053
+      },
+      {
+        "name": "Garnet Ave",
+        "canonical": "GARNET AVE",
+        "distance_m": 0.054
+      },
+      {
+        "name": "Donaldson Dr",
+        "canonical": "DONALDSON DR",
+        "distance_m": 58.83
+      },
+      {
+        "name": "Fogg St",
+        "canonical": "FOGG ST",
+        "distance_m": 58.909
+      },
+      {
+        "name": "Culver Way",
+        "canonical": "CULVER WAY",
+        "distance_m": 72.474
+      },
+      {
+        "name": "Felspar Ct",
+        "canonical": "FELSPAR CT",
+        "distance_m": 84.655
+      },
+      {
+        "name": "Culver St",
+        "canonical": "CULVER ST",
+        "distance_m": 85.776
+      },
+      {
+        "name": "Felspar St",
+        "canonical": "FELSPAR ST",
+        "distance_m": 109.78
+      },
+      {
+        "name": "Pendleton St",
+        "canonical": "PENDLETON ST",
+        "distance_m": 141.485
+      },
+      {
+        "name": "Lee St",
+        "canonical": "LEE ST",
+        "distance_m": 172.42
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 179512,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [
+      {
+        "road": "GARNET AVE",
+        "distance_m": 157.373
+      }
+    ],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 0.019
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 31.599
+      },
+      {
+        "name": "Santa Fe St",
+        "canonical": "SANTA FE ST",
+        "distance_m": 41.458
+      },
+      {
+        "name": "Garnet Ave",
+        "canonical": "GARNET AVE",
+        "distance_m": 157.373
+      },
+      {
+        "name": "De Soto St",
+        "canonical": "DE SOTO ST",
+        "distance_m": 189.721
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 181200,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [
+      {
+        "road": "GARNET AVE",
+        "distance_m": 154.745
+      }
+    ],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 7.312
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 29.679
+      },
+      {
+        "name": "Santa Fe St",
+        "canonical": "SANTA FE ST",
+        "distance_m": 44.009
+      },
+      {
+        "name": "Garnet Ave",
+        "canonical": "GARNET AVE",
+        "distance_m": 154.745
+      },
+      {
+        "name": "De Soto St",
+        "canonical": "DE SOTO ST",
+        "distance_m": 183.142
+      },
+      {
+        "name": "Albuquerque St",
+        "canonical": "ALBUQUERQUE ST",
+        "distance_m": 190.252
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 181202,
+    "topology_outcome": "supported",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "GARNET AVE"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 5.831
+      },
+      {
+        "name": "Santa Fe St",
+        "canonical": "SANTA FE ST",
+        "distance_m": 6.848
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 15.981
+      },
+      {
+        "name": "Morena Blvd",
+        "canonical": "MORENA BLVD",
+        "distance_m": 182.642
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "8bd16207f75c8339ed89019e86fee283147c5ca6c91cfb780fc36939ef847889",
+    "primary": "SANTO RD",
+    "cross": "STATE ROUTE 52 WB",
+    "classification": "topology_uncertain",
+    "node_id": 178388,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "STATE ROUTE 52 WB"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Santo Rd",
+        "canonical": "SANTO RD",
+        "distance_m": 1.301
+      },
+      {
+        "name": "State Rte 52",
+        "canonical": "STATE RTE 52",
+        "distance_m": 11.852
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 16.267
+      },
+      {
+        "name": "Portobelo Ct",
+        "canonical": "PORTOBELO CT",
+        "distance_m": 185.334
+      },
+      {
+        "name": "Torca Ct",
+        "canonical": "TORCA CT",
+        "distance_m": 279.208
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "8f6754292a02729d8e12b9d8a8e5f256e71498601a24e6bf1ca377d6ed06d129",
+    "primary": "30TH ST",
+    "cross": "UPAS ST",
+    "classification": "multiple_candidates",
+    "node_id": 90234,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "30th St",
+        "canonical": "30TH ST",
+        "distance_m": 0.011
+      },
+      {
+        "name": "Upas St",
+        "canonical": "UPAS ST",
+        "distance_m": 0.014
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 23.786
+      },
+      {
+        "name": "Dale St",
+        "canonical": "DALE ST",
+        "distance_m": 28.304
+      },
+      {
+        "name": "Ray St",
+        "canonical": "RAY ST",
+        "distance_m": 74.003
+      },
+      {
+        "name": "29th St",
+        "canonical": "29TH ST",
+        "distance_m": 86.58
+      },
+      {
+        "name": "Myrtle Ave",
+        "canonical": "MYRTLE AVE",
+        "distance_m": 117.037
+      },
+      {
+        "name": "Granada Ave",
+        "canonical": "GRANADA AVE",
+        "distance_m": 170.899
+      },
+      {
+        "name": "Grim Ave",
+        "canonical": "GRIM AVE",
+        "distance_m": 173.431
+      },
+      {
+        "name": "Thorn St",
+        "canonical": "THORN ST",
+        "distance_m": 202.599
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "8f6754292a02729d8e12b9d8a8e5f256e71498601a24e6bf1ca377d6ed06d129",
+    "primary": "30TH ST",
+    "cross": "UPAS ST",
+    "classification": "multiple_candidates",
+    "node_id": 90240,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "30th St",
+        "canonical": "30TH ST",
+        "distance_m": 0.035
+      },
+      {
+        "name": "Ray St",
+        "canonical": "RAY ST",
+        "distance_m": 0.054
+      },
+      {
+        "name": "Upas St",
+        "canonical": "UPAS ST",
+        "distance_m": 0.067
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 50.256
+      },
+      {
+        "name": "Myrtle Ave",
+        "canonical": "MYRTLE AVE",
+        "distance_m": 98.212
+      },
+      {
+        "name": "Grim Ave",
+        "canonical": "GRIM AVE",
+        "distance_m": 99.389
+      },
+      {
+        "name": "Dale St",
+        "canonical": "DALE ST",
+        "distance_m": 102.345
+      },
+      {
+        "name": "29th St",
+        "canonical": "29TH ST",
+        "distance_m": 160.622
+      },
+      {
+        "name": "Thorn St",
+        "canonical": "THORN ST",
+        "distance_m": 202.036
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "c4e956de0cad7dba00068c0456d1f6b3e836613529b3d0e83ada1ce204a7700a",
+    "primary": "COLLEGE AVE",
+    "cross": "COLLEGE GROVE DR",
+    "classification": "multiple_candidates",
+    "node_id": 89289,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "College Ave",
+        "canonical": "COLLEGE AVE",
+        "distance_m": 0.026
+      },
+      {
+        "name": "College Grove Dr",
+        "canonical": "COLLEGE GROVE DR",
+        "distance_m": 0.027
+      },
+      {
+        "name": "Racine Rd",
+        "canonical": "RACINE RD",
+        "distance_m": 46.91
+      },
+      {
+        "name": "Lemarand Ave",
+        "canonical": "LEMARAND AVE",
+        "distance_m": 71.075
+      },
+      {
+        "name": "Vista Grande Dr",
+        "canonical": "VISTA GRANDE DR",
+        "distance_m": 121.825
+      },
+      {
+        "name": "Zena Dr",
+        "canonical": "ZENA DR",
+        "distance_m": 121.825
+      },
+      {
+        "name": "Nassau Dr",
+        "canonical": "NASSAU DR",
+        "distance_m": 126.857
+      },
+      {
+        "name": "Loma Alta Dr",
+        "canonical": "LOMA ALTA DR",
+        "distance_m": 136.258
+      },
+      {
+        "name": "Aragon Dr",
+        "canonical": "ARAGON DR",
+        "distance_m": 212.927
+      },
+      {
+        "name": "Waite Dr",
+        "canonical": "WAITE DR",
+        "distance_m": 234.786
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "c4e956de0cad7dba00068c0456d1f6b3e836613529b3d0e83ada1ce204a7700a",
+    "primary": "COLLEGE AVE",
+    "cross": "COLLEGE GROVE DR",
+    "classification": "multiple_candidates",
+    "node_id": 173300,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "College Grove Dr",
+        "canonical": "COLLEGE GROVE DR",
+        "distance_m": 0.022
+      },
+      {
+        "name": "College Ave",
+        "canonical": "COLLEGE AVE",
+        "distance_m": 13.209
+      },
+      {
+        "name": "Racine Rd",
+        "canonical": "RACINE RD",
+        "distance_m": 36.497
+      },
+      {
+        "name": "Lemarand Ave",
+        "canonical": "LEMARAND AVE",
+        "distance_m": 76.807
+      },
+      {
+        "name": "Vista Grande Dr",
+        "canonical": "VISTA GRANDE DR",
+        "distance_m": 116.018
+      },
+      {
+        "name": "Zena Dr",
+        "canonical": "ZENA DR",
+        "distance_m": 116.018
+      },
+      {
+        "name": "Nassau Dr",
+        "canonical": "NASSAU DR",
+        "distance_m": 118.179
+      },
+      {
+        "name": "Loma Alta Dr",
+        "canonical": "LOMA ALTA DR",
+        "distance_m": 125.906
+      },
+      {
+        "name": "Aragon Dr",
+        "canonical": "ARAGON DR",
+        "distance_m": 202.639
+      },
+      {
+        "name": "Waite Dr",
+        "canonical": "WAITE DR",
+        "distance_m": 221.299
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "be81330b6d5fade7ea4abf66cd5e5d1b454318ce50d275bed40646eebe80e9c7",
+    "primary": "FOGG ST",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 72702,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Fogg St",
+        "canonical": "FOGG ST",
+        "distance_m": 0.004
+      },
+      {
+        "name": "Garnet Ave",
+        "canonical": "GARNET AVE",
+        "distance_m": 0.01
+      },
+      {
+        "name": "Soledad Mountain Rd",
+        "canonical": "SOLEDAD MOUNTAIN RD",
+        "distance_m": 37.506
+      },
+      {
+        "name": "Felspar St",
+        "canonical": "FELSPAR ST",
+        "distance_m": 89.349
+      },
+      {
+        "name": "Pico St",
+        "canonical": "PICO ST",
+        "distance_m": 130.144
+      },
+      {
+        "name": "Fogg Ct",
+        "canonical": "FOGG CT",
+        "distance_m": 136.313
+      },
+      {
+        "name": "Figueroa Blvd",
+        "canonical": "FIGUEROA BLVD",
+        "distance_m": 146.183
+      },
+      {
+        "name": "Magnolia Ave",
+        "canonical": "MAGNOLIA AVE",
+        "distance_m": 182.477
+      },
+      {
+        "name": "Emerald St",
+        "canonical": "EMERALD ST",
+        "distance_m": 186.736
+      },
+      {
+        "name": "Neoma St",
+        "canonical": "NEOMA ST",
+        "distance_m": 188.018
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "be81330b6d5fade7ea4abf66cd5e5d1b454318ce50d275bed40646eebe80e9c7",
+    "primary": "FOGG ST",
+    "cross": "GARNET AVE",
+    "classification": "multiple_candidates",
+    "node_id": 73085,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Garnet Ave",
+        "canonical": "GARNET AVE",
+        "distance_m": 0.008
+      },
+      {
+        "name": "Fogg St",
+        "canonical": "FOGG ST",
+        "distance_m": 0.021
+      },
+      {
+        "name": "Donaldson Dr",
+        "canonical": "DONALDSON DR",
+        "distance_m": 0.022
+      },
+      {
+        "name": "Balboa Ave",
+        "canonical": "BALBOA AVE",
+        "distance_m": 58.916
+      },
+      {
+        "name": "Culver St",
+        "canonical": "CULVER ST",
+        "distance_m": 65.879
+      },
+      {
+        "name": "Felspar St",
+        "canonical": "FELSPAR ST",
+        "distance_m": 92.429
+      },
+      {
+        "name": "Culver Way",
+        "canonical": "CULVER WAY",
+        "distance_m": 108.866
+      },
+      {
+        "name": "Felspar Ct",
+        "canonical": "FELSPAR CT",
+        "distance_m": 115.425
+      },
+      {
+        "name": "Fogg Ct",
+        "canonical": "FOGG CT",
+        "distance_m": 132.165
+      },
+      {
+        "name": "Lee St",
+        "canonical": "LEE ST",
+        "distance_m": 136.841
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "cc79e802d2fad432556b2e63ddc57abdb3dbd76a23f12699d6686bc84f6d0f4b",
+    "primary": "MARLBOROUGH AVE",
+    "cross": "ORANGE AVE",
+    "classification": "multiple_candidates",
+    "node_id": 86230,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Marlborough Ave",
+        "canonical": "MARLBOROUGH AVE",
+        "distance_m": 0.021
+      },
+      {
+        "name": "Orange Ave",
+        "canonical": "ORANGE AVE",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 45.973
+      },
+      {
+        "name": "41st St",
+        "canonical": "41ST ST",
+        "distance_m": 69.813
+      },
+      {
+        "name": "42nd St",
+        "canonical": "42ND ST",
+        "distance_m": 101.805
+      },
+      {
+        "name": "Central Ave",
+        "canonical": "CENTRAL AVE",
+        "distance_m": 185.977
+      },
+      {
+        "name": "Polk Ave",
+        "canonical": "POLK AVE",
+        "distance_m": 192.497
+      },
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 215.123
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "cc79e802d2fad432556b2e63ddc57abdb3dbd76a23f12699d6686bc84f6d0f4b",
+    "primary": "MARLBOROUGH AVE",
+    "cross": "ORANGE AVE",
+    "classification": "multiple_candidates",
+    "node_id": 86231,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Orange Ave",
+        "canonical": "ORANGE AVE",
+        "distance_m": 0.022
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.036
+      },
+      {
+        "name": "Marlborough Ave",
+        "canonical": "MARLBOROUGH AVE",
+        "distance_m": 0.043
+      },
+      {
+        "name": "42nd St",
+        "canonical": "42ND ST",
+        "distance_m": 55.795
+      },
+      {
+        "name": "41st St",
+        "canonical": "41ST ST",
+        "distance_m": 115.823
+      },
+      {
+        "name": "Copeland Ave",
+        "canonical": "COPELAND AVE",
+        "distance_m": 153.597
+      },
+      {
+        "name": "Polk Ave",
+        "canonical": "POLK AVE",
+        "distance_m": 192.59
+      },
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 214.836
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "2429b97ef05d615b80c52bea0d793a621ce07b14aaf2b709c9b2c8ebc1f941bf",
+    "primary": "47TH ST",
+    "cross": "EL CAJON BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 85301,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "47th St",
+        "canonical": "47TH ST",
+        "distance_m": 0.03
+      },
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 0.053
+      },
+      {
+        "name": "Euclid Ave",
+        "canonical": "EUCLID AVE",
+        "distance_m": 69.916
+      },
+      {
+        "name": "Meade Ave",
+        "canonical": "MEADE AVE",
+        "distance_m": 112.48
+      },
+      {
+        "name": "Menlo Ave",
+        "canonical": "MENLO AVE",
+        "distance_m": 132.098
+      },
+      {
+        "name": "Trojan Ave",
+        "canonical": "TROJAN AVE",
+        "distance_m": 132.77
+      },
+      {
+        "name": "48th St",
+        "canonical": "48TH ST",
+        "distance_m": 170.139
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "2429b97ef05d615b80c52bea0d793a621ce07b14aaf2b709c9b2c8ebc1f941bf",
+    "primary": "47TH ST",
+    "cross": "EL CAJON BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 85316,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 0.018
+      },
+      {
+        "name": "47th St",
+        "canonical": "47TH ST",
+        "distance_m": 0.022
+      },
+      {
+        "name": "Menlo Ave",
+        "canonical": "MENLO AVE",
+        "distance_m": 100.811
+      },
+      {
+        "name": "Euclid Ave",
+        "canonical": "EUCLID AVE",
+        "distance_m": 101.218
+      },
+      {
+        "name": "Meade Ave",
+        "canonical": "MEADE AVE",
+        "distance_m": 118.015
+      },
+      {
+        "name": "Trojan Ave",
+        "canonical": "TROJAN AVE",
+        "distance_m": 147.548
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "b3fa2e93957447e8067dba83d880c541605629a6f9ab8f7e8994e102c467e368",
+    "primary": "CLAIREMONT DR",
+    "cross": "CLAIREMONT MESA BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 65770,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Kleefeld Ave",
+        "canonical": "KLEEFELD AVE",
+        "distance_m": 0.027
+      },
+      {
+        "name": "Clairemont Mesa Blvd",
+        "canonical": "CLAIREMONT MESA BLVD",
+        "distance_m": 0.034
+      },
+      {
+        "name": "Clairemont Dr",
+        "canonical": "CLAIREMONT DR",
+        "distance_m": 0.043
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 53.743
+      },
+      {
+        "name": "Cole St",
+        "canonical": "COLE ST",
+        "distance_m": 72.893
+      },
+      {
+        "name": "Bannock Ave",
+        "canonical": "BANNOCK AVE",
+        "distance_m": 95.657
+      },
+      {
+        "name": "Merrimac Ave",
+        "canonical": "MERRIMAC AVE",
+        "distance_m": 184.155
+      },
+      {
+        "name": "Fond du Lac Ave",
+        "canonical": "FOND DU LAC AVE",
+        "distance_m": 198.319
+      },
+      {
+        "name": "Lakehurst Ave",
+        "canonical": "LAKEHURST AVE",
+        "distance_m": 211.249
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "b3fa2e93957447e8067dba83d880c541605629a6f9ab8f7e8994e102c467e368",
+    "primary": "CLAIREMONT DR",
+    "cross": "CLAIREMONT MESA BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 67212,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Clairemont Dr",
+        "canonical": "CLAIREMONT DR",
+        "distance_m": 0.008
+      },
+      {
+        "name": "Clairemont Mesa Blvd",
+        "canonical": "CLAIREMONT MESA BLVD",
+        "distance_m": 0.024
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 58.225
+      },
+      {
+        "name": "Onondaga Ave",
+        "canonical": "ONONDAGA AVE",
+        "distance_m": 102.109
+      },
+      {
+        "name": "Gila Ave",
+        "canonical": "GILA AVE",
+        "distance_m": 130.531
+      },
+      {
+        "name": "Jemez Dr",
+        "canonical": "JEMEZ DR",
+        "distance_m": 130.531
+      },
+      {
+        "name": "Coconino Way",
+        "canonical": "COCONINO WAY",
+        "distance_m": 133.751
+      },
+      {
+        "name": "Willamette Ave",
+        "canonical": "WILLAMETTE AVE",
+        "distance_m": 149.207
+      },
+      {
+        "name": "Luna Ave",
+        "canonical": "LUNA AVE",
+        "distance_m": 151.4
+      },
+      {
+        "name": "Cochise Way",
+        "canonical": "COCHISE WAY",
+        "distance_m": 193.342
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "4afb84f0ceeceaeedad27e1a199984faf79a467a43b7126b38cdebfe51dde6eb",
+    "primary": "COLLEGE AVE",
+    "cross": "MERIDIAN AVE",
+    "classification": "multiple_candidates",
+    "node_id": 88887,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Meridian Ave",
+        "canonical": "MERIDIAN AVE",
+        "distance_m": 0.007
+      },
+      {
+        "name": "College Ave",
+        "canonical": "COLLEGE AVE",
+        "distance_m": 0.027
+      },
+      {
+        "name": "Zena Dr",
+        "canonical": "ZENA DR",
+        "distance_m": 88.423
+      },
+      {
+        "name": "Sparling St",
+        "canonical": "SPARLING ST",
+        "distance_m": 94.844
+      },
+      {
+        "name": "Lemarand Ave",
+        "canonical": "LEMARAND AVE",
+        "distance_m": 103.3
+      },
+      {
+        "name": "Billman St",
+        "canonical": "BILLMAN ST",
+        "distance_m": 117.09
+      },
+      {
+        "name": "Streamview Dr",
+        "canonical": "STREAMVIEW DR",
+        "distance_m": 117.128
+      },
+      {
+        "name": "Perique St",
+        "canonical": "PERIQUE ST",
+        "distance_m": 119.838
+      },
+      {
+        "name": "Hershey St",
+        "canonical": "HERSHEY ST",
+        "distance_m": 185.793
+      },
+      {
+        "name": "Boren St",
+        "canonical": "BOREN ST",
+        "distance_m": 202.483
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "4afb84f0ceeceaeedad27e1a199984faf79a467a43b7126b38cdebfe51dde6eb",
+    "primary": "COLLEGE AVE",
+    "cross": "MERIDIAN AVE",
+    "classification": "multiple_candidates",
+    "node_id": 170718,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Meridian Ave",
+        "canonical": "MERIDIAN AVE",
+        "distance_m": 0.106
+      },
+      {
+        "name": "College Ave",
+        "canonical": "COLLEGE AVE",
+        "distance_m": 17.151
+      },
+      {
+        "name": "Zena Dr",
+        "canonical": "ZENA DR",
+        "distance_m": 71.388
+      },
+      {
+        "name": "Sparling St",
+        "canonical": "SPARLING ST",
+        "distance_m": 104.375
+      },
+      {
+        "name": "Billman St",
+        "canonical": "BILLMAN ST",
+        "distance_m": 112.151
+      },
+      {
+        "name": "Streamview Dr",
+        "canonical": "STREAMVIEW DR",
+        "distance_m": 113.907
+      },
+      {
+        "name": "Perique St",
+        "canonical": "PERIQUE ST",
+        "distance_m": 119.867
+      },
+      {
+        "name": "Lemarand Ave",
+        "canonical": "LEMARAND AVE",
+        "distance_m": 120.96
+      },
+      {
+        "name": "Hershey St",
+        "canonical": "HERSHEY ST",
+        "distance_m": 202.074
+      },
+      {
+        "name": "Newsome Dr",
+        "canonical": "NEWSOME DR",
+        "distance_m": 206.599
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "4afb84f0ceeceaeedad27e1a199984faf79a467a43b7126b38cdebfe51dde6eb",
+    "primary": "COLLEGE AVE",
+    "cross": "MERIDIAN AVE",
+    "classification": "multiple_candidates",
+    "node_id": 170722,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Meridian Ave",
+        "canonical": "MERIDIAN AVE",
+        "distance_m": 0.077
+      },
+      {
+        "name": "College Ave",
+        "canonical": "COLLEGE AVE",
+        "distance_m": 18.834
+      },
+      {
+        "name": "Lemarand Ave",
+        "canonical": "LEMARAND AVE",
+        "distance_m": 83.664
+      },
+      {
+        "name": "Sparling St",
+        "canonical": "SPARLING ST",
+        "distance_m": 86.639
+      },
+      {
+        "name": "Zena Dr",
+        "canonical": "ZENA DR",
+        "distance_m": 107.259
+      },
+      {
+        "name": "Streamview Dr",
+        "canonical": "STREAMVIEW DR",
+        "distance_m": 122.912
+      },
+      {
+        "name": "Perique St",
+        "canonical": "PERIQUE ST",
+        "distance_m": 123.147
+      },
+      {
+        "name": "Billman St",
+        "canonical": "BILLMAN ST",
+        "distance_m": 123.908
+      },
+      {
+        "name": "Hershey St",
+        "canonical": "HERSHEY ST",
+        "distance_m": 168.188
+      },
+      {
+        "name": "Boren St",
+        "canonical": "BOREN ST",
+        "distance_m": 195.185
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "389a4f1895f06e0659884da2cd283b917022d45128f3209e0aa5a467f8051cba",
+    "primary": "CHAMOUNE AVE",
+    "cross": "EL CAJON BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 85465,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 0.009
+      },
+      {
+        "name": "Chamoune Ave",
+        "canonical": "CHAMOUNE AVE",
+        "distance_m": 0.045
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 50.513
+      },
+      {
+        "name": "46th St",
+        "canonical": "46TH ST",
+        "distance_m": 67.253
+      },
+      {
+        "name": "45th St",
+        "canonical": "45TH ST",
+        "distance_m": 100.85
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "389a4f1895f06e0659884da2cd283b917022d45128f3209e0aa5a467f8051cba",
+    "primary": "CHAMOUNE AVE",
+    "cross": "EL CAJON BLVD",
+    "classification": "multiple_candidates",
+    "node_id": 85477,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "El Cajon Blvd",
+        "canonical": "EL CAJON BLVD",
+        "distance_m": 0.0
+      },
+      {
+        "name": "Chamoune Ave",
+        "canonical": "CHAMOUNE AVE",
+        "distance_m": 0.04
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 13.197
+      },
+      {
+        "name": "45th St",
+        "canonical": "45TH ST",
+        "distance_m": 63.532
+      },
+      {
+        "name": "46th St",
+        "canonical": "46TH ST",
+        "distance_m": 104.571
+      },
+      {
+        "name": "Highland Ave",
+        "canonical": "HIGHLAND AVE",
+        "distance_m": 167.092
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "11be45eb06644ec8a2af5ba6e3c04f1865c51ac0d565a8afd2690a1b6105d329",
+    "primary": "MISSISSIPPI ST",
+    "cross": "UNIVERSITY AVE",
+    "classification": "multiple_candidates",
+    "node_id": 87581,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "University Ave",
+        "canonical": "UNIVERSITY AVE",
+        "distance_m": 0.011
+      },
+      {
+        "name": "Mississippi St",
+        "canonical": "MISSISSIPPI ST",
+        "distance_m": 0.045
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.045
+      },
+      {
+        "name": "Alabama St",
+        "canonical": "ALABAMA ST",
+        "distance_m": 83.519
+      },
+      {
+        "name": "Wightman St",
+        "canonical": "WIGHTMAN ST",
+        "distance_m": 112.363
+      },
+      {
+        "name": "Louisiana St",
+        "canonical": "LOUISIANA ST",
+        "distance_m": 116.393
+      },
+      {
+        "name": "Lincoln Ave",
+        "canonical": "LINCOLN AVE",
+        "distance_m": 206.527
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "11be45eb06644ec8a2af5ba6e3c04f1865c51ac0d565a8afd2690a1b6105d329",
+    "primary": "MISSISSIPPI ST",
+    "cross": "UNIVERSITY AVE",
+    "classification": "multiple_candidates",
+    "node_id": 87582,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 0.03
+      },
+      {
+        "name": "Mississippi St",
+        "canonical": "MISSISSIPPI ST",
+        "distance_m": 0.043
+      },
+      {
+        "name": "University Ave",
+        "canonical": "UNIVERSITY AVE",
+        "distance_m": 0.043
+      },
+      {
+        "name": "Alabama St",
+        "canonical": "ALABAMA ST",
+        "distance_m": 98.146
+      },
+      {
+        "name": "Louisiana St",
+        "canonical": "LOUISIANA ST",
+        "distance_m": 101.766
+      },
+      {
+        "name": "Wightman St",
+        "canonical": "WIGHTMAN ST",
+        "distance_m": 112.107
+      },
+      {
+        "name": "Lincoln Ave",
+        "canonical": "LINCOLN AVE",
+        "distance_m": 206.568
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "9670745357710bfb80d3706450826ae442ca35627611ed9ed08c5df02f4101a2",
+    "primary": "2ND AVE",
+    "cross": "J ST",
+    "classification": "multiple_candidates",
+    "node_id": 98295,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "J St",
+        "canonical": "J ST",
+        "distance_m": 0.313
+      },
+      {
+        "name": "2nd Ave",
+        "canonical": "2ND AVE",
+        "distance_m": 0.797
+      },
+      {
+        "name": "3rd Ave",
+        "canonical": "3RD AVE",
+        "distance_m": 86.997
+      },
+      {
+        "name": "1st Ave",
+        "canonical": "1ST AVE",
+        "distance_m": 94.551
+      },
+      {
+        "name": "Harbor Dr",
+        "canonical": "HARBOR DR",
+        "distance_m": 116.317
+      },
+      {
+        "name": "Island Ave",
+        "canonical": "ISLAND AVE",
+        "distance_m": 116.907
+      },
+      {
+        "name": "W Harbor Dr",
+        "canonical": "W HARBOR DR",
+        "distance_m": 140.537
+      },
+      {
+        "name": "W Island Ave",
+        "canonical": "W ISLAND AVE",
+        "distance_m": 144.414
+      },
+      {
+        "name": "K St",
+        "canonical": "K ST",
+        "distance_m": 145.774
+      },
+      {
+        "name": "4th Ave",
+        "canonical": "4TH AVE",
+        "distance_m": 170.502
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "9670745357710bfb80d3706450826ae442ca35627611ed9ed08c5df02f4101a2",
+    "primary": "2ND AVE",
+    "cross": "J ST",
+    "classification": "multiple_candidates",
+    "node_id": 110586,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "2nd Ave",
+        "canonical": "2ND AVE",
+        "distance_m": 0.004
+      },
+      {
+        "name": "J St",
+        "canonical": "J ST",
+        "distance_m": 0.007
+      },
+      {
+        "name": "King St",
+        "canonical": "KING ST",
+        "distance_m": 98.265
+      },
+      {
+        "name": "Second Ave",
+        "canonical": "SECOND AVE",
+        "distance_m": 98.265
+      },
+      {
+        "name": "Twin Oaks Ave",
+        "canonical": "TWIN OAKS AVE",
+        "distance_m": 101.658
+      },
+      {
+        "name": "Elm Ave",
+        "canonical": "ELM AVE",
+        "distance_m": 133.172
+      },
+      {
+        "name": "Murray St",
+        "canonical": "MURRAY ST",
+        "distance_m": 153.502
+      },
+      {
+        "name": "Kearney St",
+        "canonical": "KEARNEY ST",
+        "distance_m": 199.228
+      },
+      {
+        "name": "Del Mar Ave",
+        "canonical": "DEL MAR AVE",
+        "distance_m": 201.038
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "709ecd4ed8fc71526cb985e71181b1c5700d5a5e04bde79181ef3e09044d6039",
+    "primary": "HOLLISTER ST",
+    "cross": "OUTER RD",
+    "classification": "no_intersection",
+    "node_id": 115236,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Hollister St",
+        "canonical": "HOLLISTER ST",
+        "distance_m": 0.043
+      },
+      {
+        "name": "Outer Rd",
+        "canonical": "OUTER RD",
+        "distance_m": 0.049
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 89.141
+      },
+      {
+        "name": "Elm Ave",
+        "canonical": "ELM AVE",
+        "distance_m": 144.972
+      },
+      {
+        "name": "Harris Ave",
+        "canonical": "HARRIS AVE",
+        "distance_m": 242.708
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "1f6e06352e1c27a2cf6dca3c118a7dafae6c0059e37f0243a64f1522151dc854",
+    "primary": "ABBOTT ST",
+    "cross": "NEWPORT AVE",
+    "classification": "no_intersection",
+    "node_id": 87505,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Newport Ave",
+        "canonical": "NEWPORT AVE",
+        "distance_m": 0.036
+      },
+      {
+        "name": "Abbott St",
+        "canonical": "ABBOTT ST",
+        "distance_m": 0.037
+      },
+      {
+        "name": "Santa Monica Ave",
+        "canonical": "SANTA MONICA AVE",
+        "distance_m": 116.185
+      },
+      {
+        "name": "Niagara Ave",
+        "canonical": "NIAGARA AVE",
+        "distance_m": 117.631
+      },
+      {
+        "name": "Bacon St",
+        "canonical": "BACON ST",
+        "distance_m": 180.765
+      },
+      {
+        "name": "Saratoga Ave",
+        "canonical": "SARATOGA AVE",
+        "distance_m": 230.797
+      },
+      {
+        "name": "Narragansett Ave",
+        "canonical": "NARRAGANSETT AVE",
+        "distance_m": 231.462
+      },
+      {
+        "name": "Ocean Front St",
+        "canonical": "OCEAN FRONT ST",
+        "distance_m": 231.864
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "562d60bd495e27b13c54d2b7711f839c6be1e8ba31401724e57d282614a2def0",
+    "primary": "19TH ST",
+    "cross": "G ST",
+    "classification": "no_intersection",
+    "node_id": 97691,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "G St",
+        "canonical": "G ST",
+        "distance_m": 0.037
+      },
+      {
+        "name": "19th St",
+        "canonical": "19TH ST",
+        "distance_m": 0.041
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 17.498
+      },
+      {
+        "name": "20th St",
+        "canonical": "20TH ST",
+        "distance_m": 83.509
+      },
+      {
+        "name": "Market St",
+        "canonical": "MARKET ST",
+        "distance_m": 105.334
+      },
+      {
+        "name": "21st St",
+        "canonical": "21ST ST",
+        "distance_m": 170.323
+      },
+      {
+        "name": "17th St",
+        "canonical": "17TH ST",
+        "distance_m": 170.418
+      },
+      {
+        "name": "F St",
+        "canonical": "F ST",
+        "distance_m": 212.006
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "dc36a1eb263bb630bd059c38b71134b6262cc12d72c90615c3f8e6cb2bb32e05",
+    "primary": "CARDIN ST",
+    "cross": "OPPORTUNITY RD",
+    "classification": "no_intersection",
+    "node_id": 67891,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Opportunity Rd",
+        "canonical": "OPPORTUNITY RD",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Cardin St",
+        "canonical": "CARDIN ST",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 132.445
+      },
+      {
+        "name": "I- 805",
+        "canonical": "I- 805",
+        "distance_m": 138.601
+      },
+      {
+        "name": "Jacob Dekema Fwy",
+        "canonical": "JACOB DEKEMA FWY",
+        "distance_m": 138.601
+      },
+      {
+        "name": "Engineer Rd",
+        "canonical": "ENGINEER RD",
+        "distance_m": 199.018
+      },
+      {
+        "name": "Berwick Dr",
+        "canonical": "BERWICK DR",
+        "distance_m": 242.81
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "6abc67325e0a0ce773c7766d242c7e72189e13b7b0906659efd575dbcf2a7250",
+    "primary": "CYPRESS AVE",
+    "cross": "CYPRESS WAY",
+    "classification": "no_intersection",
+    "node_id": 88989,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Cypress Ave",
+        "canonical": "CYPRESS AVE",
+        "distance_m": 0.051
+      },
+      {
+        "name": "Cypress Way",
+        "canonical": "CYPRESS WAY",
+        "distance_m": 0.057
+      },
+      {
+        "name": "Pennsylvania Ave",
+        "canonical": "PENNSYLVANIA AVE",
+        "distance_m": 111.313
+      },
+      {
+        "name": "10th Ave",
+        "canonical": "10TH AVE",
+        "distance_m": 115.191
+      },
+      {
+        "name": "Cabrillo Fwy",
+        "canonical": "CABRILLO FWY",
+        "distance_m": 120.334
+      },
+      {
+        "name": "State Rte 163",
+        "canonical": "STATE RTE 163",
+        "distance_m": 120.334
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 122.076
+      },
+      {
+        "name": "Vermont St",
+        "canonical": "VERMONT ST",
+        "distance_m": 142.851
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "3b10702ce7fd59c43d1ff9c5d3730a0e5720d1f6b06b0cd37b423bae57a34eae",
+    "primary": "AMARANTH ST",
+    "cross": "TEXANA ST",
+    "classification": "no_intersection",
+    "node_id": 53381,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Texana St",
+        "canonical": "TEXANA ST",
+        "distance_m": 0.044
+      },
+      {
+        "name": "Amaranth St",
+        "canonical": "AMARANTH ST",
+        "distance_m": 0.048
+      },
+      {
+        "name": "Park Village Rd",
+        "canonical": "PARK VILLAGE RD",
+        "distance_m": 81.027
+      },
+      {
+        "name": "Black Mountain Rd",
+        "canonical": "BLACK MOUNTAIN RD",
+        "distance_m": 87.54
+      },
+      {
+        "name": "Isocoma St",
+        "canonical": "ISOCOMA ST",
+        "distance_m": 89.514
+      },
+      {
+        "name": "Adolphia St",
+        "canonical": "ADOLPHIA ST",
+        "distance_m": 117.057
+      },
+      {
+        "name": "Buckwheat Ct",
+        "canonical": "BUCKWHEAT CT",
+        "distance_m": 163.373
+      },
+      {
+        "name": "Moran Way",
+        "canonical": "MORAN WAY",
+        "distance_m": 181.565
+      },
+      {
+        "name": "Buckwheat St",
+        "canonical": "BUCKWHEAT ST",
+        "distance_m": 186.851
+      },
+      {
+        "name": "Pimpernel Way",
+        "canonical": "PIMPERNEL WAY",
+        "distance_m": 236.355
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "569192d48618dce287c3cfb7406d91279f209208a6f48fc799ee17deeadf8fd0",
+    "primary": "40TH ST",
+    "cross": "LANDIS ST",
+    "classification": "no_intersection",
+    "node_id": 88516,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "40th St",
+        "canonical": "40TH ST",
+        "distance_m": 0.012
+      },
+      {
+        "name": "Landis St",
+        "canonical": "LANDIS ST",
+        "distance_m": 0.022
+      },
+      {
+        "name": "State Rte 15",
+        "canonical": "STATE RTE 15",
+        "distance_m": 28.268
+      },
+      {
+        "name": "Escondido Fwy",
+        "canonical": "ESCONDIDO FWY",
+        "distance_m": 59.798
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 93.545
+      },
+      {
+        "name": "Central Ave",
+        "canonical": "CENTRAL AVE",
+        "distance_m": 127.229
+      },
+      {
+        "name": "Wightman St",
+        "canonical": "WIGHTMAN ST",
+        "distance_m": 206.343
+      },
+      {
+        "name": "Dwight St",
+        "canonical": "DWIGHT ST",
+        "distance_m": 208.658
+      },
+      {
+        "name": "39th St",
+        "canonical": "39TH ST",
+        "distance_m": 230.73
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f50a4ae6e81e52f7787607dcdf1cff0721fb004e7e9672e5b1ede8e6358abdaf",
+    "primary": "GLADING DR",
+    "cross": "RALPH WAY",
+    "classification": "no_intersection",
+    "node_id": 114918,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Ralph Way",
+        "canonical": "RALPH WAY",
+        "distance_m": 0.02
+      },
+      {
+        "name": "Glading Dr",
+        "canonical": "GLADING DR",
+        "distance_m": 0.058
+      },
+      {
+        "name": "Rene Dr",
+        "canonical": "RENE DR",
+        "distance_m": 63.69
+      },
+      {
+        "name": "Twining Ave",
+        "canonical": "TWINING AVE",
+        "distance_m": 77.319
+      },
+      {
+        "name": "Coleman Ct",
+        "canonical": "COLEMAN CT",
+        "distance_m": 80.274
+      },
+      {
+        "name": "Coldwell Ln",
+        "canonical": "COLDWELL LN",
+        "distance_m": 87.875
+      },
+      {
+        "name": "Coleman Ave",
+        "canonical": "COLEMAN AVE",
+        "distance_m": 138.624
+      },
+      {
+        "name": "Daves Way",
+        "canonical": "DAVES WAY",
+        "distance_m": 164.908
+      },
+      {
+        "name": "Palm Ave",
+        "canonical": "PALM AVE",
+        "distance_m": 221.705
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "58f71975b42cfb78fb27972fb54dc52d2eb59fa6b5d22d80cba822896052b96a",
+    "primary": "DELL ANNE PL",
+    "cross": "POTRERO ST",
+    "classification": "no_intersection",
+    "node_id": 97335,
+    "topology_outcome": "rejected",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Potrero St",
+        "canonical": "POTRERO ST",
+        "distance_m": 0.012
+      },
+      {
+        "name": "Dell Anne Pl",
+        "canonical": "DELL ANNE PL",
+        "distance_m": 0.048
+      },
+      {
+        "name": "Wade St",
+        "canonical": "WADE ST",
+        "distance_m": 53.393
+      },
+      {
+        "name": "Billow Dr",
+        "canonical": "BILLOW DR",
+        "distance_m": 92.054
+      },
+      {
+        "name": "Ashmore Ave",
+        "canonical": "ASHMORE AVE",
+        "distance_m": 112.77
+      },
+      {
+        "name": "Ashmore Ln",
+        "canonical": "ASHMORE LN",
+        "distance_m": 117.359
+      },
+      {
+        "name": "Osage Dr",
+        "canonical": "OSAGE DR",
+        "distance_m": 129.834
+      },
+      {
+        "name": "Osage St",
+        "canonical": "OSAGE ST",
+        "distance_m": 129.834
+      },
+      {
+        "name": "Braun Ave",
+        "canonical": "BRAUN AVE",
+        "distance_m": 140.828
+      },
+      {
+        "name": "Cardiff St",
+        "canonical": "CARDIFF ST",
+        "distance_m": 173.14
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "852fe3d25288570b8fc3ea2dfc26e7ee1730989c1d4fc3dd04fe9b7cbc9ed430",
+    "primary": "POWAY RD",
+    "cross": "RANCHO PENASQUITOS BLVD",
+    "classification": "no_intersection",
+    "node_id": 53360,
+    "topology_outcome": "rejected",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [
+      {
+        "road": "RANCHO PENASQUITOS BLVD",
+        "distance_m": 44.904
+      }
+    ],
+    "nearest_observed_names": [
+      {
+        "name": "Co Hwy S4",
+        "canonical": "CO HWY S4",
+        "distance_m": 0.0
+      },
+      {
+        "name": "Poway Rd",
+        "canonical": "POWAY RD",
+        "distance_m": 0.0
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 10.242
+      },
+      {
+        "name": "I- 15",
+        "canonical": "I- 15",
+        "distance_m": 20.795
+      },
+      {
+        "name": "Escondido Fwy",
+        "canonical": "ESCONDIDO FWY",
+        "distance_m": 20.795
+      },
+      {
+        "name": "Rancho Penasquitos Blvd",
+        "canonical": "RANCHO PENASQUITOS BLVD",
+        "distance_m": 44.904
+      },
+      {
+        "name": "Frontage Rd",
+        "canonical": "FRONTAGE RD",
+        "distance_m": 194.258
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "41d8e36418e81ff64c1961d8b7f95c8322a72f1b6ec116781f40246a2d295f17",
+    "primary": "POWAY RD",
+    "cross": "SPRINGHURST DR",
+    "classification": "topology_uncertain",
+    "node_id": 53513,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Co Hwy S4",
+        "canonical": "CO HWY S4",
+        "distance_m": 0.016
+      },
+      {
+        "name": "Poway Rd",
+        "canonical": "POWAY RD",
+        "distance_m": 0.016
+      },
+      {
+        "name": "Springhurst Dr",
+        "canonical": "SPRINGHURST DR",
+        "distance_m": 0.02
+      },
+      {
+        "name": "Creekstone Ln",
+        "canonical": "CREEKSTONE LN",
+        "distance_m": 83.585
+      },
+      {
+        "name": "Glenhope Rd",
+        "canonical": "GLENHOPE RD",
+        "distance_m": 101.559
+      },
+      {
+        "name": "Picarte Pl",
+        "canonical": "PICARTE PL",
+        "distance_m": 103.562
+      },
+      {
+        "name": "Trailbrook Ln",
+        "canonical": "TRAILBROOK LN",
+        "distance_m": 106.911
+      },
+      {
+        "name": "Fairford Rd",
+        "canonical": "FAIRFORD RD",
+        "distance_m": 108.045
+      },
+      {
+        "name": "Kismet Rd",
+        "canonical": "KISMET RD",
+        "distance_m": 108.354
+      },
+      {
+        "name": "Sabre Springs Pkwy",
+        "canonical": "SABRE SPRINGS PKWY",
+        "distance_m": 146.429
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "0cd7a2b251867447d39546de1e1cc39cbf4a79b1364b25443d7e98e30dc8b9f3",
+    "primary": "EMERALD CREST CT",
+    "cross": "OTAY MESA RD",
+    "classification": "topology_uncertain",
+    "node_id": 151934,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "EMERALD CREST CT"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Otay Mesa Rd",
+        "canonical": "OTAY MESA RD",
+        "distance_m": 2.513
+      },
+      {
+        "name": "Emerald Crst",
+        "canonical": "EMERALD CRST",
+        "distance_m": 6.326
+      },
+      {
+        "name": "Surf Rider Way",
+        "canonical": "SURF RIDER WAY",
+        "distance_m": 57.076
+      },
+      {
+        "name": "Rock Bluff Way",
+        "canonical": "ROCK BLUFF WAY",
+        "distance_m": 70.872
+      },
+      {
+        "name": "Aqua Cv",
+        "canonical": "AQUA CV",
+        "distance_m": 119.99
+      },
+      {
+        "name": "Ocean Gate Ln",
+        "canonical": "OCEAN GATE LN",
+        "distance_m": 172.023
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 211.592
+      },
+      {
+        "name": "State Rte 905",
+        "canonical": "STATE RTE 905",
+        "distance_m": 220.484
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "ce665f2e10ebb437e11e6d8ca3af74920fa589f50297a1c2f843b80c61c088f4",
+    "primary": "CLAIREMONT MESA BLVD",
+    "cross": "RUEDA DR",
+    "classification": "topology_uncertain",
+    "node_id": 67992,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Clairemont Mesa Blvd",
+        "canonical": "CLAIREMONT MESA BLVD",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Rueda Dr",
+        "canonical": "RUEDA DR",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Via Promesa",
+        "canonical": "VIA PROMESA",
+        "distance_m": 59.273
+      },
+      {
+        "name": "Seda Dr",
+        "canonical": "SEDA DR",
+        "distance_m": 75.515
+      },
+      {
+        "name": "Valdina Way",
+        "canonical": "VALDINA WAY",
+        "distance_m": 129.17
+      },
+      {
+        "name": "Renovo Way",
+        "canonical": "RENOVO WAY",
+        "distance_m": 167.226
+      },
+      {
+        "name": "Via Dominique",
+        "canonical": "VIA DOMINIQUE",
+        "distance_m": 170.571
+      },
+      {
+        "name": "Palabra Cir",
+        "canonical": "PALABRA CIR",
+        "distance_m": 170.881
+      },
+      {
+        "name": "Cll de Vida",
+        "canonical": "CLL DE VIDA",
+        "distance_m": 224.65
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "a4fd558544ee4cf7f837a4a047da25a36eda0b01bbbf322a091b0313d9eda532",
+    "primary": "AVENIDA LA BAHIA",
+    "cross": "NOBEL DR",
+    "classification": "topology_uncertain",
+    "node_id": 59579,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "AVENIDA LA BAHIA"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Ave la Bahia",
+        "canonical": "AVE LA BAHIA",
+        "distance_m": 0.017
+      },
+      {
+        "name": "Nobel Dr",
+        "canonical": "NOBEL DR",
+        "distance_m": 0.042
+      },
+      {
+        "name": "Towne Centre Dr",
+        "canonical": "TOWNE CENTRE DR",
+        "distance_m": 12.842
+      },
+      {
+        "name": "Ave Navidad",
+        "canonical": "AVE NAVIDAD",
+        "distance_m": 64.051
+      },
+      {
+        "name": "Via Andar",
+        "canonical": "VIA ANDAR",
+        "distance_m": 92.422
+      },
+      {
+        "name": "Via Realzar",
+        "canonical": "VIA REALZAR",
+        "distance_m": 168.851
+      },
+      {
+        "name": "Via Sepulveda",
+        "canonical": "VIA SEPULVEDA",
+        "distance_m": 188.786
+      },
+      {
+        "name": "Renaissance Ave",
+        "canonical": "RENAISSANCE AVE",
+        "distance_m": 200.603
+      },
+      {
+        "name": "Via Las Rambles",
+        "canonical": "VIA LAS RAMBLES",
+        "distance_m": 201.235
+      },
+      {
+        "name": "Via Pasear",
+        "canonical": "VIA PASEAR",
+        "distance_m": 237.323
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f6c55ef3c443e57773ca9d764e5ae3c1ec6749237238bcb4ea88b9a0e8b697f6",
+    "primary": "BULLOCK DR",
+    "cross": "S WOODMAN ST",
+    "classification": "topology_uncertain",
+    "node_id": 101403,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "S Woodman St",
+        "canonical": "S WOODMAN ST",
+        "distance_m": 0.02
+      },
+      {
+        "name": "Bullock Dr",
+        "canonical": "BULLOCK DR",
+        "distance_m": 0.053
+      },
+      {
+        "name": "Parkland Way",
+        "canonical": "PARKLAND WAY",
+        "distance_m": 73.929
+      },
+      {
+        "name": "Newhope Ct",
+        "canonical": "NEWHOPE CT",
+        "distance_m": 82.556
+      },
+      {
+        "name": "Brandywood St",
+        "canonical": "BRANDYWOOD ST",
+        "distance_m": 154.793
+      },
+      {
+        "name": "Jansen Ct",
+        "canonical": "JANSEN CT",
+        "distance_m": 168.503
+      },
+      {
+        "name": "Windward St",
+        "canonical": "WINDWARD ST",
+        "distance_m": 212.834
+      },
+      {
+        "name": "Anton Ln",
+        "canonical": "ANTON LN",
+        "distance_m": 224.298
+      },
+      {
+        "name": "Mesa Brook St",
+        "canonical": "MESA BROOK ST",
+        "distance_m": 228.39
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "f6c55ef3c443e57773ca9d764e5ae3c1ec6749237238bcb4ea88b9a0e8b697f6",
+    "primary": "BULLOCK DR",
+    "cross": "S WOODMAN ST",
+    "classification": "topology_uncertain",
+    "node_id": 101411,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "S Woodman St",
+        "canonical": "S WOODMAN ST",
+        "distance_m": 0.006
+      },
+      {
+        "name": "Bullock Dr",
+        "canonical": "BULLOCK DR",
+        "distance_m": 0.038
+      },
+      {
+        "name": "Parkland Way",
+        "canonical": "PARKLAND WAY",
+        "distance_m": 72.389
+      },
+      {
+        "name": "Newhope Ct",
+        "canonical": "NEWHOPE CT",
+        "distance_m": 81.083
+      },
+      {
+        "name": "Brandywood St",
+        "canonical": "BRANDYWOOD ST",
+        "distance_m": 162.247
+      },
+      {
+        "name": "Jansen Ct",
+        "canonical": "JANSEN CT",
+        "distance_m": 167.211
+      },
+      {
+        "name": "Windward St",
+        "canonical": "WINDWARD ST",
+        "distance_m": 205.362
+      },
+      {
+        "name": "Mesa Brook St",
+        "canonical": "MESA BROOK ST",
+        "distance_m": 220.623
+      },
+      {
+        "name": "Anton Ln",
+        "canonical": "ANTON LN",
+        "distance_m": 232.053
+      },
+      {
+        "name": "Statton Ct",
+        "canonical": "STATTON CT",
+        "distance_m": 262.443
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "1cb63c61c94cf7a54c28c0d87931b6ea5d42166807b565498e54723b4e3d3e06",
+    "primary": "DELCARDO AVE",
+    "cross": "PALM AVE",
+    "classification": "topology_uncertain",
+    "node_id": 114712,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Delcardo Ave",
+        "canonical": "DELCARDO AVE",
+        "distance_m": 0.001
+      },
+      {
+        "name": "Palm Ave",
+        "canonical": "PALM AVE",
+        "distance_m": 0.038
+      },
+      {
+        "name": "Kostner Dr",
+        "canonical": "KOSTNER DR",
+        "distance_m": 0.038
+      },
+      {
+        "name": "La Huerta Way",
+        "canonical": "LA HUERTA WAY",
+        "distance_m": 48.833
+      },
+      {
+        "name": "Lemonseed Dr",
+        "canonical": "LEMONSEED DR",
+        "distance_m": 56.38
+      },
+      {
+        "name": "Rene Ct",
+        "canonical": "RENE CT",
+        "distance_m": 123.955
+      },
+      {
+        "name": "Firethorn St",
+        "canonical": "FIRETHORN ST",
+        "distance_m": 128.577
+      },
+      {
+        "name": "Powderhorn Dr",
+        "canonical": "POWDERHORN DR",
+        "distance_m": 135.085
+      },
+      {
+        "name": "Rene Dr",
+        "canonical": "RENE DR",
+        "distance_m": 168.227
+      },
+      {
+        "name": "Kedzie Ave",
+        "canonical": "KEDZIE AVE",
+        "distance_m": 191.137
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "41794aaa73086a0d58ef2988ecec2aba7b579e8b3130b1e4acb4203e8d2371a2",
+    "primary": "NORSTAD ST",
+    "cross": "PALM AVE",
+    "classification": "topology_uncertain",
+    "node_id": 114693,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Norstad St",
+        "canonical": "NORSTAD ST",
+        "distance_m": 0.015
+      },
+      {
+        "name": "Palm Ave",
+        "canonical": "PALM AVE",
+        "distance_m": 0.032
+      },
+      {
+        "name": "Norstad Ave",
+        "canonical": "NORSTAD AVE",
+        "distance_m": 0.033
+      },
+      {
+        "name": "Byrd St",
+        "canonical": "BYRD ST",
+        "distance_m": 89.832
+      },
+      {
+        "name": "Narwhal St",
+        "canonical": "NARWHAL ST",
+        "distance_m": 94.529
+      },
+      {
+        "name": "Coleman Ave",
+        "canonical": "COLEMAN AVE",
+        "distance_m": 109.381
+      },
+      {
+        "name": "Byrd Way",
+        "canonical": "BYRD WAY",
+        "distance_m": 125.426
+      },
+      {
+        "name": "Grissom St",
+        "canonical": "GRISSOM ST",
+        "distance_m": 129.489
+      },
+      {
+        "name": "Goodbody St",
+        "canonical": "GOODBODY ST",
+        "distance_m": 164.125
+      },
+      {
+        "name": "Chanute St",
+        "canonical": "CHANUTE ST",
+        "distance_m": 164.51
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "7cc9a8b5f0e36b72b538bd0a221935822d4bddae36ddeb59c1bd3e790469a96f",
+    "primary": "45TH ST",
+    "cross": "IMPERIAL AVE",
+    "classification": "topology_uncertain",
+    "node_id": 99551,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "not_corroborated",
+    "missing_exact_names": [
+      "45TH ST"
+    ],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "N 45th St",
+        "canonical": "N 45TH ST",
+        "distance_m": 0.013
+      },
+      {
+        "name": "Imperial Ave",
+        "canonical": "IMPERIAL AVE",
+        "distance_m": 0.051
+      },
+      {
+        "name": "S 45th St",
+        "canonical": "S 45TH ST",
+        "distance_m": 0.053
+      },
+      {
+        "name": "Ymca Way",
+        "canonical": "YMCA WAY",
+        "distance_m": 95.951
+      },
+      {
+        "name": "West St",
+        "canonical": "W ST",
+        "distance_m": 100.868
+      },
+      {
+        "name": "44th St",
+        "canonical": "44TH ST",
+        "distance_m": 120.139
+      },
+      {
+        "name": "San Pasqual Dr",
+        "canonical": "SAN PASQUAL DR",
+        "distance_m": 132.491
+      },
+      {
+        "name": "Arkhaven Pl",
+        "canonical": "ARKHAVEN PL",
+        "distance_m": 156.577
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 186.805
+      },
+      {
+        "name": "Sandgate Ln",
+        "canonical": "SANDGATE LN",
+        "distance_m": 204.237
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "cbd6f7719bcb9a464213b2412f5bdd93ca3975ee9511d8c2170f6140bee0bfe7",
+    "primary": "ASHFORD ST",
+    "cross": "BALTIC ST",
+    "classification": "topology_uncertain",
+    "node_id": 72592,
+    "topology_outcome": "topology_uncertain",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Baltic St",
+        "canonical": "BALTIC ST",
+        "distance_m": 0.02
+      },
+      {
+        "name": "Ashford St",
+        "canonical": "ASHFORD ST",
+        "distance_m": 0.03
+      },
+      {
+        "name": "Ashford Pl",
+        "canonical": "ASHFORD PL",
+        "distance_m": 78.289
+      },
+      {
+        "name": "Bevis St",
+        "canonical": "BEVIS ST",
+        "distance_m": 80.386
+      },
+      {
+        "name": "Argyle St",
+        "canonical": "ARGYLE ST",
+        "distance_m": 81.668
+      },
+      {
+        "name": "Atlas St",
+        "canonical": "ATLAS ST",
+        "distance_m": 160.251
+      },
+      {
+        "name": "Armstrong Pl",
+        "canonical": "ARMSTRONG PL",
+        "distance_m": 165.207
+      },
+      {
+        "name": "Armstrong St",
+        "canonical": "ARMSTRONG ST",
+        "distance_m": 187.212
+      },
+      {
+        "name": "Beagle St",
+        "canonical": "BEAGLE ST",
+        "distance_m": 221.805
+      },
+      {
+        "name": "Stalmer St",
+        "canonical": "STALMER ST",
+        "distance_m": 273.911
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  },
+  {
+    "pair_id": "39dbd3d0272d7d8d62f5b36e5c5b43f6b79585b1f86194c483719f20e49d816e",
+    "primary": "GEORGIA ST",
+    "cross": "MISSION AVE",
+    "classification": "topology_uncertain",
+    "node_id": 84609,
+    "topology_outcome": "supported",
+    "independent_outcome": "both_roads_spatially_corroborated",
+    "missing_exact_names": [],
+    "named_road_spatial_disagreements": [],
+    "nearest_observed_names": [
+      {
+        "name": "Georgia St",
+        "canonical": "GEORGIA ST",
+        "distance_m": 0.01
+      },
+      {
+        "name": "Mission Ave",
+        "canonical": "MISSION AVE",
+        "distance_m": 0.019
+      },
+      {
+        "name": "Meade Ave",
+        "canonical": "MEADE AVE",
+        "distance_m": 87.482
+      },
+      {
+        "name": "Florida St",
+        "canonical": "FLORIDA ST",
+        "distance_m": 116.192
+      },
+      {
+        "name": "Park Blvd",
+        "canonical": "PARK BLVD",
+        "distance_m": 116.245
+      },
+      {
+        "name": "Monroe Ave",
+        "canonical": "MONROE AVE",
+        "distance_m": 120.371
+      },
+      {
+        "name": "Null",
+        "canonical": "NULL",
+        "distance_m": 138.411
+      }
+    ],
+    "interpretation": "Spatial diagnostic only. No fuzzy aliases, extra ramps or inferred historical connectivity accepted."
+  }
+]

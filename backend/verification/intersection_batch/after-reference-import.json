@@ -1,0 +1,22 @@
+{
+  "collision_rows_unchanged_by_reference_import": true,
+  "archived_sources_unchanged_by_reference_import": true,
+  "after_collision": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "after_archived_source": {
+    "records": 78494,
+    "digest": "630c867593987023308e2c1360ddb7b4"
+  }
+}

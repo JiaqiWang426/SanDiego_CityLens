@@ -1,0 +1,19 @@
+{
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "layers": {
+    "Roads_All": {
+      "archived_features": 4148,
+      "local_features_found": 4148,
+      "attribute_mismatches": [],
+      "same_editing_info": true
+    },
+    "Roads_Intersection": {
+      "archived_features": 236,
+      "local_features_found": 236,
+      "attribute_mismatches": [],
+      "same_editing_info": true
+    }
+  },
+  "source_geometry_comparison": "Archived REST WGS84 geometry vs local native transform is quantified at all evaluated Stage A candidate nodes in stage-a-replay.json.",
+  "passed": true
+}

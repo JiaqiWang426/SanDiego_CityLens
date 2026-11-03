@@ -1,0 +1,16 @@
+{
+  "frozen_sample_size": 36,
+  "selection": "Purposive categories/neighborhoods from independent official and brokerage sources; no SanGIS-derived address selection; remaining 28 selected before their provider requests",
+  "feasibility_ids": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "live_new_address_limit": 36,
+  "max_provider_requests_without_retry": 72
+}

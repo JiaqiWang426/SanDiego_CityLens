@@ -1,0 +1,28 @@
+{
+  "method_version": "sangis-stage-a-local-v2",
+  "environment": {
+    "postgres": "PostgreSQL 17.5 (Debian 17.5-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit",
+    "postgis": "POSTGIS=\"3.5.2 dea6d0a\" [EXTENSION] PGSQL=\"170\" GEOS=\"3.9.0-CAPI-1.16.2\" PROJ=\"7.2.1 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/var/lib/postgresql/.local/share/proj DATABASE_PATH=/usr/share/proj/proj.db\" (compiled against PROJ 7.2.1) LIBXML=\"2.9.10\" LIBJSON=\"0.15\" LIBPROTOBUF=\"1.3.3\" WAGYU=\"0.5.0 (Internal)\" TOPOLOGY",
+    "python": "3.13.14",
+    "psycopg": "3.3.6",
+    "pyproj": "3.8.0"
+  },
+  "files": {
+    "backend/sangis_topology/__init__.py": "c016587e9773dac58e1f2b951162415def26f3826f6e181c39dcc90d9ecc297c",
+    "backend/sangis_topology/__main__.py": "325d5778194ea63244b39fee32917919972ccc0c4cc802850df85dd4ba95dfdc",
+    "backend/sangis_topology/acquire.py": "3f660c3e1411702aacd007fb22e5d55f4e379cbec820c44058dd7e4b6f71f2bc",
+    "backend/sangis_topology/apply.py": "00085a32ecb9d7850caa941ae75ca6ffbfccbde18443493c238d10e42c808b32",
+    "backend/sangis_topology/archive.py": "ee9539c4fd355534ee4d336915686d2879f0f1cd8e2e8a557dd4adae3e11c64a",
+    "backend/sangis_topology/batch.py": "ae0b6e34aebbb71163a15a1a8cbe0b185a874d161fad8b6c14f6794ec5187b19",
+    "backend/sangis_topology/database.py": "f0eb37736585a718dfc8b7cb7c5c59e6f054b5bbe110932db8d8d2b105792129",
+    "backend/sangis_topology/deploy.sql": "47bf3215f72872dc03f5357030cf723c89a71b183ecd4e815160c744daae1b65",
+    "backend/sangis_topology/inspection.py": "7d9482f80cd2bc3098ed9b3e5d6f2c4ced0dbf4652ad118dc5fc5ccd40396d55",
+    "backend/sangis_topology/README.md": "d0134d6e034feb76bc4cd010aa8499fb8a05d24d442757fa8750304523642772",
+    "backend/sangis_topology/reference.sql": "0cea7bcc88f141b0c7e1b8044b08814d9bef63b3d8cd657cce2d65a842e453e6",
+    "backend/sangis_topology/verify.py": "608d8804a9535fa1b004fef26aa7825dce7af13cfbab2b27841568d41f59e243",
+    "backend/agent_tests/test_sangis_topology.py": "2aaa5a69d4981102cb1f7df46b039d24bb2776abb36f3dc2e2d139a461ced4f8",
+    "backend/verification/intersection_feasibility/topology.py": "88b3ba5705e891806265b91d4397f622822098e4783468f3a797f6c64cb4c790",
+    "backend/census_addresses.py": "f2d53954abcc9b90382cedb723ba14b4571f052bed82876708f3cc5748d8e7ba",
+    "backend/collision_addresses.py": "ef6f6f12ac181edf0e0365076f4f06f3a7b3e1a8a978811005035ae9fee311c4"
+  }
+}

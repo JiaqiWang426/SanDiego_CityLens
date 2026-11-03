@@ -1,0 +1,85 @@
+{
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "all_collision_rows_unchanged": true,
+  "archived_source_rows_unchanged": true,
+  "archived_source_after": {
+    "records": 78494,
+    "digest": "630c867593987023308e2c1360ddb7b4"
+  },
+  "reader": {
+    "role": "citylens_agent"
+  },
+  "reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "precision_migration_applied": false,
+  "collision_constraints": [
+    {
+      "conname": "traffic_collisions_check",
+      "definition": "CHECK (((location IS NOT NULL) = (geocode_status = 'matched'::text)))"
+    },
+    {
+      "conname": "traffic_collisions_check1",
+      "definition": "CHECK (((location IS NULL) OR (geocode_precision = 'block_approximate'::text)))"
+    },
+    {
+      "conname": "traffic_collisions_geocode_precision_check",
+      "definition": "CHECK (((geocode_precision IS NULL) OR (geocode_precision = 'block_approximate'::text)))"
+    },
+    {
+      "conname": "traffic_collisions_geocode_status_check",
+      "definition": "CHECK ((geocode_status = ANY (ARRAY['pending'::text, 'matched'::text, 'no_match'::text, 'ambiguous'::text, 'unsupported'::text, 'error'::text])))"
+    },
+    {
+      "conname": "traffic_collisions_injured_check",
+      "definition": "CHECK ((injured >= 0))"
+    },
+    {
+      "conname": "traffic_collisions_killed_check",
+      "definition": "CHECK ((killed >= 0))"
+    }
+  ],
+  "deployment_tables": {
+    "history_created": false,
+    "runs_created": false
+  },
+  "source_csv_checks": [
+    {
+      "file": "pd_collisions_datasd.csv",
+      "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+      "matches_an_import": true
+    }
+  ],
+  "collision_updates": 0,
+  "google_geocoding_requests": 0,
+  "census_address_geocoding_requests": 0,
+  "checkpoint_replay": "Completed all 3974 current-method pair checkpoints; rerun retained all pair/report classification counts."
+}

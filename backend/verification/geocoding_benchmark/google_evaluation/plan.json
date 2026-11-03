@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-03T01:25:10.363086+00:00",
+  "selected_addresses": 12,
+  "planned_google_requests": 12,
+  "hard_cap": 15,
+  "planned_list_cost_usd": 0.06,
+  "maximum_list_cost_usd": 0.075,
+  "pricing_basis": "USD 5/1000 before any available monthly free allowance; checked 2026-11-02",
+  "google_key_configured": false,
+  "live_authorized": false,
+  "executed_google_requests": 0,
+  "run_status": "not_run",
+  "actual_results": null,
+  "retention": "Google content in RAM only; expired and discarded at process exit; no disk cache",
+  "primary_provider_unchanged": true,
+  "not_run_reason": "live_authorization_absent"
+}

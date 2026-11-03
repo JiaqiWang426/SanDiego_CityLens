@@ -1,0 +1,27 @@
+{
+  "stage_b_run_manifest_sha256": "c098e0398f2507126efd5d04241f975ece76a8d26f51e6a35ef4cca80dbb47df",
+  "stage_b_candidate_sha256": "21f56b1bc04220295c9d6a480cbb0c7e093d20ce532e649a3ac8706da9bfc1d6",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "method_version": "sangis-stage-a-local-v2",
+  "validation_version": "sangis-stage-c-strict-v1",
+  "accepted_pairs": 2043,
+  "accepted_reports": 4319,
+  "unique_geographic_scopes": 1974,
+  "new_request_budget": 400,
+  "created_at": "2026-11-03T05:59:39.840185+00:00",
+  "evidence_sources_at_planning": {
+    "new_request": 2,
+    "prior_interrupted_stage_c": 1910,
+    "stage_b_independent_evidence": 62
+  },
+  "expected_new_requests": 2,
+  "expected_worst_case_attempts": 4,
+  "maximum_attempts_per_scope": 2,
+  "interval_seconds": 0.5,
+  "timeout_seconds": 20,
+  "max_response_bytes": 8000000,
+  "deduplication": "One TIGERweb identify per distinct proposed node position (exact Stage A/B URL); pairs sharing a node share evidence.",
+  "budget_policy": "Budget counts live attempts across restarts. When exhausted, remaining scopes stay unknown, never failed.",
+  "limit_policy": "Small 0.004-degree WGS84 envelope, road layers 2/6/8. Transfer flags or >=1000 results are incomplete (unknown). No service-wide download, no pagination workaround.",
+  "thirty_meter_policy": "Acceptance requires BOTH exact canonical named-road TIGER lines within 30 m of the SanGIS node. Inherited diagnostic: it corroborates names near the node; it does not replace SanGIS topology, test grade separation or measure collision-location error."
+}

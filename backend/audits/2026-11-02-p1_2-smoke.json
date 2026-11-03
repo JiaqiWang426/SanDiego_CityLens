@@ -1,0 +1,668 @@
+{
+  "external_apis": "MOCKED; fixture pins are not real address geocodes",
+  "database": "actual configured restricted Agent reader",
+  "before": [
+    78494,
+    59627,
+    59627
+  ],
+  "after": [
+    78494,
+    59627,
+    59627
+  ],
+  "proposal": {
+    "status": "needs_confirmation",
+    "message": "Please confirm these proposed address interpretations and query conditions. Addresses have not yet been geographically verified.",
+    "conversation_id": "conversation_db1d68550d914943bbdad194a352e0a7",
+    "revision": 1,
+    "original_question": "Compare Pothole complaints near 9000 Regents Driev and 9500 Gilman Drive within 800 meters over the past six months.",
+    "locations": [
+      {
+        "id": "A",
+        "source_quote": "9000 Regents Driev",
+        "house_number": "9000",
+        "street_name": "Regents",
+        "street_suffix": "Dr",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA"
+      },
+      {
+        "id": "B",
+        "source_quote": "9500 Gilman Drive",
+        "house_number": "9500",
+        "street_name": "Gilman",
+        "street_suffix": "Dr",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA"
+      }
+    ],
+    "candidates": {},
+    "resolved_locations": [],
+    "radius_meters": 800.0,
+    "time_range": {
+      "start": "2026-05-02T00:00:00-07:00",
+      "end": "2026-11-02T00:00:00-08:00",
+      "calendar_timezone": "America/Los_Angeles"
+    },
+    "proposed_plan": {
+      "intent": "compare_locations",
+      "tools": [
+        "aggregate_service_requests"
+      ],
+      "period": "month",
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "exclude_linked_duplicates": false,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": "Pothole",
+        "status": null
+      },
+      "filter_quote": "Pothole",
+      "unsupported_dimensions": []
+    },
+    "result": null,
+    "diagnostic_codes": []
+  },
+  "final": {
+    "status": "complete",
+    "message": "Analysis completed for the confirmed, resolved addresses. Numerical findings remain subject to dataset coverage limitations.",
+    "conversation_id": "conversation_db1d68550d914943bbdad194a352e0a7",
+    "revision": 1,
+    "original_question": "Compare Pothole complaints near 9000 Regents Driev and 9500 Gilman Drive within 800 meters over the past six months.",
+    "locations": [
+      {
+        "id": "A",
+        "source_quote": "9000 Regents Driev",
+        "house_number": "9000",
+        "street_name": "Regents",
+        "street_suffix": "Dr",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA"
+      },
+      {
+        "id": "B",
+        "source_quote": "9500 Gilman Drive",
+        "house_number": "9500",
+        "street_name": "Gilman",
+        "street_suffix": "Dr",
+        "direction": null,
+        "city": "San Diego",
+        "state": "CA"
+      }
+    ],
+    "candidates": {},
+    "resolved_locations": [
+      {
+        "candidate_id": "fixture_A",
+        "matched_address": "[MOCK] 9000 Regents Dr, San Diego, CA",
+        "location": {
+          "id": "A",
+          "label": "[MOCK] 9000 Regents Dr, San Diego, CA",
+          "latitude": 32.84,
+          "longitude": -117.25
+        },
+        "provider": "MOCK Census fixture",
+        "precision": "interpolated_address",
+        "benchmark": null,
+        "requires_confirmation": false,
+        "mismatch_reason": null
+      },
+      {
+        "candidate_id": "fixture_B",
+        "matched_address": "[MOCK] 9500 Gilman Dr, San Diego, CA",
+        "location": {
+          "id": "B",
+          "label": "[MOCK] 9500 Gilman Dr, San Diego, CA",
+          "latitude": 32.85,
+          "longitude": -117.24
+        },
+        "provider": "MOCK Census fixture",
+        "precision": "interpolated_address",
+        "benchmark": null,
+        "requires_confirmation": false,
+        "mismatch_reason": null
+      }
+    ],
+    "radius_meters": 800.0,
+    "time_range": {
+      "start": "2026-05-02T00:00:00-07:00",
+      "end": "2026-11-02T00:00:00-08:00",
+      "calendar_timezone": "America/Los_Angeles"
+    },
+    "proposed_plan": {
+      "intent": "compare_locations",
+      "tools": [
+        "aggregate_service_requests"
+      ],
+      "period": "month",
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "exclude_linked_duplicates": false,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": "Pothole",
+        "status": null
+      },
+      "filter_quote": "Pothole",
+      "unsupported_dimensions": []
+    },
+    "result": {
+      "status": "partial",
+      "intent": "compare_locations",
+      "answer": "This comparison describes imported record counts, not safety or service quality. Locations: A: [MOCK] 9000 Regents Dr, San Diego, CA; B: [MOCK] 9500 Gilman Dr, San Diego, CA. Scope: within 800 meters of each selected pin, from 2026-05-02T00:00:00-07:00 (inclusive) to 2026-11-02T00:00:00-08:00 (exclusive); calendar timezone America/Los_Angeles. A: 36 imported Get It Done request IDs matched the recorded query filters [ev_07f0ba932e054eb5913291a8800d66b9]. B: 25 imported Get It Done request IDs matched the recorded query filters [ev_62c72cd48f2b4df2a571cc9feaad4fec]. request_id_count: B minus A is -11 reports [ev_07f0ba932e054eb5913291a8800d66b9, ev_62c72cd48f2b4df2a571cc9feaad4fec]. Applied filters: service_name=Pothole. Coverage and freshness are unknown. Unlocated collision reports are excluded; collision positions are block-approximate. Zero matches do not establish absence of incidents.",
+      "comparison": {
+        "locations": [
+          "A",
+          "B"
+        ],
+        "radius_meters": 800.0,
+        "time_range": {
+          "start": "2026-05-02T00:00:00-07:00",
+          "end": "2026-11-02T00:00:00-08:00",
+          "calendar_timezone": "America/Los_Angeles"
+        },
+        "metrics": [
+          {
+            "metric": "request_id_count",
+            "location_a": "A",
+            "location_b": "B",
+            "value_a": 36,
+            "value_b": 25,
+            "difference_b_minus_a": -11,
+            "evidence_ids": [
+              "ev_07f0ba932e054eb5913291a8800d66b9",
+              "ev_62c72cd48f2b4df2a571cc9feaad4fec"
+            ],
+            "overlapping_circles": true,
+            "limitations": [
+              "Geographic completeness and source freshness are not verified.",
+              "Import timestamps do not establish source freshness; upserts retain older records.",
+              "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+              "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+              "Counts measure request IDs, not distinct physical issues or public service quality.",
+              "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair.",
+              "Query circles overlap; counts may share records and are not independent samples."
+            ]
+          }
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "cl_714e50597ed0461bbf6d94bc09a00585",
+          "text": "A: 36 imported Get It Done request IDs matched the recorded query filters [ev_07f0ba932e054eb5913291a8800d66b9].",
+          "claim_type": "record_count",
+          "evidence_ids": [
+            "ev_07f0ba932e054eb5913291a8800d66b9"
+          ],
+          "metric": "request_id_count",
+          "value": 36,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair."
+          ]
+        },
+        {
+          "claim_id": "cl_59c94bb21a8d4f3fb9afc1607010bff1",
+          "text": "B: 25 imported Get It Done request IDs matched the recorded query filters [ev_62c72cd48f2b4df2a571cc9feaad4fec].",
+          "claim_type": "record_count",
+          "evidence_ids": [
+            "ev_62c72cd48f2b4df2a571cc9feaad4fec"
+          ],
+          "metric": "request_id_count",
+          "value": 25,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair."
+          ]
+        },
+        {
+          "claim_id": "cl_0390e30cccf8405cb78ceb1282ec595c",
+          "text": "request_id_count: B minus A is -11 reports [ev_07f0ba932e054eb5913291a8800d66b9, ev_62c72cd48f2b4df2a571cc9feaad4fec].",
+          "claim_type": "descriptive_comparison",
+          "evidence_ids": [
+            "ev_07f0ba932e054eb5913291a8800d66b9",
+            "ev_62c72cd48f2b4df2a571cc9feaad4fec"
+          ],
+          "metric": "request_id_count",
+          "value": -11,
+          "limitations": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair.",
+            "Query circles overlap; counts may share records and are not independent samples."
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "ev_07f0ba932e054eb5913291a8800d66b9",
+          "query_id": "q_b44f227052754a7aade022be1e213b41",
+          "domain": "service_requests",
+          "source_table": "citylens.service_requests",
+          "source_dataset": "get_it_done_requests",
+          "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+          "tool": "aggregate_service_requests",
+          "tool_version": "1",
+          "metric": "request_id_count",
+          "metric_definition": "Distinct stored request IDs created in the selected radius and half-open interval.",
+          "value": 36,
+          "unit": "reports",
+          "location_id": "A",
+          "scope": {
+            "latitude": 32.84,
+            "longitude": -117.25,
+            "radius_meters": 800.0,
+            "start_inclusive": "2026-05-02T00:00:00-07:00",
+            "end_exclusive": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "filters": {
+            "exclude_linked_duplicates": false,
+            "group_by": "status",
+            "service_name": "Pothole",
+            "status": null,
+            "category_normalization": "uppercase_trim_collapse_whitespace_v1; no_synonym_mapping"
+          },
+          "provenance": {
+            "import_ids": null,
+            "source_file_sha256": null,
+            "source_freshness_verified": false,
+            "data_as_of": null,
+            "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577Z",
+            "source_updated_at": null,
+            "dataset_import_ids": [
+              2
+            ],
+            "dataset_imports": [
+              {
+                "id": 2,
+                "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+                "imported_at": "2026-10-28T06:19:28.788577+00:00",
+                "source_file": "get_it_done_requests_CD1_datasd.csv"
+              }
+            ],
+            "dataset_imports_truncated": false,
+            "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+          },
+          "quality": {
+            "completeness": "unknown",
+            "coordinate_precision": "source_coordinates_unverified",
+            "unlocated_within_radius": "not_determinable",
+            "dataset_records": 303225,
+            "dataset_located_records": 303225,
+            "dataset_unlocated_records": 0,
+            "geocoding_coverage": null,
+            "geocode_status_breakdown": null,
+            "dataset_dated_records": 303225,
+            "dataset_observed_start": "2016-05-20T16:10:00Z",
+            "dataset_observed_end": "2026-10-27T05:47:39Z"
+          },
+          "status": "partial",
+          "executed_at": "2026-11-02T22:53:45.776032Z",
+          "elapsed_ms": 830.9948000242002,
+          "buckets": [],
+          "groups": [
+            {
+              "service_name": null,
+              "status": "CLOSED",
+              "request_id_count": 35
+            },
+            {
+              "service_name": null,
+              "status": "REFERRED",
+              "request_id_count": 1
+            }
+          ],
+          "records": [],
+          "pagination": null,
+          "caveats": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair."
+          ],
+          "error_code": null
+        },
+        {
+          "evidence_id": "ev_62c72cd48f2b4df2a571cc9feaad4fec",
+          "query_id": "q_c62aa40c726c47da8626a46bb003f57e",
+          "domain": "service_requests",
+          "source_table": "citylens.service_requests",
+          "source_dataset": "get_it_done_requests",
+          "source_url": "https://data.sandiego.gov/datasets/get-it-done-reports/",
+          "tool": "aggregate_service_requests",
+          "tool_version": "1",
+          "metric": "request_id_count",
+          "metric_definition": "Distinct stored request IDs created in the selected radius and half-open interval.",
+          "value": 25,
+          "unit": "reports",
+          "location_id": "B",
+          "scope": {
+            "latitude": 32.85,
+            "longitude": -117.24,
+            "radius_meters": 800.0,
+            "start_inclusive": "2026-05-02T00:00:00-07:00",
+            "end_exclusive": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "filters": {
+            "exclude_linked_duplicates": false,
+            "group_by": "status",
+            "service_name": "Pothole",
+            "status": null,
+            "category_normalization": "uppercase_trim_collapse_whitespace_v1; no_synonym_mapping"
+          },
+          "provenance": {
+            "import_ids": null,
+            "source_file_sha256": null,
+            "source_freshness_verified": false,
+            "data_as_of": null,
+            "last_successful_local_ingestion_at": "2026-10-28T06:19:28.788577Z",
+            "source_updated_at": null,
+            "dataset_import_ids": [
+              2
+            ],
+            "dataset_imports": [
+              {
+                "id": 2,
+                "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+                "imported_at": "2026-10-28T06:19:28.788577+00:00",
+                "source_file": "get_it_done_requests_CD1_datasd.csv"
+              }
+            ],
+            "dataset_imports_truncated": false,
+            "snapshot_policy": "upsert_current_records_not_historical_snapshot"
+          },
+          "quality": {
+            "completeness": "unknown",
+            "coordinate_precision": "source_coordinates_unverified",
+            "unlocated_within_radius": "not_determinable",
+            "dataset_records": 303225,
+            "dataset_located_records": 303225,
+            "dataset_unlocated_records": 0,
+            "geocoding_coverage": null,
+            "geocode_status_breakdown": null,
+            "dataset_dated_records": 303225,
+            "dataset_observed_start": "2016-05-20T16:10:00Z",
+            "dataset_observed_end": "2026-10-27T05:47:39Z"
+          },
+          "status": "partial",
+          "executed_at": "2026-11-02T22:53:46.607571Z",
+          "elapsed_ms": 397.7609000285156,
+          "buckets": [],
+          "groups": [
+            {
+              "service_name": null,
+              "status": "CLOSED",
+              "request_id_count": 21
+            },
+            {
+              "service_name": null,
+              "status": "IN PROCESS",
+              "request_id_count": 4
+            }
+          ],
+          "records": [],
+          "pagination": null,
+          "caveats": [
+            "Geographic completeness and source freshness are not verified.",
+            "Import timestamps do not establish source freshness; upserts retain older records.",
+            "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+            "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+            "Counts measure request IDs, not distinct physical issues or public service quality.",
+            "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair."
+          ],
+          "error_code": null
+        }
+      ],
+      "limitations": [
+        "Geographic completeness and source freshness are not verified.",
+        "Import timestamps do not establish source freshness; upserts retain older records.",
+        "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+        "Imported Get It Done subset (including CD1 where present); citywide completeness is unknown.",
+        "Counts measure request IDs, not distinct physical issues or public service quality.",
+        "Reporting bias and missing coordinates can affect these counts; Closed does not prove repair.",
+        "Query circles overlap; counts may share records and are not independent samples.",
+        "User addresses are Census-interpolated estimates, not verified building-level positions."
+      ],
+      "limitation_codes": [
+        "coverage_unknown",
+        "freshness_unknown"
+      ],
+      "unsupported_dimensions": [],
+      "tool_trace_id": "trace_d65ec19ae6c54e399f2a8898e3483776",
+      "execution_plan": [
+        {
+          "name": "aggregate_service_requests",
+          "location": {
+            "id": "A",
+            "label": "[MOCK] 9000 Regents Dr, San Diego, CA",
+            "latitude": 32.84,
+            "longitude": -117.25
+          },
+          "radius_meters": 800.0,
+          "time_range": {
+            "start": "2026-05-02T00:00:00-07:00",
+            "end": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "collision_filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null
+          },
+          "period": "month",
+          "exclude_linked_duplicates": false,
+          "limit": 100,
+          "service_request_aggregation": {
+            "group_by": "status",
+            "service_name": "Pothole",
+            "status": null
+          }
+        },
+        {
+          "name": "aggregate_service_requests",
+          "location": {
+            "id": "B",
+            "label": "[MOCK] 9500 Gilman Dr, San Diego, CA",
+            "latitude": 32.85,
+            "longitude": -117.24
+          },
+          "radius_meters": 800.0,
+          "time_range": {
+            "start": "2026-05-02T00:00:00-07:00",
+            "end": "2026-11-02T00:00:00-08:00",
+            "calendar_timezone": "America/Los_Angeles"
+          },
+          "collision_filters": {
+            "min_injured": null,
+            "max_injured": null,
+            "min_killed": null,
+            "max_killed": null,
+            "hit_run": null,
+            "street_name": null,
+            "hit_run_level": null
+          },
+          "period": "month",
+          "exclude_linked_duplicates": false,
+          "limit": 100,
+          "service_request_aggregation": {
+            "group_by": "status",
+            "service_name": "Pothole",
+            "status": null
+          }
+        }
+      ],
+      "tool_calls": [
+        {
+          "query_id": "q_b44f227052754a7aade022be1e213b41",
+          "tool": "aggregate_service_requests",
+          "executed_at": "2026-11-02T22:53:45.776032Z",
+          "elapsed_ms": 830.9948000242002,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "aggregate_service_requests",
+            "location": {
+              "id": "A",
+              "label": "[MOCK] 9000 Regents Dr, San Diego, CA",
+              "latitude": 32.84,
+              "longitude": -117.25
+            },
+            "radius_meters": 800.0,
+            "time_range": {
+              "start": "2026-05-02T00:00:00-07:00",
+              "end": "2026-11-02T00:00:00-08:00",
+              "calendar_timezone": "America/Los_Angeles"
+            },
+            "collision_filters": {
+              "min_injured": null,
+              "max_injured": null,
+              "min_killed": null,
+              "max_killed": null,
+              "hit_run": null,
+              "street_name": null,
+              "hit_run_level": null
+            },
+            "period": "month",
+            "exclude_linked_duplicates": false,
+            "limit": 100,
+            "service_request_aggregation": {
+              "group_by": "status",
+              "service_name": "Pothole",
+              "status": null
+            }
+          },
+          "parameterized_sql": "SELECT * FROM citylens.aggregate_service_requests(%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+          "parameters": [
+            32.84,
+            -117.25,
+            800.0,
+            "2026-05-02T00:00:00-07:00",
+            "2026-11-02T00:00:00-08:00",
+            false,
+            "status",
+            "Pothole",
+            null
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT * FROM citylens.aggregate_service_requests(32.84, -117.25,800.0,'2026-05-02 00:00:00-07:00'::timestamptz,'2026-11-02 00:00:00-08:00'::timestamptz,false,'status','Pothole',NULL);\nROLLBACK;",
+          "result_rows": [
+            {
+              "service_name": null,
+              "status": "CLOSED",
+              "request_id_count": 35
+            },
+            {
+              "service_name": null,
+              "status": "REFERRED",
+              "request_id_count": 1
+            }
+          ]
+        },
+        {
+          "query_id": "q_c62aa40c726c47da8626a46bb003f57e",
+          "tool": "aggregate_service_requests",
+          "executed_at": "2026-11-02T22:53:46.607571Z",
+          "elapsed_ms": 397.7609000285156,
+          "status": "ok",
+          "error_code": null,
+          "arguments": {
+            "name": "aggregate_service_requests",
+            "location": {
+              "id": "B",
+              "label": "[MOCK] 9500 Gilman Dr, San Diego, CA",
+              "latitude": 32.85,
+              "longitude": -117.24
+            },
+            "radius_meters": 800.0,
+            "time_range": {
+              "start": "2026-05-02T00:00:00-07:00",
+              "end": "2026-11-02T00:00:00-08:00",
+              "calendar_timezone": "America/Los_Angeles"
+            },
+            "collision_filters": {
+              "min_injured": null,
+              "max_injured": null,
+              "min_killed": null,
+              "max_killed": null,
+              "hit_run": null,
+              "street_name": null,
+              "hit_run_level": null
+            },
+            "period": "month",
+            "exclude_linked_duplicates": false,
+            "limit": 100,
+            "service_request_aggregation": {
+              "group_by": "status",
+              "service_name": "Pothole",
+              "status": null
+            }
+          },
+          "parameterized_sql": "SELECT * FROM citylens.aggregate_service_requests(%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+          "parameters": [
+            32.85,
+            -117.24,
+            800.0,
+            "2026-05-02T00:00:00-07:00",
+            "2026-11-02T00:00:00-08:00",
+            false,
+            "status",
+            "Pothole",
+            null
+          ],
+          "read_only_sql": "BEGIN TRANSACTION READ ONLY;\nSELECT * FROM citylens.aggregate_service_requests(32.85, -117.24,800.0,'2026-05-02 00:00:00-07:00'::timestamptz,'2026-11-02 00:00:00-08:00'::timestamptz,false,'status','Pothole',NULL);\nROLLBACK;",
+          "result_rows": [
+            {
+              "service_name": null,
+              "status": "CLOSED",
+              "request_id_count": 21
+            },
+            {
+              "service_name": null,
+              "status": "IN PROCESS",
+              "request_id_count": 4
+            }
+          ]
+        }
+      ]
+    },
+    "diagnostic_codes": []
+  },
+  "passed": true
+}

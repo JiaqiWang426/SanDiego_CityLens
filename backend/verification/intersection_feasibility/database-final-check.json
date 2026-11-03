@@ -1,0 +1,14 @@
+{
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "unchanged": true,
+  "mode": "restricted-reader read-only; no update SQL"
+}

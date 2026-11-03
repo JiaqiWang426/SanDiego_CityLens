@@ -1,0 +1,47 @@
+{
+  "accepted_node_max_endpoint_distance_m": 0.0011,
+  "accepted_pairs_above_alignment_thresholds_m": {
+    "0.001": 1,
+    "0.01": 0,
+    "0.1": 0,
+    "0.5": 0,
+    "1": 0,
+    "2": 0
+  },
+  "pair_diagnostics": {
+    "invalid_or_out_of_envelope_road_geometry": 49,
+    "missing_endpoint_identity": 2
+  },
+  "candidate_rejection_reasons": {
+    "nonintersection_type_conflicts_with_incident_topology": 11,
+    "grade_separated_levels": 72,
+    "road_status_not_confirmed_constructed": 144,
+    "road_class_requires_review": 101,
+    "pseudo_crossing_node": 50,
+    "not_a_physical_intersection_type": 15,
+    "fewer_than_three_incident_segments": 17,
+    "node_type_requires_review": 20
+  },
+  "invalid_source_reasons": {
+    "missing_street": 1,
+    "descriptive_location_not_two_roads": 224,
+    "compound_or_incomplete_street_description": 89,
+    "same_road_twice": 145
+  },
+  "grade_conflict_pairs": 69,
+  "multiple_candidates_max_supported_nodes": 3,
+  "accepted_incident_classes": {
+    "4": 1911,
+    "5": 3554,
+    "3": 1912,
+    "Z": 84,
+    "9": 59,
+    "2": 25,
+    "7": 22,
+    "A": 8,
+    "1": 1,
+    "M": 21,
+    "6": 3
+  },
+  "accepted_pairs_with_additional_rejected_nodes": 4
+}

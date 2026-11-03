@@ -1,0 +1,11 @@
+{
+  "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+  "mode": "deployment_preflight",
+  "collision_updates": 0,
+  "counts": {
+    "eligible": 996
+  },
+  "approved_reports": 996,
+  "stage_c_allowlist_reports": 4112,
+  "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+}

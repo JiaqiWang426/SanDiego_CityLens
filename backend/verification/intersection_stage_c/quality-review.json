@@ -1,0 +1,24 @@
+{
+  "quality_sample_sha256": "d3f3decaf55efc6d7443f2d642dd03f84e6148a5a410f806466b650df86bbd82",
+  "reviewed_at": "2026-11-02T22:20:00-08:00",
+  "reviewer": "Claude Code (AI assistant) bounded Stage C quality inspection. This is NOT a deployment approval and authorizes no database write.",
+  "scope": "64 passed pairs / 128 reports in quality-sample.json, plus automated screening of all 1,925 passed pairs and manual reading of every failed pair.",
+  "evidence_inspected": "Frozen TIGERweb identify responses (exact named-road distances, MTFCC, all named roads within 30 m, separation and crossing angle of the two named lines) and SanGIS incident segments (class, status, junction levels). No imagery, field survey or historical source was available.",
+  "sample_findings": {
+    "both_named_roads_within_1m": 59,
+    "largest_named_road_distance_m": 9.147,
+    "tiger_named_lines_touch_or_cross": 64,
+    "low_angle_cases": "4 (E BEYER BLVD/OTAY MESA RD, HIDDEN VALLEY RD/TORREY PINES RD, ACADEMY ST/BERYL ST, CYPRESS CANYON PARK DR/POMERADO RD): Y-junctions or name-continuation junctions where the two named roads still meet at the node.",
+    "ramp_or_highway_context": "5 sample pairs; all incident SanGIS segments at the junction are level 1 and the ramps are ramp terminals meeting surface streets. No freeway mainline (TIGER S1100) was matched.",
+    "strata_covered": "All 9 police divisions, every collision year 2016-2026, all four road-class groups, directional and complex names."
+  },
+  "population_screening_review": {
+    "limited_access_or_ramp_context": "45 passed pairs: ramp terminals (SanGIS class 9) or state routes running as surface streets (class 2, TIGER S1200), all at junction level 1. Judged ordinary at-grade junctions, not grade-separation false positives.",
+    "near_parallel_named_lines": "35 passed pairs: name-continuation junctions (for example NIMITZ BLVD/SUNSET CLIFFS BLVD) or Y-junctions. Eight are the same base street with a changed directional prefix (for example BROADWAY/W BROADWAY), 12 reports. The node is the unique place the two named segments meet, so the coordinate is determinate. Whether an officer meant that point is a reporting-semantics limitation, documented rather than treated as a systematic false positive.",
+    "tiger_named_lines_separated_over_5m_or_named_road_15_to_30m": "9 distinct passed pairs: TIGER places one named road 6-29 m from the node, typically a short cross street or private-road entrance drawn ending before the main road. Isolated digitizing differences, within the documented 30 m diagnostic; the SanGIS node has exact topology."
+  },
+  "failed_pairs_review": "The 22 pairs whose TIGER named road lies more than 30 m from the node show real source disagreements (for example HOTEL CIR N where TIGER names HOTEL CIR S at the node, PARK BLVD where TIGER names N 12TH AVE, CARMEL VISTA RD 46 m away). They stay excluded; no alias or repair was attempted.",
+  "independence_limitation": "1,756 of 1,925 passed pairs have both TIGER named lines within 0.1 m of the SanGIS node. Centimetre agreement indicates TIGER road geometry in this area largely shares lineage with local (SanGIS/SANDAG) centrelines. The check corroborates names and position across two published products; it is not an independent survey and cannot detect an error both inherited.",
+  "systematic_issue_detected": false,
+  "conclusion": "No systematic false-positive pattern was found in the sample or the automated population screen. The allowlist may proceed to separate human review and explicit approval. It remains intersection_approximate, present-day topology only."
+}

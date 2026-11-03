@@ -1,0 +1,72 @@
+[
+  {
+    "id": "01",
+    "census_valid": 0,
+    "sangis_valid_features": 3,
+    "sangis_distinct": 2,
+    "placement": [
+      "S",
+      "C",
+      "C"
+    ]
+  },
+  {
+    "id": "02",
+    "census_valid": 1,
+    "sangis_valid_features": 1,
+    "sangis_distinct": 1,
+    "placement": [
+      "S"
+    ]
+  },
+  {
+    "id": "03",
+    "census_valid": 1,
+    "sangis_valid_features": 1,
+    "sangis_distinct": 1,
+    "placement": [
+      "R"
+    ]
+  },
+  {
+    "id": "04",
+    "census_valid": 0,
+    "sangis_valid_features": 1,
+    "sangis_distinct": 1,
+    "placement": [
+      "S"
+    ]
+  },
+  {
+    "id": "05",
+    "census_valid": 1,
+    "sangis_valid_features": 0,
+    "sangis_distinct": 0,
+    "placement": []
+  },
+  {
+    "id": "06",
+    "census_valid": 1,
+    "sangis_valid_features": 0,
+    "sangis_distinct": 0,
+    "placement": []
+  },
+  {
+    "id": "07",
+    "census_valid": 1,
+    "sangis_valid_features": 1,
+    "sangis_distinct": 1,
+    "placement": [
+      "S"
+    ]
+  },
+  {
+    "id": "08",
+    "census_valid": 1,
+    "sangis_valid_features": 1,
+    "sangis_distinct": 1,
+    "placement": [
+      "S"
+    ]
+  }
+]

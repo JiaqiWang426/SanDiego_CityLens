@@ -1,0 +1,175 @@
+{
+  "address_id": "23",
+  "provider": "sangis",
+  "input_address": "10615 Calle Mar De Mariposa, San Diego, CA 92130",
+  "request_url": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0/query?where=addrnmbr%3D10615+AND+UPPER%28addrname%29+IN+%28%27CALLE+MAR+DE+MARIPOSA%27%29&outFields=objectid%2Caddrnmbr%2Caddrfrac%2Caddrpdir%2Caddrname%2Caddrsfx%2Caddrpostd%2Caddrunit%2Caddrzip%2Ccommunity%2Caddrjur%2Cstate%2Cplacement_location%2Casource%2Capn%2Croadsegid&outSR=4326&returnGeometry=true&resultRecordCount=200&f=json",
+  "fetched_at": "2026-11-03T00:18:35.398298+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "addrfrac": null,
+          "addrname": "CALLE MAR DE MARIPOSA",
+          "addrsfx": null,
+          "addrzip": "92130",
+          "addrpostd": null,
+          "community": "SAN DIEGO",
+          "addrpdir": null,
+          "asource": "M",
+          "roadsegid": null,
+          "placement_location": "C",
+          "addrunit": null,
+          "state": "CA",
+          "objectid": 883145,
+          "apn": "3077800100",
+          "addrnmbr": 10615
+        },
+        "geometry": {
+          "x": -117.22653726088315,
+          "y": 32.91299668738116
+        }
+      }
+    ],
+    "exceededTransferLimit": false,
+    "hasM": false,
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "modelName": "objectid",
+        "defaultValue": null,
+        "name": "objectid",
+        "length": 4,
+        "alias": "objectid",
+        "type": "esriFieldTypeOID"
+      },
+      {
+        "modelName": "ADDRNMBR",
+        "defaultValue": null,
+        "name": "addrnmbr",
+        "alias": "NUMBER",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "ADDRFRAC",
+        "defaultValue": null,
+        "name": "addrfrac",
+        "length": 3,
+        "alias": "FRACTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPDIR",
+        "defaultValue": null,
+        "name": "addrpdir",
+        "length": 2,
+        "alias": "PREDIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRNAME",
+        "defaultValue": null,
+        "name": "addrname",
+        "length": 30,
+        "alias": "NAME",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRSFX",
+        "defaultValue": null,
+        "name": "addrsfx",
+        "length": 4,
+        "alias": "SUFFIX",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPOSTD",
+        "defaultValue": null,
+        "name": "addrpostd",
+        "length": 2,
+        "alias": "POST_DIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRUNIT",
+        "defaultValue": null,
+        "name": "addrunit",
+        "length": 8,
+        "alias": "UNIT",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRZIP",
+        "defaultValue": null,
+        "name": "addrzip",
+        "length": 5,
+        "alias": "ZIP",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "COMMUNITY",
+        "defaultValue": null,
+        "name": "community",
+        "length": 20,
+        "alias": "POSTAL_COMMUNITY",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRJUR",
+        "defaultValue": null,
+        "name": "addrjur",
+        "length": 2,
+        "alias": "JURISDICTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "STATE",
+        "defaultValue": "CA",
+        "name": "state",
+        "length": 2,
+        "alias": "STATE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "PLACEMENT_LOCATION",
+        "defaultValue": null,
+        "name": "placement_location",
+        "length": 1,
+        "alias": "PLACEMENT_LOCATION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "SOURCE",
+        "defaultValue": null,
+        "name": "asource",
+        "length": 1,
+        "alias": "ASOURCE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "APN",
+        "defaultValue": null,
+        "name": "apn",
+        "length": 10,
+        "alias": "APN",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ROADSEGID",
+        "defaultValue": null,
+        "name": "roadsegid",
+        "alias": "ROADSEGID",
+        "type": "esriFieldTypeInteger"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPoint"
+  },
+  "transport_status": "ok",
+  "latency_ms": 274.32
+}

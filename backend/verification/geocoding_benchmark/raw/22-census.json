@@ -1,0 +1,55 @@
+{
+  "address_id": "22",
+  "provider": "census",
+  "input_address": "4070 Huerfano Ave, San Diego, CA 92117",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4070+Huerfano+Ave&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92117",
+  "fetched_at": "2026-11-03T00:18:34.134971+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92117",
+          "city": "San Diego",
+          "street": "4070 Huerfano Ave",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "657398100"
+          },
+          "coordinates": {
+            "x": -117.217045202837,
+            "y": 32.816168115513
+          },
+          "addressComponents": {
+            "zip": "92117",
+            "streetName": "HUERFANO",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "4000",
+            "state": "CA",
+            "suffixType": "AVE",
+            "toAddress": "4098",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "4070 HUERFANO AVE, SAN DIEGO, CA, 92117"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 411.877
+}

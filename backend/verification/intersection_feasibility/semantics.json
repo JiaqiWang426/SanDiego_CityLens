@@ -1,0 +1,16 @@
+{
+  "source": "https://www.sandiego.gov/sites/default/files/appendices_-_6-10.pdf",
+  "source_pages_zero_based": [131, 133, 134, 137, 139, 146, 147],
+  "node_relationship": "Road endpoint FNODE/TNODE values reference the Roads_Intersection INTERID, not its OBJECTID.",
+  "levels": "Endpoint codes express relative vertical separation: 0 below ground, 1 generally ground, 2 through 9 progressively above the base. A segment can transition levels; these are not measured elevations.",
+  "node_types": {
+    "I": "Normal intersection of at least three segments",
+    "P": "Pseudo node, including under/over crossings",
+    "N": "Road name change",
+    "E": "End of road",
+    "C": "Cul-de-sac",
+    "X": "Multiple use; requires review rather than an assumed physical intersection"
+  },
+  "current_domains": "Live 2026 layer domains are archived separately and take precedence for current field types/codes; the older official documentation supplies semantics, not a current road survey.",
+  "precision": "Candidate intersection estimates only, never verified historical accident positions."
+}

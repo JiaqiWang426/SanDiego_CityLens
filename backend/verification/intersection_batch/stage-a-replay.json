@@ -1,0 +1,733 @@
+{
+  "pairs": 80,
+  "same_statuses": 80,
+  "same_node_decisions": 80,
+  "same_node_evidence": 80,
+  "max_coordinate_delta_degrees": 1.1931666534792384e-05,
+  "max_coordinate_delta_m": 1.2352190679615564,
+  "comparisons": [
+    {
+      "pair_id": "6825450a535c20e4",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1898797495746294e-05,
+      "coordinate_delta_m": 1.233743489428866
+    },
+    {
+      "pair_id": "5bac3bf0c5ce7f9d",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "371bcc7c6380874c",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1897872241206642e-05,
+      "coordinate_delta_m": 1.233716429470142
+    },
+    {
+      "pair_id": "e8b5f8e11ba08bdc",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "242251467d3df5ed",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1896881034090256e-05,
+      "coordinate_delta_m": 1.2334580558368309
+    },
+    {
+      "pair_id": "1431bea964cb7690",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1893694917830544e-05,
+      "coordinate_delta_m": 1.2332218544176146
+    },
+    {
+      "pair_id": "33863e35b01ca5d7",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "90f2e3cb4c5b5a01",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1883456068062515e-05,
+      "coordinate_delta_m": 1.2326805734694015
+    },
+    {
+      "pair_id": "5419a381204aed34",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.189949904301102e-05,
+      "coordinate_delta_m": 1.2337886052789333
+    },
+    {
+      "pair_id": "a49d7faf014bdfd6",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1900756248905964e-05,
+      "coordinate_delta_m": 1.2336631900829247
+    },
+    {
+      "pair_id": "c2c249e891c81840",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "d63bbd0d867ecd0c",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1868745446008688e-05,
+      "coordinate_delta_m": 1.23231840934369
+    },
+    {
+      "pair_id": "7caef198ccf53333",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "5d1da8b6686c07e3",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "520bb69be6c08d29",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.190781100035565e-05,
+      "coordinate_delta_m": 1.233470824268015
+    },
+    {
+      "pair_id": "2c4aa47e8a6ae698",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "c91c087bd666ed94",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1898791129283381e-05,
+      "coordinate_delta_m": 1.2337335034916934
+    },
+    {
+      "pair_id": "6f084fcabd2a0441",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.190417368945873e-05,
+      "coordinate_delta_m": 1.2328313431142344
+    },
+    {
+      "pair_id": "7e06819094d49ca7",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1878772653517444e-05,
+      "coordinate_delta_m": 1.2325039151170694
+    },
+    {
+      "pair_id": "72bc67aca24d5a9b",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1926324731348359e-05,
+      "coordinate_delta_m": 1.2352190679615564
+    },
+    {
+      "pair_id": "ab3ab4491b2668cb",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "cdf701920b3f8d9a",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "23f74dbbfcc66159",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1916244474718951e-05,
+      "coordinate_delta_m": 1.2338386719305254
+    },
+    {
+      "pair_id": "74e9049faea52192",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "58de3277813b78ef",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.192913396153017e-05,
+      "coordinate_delta_m": 1.2348768225974223
+    },
+    {
+      "pair_id": "c02a5559beaabb64",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "f27d12d6d3ce3dd1",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "91c70f4d75e11134",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "fbe9d5587208edec",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1882930465390018e-05,
+      "coordinate_delta_m": 1.2324934515397543
+    },
+    {
+      "pair_id": "25a759e3eb9f98bd",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "12bd1b6b62a13541",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "a8e073f7592f2851",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1875787507165114e-05,
+      "coordinate_delta_m": 1.2322007045047254
+    },
+    {
+      "pair_id": "af18c2dc9653ffc1",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "b6dcd74fcab869d3",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "84bfef0a9a3ef0f6",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "9e8db964c157600d",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.193078958294791e-05,
+      "coordinate_delta_m": 1.234796379433055
+    },
+    {
+      "pair_id": "905847d2bd52bf62",
+      "archived_status": "multiple_candidates",
+      "local_status": "multiple_candidates",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1931197192893706e-05,
+      "coordinate_delta_m": 1.2347923183615839
+    },
+    {
+      "pair_id": "26f196ec89750829",
+      "archived_status": "no_intersection",
+      "local_status": "no_intersection",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1897996145648904e-05,
+      "coordinate_delta_m": 1.2333569049279074
+    },
+    {
+      "pair_id": "fd6717cd1867e44b",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "57f77b98841d3b45",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.190746473866966e-05,
+      "coordinate_delta_m": 1.2341208344797034
+    },
+    {
+      "pair_id": "5487dec9ff4399aa",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1918899645024794e-05,
+      "coordinate_delta_m": 1.23478093936751
+    },
+    {
+      "pair_id": "9c617bbd06bf6252",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1878094596795563e-05,
+      "coordinate_delta_m": 1.2329184978380667
+    },
+    {
+      "pair_id": "2f975734c0bf7cbf",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "900f18aa8dc60026",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "21822aa9cc663dc8",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "f0ca740cd7227de8",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.188826595921455e-05,
+      "coordinate_delta_m": 1.2330449107749792
+    },
+    {
+      "pair_id": "b75a1503e631c91b",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "f203a38ba9f331a9",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "5cdc069cf0f488f2",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "595db6890393b779",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1906733533351144e-05,
+      "coordinate_delta_m": 1.2333757463700852
+    },
+    {
+      "pair_id": "83ded7d619056bdb",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.192795284055137e-05,
+      "coordinate_delta_m": 1.2352071131515012
+    },
+    {
+      "pair_id": "706df0e3cdd8e05b",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "0d2f8fdaed9db806",
+      "archived_status": "no_intersection",
+      "local_status": "no_intersection",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "266b5593b09220cd",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1925906164833577e-05,
+      "coordinate_delta_m": 1.2350372071402433
+    },
+    {
+      "pair_id": "a1d2ddd01484cc0a",
+      "archived_status": "topology_uncertain",
+      "local_status": "topology_uncertain",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1895193651412228e-05,
+      "coordinate_delta_m": 1.2335752452942887
+    },
+    {
+      "pair_id": "da073203a6dc928d",
+      "archived_status": "multiple_candidates",
+      "local_status": "multiple_candidates",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1892623618336984e-05,
+      "coordinate_delta_m": 1.2333753902335232
+    },
+    {
+      "pair_id": "9c151b8ea4b00545",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "3e223dbfc4b1c612",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "b3c9014a58966f3f",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1919653687186837e-05,
+      "coordinate_delta_m": 1.2343979251560235
+    },
+    {
+      "pair_id": "3161b253df282933",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.189673643864353e-05,
+      "coordinate_delta_m": 1.2334475621433076
+    },
+    {
+      "pair_id": "55f41d68bca0ae79",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1900371106321472e-05,
+      "coordinate_delta_m": 1.2337002147455551
+    },
+    {
+      "pair_id": "9fe48c75602c6a69",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "35a2f591f7614458",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.188727175360782e-05,
+      "coordinate_delta_m": 1.2329912553700189
+    },
+    {
+      "pair_id": "84d33de50a19d0be",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1911837944467152e-05,
+      "coordinate_delta_m": 1.2344265919821789
+    },
+    {
+      "pair_id": "4fcc2235bb8bf02d",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "d9c24079992185ae",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "cceb801f6bc4eca6",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "b46ee7c993cfcc30",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "1cab59e41f62266f",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "2efdc197ea9470b5",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "1856b709ba16546b",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1908627044476816e-05,
+      "coordinate_delta_m": 1.2330196840662673
+    },
+    {
+      "pair_id": "3cc201ffa91b84a2",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "2aa84f9a5b0e0c8e",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "eb7fba12299df4f4",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "dda989896d8e2409",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "c9278503109331ae",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "147da529755a7885",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1931666534792384e-05,
+      "coordinate_delta_m": 1.2348305596685436
+    },
+    {
+      "pair_id": "fceae64b11598df3",
+      "archived_status": "accepted_candidate",
+      "local_status": "accepted_candidate",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 1.1868412357785019e-05,
+      "coordinate_delta_m": 1.2323208644251773
+    },
+    {
+      "pair_id": "461a50053a19400d",
+      "archived_status": "street_not_found",
+      "local_status": "street_not_found",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    },
+    {
+      "pair_id": "4f7ab65d20760248",
+      "archived_status": "invalid_source",
+      "local_status": "invalid_source",
+      "same_node_decisions": true,
+      "same_node_evidence": true,
+      "coordinate_delta_degrees": 0,
+      "coordinate_delta_m": 0
+    }
+  ],
+  "coordinate_comparison_ceiling_m": 2,
+  "coordinate_comparison_basis": "Native EPSG:2230 transformed with PostGIS/PROJ NAD83 to WGS84 (1); archived provider outSR coordinates differ slightly. Same node and classification must match exactly. Coordinate comparison uses the existing Stage A 2m consistency ceiling; it does not change matching, connectivity or accuracy claims.",
+  "passed": true
+}

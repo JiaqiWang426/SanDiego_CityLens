@@ -1,0 +1,161 @@
+report_id,geocode_status,police_beat,primary_street,intersecting_street,block_number,address_key,reason,provider_status,geocode_provider,geocode_precision,longitude,latitude,stored_components_consistent,exact_named_road_segments,number_range_supported_segments,distance_to_named_road_m,distance_to_number_range_road_m
+19203596,ambiguous,614,FT E OF WCL OF 4600 NIMITZ BLVD,,10,8bbc053df15b32a8b069c5abe8a6980ef6a460da8ae115d69ef11a7a1ce68d8a,returned_number_differs,Match,US Census Geocoder Batch,,,,True,0,0,,
+19201816,ambiguous,233,BLACK MTN RD,,12500,dd1cf50b85bc3e55c6952df738ebf492cd80dfc444017daa8502b765515d3b7c,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,80,1,,
+21202104,ambiguous,438,CALLE TRES LOMAS,,2400,909ac68d9595238cdafeccbd85a60324c674ed789e42dca76f979062e5c4a398,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,4,1,,
+22204823,ambiguous,823,UNIVERSITY AVE PARKING LOT,,5900,c5ffcb7fa11938ca2950417f0cff7597b4806fda5bd0c097e95e0cfd7db91a68,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+19202133,ambiguous,312,DOCOS PL,,5000,69274e6507e4b0c50e7ed5368ff7166f1ba7aaa0ecf2668060297dbf2ed41c60,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+20202432,ambiguous,521,"""F"" ST",,1200,5b5139303322031eae7bf7d3b7c0704a56907e86676d02df4ee65295c5860972,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+21205759,ambiguous,712,CAM DE LA PLAZA,,4400,a4ae8e3c6808553549fa9ef7b9f5b1322b7d21a812fca3a92699a90dc9a8c425,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,10,1,,
+19201428,ambiguous,934,S OF THE NCL 3800 QUARTER MILE DR,,10,86e091ff95e08b6d591b0b20adb9b7043c650d1bf0032a63fbb603f268692d8b,returned_number_differs,Match,US Census Geocoder Batch,,,,True,0,0,,
+24203610,ambiguous,315,CAM DEL ESTE ( INTERSTATE,,2000,a71eb1e122d8c1e3b9d7e24be36563ff65223eba07d9e48f54f8b6ecbbce91a2,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+26200227,ambiguous,124,TORREY PINES RD,,1500,bf5653376006d8ab71d3fd39663792eb6494bed60814a5d283dd6b08c02fceb8,provider_tie,Tie,US Census Geocoder Batch,,,,True,38,1,,
+192750,ambiguous,613,WEST POINT LOMA BLVD,,4000,55455996913e022866558a56d96c8bea872b57efaa1f7b5ff5ac583e50940166,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,32,1,,
+183755,ambiguous,233,CARMEL MTN RD,,10800,a588f9e970e67d26be038c1aa4aa1b0451e6bd7df19705ac758386f961d9ff22,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,90,1,,
+192403,ambiguous,445,EUCLID AVE,,1100,fd2fc29ce63679c3369801e2f89729a711f8157ccb3da9e94d1e8a40368bcc95,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,104,2,,
+19206439,ambiguous,824,COLLWOOD,,5000,58025d63c7a118f823cd96e91bd2c01814666374a7a2a38384f1a487c0c7fa35,provider_tie,Tie,US Census Geocoder Batch,,,,True,0,0,,
+26202545,ambiguous,325,MISSION GORGE RD,,7700,a7d9c9376893c4819d1d8124b077250e9807886d729826917d80aa5110cc627a,provider_tie,Tie,US Census Geocoder Batch,,,,True,83,2,,
+20206012,ambiguous,521,11TH AVE,,400,08988e2cf23bf055cbdbf836f086236a7b6bffe7fa664b12aeb2869d47053964,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,15,1,,
+23200305,ambiguous,721,PALM AVE,,1300,76263697b644298279fbb5c39945c2cbc7ecb947a9fe6e61ddda608aa05de58d,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,182,2,,
+26204955,ambiguous,937,PASEO DEL SUR,,16400,993e3f40a2eecc2e4e723536c4dc3abf0bdae5a60b42feba07841c41861cc09a,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,16,1,,
+20207291,ambiguous,115,REGENTS PARK ROW,,4100,78b71b4b044c914017696d7a40daf7c9435edeb0a338a0e066138b36ae6a87cd,provider_tie,Tie,US Census Geocoder Batch,,,,True,3,1,,
+25044187,ambiguous,621,LONG BRIDGE,,4700,beed34ef3b25eaa7b2d893ef3c9374f7b368f50e8eeaa9744ee1095eb061c49d,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+1608366,ambiguous,233,PASEO MONTALBAN,,9800,18939940aebb8530f316688fbc9fd82bf530433e4450fc07bfee15e327456c59,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,10,1,,
+26200542,ambiguous,444,GATEWAY DR,,600,d9311d4c3faa25031e96abdf7b9e0cddb72274e84d9010f57d310adfff12f09f,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,6,0,,
+1608984,ambiguous,814,WEST MTN VIEW DR,,4800,65ad5a513fbfd0bce8bb9e60f82f77b44e356a368177ba5bb095f3e6161b313c,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,7,1,,
+180528,ambiguous,315,CAM DEL RIO SOUTH,,3400,718fa6c7ac1d38410b886fad4452e64de06a353ccb0a8b110e8e35de7ded817b,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,32,1,,
+19206625,ambiguous,512,KEARNY AVE,,2000,4c2656ceb125cd4669404a4a2fc630c3537bb252cd131618ff55d23aa287220e,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,9,1,,
+22203626,ambiguous,712,CAM DE LA PLAZA,,4400,a4ae8e3c6808553549fa9ef7b9f5b1322b7d21a812fca3a92699a90dc9a8c425,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,10,1,,
+23202678,ambiguous,934,ONE PASEO PL,,3200,0ad0b54d0f064c6cb978ab13362b8d06ea5c55360db0f706df9555f8fb59f68f,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+191817,ambiguous,111,CAMTO AGUILAR,,3800,989380623fe0941f72340d1453ff1c0f9e59c9a13e38b1792326f818590a2cc6,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,1,1,,
+24202098,ambiguous,627,06TH EXT ST,,3900,6bb994fa02d79c8c320b3b7e5ad7a7297f8b19ade940a4595dee5325f7dbab30,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,4,1,,
+22202647,ambiguous,234,PASEO LUCIDO,,13000,85cfaa710af6273adda221a72499aff09c28b22aa09839b8a81a3e60f93fca26,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,20,1,,
+23206079,ambiguous,441,BLOCK OF IMPERIAL AVE,,3800,fd4edb41e59bdff8dfad81920582bb89b6a8522921e6be06f6332faf38528f20,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+181521,ambiguous,824,TALMADGE CANYON RW ROW,,4600,c652ab65317be2461ce7dfaf1668e15ef4073bd62efb1c3339b858b5f6320d89,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+20205717,ambiguous,323,ARIROSO AVE,,6500,2d4cab962ebe9b6d7b601a565d5c6c835f8bba367ab562e63c9ba77fda8daba8,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+19203409,ambiguous,516,FT S OF NCL 3000 L ST,,10,e0357858d294ca0c72bbe7f1d7215d44b9d8ed63993ade1a3edf9cdea51d6a82,returned_number_differs,Match,US Census Geocoder Batch,,,,True,0,0,,
+21204400,ambiguous,712,CAM DE LA PLAZA,,4500,7ce2a56ac7db04e8fbe6dab6d969629ce77acd8a26a105c7b57b3fe02db4bc68,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,10,1,,
+21057944,ambiguous,934,CARMEL VALLEY RD,,5400,5d54529c51a6a5563ce997c4653ff0d8e59b706cd2b056f8d081ed50901ee338,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,75,1,,
+20062637,ambiguous,116,JAMANO AVE,,4900,ab5e7e9c2df4296c712fbcbd7094127577e5cd655713d1d0b57b77669b490445,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+20204023,ambiguous,611,FT N OF NCL 2700 KURTZ ST,,10,6c26ae92b574ad9c7044ae0b4de4e2802f5598e11fdbe47d077cf3b0c3497bec,returned_number_differs,Match,US Census Geocoder Batch,,,,True,0,0,,
+188283,ambiguous,241,MIRA LARGO TER,,10700,dd9128c5968a673676200031fb8a56a2c71cd7751160b05b233ae155f29f1801,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,0,0,,
+189238,ambiguous,445,EUCLID AVE,,1100,fd2fc29ce63679c3369801e2f89729a711f8157ccb3da9e94d1e8a40368bcc95,returned_street_components_differ,Match,US Census Geocoder Batch,,,,True,104,2,,
+188615,matched,622,FRIARS RD,,5500,898745d6aaa5f537c5f30c75b06eb478a07448f4914f50e451b6e1b75b7154b7,,Match,US Census Geocoder Batch,block_approximate,-117.193388521047,32.764044308457,True,89,1,5.542,5.542
+24205035,matched,232,INNOVATION DR,,15000,e2a3aa6c02df8a53c2ec51fcbb5f9cecd6edb8ff935a6d3e89d0d814487dc326,,Match,US Census Geocoder Batch,block_approximate,-117.077051272241,32.988668811076,True,3,1,5.18,5.18
+20052394,matched,438,MARMIL WAY,,5900,a1bc1d838a6a8ac1b03a844b4c1ff47926e9de2d60209b41b5369c360bc87f51,,Match,US Census Geocoder Batch,block_approximate,-117.058657343533,32.666259485748,True,1,1,6.051,6.051
+22203207,matched,813,GEORGIA ST,,3900,3d02eb0a69228d68ef38d173b31e525f45fd40c2c2ebc6af3dc79cb20ebd788b,,Match,US Census Geocoder Batch,block_approximate,-117.145033559081,32.748486891323,True,27,1,5.229,5.229
+20045207,matched,313,JOHN J MONTGOMERY DR,,3700,0b911b9806c839875ec7fc5b9302d591b9c0c5855426ab6872e73c7191c50e11,,Match,US Census Geocoder Batch,block_approximate,-117.140210661953,32.810541009802,True,2,1,5.266,7.808
+22202855,matched,516,IMPERIAL AVE,,3100,8cddca6b9fc1c59ffa12fdbdfafa9137187be9b8348b3e94a55030a58c629d77,,Match,US Census Geocoder Batch,block_approximate,-117.127319321816,32.706473607823,True,102,1,5.756,5.756
+24205177,matched,725,OCEAN GATE LN,,5500,9b972e9aac08c57e49d8e912146b0a4ee6d1d9b8f12c2c594093f2b705445b57,,Match,US Census Geocoder Batch,block_approximate,-117.012460454496,32.570322283682,True,6,1,8.246,40.852
+21200096,matched,934,KIBBINGS RD,,13600,f5a4ac1353140ee6642f941bb80b6ea2f4c63b1cbccb6384ee8ebb62b3afac96,,Match,US Census Geocoder Batch,block_approximate,-117.227404400699,32.963133906934,True,6,1,6.34,6.34
+21200479,matched,115,JUDICIAL DR,,9000,6df037575d1ede62a56ee9dee271796ca0386aa69564106d9429fde899ef2c2d,,Match,US Census Geocoder Batch,block_approximate,-117.202834632949,32.871430571892,True,13,1,6.335,109.589
+1610387,matched,614,BRIGHTON AVE,,4900,213f5b134b7d87340e384aad68a318b19cdabbcdd7e4ab5d461c93f535408893,,Match,US Census Geocoder Batch,block_approximate,-117.246447792738,32.749219087292,True,18,1,6.57,6.57
+21202431,matched,242,MERCY RD,,9900,6b085dc8feb543cc3c3cf3ead980dade1a420b63cb2fa572542adcc6a9426f20,,Match,US Census Geocoder Batch,block_approximate,-117.11282694549,32.937123364842,True,12,1,6.048,81.109
+23202259,matched,441,OCEAN VIEW BLVD,,3400,135e721d4aaeeda1cc3f78a08048d4acc4db4857747e51e19b1c8493a7defb96,,Match,US Census Geocoder Batch,block_approximate,-117.120372662844,32.701270907644,True,58,1,5.605,9.465
+25206427,matched,813,OHIO ST,,4200,9d867be7f0e76ad0fd17cd030120f04326395f854b94a072ffd7c00cc3c70071,,Match,US Census Geocoder Batch,block_approximate,-117.128997330509,32.754141097701,True,13,1,5.293,5.293
+19206431,matched,321,CAMINO DEL RIO SOUTH,,3900,1790fc0b459dd302af2de175647588cd34f9b78e0551bdf9f0572b777bdec9ca,,Match,US Census Geocoder Batch,block_approximate,-117.108724116623,32.77791781483,True,32,1,5.838,5.838
+20204460,matched,511,SAMPSON ST,,1200,2e25e31fed8e496adb0dadf84f996178cc30118efea8c1b74935bf35c537ac39,,Match,US Census Geocoder Batch,block_approximate,-117.141742812866,32.695587003196,True,27,1,4.07,4.07
+23200941,matched,721,SATURN BLVD,,600,2f3730e6cbbf9cf3ce2dff91d18afc4579419b2d6a4d94ab40dbd247c935cacf,,Match,US Census Geocoder Batch,block_approximate,-117.092721424316,32.58577204274,True,31,1,5.249,5.249
+189745,matched,931,SCRANTON RD,,9400,3e1ad62e8ba76c6738da96c49f6dae97c5bf8eb78cda69f130f87138f904dd4b,,Match,US Census Geocoder Batch,block_approximate,-117.201602811958,32.892753025343,True,6,1,5.292,5.292
+191560,matched,122,BAYARD ST,,4400,acf6810cb67258cd5c3662a15471797291e91ea708964354785aff00b5a37690,,Match,US Census Geocoder Batch,block_approximate,-117.253176812609,32.79510147137,True,37,1,5.463,5.463
+19201692,matched,627,W WASHINGTON ST,,100,9b296555f4d9e6f5937e4b1558ae0ab2747b371ad5a52b56e90ebd8c28f25b0a,,Match,US Census Geocoder Batch,block_approximate,-117.163965846751,32.749961681139,True,42,2,5.823,5.823
+24044895,matched,242,PEGASUS AVE,,11200,6628f06d98794bda6bd60173c38cd6ed94f182b737c66f8940da8ffff3fa06e7,,Match,US Census Geocoder Batch,block_approximate,-117.127664196963,32.925587466637,True,10,1,5.285,7.791
+20201728,matched,433,RADIO DR,,6200,64f476e7c291d74400245263e1133d46d73ce148790292defedcdf94a167b57a,,Match,US Census Geocoder Batch,block_approximate,-117.06415002861,32.719403019036,True,11,1,5.0,5.0
+24202571,matched,834,WIGHTMAN ST,,4000,5f66ec0dc506503a1222b66f47ecbe96b07ce7cd045e2505b82917c603333408,,Match,US Census Geocoder Batch,block_approximate,-117.108118258556,32.747862741286,True,68,1,5.764,88.108
+24207262,matched,313,MURPHY CANYON RD,,4900,1753c6f6b56ce370961785981606ee4ef54d180d7f0c67091c32248cadc0c917,,Match,US Census Geocoder Batch,block_approximate,-117.119734307199,32.828374591185,True,17,1,5.361,5.361
+24206448,matched,512,S 32ND ST,,500,d046d5375265a713d36c9f595ae437947a13cfe2bf769a843d10fd89a347f155,,Match,US Census Geocoder Batch,block_approximate,-117.125260526806,32.701138243692,True,33,1,5.277,5.277
+22205273,matched,722,ORO VISTA RD,,1600,deaabf17e09726d23b0a84fbdad5475ae1adab31d9df132a991a0cb7b1a87d4b,,Match,US Census Geocoder Batch,block_approximate,-117.077881696474,32.567300238119,True,8,1,5.059,19.067
+22200251,matched,937,TANNER RIDGE RD,,15700,c49cd8d2527e5f17d0bff699a88c9e436aa85e5944dfd5c98afdcad3a9e538cd,,Match,US Census Geocoder Batch,block_approximate,-117.13269779898,33.015327097319,True,13,1,5.654,5.654
+25202467,matched,112,GENESEE AVE,,4200,31852f0758e2dda36e92e112bb2ef7b17b345985a0198b00766d930fd3b9f3c5,,Match,US Census Geocoder Batch,block_approximate,-117.181978766619,32.819356592514,True,89,1,5.59,5.59
+25027842,matched,622,VIA LAS CUMBRES,,1100,24eb612bf420b2f8959fb81b4a930feeefa306723c7700bc08f368ec0c412fa3,,Match,US Census Geocoder Batch,block_approximate,-117.183583508879,32.766750101011,True,10,1,4.928,52.867
+22202055,matched,242,MIRA MESA BLVD,,9400,516c2774ab70306f1ec2202d9741bb5feb79b560c6e9544f554568701fbccc29,,Match,US Census Geocoder Batch,block_approximate,-117.123340627023,32.917233843401,True,50,1,5.695,20.683
+24203753,matched,451,EUCLID AVE,,1500,8ce7e2ae6009b77447c5d31490317b51204527c322e1fc3a5225749703d26c78,,Match,US Census Geocoder Batch,block_approximate,-117.084985895458,32.720277479764,True,104,3,2.455,2.455
+22201802,matched,824,EL CAJON BLVD,,4700,79bdcf0d377c8c7ec1c6f975a6d432788ed832062933beeed894b5966afb6d88,,Match,US Census Geocoder Batch,block_approximate,-117.092885823546,32.756032191123,True,175,1,5.552,5.552
+21205493,matched,323,ADOBE FALLS RD,,5300,32053e6789998f81b896f9cbad8fd9be41106e987e49d8897683547dd3aedeec,,Match,US Census Geocoder Batch,block_approximate,-117.085049907414,32.782464802562,True,12,1,5.791,5.791
+26204576,matched,515,28TH ST,,100,c167d1fab32f20a76479db36804a15492d9695ef1864a7626f9ff669ec470d4a,,Match,US Census Geocoder Batch,block_approximate,-117.133929506896,32.706433775394,True,61,1,5.212,5.212
+26205433,matched,725,DENNERY RD,,600,1ed6c198fd50ab3d14619afe8ad24124f54e198596189b8d303c731f6a6a721f,,Match,US Census Geocoder Batch,block_approximate,-117.032382382512,32.583746056398,True,14,1,5.307,5.307
+26202773,matched,935,DEL MAR HEIGHTS RD,,5500,883d2327970cfda9becb46d82d0b9a953f352628414a2f1fbf9778d40e99a99b,,Match,US Census Geocoder Batch,block_approximate,-117.200247817435,32.961209961555,True,47,1,6.21,6.21
+183381,matched,122,GRAND AVE,,900,a924ef84c60bfc1e0bea69916a66179b6c3039a1ff1844448c457f368070091e,,Match,US Census Geocoder Batch,block_approximate,-117.25304467984,32.795129594242,True,88,4,5.533,5.533
+23204031,matched,614,ABBOTT ST,,1900,763a0a5cfe62e72bab343f5715803dd8b1b0e025c95cc1663222e9cfd0e5403b,,Match,US Census Geocoder Batch,block_approximate,-117.252084139778,32.748852038823,True,18,1,5.008,61.011
+19205053,matched,243,ARJONS DR,,8000,c539ff24a7275a9907dc3c3b17a5d25046262244d4dfb4816be5e2b009d86444,,Match,US Census Geocoder Batch,block_approximate,-117.146676359434,32.894497776152,True,4,1,5.775,5.775
+23200832,matched,433,60TH ST,,600,5caeedba02ae0cfa99409ad3fa5f53bda3e516cb10b6a0dda4c8de4644df0174,,Match,US Census Geocoder Batch,block_approximate,-117.068018759836,32.711326541628,True,42,1,5.263,5.263
+187067,matched,813,UNIVERSITY AVE,,3100,adaedbf5824fbea64bf1c1c84cffc848806f37e6eab5e2f2d9efacb18ef54cc9,,Match,US Census Geocoder Batch,block_approximate,-117.127616886329,32.748521314199,True,208,1,5.801,41.867
+26200927,no_match,722,WB OFF RAMP,,900,39f1bf73a8fa8e13a9e9e26d882c7b15775c5151fd07530e362d66eceb9ca453,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+24201861,no_match,623,DEL SOL DR,,200,0a9f5b78d47f4c54207ffec0d72ff3146b5bcfddc8c0fbf3ff6f8e30b06cf3ed,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,3,1,,
+20205835,no_match,512,SB OFF RAMP,,10,ada4d56aad0fca41290590152531dbebb9cca7558472773a841690998121e529,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+19204232,no_match,234,PASEO CEL VERANO NORTE,,12900,95718f46a9e55936b78ee8ea97e19394f5651ff2a19a0452a8c437a1bbb1d4dd,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+23204425,no_match,999,FREEWAY OFF RAMP,,800,1c64a0958a44c5841c66c37d499533980421a594cd89604a86250fef0aed96bc,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+21202931,no_match,114,E OFF RAMP,,50,79af6456c4285a382f516917fa7f6a6ce21936fb6d2d43fc580bb781063a02f1,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+25200855,no_match,438,HOMESITE DR,,2300,7edd138c9d61719e818e94e0794083f620baf04cf097f0b31a1c805b3175cfb6,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,1,0,,
+24008682,no_match,824,COLLWOOD BLVD,,4800,a233b33df34fefde1ee8ab00f6bc86b67645342047ebe6b346e70084c00c1381,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,13,1,,
+182581,no_match,311,CIVITA BLVD,,7700,b18b95e43773571dd9173c87a74ab018ee332dfa9b5406e5026a0d3e76ca50f8,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,6,0,,
+25033472,no_match,521,PARK BLVD,,700,e37ea6c59c6e9b9e91c8a6b1623e28464d8dc21e3bcea5f5fc48d6eabd90f0dd,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,64,1,,
+26201369,no_match,445,W FREEWAY,,90,a7f60eeadf08e8d23e2e376daab1f66be3b6709d68002ce88bec10c74180fcdb,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+24206254,no_match,721,PALM AVE,,1600,87fd5f853857eb93f01cf09edbe58bf06e08c5e05789c71566c3e895779583f8,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,182,2,,
+21206903,no_match,937,CAMINO DEL SUR,,14800,5700cb70ff74edf295fd945091595b5d00bf1a18b77c91928730d52a35f45240,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,52,1,,
+25206936,no_match,315,S OFFRAMP,,100,b6807bc48fb350cebf0b336a26cc98c93df19c4bea0750f5301480f6b1379855,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+23205875,no_match,241,FREEWAY NORTHBOUND EXIT RAMP,,10,c21340b9f1e4fd2b92bd11b7a47a9d922fa885470e5245bb877aa53548f109c1,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+24203308,no_match,113,MORENA BLVD,,4600,2fa237c33210969e78295f851d91bddd105396c727b4cea7134c51fcfd6559df,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,74,1,,
+19202853,no_match,622,N OFF-RAMP,,800,e2e85aa03d915b89feab9b4c5c77e9cadb3d79de45c5e3790448435f612cc11c,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+26203693,no_match,626,PACIFIC HWY,,4100,caefeebfdfbf1be73dd906a6c411e2cf8209dc5f04f341066a4d67f09988eced,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,72,2,,
+25009398,no_match,511,S BOUND OFFRAMP TO HARBOR DR,,10,dd80ce8934ed121f30dd52c6381207496096bc421c4a57cf410205c7780e31d7,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+20200101,no_match,242,GOLD COAST DR,,9400,e3126a163bbd17ec951d26461807da1b6e279a46c4ecf0a679f0201ddf8c3258,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,29,1,,
+23200860,no_match,443,S 43RD ST,,2000,697dad0097809b44ff4fe600ec2d371fa1f19aec08e73039f3c276f3cc2fd4f4,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,21,1,,
+25207296,no_match,822,UNIVERSITY AVE,,6000,741e22a9e3d571ac51ba83030050ae5f8b20584e786076e384a1a30276865af3,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,208,1,,
+26201820,no_match,315,FRIARS RD,,7400,4ef9eb40f41776b04e68bff38f9bc029b8f1f4dddf28fd28ddcb6eee3d036c15,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,89,1,,
+20203051,no_match,512,W FT OF WCL OF 900 S 30TH,,80,22482a33e7b85daad6fa48f057490166a1c788f5aaaea7c3697ae82d3f00ee7f,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+20205255,no_match,721,PALM AVE,,1900,d8b137f35dd445b8602efbc7884c91e7518e16c61849a103e7d4fb5ee5f599b4,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,182,2,,
+1607292,no_match,931,MIRA SORRENTO PL,,3900,f557113a05488ffd87b6b6869f8dbcfa3ca8c89239ee2c3d78becb1762f4a373,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,1,0,,
+21201058,no_match,313,S OFF RAMP,,100,13a7059cd56172c35da44b321c616dd536f0f5c3124b630b428be2d9daaf9988,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+23203957,no_match,232,NORTHBOUND OFF RAMP,,10,3ead76120a06317fe3ff80723c84f1feafd1e967355667ec7e0464f5ece7f8ca,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+23203193,no_match,124,LA JOLLA BLVD,,6900,777beb5837a1af3f94cac78f7c7983a710a85f6be67e76f4304a1f11501c64e1,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,58,1,,
+21207492,no_match,621,S OFF RAMP,,100,13a7059cd56172c35da44b321c616dd536f0f5c3124b630b428be2d9daaf9988,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+24200644,no_match,611,SPORTS ARENA BLVD,,4100,f59910772ac9921c8594c59f8217918c01f7e1f90056ed10a0453557afb5b617,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,22,1,,
+22017849,no_match,243,POMERADO RD,,9900,4ee0737b42151b740f5d306defe55aaaaba733671a0ce5cb63cb669bc6d16115,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,107,1,,
+26201315,no_match,445,LAKIBA PALMER AVE,,5000,c557077aa284e2ce5de8069ca31db96cf89da5d19f89a9496bc82031b543dd2a,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,2,1,,
+189321,no_match,825,FAIRMOUNT AVE,,5300,fc8c5ff03276d00d9ce8ee725c4eb876e683bb5ee32d27407c82631053c54241,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,57,1,,
+22203366,no_match,312,CALLE MARISELDA,,6200,29910ccdd87ecdd3d32e406a05e87c580f3e77c4936695ebbb31bc138a855908,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,2,1,,
+21208419,no_match,511,HARBOR DR,,2400,4d9c1f19f5792eb52c5e59ad1d6f84941ef6472507c9f2eb3b84304cafb6d958,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,51,1,,
+1608440,no_match,725,DEL SOL BLVD,,5000,8d624a25f911b9d3bf42b93b633e11048d1a2d3c4afdb7a2b674fc0473419a82,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,32,1,,
+26203069,no_match,933,DURANGO DR,,13800,8b4057a44f8eb5291ce8f37c1753f185174f3cb3b8c4798f36a8fdf7c6dc4904,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,4,1,,
+25204323,no_match,311,NB FWY OFFRAMP,,800,be43b255ae16a8160b598dea7c7d74179b2854e849913da3d1baaf900723053a,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+21207585,no_match,242,SOUTHBOUND OFF RAMP,,10,8c0d739a1cf7729eca4c1d0132aa3e83501626c5fc1bd52caaf32b0e0cb47385,provider_nomatch,No_Match,US Census Geocoder Batch,,,,True,0,0,,
+21202985,pending,529,S OFF RAMP,,0,18e2996d43a23b299a7c9fbe112b3407c52d07af86565b0130655ea9cd6a55ff,,,,,,,True,0,0,,
+25204307,pending,437,DEEP DELL RD,PARADISE VALLEY RD,0,7f96fb954505320e4b96ecc92a2f0b2a1c9a3692155e555956d5cc03ca569c00,,,,,,,True,10,0,,
+21201635,pending,611,CAMINO DEL RIO WEST,HANCOCK ST,0,8bdd77f4db21206e1cac595e0ae806bf374a2f0c3c482bb739805f7bb35d50ee,,,,,,,True,9,0,,
+22203501,pending,813,28TH ST,UPAS ST,0,510a8ccbf39adddc720150f0e40daeb747d3c0f13533e2910fa9fc8a42ce78b7,,,,,,,True,61,0,,
+20206541,pending,999,EB SR-905 ON RAMP,,0,d21100d25c6bf69aed50e9a6f4600c3e83a231ac315b5f080a720e8587048080,,,,,,,True,0,0,,
+21203792,pending,934,CARMEL VALLEY RD,,0,07834e45800493e19a4032d37f703434200f9a481f822d0a84f57c79ceddb670,,,,,,,True,75,0,,
+23206456,pending,316,MISSION VILLAGE ROAD ON RAMP FROM FRIARS RD,,0,2884836a3acc73c8a1fac2ff06d1fca179fbd4a188a4638455d6056d1c5a182d,,,,,,,True,0,0,,
+189380,pending,934,DEL MAR HEIGHTS RD,HARTFIELD AVE,0,b500f2be6d734edef87cb7c50d029037de84c1d84185aa04fd507928e1e25a1a,,,,,,,True,47,0,,
+26201910,pending,124,S PRIVATE PARKING LOT OF NORDSTROMS RACK,,0,61838283554ac55c2f652793ce279806e7b659129494271b7afa4f4b5da8a0cf,,,,,,,True,0,0,,
+21201353,pending,713,3;23:00 PM,,0,eb517fc4d2fb05fe64df6ba71016313b2cf6cf5338754efe69b70847d5462205,,,,,,,True,0,0,,
+23205533,pending,825,S ON-RAMP HEADING BOUND ONTO FAIRMT AVE,,0,3c4b0048828e30cdf4b36e747e19c0261dd22f34a678acaa411a87a6a7cf7c21,,,,,,,True,0,0,,
+26201001,pending,713,N OTAY MESA FREEWAY TO 905 ON RAMP,,0,d633d2d77544f2d66ff7563c1045b2ed6ef10d68b3d305dbc437e055f7318bbf,,,,,,,True,0,0,,
+23202795,pending,122,HORNBLEND ST,MISSION BLVD,0,2f2b707d51aff67ef9f8cb1c35b736aa719bd4c489a3d61f07465c76e95addd6,,,,,,,True,21,0,,
+24204349,pending,516,31ST ST,S ALLEY 3100 IMPERIAL AVE,0,00db610d6b52b593731c9dd65555f6d4cc8c20aec6d0a9ea9499c2182eeeed50,,,,,,,True,56,0,,
+21205312,pending,233,I-15 FREEWAY,,0,a383b905a40728f0e838096381cecc914dcd88ba98db0b6298affd360d82e98c,,,,,,,True,0,0,,
+23204869,pending,721,PALM AVE,PALM AVE,0,867d6cb30c7e83109cb0ff190802d60f548f358477064a401ef7cde28b3818d2,,,,,,,True,182,0,,
+25207191,pending,312,AERO DR,,0,2e6b314294d1ca439021d458411c84c14dc666e9cfa0552b5c9f8937ec56146a,,,,,,,True,28,0,,
+19201123,pending,524,BROADWAY,,0,5207e961edd8a554eb32980251596982a4bebef9ecb86fff7162201e0d5d5cb7,,,,,,,True,209,0,,
+24206274,pending,242,CAM SANTA FE,,0,7b32f449465779eab868a6c249380055354ee6107e1dcb92a979e6c3f26d1d19,,,,,,,True,35,0,,
+24202531,pending,441,S 43RD ST,,0,bca48ffdc81a8e24700d7cef3e2766c2f4dc401222139a9ed9f1e3f4fed29c1a,,,,,,,True,21,0,,
+23202944,pending,242,NEW SALEM ST,NEW SALEM ST,0,a41e3ae2adc9b735baee14799b02e2f2a00c87422b3807e01e324a745307d6c4,,,,,,,True,24,0,,
+24007362,pending,447,INTERSTATE,,0,c97d94b248e3fdf4a1796a7ebaf0023fed41d2cfcdec37c87d16c63f0d68a9f1,,,,,,,True,0,0,,
+21203539,pending,813,E OF CL 4400 IDAHO ST,,0,f543c7bad913c1dbd176029d28cd5ff62d7ff44e92af55349ead27b01871c0cb,,,,,,,True,0,0,,
+25025100,pending,627,8 FREEWAY,,0,5055df7357e676fdc3e0b0f3f0912ecd34ff27861b4e78e70031552673bb6b5b,,,,,,,True,0,0,,
+25205708,pending,621,E ALLEY 2300 COMSTOCK ST,,0,0ad3ec1af15ad0098d0b7da4291f8d78b78a591d8cc8309576e11d2658d1edb7,,,,,,,True,0,0,,
+21202191,pending,113,EXIT RAMP WB BALBOA TO MORENO,,0,bcc45b62df582f20de9540334aaa5eab910ca5ef5f5da390de05d5f1195b28fd,,,,,,,True,0,0,,
+20201796,pending,531,,UNKNOWN LOCATION,0,13cc153d0412d565cae336d377d98472b9f4ced064944310b1213208df6ebe18,,,,,,,True,0,0,,
+182626,pending,313,MERCURY ST,RONSON RD,0,207e711d221a0d59a65c90ee3a7b5652ad6cc8bcfa5b100d2328046b2103a069,,,,,,,True,9,0,,
+26204538,pending,529,06TH AVENUE 5 S OFFRAMP,,0,3f6ace8a975d67c5c9a772c46430442d8aff83fc0afb415bcb3677da2d89d24b,,,,,,,True,0,0,,
+26204744,pending,433,65TH ST,AKINS AVE,0,2638561b1779ba5e3c77a1dca9d98b46dca0661f15ffc55595449d16fe0a1b14,,,,,,,True,14,0,,
+26202171,pending,611,GAINES ST,MOORE ST,0,3f47e9750286c44a77504bfe13fdbcc7c0491c4d3b5aea35f56dbfba0121dd67,,,,,,,True,18,0,,
+21206399,pending,839,39TH ST,UNIVERSITY AVE,0,bc43277501fe98578a8b348377c81b5cae5912cf3d0db7c356705d83f88b0fee,,,,,,,True,42,0,,
+25201230,pending,931,INTERSTATE 805,,0,45af27b6ba6590e9319c6c1502e2093eea170f591644fd5da53761fc068bd926,,,,,,,True,0,0,,
+187934,pending,934,VISTA SORRENTO PKWY,,0,bbff3635119effe6c311cb351082eda15b38b461dadb67b14733207176377d02,,,,,,,True,0,0,,
+21200557,pending,315,AUTO CIRCLE OVER PASS OF FREEWAY,,0,cf6b8476dc3ea3436387e42b1b7a8b918e9dd89e54d4a384fda08fa0315c0f5c,,,,,,,True,0,0,,
+25201542,pending,931,CARROLL CANYON RD,CARROLL CANYON RD,0,57c2e0dd79236a184afdc0f39bc32924172b62acd3a8afff551f68477fb6b7e1,,,,,,,True,44,0,,
+20203767,pending,123,E FOOT OF THE CURBLINE OF 1300 MISSION BAY DR,,0,ad66e140e8e09eb9cec8fd5d2cfc7c3508cde7784a2142649233d6b9f939f388,,,,,,,True,0,0,,
+23202582,pending,712,BEYER BLVD,,0,17ef2f386e8fd1e6ca644d2d58fc09a0ce35ab5c39a762ef0a6e488d7b4911d7,,,,,,,True,39,0,,
+24203645,pending,825,EB MONTEZUMA RD FROM SB FAIRMT AVE ON RAMP,,0,7b3b85c314679965392795a4fbbfb6853b5f2b718aab51d22ac0abece420439c,,,,,,,True,0,0,,
+22205103,pending,713,ON RAMP EB SR 905 FROM SIEMPRE VIVA RD,,0,138edf0ce1f00752e3ad066b1c7f5e819e7e358f5edeb190003b1fd7bc253235,,,,,,,True,0,0,,

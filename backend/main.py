@@ -16,6 +16,7 @@ from .agent.tools import DatabaseTools, ToolCall, MetadataCall, tool_log
 from .agent.evidence import make_evidence
 from .agent.workflow import Agent
 from .config import load_environment
+from .agent.location_models import ChatTurn,ChatResponse
 
 
 @asynccontextmanager
@@ -84,3 +85,18 @@ async def query(request: QueryRequest, agent: Agent=Depends(get_agent)) -> Query
             answer='The request could not be completed and verified.',
             limitations=['An internal execution error prevented verification.'],
             limitation_codes=['internal_execution_error'],tool_trace_id='trace_'+uuid4().hex)
+
+
+@app.post('/api/v1/agent/chat',response_model=ChatResponse)
+async def chat(turn: ChatTurn,agent: Agent=Depends(get_agent)) -> ChatResponse:
+    """Interpret -> explicit confirmation -> Census -> existing verified graph."""
+    try:
+        return await asyncio.wait_for(agent.chat(turn),agent.settings.request_timeout_seconds)
+    except HTTPException:
+        raise
+    except TimeoutError:
+        return ChatResponse(status='error',message='The turn exceeded its execution budget. No unverified answer is returned.',
+                            diagnostic_codes=['request_timeout'])
+    except Exception:
+        return ChatResponse(status='error',message='This turn could not be completed. Start again or correct the pending request.',
+                            diagnostic_codes=['location_workflow_error'])

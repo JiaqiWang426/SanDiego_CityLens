@@ -1,0 +1,36 @@
+{
+  "validation_version": "sangis-stage-c-strict-v1",
+  "stage_b": {
+    "directory": "backend/verification/intersection_batch",
+    "run_manifest_sha256": "c098e0398f2507126efd5d04241f975ece76a8d26f51e6a35ef4cca80dbb47df",
+    "files": {
+      "input.json": "6f90310c2f247e0e24975129009e2b704c1e6c94ff3dc078c8e8526713d83778",
+      "pair-results.json": "fad6d586c33a9a1b7b241cc6e86485f4531c4d4c6e3b7db1bc26b3372e7457ce",
+      "candidates.jsonl": "21f56b1bc04220295c9d6a480cbb0c7e093d20ce532e649a3ac8706da9bfc1d6",
+      "candidates.csv": "048197dd8ff1906fd62e8fd8957825df658345eaf237b9ea044e674412caae71",
+      "summary.json": "93b0c470098441e729ca3f5fa11cec6ef30bbe122ad86eb74bc544cf2b4e39ec",
+      "stage-a-replay.json": "078900dfda0102016ecaa35316ffee07b199dee58d74d78aa74195ed59803f7a",
+      "rest-archive-comparison.json": "baedb7fa09614de9231517165193a128daf713dbe685854a11e4079e220b5f9f"
+    }
+  },
+  "sangis_snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "independent_source": {
+    "name": "US Census TIGERweb Transportation MapServer identify (layers 2, 6, 8)",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+    "not_used": [
+      "Google Geocoding/Places",
+      "Census address geocoder",
+      "LLM coordinates"
+    ],
+    "cache_directory": "backend/reference_data/intersection_stage_c (ignored)",
+    "request_ledger_sha256": "ed4e56470ce9948c0f53de819d75facddb07fcd933ed5951f6361617f695deef"
+  },
+  "implementation_sha256": {
+    "stage_c.py": "913075070c1986d92dbaf505a34a045acea402a1e83e478d0079afcfea0ca54f",
+    "stage_c_evidence.py": "9d03c88b9ec0385ed62b485ed54f02dea28d6dabc0653196a73f92b6d0e52c2f",
+    "batch.py": "ae0b6e34aebbb71163a15a1a8cbe0b185a874d161fad8b6c14f6794ec5187b19",
+    "apply.py": "0fcda5498cef0ffad3dbcbb7f309f73f621f0f804d56ee0aff76f6df1a743dfc",
+    "deploy.sql": "47bf3215f72872dc03f5357030cf723c89a71b183ecd4e815160c744daae1b65"
+  },
+  "collision_reader": "Agent read-only connection (REPEATABLE READ READ ONLY)"
+}

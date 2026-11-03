@@ -1,0 +1,83 @@
+pair_id,primary,cross,status,reason,report_ids,candidate_node_id,candidate_status,candidate_reasons,candidate_node_type,candidate_longitude,candidate_latitude,candidate_incident_segment_ids,candidate_primary_segment_ids,candidate_cross_segment_ids,candidate_endpoint_levels,candidate_max_endpoint_distance_m
+6825450a535c20e4,11TH AVE,E ST,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""25203270""]",97138,topology_uncertain,"[""nonintersection_type_conflicts_with_incident_topology""]",Z,-117.1547003688362,32.714700266110185,"[2608, 2609, 25424, 25436]","[2608, 2609]","[25424, 25436]",[1],0.0
+5bac3bf0c5ce7f9d,13TH (SB) ST,PALM AVE,invalid_source,compound_or_incomplete_street_description,"[""25206203""]",,,,,,,,,,,
+371bcc7c6380874c,13TH ST,IMPERIAL AVE,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""24203281""]",99029,topology_uncertain,"[""grade_separated_levels"", ""road_status_not_confirmed_constructed"", ""road_class_requires_review""]",I,-117.15280627179055,32.70628371346455,"[2810, 2813, 29882, 29885]","[2810, 2813]","[29882, 29885]","[1, 9]",0.0
+e8b5f8e11ba08bdc,15,INTERSTATE 15 SB OFF RAMP,street_not_found,complete_road_components_not_found,"[""20203480""]",,,,,,,,,,,
+242251467d3df5ed,30TH ST,N PARK WAY,accepted_candidate,one_supported_physical_node,"[""26037142""]",88003,supported,[],I,-117.13007687349159,32.747363051918285,"[4131, 4132, 49440, 49442]","[4131, 4132]","[49440, 49442]",[1],0.0
+1431bea964cb7690,39TH ST,UNIVERSITY AVE,accepted_candidate,one_supported_physical_node,"[""186955""]",87298,supported,[],I,-117.11064065340514,32.749698966679134,"[4918, 4921, 35671, 35677]","[4918, 4921]","[35671, 35677]",[1],0.0
+33863e35b01ca5d7,41ST ST,41ST ST,invalid_source,same_road_twice,"[""21204630""]",,,,,,,,,,,
+90f2e3cb4c5b5a01,60TH ST,IMPERIAL AVE,accepted_candidate,one_supported_physical_node,"[""25203154""]",98458,supported,[],I,-117.06798729974219,32.70935536719854,"[5790, 29955, 29960]",[5790],"[29955, 29960]",[1],0.0
+5419a381204aed34,7TH AVE,BROADWAY,accepted_candidate,one_supported_physical_node,"[""19205976""]",96884,supported,[],I,-117.15835216285805,32.71571510823933,"[1820, 1825, 13152, 13155]","[1820, 1825]","[13152, 13155]",[1],0.0
+a49d7faf014bdfd6,ADAMS AVE,PARK BLVD,accepted_candidate,one_supported_physical_node,"[""26200301""]",83306,supported,[],I,-117.14628766807967,32.762475865800845,"[6559, 6560, 51965, 51967]","[6559, 6560]","[51965, 51967]",[1],0.0
+c2c249e891c81840,ALABAMA ST,E CURBLINE,street_not_found,complete_road_components_not_found,"[""22204923""]",,,,,,,,,,,
+d63bbd0d867ecd0c,ALAQUINAS DR,BEYER BLVD,accepted_candidate,one_supported_physical_node,"[""20201638""]",116927,supported,[],I,-117.04453529551006,32.558287332119605,"[11816, 11817, 51012, 51924]",[51012],"[11816, 11817]",[1],0.0
+7caef198ccf53333,BALBOA AVE,BALBOA AVE,invalid_source,same_road_twice,"[""22204189""]",,,,,,,,,,,
+5d1da8b6686c07e3,BERNARDO HEIGHTS PKWY,POMERADO RD,street_not_found,complete_road_components_not_found,"[""21205781""]",,,,,,,,,,,
+520bb69be6c08d29,BLACK MOUNTAIN RD,HILLERY DR,accepted_candidate,one_supported_physical_node,"[""21207039""]",56547,supported,[],I,-117.12433657099555,32.91289704914616,"[69546, 189496, 189910, 219556]","[189496, 219556]","[69546, 189910]",[1],0.0
+2c4aa47e8a6ae698,BROADWAY,E ALLEY OF 1000 25TH ST,street_not_found,complete_road_components_not_found,"[""20204471""]",,,,,,,,,,,
+c91c087bd666ed94,C ST,PARK BLVD,accepted_candidate,one_supported_physical_node,"[""24204842""]",96655,supported,[],I,-117.15380484960647,32.716779208267745,"[2713, 2715, 14343, 14344]","[14343, 14344]","[2713, 2715]",[1],0.0
+6f084fcabd2a0441,CALLE SAUCILLO,PASEO LUCIDO,accepted_candidate,one_supported_physical_node,"[""1609125""]",47720,supported,[],I,-117.0678167288088,32.99687641560189,"[44997, 44999, 65404]",[65404],"[44997, 44999]",[1],0.0
+7e06819094d49ca7,CALLE TRES LOMAS,ROANOKE ST,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""21202105""]",104466,topology_uncertain,"[""road_status_not_confirmed_constructed""]",I,-117.05495977621774,32.67508222004544,"[14780, 14782, 55359]","[14780, 14782]",[55359],[1],0.0
+72bc67aca24d5a9b,CAM DE LA COSTA,LA JOLLA BLVD,accepted_candidate,one_supported_physical_node,"[""26205352""]",69500,supported,[],I,-117.27187662142506,32.81757281690493,"[15055, 15056, 40677, 40679]","[15055, 15056]","[40677, 40679]",[1],0.0
+ab3ab4491b2668cb,CAM DEL RIO W,W,street_not_found,complete_road_components_not_found,"[""24203915""]",,,,,,,,,,,
+cdf701920b3f8d9a,CAM DEL SUR,CERRO DEL SUR CT,street_not_found,complete_road_components_not_found,"[""21201142""]",,,,,,,,,,,
+23f74dbbfcc66159,CAM DEL SUR,HIGHLANDS VILLAGE PL,accepted_candidate,one_supported_physical_node,"[""190671""]",51429,supported,[],I,-117.15260479163689,32.96176292064393,"[166371, 179149, 209176]","[166371, 209176]",[179149],[1],0.0
+74e9049faea52192,CARMEL MTN RD,NCL OF 11600 CARMEL MOUNTAIN RD,invalid_source,descriptive_location_not_two_roads,"[""25202024""]",,,,,,,,,,,
+58de3277813b78ef,CARMEL VALLEY RD,OLD EL CAMINO REAL,accepted_candidate,one_supported_physical_node,"[""24206581""]",54526,supported,[],I,-117.23943241790548,32.933438080143276,"[134898, 157278, 172432, 172442]","[172432, 172442]",[134898],[1],0.0
+c02a5559beaabb64,CARMEL VALLEY RD,S/R,invalid_source,compound_or_incomplete_street_description,"[""25206946""]",,,,,,,,,,,
+f27d12d6d3ce3dd1,CARROLL CANYON RD,CARROLL CANYON RD,invalid_source,same_road_twice,"[""25201595""]",,,,,,,,,,,
+91c70f4d75e11134,CARROLL CANYON RD,OFF-RAMP: I-805 S/B TO CARROLL CANYON RD,invalid_source,compound_or_incomplete_street_description,"[""23201768""]",,,,,,,,,,,
+fbe9d5587208edec,COLLEGE AVE,LIVINGSTON ST,accepted_candidate,one_supported_physical_node,"[""24206312""]",89951,supported,[],I,-117.05129546211958,32.74246608687066,"[17394, 42922, 205517]","[17394, 205517]",[42922],[1],0.0
+25a759e3eb9f98bd,CURB LINE,GENESEE AVE,street_not_found,complete_road_components_not_found,"[""25203604""]",,,,,,,,,,,
+12bd1b6b62a13541,CURB LINE OF LINDA VISTA RD,MORENA BLVD,street_not_found,complete_road_components_not_found,"[""20202233""]",,,,,,,,,,,
+a8e073f7592f2851,DEEP DELL RD,PARADISE VALLEY RD,accepted_candidate,one_supported_physical_node,"[""23204809""]",101410,supported,[],I,-117.02934337936719,32.695420693815,"[2250, 2252, 23816, 23817]","[23816, 23817]","[2250, 2252]",[1],0.0
+af18c2dc9653ffc1,E EDGE OF THE NORTHBOUND I-5 OFF-RAMP,GENESEE AVE,street_not_found,complete_road_components_not_found,"[""19204384""]",,,,,,,,,,,
+b6dcd74fcab869d3,ECL,N TORREY PINES RD,invalid_source,descriptive_location_not_two_roads,"[""20200851""]",,,,,,,,,,,
+84bfef0a9a3ef0f6,EL CAJON BLVD,N BOUND I15 EXIT ONTO EB EL CAJON BLVD,street_not_found,complete_road_components_not_found,"[""19202080""]",,,,,,,,,,,
+9e8db964c157600d,EL CAMINO REAL,SAN DIEGUITO RD,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""20049950""]",49743,supported,[],I,-117.23114058908648,32.97568293408971,"[221512, 221513, 221514]","[221512, 221514]",[221513],[1],0.0
+905847d2bd52bf62,EL CAMINO REAL,VIA DE LA VALLE,multiple_candidates,multiple_supported_intersection_nodes,"[""23027982""]",49054,supported,[],I,-117.22676360132542,32.98318973615317,"[12779, 12782, 221510]",[221510],"[12779, 12782]",[1],0.0
+905847d2bd52bf62,EL CAMINO REAL,VIA DE LA VALLE,multiple_candidates,multiple_supported_intersection_nodes,"[""23027982""]",49110,supported,[],I,-117.23052624914129,32.982701282990284,"[12784, 26278, 221511]",[26278],"[12784, 221511]",[1],0.0
+26f196ec89750829,FRIARS RD,MISSION VILLAGE DR,no_intersection,no_supported_physical_node,"[""20201775""]",77391,rejected,"[""grade_separated_levels"", ""pseudo_crossing_node""]",P,-117.12021410328705,32.78672568066863,"[30170, 30173, 46864, 46866]","[30170, 30173]","[46864, 46866]","[1, 2]",0.0
+fd6717cd1867e44b,FRIARS RD,N/B 163 ONRAMP,invalid_source,compound_or_incomplete_street_description,"[""21207870""]",,,,,,,,,,,
+57f77b98841d3b45,FRIARS RD,VIA LAS CUMBRES,accepted_candidate,one_supported_physical_node,"[""20206982""]",82149,supported,[],I,-117.18364580501648,32.76626942811342,"[30130, 53398, 232071]","[30130, 232071]",[53398],[1],0.0
+5487dec9ff4399aa,GRAND AVE,KENDALL ST,accepted_candidate,one_supported_physical_node,"[""20205820""]",74249,supported,[],I,-117.23658240824132,32.798688826974654,"[32133, 32145, 39941, 39944]","[32133, 32145]","[39941, 39944]",[1],0.0
+9c617bbd06bf6252,GROVE AVE,SATURN BLVD,accepted_candidate,one_supported_physical_node,"[""18200156""]",115922,supported,[],I,-117.09277327606667,32.572834475914576,"[33573, 150051, 150055, 229490]",[150055],"[150051, 229490]",[1],0.0
+2f975734c0bf7cbf,I-5 SB,NATIONAL AVE,street_not_found,complete_road_components_not_found,"[""186369""]",,,,,,,,,,,
+900f18aa8dc60026,I-8 E/B ON RAMP,W MISSION BAY DR,invalid_source,compound_or_incomplete_street_description,"[""21205954""]",,,,,,,,,,,
+21822aa9cc663dc8,IMPERIAL AVE,PARK BOULVARD,street_not_found,complete_road_components_not_found,"[""19201332""]",,,,,,,,,,,
+f0ca740cd7227de8,IMPERIAL AVE,S 45TH ST,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""180966""]",99551,topology_uncertain,"[""road_status_not_confirmed_constructed""]",I,-117.09798602731375,32.70415322342726,"[5292, 5303, 159755, 198864, 198865]","[159755, 198864]",[5303],[1],0.0
+b75a1503e631c91b,INGRAHAM ST,INTERSTATE RAMP,street_not_found,complete_road_components_not_found,"[""20201700""]",,,,,,,,,,,
+f203a38ba9f331a9,INTERSECTION OF INT 805 SB OFFRAMP,PALM AVE,street_not_found,complete_road_components_not_found,"[""21204576""]",,,,,,,,,,,
+5cdc069cf0f488f2,INTERSTATE,W MISSION BAY DR,street_not_found,complete_road_components_not_found,"[""21200875""]",,,,,,,,,,,
+595db6890393b779,INTERSTATE 15 SB,MIRA MESA BLVD,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""21012158""]",56231,rejected,"[""grade_separated_levels"", ""pseudo_crossing_node""]",P,-117.11631976971307,32.91710923035098,"[117011, 117012, 138192, 210096]","[117011, 117012]","[138192, 210096]","[1, 2]",0.0
+83ded7d619056bdb,IVANHOE EAST AVE,TORREY PINES RD,accepted_candidate,one_supported_physical_node,"[""24206269""]",62842,supported,[],I,-117.26992670066394,32.844813268906776,"[38245, 38247, 61189, 61190]","[38245, 38247]","[61189, 61190]",[1],0.0
+706df0e3cdd8e05b,JAMACHA RD,JAMACHA RD,invalid_source,same_road_twice,"[""24200624""]",,,,,,,,,,,
+0d2f8fdaed9db806,LA JOLLA BLVD,N LN,no_intersection,no_supported_physical_node,"[""26205591""]",,,,,,,,,,,
+266b5593b09220cd,LA JOLLA SHORES DR,TORREY PINES RD,accepted_candidate,one_supported_physical_node,"[""22202482""]",61803,supported,[],I,-117.25576252240872,32.85018737242723,"[40779, 61206, 61207]",[40779],"[61206, 61207]",[1],0.0
+a1d2ddd01484cc0a,MAIN ST,SAMPSON ST,topology_uncertain,incomplete_or_conflicting_topology_evidence,"[""26202572""]",101228,supported,[],I,-117.14166990248748,32.69560435662332,"[44153, 44154, 56342, 56343]","[44153, 44154]","[56342, 56343]",[1],0.0
+da073203a6dc928d,MARTIN AVE,S 32ND ST,multiple_candidates,multiple_supported_intersection_nodes,"[""20203583""]",100526,supported,[],I,-117.1251873058826,32.699433639375975,"[4458, 4459, 44961]",[44961],"[4458, 4459]",[1],0.0
+da073203a6dc928d,MARTIN AVE,S 32ND ST,multiple_candidates,multiple_supported_intersection_nodes,"[""20203583""]",100586,supported,[],I,-117.12518816273817,32.69911151419046,"[4457, 4458, 44960]",[44960],"[4457, 4458]",[1],0.0
+9c151b8ea4b00545,MERCY RD,MERCY RD,invalid_source,same_road_twice,"[""22207233""]",,,,,,,,,,,
+3e223dbfc4b1c612,MIRA MESA BLVD,MIRA MESA BLVD,invalid_source,same_road_twice,"[""23207429""]",,,,,,,,,,,
+b3c9014a58966f3f,MIRA MESA BLVD,SCRANTON RD,accepted_candidate,one_supported_physical_node,"[""21206845""]",57973,supported,[],I,-117.20154378879415,32.89270236745487,"[4633, 82571, 82572, 212164]","[4633, 212164]","[82571, 82572]",[1],0.0
+3161b253df282933,N PARK WAY,RAY ST,accepted_candidate,one_supported_physical_node,"[""21202273""]",87976,supported,[],I,-117.12921554564285,32.74741866596435,"[49438, 49442, 54547, 54548]","[49438, 49442]","[54547, 54548]",[1],0.0
+55f41d68bca0ae79,NORMAL ST,UNIVERSITY AVE,accepted_candidate,one_supported_physical_node,"[""25203563""]",87540,supported,[],I,-117.14986584983262,32.74845713837883,"[35580, 35584, 49360]",[49360],"[35580, 35584]",[1],0.0
+9fe48c75602c6a69,OCEAN VIEW BLVD,OCEAN VIEW BLVD,invalid_source,same_road_twice,"[""24203452""]",,,,,,,,,,,
+35a2f591f7614458,OCEAN VIEW BLVD,S 47TH ST,accepted_candidate,one_supported_physical_node,"[""23206821""]",100373,supported,[],I,-117.0937473916286,32.70045808096241,"[5407, 5408, 49952]",[49952],"[5407, 5408]",[1],0.0
+84d33de50a19d0be,PACIFIC HWY,SEA WORLD DR,accepted_candidate,one_supported_physical_node,"[""21202106""]",81872,supported,[],I,-117.20867201135957,32.76717146222719,"[36354, 74067, 74075, 76949]",[36354],"[74067, 74075]",[1],0.0
+4fcc2235bb8bf02d,PACIFIC HWY,TELEGRAPH PL,street_not_found,complete_road_components_not_found,"[""23014081""]",,,,,,,,,,,
+d9c24079992185ae,PALM AVE,S/B I-5 OFFRAMP,invalid_source,compound_or_incomplete_street_description,"[""25202416""]",,,,,,,,,,,
+cceb801f6bc4eca6,PARK BLVD,PARK BLVD,invalid_source,same_road_twice,"[""20206587""]",,,,,,,,,,,
+b46ee7c993cfcc30,PHILL'S BARBECUE PARKING LOT,SPORTS ARENA BLVD,invalid_source,descriptive_location_not_two_roads,"[""23202723""]",,,,,,,,,,,
+1cab59e41f62266f,POMERADO RD,SCL RANCHO BERNARDO RD,invalid_source,descriptive_location_not_two_roads,"[""23200261""]",,,,,,,,,,,
+2efdc197ea9470b5,QUIVIRA RD,W MISSION BAY RD,street_not_found,complete_road_components_not_found,"[""23205926""]",,,,,,,,,,,
+1856b709ba16546b,RANCHO BERNARDO RD,W BERNARDO DR,accepted_candidate,one_supported_physical_node,"[""23206921""]",44342,supported,[],I,-117.08214919834674,33.023836916653025,"[6437, 6440, 12110, 210223]","[12110, 210223]","[6437, 6440]",[1],0.0
+3cc201ffa91b84a2,S CURB LINE,SATURN BLVD,street_not_found,complete_road_components_not_found,"[""23201474""]",,,,,,,,,,,
+2aa84f9a5b0e0c8e,S SCL,SATURN BLVD,invalid_source,descriptive_location_not_two_roads,"[""20202108""]",,,,,,,,,,,
+eb7fba12299df4f4,SAMPSON ST,SAMPSON ST,invalid_source,same_road_twice,"[""19200595""]",,,,,,,,,,,
+dda989896d8e2409,SORRENTO VALLEY BLVD,W CURB LINE,street_not_found,complete_road_components_not_found,"[""23204892""]",,,,,,,,,,,
+c9278503109331ae,UNKNOWN,UNKNOWN,invalid_source,same_road_twice,"[""24207173""]",,,,,,,,,,,
+147da529755a7885,VIA DE LA VALLE,VIA DEL CANON,accepted_candidate,one_supported_physical_node,"[""25201847""]",49229,supported,[],I,-117.23373151420124,32.981577906606674,"[72146, 155693, 221511]","[155693, 221511]",[72146],[1],0.0
+fceae64b11598df3,VIA DE SAN YSIDRO,W SAN YSIDRO BLVD,accepted_candidate,one_supported_physical_node,"[""22201290""]",117096,supported,[],I,-117.0449632590643,32.552471561997166,"[57015, 57016, 67571]",[67571],"[57015, 57016]",[1],0.0
+461a50053a19400d,W ALLEY OF 4000 FRONT ST,W WASHINGTON ST,street_not_found,complete_road_components_not_found,"[""25205028""]",,,,,,,,,,,
+4f7ab65d20760248,WYATT PL,WYATT PL,invalid_source,same_road_twice,"[""22203806""]",,,,,,,,,,,

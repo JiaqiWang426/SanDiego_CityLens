@@ -1,0 +1,24 @@
+{
+  "collision_audit": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "non_allowlist_rows": "5f1e44297d8512a9d9bbecbcf7fa13bc",
+  "allowlist_rows": "cb5ba3223c72f9722fbef5bd58d63f8f",
+  "allowlist_reports": 4112,
+  "matches_stage_b_dry_run_after_state": true
+}

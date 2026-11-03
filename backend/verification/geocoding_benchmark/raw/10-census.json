@@ -1,0 +1,55 @@
+{
+  "address_id": "10",
+  "provider": "census",
+  "input_address": "6600 Montezuma Rd, San Diego, CA 92115",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6600+Montezuma+Rd&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92115",
+  "fetched_at": "2026-11-03T00:18:24.456377+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92115",
+          "city": "San Diego",
+          "street": "6600 Montezuma Rd",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "195323659"
+          },
+          "coordinates": {
+            "x": -117.056449787118,
+            "y": 32.769055317423
+          },
+          "addressComponents": {
+            "zip": "92115",
+            "streetName": "MONTEZUMA",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "6600",
+            "state": "CA",
+            "suffixType": "RD",
+            "toAddress": "6698",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "6600 MONTEZUMA RD, SAN DIEGO, CA, 92115"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 402.91
+}

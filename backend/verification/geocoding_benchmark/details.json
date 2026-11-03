@@ -1,0 +1,4245 @@
+[
+  {
+    "input": {
+      "id": "01",
+      "input_address": "9500 Gilman Dr, La Jolla, CA 92093",
+      "category": "campus",
+      "neighborhood": "La Jolla / UCSD",
+      "house_number": "9500",
+      "street_name": "Gilman",
+      "street_suffix": "Dr",
+      "city": "La Jolla",
+      "postal_code": "92093",
+      "source_url": "https://www.ucsd.edu/about/contact.html",
+      "considerations": "Official campus mailing address; special case; building addresses may differ",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "ambiguous",
+        "candidates": [
+          {
+            "candidate_id": "candidate_07341da2af1845e2b1eb2389ba8b1022",
+            "matched_address": "9500 GILMAN DR, La Jolla, CA 92093",
+            "location": {
+              "id": "A",
+              "label": "9500 GILMAN DR, La Jolla, CA 92093",
+              "latitude": 32.88458878729452,
+              "longitude": -117.23961381126536
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "parcel_centroid",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "C"
+              ],
+              "placement_labels": [
+                "Centroid"
+              ],
+              "asource": [
+                "M"
+              ],
+              "source_labels": [
+                "Assessor Master Property Record"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6257865.13582791,
+                  "usng": "11S MS 77588 38517",
+                  "orig_oid": 1076750,
+                  "addrfrac": null,
+                  "addrname": "GILMAN",
+                  "addrsfx": "DR",
+                  "address_type": null,
+                  "addrzip": "92093",
+                  "addrpostd": null,
+                  "community": "LA JOLLA",
+                  "addrpdir": null,
+                  "addrapnid": null,
+                  "parcelid": 10004183,
+                  "roadsegid": null,
+                  "asource": "M",
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "y_coord": 1903074.81625632,
+                  "state": "CA",
+                  "objectid": 1071683,
+                  "apn": "7601039705",
+                  "addrnmbr": 9500
+                },
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6257865.13582791,
+                  "usng": "11S MS 77588 38517",
+                  "orig_oid": 1131527,
+                  "addrfrac": null,
+                  "addrname": "GILMAN",
+                  "addrsfx": "DR",
+                  "address_type": null,
+                  "addrzip": "92093",
+                  "addrpostd": null,
+                  "community": "LA JOLLA",
+                  "addrpdir": null,
+                  "addrapnid": null,
+                  "parcelid": 10004183,
+                  "roadsegid": null,
+                  "asource": "M",
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "y_coord": 1903074.81625632,
+                  "state": "CA",
+                  "objectid": 1126415,
+                  "apn": "7601035100",
+                  "addrnmbr": 9500
+                }
+              ],
+              "feature_count": 2,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          },
+          {
+            "candidate_id": "candidate_ffc1215848d74907aa5fed24e6b240f3",
+            "matched_address": "9500 GILMAN DR, La Jolla, CA 92093",
+            "location": {
+              "id": "A",
+              "label": "9500 GILMAN DR, La Jolla, CA 92093",
+              "latitude": 32.87728328608443,
+              "longitude": -117.23618279140439
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": null,
+                  "usng": "11S MS 77907 37707",
+                  "orig_oid": 775415,
+                  "addrfrac": null,
+                  "addrname": "GILMAN",
+                  "addrsfx": "DR",
+                  "address_type": null,
+                  "addrzip": "92093",
+                  "addrpostd": null,
+                  "community": "La Jolla",
+                  "addrpdir": null,
+                  "addrapnid": "6037502",
+                  "parcelid": 17158,
+                  "roadsegid": 133369,
+                  "asource": "S",
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "y_coord": null,
+                  "state": "CA",
+                  "objectid": 771466,
+                  "apn": "3440801600",
+                  "addrnmbr": 9500
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {
+            "zip_missing": 4
+          },
+          "raw_candidate_count": 7,
+          "distinct_candidate_count": 2
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "02",
+      "input_address": "3350 Front St, San Diego, CA 92103",
+      "category": "residential",
+      "neighborhood": "Bankers Hill",
+      "house_number": "3350",
+      "street_name": "Front",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92103",
+      "source_url": "https://www.compass.com/homedetails/3350-Front-St-San-Diego-CA-92103/1BUCNW_pid/",
+      "considerations": "Public single-family listing; historical listing establishes address, not current ownership",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "public brokerage property listing"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_34adf1fd5e9d4df89cfb658efbebaacb",
+            "matched_address": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+            "location": {
+              "id": "A",
+              "label": "3350 FRONT ST, SAN DIEGO, CA, 92103",
+              "latitude": 32.740255545403,
+              "longitude": -117.164953584173
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92103",
+                "streetName": "FRONT",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3300",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "3398",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "195343085"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_31ac65a5573540d99a55e58233e9b81d",
+            "matched_address": "3350 FRONT ST, San Diego, CA 92103",
+            "location": {
+              "id": "A",
+              "label": "3350 FRONT ST, San Diego, CA 92103",
+              "latitude": 32.740421984102845,
+              "longitude": -117.16507960749927
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6280285.69525001,
+                  "usng": "11S MS 84535 22522",
+                  "orig_oid": 124252,
+                  "addrfrac": null,
+                  "addrname": "FRONT",
+                  "addrsfx": "ST",
+                  "address_type": null,
+                  "addrzip": "92103",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "addrapnid": "202535",
+                  "parcelid": 200791,
+                  "roadsegid": 30257,
+                  "asource": "S",
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "y_coord": 1850413.26199999,
+                  "state": "CA",
+                  "objectid": 125901,
+                  "apn": "4525372100",
+                  "addrnmbr": 3350
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "03",
+      "input_address": "6555 Ambrosia Dr, San Diego, CA",
+      "category": "large_apartment_community",
+      "neighborhood": "Mission Valley",
+      "house_number": "6555",
+      "street_name": "Ambrosia",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "",
+      "source_url": "https://www.irvinecompanyapartments.com/locations/san-diego/mission-valley/village-mission-valley.html",
+      "considerations": "The Village Mission Valley; official site supplies no ZIP in displayed address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_a76201558b0a45c1addfff2045eeb02c",
+            "matched_address": "6555 AMBROSIA DR, SAN DIEGO, CA, 92124",
+            "location": {
+              "id": "A",
+              "label": "6555 AMBROSIA DR, SAN DIEGO, CA, 92124",
+              "latitude": 32.794808303186,
+              "longitude": -117.106755623747
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92124",
+                "streetName": "AMBROSIA",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "6501",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "6599",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195321908"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_5e444ce9d5e94e2f990d525b9ffba4e2",
+            "matched_address": "6555 AMBROSIA DR, San Diego, CA 92124",
+            "location": {
+              "id": "A",
+              "label": "6555 AMBROSIA DR, San Diego, CA 92124",
+              "latitude": 32.7946350040758,
+              "longitude": -117.10689779528448
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "review_required",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "R"
+              ],
+              "placement_labels": [
+                "Review"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6298338.14075001,
+                  "usng": "11S MS 89992 28525",
+                  "orig_oid": 712997,
+                  "addrfrac": null,
+                  "addrname": "AMBROSIA",
+                  "addrsfx": "DR",
+                  "address_type": null,
+                  "addrzip": "92124",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "addrapnid": "849024",
+                  "parcelid": 5400526,
+                  "roadsegid": 82329,
+                  "asource": "S",
+                  "placement_location": "R",
+                  "addrunit": null,
+                  "y_coord": 1869985.78575,
+                  "state": "CA",
+                  "objectid": 709855,
+                  "apn": "4340205100",
+                  "addrnmbr": 6555
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "04",
+      "input_address": "9800 Mira Lee Way, San Diego, CA 92126",
+      "category": "large_apartment_community",
+      "neighborhood": "Mira Mesa",
+      "house_number": "9800",
+      "street_name": "Mira Lee",
+      "street_suffix": "Way",
+      "city": "San Diego",
+      "postal_code": "92126",
+      "source_url": "https://www.gardencommunitiesca.com/apartments/ca/san-diego/casa-mira-view-0/default",
+      "considerations": "Casa Mira View; community/office address, not a unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_d22f7d51b5684c38a4a579e26faa6293",
+            "matched_address": "9800 MIRA LEE WAY, San Diego, CA 92126",
+            "location": {
+              "id": "A",
+              "label": "9800 MIRA LEE WAY, San Diego, CA 92126",
+              "latitude": 32.92232753316194,
+              "longitude": -117.1183146426874
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6295216.63675,
+                  "usng": "11S MS 88939 42682",
+                  "orig_oid": 710403,
+                  "addrfrac": null,
+                  "addrname": "MIRA LEE",
+                  "addrsfx": "WAY",
+                  "address_type": null,
+                  "addrzip": "92126",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "addrapnid": "846039",
+                  "parcelid": 5325558,
+                  "roadsegid": 221662,
+                  "asource": "S",
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "y_coord": 1916473.69075,
+                  "state": "CA",
+                  "objectid": 707287,
+                  "apn": "3184103800",
+                  "addrnmbr": 9800
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "05",
+      "input_address": "8720 Costa Verde Blvd, San Diego, CA 92122",
+      "category": "large_apartment_community",
+      "neighborhood": "University City",
+      "house_number": "8720",
+      "street_name": "Costa Verde",
+      "street_suffix": "Blvd",
+      "city": "San Diego",
+      "postal_code": "92122",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "Costa Verde Village; community address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_42225070bf164ad2820a21b16dc3288c",
+            "matched_address": "8720 COSTA VERDE BLVD, SAN DIEGO, CA, 92122",
+            "location": {
+              "id": "A",
+              "label": "8720 COSTA VERDE BLVD, SAN DIEGO, CA, 92122",
+              "latitude": 32.869156540179,
+              "longitude": -117.217034801546
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92122",
+                "streetName": "COSTA VERDE",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "8500",
+                "state": "CA",
+                "suffixType": "BLVD",
+                "toAddress": "8728",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "650071724"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "06",
+      "input_address": "9065 Sydney Ct, San Diego, CA 92122",
+      "category": "apartment",
+      "neighborhood": "University City",
+      "house_number": "9065",
+      "street_name": "Sydney",
+      "street_suffix": "Ct",
+      "city": "San Diego",
+      "postal_code": "92122",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "360 Luxury Apartments; building/office address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_f50a8544c4bb4099acd2d23055c13788",
+            "matched_address": "9065 SYDNEY CT, SAN DIEGO, CA, 92122",
+            "location": {
+              "id": "A",
+              "label": "9065 SYDNEY CT, SAN DIEGO, CA, 92122",
+              "latitude": 32.872920887685,
+              "longitude": -117.202098081715
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92122",
+                "streetName": "SYDNEY",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "9001",
+                "state": "CA",
+                "suffixType": "CT",
+                "toAddress": "9065",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "650064760"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "07",
+      "input_address": "330 Park Blvd, San Diego, CA 92101",
+      "category": "civic",
+      "neighborhood": "East Village",
+      "house_number": "330",
+      "street_name": "Park",
+      "street_suffix": "Blvd",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://www.sandiego.gov/public-library/central-library",
+      "considerations": "Central Library; mixed urban civic site",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_22a4793776534d2f86061825f41cf2e9",
+            "matched_address": "330 PARK BLVD, SAN DIEGO, CA, 92101",
+            "location": {
+              "id": "A",
+              "label": "330 PARK BLVD, SAN DIEGO, CA, 92101",
+              "latitude": 32.708219196635,
+              "longitude": -117.154112780267
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92101",
+                "streetName": "PARK",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "398",
+                "state": "CA",
+                "suffixType": "BLVD",
+                "toAddress": "300",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "657351489"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_7e1ec5a4dfe84f3681528fa948210a97",
+            "matched_address": "330 PARK BLVD, San Diego, CA 92101",
+            "location": {
+              "id": "A",
+              "label": "330 PARK BLVD, San Diego, CA 92101",
+              "latitude": 32.708704955148676,
+              "longitude": -117.1540601644469
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6283574,
+                  "usng": "11S MS 85562 19005",
+                  "orig_oid": 790727,
+                  "addrfrac": null,
+                  "addrname": "PARK",
+                  "addrsfx": "BLVD",
+                  "address_type": null,
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "addrapnid": "6053099",
+                  "parcelid": 5237375,
+                  "roadsegid": 2703,
+                  "asource": "S",
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "y_coord": 1838844,
+                  "state": "CA",
+                  "objectid": 786652,
+                  "apn": "5353621600",
+                  "addrnmbr": 330
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {
+            "street_components": 1
+          },
+          "raw_candidate_count": 2,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "08",
+      "input_address": "7555 Draper Ave, La Jolla, CA 92037",
+      "category": "civic",
+      "neighborhood": "La Jolla Village",
+      "house_number": "7555",
+      "street_name": "Draper",
+      "street_suffix": "Ave",
+      "city": "La Jolla",
+      "postal_code": "92037",
+      "source_url": "https://www.sandiego.gov/public-library/idea/lj",
+      "considerations": "Riford Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "official property/institution page"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_06c8f16637614a69bfefed9c5d9f7b40",
+            "matched_address": "7555 DRAPER AVE, LA JOLLA, CA, 92037",
+            "location": {
+              "id": "A",
+              "label": "7555 DRAPER AVE, LA JOLLA, CA, 92037",
+              "latitude": 32.840529495563,
+              "longitude": -117.276291871406
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92037",
+                "streetName": "DRAPER",
+                "preType": "",
+                "city": "LA JOLLA",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "7501",
+                "state": "CA",
+                "suffixType": "AVE",
+                "toAddress": "7599",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195298274"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_ba8c3fcac3844d0b8853950c4ddbcdab",
+            "matched_address": "7555 DRAPER AVE, La Jolla, CA 92037",
+            "location": {
+              "id": "A",
+              "label": "7555 DRAPER AVE, La Jolla, CA 92037",
+              "latitude": 32.84077410213517,
+              "longitude": -117.27610695094783
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "x_coord": 6246505.44499999,
+                  "usng": "11S MS 74162 33669",
+                  "orig_oid": 499981,
+                  "addrfrac": null,
+                  "addrname": "DRAPER",
+                  "addrsfx": "AVE",
+                  "address_type": null,
+                  "addrzip": "92037",
+                  "addrpostd": null,
+                  "community": "La Jolla",
+                  "addrpdir": null,
+                  "addrapnid": "167006",
+                  "parcelid": 168544,
+                  "roadsegid": 25010,
+                  "asource": "S",
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "y_coord": 1887242.05875,
+                  "state": "CA",
+                  "objectid": 499588,
+                  "apn": "3504520300",
+                  "addrnmbr": 7555
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "09",
+      "input_address": "3795 Fairmount Ave, San Diego, CA 92105",
+      "category": "civic",
+      "neighborhood": "City Heights",
+      "house_number": "3795",
+      "street_name": "Fairmount",
+      "street_suffix": "Ave",
+      "city": "San Diego",
+      "postal_code": "92105",
+      "source_url": "https://www.sandiego.gov/public-library/locations/city-heights-weingart-library-and-performance-annex",
+      "considerations": "City Heights/Weingart Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_fdac843d2adf48ffa46fba9ee7b1a844",
+            "matched_address": "3795 FAIRMOUNT AVE, SAN DIEGO, CA, 92105",
+            "location": {
+              "id": "A",
+              "label": "3795 FAIRMOUNT AVE, SAN DIEGO, CA, 92105",
+              "latitude": 32.747617122871,
+              "longitude": -117.100834235104
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92105",
+                "streetName": "FAIRMOUNT",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3701",
+                "state": "CA",
+                "suffixType": "AVE",
+                "toAddress": "3799",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195347078"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "10",
+      "input_address": "6600 Montezuma Rd, San Diego, CA 92115",
+      "category": "civic",
+      "neighborhood": "College-Rolando",
+      "house_number": "6600",
+      "street_name": "Montezuma",
+      "street_suffix": "Rd",
+      "city": "San Diego",
+      "postal_code": "92115",
+      "source_url": "https://www.sandiego.gov/public-library/locations/college-rolando-library",
+      "considerations": "College-Rolando Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_2aab9194b41a48f382735318c3285853",
+            "matched_address": "6600 MONTEZUMA RD, SAN DIEGO, CA, 92115",
+            "location": {
+              "id": "A",
+              "label": "6600 MONTEZUMA RD, SAN DIEGO, CA, 92115",
+              "latitude": 32.769055317423,
+              "longitude": -117.056449787118
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92115",
+                "streetName": "MONTEZUMA",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "6600",
+                "state": "CA",
+                "suffixType": "RD",
+                "toAddress": "6698",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "195323659"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_29c7742286c649e68d3acae001760081",
+            "matched_address": "6600 MONTEZUMA RD, San Diego, CA 92115",
+            "location": {
+              "id": "A",
+              "label": "6600 MONTEZUMA RD, San Diego, CA 92115",
+              "latitude": 32.76941665768315,
+              "longitude": -117.0561181006504
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "MONTEZUMA",
+                  "addrsfx": "RD",
+                  "addrzip": "92115",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 198573,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 691221,
+                  "apn": "4681200700",
+                  "addrnmbr": 6600
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "11",
+      "input_address": "3795 31st St, San Diego, CA 92104",
+      "category": "civic",
+      "neighborhood": "North Park",
+      "house_number": "3795",
+      "street_name": "31st",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92104",
+      "source_url": "https://www.sandiego.gov/public-library/locations/north-park-library",
+      "considerations": "North Park Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_2822d1ccf0ad4adabba389841b9ff05e",
+            "matched_address": "3795 31ST ST, SAN DIEGO, CA, 92104",
+            "location": {
+              "id": "A",
+              "label": "3795 31ST ST, SAN DIEGO, CA, 92104",
+              "latitude": 32.747288088765,
+              "longitude": -117.127092501133
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92104",
+                "streetName": "31ST",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3701",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "3799",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195345729"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_e9e7a7642696492d8b23952067e292e8",
+            "matched_address": "3795 31ST ST, San Diego, CA 92104",
+            "location": {
+              "id": "A",
+              "label": "3795 31ST ST, San Diego, CA 92104",
+              "latitude": 32.74727414954429,
+              "longitude": -117.1269025255831
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "31ST",
+                  "addrsfx": "ST",
+                  "addrzip": "92104",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 4311,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 18840,
+                  "apn": "4531641800",
+                  "addrnmbr": 3795
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "12",
+      "input_address": "3003 Coronado Ave, San Diego, CA 92154",
+      "category": "civic",
+      "neighborhood": "Otay Mesa-Nestor",
+      "house_number": "3003",
+      "street_name": "Coronado",
+      "street_suffix": "Ave",
+      "city": "San Diego",
+      "postal_code": "92154",
+      "source_url": "https://www.sandiego.gov/public-library/locations/otay-mesa-nestor-library",
+      "considerations": "Otay Mesa-Nestor Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_38d4938f7f71493fae235a22c04dffa8",
+            "matched_address": "3003 CORONADO AVE, SAN DIEGO, CA, 92154",
+            "location": {
+              "id": "A",
+              "label": "3003 CORONADO AVE, SAN DIEGO, CA, 92154",
+              "latitude": 32.576866706457,
+              "longitude": -117.068724132034
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92154",
+                "streetName": "CORONADO",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3001",
+                "state": "CA",
+                "suffixType": "AVE",
+                "toAddress": "3099",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195358572"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "13",
+      "input_address": "4275 Cass St, San Diego, CA 92109",
+      "category": "civic",
+      "neighborhood": "Pacific Beach",
+      "house_number": "4275",
+      "street_name": "Cass",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92109",
+      "source_url": "https://www.sandiego.gov/public-library/locations/pacific-beach-taylor-library",
+      "considerations": "Pacific Beach/Taylor Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_bd8c67e4282c4c43839ada2417e4b390",
+            "matched_address": "4275 CASS ST, SAN DIEGO, CA, 92109",
+            "location": {
+              "id": "A",
+              "label": "4275 CASS ST, SAN DIEGO, CA, 92109",
+              "latitude": 32.79360800371,
+              "longitude": -117.250600478327
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92109",
+                "streetName": "CASS",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "4275",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "4299",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "657337035"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_0db9501cfc42472ca832c89c553c8498",
+            "matched_address": "4275 CASS ST, San Diego, CA 92109",
+            "location": {
+              "id": "A",
+              "label": "4275 CASS ST, San Diego, CA 92109",
+              "latitude": 32.794311856634806,
+              "longitude": -117.25009304353601
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "CASS",
+                  "addrsfx": "ST",
+                  "addrzip": "92109",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 16426,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 71414,
+                  "apn": "4231530100",
+                  "addrnmbr": 4275
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "14",
+      "input_address": "3701 Voltaire St, San Diego, CA 92107",
+      "category": "civic",
+      "neighborhood": "Point Loma",
+      "house_number": "3701",
+      "street_name": "Voltaire",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92107",
+      "source_url": "https://www.sandiego.gov/public-library/locations/point-loma-hervey-library",
+      "considerations": "Point Loma/Hervey Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_11a6e70a82dc403d8f1cc21ddf7750bd",
+            "matched_address": "3701 VOLTAIRE ST, SAN DIEGO, CA, 92107",
+            "location": {
+              "id": "A",
+              "label": "3701 VOLTAIRE ST, SAN DIEGO, CA, 92107",
+              "latitude": 32.740086479242,
+              "longitude": -117.22906021143
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92107",
+                "streetName": "VOLTAIRE",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3701",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "3799",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "637438005"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_a309dc3986704ced9f8279d72635afe7",
+            "matched_address": "3701 VOLTAIRE ST, San Diego, CA 92107",
+            "location": {
+              "id": "A",
+              "label": "3701 VOLTAIRE ST, San Diego, CA 92107",
+              "latitude": 32.74009979786196,
+              "longitude": -117.22942490246483
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "VOLTAIRE",
+                  "addrsfx": "ST",
+                  "addrzip": "92107",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 214371,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 269045,
+                  "apn": "4495910100",
+                  "addrnmbr": 3701
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "15",
+      "input_address": "17110 Bernardo Center Dr, San Diego, CA 92128",
+      "category": "civic",
+      "neighborhood": "Rancho Bernardo",
+      "house_number": "17110",
+      "street_name": "Bernardo Center",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92128",
+      "source_url": "https://www.sandiego.gov/public-library/locations/rancho-bernardo-library",
+      "considerations": "Rancho Bernardo Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_0aa5cad6152a487ab6e7925b24506e14",
+            "matched_address": "17110 BERNARDO CENTER DR, SAN DIEGO, CA, 92128",
+            "location": {
+              "id": "A",
+              "label": "17110 BERNARDO CENTER DR, SAN DIEGO, CA, 92128",
+              "latitude": 33.024224588635,
+              "longitude": -117.074468044583
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92128",
+                "streetName": "BERNARDO CENTER",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "17000",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "17198",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "195315379"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_6f038da9bfe34077818595576fcc946a",
+            "matched_address": "17110 BERNARDO CENTER DR, San Diego, CA 92128",
+            "location": {
+              "id": "A",
+              "label": "17110 BERNARDO CENTER DR, San Diego, CA 92128",
+              "latitude": 33.024936760175834,
+              "longitude": -117.07528080163247
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "BERNARDO CENTER",
+                  "addrsfx": "DR",
+                  "addrzip": "92128",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 210240,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 640829,
+                  "apn": "2732510900",
+                  "addrnmbr": 17110
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "16",
+      "input_address": "4235 Beyer Blvd, San Diego, CA 92173",
+      "category": "civic",
+      "neighborhood": "San Ysidro",
+      "house_number": "4235",
+      "street_name": "Beyer",
+      "street_suffix": "Blvd",
+      "city": "San Diego",
+      "postal_code": "92173",
+      "source_url": "https://www.sandiego.gov/public-library/locations/san-ysidro-library",
+      "considerations": "San Ysidro Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_bfa83dbd8eea4c4586389b2a1305b507",
+            "matched_address": "4235 BEYER BLVD, SAN DIEGO, CA, 92173",
+            "location": {
+              "id": "A",
+              "label": "4235 BEYER BLVD, SAN DIEGO, CA, 92173",
+              "latitude": 32.558222233517,
+              "longitude": -117.044073600598
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92173",
+                "streetName": "BEYER",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "4201",
+                "state": "CA",
+                "suffixType": "BLVD",
+                "toAddress": "4359",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195738986"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_edfb4f180e0142dda7fc92e711d67c0d",
+            "matched_address": "4235 BEYER BLVD, San Diego, CA 92173",
+            "location": {
+              "id": "A",
+              "label": "4235 BEYER BLVD, San Diego, CA 92173",
+              "latitude": 32.55775612578228,
+              "longitude": -117.04305385235891
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "parcel_centroid",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "C"
+              ],
+              "placement_labels": [
+                "Centroid"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "BEYER",
+                  "addrsfx": "BLVD",
+                  "addrzip": "92173",
+                  "addrpostd": null,
+                  "community": "San Ysidro",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 11817,
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 54499,
+                  "apn": "6381613900",
+                  "addrnmbr": 4235
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "17",
+      "input_address": "10301 Scripps Lake Dr, San Diego, CA 92131",
+      "category": "civic",
+      "neighborhood": "Scripps Ranch",
+      "house_number": "10301",
+      "street_name": "Scripps Lake",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92131",
+      "source_url": "https://www.sandiego.gov/public-library/locations/scripps-miramar-ranch-library",
+      "considerations": "Scripps Miramar Ranch Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_ac851f9c91954f6588d99609be21ca40",
+            "matched_address": "10301 SCRIPPS LAKE DR, SAN DIEGO, CA, 92131",
+            "location": {
+              "id": "A",
+              "label": "10301 SCRIPPS LAKE DR, SAN DIEGO, CA, 92131",
+              "latitude": 32.911643452766,
+              "longitude": -117.101813133722
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92131",
+                "streetName": "SCRIPPS LAKE",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "10001",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "10399",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "657499737"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_52c7d539d59c4def996f289aa085e015",
+            "matched_address": "10301 SCRIPPS LAKE DR, San Diego, CA 92131",
+            "location": {
+              "id": "A",
+              "label": "10301 SCRIPPS LAKE DR, San Diego, CA 92131",
+              "latitude": 32.91116954126848,
+              "longitude": -117.1051703229335
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "SCRIPPS LAKE",
+                  "addrsfx": "DR",
+                  "addrzip": "92131",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 189022,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 314903,
+                  "apn": "3191703300",
+                  "addrnmbr": 10301
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "18",
+      "input_address": "7900 Paradise Valley Rd, San Diego, CA 92139",
+      "category": "civic",
+      "neighborhood": "Skyline Hills",
+      "house_number": "7900",
+      "street_name": "Paradise Valley",
+      "street_suffix": "Rd",
+      "city": "San Diego",
+      "postal_code": "92139",
+      "source_url": "https://www.sandiego.gov/public-library/locations/skyline-hills-library",
+      "considerations": "Skyline Hills Library",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_b87a0b88da104f94974a052e93d7bb2f",
+            "matched_address": "7900 PARADISE VALLEY RD, SAN DIEGO, CA, 92139",
+            "location": {
+              "id": "A",
+              "label": "7900 PARADISE VALLEY RD, SAN DIEGO, CA, 92139",
+              "latitude": 32.696959430053,
+              "longitude": -117.026890874815
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92139",
+                "streetName": "PARADISE VALLEY",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "7844",
+                "state": "CA",
+                "suffixType": "RD",
+                "toAddress": "7998",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "195704847"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "19",
+      "input_address": "7918 Collective Way, San Diego, CA 92126",
+      "category": "apartment",
+      "neighborhood": "Mira Mesa / 3Roots",
+      "house_number": "7918",
+      "street_name": "Collective",
+      "street_suffix": "Way",
+      "city": "San Diego",
+      "postal_code": "92126",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "Garden at 3Roots; building/community address, no unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "20",
+      "input_address": "9515 Genesee Ave, San Diego, CA 92121",
+      "category": "apartment",
+      "neighborhood": "University City",
+      "house_number": "9515",
+      "street_name": "Genesee",
+      "street_suffix": "Ave",
+      "city": "San Diego",
+      "postal_code": "92121",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "La Jolla Canyon; building/community address, no unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_52e28f1462e04fe8bfbd2159615b74d5",
+            "matched_address": "9515 GENESEE AVE, SAN DIEGO, CA, 92121",
+            "location": {
+              "id": "A",
+              "label": "9515 GENESEE AVE, SAN DIEGO, CA, 92121",
+              "latitude": 32.878018311128,
+              "longitude": -117.2140512912
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92121",
+                "streetName": "GENESEE",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "9501",
+                "state": "CA",
+                "suffixType": "AVE",
+                "toAddress": "9539",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195300497"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_0fbb1470e66444fe845f4e8714cd8aba",
+            "matched_address": "9515 GENESEE AVE, San Diego, CA 92121",
+            "location": {
+              "id": "A",
+              "label": "9515 GENESEE AVE, San Diego, CA 92121",
+              "latitude": 32.87840798429037,
+              "longitude": -117.213397908528
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "GENESEE",
+                  "addrsfx": "AVE",
+                  "addrzip": "92121",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 31118,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 511216,
+                  "apn": "3431402400",
+                  "addrnmbr": 9515
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "21",
+      "input_address": "9085 Judicial Dr, San Diego, CA 92122",
+      "category": "apartment",
+      "neighborhood": "University City",
+      "house_number": "9085",
+      "street_name": "Judicial",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92122",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "La Jolla Crossroads; building/community address, no unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_1ab84aa31eab443bb6a67f46df3c823b",
+            "matched_address": "9085 JUDICIAL DR, SAN DIEGO, CA, 92122",
+            "location": {
+              "id": "A",
+              "label": "9085 JUDICIAL DR, SAN DIEGO, CA, 92122",
+              "latitude": 32.871872180529,
+              "longitude": -117.203529838364
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92122",
+                "streetName": "JUDICIAL",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "9099",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "9001",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "627889447"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_b89d53ad1717416082acfff27b467bd3",
+            "matched_address": "9085 JUDICIAL DR, San Diego, CA 92122",
+            "location": {
+              "id": "A",
+              "label": "9085 JUDICIAL DR, San Diego, CA 92122",
+              "latitude": 32.87215856501087,
+              "longitude": -117.20271076994676
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "JUDICIAL",
+                  "addrsfx": "DR",
+                  "addrzip": "92122",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 188402,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 662498,
+                  "apn": "3452400700",
+                  "addrnmbr": 9085
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "22",
+      "input_address": "4070 Huerfano Ave, San Diego, CA 92117",
+      "category": "apartment",
+      "neighborhood": "Bay Ho",
+      "house_number": "4070",
+      "street_name": "Huerfano",
+      "street_suffix": "Ave",
+      "city": "San Diego",
+      "postal_code": "92117",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "Pacific Bay Club; building/community address, no unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_f74aae0331584f659a7a6d6ba403010c",
+            "matched_address": "4070 HUERFANO AVE, SAN DIEGO, CA, 92117",
+            "location": {
+              "id": "A",
+              "label": "4070 HUERFANO AVE, SAN DIEGO, CA, 92117",
+              "latitude": 32.816168115513,
+              "longitude": -117.217045202837
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92117",
+                "streetName": "HUERFANO",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "4000",
+                "state": "CA",
+                "suffixType": "AVE",
+                "toAddress": "4098",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "657398100"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_8a3d82f40cea43828debaf666e6c531e",
+            "matched_address": "4070 HUERFANO AVE, San Diego, CA 92117",
+            "location": {
+              "id": "A",
+              "label": "4070 HUERFANO AVE, San Diego, CA 92117",
+              "latitude": 32.81625963383481,
+              "longitude": -117.21761876714692
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "HUERFANO",
+                  "addrsfx": "AVE",
+                  "addrzip": "92117",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 36182,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 521460,
+                  "apn": "6761502500",
+                  "addrnmbr": 4070
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "23",
+      "input_address": "10615 Calle Mar De Mariposa, San Diego, CA 92130",
+      "category": "apartment",
+      "neighborhood": "Carmel Valley",
+      "house_number": "10615",
+      "street_name": "Calle Mar De Mariposa",
+      "street_suffix": "",
+      "city": "San Diego",
+      "postal_code": "92130",
+      "source_url": "https://www.gardencommunitiesca.com/ca/san-diego/apartments",
+      "considerations": "Torrey Gardens; building/community address, no unit",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_1ba4cebbe5fe44e0b7716cae10c87e21",
+            "matched_address": "10615 CLL MAR DE MARIPOSA, SAN DIEGO, CA, 92130",
+            "location": {
+              "id": "A",
+              "label": "10615 CLL MAR DE MARIPOSA, SAN DIEGO, CA, 92130",
+              "latitude": 32.914007077904,
+              "longitude": -117.222468894737
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92130",
+                "streetName": "MAR DE MARIPOSA",
+                "preType": "CLL",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "10601",
+                "state": "CA",
+                "suffixType": "",
+                "toAddress": "10643",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "612896021"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_2d718f09f23a4b70938841ef6ce2cbfe",
+            "matched_address": "10615 CLL MAR DE MARIPOSA, San Diego, CA 92130",
+            "location": {
+              "id": "A",
+              "label": "10615 CLL MAR DE MARIPOSA, San Diego, CA 92130",
+              "latitude": 32.91299668738116,
+              "longitude": -117.22653726088315
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "parcel_centroid",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "C"
+              ],
+              "placement_labels": [
+                "Centroid"
+              ],
+              "asource": [
+                "M"
+              ],
+              "source_labels": [
+                "Assessor Master Property Record"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "CALLE MAR DE MARIPOSA",
+                  "addrsfx": null,
+                  "addrzip": "92130",
+                  "addrpostd": null,
+                  "community": "SAN DIEGO",
+                  "addrpdir": null,
+                  "asource": "M",
+                  "roadsegid": null,
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 883145,
+                  "apn": "3077800100",
+                  "addrnmbr": 10615
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "24",
+      "input_address": "100 Park Plz, San Diego, CA 92101",
+      "category": "large_apartment_community",
+      "neighborhood": "East Village",
+      "house_number": "100",
+      "street_name": "Park",
+      "street_suffix": "Plz",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://www.park12living.com/contactus",
+      "considerations": "Park 12; source spells street suffix Plaza; standard abbreviation PLZ",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "invalid_result",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {
+            "street_components": 3
+          },
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "25",
+      "input_address": "11100 Vista Sorrento Pkwy, San Diego, CA",
+      "category": "apartment",
+      "neighborhood": "Carmel Valley",
+      "house_number": "11100",
+      "street_name": "Vista Sorrento",
+      "street_suffix": "Pkwy",
+      "city": "San Diego",
+      "postal_code": "",
+      "source_url": "https://www.irvinecompanyapartments.com/locations/san-diego/carmel-valley/torrey-villas.html",
+      "considerations": "Torrey Villas; no ZIP shown in official displayed address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_b9648423268a44f1a71b9f3d22f86237",
+            "matched_address": "11100 VISTA SORRENTO PKWY, SAN DIEGO, CA, 92130",
+            "location": {
+              "id": "A",
+              "label": "11100 VISTA SORRENTO PKWY, SAN DIEGO, CA, 92130",
+              "latitude": 32.915273053362,
+              "longitude": -117.229375121622
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92130",
+                "streetName": "VISTA SORRENTO",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "11176",
+                "state": "CA",
+                "suffixType": "PKWY",
+                "toAddress": "11100",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195691144"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_313afbd7b28c402f8e8a38c1d240d54d",
+            "matched_address": "11100 VISTA SORRENTO PKWY, San Diego, CA 92130",
+            "location": {
+              "id": "A",
+              "label": "11100 VISTA SORRENTO PKWY, San Diego, CA 92130",
+              "latitude": 32.91775037322385,
+              "longitude": -117.23028579066764
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "VISTA SORRENTO",
+                  "addrsfx": "PKY",
+                  "addrzip": "92130",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 153474,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 810364,
+                  "apn": "3101400100",
+                  "addrnmbr": 11100
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "26",
+      "input_address": "5500 Campanile Dr, San Diego, CA 92182",
+      "category": "campus",
+      "neighborhood": "College Area",
+      "house_number": "5500",
+      "street_name": "Campanile",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92182",
+      "source_url": "https://www.sdsu.edu/about/contact",
+      "considerations": "SDSU central postal address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "invalid_result",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {
+            "zip_missing": 10
+          },
+          "raw_candidate_count": 10,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "27",
+      "input_address": "5998 Alcala Park, San Diego, CA 92110",
+      "category": "campus",
+      "neighborhood": "Linda Vista",
+      "house_number": "5998",
+      "street_name": "Alcala",
+      "street_suffix": "Park",
+      "city": "San Diego",
+      "postal_code": "92110",
+      "source_url": "https://www.sandiego.edu/visit/",
+      "considerations": "USD campus address; official page uses accent in Alcala; ASCII transcription",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_d7ca3f68eaa84031b4675f28baff7899",
+            "matched_address": "5998 ALCALA PARK, SAN DIEGO, CA, 92110",
+            "location": {
+              "id": "A",
+              "label": "5998 ALCALA PARK, SAN DIEGO, CA, 92110",
+              "latitude": 32.770544894831,
+              "longitude": -117.189590285657
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92110",
+                "streetName": "ALCALA PARK",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "5900",
+                "state": "CA",
+                "suffixType": "",
+                "toAddress": "5998",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "658675193"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "28",
+      "input_address": "3195 Voigt Dr, La Jolla, CA 92093",
+      "category": "campus",
+      "neighborhood": "UCSD",
+      "house_number": "3195",
+      "street_name": "Voigt",
+      "street_suffix": "Dr",
+      "city": "La Jolla",
+      "postal_code": "92093",
+      "source_url": "https://qi.ucsd.edu/contact/",
+      "considerations": "Atkinson Hall physical building address, distinct from 9500 campus mailing address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_84d3744ae3694246b54982da404eabce",
+            "matched_address": "3195 VOIGT DR, La Jolla, CA 92093",
+            "location": {
+              "id": "A",
+              "label": "3195 VOIGT DR, La Jolla, CA 92093",
+              "latitude": 32.8825123737358,
+              "longitude": -117.23476473542354
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "VOIGT",
+                  "addrsfx": "DR",
+                  "addrzip": "92093",
+                  "addrpostd": null,
+                  "community": "La Jolla",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 107296,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 724895,
+                  "apn": "3421104500",
+                  "addrnmbr": 3195
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "29",
+      "input_address": "9625 Scholars Dr N, La Jolla, CA 92093",
+      "category": "campus",
+      "neighborhood": "UCSD",
+      "house_number": "9625",
+      "street_name": "Scholars",
+      "street_suffix": "Dr",
+      "city": "La Jolla",
+      "postal_code": "92093",
+      "source_url": "https://philosophy.ucsd.edu/about/contact.html",
+      "considerations": "Arts and Humanities building physical address; post-direction North retained",
+      "direction": "",
+      "post_direction": "N",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_1958ace135b848febc4916a2ef349015",
+            "matched_address": "9625 SCHOLARS DR N, La Jolla, CA 92093",
+            "location": {
+              "id": "A",
+              "label": "9625 SCHOLARS DR N, La Jolla, CA 92093",
+              "latitude": 32.88042637406705,
+              "longitude": -117.24096963674265
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "SCHOLARS",
+                  "addrsfx": "DR",
+                  "addrzip": "92093",
+                  "addrpostd": "N",
+                  "community": "La Jolla",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 228338,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 725765,
+                  "apn": "3420104600",
+                  "addrnmbr": 9625
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "30",
+      "input_address": "1 Park Blvd, San Diego, CA 92101",
+      "category": "commercial_mixed",
+      "neighborhood": "Downtown waterfront",
+      "house_number": "1",
+      "street_name": "Park",
+      "street_suffix": "Blvd",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://www.portofsandiego.org/experiences/where-go/embarcadero/san-diego-bayfront-park",
+      "considerations": "Bayfront park/hotel site shares street address; not a hotel-unit/entrance claim",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 0
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "31",
+      "input_address": "111 W Harbor Dr, San Diego, CA 92101",
+      "category": "commercial",
+      "neighborhood": "Marina",
+      "house_number": "111",
+      "street_name": "Harbor",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://www.sdccc.org/media/acfupload/RFP_23-1027_-_West_Kitchen_Construction_copy_2.pdf",
+      "considerations": "San Diego Convention Center published site address",
+      "direction": "W",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_07a04b02603e4a73904df9e9cdc3ad83",
+            "matched_address": "111 W HARBOR DR, SAN DIEGO, CA, 92101",
+            "location": {
+              "id": "A",
+              "label": "111 W HARBOR DR, SAN DIEGO, CA, 92101",
+              "latitude": 32.708899500206,
+              "longitude": -117.164393400931
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92101",
+                "streetName": "HARBOR",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "W",
+                "suffixDirection": "",
+                "fromAddress": "199",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "101",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "195672749"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "no_match",
+        "candidates": [],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 0,
+          "distinct_candidate_count": 0
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "32",
+      "input_address": "2920 Zoo Dr, San Diego, CA 92101",
+      "category": "commercial",
+      "neighborhood": "Balboa Park",
+      "house_number": "2920",
+      "street_name": "Zoo",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://zoo.sandiegozoo.org/plan-your-visit",
+      "considerations": "Zoo visitor address; large attraction site",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_2d275fe9aa9b48cb87210e98e73f50e0",
+            "matched_address": "2920 ZOO DR, SAN DIEGO, CA, 92101",
+            "location": {
+              "id": "A",
+              "label": "2920 ZOO DR, SAN DIEGO, CA, 92101",
+              "latitude": 32.737858928029,
+              "longitude": -117.148806799024
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92101",
+                "streetName": "ZOO",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "2858",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "3052",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "650435011"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_edced77fdd864c518a0701c9dfe8de6b",
+            "matched_address": "2920 ZOO DR, San Diego, CA 92101",
+            "location": {
+              "id": "A",
+              "label": "2920 ZOO DR, San Diego, CA 92101",
+              "latitude": 32.73299193313815,
+              "longitude": -117.13932519779817
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "review_required",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "R"
+              ],
+              "placement_labels": [
+                "Review"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "ZOO",
+                  "addrsfx": "DR",
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 65309,
+                  "placement_location": "R",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 276821,
+                  "apn": "5344500800",
+                  "addrnmbr": 2920
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {
+            "zip_missing": 2
+          },
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "33",
+      "input_address": "3252 Front St, San Diego, CA 92103",
+      "category": "residential",
+      "neighborhood": "Bankers Hill",
+      "house_number": "3252",
+      "street_name": "Front",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92103",
+      "source_url": "https://www.redfin.com/CA/San-Diego/3252-Front-St-92103/home/5375306",
+      "considerations": "Public single-family property listing; not ownership verification",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_0e55e59697924abfa86d63d0054aa0ca",
+            "matched_address": "3252 FRONT ST, SAN DIEGO, CA, 92103",
+            "location": {
+              "id": "A",
+              "label": "3252 FRONT ST, SAN DIEGO, CA, 92103",
+              "latitude": 32.73923388596,
+              "longitude": -117.164956930283
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92103",
+                "streetName": "FRONT",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "3200",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "3298",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "195707423"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_f444b93069754468b8530034e24c9cb9",
+            "matched_address": "3252 FRONT ST, San Diego, CA 92103",
+            "location": {
+              "id": "A",
+              "label": "3252 FRONT ST, San Diego, CA 92103",
+              "latitude": 32.73933296850425,
+              "longitude": -117.16519277651167
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "FRONT",
+                  "addrsfx": "ST",
+                  "addrzip": "92103",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 30256,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 125898,
+                  "apn": "4525374000",
+                  "addrnmbr": 3252
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "34",
+      "input_address": "4739 Redland Dr, San Diego, CA 92115",
+      "category": "residential",
+      "neighborhood": "El Cerrito",
+      "house_number": "4739",
+      "street_name": "Redland",
+      "street_suffix": "Dr",
+      "city": "San Diego",
+      "postal_code": "92115",
+      "source_url": "https://www.compass.com/homedetails/4739-Redland-Dr-San-Diego-CA-92115/1BTKNO_pid/",
+      "considerations": "Public single-family listing; historical listing establishes address",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_7216183feb4f44378f7e3a92495f9ee4",
+            "matched_address": "4739 REDLAND DR, SAN DIEGO, CA, 92115",
+            "location": {
+              "id": "A",
+              "label": "4739 REDLAND DR, SAN DIEGO, CA, 92115",
+              "latitude": 32.764730783982,
+              "longitude": -117.075794553321
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92115",
+                "streetName": "REDLAND",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "4799",
+                "state": "CA",
+                "suffixType": "DR",
+                "toAddress": "4701",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "R",
+                "tigerLineId": "612894542"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_645727d5427e44ebb13fc49884ba6e39",
+            "matched_address": "4739 REDLAND DR, San Diego, CA 92115",
+            "location": {
+              "id": "A",
+              "label": "4739 REDLAND DR, San Diego, CA 92115",
+              "latitude": 32.76374001391509,
+              "longitude": -117.07431667133689
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "REDLAND",
+                  "addrsfx": "DR",
+                  "addrzip": "92115",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 54661,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 231769,
+                  "apn": "4664420100",
+                  "addrnmbr": 4739
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 1,
+          "distinct_candidate_count": 1
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "35",
+      "input_address": "1100 Market St, San Diego, CA 92101",
+      "category": "commercial_mixed",
+      "neighborhood": "East Village",
+      "house_number": "1100",
+      "street_name": "Market",
+      "street_suffix": "St",
+      "city": "San Diego",
+      "postal_code": "92101",
+      "source_url": "https://parkandmarket.ucsd.edu/wp-content/uploads/2024/01/FAQ-PARKNG.pdf",
+      "considerations": "UCSD Park and Market; institution/urban mixed-use site",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_e597f651f2ac470490894b735562213d",
+            "matched_address": "1100 MARKET ST, SAN DIEGO, CA, 92101",
+            "location": {
+              "id": "A",
+              "label": "1100 MARKET ST, SAN DIEGO, CA, 92101",
+              "latitude": 32.711574566713,
+              "longitude": -117.154584052965
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92101",
+                "streetName": "MARKET",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "1100",
+                "state": "CA",
+                "suffixType": "ST",
+                "toAddress": "1198",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "648876351"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "ambiguous",
+        "candidates": [
+          {
+            "candidate_id": "candidate_69fee696f78d4edbb0a9d2d22522b8cd",
+            "matched_address": "1100 MARKET ST, San Diego, CA 92101",
+            "location": {
+              "id": "A",
+              "label": "1100 MARKET ST, San Diego, CA 92101",
+              "latitude": 32.71208038528341,
+              "longitude": -117.15426480729958
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "parcel_centroid",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "C"
+              ],
+              "placement_labels": [
+                "Centroid"
+              ],
+              "asource": [
+                "M"
+              ],
+              "source_labels": [
+                "Assessor Master Property Record"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "MARKET",
+                  "addrsfx": "ST",
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "SAN DIEGO",
+                  "addrpdir": null,
+                  "asource": "M",
+                  "roadsegid": null,
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 1068188,
+                  "apn": "5351341403",
+                  "addrnmbr": 1100
+                },
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "MARKET",
+                  "addrsfx": "ST",
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "SAN DIEGO",
+                  "addrpdir": null,
+                  "asource": "M",
+                  "roadsegid": null,
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 1109259,
+                  "apn": "5351341405",
+                  "addrnmbr": 1100
+                }
+              ],
+              "feature_count": 2,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          },
+          {
+            "candidate_id": "candidate_878f707cf9ae4bd79c4fdd42c0c38b01",
+            "matched_address": "1100 MARKET ST, San Diego, CA 92101",
+            "location": {
+              "id": "A",
+              "label": "1100 MARKET ST, San Diego, CA 92101",
+              "latitude": 32.71179283272673,
+              "longitude": -117.15420084100062
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "review_required",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "R"
+              ],
+              "placement_labels": [
+                "Review"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "MARKET",
+                  "addrsfx": "ST",
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 5913,
+                  "placement_location": "R",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 717928,
+                  "apn": "5351341500",
+                  "addrnmbr": 1100
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 2
+        }
+      }
+    }
+  },
+  {
+    "input": {
+      "id": "36",
+      "input_address": "1450 El Prado, San Diego, CA",
+      "category": "civic",
+      "neighborhood": "Balboa Park",
+      "house_number": "1450",
+      "street_name": "El Prado",
+      "street_suffix": "",
+      "city": "San Diego",
+      "postal_code": "",
+      "source_url": "https://www.sdmart.org/",
+      "considerations": "San Diego Museum of Art physical address; no ZIP inferred from mailing PO box",
+      "direction": "",
+      "post_direction": "",
+      "verified_at": "2026-11-02",
+      "source_kind": "independent published address"
+    },
+    "providers": {
+      "census": {
+        "status": "resolved",
+        "candidates": [
+          {
+            "candidate_id": "candidate_37f9a8fdc60f416d8e50e487a8053275",
+            "matched_address": "1450 EL PRADO, SAN DIEGO, CA, 92101",
+            "location": {
+              "id": "A",
+              "label": "1450 EL PRADO, SAN DIEGO, CA, 92101",
+              "latitude": 32.731496299684,
+              "longitude": -117.150944911979
+            },
+            "provider": "US Census Geocoder",
+            "precision": "interpolated_address",
+            "benchmark": "Public_AR_Current",
+            "requires_confirmation": false,
+            "mismatch_reason": null,
+            "metadata": {
+              "address_components": {
+                "zip": "92101",
+                "streetName": "EL PRADO",
+                "preType": "",
+                "city": "SAN DIEGO",
+                "preDirection": "",
+                "suffixDirection": "",
+                "fromAddress": "1100",
+                "state": "CA",
+                "suffixType": "",
+                "toAddress": "1498",
+                "suffixQualifier": "",
+                "preQualifier": ""
+              },
+              "tiger_line": {
+                "side": "L",
+                "tigerLineId": "637836620"
+              },
+              "srid": 4326,
+              "precision_basis": "Census address-range interpolation; building accuracy unverified"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "US Census Geocoder",
+          "raw_candidate_count": 1
+        }
+      },
+      "sangis": {
+        "status": "ambiguous",
+        "candidates": [
+          {
+            "candidate_id": "candidate_53a7b3bcd4e745b8846acdfefd82f2e4",
+            "matched_address": "1450 EL PRADO, San Diego, CA",
+            "location": {
+              "id": "A",
+              "label": "1450 EL PRADO, San Diego, CA",
+              "latitude": 32.7317294369843,
+              "longitude": -117.14532310641889
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "parcel_centroid",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "C"
+              ],
+              "placement_labels": [
+                "Centroid"
+              ],
+              "asource": [
+                "M"
+              ],
+              "source_labels": [
+                "Assessor Master Property Record"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "EL PRADO",
+                  "addrsfx": null,
+                  "addrzip": null,
+                  "addrpostd": null,
+                  "community": null,
+                  "addrpdir": null,
+                  "asource": "M",
+                  "roadsegid": null,
+                  "placement_location": "C",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 1208870,
+                  "apn": "7602125200",
+                  "addrnmbr": 1450
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": true,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          },
+          {
+            "candidate_id": "candidate_c8f9d373d94748c49cfc6cc5e61edbd5",
+            "matched_address": "1450 EL PRADO, San Diego, CA 92101",
+            "location": {
+              "id": "A",
+              "label": "1450 EL PRADO, San Diego, CA 92101",
+              "latitude": 32.73216262956651,
+              "longitude": -117.15045153453197
+            },
+            "provider": "SanGIS Address Points",
+            "precision": "structure",
+            "benchmark": null,
+            "requires_confirmation": true,
+            "mismatch_reason": null,
+            "metadata": {
+              "placement_location": [
+                "S"
+              ],
+              "placement_labels": [
+                "Structure"
+              ],
+              "asource": [
+                "S"
+              ],
+              "source_labels": [
+                "SanGIS"
+              ],
+              "source_features": [
+                {
+                  "addrjur": "SD",
+                  "addrfrac": null,
+                  "addrname": "EL PRADO",
+                  "addrsfx": null,
+                  "addrzip": "92101",
+                  "addrpostd": null,
+                  "community": "San Diego",
+                  "addrpdir": null,
+                  "asource": "S",
+                  "roadsegid": 204882,
+                  "placement_location": "S",
+                  "addrunit": null,
+                  "state": "CA",
+                  "objectid": 2424,
+                  "apn": "5344500800",
+                  "addrnmbr": 1450
+                }
+              ],
+              "feature_count": 1,
+              "srid": 4326,
+              "placement_source_conflict": false,
+              "zip_missing": false,
+              "locality_basis": "SD jurisdiction; community is not assumed to be postal city",
+              "precision_basis": "SITUS property address point; placement label is not verified rooftop or apartment-unit accuracy"
+            }
+          }
+        ],
+        "rejected_census_reasons": [],
+        "diagnostics": {
+          "provider": "SanGIS Address Points",
+          "layer": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0",
+          "rejections": {},
+          "raw_candidate_count": 2,
+          "distinct_candidate_count": 2
+        }
+      }
+    }
+  }
+]

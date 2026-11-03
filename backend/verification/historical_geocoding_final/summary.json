@@ -1,0 +1,317 @@
+{
+  "method_version": "citylens-final-historical-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "validated_at": "2026-11-03T06:50:55.382436+00:00",
+  "baseline_statuses": {
+    "ambiguous": 3117,
+    "pending": 8350,
+    "no_match": 7400,
+    "matched": 59627
+  },
+  "records": 78494,
+  "evaluated": {
+    "no_match": 7400,
+    "ambiguous": 3117,
+    "pending": 8350
+  },
+  "outcomes_by_status_and_phase": {
+    "ambiguous|ambiguous_revalidation": {
+      "accepted_candidate": 335,
+      "documented_alias_resolved": 207,
+      "insufficient_evidence": 1307,
+      "multiple_candidates": 11,
+      "street_conflict": 1029,
+      "unsupported_description": 228
+    },
+    "no_match|no_match_roadblock": {
+      "accepted_candidate": 3767,
+      "insufficient_evidence": 1171,
+      "invalid_source": 152,
+      "multiple_candidates": 14,
+      "range_ambiguous": 1614,
+      "source_conflict": 42,
+      "street_not_found": 640
+    },
+    "pending|pending_triage": {
+      "official_abbreviation_intersection": 32,
+      "official_abbreviation_intersection_rejected": 71,
+      "stage_b_invalid_source": 515,
+      "stage_b_multiple_candidates": 260,
+      "stage_b_no_intersection": 144,
+      "stage_b_street_not_found": 1005,
+      "stage_b_topology_uncertain": 494,
+      "stage_c_excluded": 207,
+      "stage_c_intersection_allowlist": 4112,
+      "unresolved_no_block_or_cross_street": 1510
+    }
+  },
+  "deployment_routes": {
+    "none": 10426,
+    "final_allowlist": 4329,
+    "stage_c_allowlist": 4112
+  },
+  "final_allowlist_by_original_status": {
+    "no_match": 3767,
+    "ambiguous": 542,
+    "pending": 20
+  },
+  "final_allowlist_by_outcome": {
+    "accepted_candidate": 4102,
+    "documented_alias_resolved": 207,
+    "official_abbreviation_intersection": 20
+  },
+  "primary_exclusion_reasons": {
+    "block:block_extent_exceeds_400m": 2136,
+    "block:no_exact_or_official_abbreviated_name": 1174,
+    "source:no_positive_block_number": 1089,
+    "census:census_matched_different_street": 1029,
+    "stage_b:street_not_found": 1005,
+    "block:block_outside_city_address_ranges": 785,
+    "source:descriptive_offset_or_compound_description": 671,
+    "stage_b:invalid_source": 515,
+    "stage_b:topology_uncertain": 494,
+    "independent:road_name_not_identified_in_independent_source": 275,
+    "stage_b:multiple_candidates": 260,
+    "block:block_only_on_unconstructed_or_unsupported_segments": 174,
+    "stage_b:no_intersection": 144,
+    "stage_c:independent:road_name_not_identified_in_independent_source": 130,
+    "source:freeway_or_ramp_description": 84,
+    "independent:named_road_geometry_far_from_block": 81,
+    "block:name_not_in_city_of_san_diego": 66,
+    "source:police_beat_disagrees_with_block": 63,
+    "stage_c:independent:named_road_geometry_inconsistent_with_junction": 59,
+    "topology:stage_b_topology_uncertain_after_official_abbreviation": 53,
+    "source:number_not_block_abstracted": 45,
+    "census:point_not_on_sangis_block": 30,
+    "block:geographically_separated_compatible_segments": 25,
+    "topology:stage_b_no_intersection_after_official_abbreviation": 17,
+    "stage_c:topology:incident_segment_far_endpoint_unresolved": 11,
+    "stage_c:topology:additional_nonsupported_shared_node": 4,
+    "stage_c:independent:conflicting_directional_name_at_junction": 3,
+    "census:census_evidence_incomplete": 2,
+    "topology:stage_b_multiple_candidates_after_official_abbreviation": 1,
+    "block:freeway_or_ramp_segment_in_block": 1
+  },
+  "coverage": {
+    "denominator": 78494,
+    "actual_matched": 59627,
+    "actual_coverage_percent": 75.9638,
+    "stage_c_allowlist_undeployed": 4112,
+    "final_allowlist_undeployed": 4329,
+    "projected_after_stage_c": 63739,
+    "projected_after_stage_c_percent": 81.2024,
+    "projected_after_all_allowlists": 68068,
+    "projected_after_all_allowlists_percent": 86.7175,
+    "deployed_by_this_milestone": 0
+  },
+  "distribution": {
+    "by_year": {
+      "2015": {
+        "none": 2
+      },
+      "2016": {
+        "final_allowlist": 282,
+        "none": 387,
+        "stage_c_allowlist": 120
+      },
+      "2017": {
+        "final_allowlist": 5,
+        "none": 39,
+        "stage_c_allowlist": 16
+      },
+      "2018": {
+        "final_allowlist": 697,
+        "none": 932,
+        "stage_c_allowlist": 266
+      },
+      "2019": {
+        "final_allowlist": 574,
+        "none": 1247,
+        "stage_c_allowlist": 319
+      },
+      "2020": {
+        "final_allowlist": 380,
+        "none": 1178,
+        "stage_c_allowlist": 360
+      },
+      "2021": {
+        "final_allowlist": 503,
+        "none": 1292,
+        "stage_c_allowlist": 496
+      },
+      "2022": {
+        "final_allowlist": 397,
+        "none": 1106,
+        "stage_c_allowlist": 474
+      },
+      "2023": {
+        "final_allowlist": 369,
+        "none": 1185,
+        "stage_c_allowlist": 526
+      },
+      "2024": {
+        "final_allowlist": 375,
+        "none": 1098,
+        "stage_c_allowlist": 508
+      },
+      "2025": {
+        "final_allowlist": 408,
+        "none": 1070,
+        "stage_c_allowlist": 520
+      },
+      "2026": {
+        "final_allowlist": 339,
+        "none": 890,
+        "stage_c_allowlist": 507
+      }
+    },
+    "by_police_division": {
+      "Central": {
+        "final_allowlist": 367,
+        "none": 1200,
+        "stage_c_allowlist": 870
+      },
+      "Eastern": {
+        "final_allowlist": 261,
+        "none": 1003,
+        "stage_c_allowlist": 447
+      },
+      "Mid-City": {
+        "final_allowlist": 108,
+        "none": 648,
+        "stage_c_allowlist": 499
+      },
+      "Northeastern": {
+        "final_allowlist": 373,
+        "none": 1460,
+        "stage_c_allowlist": 257
+      },
+      "Northern": {
+        "final_allowlist": 1880,
+        "none": 2156,
+        "stage_c_allowlist": 635
+      },
+      "Northwestern": {
+        "final_allowlist": 464,
+        "none": 1088,
+        "stage_c_allowlist": 160
+      },
+      "Southeastern": {
+        "final_allowlist": 120,
+        "none": 717,
+        "stage_c_allowlist": 380
+      },
+      "Southern": {
+        "final_allowlist": 406,
+        "none": 956,
+        "stage_c_allowlist": 247
+      },
+      "Western": {
+        "final_allowlist": 350,
+        "none": 1198,
+        "stage_c_allowlist": 617
+      }
+    },
+    "by_original_status": {
+      "ambiguous": {
+        "final_allowlist": 542,
+        "none": 2575
+      },
+      "no_match": {
+        "final_allowlist": 3767,
+        "none": 3633
+      },
+      "pending": {
+        "final_allowlist": 20,
+        "none": 4218,
+        "stage_c_allowlist": 4112
+      }
+    }
+  },
+  "independent_evidence": {
+    "scopes": 1446,
+    "live_attempts": 1446,
+    "budget": 4000
+  },
+  "method_validation": {
+    "all_accepted": {
+      "n": 2531,
+      "median_m": 6.35,
+      "p95_m": 52.59,
+      "p99_m": 214.76,
+      "over_50m": 129,
+      "over_100m": 67,
+      "over_200m": 31,
+      "share_over_100m": 0.0265
+    },
+    "official_abbreviation_names": {
+      "n": 0
+    },
+    "exact_names": {
+      "n": 2531,
+      "median_m": 6.35,
+      "p95_m": 52.59,
+      "p99_m": 214.76,
+      "over_50m": 129,
+      "over_100m": 67,
+      "over_200m": 31,
+      "share_over_100m": 0.0265
+    },
+    "parallel_components_joined": {
+      "n": 24,
+      "median_m": 6.38,
+      "p95_m": 15.83,
+      "p99_m": 59.16,
+      "over_50m": 2,
+      "over_100m": 0,
+      "over_200m": 0,
+      "share_over_100m": 0.0
+    },
+    "single_connected_block": {
+      "n": 2507,
+      "median_m": 6.35,
+      "p95_m": 51.28,
+      "p99_m": 214.76,
+      "over_50m": 127,
+      "over_100m": 67,
+      "over_200m": 31,
+      "share_over_100m": 0.0267
+    },
+    "extent_under_200m": {
+      "n": 1161,
+      "median_m": 6.35,
+      "p95_m": 43.48,
+      "p99_m": 170.09,
+      "over_50m": 54,
+      "over_100m": 26,
+      "over_200m": 11,
+      "share_over_100m": 0.0224
+    },
+    "extent_200_to_400m": {
+      "n": 1370,
+      "median_m": 6.36,
+      "p95_m": 58.89,
+      "p99_m": 232.0,
+      "over_50m": 75,
+      "over_100m": 41,
+      "over_200m": 20,
+      "share_over_100m": 0.0299
+    }
+  },
+  "quality": {
+    "sample_reports": 110,
+    "review_recorded": true,
+    "systematic_issue_detected": false
+  },
+  "collision_updates": 0,
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "before_state_matches_stage_c": true,
+  "deployment_gate": {
+    "allowlist_ready_for_review": true,
+    "requires_separate_explicit_approval": true,
+    "blocking_reasons": []
+  }
+}

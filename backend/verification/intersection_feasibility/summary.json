@@ -1,0 +1,62 @@
+{
+  "seed": "citylens-intersections-stage-a-v1",
+  "sample_size": 80,
+  "unique_pairs": 80,
+  "duplicate_report_pairs": 0,
+  "population_records": 6839,
+  "population_unique_pairs": 3973,
+  "pair_statuses": {
+    "topology_uncertain": 7,
+    "invalid_source": 22,
+    "street_not_found": 20,
+    "accepted_candidate": 27,
+    "multiple_candidates": 2,
+    "no_intersection": 2
+  },
+  "candidate_nodes": 39,
+  "supported_nodes": 33,
+  "grade_conflict_pairs": 3,
+  "geometric_crossing_pairs": 37,
+  "node_types": {
+    "Z": 1,
+    "I": 36,
+    "P": 2
+  },
+  "independent_validation": {
+    "pairs": 20,
+    "candidate_checks": 22,
+    "outcomes": {
+      "both_roads_spatially_corroborated": 20,
+      "not_corroborated": 2
+    },
+    "limitation": "Independent TIGER named-road spatial comparison only; not independent surveyed topology, grade or historical crash ground truth"
+  },
+  "external_requests": {
+    "total_recorded_attempts": 40,
+    "new_this_run": 0,
+    "hard_cap": 64,
+    "by_kind": {
+      "metadata": 4,
+      "road_names": 10,
+      "nodes": 2,
+      "incidence": 2,
+      "independent_tiger": 22
+    },
+    "failures": 0
+  },
+  "source_statuses": {
+    "pending": 8350,
+    "ambiguous": 3117,
+    "no_match": 7400,
+    "matched": 59627
+  },
+  "database_fingerprint": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "acceptance_means": "One present-day supported road intersection candidate, never a verified historical crash point",
+  "extrapolated_recovery_rate": null,
+  "google_requests": 0,
+  "collision_updates": 0
+}

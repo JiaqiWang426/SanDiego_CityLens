@@ -1,0 +1,55 @@
+{
+  "address_id": "08",
+  "provider": "census",
+  "input_address": "7555 Draper Ave, La Jolla, CA 92037",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=7555+Draper+Ave&city=La+Jolla&state=CA&benchmark=Public_AR_Current&format=json&zip=92037",
+  "fetched_at": "2026-11-03T00:09:39.108583+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92037",
+          "city": "La Jolla",
+          "street": "7555 Draper Ave",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195298274"
+          },
+          "coordinates": {
+            "x": -117.276291871406,
+            "y": 32.840529495563
+          },
+          "addressComponents": {
+            "zip": "92037",
+            "streetName": "DRAPER",
+            "preType": "",
+            "city": "LA JOLLA",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "7501",
+            "state": "CA",
+            "suffixType": "AVE",
+            "toAddress": "7599",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "7555 DRAPER AVE, LA JOLLA, CA, 92037"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 410.925
+}

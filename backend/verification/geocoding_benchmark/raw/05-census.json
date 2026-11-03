@@ -1,0 +1,55 @@
+{
+  "address_id": "05",
+  "provider": "census",
+  "input_address": "8720 Costa Verde Blvd, San Diego, CA 92122",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=8720+Costa+Verde+Blvd&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92122",
+  "fetched_at": "2026-11-03T00:09:36.743870+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92122",
+          "city": "San Diego",
+          "street": "8720 Costa Verde Blvd",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "650071724"
+          },
+          "coordinates": {
+            "x": -117.217034801546,
+            "y": 32.869156540179
+          },
+          "addressComponents": {
+            "zip": "92122",
+            "streetName": "COSTA VERDE",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "8500",
+            "state": "CA",
+            "suffixType": "BLVD",
+            "toAddress": "8728",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "8720 COSTA VERDE BLVD, SAN DIEGO, CA, 92122"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 404.36
+}

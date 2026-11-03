@@ -7,3 +7,5 @@ secrets.local.*
 .venv/
 __pycache__/
 *.pyc
+backend/reference_data/
+backend/verification/intersection_batch/checkpoints/

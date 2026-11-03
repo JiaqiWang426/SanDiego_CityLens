@@ -4,6 +4,20 @@ Phase 1.1 [audit and metadata](PHASE1_1.md) distinguish unlocated reports, actua
 geocoding statuses and block-approximate points. The offline worker now uses a
 pending-status compare-and-set to protect completed results from slower workers.
 
+The [Stage B local SanGIS analysis](verification/intersection_batch/REPORT.md)
+keeps reference ingestion separate from collision updates. Its
+[setup, dry-run and deployment commands](sangis_topology/README.md) generate
+`intersection_approximate` proposals with full topology/provenance evidence.
+The current collision precision constraints and all historical geocodes remain
+unchanged; any apply and precision migration require a separate explicit review.
+
+The [final geocoding report](verification/historical_geocoding_final/REPORT.md)
+adds SanGIS road-block candidates for no-match and ambiguous reports, with
+`block_approximate` precision and provider `SanGIS road centerline`. The source
+number is treated as a block, never a house number. Deployed points can therefore
+come from Census, a SanGIS road block or a SanGIS intersection. Use
+`geocode_provider` and `geocode_precision` to tell them apart.
+
 This domain uses the **existing CityLens PostgreSQL/PostGIS database**. No
 Get It Done table definitions or records are changed. Existing dependencies
 (`psycopg`) and Python's standard library are sufficient for these modules.
@@ -88,6 +102,13 @@ records live Census results, separate SanGIS plausibility diagnostics, and
 read-only Agent tool checks. Provider `matched` is not an accuracy guarantee.
 The pilot's validation scripts read archived responses and road geometry;
 they do not snap points or change database geocoding statuses.
+
+The later [Stage A intersection feasibility study](verification/intersection_feasibility/REPORT.md)
+uses Roads_All endpoint IDs, Roads_Intersection types, levels and full incident
+segments for 80 frozen pending reports. Its offline reproduction needs no
+database or network access. Uniquely supported candidates remain verification
+artifacts, not stored collision coordinates; ambiguous and uncertain cases remain
+unresolved. No historical batch geocoder or road interpolation was added.
 
 The [City dataset dictionary](https://data.sandiego.gov/datasets/traffic-collisions/)
 states that primary street numbers are abstracted to block level. **No coordinate

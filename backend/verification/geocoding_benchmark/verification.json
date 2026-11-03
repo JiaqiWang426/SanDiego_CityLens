@@ -1,0 +1,31 @@
+{
+  "focused_tests": {
+    "passed": 89,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 2.7
+  },
+  "agent_regression": {
+    "passed": 243,
+    "failed": 0,
+    "skipped": 36,
+    "seconds": 13.46,
+    "skip_reason": "Opt-in isolated database integration fixtures not enabled"
+  },
+  "frontend": {
+    "passed_scenarios": 6,
+    "full_browser_visual_test": false
+  },
+  "raw_capture_check": {
+    "addresses": 36,
+    "independent_provenance": true,
+    "provider_captures": 72,
+    "http_attempts": 72,
+    "provider_errors": 0
+  },
+  "credentials_scan": "passed; no values recorded",
+  "live_openai_calls": 0,
+  "historical_pipeline_runs": 0,
+  "database_schema_or_role_changes": 0,
+  "integration_smoke": "integration-smoke.json; two real read-only SQL calls; all-row collision fingerprint unchanged"
+}

@@ -1,0 +1,556 @@
+[
+  {
+    "pair_id": "6825450a535c20e4",
+    "primary": "11TH AVE",
+    "cross": "E ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97138,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "11TH AVE": {
+            "matching_features": 1,
+            "distance_m": 1.155
+          },
+          "E ST": {
+            "matching_features": 1,
+            "distance_m": 0.488
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "371bcc7c6380874c",
+    "primary": "13TH ST",
+    "cross": "IMPERIAL AVE",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 99029,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "13TH ST": {
+            "matching_features": 1,
+            "distance_m": 1.996
+          },
+          "IMPERIAL AVE": {
+            "matching_features": 1,
+            "distance_m": 1.599
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "242251467d3df5ed",
+    "primary": "30TH ST",
+    "cross": "N PARK WAY",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 88003,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "30TH ST": {
+            "matching_features": 2,
+            "distance_m": 1.114
+          },
+          "N PARK WAY": {
+            "matching_features": 2,
+            "distance_m": 0.553
+          }
+        },
+        "independent_features": 21,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "1431bea964cb7690",
+    "primary": "39TH ST",
+    "cross": "UNIVERSITY AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 87298,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "39TH ST": {
+            "matching_features": 1,
+            "distance_m": 1.095
+          },
+          "UNIVERSITY AVE": {
+            "matching_features": 1,
+            "distance_m": 0.54
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "90f2e3cb4c5b5a01",
+    "primary": "60TH ST",
+    "cross": "IMPERIAL AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 98458,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "60TH ST": {
+            "matching_features": 1,
+            "distance_m": 1.153
+          },
+          "IMPERIAL AVE": {
+            "matching_features": 1,
+            "distance_m": 0.653
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "5419a381204aed34",
+    "primary": "7TH AVE",
+    "cross": "BROADWAY",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 96884,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "7TH AVE": {
+            "matching_features": 1,
+            "distance_m": 1.137
+          },
+          "BROADWAY": {
+            "matching_features": 1,
+            "distance_m": 0.581
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "d63bbd0d867ecd0c",
+    "primary": "ALAQUINAS DR",
+    "cross": "BEYER BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 116927,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "ALAQUINAS DR": {
+            "matching_features": 1,
+            "distance_m": 1.147
+          },
+          "BEYER BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.498
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "520bb69be6c08d29",
+    "primary": "BLACK MOUNTAIN RD",
+    "cross": "HILLERY DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 56547,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BLACK MOUNTAIN RD": {
+            "matching_features": 1,
+            "distance_m": 1.036
+          },
+          "HILLERY DR": {
+            "matching_features": 1,
+            "distance_m": 0.567
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "7e06819094d49ca7",
+    "primary": "CALLE TRES LOMAS",
+    "cross": "ROANOKE ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 104466,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CALLE TRES LOMAS": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "ROANOKE ST": {
+            "matching_features": 1,
+            "distance_m": 0.899
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "72bc67aca24d5a9b",
+    "primary": "CAM DE LA COSTA",
+    "cross": "LA JOLLA BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 69500,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM DE LA COSTA": {
+            "matching_features": 1,
+            "distance_m": 0.83
+          },
+          "LA JOLLA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.712
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "9e8db964c157600d",
+    "primary": "EL CAMINO REAL",
+    "cross": "SAN DIEGUITO RD",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 49743,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "EL CAMINO REAL": {
+            "matching_features": 1,
+            "distance_m": 1.202
+          },
+          "SAN DIEGUITO RD": {
+            "matching_features": 1,
+            "distance_m": 3.987
+          }
+        },
+        "independent_features": 3,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "905847d2bd52bf62",
+    "primary": "EL CAMINO REAL",
+    "cross": "VIA DE LA VALLE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 49054,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "EL CAMINO REAL": {
+            "matching_features": 1,
+            "distance_m": 1.016
+          },
+          "VIA DE LA VALLE": {
+            "matching_features": 1,
+            "distance_m": 0.685
+          }
+        },
+        "independent_features": 6,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      },
+      {
+        "node_id": 49110,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "EL CAMINO REAL": {
+            "matching_features": 1,
+            "distance_m": 1.286
+          },
+          "VIA DE LA VALLE": {
+            "matching_features": 1,
+            "distance_m": 0.742
+          }
+        },
+        "independent_features": 5,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "26f196ec89750829",
+    "primary": "FRIARS RD",
+    "cross": "MISSION VILLAGE DR",
+    "study_status": "no_intersection",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 77391,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "FRIARS RD": {
+            "matching_features": 1,
+            "distance_m": 0.863
+          },
+          "MISSION VILLAGE DR": {
+            "matching_features": 1,
+            "distance_m": 1.037
+          }
+        },
+        "independent_features": 4,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "57f77b98841d3b45",
+    "primary": "FRIARS RD",
+    "cross": "VIA LAS CUMBRES",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 82149,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "FRIARS RD": {
+            "matching_features": 1,
+            "distance_m": 0.375
+          },
+          "VIA LAS CUMBRES": {
+            "matching_features": 1,
+            "distance_m": 1.154
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "f0ca740cd7227de8",
+    "primary": "IMPERIAL AVE",
+    "cross": "S 45TH ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 99551,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "IMPERIAL AVE": {
+            "matching_features": 2,
+            "distance_m": 0.602
+          },
+          "S 45TH ST": {
+            "matching_features": 1,
+            "distance_m": 1.267
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "595db6890393b779",
+    "primary": "INTERSTATE 15 SB",
+    "cross": "MIRA MESA BLVD",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 56231,
+        "status": "not_corroborated",
+        "road_checks": {
+          "INTERSTATE 15 SB": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "MIRA MESA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.456
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "a1d2ddd01484cc0a",
+    "primary": "MAIN ST",
+    "cross": "SAMPSON ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 101228,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MAIN ST": {
+            "matching_features": 1,
+            "distance_m": 0.551
+          },
+          "SAMPSON ST": {
+            "matching_features": 1,
+            "distance_m": 2.317
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "da073203a6dc928d",
+    "primary": "MARTIN AVE",
+    "cross": "S 32ND ST",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 100526,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MARTIN AVE": {
+            "matching_features": 2,
+            "distance_m": 1.263
+          },
+          "S 32ND ST": {
+            "matching_features": 1,
+            "distance_m": 1.141
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      },
+      {
+        "node_id": 100586,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MARTIN AVE": {
+            "matching_features": 2,
+            "distance_m": 1.063
+          },
+          "S 32ND ST": {
+            "matching_features": 1,
+            "distance_m": 1.515
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "b3c9014a58966f3f",
+    "primary": "MIRA MESA BLVD",
+    "cross": "SCRANTON RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 57973,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MIRA MESA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.51
+          },
+          "SCRANTON RD": {
+            "matching_features": 3,
+            "distance_m": 1.083
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  },
+  {
+    "pair_id": "55f41d68bca0ae79",
+    "primary": "NORMAL ST",
+    "cross": "UNIVERSITY AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 87540,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "NORMAL ST": {
+            "matching_features": 1,
+            "distance_m": 1.246
+          },
+          "UNIVERSITY AVE": {
+            "matching_features": 1,
+            "distance_m": 0.418
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+      }
+    ]
+  }
+]

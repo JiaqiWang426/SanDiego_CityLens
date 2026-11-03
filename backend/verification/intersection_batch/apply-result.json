@@ -1,0 +1,57 @@
+{
+  "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+  "mode": "apply",
+  "counts": {
+    "inserted": 0,
+    "updated": 996,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "invocation_counts": {
+    "updated": 996
+  },
+  "before": {
+    "records": 78494,
+    "located": 62743,
+    "all_rows": "084dc7d405ea50c11d5ddd12c59878d1",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "ad86ffef5761606af32cdbc6d85a62da",
+    "matched_count": 62743,
+    "statuses": {
+      "pending": 5234,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 62743
+    },
+    "rollout_baseline": {
+      "journaled_updates": 3116,
+      "by_original_status": {
+        "pending": 3116
+      }
+    },
+    "archived_sources": {
+      "records": 78494,
+      "digest": "630c867593987023308e2c1360ddb7b4"
+    },
+    "nonselected_rows": "1aff9e605b00e435683e23e9059ffb11"
+  },
+  "after": {
+    "records": 78494,
+    "located": 63739,
+    "all_rows": "2b50c73033ce4d115c21b9298017bb8e",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "fc47120f3d13ea43b9e2cf1ad3783dd3",
+    "matched_count": 63739,
+    "statuses": {
+      "pending": 4238,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 63739
+    }
+  },
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "finished_at": "2026-11-03T08:15:18.198401+00:00"
+}

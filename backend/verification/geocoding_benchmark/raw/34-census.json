@@ -1,0 +1,55 @@
+{
+  "address_id": "34",
+  "provider": "census",
+  "input_address": "4739 Redland Dr, San Diego, CA 92115",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4739+Redland+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92115",
+  "fetched_at": "2026-11-03T00:18:44.733688+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92115",
+          "city": "San Diego",
+          "street": "4739 Redland Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "612894542"
+          },
+          "coordinates": {
+            "x": -117.075794553321,
+            "y": 32.764730783982
+          },
+          "addressComponents": {
+            "zip": "92115",
+            "streetName": "REDLAND",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "4799",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "4701",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "4739 REDLAND DR, SAN DIEGO, CA, 92115"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 427.088
+}

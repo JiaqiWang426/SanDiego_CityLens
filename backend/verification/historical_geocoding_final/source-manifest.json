@@ -1,0 +1,23 @@
+{
+  "method_version": "citylens-final-historical-v1",
+  "sangis_snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "stage_b_run_manifest_sha256": "c098e0398f2507126efd5d04241f975ece76a8d26f51e6a35ef4cca80dbb47df",
+  "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c",
+  "stage_c_allowlist_sha256": "5cc1ae3c9cc4a53ca8b400cd777544778233a508c34f4475a33c4d66454e00f8",
+  "independent_source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+  "independent_cache": "backend/reference_data/historical_geocoding_final (ignored)",
+  "request_ledger_sha256": "1d352dcd0b5f827c5816d54b3009bba1491940a4adef4cfad4b2c2924b980403",
+  "not_used": [
+    "Google Geocoding/Places",
+    "Census geocoder re-requests",
+    "LLM coordinates",
+    "parcel or Address Point centroids"
+  ],
+  "implementation_sha256": {
+    "final_geocoding.py": "b1b02025f5229305bf71c1fe8432104f79556a9b458ef1eaac356b426291539b",
+    "roadblock.py": "159096b6aa9864ab19f88dfc32f22b15dc0b3053cc0c4010b8598813b2358055",
+    "apply.py": "6a9c394805de9e364d8323bbc6f6158b2b546d94ea53a827535453fef08eadc1",
+    "rollout.py": "5cd21cc548df4d01377030cfe021815fce734b443a9516b20d2e4c9f9234d6eb",
+    "stage_c.py": "913075070c1986d92dbaf505a34a045acea402a1e83e478d0079afcfea0ca54f"
+  }
+}

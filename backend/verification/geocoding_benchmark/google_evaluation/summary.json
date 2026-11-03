@@ -1,0 +1,212 @@
+{
+  "created_at": "2026-11-03T02:24:06.633981+00:00",
+  "selected_addresses": 12,
+  "planned_google_requests": 12,
+  "hard_cap": 15,
+  "planned_list_cost_usd": 0.06,
+  "maximum_list_cost_usd": 0.075,
+  "pricing_basis": "USD 5/1000 before any available monthly free allowance; checked 2026-11-02",
+  "google_key_configured": true,
+  "live_authorized": true,
+  "executed_google_requests": 12,
+  "run_status": "completed",
+  "actual_results": {
+    "evaluated_addresses": 12,
+    "status_counts": {
+      "invalid_or_out_of_scope": 12
+    },
+    "unattempted_addresses": 0,
+    "validated_unique_matches": 0,
+    "validated_unique_rate_over_planned_sample": 0.0,
+    "validated_unique_rate_among_evaluated": 0.0,
+    "outcome_counts": {
+      "google_invalid": 12
+    },
+    "precision_counts": {},
+    "distance_population": "All component-consistent Google candidates versus all component-consistent free candidates; pair counts are not address counts",
+    "pairwise_distance_statistics_m": {
+      "google_census": {
+        "count": 0,
+        "median": null,
+        "mean": null,
+        "p90": null,
+        "maximum": null
+      },
+      "google_sangis": {
+        "count": 0,
+        "median": null,
+        "mean": null,
+        "p90": null,
+        "maximum": null
+      }
+    },
+    "cases": [
+      {
+        "address_id": "01",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "15",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "16",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "17",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "19",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "23",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "24",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "25",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "26",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "30",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "32",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      },
+      {
+        "address_id": "34",
+        "google_status": "invalid_or_out_of_scope",
+        "valid_candidate_count": 0,
+        "partial_matches": 0,
+        "rejections": {
+          "conflicting_components": 1
+        },
+        "outcomes": [
+          "google_invalid"
+        ],
+        "error_code": null
+      }
+    ]
+  },
+  "retention": "Google content in RAM only; expired and discarded at process exit; no disk cache",
+  "primary_provider_unchanged": true,
+  "usage": {
+    "requests": 12,
+    "cap": 15,
+    "estimated_list_cost_usd": 0.06,
+    "maximum_list_cost_usd": 0.075,
+    "blocked_reason": null,
+    "scope": "this process/budget instance"
+  }
+}

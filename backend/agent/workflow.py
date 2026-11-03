@@ -16,9 +16,16 @@ from .models import (Claim, Comparison, ComparisonMetric, Composition, EvidenceR
                      Plan, QueryRequest, QueryResponse)
 from .settings import Settings
 from .tools import DatabaseTools, ToolCall, ToolResult, tool_log
+from .location_flow import LocationConversations
+from .location_models import ChatTurn,ChatResponse
+from .sangis_geocoding import FallbackAddressGeocoder
 
 
 class AgentState(TypedDict, total=False):
+    turn: ChatTurn
+    session: object
+    confirmed_plan: Plan
+    conversation_reply: ChatResponse
     request: QueryRequest
     trace_id: str
     plan: Plan
@@ -131,18 +138,29 @@ INTRODUCTIONS={
 
 
 def render_answer(request: QueryRequest, claims: list[Claim], unsupported: list[str],
-                  composition: Composition | None = None) -> str:
+                  composition: Composition | None = None, plan: Plan | None = None) -> str:
     """Render only independently verifiable numerical facts and fixed caveats."""
     style=composition.introduction if composition else ('comparison_only' if len(request.locations)==2 else 'records_only')
     parts=[INTRODUCTIONS[style]]
     if claims:
+        labels=[f'{loc.id}: {loc.label}' for loc in request.locations if loc.label]
+        if labels:
+            parts.append('Locations: '+'; '.join(labels)+'.')
         parts.append(f'Scope: within {request.radius_meters:g} meters of each selected pin, '
             f'from {request.time_range.start.isoformat()} (inclusive) to '
             f'{request.time_range.end.isoformat()} (exclusive); calendar timezone '
             f'{request.time_range.calendar_timezone}.')
         parts.extend(c.text for c in claims)
+        if plan:
+            filters={**plan.collision_filters.model_dump(exclude_none=True),
+                **{k:v for k,v in plan.service_request_aggregation.model_dump().items()
+                   if k!='group_by' and v is not None}}
+            if plan.exclude_linked_duplicates:
+                filters['exclude_linked_duplicates']=True
+            if filters:
+                parts.append('Applied filters: '+', '.join(f'{key}={value}' for key,value in filters.items())+'.')
         parts.append('Coverage and freshness are unknown. Unlocated collision reports are excluded; '
-            'collision positions are block-approximate. Zero matches do not establish absence of incidents.')
+            'collision positions are approximate (road block or intersection). Zero matches do not establish absence of incidents.')
     elif not unsupported:
         parts.append('No numerical finding could be verified from the available tool results.')
     if unsupported:
@@ -151,9 +169,11 @@ def render_answer(request: QueryRequest, claims: list[Claim], unsupported: list[
 
 
 class Agent:
-    def __init__(self, model: LanguageModel, tools: DatabaseTools, settings: Settings):
+    def __init__(self, model: LanguageModel, tools: DatabaseTools, settings: Settings, *, geocoder=None):
         self.model,self.tools,self.settings=model,tools,settings
+        self.conversations=LocationConversations(geocoder or FallbackAddressGeocoder())
         graph=StateGraph(AgentState)
+        graph.add_node('resolve_locations',self.resolve_locations)
         graph.add_node('resolve_scope',self.resolve_scope)
         graph.add_node('build_plan',self.build_plan)
         graph.add_node('execute_tools',self.execute_tools)
@@ -163,7 +183,8 @@ class Agent:
         graph.add_node('compose_answer',self.compose)
         graph.add_node('final_validate',self.final_validate)
         graph.add_node('abstain',self.abstain)
-        graph.add_edge(START,'resolve_scope')
+        graph.add_conditional_edges(START,lambda s:'resolve_locations' if s.get('turn') else 'resolve_scope')
+        graph.add_conditional_edges('resolve_locations',lambda s:END if s.get('conversation_reply') else 'resolve_scope')
         graph.add_conditional_edges('resolve_scope',lambda s:'abstain' if s.get('stop') else 'build_plan')
         graph.add_conditional_edges('build_plan',lambda s:'abstain' if s.get('stop') else 'execute_tools')
         graph.add_edge('execute_tools','normalize_evidence')
@@ -181,6 +202,26 @@ class Agent:
             config={'recursion_limit':16})
         return state['response']
 
+    async def chat(self,turn: ChatTurn) -> ChatResponse:
+        session=self.conversations.session(turn)
+        async with session.lock:
+            state=await self.graph.ainvoke({'turn':turn,'session':session,'trace_id':'trace_'+uuid4().hex,
+                'codes':[],'unsupported':[],'evidence':[],'claims':[],'comparisons':[]},config={'recursion_limit':18})
+            if state.get('conversation_reply'):
+                return state['conversation_reply']
+            response=state['response']
+            response.limitations.append('User locations are provider estimates: Census interpolation or SanGIS property points. Placement labels do not establish verified building or apartment-unit accuracy.')
+            session.stage='complete'
+            status='error' if response.status=='error' else 'complete'
+            message=('The analysis could not be completed and verified. See the diagnostics; no unverified findings are returned.'
+                     if status=='error' else 'Analysis completed for the confirmed, resolved addresses. Numerical findings remain subject to dataset coverage limitations.')
+            session.reply=self.conversations.reply(session,status,message)
+            session.reply.result=response
+            return session.reply
+
+    async def resolve_locations(self,state: AgentState) -> dict:
+        return await self.conversations.prepare(self,state['session'],state['turn'])
+
     def resolve_scope(self,state: AgentState) -> dict:
         unsupported,stop=guard_scope(state['request'])
         return {'unsupported':unsupported,'stop':stop}
@@ -189,7 +230,9 @@ class Agent:
         plan=None
         stage='provider'
         try:
-            raw=await asyncio.wait_for(self.model.plan(state['request']),self.settings.llm_timeout_seconds)
+            raw=state.get('confirmed_plan')
+            if raw is None:
+                raw=await asyncio.wait_for(self.model.plan(state['request']),self.settings.llm_timeout_seconds)
             stage='plan_validation'
             plan=Plan.model_validate(raw.model_dump())
             calls=validated_calls(state['request'],plan,self.settings)
@@ -299,7 +342,7 @@ class Agent:
         comparison=Comparison(locations=[loc.id for loc in request.locations],radius_meters=request.radius_meters,
             time_range=request.time_range,metrics=state.get('comparisons',[])) if len(request.locations)==2 else None
         return QueryResponse(status=status,intent=state['plan'].intent,
-            answer=render_answer(request,claims,state['unsupported'],composition),comparison=comparison,
+            answer=render_answer(request,claims,state['unsupported'],composition,state['plan']),comparison=comparison,
             claims=claims,evidence=evidence,limitations=limits,
             limitation_codes=list(dict.fromkeys(codes+errors+['coverage_unknown','freshness_unknown'])),
             unsupported_dimensions=state['unsupported'],tool_trace_id=state['trace_id'])
@@ -315,7 +358,7 @@ class Agent:
                 if compare_pair(*(index[key] for key in metric.evidence_ids))!=metric:
                     raise ValueError('Comparison payload differs from evidence')
             allowed=[render_answer(state['request'],response.claims,response.unsupported_dimensions,
-                        Composition(ordered_claim_ids=[],introduction=style)) for style in INTRODUCTIONS]
+                        Composition(ordered_claim_ids=[],introduction=style),state['plan']) for style in INTRODUCTIONS]
             if response.answer not in allowed:
                 raise ValueError('Unverified answer prose')
             response.execution_plan=[call.model_dump(mode='json') for call in state.get('calls',[])]

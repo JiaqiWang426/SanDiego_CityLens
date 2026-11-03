@@ -1,0 +1,10 @@
+{
+  "finished_at": "2026-11-03T06:21:28.872407+00:00",
+  "live": false,
+  "live_attempts_total": 2,
+  "budget": 400,
+  "reuse_rejections_this_invocation": {
+    "stage_b_independent_evidence": [],
+    "prior_interrupted_stage_c": []
+  }
+}

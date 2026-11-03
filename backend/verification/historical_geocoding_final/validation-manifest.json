@@ -1,0 +1,18 @@
+{
+  "method_version": "citylens-final-historical-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "files": {
+    "plan.json": "f7746f59e0cda6ec4d55ef7e74995253a6a2b303e692f3d9646f9870b3d4ce8b",
+    "geocoding_results.csv": "e4a41c1cc7e7c2c011988eb23b1d7f7296ec782727ffeb17df5e9b670b1a01fa",
+    "accepted_candidates.csv": "3da02dd53e5a73149b30162b6e40b8f9834af9a535ce35ec0aea5dda053493f8",
+    "excluded_candidates.csv": "c199290399142e05c3677c467f1991d1f4738baac56f67ba63aec33c2d436c69",
+    "deployment_allowlist.csv": "d45c90fe7b083b86685df6be1ba50a47c4e9e1d6ccd8d85d70c69083d4c02ea0",
+    "deployment_allowlist.sha256": "20fdf59d5123026166f9e50be71cb6f33bf848220eca42b43ad772e53d12729a",
+    "method-validation.json": "a6f80297081d77e2d28abff7ab54cb6f5dfe15d31acf90a1a10ca6770b63e4b2",
+    "before-state.json": "06a16785e42cba5fa8fad92f84e124fa3e45c9228371aa071a5c63a694826f92",
+    "before-row-digests.json.gz": "7dbea8b8fbd45179a7cea872b07d05a1bb05d07c4d8bc14223cd139ed81ae956",
+    "quality-sample.json": "aaf3e9329fd1bdd5b81248548ae4d169d0229f71ff21e5ba6c438c7b202a996a",
+    "summary.json": "bb5cbe5eb7fe9b35fbdad92d33a61dc9a7009742e61fcd2330b46d94a12cbf93",
+    "quality-review.json": "3d0bcb6f083184d7d6eb731626b9f8c8a781748b5f84b3c9e9dab1f4fcf89afc"
+  }
+}

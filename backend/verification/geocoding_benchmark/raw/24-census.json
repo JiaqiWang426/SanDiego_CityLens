@@ -1,0 +1,29 @@
+{
+  "address_id": "24",
+  "provider": "census",
+  "input_address": "100 Park Plz, San Diego, CA 92101",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=100+Park+Plz&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92101",
+  "fetched_at": "2026-11-03T00:18:35.784654+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92101",
+          "city": "San Diego",
+          "street": "100 Park Plz",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": []
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 413.999
+}

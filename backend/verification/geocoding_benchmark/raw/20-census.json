@@ -1,0 +1,55 @@
+{
+  "address_id": "20",
+  "provider": "census",
+  "input_address": "9515 Genesee Ave, San Diego, CA 92121",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9515+Genesee+Ave&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92121",
+  "fetched_at": "2026-11-03T00:18:32.550414+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92121",
+          "city": "San Diego",
+          "street": "9515 Genesee Ave",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195300497"
+          },
+          "coordinates": {
+            "x": -117.2140512912,
+            "y": 32.878018311128
+          },
+          "addressComponents": {
+            "zip": "92121",
+            "streetName": "GENESEE",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "9501",
+            "state": "CA",
+            "suffixType": "AVE",
+            "toAddress": "9539",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "9515 GENESEE AVE, SAN DIEGO, CA, 92121"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 393.737
+}

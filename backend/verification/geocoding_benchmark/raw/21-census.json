@@ -1,0 +1,55 @@
+{
+  "address_id": "21",
+  "provider": "census",
+  "input_address": "9085 Judicial Dr, San Diego, CA 92122",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=9085+Judicial+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92122",
+  "fetched_at": "2026-11-03T00:18:33.326036+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92122",
+          "city": "San Diego",
+          "street": "9085 Judicial Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "627889447"
+          },
+          "coordinates": {
+            "x": -117.203529838364,
+            "y": 32.871872180529
+          },
+          "addressComponents": {
+            "zip": "92122",
+            "streetName": "JUDICIAL",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "9099",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "9001",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "9085 JUDICIAL DR, SAN DIEGO, CA, 92122"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 402.775
+}

@@ -1,0 +1,967 @@
+[
+  {
+    "file": "stage-c-approval-01.json",
+    "approval_sha256": "dbbd300afca5fb04ca89388f1c6587dd97e0d04f94001fa7a4c7168e9836faee",
+    "reports": 128,
+    "preflight": {
+      "error": "Candidate differs from local topology replay"
+    },
+    "stopped": "preflight_failed"
+  },
+  {
+    "file": "stage-c-approval-01.json",
+    "approval_sha256": "dbbd300afca5fb04ca89388f1c6587dd97e0d04f94001fa7a4c7168e9836faee",
+    "reports": 128,
+    "preflight": {
+      "run_id": "b19cd0c0b7cfb0925fdfd5c28cabd27052d5fe4396e9ac941be06fe7debe73cd",
+      "mode": "deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 128
+      },
+      "approved_reports": 128,
+      "stage_c_allowlist_reports": 4112,
+      "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+    },
+    "apply": {
+      "run_id": "b19cd0c0b7cfb0925fdfd5c28cabd27052d5fe4396e9ac941be06fe7debe73cd",
+      "mode": "apply",
+      "counts": {
+        "inserted": 0,
+        "updated": 128,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 128
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T07:53:39.834071+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "ambiguous": 3117,
+        "pending": 8222,
+        "no_match": 7400,
+        "matched": 59755
+      },
+      "located": 59755,
+      "source_fields_unchanged": true,
+      "journaled_updates": 128,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 128
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 128
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "stage-c-approval-02.json",
+    "approval_sha256": "c8169960f3914146de71d89950aa3e1c595ac31a153abafa493ff79c83924d65",
+    "reports": 996,
+    "preflight": {
+      "run_id": "eaa35781397be8df572da42de8a5c70ef5294e4b87b547c9f2eb2b2d004be0ec",
+      "mode": "deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 996
+      },
+      "approved_reports": 996,
+      "stage_c_allowlist_reports": 4112,
+      "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+    },
+    "apply": {
+      "run_id": "eaa35781397be8df572da42de8a5c70ef5294e4b87b547c9f2eb2b2d004be0ec",
+      "mode": "apply",
+      "counts": {
+        "inserted": 0,
+        "updated": 996,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 996
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T07:58:27.003359+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 7226,
+        "ambiguous": 3117,
+        "no_match": 7400,
+        "matched": 60751
+      },
+      "located": 60751,
+      "source_fields_unchanged": true,
+      "journaled_updates": 1124,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 1124
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 1124
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "stage-c-approval-03.json",
+    "approval_sha256": "51aa6928bab3c9d2e11a5b63937d9942509f4c627bc3409efe4c9fd513b03597",
+    "reports": 996,
+    "preflight": {
+      "run_id": "e8de75566d6ed4bfadd8e34a301c8fc6ada73047780b4cf2dedfa9bddcbcc72a",
+      "mode": "deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 996
+      },
+      "approved_reports": 996,
+      "stage_c_allowlist_reports": 4112,
+      "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+    },
+    "apply": {
+      "run_id": "e8de75566d6ed4bfadd8e34a301c8fc6ada73047780b4cf2dedfa9bddcbcc72a",
+      "mode": "apply",
+      "counts": {
+        "inserted": 0,
+        "updated": 996,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 996
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:03:30.746563+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 6230,
+        "ambiguous": 3117,
+        "no_match": 7400,
+        "matched": 61747
+      },
+      "located": 61747,
+      "source_fields_unchanged": true,
+      "journaled_updates": 2120,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 2120
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 2120
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "stage-c-approval-04.json",
+    "approval_sha256": "33d49f69b6927491f9cde64f256e9377217c2a72b20478ec3317bc186496b650",
+    "reports": 996,
+    "preflight": {
+      "run_id": "2112de6c1bd87a204032150a4c095dd7609fe327e8638c8cb22171b7b785b011",
+      "mode": "deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 996
+      },
+      "approved_reports": 996,
+      "stage_c_allowlist_reports": 4112,
+      "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+    },
+    "apply": {
+      "run_id": "2112de6c1bd87a204032150a4c095dd7609fe327e8638c8cb22171b7b785b011",
+      "mode": "apply",
+      "counts": {
+        "inserted": 0,
+        "updated": 996,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 996
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:09:17.203181+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 5234,
+        "ambiguous": 3117,
+        "no_match": 7400,
+        "matched": 62743
+      },
+      "located": 62743,
+      "source_fields_unchanged": true,
+      "journaled_updates": 3116,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 3116
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 3116
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "stage-c-approval-05.json",
+    "approval_sha256": "33ac7a1657f648c9ec70fae22421be1ea6ec0540647ca2a864f34ee7d0cdddb3",
+    "reports": 996,
+    "preflight": {
+      "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+      "mode": "deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 996
+      },
+      "approved_reports": 996,
+      "stage_c_allowlist_reports": 4112,
+      "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c"
+    },
+    "apply": {
+      "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+      "mode": "apply",
+      "counts": {
+        "inserted": 0,
+        "updated": 996,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 996
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:15:18.198401+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4238,
+        "ambiguous": 3117,
+        "no_match": 7400,
+        "matched": 63739
+      },
+      "located": 63739,
+      "source_fields_unchanged": true,
+      "journaled_updates": 4112,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4112
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4112
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-01.json",
+    "approval_sha256": "2c8b999a88ce366d2b6f14066c955de2be4359640b829371d48806cdee81d48b",
+    "reports": 100,
+    "preflight": {
+      "run_id": "1252d77c9ac38878671479bb1ff233325319a670e913c49fba119ad0d39c9a8a",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 100
+      },
+      "approved_reports": 100,
+      "by_original_status": {
+        "no_match": 84,
+        "ambiguous": 14,
+        "pending": 2
+      },
+      "rollout_baseline": {
+        "journaled_updates": 4112,
+        "by_original_status": {
+          "pending": 4112
+        }
+      }
+    },
+    "apply": {
+      "run_id": "1252d77c9ac38878671479bb1ff233325319a670e913c49fba119ad0d39c9a8a",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 100,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 100
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:16:13.349271+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4236,
+        "ambiguous": 3103,
+        "no_match": 7316,
+        "matched": 63839
+      },
+      "located": 63839,
+      "source_fields_unchanged": true,
+      "journaled_updates": 4212,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4114
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 98
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4114,
+        "no_match": 84,
+        "ambiguous": 14
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-02.json",
+    "approval_sha256": "91ca9cccf288a3e43295520a0e55888c207c04b11874596549e66d1daa0c44d3",
+    "reports": 846,
+    "preflight": {
+      "run_id": "8f46dc264daf6cfe937123fd1144229df25ff0b55b23f7869a78a2e1b185054e",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 846
+      },
+      "approved_reports": 846,
+      "by_original_status": {
+        "no_match": 648,
+        "ambiguous": 190,
+        "pending": 8
+      },
+      "rollout_baseline": {
+        "journaled_updates": 4212,
+        "by_original_status": {
+          "pending": 4114,
+          "no_match": 84,
+          "ambiguous": 14
+        }
+      }
+    },
+    "apply": {
+      "run_id": "8f46dc264daf6cfe937123fd1144229df25ff0b55b23f7869a78a2e1b185054e",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 846,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 846
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:18:21.463477+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4228,
+        "ambiguous": 2913,
+        "no_match": 6668,
+        "matched": 64685
+      },
+      "located": 64685,
+      "source_fields_unchanged": true,
+      "journaled_updates": 5058,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4122
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 936
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4122,
+        "no_match": 732,
+        "ambiguous": 204
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-03.json",
+    "approval_sha256": "0dc9247b7bd715f2c0e0295c8370bb8b299335bde5c32494d336c0513f0f0fa4",
+    "reports": 846,
+    "preflight": {
+      "run_id": "935f3221643e5095b38faa674bfd39daf0b908a411a1ec30d681f3ba2cdaa3ce",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 846
+      },
+      "approved_reports": 846,
+      "by_original_status": {
+        "no_match": 701,
+        "ambiguous": 136,
+        "pending": 9
+      },
+      "rollout_baseline": {
+        "journaled_updates": 5058,
+        "by_original_status": {
+          "pending": 4122,
+          "no_match": 732,
+          "ambiguous": 204
+        }
+      }
+    },
+    "apply": {
+      "run_id": "935f3221643e5095b38faa674bfd39daf0b908a411a1ec30d681f3ba2cdaa3ce",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 846,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 846
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:20:46.278989+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4219,
+        "ambiguous": 2777,
+        "no_match": 5967,
+        "matched": 65531
+      },
+      "located": 65531,
+      "source_fields_unchanged": true,
+      "journaled_updates": 5904,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4131
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 1773
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4131,
+        "no_match": 1433,
+        "ambiguous": 340
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-04.json",
+    "approval_sha256": "e521ec675f15a8fb34be5257e140d064556048aea63480aa62c4b8dc52431daa",
+    "reports": 846,
+    "preflight": {
+      "run_id": "b98b581cb51147d301001570d93f4399d5c303a6813ae93aa1a18d76822eef27",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 846
+      },
+      "approved_reports": 846,
+      "by_original_status": {
+        "no_match": 769,
+        "ambiguous": 77
+      },
+      "rollout_baseline": {
+        "journaled_updates": 5904,
+        "by_original_status": {
+          "pending": 4131,
+          "no_match": 1433,
+          "ambiguous": 340
+        }
+      }
+    },
+    "apply": {
+      "run_id": "b98b581cb51147d301001570d93f4399d5c303a6813ae93aa1a18d76822eef27",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 846,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 846
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:23:10.215057+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4219,
+        "ambiguous": 2700,
+        "no_match": 5198,
+        "matched": 66377
+      },
+      "located": 66377,
+      "source_fields_unchanged": true,
+      "journaled_updates": 6750,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4131
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 2619
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4131,
+        "no_match": 2202,
+        "ambiguous": 417
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-05.json",
+    "approval_sha256": "4ae3b40e574924529cf8a76bb5cacfa63a7c7e94e1ae93bbcd95e485a286c3a4",
+    "reports": 846,
+    "preflight": {
+      "run_id": "f93b874550c7096d0aec9762b4f340bec7a013f18580ce7c831a0ace4e674442",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 846
+      },
+      "approved_reports": 846,
+      "by_original_status": {
+        "no_match": 797,
+        "ambiguous": 48,
+        "pending": 1
+      },
+      "rollout_baseline": {
+        "journaled_updates": 6750,
+        "by_original_status": {
+          "pending": 4131,
+          "no_match": 2202,
+          "ambiguous": 417
+        }
+      }
+    },
+    "apply": {
+      "run_id": "f93b874550c7096d0aec9762b4f340bec7a013f18580ce7c831a0ace4e674442",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 846,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 846
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:25:37.519187+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4218,
+        "ambiguous": 2652,
+        "no_match": 4401,
+        "matched": 67223
+      },
+      "located": 67223,
+      "source_fields_unchanged": true,
+      "journaled_updates": 7596,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4132
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 3464
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4132,
+        "no_match": 2999,
+        "ambiguous": 465
+      }
+    },
+    "passed": true
+  },
+  {
+    "file": "final-approval-06.json",
+    "approval_sha256": "f75ac978254a475da9c2c9384fcf441e0c02c87ea8b7e99d886df9cde4b3a7b3",
+    "reports": 845,
+    "preflight": {
+      "run_id": "b6da4eb48c3b03c559b2b73db5ffaf80eef19d3a225a3c7d0fe37eb15b962bea",
+      "mode": "final_deployment_preflight",
+      "collision_updates": 0,
+      "counts": {
+        "eligible": 845
+      },
+      "approved_reports": 845,
+      "by_original_status": {
+        "ambiguous": 77,
+        "no_match": 768
+      },
+      "rollout_baseline": {
+        "journaled_updates": 7596,
+        "by_original_status": {
+          "pending": 4132,
+          "no_match": 2999,
+          "ambiguous": 465
+        }
+      }
+    },
+    "apply": {
+      "run_id": "b6da4eb48c3b03c559b2b73db5ffaf80eef19d3a225a3c7d0fe37eb15b962bea",
+      "mode": "final_apply",
+      "counts": {
+        "updated": 845,
+        "rejected": 0,
+        "skipped": 0
+      },
+      "invocation_counts": {
+        "updated": 845
+      },
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "finished_at": "2026-11-03T08:28:08.151237+00:00"
+    },
+    "verification": {
+      "rollout_drift_free": true,
+      "records": 78494,
+      "statuses": {
+        "pending": 4218,
+        "ambiguous": 2575,
+        "no_match": 3633,
+        "matched": 68068
+      },
+      "located": 68068,
+      "source_fields_unchanged": true,
+      "journaled_updates": 8441,
+      "duplicate_journal_updates": 0,
+      "rejected_or_other": [],
+      "invalid_geometry_or_provenance": 0,
+      "updated_outside_allowlists": 0,
+      "non_updated_rows_byte_identical": true,
+      "provider_precision": [
+        {
+          "p": "SanGIS local topology",
+          "q": "intersection_approximate",
+          "n": 4132
+        },
+        {
+          "p": "SanGIS road centerline",
+          "q": "block_approximate",
+          "n": 4309
+        },
+        {
+          "p": "US Census Geocoder",
+          "q": "block_approximate",
+          "n": 19
+        },
+        {
+          "p": "US Census Geocoder Batch",
+          "q": "block_approximate",
+          "n": 59608
+        }
+      ],
+      "agent_reference_permissions": {
+        "schema_write": false,
+        "table_write": false
+      },
+      "agent_collision_write": false,
+      "by_original_status": {
+        "pending": 4132,
+        "no_match": 3767,
+        "ambiguous": 542
+      }
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,1076 @@
+{
+  "cap": 180,
+  "attempts": [
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24565099386292%2C+%22ymin%22%3A+32.873608287767674%2C+%22xmax%22%3A+-117.24165099386293%2C+%22ymax%22%3A+32.87760828776768%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24565099386292%2C32.873608287767674%2C-117.24165099386293%2C32.87760828776768&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:11.056601+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-ff1aeaf91b365a46c20904e7.json.gz",
+      "sha256": "5034a86a83ca08abbe8e89014742f0cb540c78250b3bb1ff84eafbd18b464e23",
+      "finished_at": "2026-11-03T03:57:11.679168+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.00156416736267%2C+%22ymin%22%3A+33.10098754993886%2C+%22xmax%22%3A+-116.99756416736268%2C+%22ymax%22%3A+33.10498754993886%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.00156416736267%2C33.10098754993886%2C-116.99756416736268%2C33.10498754993886&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:11.701139+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-dde7e785dc12b226468466b9.json.gz",
+      "sha256": "f379072012d458ef2e0d4c777412656c33745aca382a15902e1902174e832c6b",
+      "finished_at": "2026-11-03T03:57:12.289754+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24708498293766%2C+%22ymin%22%3A+32.94740618924999%2C+%22xmax%22%3A+-117.24308498293767%2C+%22ymax%22%3A+32.951406189249994%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24708498293766%2C32.94740618924999%2C-117.24308498293767%2C32.951406189249994&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:12.309012+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-de3964f68b86b9ff18c71d8f.json.gz",
+      "sha256": "2d5ec069293665d2c7c0719a486cb594c624dd8742a64d35ec9468e8fd7cf2c9",
+      "finished_at": "2026-11-03T03:57:13.653716+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-116.96438592843943%2C+%22ymin%22%3A+32.563950471388885%2C+%22xmax%22%3A+-116.96038592843944%2C+%22ymax%22%3A+32.56795047138889%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-116.96438592843943%2C32.563950471388885%2C-116.96038592843944%2C32.56795047138889&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:13.672549+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-cf9549644a12b496dac5c564.json.gz",
+      "sha256": "f519731b2887a07fbcbf562a5de793498f6715449dd74b396ea8a41294972b6c",
+      "finished_at": "2026-11-03T03:57:14.202294+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22547648782387%2C+%22ymin%22%3A+32.75176705725334%2C+%22xmax%22%3A+-117.22147648782388%2C+%22ymax%22%3A+32.755767057253344%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22547648782387%2C32.75176705725334%2C-117.22147648782388%2C32.755767057253344&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:14.227119+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-3ca542c063a6dd81a4553ee0.json.gz",
+      "sha256": "7b9ab86f034372db5d09301e8240f2046802603bcfe8dad6e059e8410345900c",
+      "finished_at": "2026-11-03T03:57:14.786170+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16939375591028%2C+%22ymin%22%3A+32.71890674109538%2C+%22xmax%22%3A+-117.16539375591029%2C+%22ymax%22%3A+32.722906741095386%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16939375591028%2C32.71890674109538%2C-117.16539375591029%2C32.722906741095386&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:14.809444+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-3441bfc8bd6d0c302d64938d.json.gz",
+      "sha256": "26ea29979e7af1027ab80817acf50e391e9ab59a9d1460bdc86e669ee71ecebe",
+      "finished_at": "2026-11-03T03:57:15.359662+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.28135014885764%2C+%22ymin%22%3A+32.82577444254628%2C+%22xmax%22%3A+-117.27735014885765%2C+%22ymax%22%3A+32.82977444254629%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.28135014885764%2C32.82577444254628%2C-117.27735014885765%2C32.82977444254629&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:15.387268+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-26a154854060a8911a39da85.json.gz",
+      "sha256": "a305369ea162e994263964a5a9d21224a74a6055173bd6dc1361bff7ffb99f9c",
+      "finished_at": "2026-11-03T03:57:15.941504+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1401581466692%2C+%22ymin%22%3A+32.709614186600454%2C+%22xmax%22%3A+-117.1361581466692%2C+%22ymax%22%3A+32.71361418660046%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1401581466692%2C32.709614186600454%2C-117.1361581466692%2C32.71361418660046&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:15.967316+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-dcc89a1feaac0b53778c9b95.json.gz",
+      "sha256": "b02e682f4b515ce1067eb393431a36a226bf1e00a563a59aa02960b8372f3326",
+      "finished_at": "2026-11-03T03:57:16.727196+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.03203124056394%2C+%22ymin%22%3A+32.54285895509567%2C+%22xmax%22%3A+-117.02803124056395%2C+%22ymax%22%3A+32.54685895509567%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.03203124056394%2C32.54285895509567%2C-117.02803124056395%2C32.54685895509567&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:16.759317+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c4992011360eecca7af5b817.json.gz",
+      "sha256": "f8d930c061cde6d220bf2ea6fbe05196dd7e793ead9d80cbe252e140e1fc4e80",
+      "finished_at": "2026-11-03T03:57:18.147699+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13361756124958%2C+%22ymin%22%3A+32.69184474724341%2C+%22xmax%22%3A+-117.12961756124959%2C+%22ymax%22%3A+32.69584474724341%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13361756124958%2C32.69184474724341%2C-117.12961756124959%2C32.69584474724341&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:18.178059+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-9d7bea82b350b9b73a43f2b2.json.gz",
+      "sha256": "c57cb411ed7cef4544118e582fee96e57ccbcad67bd4ff90b4bf3c88c26d6f3d",
+      "finished_at": "2026-11-03T03:57:19.422378+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.20928454547551%2C+%22ymin%22%3A+32.7676098227092%2C+%22xmax%22%3A+-117.20528454547552%2C+%22ymax%22%3A+32.7716098227092%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.20928454547551%2C32.7676098227092%2C-117.20528454547552%2C32.7716098227092&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:19.450236+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-7dcb268b0b090a846fcadb11.json.gz",
+      "sha256": "6db48d46cb676668c30941e7571107b70cb4c235a06147b3b4a9ad87625bd589",
+      "finished_at": "2026-11-03T03:57:20.685028+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24963380683376%2C+%22ymin%22%3A+32.69734177020929%2C+%22xmax%22%3A+-117.24563380683377%2C+%22ymax%22%3A+32.7013417702093%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24963380683376%2C32.69734177020929%2C-117.24563380683377%2C32.7013417702093&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:20.708817+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-7fa38a96e393d4146c78d823.json.gz",
+      "sha256": "8d2db81afcc8171091ea6c08faf1f8167655cbe3af2ba8109ab79292dbd054e1",
+      "finished_at": "2026-11-03T03:57:21.233406+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.04609609784474%2C+%22ymin%22%3A+32.55026619933296%2C+%22xmax%22%3A+-117.04209609784475%2C+%22ymax%22%3A+32.554266199332965%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.04609609784474%2C32.55026619933296%2C-117.04209609784475%2C32.554266199332965&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:21.263052+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-92b091e7b6fde9c73f64517f.json.gz",
+      "sha256": "25dc8716961003c8a2fd5711180b90c85426bb668a0ba265dbad8cf4fca96c4e",
+      "finished_at": "2026-11-03T03:57:22.305171+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16584768437355%2C+%22ymin%22%3A+32.71683045376201%2C+%22xmax%22%3A+-117.16184768437356%2C+%22ymax%22%3A+32.72083045376201%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16584768437355%2C32.71683045376201%2C-117.16184768437356%2C32.72083045376201&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:22.333544+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-b7498047c6484822d9a4594e.json.gz",
+      "sha256": "ef4d0ce0d5e6ea612b32280490eeb805c0069845a20d4c1645e90dd1a0ad602f",
+      "finished_at": "2026-11-03T03:57:22.863822+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.00700068041077%2C+%22ymin%22%3A+32.57858001321464%2C+%22xmax%22%3A+-117.00300068041078%2C+%22ymax%22%3A+32.582580013214645%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.00700068041077%2C32.57858001321464%2C-117.00300068041078%2C32.582580013214645&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:22.889976+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-23380b477e7cd340844f364b.json.gz",
+      "sha256": "79c7b9fa827ec7268fd3e90e30570d05706540b1a6d44718cf778f2f2da61047",
+      "finished_at": "2026-11-03T03:57:23.365315+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.15758052668855%2C+%22ymin%22%3A+32.71060008453867%2C+%22xmax%22%3A+-117.15358052668856%2C+%22ymax%22%3A+32.714600084538674%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.15758052668855%2C32.71060008453867%2C-117.15358052668856%2C32.714600084538674&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:23.394305+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-56c2b8f9ff6c1f4c146f04b2.json.gz",
+      "sha256": "71a4b19ed1978e722452a99424ddb9d255e715870f40cbf55d391f1bcf108f81",
+      "finished_at": "2026-11-03T03:57:23.956434+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24586335686557%2C+%22ymin%22%3A+32.88179585713203%2C+%22xmax%22%3A+-117.24186335686558%2C+%22ymax%22%3A+32.88579585713204%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24586335686557%2C32.88179585713203%2C-117.24186335686558%2C32.88579585713204&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:23.985616+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-03b6ce31fd7f3a776e9791da.json.gz",
+      "sha256": "58ba7a361bb3455af92dc33cb94805ab8efe1a9a4510ba26ce17a5f6ecd08bc0",
+      "finished_at": "2026-11-03T03:57:24.429210+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1730571644842%2C+%22ymin%22%3A+32.70948226304278%2C+%22xmax%22%3A+-117.16905716448422%2C+%22ymax%22%3A+32.713482263042785%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1730571644842%2C32.70948226304278%2C-117.16905716448422%2C32.713482263042785&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:24.460264+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-5f143dca32dce10a7558b750.json.gz",
+      "sha256": "5d950b5b1aadae29e0e02355a73fd8096fad2f34af57619318625ea56adfe6f6",
+      "finished_at": "2026-11-03T03:57:24.947943+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16740557651491%2C+%22ymin%22%3A+32.76790558550266%2C+%22xmax%22%3A+-117.16340557651492%2C+%22ymax%22%3A+32.771905585502665%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16740557651491%2C32.76790558550266%2C-117.16340557651492%2C32.771905585502665&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:24.987021+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-71ade7c958bd4bacdb96c7f5.json.gz",
+      "sha256": "3a5f4d1b44dd4e89b689a0e4d9c713c0e2ab2d2fc830d12eb5fb6be770644d92",
+      "finished_at": "2026-11-03T03:57:25.551295+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11453369360594%2C+%22ymin%22%3A+32.95590482095606%2C+%22xmax%22%3A+-117.11053369360594%2C+%22ymax%22%3A+32.95990482095606%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11453369360594%2C32.95590482095606%2C-117.11053369360594%2C32.95990482095606&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:25.592462+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-1eced843b83b97d0c16906ce.json.gz",
+      "sha256": "286a89140244bb4a88068b9dc5d2dd97e920ee454bc1c3fcbfd5d7de65f721a6",
+      "finished_at": "2026-11-03T03:57:26.285611+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24424181024852%2C+%22ymin%22%3A+32.748945997768715%2C+%22xmax%22%3A+-117.24024181024853%2C+%22ymax%22%3A+32.75294599776872%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24424181024852%2C32.748945997768715%2C-117.24024181024853%2C32.75294599776872&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:26.328165+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-6fe0a2cf16bc7d0aac89e7ec.json.gz",
+      "sha256": "dadcf79807436ecc13015a1e5edc3ae8ccd0b02ab6f003108154f6d7e63b3145",
+      "finished_at": "2026-11-03T03:57:26.868736+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11231640561947%2C+%22ymin%22%3A+32.69405383850007%2C+%22xmax%22%3A+-117.10831640561948%2C+%22ymax%22%3A+32.69805383850007%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11231640561947%2C32.69405383850007%2C-117.10831640561948%2C32.69805383850007&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:26.907758+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-43774b8c588d6c54b4102065.json.gz",
+      "sha256": "49fc9fcce4510cf19660e9058a87e72c854069cec0d0753d3f9c1856dc8de2a8",
+      "finished_at": "2026-11-03T03:57:27.381454+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.19397640104468%2C+%22ymin%22%3A+32.95872042432318%2C+%22xmax%22%3A+-117.18997640104469%2C+%22ymax%22%3A+32.96272042432319%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.19397640104468%2C32.95872042432318%2C-117.18997640104469%2C32.96272042432319&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:27.420403+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-00da37da5547e8580bfe978b.json.gz",
+      "sha256": "413b2b5c670d6d84c336bcfd3c11db61e873feb94741e3e3cd455d7ac094a622",
+      "finished_at": "2026-11-03T03:57:27.954032+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.10034478134764%2C+%22ymin%22%3A+32.78119831908336%2C+%22xmax%22%3A+-117.09634478134765%2C+%22ymax%22%3A+32.785198319083364%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.10034478134764%2C32.78119831908336%2C-117.09634478134765%2C32.785198319083364&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:27.985514+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-d4622db83596b390bef4900e.json.gz",
+      "sha256": "01e385b596e3ee32685a451b6ae3140282be0143dc20f967e330b759ce0df5c7",
+      "finished_at": "2026-11-03T03:57:28.555596+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.20700235110694%2C+%22ymin%22%3A+32.75335165446352%2C+%22xmax%22%3A+-117.20300235110695%2C+%22ymax%22%3A+32.75735165446353%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.20700235110694%2C32.75335165446352%2C-117.20300235110695%2C32.75735165446353&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:28.598073+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-0c56d3c98f05036c5f361f6a.json.gz",
+      "sha256": "f7e0736ff05ce3a6a629988efc2a8bcb3a93a2c6dc2ce923e692e765e4a58cc8",
+      "finished_at": "2026-11-03T03:57:29.869623+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11454047832642%2C+%22ymin%22%3A+32.702434975098974%2C+%22xmax%22%3A+-117.11054047832643%2C+%22ymax%22%3A+32.70643497509898%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11454047832642%2C32.702434975098974%2C-117.11054047832643%2C32.70643497509898&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:29.914084+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-6f16c6d38fd5ff55b7521a4f.json.gz",
+      "sha256": "e78b03d7271cfb41de2f31d94f9f82be1afc7ec13c9d987a746e50e419e602dd",
+      "finished_at": "2026-11-03T03:57:30.465492+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14225948476586%2C+%22ymin%22%3A+32.711709341887804%2C+%22xmax%22%3A+-117.13825948476587%2C+%22ymax%22%3A+32.71570934188781%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14225948476586%2C32.711709341887804%2C-117.13825948476587%2C32.71570934188781&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:30.508129+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2055be8826b191b13ca7c6f5.json.gz",
+      "sha256": "f50f3f0425b01c5c12287d26f0074d09f858dd086fefa035efe4688383001a88",
+      "finished_at": "2026-11-03T03:57:31.327202+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23948191049021%2C+%22ymin%22%3A+32.94107319887104%2C+%22xmax%22%3A+-117.23548191049022%2C+%22ymax%22%3A+32.94507319887104%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23948191049021%2C32.94107319887104%2C-117.23548191049022%2C32.94507319887104&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:31.367495+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-ac6bc70bc20d3759542917ce.json.gz",
+      "sha256": "70c51feb9e536344ee9bbe9e04cf00ab14d24c2bf953e8776de3f57ccec4ccd5",
+      "finished_at": "2026-11-03T03:57:31.891619+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.0499881221133%2C+%22ymin%22%3A+32.55181865181243%2C+%22xmax%22%3A+-117.04598812211331%2C+%22ymax%22%3A+32.55581865181244%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.0499881221133%2C32.55181865181243%2C-117.04598812211331%2C32.55581865181244&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:31.932088+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2afead5a164240b2a138aaba.json.gz",
+      "sha256": "8ff08fbe5a1bb12a2e748e910bcdde72bb1c097ca42cc0b7dc76a6ace660a657",
+      "finished_at": "2026-11-03T03:57:33.056202+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12517459996168%2C+%22ymin%22%3A+32.693977197821155%2C+%22xmax%22%3A+-117.12117459996169%2C+%22ymax%22%3A+32.69797719782116%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12517459996168%2C32.693977197821155%2C-117.12117459996169%2C32.69797719782116&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:33.096024+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-24f3cc70fb555b9deb596c32.json.gz",
+      "sha256": "db936d020e76f17d3f95e6180264e349ec2ab8fc15a038fdffd3b3f43751a40f",
+      "finished_at": "2026-11-03T03:57:34.417993+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12254128115677%2C+%22ymin%22%3A+33.014765357072875%2C+%22xmax%22%3A+-117.11854128115678%2C+%22ymax%22%3A+33.01876535707288%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12254128115677%2C33.014765357072875%2C-117.11854128115678%2C33.01876535707288&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:34.457136+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-a3d08297f0de860a42c1be20.json.gz",
+      "sha256": "9f1849e05d20149fa40d279d1a89c2be63dc9f19a4e8008811b106a11a26fdff",
+      "finished_at": "2026-11-03T03:57:34.930075+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.04910113416534%2C+%22ymin%22%3A+32.76776994015482%2C+%22xmax%22%3A+-117.04510113416535%2C+%22ymax%22%3A+32.771769940154826%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.04910113416534%2C32.76776994015482%2C-117.04510113416535%2C32.771769940154826&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:34.988359+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-33d74ab8c8bbd082a6381141.json.gz",
+      "sha256": "0c68a6b6120e5ae3be973deb25b2f3db7dafadf9a32b9fc577e52405f5b8941a",
+      "finished_at": "2026-11-03T03:57:35.568886+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23718781240136%2C+%22ymin%22%3A+32.762639760052046%2C+%22xmax%22%3A+-117.23318781240137%2C+%22ymax%22%3A+32.76663976005205%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23718781240136%2C32.762639760052046%2C-117.23318781240137%2C32.76663976005205&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:35.620390+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2830c25f6a58c4235fca20c1.json.gz",
+      "sha256": "213903becaada6a2efaf36e5ad62d646af6c44706502a971e1560d693ca96d57",
+      "finished_at": "2026-11-03T03:57:36.184161+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23520196097958%2C+%22ymin%22%3A+32.76200293103631%2C+%22xmax%22%3A+-117.23120196097959%2C+%22ymax%22%3A+32.76600293103631%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23520196097958%2C32.76200293103631%2C-117.23120196097959%2C32.76600293103631&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:36.200096+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-87e70d04f18367bfad52688f.json.gz",
+      "sha256": "46f6f544b3d74601b8e39e22c5eac11047c71f8588ff2b36af0506e4dd336bb3",
+      "finished_at": "2026-11-03T03:57:36.748901+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.168639686557%2C+%22ymin%22%3A+32.72518446399352%2C+%22xmax%22%3A+-117.16463968655701%2C+%22ymax%22%3A+32.729184463993526%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.168639686557%2C32.72518446399352%2C-117.16463968655701%2C32.729184463993526&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:36.791657+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-5c280b618308d15a98fe76c3.json.gz",
+      "sha256": "94ca6fd02d0188c957101328f33cf94c1a784928022db3656cf37cec5ca8b086",
+      "finished_at": "2026-11-03T03:57:38.035063+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22969034652152%2C+%22ymin%22%3A+32.8703317362432%2C+%22xmax%22%3A+-117.22569034652153%2C+%22ymax%22%3A+32.87433173624321%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22969034652152%2C32.8703317362432%2C-117.22569034652153%2C32.87433173624321&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:38.078743+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-aa45546452a48e025c610610.json.gz",
+      "sha256": "7c63b38a0f6cda098b41423091abb144adaf3d282dabc369e8cab76d86ad2a6f",
+      "finished_at": "2026-11-03T03:57:39.300062+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16505355594963%2C+%22ymin%22%3A+32.78925425538373%2C+%22xmax%22%3A+-117.16105355594964%2C+%22ymax%22%3A+32.79325425538374%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16505355594963%2C32.78925425538373%2C-117.16105355594964%2C32.79325425538374&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:39.346354+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-5aee15abc4e1498956b1a467.json.gz",
+      "sha256": "c6917595adddd6751ade2ff9e37f9b73d293c165b911e2dd0ebc23f1134dc7e1",
+      "finished_at": "2026-11-03T03:57:40.010893+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.2214643145103%2C+%22ymin%22%3A+32.75279910896829%2C+%22xmax%22%3A+-117.21746431451031%2C+%22ymax%22%3A+32.756799108968295%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.2214643145103%2C32.75279910896829%2C-117.21746431451031%2C32.756799108968295&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:40.060952+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2e0b94cdd2f5f7c5f017896e.json.gz",
+      "sha256": "9cf5fca3a3f702461229b56479ae8a80409ba377c8784c738702d36ab9bd6a16",
+      "finished_at": "2026-11-03T03:57:40.563542+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13581734110237%2C+%22ymin%22%3A+32.69630906465405%2C+%22xmax%22%3A+-117.13181734110238%2C+%22ymax%22%3A+32.70030906465406%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13581734110237%2C32.69630906465405%2C-117.13181734110238%2C32.70030906465406&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:40.617319+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-428f6439062f8fcbbcc0b5dd.json.gz",
+      "sha256": "ed04f5a46421e173e27a385cbcf7ed7e274e31c534fd5b2da0ab34e84ce38503",
+      "finished_at": "2026-11-03T03:57:41.552821+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21623497575185%2C+%22ymin%22%3A+32.91968173613499%2C+%22xmax%22%3A+-117.21223497575185%2C+%22ymax%22%3A+32.923681736134995%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21623497575185%2C32.91968173613499%2C-117.21223497575185%2C32.923681736134995&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:41.602603+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c7b1b06fce7071521c3af20b.json.gz",
+      "sha256": "0ccfe8c2f302c2a649107e2e2924e6ef2b54c7a2b8518a19942572b06e4edbe3",
+      "finished_at": "2026-11-03T03:57:42.086088+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1736003864135%2C+%22ymin%22%3A+32.76672434000951%2C+%22xmax%22%3A+-117.1696003864135%2C+%22ymax%22%3A+32.770724340009515%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1736003864135%2C32.76672434000951%2C-117.1696003864135%2C32.770724340009515&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:42.124966+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2dec6a480934885f671be11a.json.gz",
+      "sha256": "9545bdcaeac69762a7618e8f9cc7b35baa93dc8e03e0c23e7e112afa5d9cbe17",
+      "finished_at": "2026-11-03T03:57:42.688358+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24229954147589%2C+%22ymin%22%3A+32.88984990775594%2C+%22xmax%22%3A+-117.2382995414759%2C+%22ymax%22%3A+32.89384990775594%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24229954147589%2C32.88984990775594%2C-117.2382995414759%2C32.89384990775594&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:42.740015+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-f1a80808ce524d1faba0a9aa.json.gz",
+      "sha256": "6c3e6f91c5bb757072d61aa90125f42ddc878d5b9d2f4693fcc6ca3e645a3f4e",
+      "finished_at": "2026-11-03T03:57:43.343940+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22014231119222%2C+%22ymin%22%3A+32.72514279276232%2C+%22xmax%22%3A+-117.21614231119223%2C+%22ymax%22%3A+32.729142792762325%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22014231119222%2C32.72514279276232%2C-117.21614231119223%2C32.729142792762325&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:43.392741+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-dd40775396b854700c896a39.json.gz",
+      "sha256": "c0c998877b0eb06301ed9e3b7aa460ff571914d2cff28a58ac455dbf4e61e67f",
+      "finished_at": "2026-11-03T03:57:43.952650+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22795326640235%2C+%22ymin%22%3A+32.954309884146625%2C+%22xmax%22%3A+-117.22395326640236%2C+%22ymax%22%3A+32.95830988414663%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22795326640235%2C32.954309884146625%2C-117.22395326640236%2C32.95830988414663&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:44.005335+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-00b4324aa241309e43bb78d7.json.gz",
+      "sha256": "372ed2738cb4c0965992c12d5023139d1fa3651a61618883e911f2becdbd836a",
+      "finished_at": "2026-11-03T03:57:44.460529+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11245225474023%2C+%22ymin%22%3A+32.780243231634195%2C+%22xmax%22%3A+-117.10845225474024%2C+%22ymax%22%3A+32.7842432316342%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11245225474023%2C32.780243231634195%2C-117.10845225474024%2C32.7842432316342&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:44.526378+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-b2f75c15cde310f8c9894e74.json.gz",
+      "sha256": "25e2ee340b190278fb81fb388226626a4a08a6ff265e9f41a5d78797d8c09301",
+      "finished_at": "2026-11-03T03:57:45.010547+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05144477984948%2C+%22ymin%22%3A+32.5524853245498%2C+%22xmax%22%3A+-117.04744477984949%2C+%22ymax%22%3A+32.556485324549804%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05144477984948%2C32.5524853245498%2C-117.04744477984949%2C32.556485324549804&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:45.070133+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-a271bbb073ca80c88feae339.json.gz",
+      "sha256": "d8d971c628a871702e11a76dce65ac7ac08b1c13c3aa4e2a728959fcb24db465",
+      "finished_at": "2026-11-03T03:57:46.414920+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.17304264445339%2C+%22ymin%22%3A+32.71680441917178%2C+%22xmax%22%3A+-117.1690426444534%2C+%22ymax%22%3A+32.720804419171785%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.17304264445339%2C32.71680441917178%2C-117.1690426444534%2C32.720804419171785&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:46.465656+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-6cd8602584c4d63660a72f89.json.gz",
+      "sha256": "e56403b566c432c859dcdfccb6829bf613618991aeb4808d6023182f63b0f9cc",
+      "finished_at": "2026-11-03T03:57:46.996447+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.15584367328097%2C+%22ymin%22%3A+32.766165511574094%2C+%22xmax%22%3A+-117.15184367328098%2C+%22ymax%22%3A+32.7701655115741%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.15584367328097%2C32.766165511574094%2C-117.15184367328098%2C32.7701655115741&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:47.053937+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-1578f2692d1bf2dffc593e98.json.gz",
+      "sha256": "002263a9670ad6a2516a9614c3a245f479dfc0a956a82ba0bfdb61fe7f9ba255",
+      "finished_at": "2026-11-03T03:57:47.595030+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21254804690004%2C+%22ymin%22%3A+32.73825164880967%2C+%22xmax%22%3A+-117.20854804690005%2C+%22ymax%22%3A+32.74225164880968%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21254804690004%2C32.73825164880967%2C-117.20854804690005%2C32.74225164880968&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:47.658487+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-6cb3d3ad9e4f8a13d5b0015f.json.gz",
+      "sha256": "c8fbe4ae4e087170787fc26327f4c023195acb53f5a5789f6b13c62ef319bf26",
+      "finished_at": "2026-11-03T03:57:48.148664+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1035519948024%2C+%22ymin%22%3A+32.77812954729662%2C+%22xmax%22%3A+-117.09955199480241%2C+%22ymax%22%3A+32.78212954729663%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1035519948024%2C32.77812954729662%2C-117.09955199480241%2C32.78212954729663&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:48.207379+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-750fe4de0cd47d18b316dd4d.json.gz",
+      "sha256": "c42e367f83b537eed20badd5308ee97346854b446eb43fbd6444f5aabd32045a",
+      "finished_at": "2026-11-03T03:57:49.250004+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12488442172558%2C+%22ymin%22%3A+32.74541400434652%2C+%22xmax%22%3A+-117.12088442172559%2C+%22ymax%22%3A+32.74941400434653%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12488442172558%2C32.74541400434652%2C-117.12088442172559%2C32.74941400434653&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:49.312622+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-bbcabe5538efe95ad1a09c1b.json.gz",
+      "sha256": "12d443897c9d76afbdca63beda136aff57c7b1a286d7e5249d1f485f4cbd8acf",
+      "finished_at": "2026-11-03T03:57:50.347421+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.234894875767%2C+%22ymin%22%3A+32.94139018333713%2C+%22xmax%22%3A+-117.230894875767%2C+%22ymax%22%3A+32.94539018333713%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.234894875767%2C32.94139018333713%2C-117.230894875767%2C32.94539018333713&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:50.411188+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-807f93ac45774c71292f6d8d.json.gz",
+      "sha256": "cbba944f3be65cf7a92d1c1cab9e9429a14e09c63b48a71a1ee0180e9a3d6186",
+      "finished_at": "2026-11-03T03:57:50.848569+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.07818022811806%2C+%22ymin%22%3A+32.77118097888302%2C+%22xmax%22%3A+-117.07418022811807%2C+%22ymax%22%3A+32.77518097888302%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.07818022811806%2C32.77118097888302%2C-117.07418022811807%2C32.77518097888302&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:50.905366+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-af5c004fc386487b9890556e.json.gz",
+      "sha256": "8d48c889f6c3b4952d1b1e7b8c34239749515fc7d0095b19bb3a7ce488b6b394",
+      "finished_at": "2026-11-03T03:57:51.373417+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.10103149765631%2C+%22ymin%22%3A+32.77379187780039%2C+%22xmax%22%3A+-117.09703149765632%2C+%22ymax%22%3A+32.7777918778004%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.10103149765631%2C32.77379187780039%2C-117.09703149765632%2C32.7777918778004&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:51.433656+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-1f626325c9696eb1848010a0.json.gz",
+      "sha256": "27700cbf0cca45bc580badc68839084a6ae70d3a85d8d6348c7f79ff1a5d99f5",
+      "finished_at": "2026-11-03T03:57:51.989525+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.17311416547491%2C+%22ymin%22%3A+32.728314675356366%2C+%22xmax%22%3A+-117.16911416547492%2C+%22ymax%22%3A+32.73231467535637%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.17311416547491%2C32.728314675356366%2C-117.16911416547492%2C32.73231467535637&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:52.054651+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2172db2a941ab6abb7a23178.json.gz",
+      "sha256": "0350d6f1a7852f09ebbea8f0440befe643db7969ef25a361d3c254fcf832019f",
+      "finished_at": "2026-11-03T03:57:53.194585+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21605566482619%2C+%22ymin%22%3A+32.87056375673895%2C+%22xmax%22%3A+-117.2120556648262%2C+%22ymax%22%3A+32.87456375673896%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21605566482619%2C32.87056375673895%2C-117.2120556648262%2C32.87456375673896&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:53.254018+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-800d99794115958d708f50a6.json.gz",
+      "sha256": "9e01406dc08b37454fe3e3b93949b4f6991b5c1f94e8abf5a31ca02a26826eee",
+      "finished_at": "2026-11-03T03:57:53.805323+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.06122993307368%2C+%22ymin%22%3A+32.764324098477196%2C+%22xmax%22%3A+-117.05722993307369%2C+%22ymax%22%3A+32.7683240984772%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.06122993307368%2C32.764324098477196%2C-117.05722993307369%2C32.7683240984772&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:53.874856+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-37590032d59fab92451fb839.json.gz",
+      "sha256": "ed247af3f97c984b6d28631120b7dd6e49328a3d5808d4ae5f7bc03f37b4ef99",
+      "finished_at": "2026-11-03T03:57:54.452096+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14012828339881%2C+%22ymin%22%3A+32.7700609860452%2C+%22xmax%22%3A+-117.13612828339882%2C+%22ymax%22%3A+32.77406098604521%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14012828339881%2C32.7700609860452%2C-117.13612828339882%2C32.77406098604521&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:54.519721+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c48c2f1f878f1d10ba00e47d.json.gz",
+      "sha256": "879dcb24e1c6874aef078b6c09d337715802f4e45412e17ff60576199d9b311d",
+      "finished_at": "2026-11-03T03:57:55.598892+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12171424815367%2C+%22ymin%22%3A+32.80016924264315%2C+%22xmax%22%3A+-117.11771424815367%2C+%22ymax%22%3A+32.804169242643155%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12171424815367%2C32.80016924264315%2C-117.11771424815367%2C32.804169242643155&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:55.666589+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-7da29dd9eecc3f408e02dfca.json.gz",
+      "sha256": "8254ae03dbd2f03da62a87835865af09e51fc40320a4b62c04511d932cdb4daf",
+      "finished_at": "2026-11-03T03:57:56.158333+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22503073130659%2C+%22ymin%22%3A+32.897826992437054%2C+%22xmax%22%3A+-117.2210307313066%2C+%22ymax%22%3A+32.90182699243706%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22503073130659%2C32.897826992437054%2C-117.2210307313066%2C32.90182699243706&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:56.221269+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-13ae250831e57f5281575eb9.json.gz",
+      "sha256": "4f20ca45fd0de6ef8f5674fd344caf95d97793040a9c0de4ed90403c31b7981a",
+      "finished_at": "2026-11-03T03:57:57.808612+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.2247342044472%2C+%22ymin%22%3A+32.73019969186603%2C+%22xmax%22%3A+-117.22073420444721%2C+%22ymax%22%3A+32.73419969186603%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.2247342044472%2C32.73019969186603%2C-117.22073420444721%2C32.73419969186603&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:57.876625+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-cec25814caf22213360bbf63.json.gz",
+      "sha256": "b4dd0651e7ff9e8ff9648b3a30225ed90cce829e523ebc7c53ecc9cde7f8eb43",
+      "finished_at": "2026-11-03T03:57:58.439210+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11736481672759%2C+%22ymin%22%3A+32.683497247255694%2C+%22xmax%22%3A+-117.1133648167276%2C+%22ymax%22%3A+32.6874972472557%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11736481672759%2C32.683497247255694%2C-117.1133648167276%2C32.6874972472557&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:58.508180+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-0628efe56244117a8decc9f9.json.gz",
+      "sha256": "be5906879cae519757fcc8dd23976da1896d4dd9e57cfbfb9dcdf98ed5e542c1",
+      "finished_at": "2026-11-03T03:57:59.705725+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22629246182092%2C+%22ymin%22%3A+32.799376185517595%2C+%22xmax%22%3A+-117.22229246182093%2C+%22ymax%22%3A+32.8033761855176%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22629246182092%2C32.799376185517595%2C-117.22229246182093%2C32.8033761855176&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:57:59.768582+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c5a5d897f5a111bfc89644e7.json.gz",
+      "sha256": "1eed5583da3c9c72394b9cece5e8886cf98f4682ff5944684068eee1f161be70",
+      "finished_at": "2026-11-03T03:58:00.249980+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.03657094616499%2C+%22ymin%22%3A+32.541804288974014%2C+%22xmax%22%3A+-117.032570946165%2C+%22ymax%22%3A+32.54580428897402%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.03657094616499%2C32.541804288974014%2C-117.032570946165%2C32.54580428897402&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:00.315085+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-f4f5509f24c2f83a5a3bfe31.json.gz",
+      "sha256": "28f41409357731c6c41f15325f13eb4b19d340ad4b5343a4235e47ae72fa90e1",
+      "finished_at": "2026-11-03T03:58:01.619629+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12075379915359%2C+%22ymin%22%3A+32.699241574536295%2C+%22xmax%22%3A+-117.1167537991536%2C+%22ymax%22%3A+32.7032415745363%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12075379915359%2C32.699241574536295%2C-117.1167537991536%2C32.7032415745363&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:01.686064+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2844975fdf30ba4b9ca930b8.json.gz",
+      "sha256": "554e61f16ea738ee5c3ce69d6eab89cfa68fdcd19896e301f659d989eece7c71",
+      "finished_at": "2026-11-03T03:58:02.276723+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.2298715368291%2C+%22ymin%22%3A+32.8851201340796%2C+%22xmax%22%3A+-117.2258715368291%2C+%22ymax%22%3A+32.889120134079604%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.2298715368291%2C32.8851201340796%2C-117.2258715368291%2C32.889120134079604&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:02.350555+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-04d55bb93960aee2861e8f2c.json.gz",
+      "sha256": "6a025779d45f33caed54d4c9187b587426d5faf55877740d90eb9a7ba695575a",
+      "finished_at": "2026-11-03T03:58:03.713029+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16458152006653%2C+%22ymin%22%3A+32.81969483220387%2C+%22xmax%22%3A+-117.16058152006654%2C+%22ymax%22%3A+32.82369483220388%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16458152006653%2C32.81969483220387%2C-117.16058152006654%2C32.82369483220388&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:03.795090+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-eded80ac83c14fafc5b9d8da.json.gz",
+      "sha256": "0067a599c2b5418b7c8e30ac343a4308b3d47aa02fb6298e1f28918ead1abc27",
+      "finished_at": "2026-11-03T03:58:04.668192+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23214132984678%2C+%22ymin%22%3A+32.75938270103446%2C+%22xmax%22%3A+-117.22814132984679%2C+%22ymax%22%3A+32.763382701034466%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23214132984678%2C32.75938270103446%2C-117.22814132984679%2C32.763382701034466&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:04.739142+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-fbd99174e37050ca63a7f14c.json.gz",
+      "sha256": "1fa51e8c2dc9f7867be47bfdc6177d67594bfcf791b8afa8cca37062d5096ab0",
+      "finished_at": "2026-11-03T03:58:05.212894+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.24332505518397%2C+%22ymin%22%3A+32.93034879867799%2C+%22xmax%22%3A+-117.23932505518398%2C+%22ymax%22%3A+32.934348798677995%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.24332505518397%2C32.93034879867799%2C-117.23932505518398%2C32.934348798677995&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:05.282531+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-10a919d1083fcda29b808af1.json.gz",
+      "sha256": "4a334211751b12920c26943304012e78620f99f3b1b9aa97a38e7ab47b6a9140",
+      "finished_at": "2026-11-03T03:58:06.529068+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23132901988109%2C+%22ymin%22%3A+32.870075334217745%2C+%22xmax%22%3A+-117.2273290198811%2C+%22ymax%22%3A+32.87407533421775%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23132901988109%2C32.870075334217745%2C-117.2273290198811%2C32.87407533421775&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:06.619333+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-1cabb0f3bfadfc1370c04bdd.json.gz",
+      "sha256": "a3b7661ea81b63fee7a8ae1a2a3195f6684c819d322f709e4268941f693346e7",
+      "finished_at": "2026-11-03T03:58:07.783709+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11490958991334%2C+%22ymin%22%3A+32.93508232500706%2C+%22xmax%22%3A+-117.11090958991335%2C+%22ymax%22%3A+32.939082325007064%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11490958991334%2C32.93508232500706%2C-117.11090958991335%2C32.939082325007064&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:07.853951+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-2b7453dcc54eaf0938807e96.json.gz",
+      "sha256": "bba0177746f7cdaff8717f2cdb5d3f86504b4f5f6ee0611de6c8e8e6428bac60",
+      "finished_at": "2026-11-03T03:58:08.826480+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21260394195575%2C+%22ymin%22%3A+32.80589577632746%2C+%22xmax%22%3A+-117.20860394195576%2C+%22ymax%22%3A+32.809895776327465%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21260394195575%2C32.80589577632746%2C-117.20860394195576%2C32.809895776327465&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:08.895471+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-89729381de477637d0fa5ea2.json.gz",
+      "sha256": "8076e56e42728e6c1f5edcecd1a41e2ff8a72c58047d64ba43ade31f8046c44b",
+      "finished_at": "2026-11-03T03:58:09.370437+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22857473748465%2C+%22ymin%22%3A+32.800927565503876%2C+%22xmax%22%3A+-117.22457473748466%2C+%22ymax%22%3A+32.80492756550388%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22857473748465%2C32.800927565503876%2C-117.22457473748466%2C32.80492756550388&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:09.383350+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-640dece9f2c6bd52d2413bfb.json.gz",
+      "sha256": "560852619068c2d3877883f95545ab0412f033ba82bcbec39f3fb4283cb2a22a",
+      "finished_at": "2026-11-03T03:58:09.854117+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21767564421444%2C+%22ymin%22%3A+32.804786431873985%2C+%22xmax%22%3A+-117.21367564421445%2C+%22ymax%22%3A+32.80878643187399%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21767564421444%2C32.804786431873985%2C-117.21367564421445%2C32.80878643187399&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:09.872507+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-8a0294f6c9b470cd59ab4d72.json.gz",
+      "sha256": "368c8c4bb8ffcf90e7f513bf04f0e73ec7751e98d90be7a2c20d169e62be9ae9",
+      "finished_at": "2026-11-03T03:58:11.050893+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21772409271291%2C+%22ymin%22%3A+32.80484425978207%2C+%22xmax%22%3A+-117.21372409271292%2C+%22ymax%22%3A+32.80884425978208%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21772409271291%2C32.80484425978207%2C-117.21372409271292%2C32.80884425978208&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:11.065856+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-aae8b19e2afcecdb6474dee6.json.gz",
+      "sha256": "c2bd3588ed31365b7c5d3b5ad1ed1acb21f97aa7a4986c486746e7d6218aa9a1",
+      "finished_at": "2026-11-03T03:58:12.194258+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21719352118849%2C+%22ymin%22%3A+32.80494658565329%2C+%22xmax%22%3A+-117.2131935211885%2C+%22ymax%22%3A+32.808946585653295%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21719352118849%2C32.80494658565329%2C-117.2131935211885%2C32.808946585653295&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:12.214585+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-8017f51c83f3533cfa2c8d35.json.gz",
+      "sha256": "bfb60a7a8f6508d269983e8e99ac02c44663f2603afd0da9adbdb073e8e0b668",
+      "finished_at": "2026-11-03T03:58:13.390140+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.09933917224976%2C+%22ymin%22%3A+32.83940462188774%2C+%22xmax%22%3A+-117.09533917224977%2C+%22ymax%22%3A+32.84340462188774%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.09933917224976%2C32.83940462188774%2C-117.09533917224977%2C32.84340462188774&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:13.458212+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-776b0d5c99e5731a8d2bc7db.json.gz",
+      "sha256": "b56388b3e8d7609a07ca59781805728070abad24d6bcbd02118ef8ea28c266bb",
+      "finished_at": "2026-11-03T03:58:14.291149+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13207388049187%2C+%22ymin%22%3A+32.73908612371398%2C+%22xmax%22%3A+-117.12807388049188%2C+%22ymax%22%3A+32.74308612371399%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13207388049187%2C32.73908612371398%2C-117.12807388049188%2C32.74308612371399&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:14.369097+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-d83fa202e23ff9c7e5b581f4.json.gz",
+      "sha256": "84fdfddf654b9e04f0083a7d9ce62c7a5e57344aed7d1e917240bec95312169c",
+      "finished_at": "2026-11-03T03:58:14.851861+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13128358048256%2C+%22ymin%22%3A+32.739083513423104%2C+%22xmax%22%3A+-117.12728358048257%2C+%22ymax%22%3A+32.74308351342311%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13128358048256%2C32.739083513423104%2C-117.12728358048257%2C32.74308351342311&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:14.870998+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-58f52350e0a4a1bfe57ba639.json.gz",
+      "sha256": "7b146b41599b37cc1aedf2bd5528072e502c0142a87d0cdf33da975e02fa82b5",
+      "finished_at": "2026-11-03T03:58:15.374156+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05564291695609%2C+%22ymin%22%3A+32.74235169516867%2C+%22xmax%22%3A+-117.0516429169561%2C+%22ymax%22%3A+32.74635169516868%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05564291695609%2C32.74235169516867%2C-117.0516429169561%2C32.74635169516868&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:15.452886+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c4bd64144374b930f02d0889.json.gz",
+      "sha256": "cbf31454bc0390c936ff84861a8383a949b3526f69657dbf400b508348cd4d02",
+      "finished_at": "2026-11-03T03:58:16.044950+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05554892619587%2C+%22ymin%22%3A+32.74244473608085%2C+%22xmax%22%3A+-117.05154892619588%2C+%22ymax%22%3A+32.74644473608085%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05554892619587%2C32.74244473608085%2C-117.05154892619588%2C32.74644473608085&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:16.062129+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-9eeed278381694816f6945c7.json.gz",
+      "sha256": "5bf93c36f3d104317fd21e1d0c73b0edf0eeb7eccfa8cc4a125173991c012fd3",
+      "finished_at": "2026-11-03T03:58:16.625086+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.2261899017242%2C+%22ymin%22%3A+32.80275494187221%2C+%22xmax%22%3A+-117.2221899017242%2C+%22ymax%22%3A+32.806754941872214%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.2261899017242%2C32.80275494187221%2C-117.2221899017242%2C32.806754941872214&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:16.710755+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-7985d76bae8669c6ebbbf1c0.json.gz",
+      "sha256": "9b5e266f3a887459c5adeafbd805c3a5ed8fa5de1a9a97fa6fe3f3e091ea44d1",
+      "finished_at": "2026-11-03T03:58:17.247772+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22810678031082%2C+%22ymin%22%3A+32.80128307876889%2C+%22xmax%22%3A+-117.22410678031083%2C+%22ymax%22%3A+32.805283078768895%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22810678031082%2C32.80128307876889%2C-117.22410678031083%2C32.805283078768895&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:17.264089+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-567b1e7e3444a43a1db0b2f0.json.gz",
+      "sha256": "de3db35f5864db441e04dfc686165705908e0c7f0b7c1711f0de5df33022ed11",
+      "finished_at": "2026-11-03T03:58:17.708511+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.10813876746253%2C+%22ymin%22%3A+32.751213287873455%2C+%22xmax%22%3A+-117.10413876746254%2C+%22ymax%22%3A+32.75521328787346%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.10813876746253%2C32.751213287873455%2C-117.10413876746254%2C32.75521328787346&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:17.787157+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-7efa421e2ba848b37ef4e734.json.gz",
+      "sha256": "505984fe5bdd8019c456a58b2f9c5272d665f536356860aefb7c7973fc9a6a71",
+      "finished_at": "2026-11-03T03:58:18.375622+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.10764760451161%2C+%22ymin%22%3A+32.751211197935184%2C+%22xmax%22%3A+-117.10364760451162%2C+%22ymax%22%3A+32.75521119793519%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.10764760451161%2C32.751211197935184%2C-117.10364760451162%2C32.75521119793519&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:18.395392+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-88d07a753e318ead85537fbd.json.gz",
+      "sha256": "83b70f32147772cf3b85bc8a136b009df009ff3791caa14f51b93f8a4f44a5d9",
+      "finished_at": "2026-11-03T03:58:19.011108+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.09494330722043%2C+%22ymin%22%3A+32.75396743956829%2C+%22xmax%22%3A+-117.09094330722044%2C+%22ymax%22%3A+32.7579674395683%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.09494330722043%2C32.75396743956829%2C-117.09094330722044%2C32.7579674395683&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:19.089690+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-4d2582707cd0e1ef733777db.json.gz",
+      "sha256": "6b4b95f828002493523cd5994faeac51117cd5a4454e331400d71e78763683a0",
+      "finished_at": "2026-11-03T03:58:19.674754+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.0952778916539%2C+%22ymin%22%3A+32.75392117654797%2C+%22xmax%22%3A+-117.0912778916539%2C+%22ymax%22%3A+32.757921176547974%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.0952778916539%2C32.75392117654797%2C-117.0912778916539%2C32.757921176547974&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:19.695743+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-498f73c6c55f16acd87f1c24.json.gz",
+      "sha256": "fbea7fb76f24fe26f6e8a6c899603d8a819652222bb909fc6744539ad6d1aa1f",
+      "finished_at": "2026-11-03T03:58:20.283509+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.20280754566043%2C+%22ymin%22%3A+32.83091998634328%2C+%22xmax%22%3A+-117.19880754566044%2C+%22ymax%22%3A+32.83491998634329%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.20280754566043%2C32.83091998634328%2C-117.19880754566044%2C32.83491998634329&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:20.363250+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-4327e3c0ee2aa82a73bd5cc6.json.gz",
+      "sha256": "f2a422e42de208861b81923e60b0988719cc0e18f874cc805bea7d39e0099352",
+      "finished_at": "2026-11-03T03:58:20.923283+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.20811591694569%2C+%22ymin%22%3A+32.82568978179079%2C+%22xmax%22%3A+-117.2041159169457%2C+%22ymax%22%3A+32.8296897817908%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.20811591694569%2C32.82568978179079%2C-117.2041159169457%2C32.8296897817908&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:20.941860+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-47da2adfd3ff6f41c39e1202.json.gz",
+      "sha256": "b9e915a26b12c72186ff4cd012a566c1033864e32a7cd1a0caa560592b51bacd",
+      "finished_at": "2026-11-03T03:58:21.507802+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05952206700023%2C+%22ymin%22%3A+32.74338626506786%2C+%22xmax%22%3A+-117.05552206700024%2C+%22ymax%22%3A+32.74738626506787%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05952206700023%2C32.74338626506786%2C-117.05552206700024%2C32.74738626506787&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:21.592380+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-aac48ac00407501a59e722fa.json.gz",
+      "sha256": "62a250a560c648f93c642dfd730807290c5b896a6f99445e3daadd04cf8e2429",
+      "finished_at": "2026-11-03T03:58:22.157245+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05951702367325%2C+%22ymin%22%3A+32.74354571038539%2C+%22xmax%22%3A+-117.05551702367326%2C+%22ymax%22%3A+32.747545710385396%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05951702367325%2C32.74354571038539%2C-117.05551702367326%2C32.747545710385396&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:22.175549+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-3573e6298aad5109d13281a1.json.gz",
+      "sha256": "c43802d5d668831f8b1826576097476824ab92a5b51390e1e2f6e086a010b222",
+      "finished_at": "2026-11-03T03:58:22.772462+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05952415724377%2C+%22ymin%22%3A+32.74320905596479%2C+%22xmax%22%3A+-117.05552415724378%2C+%22ymax%22%3A+32.747209055964795%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05952415724377%2C32.74320905596479%2C-117.05552415724378%2C32.747209055964795&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:22.790091+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-00c9849db28eba4122537336.json.gz",
+      "sha256": "ea7fa2f4e3b02fbd951258d7db21f11f23f574c8a275f51461967cb01627f273",
+      "finished_at": "2026-11-03T03:58:23.368165+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.09851652401578%2C+%22ymin%22%3A+32.753472982494195%2C+%22xmax%22%3A+-117.09451652401579%2C+%22ymax%22%3A+32.7574729824942%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.09851652401578%2C32.753472982494195%2C-117.09451652401579%2C32.7574729824942&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:23.451539+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-e6b6d05af857b3a69180eaca.json.gz",
+      "sha256": "775b976fd48f53d9b55de717d78a6d9474c23978d72711ba13cd44f53b834e39",
+      "finished_at": "2026-11-03T03:58:24.036752+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.0989095707597%2C+%22ymin%22%3A+32.75341806391513%2C+%22xmax%22%3A+-117.09490957075971%2C+%22ymax%22%3A+32.75741806391513%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.0989095707597%2C32.75341806391513%2C-117.09490957075971%2C32.75741806391513&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:24.057865+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-37c5fe606ba6b0b2dbc105ea.json.gz",
+      "sha256": "cdeb1805af38d7bf61882035b2235f595568286a47e4df87d2749af85a50acc1",
+      "finished_at": "2026-11-03T03:58:24.671711+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14328046678837%2C+%22ymin%22%3A+32.7464458915312%2C+%22xmax%22%3A+-117.13928046678838%2C+%22ymax%22%3A+32.75044589153121%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14328046678837%2C32.7464458915312%2C-117.13928046678838%2C32.75044589153121&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:24.760262+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-8f1359a2d2ef7c89e83b7bb2.json.gz",
+      "sha256": "5fe785717b0b3cf97d153405cf740b6ae8a1daf875df8b9b9dcebf52659d838e",
+      "finished_at": "2026-11-03T03:58:25.328495+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14312433392313%2C+%22ymin%22%3A+32.7464442708181%2C+%22xmax%22%3A+-117.13912433392314%2C+%22ymax%22%3A+32.75044427081811%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14312433392313%2C32.7464442708181%2C-117.13912433392314%2C32.75044427081811&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:25.349083+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-35c918ae689c240629306633.json.gz",
+      "sha256": "a056cd1212de6101b80c128bc76c1131aa7eb802f0032d51e094a8493b49c37f",
+      "finished_at": "2026-11-03T03:58:25.949625+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16484115411251%2C+%22ymin%22%3A+32.70736122236238%2C+%22xmax%22%3A+-117.16084115411252%2C+%22ymax%22%3A+32.711361222362385%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16484115411251%2C32.70736122236238%2C-117.16084115411252%2C32.711361222362385&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:26.036112+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-953601de0cbdada4947cfaf7.json.gz",
+      "sha256": "bf84147799870ec231de6126b278553d4c362193e5aa1dc45b4293bc2b04a5b2",
+      "finished_at": "2026-11-03T03:58:26.588589+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.07242293067941%2C+%22ymin%22%3A+32.62661394784152%2C+%22xmax%22%3A+-117.06842293067942%2C+%22ymax%22%3A+32.630613947841525%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.07242293067941%2C32.62661394784152%2C-117.06842293067942%2C32.630613947841525&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:26.608873+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-217c60459005a978a779265f.json.gz",
+      "sha256": "587eba259e8b3c7c7961e290c8647f60d3681d9291d3f0fbf5b80c1fd282a206",
+      "finished_at": "2026-11-03T03:58:27.184320+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.08607454020641%2C+%22ymin%22%3A+32.576824210125075%2C+%22xmax%22%3A+-117.08207454020642%2C+%22ymax%22%3A+32.58082421012508%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.08607454020641%2C32.576824210125075%2C-117.08207454020642%2C32.58082421012508&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:27.270738+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-99effe7b48bd27bfd38cbb8a.json.gz",
+      "sha256": "ba4f17f503c39130f4bb15fe3e28a2be444e666b0b89d761c2c6b49fc1e6ec21",
+      "finished_at": "2026-11-03T03:58:28.533478+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.2546241346572%2C+%22ymin%22%3A+32.74581668499332%2C+%22xmax%22%3A+-117.25062413465722%2C+%22ymax%22%3A+32.74981668499333%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.2546241346572%2C32.74581668499332%2C-117.25062413465722%2C32.74981668499333&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:28.621269+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-57d05238187045d3ef1b5b75.json.gz",
+      "sha256": "8571a653db6d8684204ba17e478153bd63eac934912836fcc43047c9cc59789c",
+      "finished_at": "2026-11-03T03:58:29.107817+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14872658603981%2C+%22ymin%22%3A+32.71048612667337%2C+%22xmax%22%3A+-117.14472658603982%2C+%22ymax%22%3A+32.71448612667338%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14872658603981%2C32.71048612667337%2C-117.14472658603982%2C32.71448612667338&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:29.194544+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-6e23b702b61ad7f535c30d6a.json.gz",
+      "sha256": "f27e69690407d02a206897f3a7b49dec7c4023b540b59a44364f72ca64b16000",
+      "finished_at": "2026-11-03T03:58:30.662315+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16479498717267%2C+%22ymin%22%3A+32.82332954337109%2C+%22xmax%22%3A+-117.16079498717268%2C+%22ymax%22%3A+32.82732954337109%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16479498717267%2C32.82332954337109%2C-117.16079498717268%2C32.82732954337109&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:30.752504+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-96522dac1538ccc02994cf65.json.gz",
+      "sha256": "ac79f210ac2275ad934a683af2c63bab7a128a2e31e49b862f301176877e535b",
+      "finished_at": "2026-11-03T03:58:31.599910+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.15695072129017%2C+%22ymin%22%3A+32.742355537764205%2C+%22xmax%22%3A+-117.15295072129018%2C+%22ymax%22%3A+32.74635553776421%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.15695072129017%2C32.742355537764205%2C-117.15295072129018%2C32.74635553776421&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:31.693325+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-afaab55c9d2a5ee9ffc897f0.json.gz",
+      "sha256": "2ba67b23e42d45d1f4aef2aad3c2a5fc451381389287448f2e115a01af574542",
+      "finished_at": "2026-11-03T03:58:32.329296+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13279218175754%2C+%22ymin%22%3A+32.94564240764947%2C+%22xmax%22%3A+-117.12879218175755%2C+%22ymax%22%3A+32.94964240764948%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13279218175754%2C32.94564240764947%2C-117.12879218175755%2C32.94964240764948&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:32.421086+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-8414078e02e086cf3987622a.json.gz",
+      "sha256": "4c1fc7ddeebf097b3c1d36417dc0a00d22b357770e06d92edcda5a0f65ad085c",
+      "finished_at": "2026-11-03T03:58:32.979033+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11156599786476%2C+%22ymin%22%3A+32.74395619516182%2C+%22xmax%22%3A+-117.10756599786477%2C+%22ymax%22%3A+32.74795619516183%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11156599786476%2C32.74395619516182%2C-117.10756599786477%2C32.74795619516183&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:33.074619+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-b87bb99b5ed00f6d6b14ff87.json.gz",
+      "sha256": "354c9a8e5a44d771586946d87714c4b723c013e349267e2aa2df93e75966115a",
+      "finished_at": "2026-11-03T03:58:33.839802+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.04827279459359%2C+%22ymin%22%3A+32.57968549487634%2C+%22xmax%22%3A+-117.0442727945936%2C+%22ymax%22%3A+32.58368549487634%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.04827279459359%2C32.57968549487634%2C-117.0442727945936%2C32.58368549487634&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:33.934601+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-fa291b761b6fafcee2b4c8ed.json.gz",
+      "sha256": "9a51062bb24976f8192f2a5284b2a445fe5326d4735ea1fc837e247893f2d242",
+      "finished_at": "2026-11-03T03:58:34.412030+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.02516250847724%2C+%22ymin%22%3A+32.712729882005604%2C+%22xmax%22%3A+-117.02116250847725%2C+%22ymax%22%3A+32.71672988200561%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.02516250847724%2C32.712729882005604%2C-117.02116250847725%2C32.71672988200561&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:34.502518+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-e600b009caf4a13a65f49dcd.json.gz",
+      "sha256": "d733aa9931ad382fbfa7f3fb09ed229fad9edaa01fa08a337690ba4807dc8539",
+      "finished_at": "2026-11-03T03:58:34.992196+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.10783878436706%2C+%22ymin%22%3A+32.94601277031655%2C+%22xmax%22%3A+-117.10383878436707%2C+%22ymax%22%3A+32.950012770316555%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.10783878436706%2C32.94601277031655%2C-117.10383878436707%2C32.950012770316555&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:35.087070+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-a50f2d5eb02ca89b4026a287.json.gz",
+      "sha256": "7a670405b7bf5d3de678ccea2db9b5e61bb4650f9285ea87bccdbfd33a00ea98",
+      "finished_at": "2026-11-03T03:58:36.299136+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.08019492990809%2C+%22ymin%22%3A+32.94489821635201%2C+%22xmax%22%3A+-117.0761949299081%2C+%22ymax%22%3A+32.94889821635201%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.08019492990809%2C32.94489821635201%2C-117.0761949299081%2C32.94889821635201&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:36.398824+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-773933f1c6e4b8e159c2883c.json.gz",
+      "sha256": "3628a89f3b5fcb25ed9473e020a8d542842403e31bfde159f79e6e53b49fd0cd",
+      "finished_at": "2026-11-03T03:58:37.040873+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.01184997205115%2C+%22ymin%22%3A+32.56633985515719%2C+%22xmax%22%3A+-117.00784997205116%2C+%22ymax%22%3A+32.570339855157194%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.01184997205115%2C32.56633985515719%2C-117.00784997205116%2C32.570339855157194&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:37.132506+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-8d0bf1a798a990d0d2b6fb12.json.gz",
+      "sha256": "529a2964f2d845d73fc756bf336280f4c6cb3e6f196cf32de3a60add1ce0ef87",
+      "finished_at": "2026-11-03T03:58:37.608992+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.08105496833358%2C+%22ymin%22%3A+32.823516115124335%2C+%22xmax%22%3A+-117.07705496833358%2C+%22ymax%22%3A+32.82751611512434%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.08105496833358%2C32.823516115124335%2C-117.07705496833358%2C32.82751611512434&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:37.709769+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-52dab783de914c25db935001.json.gz",
+      "sha256": "1d3eb5b8a129bc5064be7be01c219ea19690e957250509d749424050c29b4de5",
+      "finished_at": "2026-11-03T03:58:38.246877+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.21060011656223%2C+%22ymin%22%3A+32.8633885728128%2C+%22xmax%22%3A+-117.20660011656224%2C+%22ymax%22%3A+32.86738857281281%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.21060011656223%2C32.8633885728128%2C-117.20660011656224%2C32.86738857281281&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:38.348883+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-bab95f5197d69239496bd896.json.gz",
+      "sha256": "65fe2165622032e574a6e36eb833f738f082e8b67f3811b28d51e4769ee899ef",
+      "finished_at": "2026-11-03T03:58:38.911338+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05164944543954%2C+%22ymin%22%3A+32.69334630431988%2C+%22xmax%22%3A+-117.04764944543955%2C+%22ymax%22%3A+32.697346304319886%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05164944543954%2C32.69334630431988%2C-117.04764944543955%2C32.697346304319886&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:38.988106+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-ce597e6ac81b0fb5382f519b.json.gz",
+      "sha256": "1cb67eb9f56c2fdacf32fb16d30f339050e50489a8325792d5adbc531219b111",
+      "finished_at": "2026-11-03T03:58:39.560363+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05161311933902%2C+%22ymin%22%3A+32.693283324786066%2C+%22xmax%22%3A+-117.04761311933903%2C+%22ymax%22%3A+32.69728332478607%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05161311933902%2C32.693283324786066%2C-117.04761311933903%2C32.69728332478607&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:39.580462+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-af61b041d57f889d840b2839.json.gz",
+      "sha256": "f4393e144b9bd4538ca205704b4e0851ef3b66a57cd87168a20820fff92858cc",
+      "finished_at": "2026-11-03T03:58:40.134299+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.04370398230854%2C+%22ymin%22%3A+32.58171034276276%2C+%22xmax%22%3A+-117.03970398230855%2C+%22ymax%22%3A+32.585710342762766%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.04370398230854%2C32.58171034276276%2C-117.03970398230855%2C32.585710342762766&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:40.229391+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-a2e16c80e6e3a8bed9361956.json.gz",
+      "sha256": "0b3f0352c5825d0bec678355f49567a07f0f4381ad2fa2f24ec4f56da7b7b1c8",
+      "finished_at": "2026-11-03T03:58:40.793297+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05602409269426%2C+%22ymin%22%3A+32.58173771361566%2C+%22xmax%22%3A+-117.05202409269427%2C+%22ymax%22%3A+32.585737713615664%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05602409269426%2C32.58173771361566%2C-117.05202409269427%2C32.585737713615664&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:40.888150+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-f2fe5052aba47c37d68b0e84.json.gz",
+      "sha256": "a835ca6fc27b5fae5ea1ee39d05d1adec30743d99cc5d1b81b62cdf53ef178aa",
+      "finished_at": "2026-11-03T03:58:41.386202+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.09997413904779%2C+%22ymin%22%3A+32.70214845981582%2C+%22xmax%22%3A+-117.0959741390478%2C+%22ymax%22%3A+32.70614845981582%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.09997413904779%2C32.70214845981582%2C-117.0959741390478%2C32.70614845981582&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:41.472208+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-c35cf4d7b081c116df5da6be.json.gz",
+      "sha256": "fb4fd126d1c4727f0ea48253780500b4a3be92cff5974e0af5c5760d8a92fe0c",
+      "finished_at": "2026-11-03T03:58:42.292294+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1619426734391%2C+%22ymin%22%3A+32.803737175968294%2C+%22xmax%22%3A+-117.15794267343911%2C+%22ymax%22%3A+32.8077371759683%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1619426734391%2C32.803737175968294%2C-117.15794267343911%2C32.8077371759683&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:42.380873+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-d6baa518ee3468c53c1788ee.json.gz",
+      "sha256": "b9063c747a1cf4a93759269edd55acd6bebecc5061f8744997bb75dd25152fe1",
+      "finished_at": "2026-11-03T03:58:42.954843+00:00"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14701710479997%2C+%22ymin%22%3A+32.75601115100258%2C+%22xmax%22%3A+-117.14301710479998%2C+%22ymax%22%3A+32.76001115100259%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14701710479997%2C32.75601115100258%2C-117.14301710479998%2C32.76001115100259&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:58:43.047252+00:00",
+      "status": "ok",
+      "file": "cache\\independent_tiger-fd1fe1ebd315666b6b003d6d.json.gz",
+      "sha256": "4ff0dbc89e3fafc61e3bee0dba4e40e55525db009196df258226697907af91a2",
+      "finished_at": "2026-11-03T03:58:43.633982+00:00"
+    }
+  ]
+}

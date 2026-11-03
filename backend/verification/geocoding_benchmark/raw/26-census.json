@@ -1,0 +1,29 @@
+{
+  "address_id": "26",
+  "provider": "census",
+  "input_address": "5500 Campanile Dr, San Diego, CA 92182",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=5500+Campanile+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92182",
+  "fetched_at": "2026-11-03T00:18:37.371522+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92182",
+          "city": "San Diego",
+          "street": "5500 Campanile Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": []
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 409.54
+}

@@ -1,0 +1,116 @@
+{
+  "approval_directory": "E:/review/citylens-geocoding-2026-11 (outside repository)",
+  "approved_at": "2026-11-02T23:49:58-08:00",
+  "files": [
+    {
+      "file": "stage-c-approval-01.json",
+      "allowlist": "stage_c",
+      "batch": 1,
+      "reports": 128,
+      "allowed_original_statuses": null,
+      "approved_sha256": "dbbd300afca5fb04ca89388f1c6587dd97e0d04f94001fa7a4c7168e9836faee"
+    },
+    {
+      "file": "stage-c-approval-02.json",
+      "allowlist": "stage_c",
+      "batch": 2,
+      "reports": 996,
+      "allowed_original_statuses": null,
+      "approved_sha256": "c8169960f3914146de71d89950aa3e1c595ac31a153abafa493ff79c83924d65"
+    },
+    {
+      "file": "stage-c-approval-03.json",
+      "allowlist": "stage_c",
+      "batch": 3,
+      "reports": 996,
+      "allowed_original_statuses": null,
+      "approved_sha256": "51aa6928bab3c9d2e11a5b63937d9942509f4c627bc3409efe4c9fd513b03597"
+    },
+    {
+      "file": "stage-c-approval-04.json",
+      "allowlist": "stage_c",
+      "batch": 4,
+      "reports": 996,
+      "allowed_original_statuses": null,
+      "approved_sha256": "33d49f69b6927491f9cde64f256e9377217c2a72b20478ec3317bc186496b650"
+    },
+    {
+      "file": "stage-c-approval-05.json",
+      "allowlist": "stage_c",
+      "batch": 5,
+      "reports": 996,
+      "allowed_original_statuses": null,
+      "approved_sha256": "33ac7a1657f648c9ec70fae22421be1ea6ec0540647ca2a864f34ee7d0cdddb3"
+    },
+    {
+      "file": "final-approval-01.json",
+      "allowlist": "final",
+      "batch": 1,
+      "reports": 100,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match",
+        "pending"
+      ],
+      "approved_sha256": "2c8b999a88ce366d2b6f14066c955de2be4359640b829371d48806cdee81d48b"
+    },
+    {
+      "file": "final-approval-02.json",
+      "allowlist": "final",
+      "batch": 2,
+      "reports": 846,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match",
+        "pending"
+      ],
+      "approved_sha256": "91ca9cccf288a3e43295520a0e55888c207c04b11874596549e66d1daa0c44d3"
+    },
+    {
+      "file": "final-approval-03.json",
+      "allowlist": "final",
+      "batch": 3,
+      "reports": 846,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match",
+        "pending"
+      ],
+      "approved_sha256": "0dc9247b7bd715f2c0e0295c8370bb8b299335bde5c32494d336c0513f0f0fa4"
+    },
+    {
+      "file": "final-approval-04.json",
+      "allowlist": "final",
+      "batch": 4,
+      "reports": 846,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match"
+      ],
+      "approved_sha256": "e521ec675f15a8fb34be5257e140d064556048aea63480aa62c4b8dc52431daa"
+    },
+    {
+      "file": "final-approval-05.json",
+      "allowlist": "final",
+      "batch": 5,
+      "reports": 846,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match",
+        "pending"
+      ],
+      "approved_sha256": "4ae3b40e574924529cf8a76bb5cacfa63a7c7e94e1ae93bbcd95e485a286c3a4"
+    },
+    {
+      "file": "final-approval-06.json",
+      "allowlist": "final",
+      "batch": 6,
+      "reports": 845,
+      "allowed_original_statuses": [
+        "ambiguous",
+        "no_match"
+      ],
+      "approved_sha256": "f75ac978254a475da9c2c9384fcf441e0c02c87ea8b7e99d886df9cde4b3a7b3"
+    }
+  ]
+}

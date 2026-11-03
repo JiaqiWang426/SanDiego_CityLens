@@ -1,0 +1,14 @@
+{
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "method_version": "sangis-stage-a-local-v2",
+  "created_at": "2026-11-03T03:56:55.488715+00:00",
+  "files": {
+    "input.json": "6f90310c2f247e0e24975129009e2b704c1e6c94ff3dc078c8e8526713d83778",
+    "pair-results.json": "fad6d586c33a9a1b7b241cc6e86485f4531c4d4c6e3b7db1bc26b3372e7457ce",
+    "candidates.jsonl": "21f56b1bc04220295c9d6a480cbb0c7e093d20ce532e649a3ac8706da9bfc1d6",
+    "candidates.csv": "048197dd8ff1906fd62e8fd8957825df658345eaf237b9ea044e674412caae71",
+    "summary.json": "93b0c470098441e729ca3f5fa11cec6ef30bbe122ad86eb74bc544cf2b4e39ec",
+    "stage-a-replay.json": "078900dfda0102016ecaa35316ffee07b199dee58d74d78aa74195ed59803f7a",
+    "rest-archive-comparison.json": "baedb7fa09614de9231517165193a128daf713dbe685854a11e4079e220b5f9f"
+  }
+}

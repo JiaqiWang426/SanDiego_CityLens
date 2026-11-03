@@ -2,6 +2,7 @@
 "use strict";
 const $ = id => document.getElementById(id);
 let responseData = null, busy = false;
+let conversationData = null;
 const json = value => JSON.stringify(value, null, 2);
 function el(tag, text, className) {
   const node = document.createElement(tag);
@@ -30,7 +31,10 @@ function request() {
     preferences: [$("domain-collisions").checked ? "traffic_collisions" : null, $("domain-requests").checked ? "service_requests" : null].filter(Boolean)};
 }
 function setBusy(value, message) {
-  busy = value; $("ask").disabled = value; $("manual-run").disabled = value;
+  busy = value; $("ask").disabled = value;
+  $("manual-run").disabled = value || (addressMode() && conversationData?.status !== "complete");
+  $("location-mode").disabled = value;
+  document.querySelectorAll(".conversation-action").forEach(node => { node.disabled = value; });
   document.querySelectorAll(".replay").forEach(node => { node.disabled = value; });
   if (message) $("status").textContent = message;
 }
@@ -74,6 +78,7 @@ function render(data) {
     const card = el("article", undefined, "evidence-card"); card.id = e.evidence_id;
     card.append(el("span", `${e.domain} · ${e.location_id}`, "badge"), el("h3", `${e.value === null ? "Unavailable" : e.value} · ${e.metric}`), el("p", e.metric_definition), el("p", e.evidence_id, "hint"));
     details(card, "Scope and filters", {scope:e.scope, filters:e.filters}); details(card, "Provenance and quality", {provenance:e.provenance, quality:e.quality});
+    if (e.groups?.length) details(card, "Service request groups", e.groups);
     if (e.buckets?.length) details(card, "Calendar buckets (including explicitly marked filled buckets)", e.buckets);
     if (e.records?.length) details(card, "Source report examples · untrusted data", e.records);
     details(card, "Caveats", e.caveats); evidence.append(card);
@@ -104,23 +109,39 @@ async function executeManual(args, expected = null) {
 }
 $("investigate").addEventListener("submit", async event => {
   event.preventDefault(); if (busy) return;
+  if (addressMode()) {
+    let action = "ask";
+    const message = $("question").value.trim();
+    if (pendingConversation()) {
+      action = conversationData.status === "needs_clarification" ? "clarify" : "correct";
+      if (/^(yes|confirm|confirmed)[.!]?$/i.test(message) && conversationData.status === "needs_confirmation") action = "confirm";
+      if (/^cancel[.!]?$/i.test(message)) action = "cancel";
+    }
+    await conversationTurn(action, {message});
+    return;
+  }
+  conversationData = null;
   setBusy(true, "Planning and executing… tool logs appear on completion."); error(null);
   try { const data = await post("/api/v1/agent/query", request()); render(data); tab("answer"); $("status").textContent = `${data.status} · ${data.tool_calls?.length || 0} calls · ${data.tool_trace_id}`; }
   catch (e) { error(e.message); $("status").textContent = "Request failed"; }
   finally { setBusy(false); }
 });
 $("manual-run").addEventListener("click", async () => {
+  if (addressMode() && conversationData?.status !== "complete") { error("Confirm and resolve the current addresses first, or select coordinate pins for manual SQL."); return; }
   try { const filters = JSON.parse($("filters").value); await executeManual({name:$("manual-tool").value, location:selectedLocation($("manual-location").value), ...scope(), collision_filters:filters, period:$("period").value, exclude_linked_duplicates:$("exclude").checked, limit:Math.min(100, window.configuredMaxRows || 100)}); }
   catch (e) { error(e.message); }
 });
 document.querySelectorAll("[data-preset]").forEach(button => button.addEventListener("click", () => {
+  if (busy) return;
+  $("location-mode").value = "coordinates"; conversationData = null; syncLocationMode();
+  $("question-label").textContent = "Your question"; $("ask").textContent = "Ask the agent →";
   const mode = button.dataset.preset; $("compare").checked = mode !== "count"; $("location-b").hidden = mode === "count";
   $("domain-collisions").checked = mode === "compare"; $("domain-requests").checked = mode === "compare";
   $("question").value = mode === "compare" ? "Compare apartments A and B based on Get It Done reports and traffic collisions." : mode === "crime" ? "Which apartment has a lower crime rate?" : "How many traffic collisions were recorded near location A during this period?";
 }));
 $("download").addEventListener("click", () => {
   if (!responseData) return;
-  const url = URL.createObjectURL(new Blob([json(responseData)], {type:"application/json"}));
+  const url = URL.createObjectURL(new Blob([json(conversationData || responseData)], {type:"application/json"}));
   const link = el("a"); link.href = url; link.download = "citylens-investigation.json"; link.click(); URL.revokeObjectURL(url);
 });
 async function loadConfiguration() {
@@ -139,3 +160,114 @@ async function loadConfiguration() {
   }
 }
 loadConfiguration();
+
+function addressMode() { return $("location-mode").value !== "coordinates"; }
+function pendingConversation() { return conversationData && !["complete", "cancelled", "error"].includes(conversationData.status); }
+function syncLocationMode() {
+  $("coordinate-inputs").hidden = addressMode();
+  $("address-hint").hidden = !addressMode();
+  $("location-confirmation").hidden = !addressMode() || !conversationData;
+  ["lat-a", "lng-a", "lat-b", "lng-b", "compare"].forEach(id => { $(id).disabled = addressMode(); });
+  ["start", "end", "radius"].forEach(id => { $(id).required = !addressMode(); });
+  setBusy(busy);
+}
+$("location-mode").addEventListener("change", async () => {
+  if (pendingConversation()) await conversationTurn("cancel");
+  conversationData = null;
+  $("question-label").textContent = "Your question";
+  $("ask").textContent = "Ask the agent →";
+  syncLocationMode();
+});
+
+async function conversationTurn(action, extra = {}) {
+  if (busy) return;
+  const defaults = scope();
+  if (!$("start").value.trim() || !$("end").value.trim()) defaults.time_range = null;
+  if (!$("radius").value.trim()) defaults.radius_meters = 800;
+  const body = action === "ask" ? {...extra, ...defaults,
+    preferences: [$("domain-collisions").checked ? "traffic_collisions" : null, $("domain-requests").checked ? "service_requests" : null].filter(Boolean)} :
+    {conversation_id: conversationData.conversation_id, revision: conversationData.revision, ...extra};
+  setBusy(true, action === "ask" ? "Interpreting addresses and query conditions…" : "Processing your confirmed conversation step…");
+  error(null);
+  try {
+    const data = await post("/api/v1/agent/chat", {action, ...body});
+    conversationData = data;
+    renderConversation(data);
+    $("status").textContent = data.status.replaceAll("_", " ");
+  } catch (e) { error(e.message); $("status").textContent = "Conversation step failed"; }
+  finally { setBusy(false); }
+}
+
+function renderConversation(data) {
+  const panel = $("location-confirmation");
+  panel.hidden = false;
+  panel.replaceChildren(el("h2", data.status === "complete" ? "Resolved locations" : "Review locations"), el("p", data.message));
+  if (data.diagnostic_codes?.length) panel.append(el("p", "Diagnostics: " + data.diagnostic_codes.join(", "), "error"));
+  if (data.original_question) details(panel, "Original analytical question", data.original_question);
+  for (const address of data.locations || []) {
+    panel.append(el("p", `${address.id}: ${[address.house_number, address.direction, address.street_name, address.street_suffix, address.post_direction].filter(Boolean).join(" ")}, ${address.city || "San Diego"}, ${address.state || "CA"}${address.postal_code ? " " + address.postal_code : ""}`));
+  }
+  if (data.time_range) panel.append(el("p", `Conditions: ${data.radius_meters} meters · ${data.time_range.start} inclusive to ${data.time_range.end} exclusive · ${data.time_range.calendar_timezone}`));
+  if (data.proposed_plan) details(panel, "Proposed analysis and filters", data.proposed_plan);
+  for (const resolved of data.resolved_locations || []) {
+    panel.append(el("p", `${resolved.location.id} resolved: ${resolved.matched_address} · ${resolved.provider} · ${resolved.precision.replaceAll("_", " ")}`));
+  }
+  if (data.result) {
+    render(data.result);
+    $("raw-json").textContent = json(data);
+    data.resolved_locations.forEach(r => {
+      $("lat-" + r.location.id.toLowerCase()).value = r.location.latitude;
+      $("lng-" + r.location.id.toLowerCase()).value = r.location.longitude;
+    });
+    $("compare").checked = data.resolved_locations.length === 2;
+    $("location-b").hidden = !$("compare").checked;
+    $("radius").value = data.radius_meters;
+    $("start").value = data.time_range.start; $("end").value = data.time_range.end; $("timezone").value = data.time_range.calendar_timezone;
+    tab("answer");
+  } else {
+    responseData = data;
+    $("download").disabled = false;
+    $("raw-json").textContent = json(data);
+    $("answer").replaceChildren(el("h2", "Waiting for location confirmation"), el("p", data.message));
+    $("calls").replaceChildren(el("h2", "Tool calls"), el("p", "No analytical tools were executed for this pending request."));
+    $("evidence").replaceChildren(el("h2", "Evidence"), el("p", "Evidence is collected after all locations are confirmed and resolved."));
+    $("verification-result").replaceChildren();
+    tab("answer");
+  }
+  const actions = el("div", undefined, "actions");
+  if (data.status === "needs_confirmation") {
+    const confirm = el("button", "Confirm addresses and run", "conversation-action");
+    confirm.type = "button"; confirm.addEventListener("click", () => conversationTurn("confirm")); actions.append(confirm);
+  }
+  if (data.status === "needs_candidate_confirmation") {
+    const selects = {};
+    for (const [id, candidates] of Object.entries(data.candidates)) {
+      const select = el("select"), label = el("label", `${id}: choose the provider location you intended`);
+      select.id = `candidate-choice-${id}`; label.htmlFor = select.id;
+      const placeholder = el("option", "Choose an address…"); placeholder.value = ""; select.append(placeholder);
+      candidates.forEach(c => { const point = c.location ? ` · ${c.location.latitude.toFixed(5)}, ${c.location.longitude.toFixed(5)}` : ""; const option = el("option", `${c.matched_address} · ${c.provider || "Census"} · ${(c.precision || "unknown").replaceAll("_", " ")}${point}`); option.value = c.candidate_id; select.append(option); });
+      panel.append(label, select); selects[id] = select;
+    }
+    const choose = el("button", "Confirm selected provider candidates", "conversation-action"); choose.type = "button";
+    choose.addEventListener("click", () => {
+      const choices = Object.fromEntries(Object.entries(selects).map(([id, select]) => [id, select.value]));
+      if (Object.values(choices).some(value => !value)) { error("Explicitly select a candidate for every pending location."); return; }
+      conversationTurn("choose_candidates", {candidate_choices: choices});
+    }); actions.append(choose);
+  }
+  if (pendingConversation()) {
+    const cancel = el("button", "Cancel request", "conversation-action"); cancel.type = "button";
+    cancel.addEventListener("click", () => conversationTurn("cancel")); actions.append(cancel);
+    panel.append(el("p", "To correct an address or clarify the request, type your update in the question box. Revised addresses require confirmation again.", "hint"));
+    $("question").value = "";
+    $("question").placeholder = "For example: A is correct, but B should be 9500 Gilman Dr.";
+    $("question-label").textContent = "Correction or clarification";
+    $("ask").textContent = "Send update →";
+  } else {
+    $("question-label").textContent = "Your next question"; $("ask").textContent = "Ask the agent →";
+    $("question").placeholder = "Ask a new question with one or two San Diego street addresses.";
+    if (["complete", "cancelled"].includes(data.status)) $("question").value = "";
+  }
+  panel.append(actions);
+}
+syncLocationMode();

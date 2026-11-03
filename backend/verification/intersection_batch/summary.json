@@ -1,0 +1,80 @@
+{
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "created_at": "2026-11-03T03:56:55.464424+00:00",
+  "method_version": "sangis-stage-a-local-v2",
+  "selected_pending_reports": 6840,
+  "complete_road_pair_reports": 6839,
+  "excluded_pending_without_cross_street": 1510,
+  "raw_complete_field_pairs": 3988,
+  "distinct_normalized_pairs": 3974,
+  "distinct_complete_normalized_pairs": 3973,
+  "qualified_source_keys": 4102,
+  "pair_classifications": {
+    "invalid_source": 459,
+    "street_not_found": 999,
+    "accepted_candidate": 2043,
+    "topology_uncertain": 270,
+    "multiple_candidates": 119,
+    "no_intersection": 84
+  },
+  "report_classifications": {
+    "accepted_candidate": 4319,
+    "no_intersection": 144,
+    "topology_uncertain": 494,
+    "invalid_source": 515,
+    "street_not_found": 1108,
+    "multiple_candidates": 260
+  },
+  "supported_candidate_nodes": 2317,
+  "rejected_candidate_nodes": 62,
+  "uncertain_candidate_nodes": 240,
+  "accepted_proposal_reports": 4319,
+  "collision_updates": 0,
+  "existing_matched": 59627,
+  "denominator": 78494,
+  "deployed_coverage_percent": 75.96376793130685,
+  "proposed_additional_percentage_points": 5.502331388386374,
+  "hypothetical_coverage_percent": 81.46609931969323,
+  "stage_a_replay_passed": true,
+  "stage_a_archive_attributes_passed": true,
+  "loaded_reference_scope": {
+    "named_segments": 38943,
+    "shared_node_ids": 2519,
+    "node_records": 2519
+  },
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "all_rows": "987c72a80ea9ccd5c6716e313595d43c",
+    "source_fields": "a7b4775715071a198f2574f46f976ee0",
+    "matched_rows": "7c82740f4f15e29eb8c69e05ea8ca95d",
+    "matched_count": 59627,
+    "statuses": {
+      "pending": 8350,
+      "ambiguous": 3117,
+      "no_match": 7400,
+      "matched": 59627
+    }
+  },
+  "collision_fingerprint_unchanged": true,
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "deployment_recommended": false,
+  "deployment_reason": "Proposals only. Independent sample evidence and historical uncertainty require separate review and explicit approval."
+}

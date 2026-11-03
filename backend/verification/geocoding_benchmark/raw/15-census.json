@@ -1,0 +1,55 @@
+{
+  "address_id": "15",
+  "provider": "census",
+  "input_address": "17110 Bernardo Center Dr, San Diego, CA 92128",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=17110+Bernardo+Center+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92128",
+  "fetched_at": "2026-11-03T00:18:28.451368+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92128",
+          "city": "San Diego",
+          "street": "17110 Bernardo Center Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "195315379"
+          },
+          "coordinates": {
+            "x": -117.074468044583,
+            "y": 33.024224588635
+          },
+          "addressComponents": {
+            "zip": "92128",
+            "streetName": "BERNARDO CENTER",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "17000",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "17198",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "17110 BERNARDO CENTER DR, SAN DIEGO, CA, 92128"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 417.285
+}

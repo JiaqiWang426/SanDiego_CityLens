@@ -1,0 +1,787 @@
+{
+  "checked_at": "2026-11-03T08:31:15.613774+00:00",
+  "integrity_passed": true,
+  "integrity": {
+    "records": 78494,
+    "statuses": {
+      "pending": 4218,
+      "ambiguous": 2575,
+      "no_match": 3633,
+      "matched": 68068
+    },
+    "located": 68068,
+    "unlocated": 10426,
+    "coverage_percent": 86.7175,
+    "no_deleted_or_duplicated_records": true,
+    "original_source_fields_unchanged": true,
+    "all_unjournaled_rows_byte_identical_including_census_matches": true,
+    "original_census_matched_still_located": 59627,
+    "journaled_updates": 8441,
+    "duplicate_journal_updates": 0,
+    "journal_reconciles_with_located": true,
+    "new_rows_outside_approved_allowlists": 0,
+    "excluded_candidates_located": 0,
+    "invalid_wgs84_geometry": 0,
+    "missing_precision_or_provenance": 0,
+    "status_location_mismatch": 0,
+    "new_rows_bad_provenance": 0,
+    "prior_evidence_missing": 0,
+    "ambiguous_census_reason_lost": 0,
+    "provider_precision": [
+      {
+        "provider": "SanGIS local topology",
+        "precision": "intersection_approximate",
+        "n": 4132
+      },
+      {
+        "provider": "SanGIS road centerline",
+        "precision": "block_approximate",
+        "n": 4309
+      },
+      {
+        "provider": "US Census Geocoder",
+        "precision": "block_approximate",
+        "n": 19
+      },
+      {
+        "provider": "US Census Geocoder Batch",
+        "precision": "block_approximate",
+        "n": 59608
+      }
+    ],
+    "journal": [
+      {
+        "run_id": "1252d77c9ac38878671479bb1ff233325319a670e913c49fba119ad0d39c9a8a",
+        "outcome": "updated",
+        "n": 100
+      },
+      {
+        "run_id": "2112de6c1bd87a204032150a4c095dd7609fe327e8638c8cb22171b7b785b011",
+        "outcome": "updated",
+        "n": 996
+      },
+      {
+        "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+        "outcome": "updated",
+        "n": 996
+      },
+      {
+        "run_id": "8f46dc264daf6cfe937123fd1144229df25ff0b55b23f7869a78a2e1b185054e",
+        "outcome": "updated",
+        "n": 846
+      },
+      {
+        "run_id": "935f3221643e5095b38faa674bfd39daf0b908a411a1ec30d681f3ba2cdaa3ce",
+        "outcome": "updated",
+        "n": 846
+      },
+      {
+        "run_id": "b19cd0c0b7cfb0925fdfd5c28cabd27052d5fe4396e9ac941be06fe7debe73cd",
+        "outcome": "updated",
+        "n": 128
+      },
+      {
+        "run_id": "b6da4eb48c3b03c559b2b73db5ffaf80eef19d3a225a3c7d0fe37eb15b962bea",
+        "outcome": "updated",
+        "n": 845
+      },
+      {
+        "run_id": "b98b581cb51147d301001570d93f4399d5c303a6813ae93aa1a18d76822eef27",
+        "outcome": "updated",
+        "n": 846
+      },
+      {
+        "run_id": "e8de75566d6ed4bfadd8e34a301c8fc6ada73047780b4cf2dedfa9bddcbcc72a",
+        "outcome": "updated",
+        "n": 996
+      },
+      {
+        "run_id": "eaa35781397be8df572da42de8a5c70ef5294e4b87b547c9f2eb2b2d004be0ec",
+        "outcome": "updated",
+        "n": 996
+      },
+      {
+        "run_id": "f93b874550c7096d0aec9762b4f340bec7a013f18580ce7c831a0ace4e674442",
+        "outcome": "updated",
+        "n": 846
+      }
+    ],
+    "runs": [
+      {
+        "run_id": "b19cd0c0b7cfb0925fdfd5c28cabd27052d5fe4396e9ac941be06fe7debe73cd",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 07:53:15.643334+00:00"
+      },
+      {
+        "run_id": "eaa35781397be8df572da42de8a5c70ef5294e4b87b547c9f2eb2b2d004be0ec",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 07:56:27.501768+00:00"
+      },
+      {
+        "run_id": "e8de75566d6ed4bfadd8e34a301c8fc6ada73047780b4cf2dedfa9bddcbcc72a",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:01:21.179069+00:00"
+      },
+      {
+        "run_id": "2112de6c1bd87a204032150a4c095dd7609fe327e8638c8cb22171b7b785b011",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:07:30.029426+00:00"
+      },
+      {
+        "run_id": "366bd19e8bf07e871154d08260e0956b7d0c04db61d17600b577010a3f1c072a",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:13:28.014981+00:00"
+      },
+      {
+        "run_id": "1252d77c9ac38878671479bb1ff233325319a670e913c49fba119ad0d39c9a8a",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:15:59.611178+00:00"
+      },
+      {
+        "run_id": "8f46dc264daf6cfe937123fd1144229df25ff0b55b23f7869a78a2e1b185054e",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:16:58.992545+00:00"
+      },
+      {
+        "run_id": "935f3221643e5095b38faa674bfd39daf0b908a411a1ec30d681f3ba2cdaa3ce",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:19:22.951773+00:00"
+      },
+      {
+        "run_id": "b98b581cb51147d301001570d93f4399d5c303a6813ae93aa1a18d76822eef27",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:21:45.996084+00:00"
+      },
+      {
+        "run_id": "f93b874550c7096d0aec9762b4f340bec7a013f18580ce7c831a0ace4e674442",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:24:13.230872+00:00"
+      },
+      {
+        "run_id": "b6da4eb48c3b03c559b2b73db5ffaf80eef19d3a225a3c7d0fe37eb15b962bea",
+        "reviewer": "JiaqiWang426",
+        "approved_at": "2026-11-02T23:49:58-08:00",
+        "created_at": "2026-11-03 08:26:42.382947+00:00"
+      }
+    ],
+    "rollout": {
+      "journaled_updates": 8441,
+      "by_original_status": {
+        "pending": 4132,
+        "no_match": 3767,
+        "ambiguous": 542
+      }
+    },
+    "agent_reference_permissions": {
+      "schema_write": false,
+      "table_write": false
+    },
+    "agent_collision_write_privilege": false,
+    "precision_constraint": "CHECK (((geocode_precision IS NULL) OR (geocode_precision = ANY (ARRAY['block_approximate'::text, 'intersection_approximate'::text]))))"
+  },
+  "agent_passed": true,
+  "agent": {
+    "pins": {
+      "sangis_road_block": {
+        "report_id": "26204236"
+      },
+      "sangis_intersection": {
+        "report_id": "25207193"
+      },
+      "census_block": {
+        "report_id": "25204137"
+      }
+    },
+    "cases": [
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 400,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 145,
+        "direct_postgis_count": 145,
+        "by_source": {
+          "census": 111,
+          "sangis_block": 25,
+          "sangis_intersection": 9
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 400,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 16,
+        "direct_postgis_count": 16,
+        "by_source": {
+          "census": 11,
+          "sangis_block": 1,
+          "sangis_intersection": 4
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 800,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 634,
+        "direct_postgis_count": 634,
+        "by_source": {
+          "census": 532,
+          "sangis_block": 57,
+          "sangis_intersection": 45
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 800,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 77,
+        "direct_postgis_count": 77,
+        "by_source": {
+          "census": 59,
+          "sangis_block": 3,
+          "sangis_intersection": 15
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 1000,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 927,
+        "direct_postgis_count": 927,
+        "by_source": {
+          "census": 797,
+          "sangis_block": 57,
+          "sangis_intersection": 73
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_road_block",
+        "radius_m": 1000,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 114,
+        "direct_postgis_count": 114,
+        "by_source": {
+          "census": 91,
+          "sangis_block": 3,
+          "sangis_intersection": 20
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 400,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 93,
+        "direct_postgis_count": 93,
+        "by_source": {
+          "census": 85,
+          "sangis_block": 0,
+          "sangis_intersection": 8
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 400,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 9,
+        "direct_postgis_count": 9,
+        "by_source": {
+          "census": 9,
+          "sangis_block": 0,
+          "sangis_intersection": 0
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 800,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 331,
+        "direct_postgis_count": 331,
+        "by_source": {
+          "census": 307,
+          "sangis_block": 0,
+          "sangis_intersection": 24
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 800,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 31,
+        "direct_postgis_count": 31,
+        "by_source": {
+          "census": 29,
+          "sangis_block": 0,
+          "sangis_intersection": 2
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 1000,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 384,
+        "direct_postgis_count": 384,
+        "by_source": {
+          "census": 356,
+          "sangis_block": 0,
+          "sangis_intersection": 28
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "sangis_intersection",
+        "radius_m": 1000,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 37,
+        "direct_postgis_count": 37,
+        "by_source": {
+          "census": 35,
+          "sangis_block": 0,
+          "sangis_intersection": 2
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 400,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 710,
+        "direct_postgis_count": 710,
+        "by_source": {
+          "census": 616,
+          "sangis_block": 18,
+          "sangis_intersection": 76
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 400,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 75,
+        "direct_postgis_count": 75,
+        "by_source": {
+          "census": 60,
+          "sangis_block": 0,
+          "sangis_intersection": 15
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 800,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 2478,
+        "direct_postgis_count": 2478,
+        "by_source": {
+          "census": 2114,
+          "sangis_block": 113,
+          "sangis_intersection": 251
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 800,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 277,
+        "direct_postgis_count": 277,
+        "by_source": {
+          "census": 227,
+          "sangis_block": 8,
+          "sangis_intersection": 42
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 1000,
+        "window": [
+          "2017-01-01T00:00:00-08:00",
+          "2027-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 3416,
+        "direct_postgis_count": 3416,
+        "by_source": {
+          "census": 2937,
+          "sangis_block": 128,
+          "sangis_intersection": 351
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      },
+      {
+        "pin": "census_block",
+        "radius_m": 1000,
+        "window": [
+          "2023-01-01T00:00:00-08:00",
+          "2024-01-01T00:00:00-08:00"
+        ],
+        "tool_status": "ok",
+        "tool_count": 363,
+        "direct_postgis_count": 363,
+        "by_source": {
+          "census": 303,
+          "sangis_block": 8,
+          "sangis_intersection": 52
+        },
+        "deterministic": true,
+        "page_ids_unique": true,
+        "page_rows_outside_scope_or_unlocated": 0,
+        "coordinate_precision_label": "approximate_block_or_intersection",
+        "caveats": [
+          "Geographic completeness and source freshness are not verified.",
+          "Import timestamps do not establish source freshness; upserts retain older records.",
+          "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+          "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+          "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+          "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+          "Missing calendar buckets are zero-filled matches, not verified data coverage."
+        ]
+      }
+    ],
+    "two_location_800m": [
+      634,
+      331
+    ],
+    "metadata": {
+      "metadata": {
+        "domain": "traffic_collisions",
+        "dataset_id": "police_recorded_traffic_collisions",
+        "source_url": "https://data.sandiego.gov/datasets/traffic-collisions/",
+        "limitations": [
+          "Police-recorded collisions only; many property-damage and freeway incidents absent.",
+          "Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.",
+          "Approximate block or intersection locations make radius membership uncertain; event dates and local imports are not source updates."
+        ],
+        "coverage_scope": "dataset_wide_not_neighborhood",
+        "dataset_imports": [
+          {
+            "id": 7,
+            "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+            "imported_at": "2026-10-28T09:15:49.310466+00:00",
+            "source_file": "pd_collisions_datasd.csv"
+          }
+        ],
+        "dataset_records": 78494,
+        "latest_import_id": 7,
+        "spatial_accuracy": "block_approximate (Census or SanGIS road block) or intersection_approximate (SanGIS junction); source numbers anonymized to blocks; not exact collision locations; see geocode_precision_breakdown",
+        "coverage_verified": false,
+        "source_updated_at": null,
+        "geocoding_coverage": 0.8671745611129513,
+        "coordinate_coverage": 0.8671745611129513,
+        "dataset_observed_end": "2026-10-26T23:52:00+00:00",
+        "normalization_policy": "current_records_upsert; absent rows retained; historical snapshots not complete",
+        "dataset_dated_records": 78494,
+        "dataset_imports_limit": 100,
+        "source_publication_at": null,
+        "dataset_observed_start": "2015-03-19T19:00:00+00:00",
+        "dataset_located_records": 68068,
+        "source_timestamp_status": "not_recorded_for_imported_files",
+        "geocode_status_breakdown": {
+          "matched": 68068,
+          "pending": 4218,
+          "no_match": 3633,
+          "ambiguous": 2575
+        },
+        "dataset_imports_truncated": false,
+        "dataset_unlocated_records": 10426,
+        "source_freshness_verified": false,
+        "geocode_precision_breakdown": {
+          "not_recorded": 10426,
+          "block_approximate": 63936,
+          "intersection_approximate": 4132
+        },
+        "coordinate_presence_definition": "non_null_non_empty_WGS84_point; does_not_verify_city_boundary_or_accuracy",
+        "last_successful_local_ingestion_at": "2026-10-28T09:15:49.310466+00:00",
+        "local_ingestion_timestamp_definition": "max committed imported_at (transaction timestamp, not source update or exact completion time)"
+      }
+    }
+  }
+}

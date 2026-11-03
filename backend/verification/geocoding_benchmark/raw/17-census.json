@@ -1,0 +1,55 @@
+{
+  "address_id": "17",
+  "provider": "census",
+  "input_address": "10301 Scripps Lake Dr, San Diego, CA 92131",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=10301+Scripps+Lake+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92131",
+  "fetched_at": "2026-11-03T00:18:30.059764+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92131",
+          "city": "San Diego",
+          "street": "10301 Scripps Lake Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "657499737"
+          },
+          "coordinates": {
+            "x": -117.101813133722,
+            "y": 32.911643452766
+          },
+          "addressComponents": {
+            "zip": "92131",
+            "streetName": "SCRIPPS LAKE",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "10001",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "10399",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "10301 SCRIPPS LAKE DR, SAN DIEGO, CA, 92131"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 410.057
+}

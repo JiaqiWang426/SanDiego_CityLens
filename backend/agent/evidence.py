@@ -25,7 +25,7 @@ DOMAIN_CAVEATS = {
     'traffic_collisions': [
         'Police-recorded reports only; these counts do not measure collision risk, crime, or safety.',
         'Spatial results exclude unlocated reports; their number within the radius cannot be determined.',
-        'Collision coordinates are block-approximate; radius membership is uncertain near boundaries.',
+        'Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.',
     ],
 }
 
@@ -100,7 +100,7 @@ def make_evidence(result: ToolResult) -> EvidenceRecord:
         last_successful_local_ingestion_at=result.metadata.get('last_successful_local_ingestion_at'),
         source_updated_at=result.metadata.get('source_updated_at'))
     quality=Quality(**{k:v for k,v in result.metadata.items() if k in Quality.model_fields},
-        coordinate_precision='block_approximate' if domain=='traffic_collisions' else 'source_coordinates_unverified')
+        coordinate_precision='approximate_block_or_intersection' if domain=='traffic_collisions' else 'source_coordinates_unverified')
     values=dict(value=None,buckets=[],groups=[],records=[],pagination=None)
     if call.name in {'count_service_requests','aggregate_service_requests'}:
         metric='request_id_count'

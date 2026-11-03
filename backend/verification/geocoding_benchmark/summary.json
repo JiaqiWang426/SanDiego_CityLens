@@ -1,0 +1,311 @@
+{
+  "sample_size": 36,
+  "normalization_policy": "interactive exact token aliases including USPS CALLE/CLL, PKY/PKWY, PLAZA/PLZA/PLZ; strict number/direction/ZIP/geometry",
+  "categories": {
+    "campus": 5,
+    "residential": 3,
+    "large_apartment_community": 4,
+    "apartment": 7,
+    "civic": 13,
+    "commercial_mixed": 2,
+    "commercial": 2
+  },
+  "neighborhood_counts": {
+    "La Jolla / UCSD": 1,
+    "Bankers Hill": 2,
+    "Mission Valley": 1,
+    "Mira Mesa": 1,
+    "University City": 4,
+    "East Village": 3,
+    "La Jolla Village": 1,
+    "City Heights": 1,
+    "College-Rolando": 1,
+    "North Park": 1,
+    "Otay Mesa-Nestor": 1,
+    "Pacific Beach": 1,
+    "Point Loma": 1,
+    "Rancho Bernardo": 1,
+    "San Ysidro": 1,
+    "Scripps Ranch": 1,
+    "Skyline Hills": 1,
+    "Mira Mesa / 3Roots": 1,
+    "Bay Ho": 1,
+    "Carmel Valley": 2,
+    "College Area": 1,
+    "Linda Vista": 1,
+    "UCSD": 2,
+    "Downtown waterfront": 1,
+    "Marina": 1,
+    "Balboa Park": 2,
+    "El Cerrito": 1
+  },
+  "status_counts": {
+    "census": {
+      "no_match": 8,
+      "resolved": 28
+    },
+    "sangis": {
+      "ambiguous": 3,
+      "resolved": 22,
+      "no_match": 9,
+      "invalid_result": 2
+    }
+  },
+  "match_rates": {
+    "census": {
+      "validated_unique_matches": 28,
+      "denominator": 36,
+      "rate": 0.7777777777777778,
+      "provider_errors": 0
+    },
+    "sangis": {
+      "validated_unique_matches": 22,
+      "denominator": 36,
+      "rate": 0.6111111111111112,
+      "provider_errors": 0
+    }
+  },
+  "coverage": {
+    "both": 19,
+    "census_only": 9,
+    "sangis_only": 3,
+    "neither_unique": 5
+  },
+  "automatic_fallback_additional": 3,
+  "fallback_offers_ambiguous": 1,
+  "distances_m": {
+    "count": 19,
+    "median": 74.875,
+    "mean": 157.9317894736842,
+    "p90": 334.08199999999994,
+    "maximum": 1039.786,
+    "above_50m": [
+      "07",
+      "10",
+      "13",
+      "15",
+      "16",
+      "17",
+      "20",
+      "21",
+      "22",
+      "23",
+      "25",
+      "32",
+      "34"
+    ],
+    "above_100m": [
+      "15",
+      "16",
+      "17",
+      "23",
+      "25",
+      "32",
+      "34"
+    ]
+  },
+  "latency_ms": {
+    "census": {
+      "count": 36,
+      "median": 411.134,
+      "mean": 444.46686111111114,
+      "p90": 438.7065,
+      "maximum": 1406.929
+    },
+    "sangis": {
+      "count": 36,
+      "median": 271.418,
+      "mean": 272.6454444444444,
+      "p90": 294.595,
+      "maximum": 330.808
+    }
+  },
+  "sangis_unique_match_placement_signatures": {
+    "S": 18,
+    "R": 2,
+    "C": 2
+  },
+  "placement_domains": {
+    "S": "Structure",
+    "E": "Entrance",
+    "C": "Centroid",
+    "U": "Unknown",
+    "R": "Review"
+  },
+  "sangis_rejected_feature_reasons": {
+    "zip_missing": 16,
+    "street_components": 4
+  },
+  "census_rejected_candidate_reasons": {},
+  "candidate_diagnostic_cases": {
+    "sangis_multiple_valid_candidates": {
+      "count": 3,
+      "address_ids": [
+        "01",
+        "35",
+        "36"
+      ]
+    },
+    "sangis_house_number": {
+      "count": 0,
+      "address_ids": []
+    },
+    "sangis_street_components": {
+      "count": 2,
+      "address_ids": [
+        "07",
+        "24"
+      ]
+    },
+    "sangis_directions": {
+      "count": 0,
+      "address_ids": []
+    },
+    "sangis_zip_missing": {
+      "count": 4,
+      "address_ids": [
+        "01",
+        "24",
+        "26",
+        "32"
+      ]
+    },
+    "sangis_zip_conflict": {
+      "count": 1,
+      "address_ids": [
+        "07"
+      ]
+    },
+    "sangis_community_missing": {
+      "count": 5,
+      "address_ids": [
+        "01",
+        "24",
+        "26",
+        "32",
+        "36"
+      ]
+    },
+    "sangis_jurisdiction_or_state": {
+      "count": 1,
+      "address_ids": [
+        "07"
+      ]
+    }
+  },
+  "category_match_rates": {
+    "apartment": {
+      "census": {
+        "matches": 6,
+        "denominator": 7
+      },
+      "sangis": {
+        "matches": 5,
+        "denominator": 7
+      }
+    },
+    "campus": {
+      "census": {
+        "matches": 1,
+        "denominator": 5
+      },
+      "sangis": {
+        "matches": 2,
+        "denominator": 5
+      }
+    },
+    "civic": {
+      "census": {
+        "matches": 13,
+        "denominator": 13
+      },
+      "sangis": {
+        "matches": 9,
+        "denominator": 13
+      }
+    },
+    "commercial": {
+      "census": {
+        "matches": 2,
+        "denominator": 2
+      },
+      "sangis": {
+        "matches": 1,
+        "denominator": 2
+      }
+    },
+    "commercial_mixed": {
+      "census": {
+        "matches": 1,
+        "denominator": 2
+      },
+      "sangis": {
+        "matches": 0,
+        "denominator": 2
+      }
+    },
+    "large_apartment_community": {
+      "census": {
+        "matches": 2,
+        "denominator": 4
+      },
+      "sangis": {
+        "matches": 2,
+        "denominator": 4
+      }
+    },
+    "residential": {
+      "census": {
+        "matches": 3,
+        "denominator": 3
+      },
+      "sangis": {
+        "matches": 3,
+        "denominator": 3
+      }
+    }
+  },
+  "request_counts": {
+    "census": 36,
+    "sangis": 36
+  },
+  "special_9500_gilman": {
+    "id": "01",
+    "input_address": "9500 Gilman Dr, La Jolla, CA 92093",
+    "category": "campus",
+    "neighborhood": "La Jolla / UCSD",
+    "source_url": "https://www.ucsd.edu/about/contact.html",
+    "census_status": "no_match",
+    "census_candidate_count": 0,
+    "census_latency_ms": 535.658,
+    "census_candidate_coordinates": [],
+    "census_coordinates": null,
+    "census_precision": null,
+    "census_address_mismatch": false,
+    "sangis_status": "ambiguous",
+    "sangis_candidate_count": 2,
+    "sangis_latency_ms": 287.549,
+    "sangis_candidate_coordinates": [
+      [
+        -117.23961381126536,
+        32.88458878729452
+      ],
+      [
+        -117.23618279140439,
+        32.87728328608443
+      ]
+    ],
+    "sangis_coordinates": null,
+    "sangis_precision": null,
+    "sangis_address_mismatch": true,
+    "sangis_placement": null,
+    "coordinate_distance_m": null
+  },
+  "limitations": [
+    "Purposive independently sourced convenience sample; no population estimates",
+    "Civic/large-property addresses are overrepresented; no ground-truth coordinate accuracy measured",
+    "Fixed Census-then-SanGIS sequential order, small sample; weak latency inference",
+    "Ambiguous or invalid is not counted as a validated unique match",
+    "Existing feasibility captures reused, with no repeat provider queries"
+  ]
+}

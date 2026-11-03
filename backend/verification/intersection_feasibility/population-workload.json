@@ -1,0 +1,27 @@
+{
+  "records": 6839,
+  "raw_normalized_field_pairs": 3988,
+  "existing_census_canonical_pairs": 3973,
+  "source_screen_passed_records": 6325,
+  "source_screen_passed_unique_pairs": 3515,
+  "source_screen_passed_unique_road_names": 2679,
+  "query_name_variants": 2899,
+  "minimum_same_size_name_query_groups": 242,
+  "invalid_source_reasons": {
+    "same_road_twice": 200,
+    "compound_or_incomplete_street_description": 96,
+    "descriptive_location_not_two_roads": 218
+  },
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "unchanged": true,
+  "limitation": "Textual workload counts only; no provider coverage, validated intersection or recovery estimate. Query grouping excludes pagination, nodes and incident-segment queries."
+}

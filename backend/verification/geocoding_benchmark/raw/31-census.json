@@ -1,0 +1,55 @@
+{
+  "address_id": "31",
+  "provider": "census",
+  "input_address": "111 W Harbor Dr, San Diego, CA 92101",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=111+W+Harbor+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92101",
+  "fetched_at": "2026-11-03T00:18:41.367700+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92101",
+          "city": "San Diego",
+          "street": "111 W Harbor Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195672749"
+          },
+          "coordinates": {
+            "x": -117.164393400931,
+            "y": 32.708899500206
+          },
+          "addressComponents": {
+            "zip": "92101",
+            "streetName": "HARBOR",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "W",
+            "suffixDirection": "",
+            "fromAddress": "199",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "101",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "111 W HARBOR DR, SAN DIEGO, CA, 92101"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 411.343
+}

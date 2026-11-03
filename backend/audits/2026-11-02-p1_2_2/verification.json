@@ -1,0 +1,33 @@
+{
+  "agent_tests": {
+    "passed": 305,
+    "failed": 0,
+    "skipped": 36,
+    "seconds": 16.74,
+    "skipped_reason": "Guarded opt-in isolated database fixtures disabled"
+  },
+  "command": "python -m pytest backend/agent_tests -q (test-database opt-ins removed in child process)",
+  "google_live_requests": 0,
+  "openai_live_requests": 0,
+  "production_google_enabled": false,
+  "google_plan": {
+    "addresses": 12,
+    "hard_cap": 15,
+    "planned_list_cost_usd": 0.06,
+    "maximum_list_cost_usd": 0.075
+  },
+  "historical_audit": {
+    "sample_size": 160,
+    "read_only": true,
+    "recorded_open_road_queries": 8,
+    "full_collision_fingerprint_unchanged": true
+  },
+  "secret_scan": "passed; no values recorded",
+  "not_run": [
+    "Live Google experiment: key and authorization absent",
+    "Google production deployment: empirical usefulness gate unmet",
+    "Opt-in disposable database integration suite",
+    "Full historical/real-data verification suite",
+    "Browser map/visual tests: design only"
+  ]
+}

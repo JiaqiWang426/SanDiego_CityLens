@@ -58,7 +58,7 @@ BEGIN
         'coordinate_coverage',CASE WHEN (stats->>'dataset_records')::bigint>0
             THEN (stats->>'dataset_located_records')::numeric/(stats->>'dataset_records')::numeric ELSE NULL END,
         'geocode_status_breakdown',statuses,'geocode_precision_breakdown',precision_counts,
-        'spatial_accuracy',CASE WHEN dataset_domain='traffic_collisions' THEN 'block_approximate; source numbers anonymized to blocks; geocoding not exact collision locations'
+        'spatial_accuracy',CASE WHEN dataset_domain='traffic_collisions' THEN 'block_approximate (Census or SanGIS road block) or intersection_approximate (SanGIS junction); source numbers anonymized to blocks; not exact collision locations; see geocode_precision_breakdown'
             ELSE 'source supplied coordinates; positional accuracy not independently verified' END,
         'normalization_policy','current_records_upsert; absent rows retained; historical snapshots not complete',
         'local_ingestion_timestamp_definition','max committed imported_at (transaction timestamp, not source update or exact completion time)',
@@ -72,7 +72,7 @@ BEGIN
             'Source timezone assumed America/Los_Angeles; import dates and event dates are not source publication dates.')
             ELSE jsonb_build_array('Police-recorded collisions only; many property-damage and freeway incidents absent.',
             'Unlocated reports cannot be assigned to a radius; global coverage is not local coverage.',
-            'Block-approximate locations make radius membership uncertain; event dates and local imports are not source updates.') END
+            'Approximate block or intersection locations make radius membership uncertain; event dates and local imports are not source updates.') END
     );
 END;
 $$;

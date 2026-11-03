@@ -1,0 +1,39 @@
+{
+  "focused_tests": {
+    "passed": 60,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 1.83
+  },
+  "agent_regression": {
+    "passed": 365,
+    "failed": 0,
+    "skipped": 36,
+    "seconds": 17.02,
+    "skip_reason": "Guarded opt-in isolated database fixtures disabled"
+  },
+  "frozen_reports": 80,
+  "distinct_pairs": 80,
+  "source_component_checks_passed": 80,
+  "cached_replay_new_requests": 0,
+  "total_direct_rest_attempts": 40,
+  "hard_rest_cap": 64,
+  "independent_pairs": 20,
+  "independent_candidate_checks": 22,
+  "independent_geometry_observed_srids": [
+    4326
+  ],
+  "credential_scan": "passed; no values recorded",
+  "collision_fingerprint_unchanged": true,
+  "google_requests": 0,
+  "census_address_geocoding_requests": 0,
+  "collision_updates": 0,
+  "production_tables_created": 0,
+  "not_run": [
+    "Historical batch geocoding",
+    "Production coordinate/status updates",
+    "Full historical real-data verification suite",
+    "Field survey or independent historical ground truth",
+    "Opt-in disposable database integration tests"
+  ]
+}

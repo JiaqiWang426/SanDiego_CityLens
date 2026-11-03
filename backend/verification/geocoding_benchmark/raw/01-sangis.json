@@ -1,0 +1,420 @@
+{
+  "address_id": "01",
+  "provider": "sangis",
+  "input_address": "9500 Gilman Dr, La Jolla, CA 92093",
+  "request_url": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0/query?where=addrnmbr%3D9500+AND+UPPER%28addrname%29%3D%27GILMAN%27&outFields=%2A&outSR=4326&returnGeometry=true&resultRecordCount=200&f=json",
+  "fetched_at": "2026-11-03T00:09:34.006229+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": null,
+          "usng": "11S MS 77907 37707",
+          "orig_oid": 775415,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": "92093",
+          "addrpostd": null,
+          "community": "La Jolla",
+          "addrpdir": null,
+          "addrapnid": "6037502",
+          "parcelid": 17158,
+          "roadsegid": 133369,
+          "asource": "S",
+          "placement_location": "S",
+          "addrunit": null,
+          "y_coord": null,
+          "state": "CA",
+          "objectid": 771466,
+          "apn": "3440801600",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23618279140439,
+          "y": 32.87728328608443
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257865.13582791,
+          "usng": "11S MS 77588 38517",
+          "orig_oid": 1076750,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": "92093",
+          "addrpostd": null,
+          "community": "LA JOLLA",
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": 10004183,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1903074.81625632,
+          "state": "CA",
+          "objectid": 1071683,
+          "apn": "7601039705",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23961381126536,
+          "y": 32.88458878729452
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257865.13582791,
+          "usng": "11S MS 77588 38517",
+          "orig_oid": 1131527,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": "92093",
+          "addrpostd": null,
+          "community": "LA JOLLA",
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": 10004183,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1903074.81625632,
+          "state": "CA",
+          "objectid": 1126415,
+          "apn": "7601035100",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23961381126536,
+          "y": 32.88458878729452
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257830.50872778,
+          "usng": "11S MS 77585 37488",
+          "orig_oid": 1227274,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": null,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1899694.99774117,
+          "state": "CA",
+          "objectid": 1221570,
+          "apn": "7601036200",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23962210752113,
+          "y": 32.87529917390417
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257830.50872778,
+          "usng": "11S MS 77585 37488",
+          "orig_oid": 1227276,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": null,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1899694.99774117,
+          "state": "CA",
+          "objectid": 1221572,
+          "apn": "7602284600",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23962210752113,
+          "y": 32.87529917390417
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257830.50872778,
+          "usng": "11S MS 77585 37488",
+          "orig_oid": 1227281,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": null,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1899694.99774117,
+          "state": "CA",
+          "objectid": 1221577,
+          "apn": "7602286200",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.23962210752113,
+          "y": 32.87529917390417
+        }
+      },
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6257218.50957361,
+          "usng": "11S MS 77402 37013",
+          "orig_oid": 1228127,
+          "addrfrac": null,
+          "addrname": "GILMAN",
+          "addrsfx": "DR",
+          "address_type": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": null,
+          "roadsegid": null,
+          "asource": "M",
+          "placement_location": "C",
+          "addrunit": null,
+          "y_coord": 1898139.97916181,
+          "state": "CA",
+          "objectid": 1222416,
+          "apn": "7602288000",
+          "addrnmbr": 9500
+        },
+        "geometry": {
+          "x": -117.24156713636529,
+          "y": 32.871009556690446
+        }
+      }
+    ],
+    "exceededTransferLimit": false,
+    "hasM": false,
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "modelName": "objectid",
+        "defaultValue": null,
+        "name": "objectid",
+        "length": 4,
+        "alias": "objectid",
+        "type": "esriFieldTypeOID"
+      },
+      {
+        "modelName": "ADDRNMBR",
+        "defaultValue": null,
+        "name": "addrnmbr",
+        "alias": "NUMBER",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "ADDRFRAC",
+        "defaultValue": null,
+        "name": "addrfrac",
+        "length": 3,
+        "alias": "FRACTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPDIR",
+        "defaultValue": null,
+        "name": "addrpdir",
+        "length": 2,
+        "alias": "PREDIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRNAME",
+        "defaultValue": null,
+        "name": "addrname",
+        "length": 30,
+        "alias": "NAME",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPOSTD",
+        "defaultValue": null,
+        "name": "addrpostd",
+        "length": 2,
+        "alias": "POST_DIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRSFX",
+        "defaultValue": null,
+        "name": "addrsfx",
+        "length": 4,
+        "alias": "SUFFIX",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRUNIT",
+        "defaultValue": null,
+        "name": "addrunit",
+        "length": 8,
+        "alias": "UNIT",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRJUR",
+        "defaultValue": null,
+        "name": "addrjur",
+        "length": 2,
+        "alias": "JURISDICTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRZIP",
+        "defaultValue": null,
+        "name": "addrzip",
+        "length": 5,
+        "alias": "ZIP",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ROADSEGID",
+        "defaultValue": null,
+        "name": "roadsegid",
+        "alias": "ROADSEGID",
+        "type": "esriFieldTypeInteger"
+      },
+      {
+        "modelName": "APN",
+        "defaultValue": null,
+        "name": "apn",
+        "length": 10,
+        "alias": "APN",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "SOURCE",
+        "defaultValue": null,
+        "name": "asource",
+        "length": 1,
+        "alias": "ASOURCE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "X_COORD",
+        "defaultValue": null,
+        "name": "x_coord",
+        "alias": "X_COORD",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "Y_COORD",
+        "defaultValue": null,
+        "name": "y_coord",
+        "alias": "Y_COORD",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "STATE",
+        "defaultValue": "CA",
+        "name": "state",
+        "length": 2,
+        "alias": "STATE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "PLACEMENT_LOCATION",
+        "defaultValue": null,
+        "name": "placement_location",
+        "length": 1,
+        "alias": "PLACEMENT_LOCATION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "COMMUNITY",
+        "defaultValue": null,
+        "name": "community",
+        "length": 20,
+        "alias": "POSTAL_COMMUNITY",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRESS_TYPE",
+        "defaultValue": null,
+        "name": "address_type",
+        "length": 1,
+        "alias": "ADDRESS_TYPE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "addrapnid",
+        "defaultValue": null,
+        "name": "addrapnid",
+        "length": 25,
+        "alias": "ADDRAPNID",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "parcelid",
+        "defaultValue": null,
+        "name": "parcelid",
+        "alias": "PARCELID",
+        "type": "esriFieldTypeInteger"
+      },
+      {
+        "modelName": "usng",
+        "defaultValue": null,
+        "name": "usng",
+        "length": 255,
+        "alias": "USNG",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "orig_oid",
+        "defaultValue": null,
+        "name": "orig_oid",
+        "alias": "ORIG_OID",
+        "type": "esriFieldTypeInteger"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPoint"
+  },
+  "transport_status": "ok",
+  "latency_ms": 287.549
+}

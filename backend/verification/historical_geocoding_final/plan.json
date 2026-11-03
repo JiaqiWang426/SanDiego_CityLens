@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-03T06:50:55.382436+00:00",
+  "method_version": "citylens-final-historical-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "new_request_budget": 4000,
+  "stage_c_before_state_sha256": "a7e54e59b3d73639e8e0ccca8294874fe0584548e15fab554bfe18cf5204c508",
+  "max_block_extent_m": 400,
+  "carriageway_gap_m": 60,
+  "census_block_consistency_m": 100,
+  "independent_policy": "One TIGERweb identify per distinct representative point (exact Stage A/B/C request). Pass requires an exact official road name within 30 m. Missing names are unknown; budget exhaustion leaves scopes unknown.",
+  "expected_new_requests": 1446,
+  "unique_independent_scopes": 1446
+}

@@ -1,0 +1,16 @@
+{
+  "decision": "REVIEWER_MUST_REPLACE_WITH_approve_apply",
+  "reviewer": "",
+  "approved_at": "",
+  "method_version": "citylens-final-historical-v1",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "final_validation_manifest_sha256": "1b500293502838fb0c99a8cdecfef81ebf2b5c02a378d3b230a2d0413081f32b",
+  "final_allowlist_sha256": "d45c90fe7b083b86685df6be1ba50a47c4e9e1d6ccd8d85d70c69083d4c02ea0",
+  "allowed_original_statuses": [],
+  "report_ids": [],
+  "acknowledge_temporal_uncertainty": false,
+  "acknowledge_independent_validation_limitations": false,
+  "acknowledge_approximate_precision": false,
+  "historical_review_basis": "",
+  "allow_precision_migration": false
+}

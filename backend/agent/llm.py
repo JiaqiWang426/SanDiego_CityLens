@@ -9,6 +9,7 @@ from openai import AsyncOpenAI
 from .models import Claim, Composition, Plan, PlanOutput, QueryRequest
 from .settings import Settings
 from .diagnostics import StructuredOutputFailure
+from .location_models import InterpretationOutput,AddressCorrectionOutput
 
 PLANNER_PROMPT = '''You are CityLens Phase 1.1's sole planning agent (prompt version 3).
 Return a typed plan, never SQL, code, coordinates, dates, or factual query results.
@@ -51,6 +52,8 @@ Return no explanatory free-form claims; actual facts come from tool execution.''
 class LanguageModel(Protocol):
     async def plan(self, request: QueryRequest) -> Plan | PlanOutput: ...
     async def compose(self, claims: list[Claim]) -> Composition: ...
+    async def interpret_locations(self,question,defaults,reference_time) -> InterpretationOutput: ...
+    async def correct_locations(self,message,current) -> AddressCorrectionOutput: ...
 
 
 class ModelNotConfigured(RuntimeError):
@@ -88,6 +91,19 @@ class OpenAIModel:
     async def plan(self, request: QueryRequest) -> PlanOutput:
         return await self._parse(PLANNER_PROMPT,request.model_dump_json(),PlanOutput)
 
+    async def interpret_locations(self,question,defaults,reference_time):
+        return await self._parse(PLANNER_PROMPT+LOCATION_PROMPT,
+            json.dumps(dict(question=question,defaults=defaults,reference_time=reference_time)),InterpretationOutput)
+
+    async def correct_locations(self,message,current):
+        return await self._parse(LOCATION_PROMPT+'''\nThis is an address correction only.
+Keep the same A/B IDs and unchanged locations, return the full revised list.
+Do not change analytical scope, filters, intent or dates. Ask for clarification
+if a correction is incomplete or ambiguous. If the user changes analytical
+conditions instead, explain in clarification that they must start a new question;
+do not silently ignore such a change.''',
+            json.dumps(dict(correction=message,current_locations=[a.model_dump() for a in current])),AddressCorrectionOutput)
+
     async def compose(self, claims: list[Claim]) -> Composition:
         # No raw_record, street text, source descriptions or user labels enter
         # this context. Only already-verified fact identifiers and typed values.
@@ -96,3 +112,34 @@ class OpenAIModel:
             'Order these verified CityLens facts for a concise answer. Include every claim ID exactly once. '
             'Select an introduction style. Do not generate prose or new facts. '
             'Comparison facts should follow their supporting counts.',json.dumps(summary),Composition)
+
+
+LOCATION_PROMPT='''
+The earlier instructions about a plan not returning dates apply to the nested
+plan field only. For this entry stage, root scope fields must be extracted;
+the question takes precedence over optional UI fallback scope values.
+For this conversational entry step, interpret the question into the requested
+structured schema; do not execute anything. Extract one or two San Diego street
+addresses (IDs A then B), analytical plan, radius and offset-aware time interval.
+Resolve explicit relative dates using reference_time in America/Los_Angeles;
+for past six months use calendar months and the same local time. Question scope
+overrides UI defaults; use defaults only for omitted scope. Leave time_range null
+if neither question nor defaults establishes it. Never invent an unspecified date.
+Locations have no coordinates. Propose conventional street suffix abbreviations,
+case/spacing and confident suffix typo fixes (Driev -> Dr); no fuzzy subsystem.
+Never invent house numbers, street names or unit information. Preserve postal_code
+only when the user supplied a ZIP; otherwise return null. Preserve post_direction
+separately from pre-direction and suffix, or null when absent. street_name must
+retain the actual name from the user's quoted address, excluding direction and
+suffix; source_quote must be an exact address substring of user text. Missing
+house number/name or ambiguous interpretation requires clarification and nullable
+components. San Diego/CA may be supplied from this application's local context;
+preserve an explicitly different locality so it can be rejected. Do not infer
+coordinates. source_quote should quote just the supplied street-number/street
+span, not city/state text. These are proposed interpretations, not verified addresses.
+Plan the same tools/filters as above. Pothole/category/status queries must use
+aggregate_service_requests with the exact requested service/status label and
+supporting filter_quote. Unsupported filter conditions belong in unsupported_filters;
+do not silently drop them. Examples: distance-to-freeway, report text search,
+or collision service categories have no supported parameter. Do not claim answers.
+'''

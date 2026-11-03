@@ -1,0 +1,55 @@
+{
+  "address_id": "07",
+  "provider": "census",
+  "input_address": "330 Park Blvd, San Diego, CA 92101",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=330+Park+Blvd&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92101",
+  "fetched_at": "2026-11-03T00:09:38.279892+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92101",
+          "city": "San Diego",
+          "street": "330 Park Blvd",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "657351489"
+          },
+          "coordinates": {
+            "x": -117.154112780267,
+            "y": 32.708219196635
+          },
+          "addressComponents": {
+            "zip": "92101",
+            "streetName": "PARK",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "398",
+            "state": "CA",
+            "suffixType": "BLVD",
+            "toAddress": "300",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "330 PARK BLVD, SAN DIEGO, CA, 92101"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 437.152
+}

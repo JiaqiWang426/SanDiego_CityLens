@@ -1,0 +1,493 @@
+{
+  "isCoGoEnabled": false,
+  "extent": {
+    "ymin": 1775474.9998878092,
+    "zmin": 0,
+    "xmin": 6151036.999968141,
+    "ymax": 2128020.373207733,
+    "zmax": 0,
+    "xmax": 6613420.622115061,
+    "spatialReference": {
+      "falseM": -100000,
+      "xyTolerance": 0.003280833333333333,
+      "mUnits": 10000,
+      "zUnits": 10000,
+      "latestWkid": 2230,
+      "zTolerance": 0.001,
+      "wkid": 102646,
+      "xyUnits": 3048.0060960121928,
+      "mTolerance": 0.001,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000
+    }
+  },
+  "isDataBranchVersioned": false,
+  "supportsApplyEditsWithGlobalIds": true,
+  "maxRecordCount": 2000,
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "datesInUnknownTimezone": false,
+  "type": "Feature Layer",
+  "syncEnabled": false,
+  "supportsAttachmentsByUploadId": true,
+  "editingInfo": {
+    "lastEditDate": 1791301170371
+  },
+  "relationships": [],
+  "supportedAppendCapabilities": "Features,Attachments",
+  "supportsAttachmentsResizing": true,
+  "cimVersion": "3.7.0",
+  "isDataArchived": false,
+  "id": 0,
+  "spatialReference": {
+    "falseM": -100000,
+    "xyTolerance": 0.003280833333333333,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "latestWkid": 2230,
+    "zTolerance": 0.001,
+    "wkid": 102646,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "supportsSubtypeEditing": true,
+  "supportsStatistics": true,
+  "supportedExportFormats": "csv,excel,featureCollection,filegdb,geojson,kml,shapefile,sqlite",
+  "hasLastEditTime": false,
+  "standardMaxRecordCount": 16000,
+  "isDataVersioned": false,
+  "templates": [
+    {
+      "name": "Roads_Intersection",
+      "description": "",
+      "drawingTool": "esriFeatureEditToolPoint",
+      "prototype": {
+        "attributes": {
+          "xcoord": null,
+          "last_edited_user": null,
+          "interid": null,
+          "created_user": null,
+          "last_edited_date": null,
+          "created_date": null,
+          "type": null,
+          "ycoord": null
+        }
+      }
+    }
+  ],
+  "supportsAdvancedQueries": true,
+  "parentLayer": null,
+  "currentVersion": 12.1,
+  "canScaleSymbols": false,
+  "hasZ": true,
+  "advancedEditingCapabilities": {
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportsReturnEditResults": true,
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "objectIdField": "objectid",
+  "supportsQuantizationEditMode": true,
+  "hasContingentValuesDefinition": false,
+  "name": "Roads_Intersection",
+  "displayField": "type",
+  "supportsCalculate": true,
+  "fields": [
+    {
+      "modelName": "objectid",
+      "nullable": false,
+      "defaultValue": null,
+      "editable": false,
+      "domain": null,
+      "length": 4,
+      "name": "objectid",
+      "alias": "objectid",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "modelName": "interid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "interid",
+      "alias": "interid",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "type",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Intersection  Type",
+        "description": "Intersection  Type",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "C",
+            "name": "Cul-de-sac"
+          },
+          {
+            "code": "D",
+            "name": "Fire Drivability"
+          },
+          {
+            "code": "E",
+            "name": "End Segment"
+          },
+          {
+            "code": "J",
+            "name": "Jurisdictional Boundary"
+          },
+          {
+            "code": "N",
+            "name": "Road Name Change"
+          },
+          {
+            "code": "P",
+            "name": "Pseudo"
+          },
+          {
+            "code": "X",
+            "name": "Multiple Use"
+          },
+          {
+            "code": "Z",
+            "name": "Fire Demand Zone Split"
+          },
+          {
+            "code": "Q",
+            "name": "Undocumented Road"
+          },
+          {
+            "code": "I",
+            "name": "Intersection"
+          },
+          {
+            "code": "R",
+            "name": "Under Review"
+          },
+          {
+            "code": "T",
+            "name": "Census Tract"
+          },
+          {
+            "code": "B",
+            "name": "Law Beat"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "type",
+      "length": 1,
+      "alias": "TYPE",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "globalid",
+      "nullable": false,
+      "editable": false,
+      "defaultValue": null,
+      "domain": null,
+      "length": 38,
+      "name": "globalid",
+      "alias": "GlobalID",
+      "type": "esriFieldTypeGlobalID"
+    },
+    {
+      "modelName": "created_user",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "created_user",
+      "length": 255,
+      "alias": "created_user",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "created_date",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "precision": 1,
+      "name": "created_date",
+      "length": 29,
+      "alias": "created_date",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "last_edited_user",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "last_edited_user",
+      "length": 255,
+      "alias": "POSTID",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "last_edited_date",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "precision": 1,
+      "name": "last_edited_date",
+      "length": 29,
+      "alias": "POSTDATE",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "modelName": "xcoord",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "xcoord",
+      "alias": "XCOORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "ycoord",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "ycoord",
+      "alias": "YCOORD",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "maxRecordCountFactor": 1,
+  "dateFieldsTimeReference": {
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false,
+    "timeZone": "UTC"
+  },
+  "supportsFieldDescriptionProperty": true,
+  "hasM": false,
+  "allowGeometryUpdates": true,
+  "useStandardizedQueries": true,
+  "globalIdField": "globalid",
+  "sourceSpatialReference": {
+    "wkt": "PROJCS[\"NAD_1983_StatePlane_California_VI_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",6561666.666666666],PARAMETER[\"False_Northing\",1640416.666666667],PARAMETER[\"Central_Meridian\",-116.25],PARAMETER[\"Standard_Parallel_1\",32.78333333333333],PARAMETER[\"Standard_Parallel_2\",33.88333333333333],PARAMETER[\"Latitude_Of_Origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]",
+    "falseM": -100000,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "zTolerance": 0.001,
+    "wkid": 2230,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "description": "This dataset consists of points representing intersection nodes at the end of individual road segments in the SanGIS ROADS_ALL layer (and derivative road layers). This feature class is linked to the SanGIS road layers via the intersection ID (INTERID) field. Key attributes of this dataset include intersection ID and intersection type of which there are 13 types (e.g. cul-de-sac, end segment and intersection). Further details of individual fields are included in field definitions below. Points are located at the end of each road segment. SanGIS road centerlines are broken into segments between intersection points. Intersections are created whenever two roads come together and at other locations as determined by SanGIS standards of practice. These additional locations include places where the road name changes, where a road traverses a jurisidictional boundary, in certain cases where a road goes from one police beat to another, and at other places as defined by the TYPE attribute.",
+  "syncCanReturnChanges": true,
+  "supportsAsyncDelete": true,
+  "supportsAdminApi": true,
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin"
+  ],
+  "supportsRollbackOnFailureParameter": true,
+  "isDataReplicaTracked": false,
+  "standardMaxRecordCountNoGeometry": 16000,
+  "supportsTruncate": true,
+  "indexes": [
+    {
+      "name": "r3029_sde_rowid_uk",
+      "isUnique": true,
+      "description": "",
+      "fields": "objectid",
+      "isAscending": true
+    },
+    {
+      "name": "uuid_3029",
+      "isUnique": true,
+      "description": "",
+      "fields": "globalid",
+      "isAscending": true
+    },
+    {
+      "name": "a2923_ix1",
+      "isUnique": false,
+      "description": "",
+      "fields": "shape",
+      "isAscending": true
+    }
+  ],
+  "supportedAppendSourceFilterFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "editFieldsInfo": null,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "GUIDFormat": "O",
+  "minScale": 0,
+  "hasAttachments": false,
+  "queryBinsCapabilities": {
+    "supportedNormalizationTypes": [
+      "boxCox",
+      "field",
+      "inverse",
+      "log",
+      "naturalLog",
+      "percentOfTotal",
+      "squareRoot"
+    ],
+    "supportsNormalization": true,
+    "supportsSnapToData": true,
+    "supportsFixedIntervalBin": true,
+    "supportsStackBy": true,
+    "supportsDateBin": true,
+    "supportsSplitBy": true,
+    "supportsClassificationBin": true,
+    "supportsAggIds": true,
+    "supportsReturnFullIntervalBin": true,
+    "supportsFirstDayOfWeek": true,
+    "supportedStatisticTypes": [
+      "count",
+      "sum",
+      "min",
+      "max",
+      "avg",
+      "stddev",
+      "var",
+      "percentile_cont",
+      "percentile_disc"
+    ],
+    "supportsAutoIntervalBin": true,
+    "supportsFixedBoundariesBin": true
+  },
+  "advancedQueryCapabilities": {
+    "supportsSqlExpression": true,
+    "supportsQueryWithResultType": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithCacheHint": false,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsCurrentUserQueries": true,
+    "supportsQueryAttachmentsWithReturnUrl": true,
+    "fullTextSearchCapabilities": {
+      "supportsOperator": true,
+      "supportsSearchOperator": true
+    },
+    "supportsDefaultSR": true,
+    "supportsQueryDateBins": true,
+    "supportsQueryBins": true,
+    "supportsQueryWithLodSR": true,
+    "supportsPaginationOnAggregatedQueries": true,
+    "supportsPagination": true,
+    "supportsMaxRecordCountFactor": true,
+    "supportsDegeneratedQuantizedGeometry": true,
+    "fullTextSearchableFields": [],
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsQueryAttachmentWithTypeWildcard": true,
+    "supportsFullTextSearch": true,
+    "supportsQueryWithDistance": true,
+    "supportsLod": true,
+    "supportsQueryAttachmentOrderByFields": true,
+    "supportsCountDistinct": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsQueryAttachments": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryAttachmentsCountOnly": true,
+    "supportsISODOW": true,
+    "supportsOrderByOnlyOnLayerFields": false,
+    "supportsOutFieldSqlExpression": true,
+    "supportsTopFeaturesQuery": true,
+    "supportsReturningGeometryEnvelope": false,
+    "supportsDistinct": true,
+    "supportsReturningGeometryCentroid": false,
+    "supportsQueryAnalytic": true,
+    "supportsPercentileStatistics": true,
+    "supportsISOWeek": true,
+    "supportsHavingClause": true
+  },
+  "subtypeField": "",
+  "supportsValidateSQL": true,
+  "enableZDefaults": true,
+  "serviceItemId": "1bd591430fa74c8bb0b2f46550eef8c0",
+  "allowUpdateWithoutMValues": true,
+  "supportsCoordinatesQuantization": true,
+  "types": [],
+  "capabilities": "Query,Extract",
+  "maxScale": 0,
+  "supportsAppend": true,
+  "supportsExceedsLimitStatistics": true,
+  "defaultVisibility": true,
+  "advancedQueryAnalyticCapabilities": {
+    "supportsAsync": true,
+    "supportsLinearRegression": true,
+    "supportsPercentileAnalytic": false
+  },
+  "hasMetadata": true,
+  "supportedAppendFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "tileMaxRecordCount": 4000,
+  "typeIdField": "",
+  "supportsASyncCalculate": true,
+  "supportsVCSProjection": true,
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "sqlParserVersion": "PG_11.4.0",
+  "drawingInfo": {
+    "renderer": {
+      "symbol": {
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "width": 0.7
+        },
+        "color": [
+          124,
+          67,
+          168,
+          255
+        ],
+        "size": 4,
+        "yoffset": 0,
+        "xoffset": 0,
+        "angle": 0,
+        "style": "esriSMSCircle",
+        "type": "esriSMS"
+      },
+      "type": "simple"
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "geometryField": {
+    "sqlType": "sqlTypeDistinct",
+    "nullable": true,
+    "editable": true,
+    "name": "shape",
+    "typeName": "st_point",
+    "length": 2147483647,
+    "type": "esriFieldTypeGeometry"
+  },
+  "copyrightText": "SanGIS with assistance from SanGIS JPA member users.",
+  "zDefault": 0,
+  "geometryType": "esriGeometryPoint",
+  "supportsLayerOverrides": true
+}

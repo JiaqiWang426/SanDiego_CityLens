@@ -1,0 +1,3062 @@
+[
+  {
+    "pair_id": "2574ad3265a2d812da791095ec526c2999b4c78bfbba7e4758347a5520b1d9c8",
+    "primary": "LA JOLLA SHORES DR",
+    "cross": "N TORREY PINES RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 58809,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "LA JOLLA SHORES DR": {
+            "matching_features": 1,
+            "distance_m": 0.028
+          },
+          "N TORREY PINES RD": {
+            "matching_features": 1,
+            "distance_m": 0.001
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "1d6e5939184906b4045c88a136a8e60a376c115e44b66bbd6aadc3bcffb2da10",
+    "primary": "OLD BATTLEFIELD RD",
+    "cross": "W ZOO RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 34209,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "OLD BATTLEFIELD RD": {
+            "matching_features": 1,
+            "distance_m": 0.052
+          },
+          "W ZOO RD": {
+            "matching_features": 1,
+            "distance_m": 0.046
+          }
+        },
+        "independent_features": 3,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "83f4533a73a9730d05e1e08912b6dcff7bba19893c2e72f5d5ba7c037164ba82",
+    "primary": "DEL MAR HEIGHTS RD",
+    "cross": "INTERSTATE 5 SB OFF RAMP",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53035,
+        "status": "not_corroborated",
+        "road_checks": {
+          "DEL MAR HEIGHTS RD": {
+            "matching_features": 1,
+            "distance_m": 0.018
+          },
+          "INTERSTATE 5 SB OFF RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "940bccbec69b3fbf8785e419c969c31b308f259f00be242482fe605846473580",
+    "primary": "LA MEDIA RD",
+    "cross": "SAINT ANDREWS AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 116565,
+        "status": "not_corroborated",
+        "road_checks": {
+          "LA MEDIA RD": {
+            "matching_features": 1,
+            "distance_m": 0.006
+          },
+          "SAINT ANDREWS AVE": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "d1796f7d31a2bd511705a725b3a99cec457bd229db75868d00401364c0deaf04",
+    "primary": "CHAPMAN ST",
+    "cross": "W POINT LOMA BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 85753,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CHAPMAN ST": {
+            "matching_features": 1,
+            "distance_m": 0.046
+          },
+          "W POINT LOMA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.024
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "3037788915a4fceb5de54a4a6368b7d97b679a959f9e1cd993b33937cbd66f98",
+    "primary": "COLUMBIA ST",
+    "cross": "W BEECH ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 95649,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLUMBIA ST": {
+            "matching_features": 1,
+            "distance_m": 0.023
+          },
+          "W BEECH ST": {
+            "matching_features": 1,
+            "distance_m": 0.029
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "ca90d89e05c8fc7e23c353612c535fb79b9efe609d0df25202de2fbeabda9997",
+    "primary": "KOLMAR ST",
+    "cross": "VISTA DEL MAR AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 67040,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "KOLMAR ST": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          },
+          "VISTA DEL MAR AVE": {
+            "matching_features": 1,
+            "distance_m": 0.004
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "48d265dda50926caebac21186c9aa23fbba42be51029215bd144297284abf2c9",
+    "primary": "26TH ST",
+    "cross": "MARKET ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97873,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "26TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.958
+          },
+          "MARKET ST": {
+            "matching_features": 1,
+            "distance_m": 0.361
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "fe7fe45394a04f5b550db1c6a24513b26a02a567a10241563641973a33938635",
+    "primary": "E SAN YSIDRO BLVD",
+    "cross": "RAIL CT",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 1056256,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "E SAN YSIDRO BLVD": {
+            "matching_features": 1,
+            "distance_m": 13.068
+          },
+          "RAIL CT": {
+            "matching_features": 1,
+            "distance_m": 13.231
+          }
+        },
+        "independent_features": 26,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "22dddcea26899aa59ad85f9bcb45b6f21953e841173cfa1aa508fa4648d85f1f",
+    "primary": "BOSTON AVE",
+    "cross": "S 29TH ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 101552,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BOSTON AVE": {
+            "matching_features": 1,
+            "distance_m": 0.028
+          },
+          "S 29TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.041
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "5ded189b82fc8133aab067211006092922361811df6d84e87169271496d244fe",
+    "primary": "INTERSTATE 5 SB OFF RAMP",
+    "cross": "SEA WORLD DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 81278,
+        "status": "not_corroborated",
+        "road_checks": {
+          "INTERSTATE 5 SB OFF RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "SEA WORLD DR": {
+            "matching_features": 1,
+            "distance_m": 0.038
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "937de743a6decf15540d36aa024c5d5551e7aadad61a5ab0b51f2854162a817f",
+    "primary": "CABRILLO MEMORIAL DR",
+    "cross": "MC CLELLAN RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 185824,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CABRILLO MEMORIAL DR": {
+            "matching_features": 1,
+            "distance_m": 1.836
+          },
+          "MC CLELLAN RD": {
+            "matching_features": 1,
+            "distance_m": 4.19
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "f379b9d337329f4aafa4af9c8bfe79323c8013293c23d28e758ec7fedf79bb94",
+    "primary": "E PARK AVE",
+    "cross": "E SAN YSIDRO BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 117101,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "E PARK AVE": {
+            "matching_features": 1,
+            "distance_m": 0.009
+          },
+          "E SAN YSIDRO BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.021
+          }
+        },
+        "independent_features": 24,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "d56bcec3f3cd7ffdc4624ff6be172048c2268b726ba5aa3c23ce966f50c64daf",
+    "primary": "A ST",
+    "cross": "W A ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 96175,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "A ST": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          },
+          "W A ST": {
+            "matching_features": 1,
+            "distance_m": 0.058
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "3e7e651106ac08617e0315b95de20d95d95d6c38191fc7ee626bdb79a2c2e754",
+    "primary": "AVENIDA DE LAS VISTAS",
+    "cross": "VISTA SANTA ROSALIA",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 115109,
+        "status": "not_corroborated",
+        "road_checks": {
+          "AVENIDA DE LAS VISTAS": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "VISTA SANTA ROSALIA": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "2211f37ff0767b1929d20b6e309c749d2a60964cf273ac457cb2403255d7dcb4",
+    "primary": "10TH AVE",
+    "cross": "G ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97628,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "10TH AVE": {
+            "matching_features": 1,
+            "distance_m": 0.044
+          },
+          "G ST": {
+            "matching_features": 1,
+            "distance_m": 0.009
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "2460a242f5024b28017283e7ce450f4544fa3adc390eda67e0c615586e3c698a",
+    "primary": "N TORREY PINES RD",
+    "cross": "PANGEA DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 58365,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "N TORREY PINES RD": {
+            "matching_features": 1,
+            "distance_m": 0.001
+          },
+          "PANGEA DR": {
+            "matching_features": 1,
+            "distance_m": 8.63
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "6e7e95b2259b32d4522f8d74cde398d08aad81450d27d181bfaef4ebb81b874b",
+    "primary": "PACIFIC HWY",
+    "cross": "W HARBOR DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97835,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "PACIFIC HWY": {
+            "matching_features": 1,
+            "distance_m": 0.015
+          },
+          "W HARBOR DR": {
+            "matching_features": 1,
+            "distance_m": 0.029
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "60e8676c6a1480417f090e40a36471923bd50ab1c681318d060860cda5484816",
+    "primary": "AVENIDA DE LAS TIENDAS",
+    "cross": "FRIARS RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 81288,
+        "status": "not_corroborated",
+        "road_checks": {
+          "AVENIDA DE LAS TIENDAS": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "FRIARS RD": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "fefad3dd9488c0498e6ab2a94b6cae9b967fa57c60e538d038222557ca05aadb",
+    "primary": "AZUAGA ST",
+    "cross": "RANCHO PENASQUITOS BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 52041,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "AZUAGA ST": {
+            "matching_features": 3,
+            "distance_m": 0.035
+          },
+          "RANCHO PENASQUITOS BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.002
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "8459dad8e597908d6d0f60aa384176844e9999a8dd8316b3709f9963288e6f35",
+    "primary": "SUNSET CLIFFS BLVD",
+    "cross": "W POINT LOMA BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 86614,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "SUNSET CLIFFS BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.015
+          },
+          "W POINT LOMA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.006
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "de17f85caa2c01ef853fdb7ad4e2ecd7d995bcdaf5b4f24cc19b76270c2f76b7",
+    "primary": "NATIONAL AVE",
+    "cross": "S 39TH ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 101174,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "NATIONAL AVE": {
+            "matching_features": 1,
+            "distance_m": 0.017
+          },
+          "S 39TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.038
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "c47a8a0ba22a0302fc8a46183d3ef37fc056280e19fac2e1c39d532f6a18b5b1",
+    "primary": "CARMEL VALLEY RD",
+    "cross": "DEL MAR HEIGHTS RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 148262,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CARMEL VALLEY RD": {
+            "matching_features": 3,
+            "distance_m": 1.306
+          },
+          "DEL MAR HEIGHTS RD": {
+            "matching_features": 1,
+            "distance_m": 2.044
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "6033256493bdbc85ff10848edcdfb7b8311c57fb002a395bc7e68caf39f752ab",
+    "primary": "MISSION GORGE PL",
+    "cross": "MISSION GORGE RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 78298,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MISSION GORGE PL": {
+            "matching_features": 1,
+            "distance_m": 0.041
+          },
+          "MISSION GORGE RD": {
+            "matching_features": 1,
+            "distance_m": 0.002
+          }
+        },
+        "independent_features": 6,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "114b79194c9de24acdc427c1be6805b8ca69da300e9841e38af4305aa3887912",
+    "primary": "CAM DEL RIO W",
+    "cross": "MOORE ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 85235,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM DEL RIO W": {
+            "matching_features": 3,
+            "distance_m": 3.949
+          },
+          "MOORE ST": {
+            "matching_features": 1,
+            "distance_m": 0.05
+          }
+        },
+        "independent_features": 23,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "fcafeab4082f57099a92b699fd4ba6e1093c1d33b257cebac1bfcc3663ce36ee",
+    "primary": "CLINTON ST",
+    "cross": "S 38TH ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 99492,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CLINTON ST": {
+            "matching_features": 1,
+            "distance_m": 0.002
+          },
+          "S 38TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.045
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "22d7c346f1360a4ec344fe485984799e0008e5945a44b0b7a5b1f82c5d5fe031",
+    "primary": "25TH ST",
+    "cross": "STATE ROUTE 94 WB OFF RAMP",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97446,
+        "status": "not_corroborated",
+        "road_checks": {
+          "25TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.046
+          },
+          "STATE ROUTE 94 WB OFF RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "55b140fad6c1ac783d3f5a405cbc9e8f432c8e216c139344b0ce5359383ca847",
+    "primary": "CARMEL VISTA RD",
+    "cross": "RUETTE DE VILLE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53773,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CARMEL VISTA RD": {
+            "matching_features": 1,
+            "distance_m": 46.43
+          },
+          "RUETTE DE VILLE": {
+            "matching_features": 1,
+            "distance_m": 0.024
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "efdf5d57e09f4f801190177c0ccfcdb013aaed243ef8b7deec6658e8074887c8",
+    "primary": "COTTONWOOD RD",
+    "cross": "W SAN YSIDRO BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 117059,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COTTONWOOD RD": {
+            "matching_features": 1,
+            "distance_m": 0.04
+          },
+          "W SAN YSIDRO BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.04
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "88019a1c040c5a6568c9e5b8e694a53ac06d5794e6fea2d499682782d62c0095",
+    "primary": "NATIONAL AVE",
+    "cross": "S 33RD ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 101164,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "NATIONAL AVE": {
+            "matching_features": 1,
+            "distance_m": 0.022
+          },
+          "S 33RD ST": {
+            "matching_features": 2,
+            "distance_m": 0.038
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "ae548b8eff202e3fdefc42af8584b14dd5739c7d8d74d5291ad590c45a45d8fc",
+    "primary": "DEL SUR RIDGE RD",
+    "cross": "LONE QUAIL RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 154048,
+        "status": "not_corroborated",
+        "road_checks": {
+          "DEL SUR RIDGE RD": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "LONE QUAIL RD": {
+            "matching_features": 1,
+            "distance_m": 0.025
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "8c700a5c837d8fdfae6899ae83c04e40e6c1d0edd5e29f2416bbfcd0c0d3d379",
+    "primary": "70TH ST",
+    "cross": "MOHAWK ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 81519,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "70TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          },
+          "MOHAWK ST": {
+            "matching_features": 1,
+            "distance_m": 0.006
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "aa7b48ee9cc99f753fcb084a3d740e72fad81123028b17d2e7c52bd4e2623816",
+    "primary": "SUNSET CLIFFS BLVD RAMP",
+    "cross": "W MISSION BAY DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 82452,
+        "status": "not_corroborated",
+        "road_checks": {
+          "SUNSET CLIFFS BLVD RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "W MISSION BAY DR": {
+            "matching_features": 1,
+            "distance_m": 0.017
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 82645,
+        "status": "not_corroborated",
+        "road_checks": {
+          "SUNSET CLIFFS BLVD RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "W MISSION BAY DR": {
+            "matching_features": 1,
+            "distance_m": 19.185
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "66b9e7a089209b47dea4ab4060742185a6a074f43a868e600659ac99dd3e76d5",
+    "primary": "BRANT ST",
+    "cross": "W HAWTHORN ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 94147,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BRANT ST": {
+            "matching_features": 1,
+            "distance_m": 0.029
+          },
+          "W HAWTHORN ST": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          }
+        },
+        "independent_features": 22,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "3e934f6ef846c4150c52371a5582a0281a71aa9f500a56c3d842042483645555",
+    "primary": "INTERSTATE 5 NB OFF RAMP",
+    "cross": "LA JOLLA VILLAGE DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 59027,
+        "status": "not_corroborated",
+        "road_checks": {
+          "INTERSTATE 5 NB OFF RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "LA JOLLA VILLAGE DR": {
+            "matching_features": 1,
+            "distance_m": 0.102
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "a0906e289eb9eb3fe8b6ff76f8b54a619a0120c8e87498fd9efed6d3efa7ef50",
+    "primary": "GENESEE AVE",
+    "cross": "RICHLAND ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 76226,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "GENESEE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.028
+          },
+          "RICHLAND ST": {
+            "matching_features": 1,
+            "distance_m": 0.05
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "d3a2816b13abb45de970d6b3995b815fe80419657a68337c92a01b9d29700143",
+    "primary": "MIDWAY DR",
+    "cross": "W POINT LOMA BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 85380,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MIDWAY DR": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          },
+          "W POINT LOMA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.016
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "fed07eee931aea67e21587853ad699bdf2f6c51b4f9abd1f53645f011c879dac",
+    "primary": "IRVING AVE",
+    "cross": "S 28TH ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 100727,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "IRVING AVE": {
+            "matching_features": 1,
+            "distance_m": 0.014
+          },
+          "S 28TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "0de93c151695498dc74d307b56529be143bde9ee098e333a4315e899432ee67e",
+    "primary": "CARMEL MOUNTAIN RD",
+    "cross": "VEREDA MAR DEL CORAZON",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 55718,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CARMEL MOUNTAIN RD": {
+            "matching_features": 1,
+            "distance_m": 0.029
+          },
+          "VEREDA MAR DEL CORAZON": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "843907145e28ce04795532050b2cd80ce19e9c253bba10680d3d93205fbae1a8",
+    "primary": "FASHION VALLEY RD",
+    "cross": "FRIARS RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 81561,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "FASHION VALLEY RD": {
+            "matching_features": 1,
+            "distance_m": 0.052
+          },
+          "FRIARS RD": {
+            "matching_features": 1,
+            "distance_m": 0.05
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "69695cb32f1832161856b24e771ced5f64c7d5f2bb7d044cd10b35bc048aa831",
+    "primary": "GENESEE AVE",
+    "cross": "N TORREY PINES RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 148767,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "GENESEE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.028
+          },
+          "N TORREY PINES RD": {
+            "matching_features": 1,
+            "distance_m": 0.044
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "f6fe7c6034579a15330bdacd0c4daea13ea9b1780b9bef75b88008d41bbae872",
+    "primary": "LANING RD",
+    "cross": "N HARBOR DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 94044,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "LANING RD": {
+            "matching_features": 2,
+            "distance_m": 0.037
+          },
+          "N HARBOR DR": {
+            "matching_features": 1,
+            "distance_m": 0.005
+          }
+        },
+        "independent_features": 19,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "3f55c17ee19b06cb5271c9dd74621148e5bc68fbb1ae81ddf36506196d3575bb",
+    "primary": "DEL MAR HEIGHTS RD",
+    "cross": "TORREY RIDGE DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 52153,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "DEL MAR HEIGHTS RD": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          },
+          "TORREY RIDGE DR": {
+            "matching_features": 1,
+            "distance_m": 0.025
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "b86f74028ae90adf021e472e81031e5c803c45be1d04e9750bf09f1504fdda56",
+    "primary": "CAMINITO CASCARA",
+    "cross": "RANCHO MISSION RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 78471,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CAMINITO CASCARA": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "RANCHO MISSION RD": {
+            "matching_features": 1,
+            "distance_m": 0.024
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "d1fcd2197d8849897746f86cc3d14922fb26d6996c69e8d0ad3fc0dae269becf",
+    "primary": "SMYTHE AVE",
+    "cross": "W SAN YSIDRO BLVD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 117043,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "SMYTHE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.02
+          },
+          "W SAN YSIDRO BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.041
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "6bd35e7e15d7afda6ac2e6f4fb36dfc67bdf3b001af12e7c882e014de381bd20",
+    "primary": "PACIFIC HWY",
+    "cross": "W A ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 96162,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "PACIFIC HWY": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          },
+          "W A ST": {
+            "matching_features": 2,
+            "distance_m": 0.047
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "7f4ba6f5ad9b6ecd4291eab7788b4daf0d1f33b27e73889f5bb85656504df934",
+    "primary": "CAM DE LA REINA",
+    "cross": "MISSION CENTER RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 81733,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM DE LA REINA": {
+            "matching_features": 1,
+            "distance_m": 0.061
+          },
+          "MISSION CENTER RD": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          }
+        },
+        "independent_features": 6,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "cd8877449548060ac49bd2e9d8c973b8b1dbdbc9fb749146f5ac441af61ba71d",
+    "primary": "HISTORIC DECATUR RD",
+    "cross": "SIMS RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 90345,
+        "status": "not_corroborated",
+        "road_checks": {
+          "HISTORIC DECATUR RD": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "SIMS RD": {
+            "matching_features": 1,
+            "distance_m": 0.039
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "9336359aac7d5f1095bf00ef86a1052d28b60f6aca807dc98f811a3174fa1b2c",
+    "primary": "CAM DEL RIO N",
+    "cross": "FAIRMOUNT AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 78910,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM DEL RIO N": {
+            "matching_features": 1,
+            "distance_m": 2.44
+          },
+          "FAIRMOUNT AVE": {
+            "matching_features": 3,
+            "distance_m": 0.2
+          }
+        },
+        "independent_features": 23,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "a47f111dfdc2b495cac318b49999c0dd7b43da522c21bbe846420530b06cb931",
+    "primary": "33RD ST",
+    "cross": "N PARK WAY",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 178695,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "33RD ST": {
+            "matching_features": 2,
+            "distance_m": 10.138
+          },
+          "N PARK WAY": {
+            "matching_features": 1,
+            "distance_m": 0.059
+          }
+        },
+        "independent_features": 21,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "5a43088f77a7b3c290fc09cf9e5d654197f6ac7c72610dc04a55211cdf889161",
+    "primary": "CAM MIRA DEL MAR",
+    "cross": "CARMEL VIEW RD",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53740,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM MIRA DEL MAR": {
+            "matching_features": 1,
+            "distance_m": 0.009
+          },
+          "CARMEL VIEW RD": {
+            "matching_features": 1,
+            "distance_m": 0.023
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "b2a03c3467f76b3927516547e9defb3272b1c4c6f9b2fcb2495da9f9bb1e8aea",
+    "primary": "55TH ST",
+    "cross": "AZTEC WALK",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 80558,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "55TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.021
+          },
+          "AZTEC WALK": {
+            "matching_features": 1,
+            "distance_m": 0.022
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "0b1b600e5e022e59b9a3793cc8f9432f4e0a920404d62b6ac99087a8acd49099",
+    "primary": "CAM DEL RIO S",
+    "cross": "FAIRMOUNT AVE",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 79944,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CAM DEL RIO S": {
+            "matching_features": 3,
+            "distance_m": 9.344
+          },
+          "FAIRMOUNT AVE": {
+            "matching_features": 2,
+            "distance_m": 5.949
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "c55f09b88b372a1b073bb0e3bf37b7362455ec64de110bd8fa9a731f86fe98c8",
+    "primary": "INDIA ST",
+    "cross": "W LAUREL ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 93235,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "INDIA ST": {
+            "matching_features": 3,
+            "distance_m": 0.026
+          },
+          "W LAUREL ST": {
+            "matching_features": 1,
+            "distance_m": 0.028
+          }
+        },
+        "independent_features": 22,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "60a30d9d9ef37310d5739a82f63a65c2a1bd513f841473470d6cd9156e465214",
+    "primary": "GENESEE AVE",
+    "cross": "LA JOLLA VILLAGE DR",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 59018,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "GENESEE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.031
+          },
+          "LA JOLLA VILLAGE DR": {
+            "matching_features": 1,
+            "distance_m": 0.034
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "1e82553419d73911154d5c29c14d5f5df266faf7fbc8bd3f9444080fcddafdd5",
+    "primary": "EL CAJON BLVD",
+    "cross": "FILIPO ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 82345,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "EL CAJON BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.006
+          },
+          "FILIPO ST": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "7e57e99ed053da52b1872ab224d257905038f3bddf106c22dd0ad130f8851e44",
+    "primary": "CAM DEL RIO N",
+    "cross": "DISCOVERY PL",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 176033,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CAM DEL RIO N": {
+            "matching_features": 3,
+            "distance_m": 0.018
+          },
+          "DISCOVERY PL": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "b77d4e9053439ac0c423291fd9582891a78889cefd733d6f18a371e29fdfad6e",
+    "primary": "W CANYON AVE",
+    "cross": "W CANYON TER",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 73575,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "W CANYON AVE": {
+            "matching_features": 1,
+            "distance_m": 0.009
+          },
+          "W CANYON TER": {
+            "matching_features": 1,
+            "distance_m": 0.034
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "6b4f126e30b1dbb0f42b5766f62f23b8318e115436e141ffb14c0dbf7ee08dde",
+    "primary": "INTERSTATE 5 NB OFF RAMP",
+    "cross": "ROSELLE ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 178070,
+        "status": "not_corroborated",
+        "road_checks": {
+          "INTERSTATE 5 NB OFF RAMP": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "ROSELLE ST": {
+            "matching_features": 1,
+            "distance_m": 0.003
+          }
+        },
+        "independent_features": 21,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "07cb9fc278c41ce0724ab20a73f1a3c13db51f2c8d8f60c4606259c590e4b114",
+    "primary": "LANING RD",
+    "cross": "ROSECRANS ST",
+    "study_status": "accepted_candidate",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 92561,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "LANING RD": {
+            "matching_features": 1,
+            "distance_m": 0.039
+          },
+          "ROSECRANS ST": {
+            "matching_features": 1,
+            "distance_m": 0.004
+          }
+        },
+        "independent_features": 24,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "a28d97bdd08ff033ea3475dfb320a39dbf1ab98788c9dd8d1008c525c3200d0c",
+    "primary": "MAIN ST",
+    "cross": "VESTA ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 102911,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MAIN ST": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          },
+          "VESTA ST": {
+            "matching_features": 1,
+            "distance_m": 0.005
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "f4d40a54b6dc14afdd43fabb0407c04b69c4c6b23351b64d3946858a6821f55e",
+    "primary": "GRAND AVE",
+    "cross": "LEE ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 73579,
+        "status": "not_corroborated",
+        "road_checks": {
+          "GRAND AVE": {
+            "matching_features": 1,
+            "distance_m": 0.031
+          },
+          "LEE ST": {
+            "matching_features": 2,
+            "distance_m": 32.57
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "4fc72fabbcc3a889ba9d5ab8015fafdc88e6099de0b67079b2f6f7e3522fc064",
+    "primary": "CAM DE LA PLAZA",
+    "cross": "CAMIONES WAY",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 117284,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CAM DE LA PLAZA": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "CAMIONES WAY": {
+            "matching_features": 1,
+            "distance_m": 4.118
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "e71bffc774a20b4bf01bf800e6f92ede427b06f1b692cb1b3cdfc93ec860f62a",
+    "primary": "OCEAN VIEW BLVD",
+    "cross": "S 35TH ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 100158,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "OCEAN VIEW BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.047
+          },
+          "S 35TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.019
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "cd17a5e30129464947e86824dc31ddd2846e7021e2c13526646188d97d0df5e9",
+    "primary": "GENESEE AVE",
+    "cross": "INTERSTATE 5 SB",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 178076,
+        "status": "not_corroborated",
+        "road_checks": {
+          "GENESEE AVE": {
+            "matching_features": 1,
+            "distance_m": 1.143
+          },
+          "INTERSTATE 5 SB": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "09dffa2ce321e418db97fe6c5bfb9d870f26479fdc04585bcd777f9fff5ced08",
+    "primary": "BALBOA AVE",
+    "cross": "INTERSTATE 805 SB",
+    "study_status": "no_intersection",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 68788,
+        "status": "not_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 3,
+            "distance_m": 0.02
+          },
+          "INTERSTATE 805 SB": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 24,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "c901fa0487e3c9887c4faaa1c46cd1c0b80bed88044f90c1223b44b428a60472",
+    "primary": "SEA WORLD DR",
+    "cross": "W MISSION BAY DR",
+    "study_status": "no_intersection",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 83431,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "SEA WORLD DR": {
+            "matching_features": 2,
+            "distance_m": 0.01
+          },
+          "W MISSION BAY DR": {
+            "matching_features": 1,
+            "distance_m": 0.045
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "67ea5c25720ab999a218eeb064064c3ba258037f29280e30ff5a95dbe9378412",
+    "primary": "CARMEL VALLEY RD",
+    "cross": "INTERSTATE 5 SB",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 54607,
+        "status": "not_corroborated",
+        "road_checks": {
+          "CARMEL VALLEY RD": {
+            "matching_features": 1,
+            "distance_m": 0.015
+          },
+          "INTERSTATE 5 SB": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 22,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "15a43f5aba4c7ae0a7e9b250d1d0cc62ef3289051554467d3ea60d1f98114480",
+    "primary": "INTERSTATE 5 SB",
+    "cross": "LA JOLLA VILLAGE DR",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 59050,
+        "status": "not_corroborated",
+        "road_checks": {
+          "INTERSTATE 5 SB": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "LA JOLLA VILLAGE DR": {
+            "matching_features": 1,
+            "distance_m": 0.075
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "1fcea36ef5d82d4c8de2b870ada6625a9540926b922899f9cb08fd918d89d94b",
+    "primary": "ALEMANIA RD",
+    "cross": "MERCY RD",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 54308,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "ALEMANIA RD": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          },
+          "MERCY RD": {
+            "matching_features": 1,
+            "distance_m": 0.044
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "53948f8bdb87653ffd00cae6cf4cda5eb4535b706e473ee52ecef669bd1d2824",
+    "primary": "BALBOA AVE",
+    "cross": "GARNET AVE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 2,
+    "checks": [
+      {
+        "node_id": 71921,
+        "status": "not_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 1,
+            "distance_m": 0.025
+          },
+          "GARNET AVE": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 18,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      },
+      {
+        "node_id": 73186,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 1,
+            "distance_m": 0.053
+          },
+          "GARNET AVE": {
+            "matching_features": 1,
+            "distance_m": 0.054
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 179512,
+        "status": "not_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 1,
+            "distance_m": 0.019
+          },
+          "GARNET AVE": {
+            "matching_features": 1,
+            "distance_m": 157.373
+          }
+        },
+        "independent_features": 15,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      },
+      {
+        "node_id": 181200,
+        "status": "not_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 1,
+            "distance_m": 7.312
+          },
+          "GARNET AVE": {
+            "matching_features": 1,
+            "distance_m": 154.745
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      },
+      {
+        "node_id": 181202,
+        "status": "not_corroborated",
+        "road_checks": {
+          "BALBOA AVE": {
+            "matching_features": 1,
+            "distance_m": 5.831
+          },
+          "GARNET AVE": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "8bd16207f75c8339ed89019e86fee283147c5ca6c91cfb780fc36939ef847889",
+    "primary": "SANTO RD",
+    "cross": "STATE ROUTE 52 WB",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 1,
+    "checks": [
+      {
+        "node_id": 178388,
+        "status": "not_corroborated",
+        "road_checks": {
+          "SANTO RD": {
+            "matching_features": 1,
+            "distance_m": 1.301
+          },
+          "STATE ROUTE 52 WB": {
+            "matching_features": 0,
+            "distance_m": null
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "8f6754292a02729d8e12b9d8a8e5f256e71498601a24e6bf1ca377d6ed06d129",
+    "primary": "30TH ST",
+    "cross": "UPAS ST",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 90234,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "30TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.011
+          },
+          "UPAS ST": {
+            "matching_features": 2,
+            "distance_m": 0.014
+          }
+        },
+        "independent_features": 17,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 90240,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "30TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.035
+          },
+          "UPAS ST": {
+            "matching_features": 2,
+            "distance_m": 0.067
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "c4e956de0cad7dba00068c0456d1f6b3e836613529b3d0e83ada1ce204a7700a",
+    "primary": "COLLEGE AVE",
+    "cross": "COLLEGE GROVE DR",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 89289,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLLEGE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.026
+          },
+          "COLLEGE GROVE DR": {
+            "matching_features": 1,
+            "distance_m": 0.027
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 173300,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLLEGE AVE": {
+            "matching_features": 1,
+            "distance_m": 13.209
+          },
+          "COLLEGE GROVE DR": {
+            "matching_features": 1,
+            "distance_m": 0.022
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "be81330b6d5fade7ea4abf66cd5e5d1b454318ce50d275bed40646eebe80e9c7",
+    "primary": "FOGG ST",
+    "cross": "GARNET AVE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 72702,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "FOGG ST": {
+            "matching_features": 1,
+            "distance_m": 0.004
+          },
+          "GARNET AVE": {
+            "matching_features": 1,
+            "distance_m": 0.01
+          }
+        },
+        "independent_features": 18,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 73085,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "FOGG ST": {
+            "matching_features": 1,
+            "distance_m": 0.021
+          },
+          "GARNET AVE": {
+            "matching_features": 1,
+            "distance_m": 0.008
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "cc79e802d2fad432556b2e63ddc57abdb3dbd76a23f12699d6686bc84f6d0f4b",
+    "primary": "MARLBOROUGH AVE",
+    "cross": "ORANGE AVE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 86230,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MARLBOROUGH AVE": {
+            "matching_features": 2,
+            "distance_m": 0.021
+          },
+          "ORANGE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 86231,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MARLBOROUGH AVE": {
+            "matching_features": 2,
+            "distance_m": 0.043
+          },
+          "ORANGE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.022
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "2429b97ef05d615b80c52bea0d793a621ce07b14aaf2b709c9b2c8ebc1f941bf",
+    "primary": "47TH ST",
+    "cross": "EL CAJON BLVD",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 85301,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "47TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.03
+          },
+          "EL CAJON BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.053
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 85316,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "47TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.022
+          },
+          "EL CAJON BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.018
+          }
+        },
+        "independent_features": 7,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "b3fa2e93957447e8067dba83d880c541605629a6f9ab8f7e8994e102c467e368",
+    "primary": "CLAIREMONT DR",
+    "cross": "CLAIREMONT MESA BLVD",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 65770,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CLAIREMONT DR": {
+            "matching_features": 1,
+            "distance_m": 0.043
+          },
+          "CLAIREMONT MESA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.034
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 67212,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CLAIREMONT DR": {
+            "matching_features": 1,
+            "distance_m": 0.008
+          },
+          "CLAIREMONT MESA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.024
+          }
+        },
+        "independent_features": 16,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "4afb84f0ceeceaeedad27e1a199984faf79a467a43b7126b38cdebfe51dde6eb",
+    "primary": "COLLEGE AVE",
+    "cross": "MERIDIAN AVE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 88887,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLLEGE AVE": {
+            "matching_features": 1,
+            "distance_m": 0.027
+          },
+          "MERIDIAN AVE": {
+            "matching_features": 1,
+            "distance_m": 0.007
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 170718,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLLEGE AVE": {
+            "matching_features": 1,
+            "distance_m": 17.151
+          },
+          "MERIDIAN AVE": {
+            "matching_features": 1,
+            "distance_m": 0.106
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 170722,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "COLLEGE AVE": {
+            "matching_features": 1,
+            "distance_m": 18.834
+          },
+          "MERIDIAN AVE": {
+            "matching_features": 1,
+            "distance_m": 0.077
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "389a4f1895f06e0659884da2cd283b917022d45128f3209e0aa5a467f8051cba",
+    "primary": "CHAMOUNE AVE",
+    "cross": "EL CAJON BLVD",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 85465,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CHAMOUNE AVE": {
+            "matching_features": 2,
+            "distance_m": 0.045
+          },
+          "EL CAJON BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.009
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 85477,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CHAMOUNE AVE": {
+            "matching_features": 2,
+            "distance_m": 0.04
+          },
+          "EL CAJON BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.0
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "11be45eb06644ec8a2af5ba6e3c04f1865c51ac0d565a8afd2690a1b6105d329",
+    "primary": "MISSISSIPPI ST",
+    "cross": "UNIVERSITY AVE",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 87581,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MISSISSIPPI ST": {
+            "matching_features": 2,
+            "distance_m": 0.045
+          },
+          "UNIVERSITY AVE": {
+            "matching_features": 2,
+            "distance_m": 0.011
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 87582,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "MISSISSIPPI ST": {
+            "matching_features": 2,
+            "distance_m": 0.043
+          },
+          "UNIVERSITY AVE": {
+            "matching_features": 2,
+            "distance_m": 0.043
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "9670745357710bfb80d3706450826ae442ca35627611ed9ed08c5df02f4101a2",
+    "primary": "2ND AVE",
+    "cross": "J ST",
+    "study_status": "multiple_candidates",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 98295,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "2ND AVE": {
+            "matching_features": 1,
+            "distance_m": 0.797
+          },
+          "J ST": {
+            "matching_features": 1,
+            "distance_m": 0.313
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      },
+      {
+        "node_id": 110586,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "2ND AVE": {
+            "matching_features": 1,
+            "distance_m": 0.004
+          },
+          "J ST": {
+            "matching_features": 1,
+            "distance_m": 0.007
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  },
+  {
+    "pair_id": "709ecd4ed8fc71526cb985e71181b1c5700d5a5e04bde79181ef3e09044d6039",
+    "primary": "HOLLISTER ST",
+    "cross": "OUTER RD",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 115236,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "HOLLISTER ST": {
+            "matching_features": 1,
+            "distance_m": 0.043
+          },
+          "OUTER RD": {
+            "matching_features": 1,
+            "distance_m": 0.049
+          }
+        },
+        "independent_features": 21,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "1f6e06352e1c27a2cf6dca3c118a7dafae6c0059e37f0243a64f1522151dc854",
+    "primary": "ABBOTT ST",
+    "cross": "NEWPORT AVE",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 87505,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "ABBOTT ST": {
+            "matching_features": 1,
+            "distance_m": 0.037
+          },
+          "NEWPORT AVE": {
+            "matching_features": 1,
+            "distance_m": 0.036
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "562d60bd495e27b13c54d2b7711f839c6be1e8ba31401724e57d282614a2def0",
+    "primary": "19TH ST",
+    "cross": "G ST",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97691,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "19TH ST": {
+            "matching_features": 1,
+            "distance_m": 0.041
+          },
+          "G ST": {
+            "matching_features": 2,
+            "distance_m": 0.037
+          }
+        },
+        "independent_features": 42,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "dc36a1eb263bb630bd059c38b71134b6262cc12d72c90615c3f8e6cb2bb32e05",
+    "primary": "CARDIN ST",
+    "cross": "OPPORTUNITY RD",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 67891,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CARDIN ST": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          },
+          "OPPORTUNITY RD": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "6abc67325e0a0ce773c7766d242c7e72189e13b7b0906659efd575dbcf2a7250",
+    "primary": "CYPRESS AVE",
+    "cross": "CYPRESS WAY",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 88989,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CYPRESS AVE": {
+            "matching_features": 1,
+            "distance_m": 0.051
+          },
+          "CYPRESS WAY": {
+            "matching_features": 1,
+            "distance_m": 0.057
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "3b10702ce7fd59c43d1ff9c5d3730a0e5720d1f6b06b0cd37b423bae57a34eae",
+    "primary": "AMARANTH ST",
+    "cross": "TEXANA ST",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53381,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "AMARANTH ST": {
+            "matching_features": 1,
+            "distance_m": 0.048
+          },
+          "TEXANA ST": {
+            "matching_features": 1,
+            "distance_m": 0.044
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "569192d48618dce287c3cfb7406d91279f209208a6f48fc799ee17deeadf8fd0",
+    "primary": "40TH ST",
+    "cross": "LANDIS ST",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 88516,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "40TH ST": {
+            "matching_features": 2,
+            "distance_m": 0.012
+          },
+          "LANDIS ST": {
+            "matching_features": 2,
+            "distance_m": 0.022
+          }
+        },
+        "independent_features": 18,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "f50a4ae6e81e52f7787607dcdf1cff0721fb004e7e9672e5b1ede8e6358abdaf",
+    "primary": "GLADING DR",
+    "cross": "RALPH WAY",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 114918,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "GLADING DR": {
+            "matching_features": 1,
+            "distance_m": 0.058
+          },
+          "RALPH WAY": {
+            "matching_features": 1,
+            "distance_m": 0.02
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "58f71975b42cfb78fb27972fb54dc52d2eb59fa6b5d22d80cba822896052b96a",
+    "primary": "DELL ANNE PL",
+    "cross": "POTRERO ST",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 97335,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "DELL ANNE PL": {
+            "matching_features": 1,
+            "distance_m": 0.048
+          },
+          "POTRERO ST": {
+            "matching_features": 1,
+            "distance_m": 0.012
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "852fe3d25288570b8fc3ea2dfc26e7ee1730989c1d4fc3dd04fe9b7cbc9ed430",
+    "primary": "POWAY RD",
+    "cross": "RANCHO PENASQUITOS BLVD",
+    "study_status": "no_intersection",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53360,
+        "status": "not_corroborated",
+        "road_checks": {
+          "POWAY RD": {
+            "matching_features": 2,
+            "distance_m": 0.0
+          },
+          "RANCHO PENASQUITOS BLVD": {
+            "matching_features": 1,
+            "distance_m": 44.904
+          }
+        },
+        "independent_features": 19,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "rejected"
+      }
+    ]
+  },
+  {
+    "pair_id": "41d8e36418e81ff64c1961d8b7f95c8322a72f1b6ec116781f40246a2d295f17",
+    "primary": "POWAY RD",
+    "cross": "SPRINGHURST DR",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 53513,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "POWAY RD": {
+            "matching_features": 1,
+            "distance_m": 0.016
+          },
+          "SPRINGHURST DR": {
+            "matching_features": 1,
+            "distance_m": 0.02
+          }
+        },
+        "independent_features": 12,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "0cd7a2b251867447d39546de1e1cc39cbf4a79b1364b25443d7e98e30dc8b9f3",
+    "primary": "EMERALD CREST CT",
+    "cross": "OTAY MESA RD",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 151934,
+        "status": "not_corroborated",
+        "road_checks": {
+          "EMERALD CREST CT": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "OTAY MESA RD": {
+            "matching_features": 2,
+            "distance_m": 2.513
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "ce665f2e10ebb437e11e6d8ca3af74920fa589f50297a1c2f843b80c61c088f4",
+    "primary": "CLAIREMONT MESA BLVD",
+    "cross": "RUEDA DR",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 67992,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "CLAIREMONT MESA BLVD": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          },
+          "RUEDA DR": {
+            "matching_features": 1,
+            "distance_m": 0.013
+          }
+        },
+        "independent_features": 9,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "a4fd558544ee4cf7f837a4a047da25a36eda0b01bbbf322a091b0313d9eda532",
+    "primary": "AVENIDA LA BAHIA",
+    "cross": "NOBEL DR",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 59579,
+        "status": "not_corroborated",
+        "road_checks": {
+          "AVENIDA LA BAHIA": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "NOBEL DR": {
+            "matching_features": 2,
+            "distance_m": 0.042
+          }
+        },
+        "independent_features": 13,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "f6c55ef3c443e57773ca9d764e5ae3c1ec6749237238bcb4ea88b9a0e8b697f6",
+    "primary": "BULLOCK DR",
+    "cross": "S WOODMAN ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 101403,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BULLOCK DR": {
+            "matching_features": 2,
+            "distance_m": 0.053
+          },
+          "S WOODMAN ST": {
+            "matching_features": 1,
+            "distance_m": 0.02
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      },
+      {
+        "node_id": 101411,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "BULLOCK DR": {
+            "matching_features": 2,
+            "distance_m": 0.038
+          },
+          "S WOODMAN ST": {
+            "matching_features": 1,
+            "distance_m": 0.006
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "1cb63c61c94cf7a54c28c0d87931b6ea5d42166807b565498e54723b4e3d3e06",
+    "primary": "DELCARDO AVE",
+    "cross": "PALM AVE",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 114712,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "DELCARDO AVE": {
+            "matching_features": 1,
+            "distance_m": 0.001
+          },
+          "PALM AVE": {
+            "matching_features": 1,
+            "distance_m": 0.038
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "41794aaa73086a0d58ef2988ecec2aba7b579e8b3130b1e4acb4203e8d2371a2",
+    "primary": "NORSTAD ST",
+    "cross": "PALM AVE",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 114693,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "NORSTAD ST": {
+            "matching_features": 1,
+            "distance_m": 0.015
+          },
+          "PALM AVE": {
+            "matching_features": 1,
+            "distance_m": 0.032
+          }
+        },
+        "independent_features": 11,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "7cc9a8b5f0e36b72b538bd0a221935822d4bddae36ddeb59c1bd3e790469a96f",
+    "primary": "45TH ST",
+    "cross": "IMPERIAL AVE",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 99551,
+        "status": "not_corroborated",
+        "road_checks": {
+          "45TH ST": {
+            "matching_features": 0,
+            "distance_m": null
+          },
+          "IMPERIAL AVE": {
+            "matching_features": 2,
+            "distance_m": 0.051
+          }
+        },
+        "independent_features": 14,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "cbd6f7719bcb9a464213b2412f5bdd93ca3975ee9511d8c2170f6140bee0bfe7",
+    "primary": "ASHFORD ST",
+    "cross": "BALTIC ST",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 72592,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "ASHFORD ST": {
+            "matching_features": 1,
+            "distance_m": 0.03
+          },
+          "BALTIC ST": {
+            "matching_features": 1,
+            "distance_m": 0.02
+          }
+        },
+        "independent_features": 10,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "topology_uncertain"
+      }
+    ]
+  },
+  {
+    "pair_id": "39dbd3d0272d7d8d62f5b36e5c5b43f6b79585b1f86194c483719f20e49d816e",
+    "primary": "GEORGIA ST",
+    "cross": "MISSION AVE",
+    "study_status": "topology_uncertain",
+    "grade_conflicts": 0,
+    "checks": [
+      {
+        "node_id": 84609,
+        "status": "both_roads_spatially_corroborated",
+        "road_checks": {
+          "GEORGIA ST": {
+            "matching_features": 1,
+            "distance_m": 0.01
+          },
+          "MISSION AVE": {
+            "matching_features": 1,
+            "distance_m": 0.019
+          }
+        },
+        "independent_features": 8,
+        "grade_or_historical_ground_truth": "not_verified",
+        "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+        "topology_outcome": "supported"
+      }
+    ]
+  }
+]

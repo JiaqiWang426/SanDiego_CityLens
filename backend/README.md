@@ -1,5 +1,44 @@
 # Local data infrastructure
 
+P1.2 adds natural-language street-address questions to the frontend: review the
+proposed addresses, explicitly confirm, resolve through Census (with SanGIS
+Address Points fallback only after Census no-match), then run the
+existing verified SQL tools. See [the workflow and implementation report](P1_2.md).
+The original coordinate-pin API and direct SQL-tool runner remain available.
+The [36-address geocoding benchmark](verification/geocoding_benchmark/REPORT.md)
+documents measured coverage, ambiguity, placement metadata and the recommendation
+to retain Census as primary. SanGIS property points are not guaranteed entrances
+or exact apartment-unit locations. No new credential or dependency is required.
+
+[P1.2.2](P1_2_2.md) adds an offline-tested, explicitly gated Google evaluation
+adapter and a read-only 160-record historical location audit. Google remains
+outside the production provider chain. An optional `GOOGLE_MAPS_API_KEY` alone
+does not enable paid requests; the selected 12-address experiment needs explicit
+`--live-google` authorization. No Google-derived coordinates are persisted.
+
+The read-only [Stage A intersection study](verification/intersection_feasibility/REPORT.md)
+evaluates 80 pending collision reports using SanGIS road/node topology and
+independent road evidence. It creates candidate artifacts only; historical
+coordinates and statuses remain unchanged, and no batch geocoder is deployed.
+
+[Stage B](verification/intersection_batch/REPORT.md) imports the complete official
+SanGIS network into the separate `citylens_ref` schema and evaluates the Pending
+intersection workload locally. All results remain proposals. See the
+[maintenance commands and guarded deployment design](sangis_topology/README.md);
+historical collision updates require a separate explicit approval and `--apply`.
+
+[Stage C](verification/intersection_stage_c/REPORT.md) validates every Stage B
+accepted pair and builds a strict allowlist of 4,112 reports. Deployment still
+requires a separate explicit approval; no collision record has been updated.
+
+The [final historical geocoding milestone](verification/historical_geocoding_final/REPORT.md)
+evaluates every remaining no-match, ambiguous and Pending report. It uses SanGIS
+road blocks, stored Census evidence, official SanGIS abbreviations and the Stage
+B/C outcomes. It produces a second strict allowlist and a status-specific guarded
+deployment. Both allowlists were deployed under explicit approval on November 3,
+2026: 8,441 records, so 68,068 of 78,494 reports (86.72%) are now located. See the
+[deployment report](verification/historical_geocoding_final/DEPLOYMENT_REPORT.md).
+
 Phase 1.1 aggregation, dataset metadata, geocoding audit/fixes and limitations
 are documented in [PHASE1_1.md](PHASE1_1.md). The dated
 [data audit](audits/2026-11-01-phase1_1/SUMMARY.md) precedes implementation results.

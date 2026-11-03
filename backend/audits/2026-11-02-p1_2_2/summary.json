@@ -1,0 +1,343 @@
+{
+  "created_at": "2026-11-03T01:28:47.405025+00:00",
+  "seed": "citylens-p1.2.2-v1",
+  "target_sample_size": 160,
+  "actual_sample_size": 160,
+  "before": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "after": {
+    "records": 78494,
+    "located": 59627,
+    "digest": "987c72a80ea9ccd5c6716e313595d43c"
+  },
+  "collision_fingerprint_unchanged": true,
+  "population": {
+    "ambiguous": {
+      "records": 3117,
+      "road_types": {
+        "numbered_road_block": 3116,
+        "freeway_or_ramp": 1
+      },
+      "records_with_intersection_information": 0,
+      "unique_complete_intersection_pairs": 0,
+      "records_with_missing_primary_street": 0,
+      "records_with_invalid_or_nonpositive_number": 0,
+      "records_with_offset_descriptions": 96,
+      "police_district_proxy": {
+        "1": 525,
+        "6": 383,
+        "5": 569,
+        "7": 415,
+        "4": 158,
+        "2": 507,
+        "3": 253,
+        "9": 224,
+        "8": 83
+      },
+      "recorded_reasons": {
+        "returned_street_components_differ": 2433,
+        "provider_tie": 544,
+        "Provider match differs from supplied street, number, or supported locality": 2,
+        "returned_number_differs": 138
+      },
+      "unique_source_address_keys": 1420,
+      "unique_primary_block_queries": 1411,
+      "existing_census_eligible_records": 3117,
+      "unique_eligible_queries": 1411
+    },
+    "matched": {
+      "records": 59627,
+      "road_types": {
+        "numbered_road_block": 59627
+      },
+      "records_with_intersection_information": 0,
+      "unique_complete_intersection_pairs": 0,
+      "records_with_missing_primary_street": 0,
+      "records_with_invalid_or_nonpositive_number": 0,
+      "records_with_offset_descriptions": 0,
+      "police_district_proxy": {
+        "6": 9521,
+        "8": 9874,
+        "2": 4862,
+        "1": 8648,
+        "4": 6685,
+        "5": 8368,
+        "7": 3134,
+        "3": 7026,
+        "9": 1509
+      },
+      "recorded_reasons": {
+        "not_recorded": 59627
+      },
+      "unique_source_address_keys": 12281,
+      "unique_primary_block_queries": 12277,
+      "existing_census_eligible_records": 59627,
+      "unique_eligible_queries": 12277
+    },
+    "no_match": {
+      "records": 7400,
+      "road_types": {
+        "numbered_road_block": 7384,
+        "freeway_or_ramp": 16
+      },
+      "records_with_intersection_information": 0,
+      "unique_complete_intersection_pairs": 0,
+      "records_with_missing_primary_street": 0,
+      "records_with_invalid_or_nonpositive_number": 0,
+      "records_with_offset_descriptions": 58,
+      "police_district_proxy": {
+        "2": 870,
+        "9": 973,
+        "1": 2852,
+        "7": 653,
+        "6": 623,
+        "3": 528,
+        "8": 214,
+        "4": 321,
+        "5": 366
+      },
+      "recorded_reasons": {
+        "provider_nomatch": 7396,
+        "not_recorded": 4
+      },
+      "unique_source_address_keys": 2693,
+      "unique_primary_block_queries": 2688,
+      "existing_census_eligible_records": 7400,
+      "unique_eligible_queries": 2688
+    },
+    "pending": {
+      "records": 8350,
+      "road_types": {
+        "intersection_without_valid_block": 6839,
+        "invalid_or_missing_number": 1442,
+        "freeway_or_ramp": 68,
+        "missing_primary_street": 1
+      },
+      "records_with_intersection_information": 6840,
+      "unique_complete_intersection_pairs": 3988,
+      "records_with_missing_primary_street": 1,
+      "records_with_invalid_or_nonpositive_number": 8350,
+      "records_with_offset_descriptions": 75,
+      "police_district_proxy": {
+        "9": 515,
+        "1": 1294,
+        "6": 1159,
+        "8": 958,
+        "7": 541,
+        "3": 930,
+        "2": 713,
+        "4": 738,
+        "5": 1502
+      },
+      "recorded_reasons": {
+        "not_recorded": 8350
+      },
+      "unique_source_address_keys": 5158,
+      "unique_primary_block_queries": 2528,
+      "existing_census_eligible_records": 0,
+      "unique_eligible_queries": 0
+    }
+  },
+  "sample": {
+    "ambiguous": {
+      "records": 40,
+      "road_types": {
+        "numbered_road_block": 39,
+        "freeway_or_ramp": 1
+      },
+      "police_district_proxy": {
+        "6": 5,
+        "2": 5,
+        "4": 5,
+        "8": 4,
+        "3": 5,
+        "5": 4,
+        "7": 4,
+        "9": 4,
+        "1": 4
+      },
+      "road_name_evidence": 24,
+      "road_number_range_evidence": 23,
+      "stored_component_inconsistencies": 0,
+      "located_distance_to_named_road_m": [],
+      "located_distance_to_number_range_road_m": []
+    },
+    "matched": {
+      "records": 40,
+      "road_types": {
+        "numbered_road_block": 40
+      },
+      "police_district_proxy": {
+        "6": 5,
+        "2": 5,
+        "4": 5,
+        "8": 5,
+        "3": 4,
+        "5": 4,
+        "7": 4,
+        "9": 4,
+        "1": 4
+      },
+      "road_name_evidence": 40,
+      "road_number_range_evidence": 40,
+      "stored_component_inconsistencies": 0,
+      "located_distance_to_named_road_m": [
+        5.542,
+        5.18,
+        6.051,
+        5.229,
+        5.266,
+        5.756,
+        8.246,
+        6.34,
+        6.335,
+        6.57,
+        6.048,
+        5.605,
+        5.293,
+        5.838,
+        4.07,
+        5.249,
+        5.292,
+        5.463,
+        5.823,
+        5.285,
+        5.0,
+        5.764,
+        5.361,
+        5.277,
+        5.059,
+        5.654,
+        5.59,
+        4.928,
+        5.695,
+        2.455,
+        5.552,
+        5.791,
+        5.212,
+        5.307,
+        6.21,
+        5.533,
+        5.008,
+        5.775,
+        5.263,
+        5.801
+      ],
+      "located_distance_to_number_range_road_m": [
+        5.542,
+        5.18,
+        6.051,
+        5.229,
+        7.808,
+        5.756,
+        40.852,
+        6.34,
+        109.589,
+        6.57,
+        81.109,
+        9.465,
+        5.293,
+        5.838,
+        4.07,
+        5.249,
+        5.292,
+        5.463,
+        5.823,
+        7.791,
+        5.0,
+        88.108,
+        5.361,
+        5.277,
+        19.067,
+        5.654,
+        5.59,
+        52.867,
+        20.683,
+        2.455,
+        5.552,
+        5.791,
+        5.212,
+        5.307,
+        6.21,
+        5.533,
+        61.011,
+        5.775,
+        5.263,
+        41.867
+      ]
+    },
+    "no_match": {
+      "records": 40,
+      "road_types": {
+        "freeway_or_ramp": 14,
+        "numbered_road_block": 26
+      },
+      "police_district_proxy": {
+        "7": 4,
+        "6": 5,
+        "5": 5,
+        "2": 6,
+        "9": 4,
+        "1": 3,
+        "4": 4,
+        "8": 3,
+        "3": 6
+      },
+      "road_name_evidence": 24,
+      "road_number_range_evidence": 21,
+      "stored_component_inconsistencies": 0,
+      "located_distance_to_named_road_m": [],
+      "located_distance_to_number_range_road_m": []
+    },
+    "pending": {
+      "records": 40,
+      "road_types": {
+        "freeway_or_ramp": 14,
+        "intersection_without_valid_block": 13,
+        "invalid_or_missing_number": 12,
+        "missing_primary_street": 1
+      },
+      "police_district_proxy": {
+        "5": 5,
+        "4": 4,
+        "6": 4,
+        "8": 5,
+        "9": 6,
+        "3": 4,
+        "1": 4,
+        "7": 5,
+        "2": 3
+      },
+      "road_name_evidence": 19,
+      "road_number_range_evidence": 0,
+      "stored_component_inconsistencies": 0,
+      "located_distance_to_named_road_m": [],
+      "located_distance_to_number_range_road_m": []
+    }
+  },
+  "roads_status": "ok",
+  "road_query_count": 8,
+  "matched_coverage": 0.7596376793130685,
+  "unresolved_unique_primary_block_queries": 6627,
+  "unresolved_unique_source_address_keys": 9271,
+  "google_historical_requests": 0,
+  "recoverable_records_estimate": null,
+  "hypothetical_google_cost_not_authorized": {
+    "requests_if_unresolved_records_submitted": 18867,
+    "list_cost_before_free_allowance_usd": 94.335,
+    "deduplicated_full_source_address_queries": 9271,
+    "deduplicated_list_cost_usd": 46.355,
+    "permitted_plan": false,
+    "reason": "No Google historical enrichment; not appropriate accident ground truth or permanent reusable data"
+  },
+  "limitations": [
+    "Stratified quota sample, not a simple random sample; no unweighted population extrapolation",
+    "Police-beat first digit is a district proxy, not an independently verified neighborhood",
+    "Road-name/range support is plausibility evidence, not accident-location verification",
+    "No geocoding-provider query, interpolation, repair, or status update performed",
+    "Unresolved recovery success cannot be estimated from textual eligibility alone"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "decision": "REVIEWER_MUST_REPLACE_WITH_approve_apply",
+  "reviewer": "",
+  "approved_at": "",
+  "candidate_sha256": "21f56b1bc04220295c9d6a480cbb0c7e093d20ce532e649a3ac8706da9bfc1d6",
+  "run_manifest_sha256": "c098e0398f2507126efd5d04241f975ece76a8d26f51e6a35ef4cca80dbb47df",
+  "independent_summary_sha256": "cc7eb0951e41fc56cae002fbf692440491bf9827cd4ac3bdaf8a1cd03038ab09",
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "method_version": "sangis-stage-a-local-v2",
+  "validation_version": "sangis-stage-c-strict-v1",
+  "stage_c_validation_manifest_sha256": "5692f7a6fadfc59732373d0793ca65346a01805ccfe323896b201610bd8e632c",
+  "stage_c_allowlist_sha256": "5cc1ae3c9cc4a53ca8b400cd777544778233a508c34f4475a33c4d66454e00f8",
+  "report_ids": [],
+  "acknowledge_temporal_uncertainty": false,
+  "acknowledge_independent_validation_limitations": false,
+  "acknowledge_intersection_approximate_precision": false,
+  "historical_review_basis": "",
+  "allow_precision_migration": false
+}

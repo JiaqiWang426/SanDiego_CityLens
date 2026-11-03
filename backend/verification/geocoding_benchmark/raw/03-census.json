@@ -1,0 +1,54 @@
+{
+  "address_id": "03",
+  "provider": "census",
+  "input_address": "6555 Ambrosia Dr, San Diego, CA",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=6555+Ambrosia+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json",
+  "fetched_at": "2026-11-03T00:09:35.179644+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "city": "San Diego",
+          "street": "6555 Ambrosia Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "195321908"
+          },
+          "coordinates": {
+            "x": -117.106755623747,
+            "y": 32.794808303186
+          },
+          "addressComponents": {
+            "zip": "92124",
+            "streetName": "AMBROSIA",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "6501",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "6599",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "6555 AMBROSIA DR, SAN DIEGO, CA, 92124"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 398.274
+}

@@ -1,0 +1,43 @@
+{
+  "backend_focused": {
+    "command": "python -m pytest backend/agent_tests/test_location_flow.py -q",
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0
+  },
+  "related_regression": {
+    "passed": 72,
+    "skipped": 23,
+    "deselected": 7,
+    "note": "Earlier run included then-current 30 new cases; totals overlap. Disposable-DB cases were opt-in and not run."
+  },
+  "frontend": {
+    "startup_scenarios": 3,
+    "location_scenarios": 3,
+    "failed": 0,
+    "runtime": "Node VM; no added dependencies"
+  },
+  "smoke": {
+    "artifact": "2026-11-02-p1_2-smoke.json",
+    "real_read_only_sql_calls": 2,
+    "model": "mocked",
+    "geocoder": "mocked",
+    "external_api_calls": 0
+  },
+  "database": {
+    "collision_records": 78494,
+    "matched_and_located": 59627,
+    "counts_unchanged": true,
+    "writes_performed": false
+  },
+  "not_run": [
+    "live OpenAI",
+    "live interactive Census",
+    "full browser visual QA",
+    "unrelated full repository/real-data suites"
+  ],
+  "limitations": [
+    "process-local pending state; one server worker",
+    "30-minute expiry; restart/reload starts a new question"
+  ]
+}

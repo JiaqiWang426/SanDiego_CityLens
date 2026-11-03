@@ -1,0 +1,75 @@
+{
+  "id": "1bd591430fa74c8bb0b2f46550eef8c0",
+  "owner": "SanGIS",
+  "orgId": "0123456789ABCDEF",
+  "created": 1784753970499,
+  "modified": 1791301173922,
+  "guid": null,
+  "name": "Roads_Intersection",
+  "title": "Roads_Intersection",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS",
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Metadata",
+    "providerSDS",
+    "Service",
+    "Hosted Service"
+  ],
+  "description": "This dataset consists of points representing intersection nodes at the end of individual road segments in the SanGIS ROADS_ALL layer (and derivative road layers). This feature class is linked to the SanGIS road layers via the intersection ID (INTERID) field. Key attributes of this dataset include intersection ID and intersection type of which there are 13 types (e.g. cul-de-sac, end segment and intersection). Further details of individual fields are included in field definitions below. Points are located at the end of each road segment. SanGIS road centerlines are broken into segments between intersection points. Intersections are created whenever two roads come together and at other locations as determined by SanGIS standards of practice. These additional locations include places where the road name changes, where a road traverses a jurisidictional boundary, in certain cases where a road goes from one police beat to another, and at other places as defined by the TYPE attribute.",
+  "tags": [
+    "Intersection",
+    "road intersection points",
+    "San Diego County",
+    "street intersection"
+  ],
+  "snippet": "This dataset consists of points which represent intersection nodes at the end of individual road segments in the SanGIS ROADS_ALL layer.",
+  "thumbnail": "thumbnail/thumbnail.png",
+  "documentation": null,
+  "extent": [
+    [
+      -117.5970277750033,
+      32.5306450743902
+    ],
+    [
+      -116.08023054077134,
+      33.50677701867893
+    ]
+  ],
+  "categories": [
+    "/Categories/Transportation"
+  ],
+  "spatialReference": "102646",
+  "accessInformation": "SanGIS with assistance from SanGIS JPA member users.",
+  "classification": null,
+  "licenseInfo": "<div><a target='_blank' href='https://gis.sangis.org/sanportal/apps/storymaps/stories/d26146d84e834ff6bcd58e4e620a983a' rel='nofollow ugc noopener noreferrer'><strong>SanGIS Legal Notice</strong></a></div><div>&nbsp;</div><div>SanGIS GIS Data End User Use Agreement and Disclaimer for Data Released to the Public</div><div>READ THESE TERMS CAREFULLY BEFORE USING THE DIGITAL DATA!</div><div>Use of the data specifically acknowledges the end user\u2019s acceptance of the below terms of use and disclaimer.</div><div>&nbsp;</div><div>A. Definitions</div><div>&nbsp;</div><div>The following words, phrases, or terms shall have the following meaning:</div><div>&nbsp;</div><div>1. \"End User\" means, without limitation, any natural person, firm, corporation, partnership, business entity of any kind, or local, state, or federal public entity in possession of the data.</div><div>&nbsp;</div><div>2. \"The data\" or \"data\" mean the contents of a package of GIS information specifically designed for released to the public.</div><div>&nbsp;</div><div>B. General Disclaimer</div><div>&nbsp;</div><div>The data provided are collected from various sources and will change over time without notice. In using the data, users should be aware that some of these data are generalized and were created for use in regional projects. While SanGIS believes the data is accurate and properly functioning, SanGIS disclaims any responsibility for the accuracy or correctness of the data. The data is provided on an \"AS IS\", \"AS AVAILABLE\" and \"WITH ALL FAULTS\" basis. SanGIS makes no warranties, express or implied, including but not limited to any warranties of merchantability or fitness for a particular purpose, nor shall the distribution of this information constitute any warranty.</div><div>&nbsp;</div><div>In no event shall SanGIS become liable to users of these data, or any other party, for any loss or damages, consequential or otherwise, including but not limited to time, money, or goodwill, arising from the use, operation or modification of the data. In using these data, you further agree to indemnify, defend, and hold harmless and release SanGIS for any and all liability of any nature arising out of or resulting from the lack of accuracy or correctness of the data, or the use of the data.</div><div>&nbsp;</div><div>In making this release the user of the data intends to release SanGIS and its agents from any liability of any nature whatsoever for any claim or injury or for damages or equitable or declaratory relief of any kind, whether the claim or any facts on such claim might be based, is known or unknown to the party possessing the claim. The user of the data expressly waives all rights under Section 1542 of the Civil Code of the State of California, which provides:</div><div>&nbsp;</div><div>A general release does not extend to claims which the creditor does not know or suspect to exist in his or her favor at the time of executing the release, which if known by him or her must have materially affected his or her settlement with the debtor.</div><div>&nbsp;</div><div>To facilitate that appropriate documentation and data use limitations are communicated, SanGIS discourages, but does not prohibit, the re-distribution of this data. Although not required by law, it is considered a best practice to properly acknowledge SanGIS as a reference source when SanGIS data are used in the preparation of reports, papers, publications, maps, and other products (as defined in the scope of use in Sections D and E).</div><div>&nbsp;</div><div>C. Specific Disclaimer Against Certain Types of Activities</div><div>&nbsp;</div><div>Without limiting the scope of the above section B. General Disclaimer, the following specific disclaimers are set forth as follows:</div><div>&nbsp;</div><div>The data is not fault-tolerant and are not designed, manufactured, or intended for use or resale for use for insurance underwriting, insurance settlements, or insurance adjustment payments nor is it to be used with critical health and safety or online control equipment in hazardous environments that require fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, search and rescue, emergency response, terrorism prevention or response, fire fighting, life support, or weapons systems (\"High Risk Activities\"). SANGIS SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.</div><div>&nbsp;</div><div>The end user agrees to indemnify, defend, and hold SanGIS, its officers, directors, employees, agents, subcontractors, licensors, successors, and assigns harmless from and against any and all liability, losses, claims, expenses (including attorneys' fees), demands, or damages of any kind, including direct, indirect, special, punitive, incidental, or consequential damages, arising out of or in any way connected with end user or permitting the use by others of Deliverables for High Risk Activities. Delivery of Deliverables does not constitute a waiver of the rights and obligations set forth in this disclaimer.</div><div>&nbsp;</div><div>D. Additional Limitations On Use of the Data</div><div>&nbsp;</div><div>The end user acknowledges that there are additional legal limitations on the use of these data beyond this EULA. Data may not be used and shared in any/all circumstances and it is incumbent upon the end user to be familiar with and comply with any and all relevant and applicable state and federal laws governing the subsequent use of data once it is received from SanGIS.</div><div>&nbsp;</div><div>End users should be aware that the data does not meet National Map Accuracy Standards at scales finer than 1:24,000. Any attempt to represent the data at finer scales will introduce positional error. SanGIS shall not be attributed as the source of the data when representing the data at scales below 1:24,000 absolute scale. An exemption to the attribution prohibition is provided to the end user if the GIS data released to them from SanGIS is specifically identified as capable of performing at absolute scales below 1:24,000. UNDER NO CIRCUMSTANCES SHALL THE END USER MODIFY OR ALTER THE SANGIS SOURCE DATA IN ANY WAY AND REDISTRIBUTE IT AS AN ORIGINAL SANGIS PRODUCT. IF THE SANGIS SOURCE DATA IS ALTERED SANGIS MAY BE CITED AS A REFERNCE BUT SHALL NOT BE IDENTIFED AS THE SOLE DATA SOURCE. Suitable map citation language may include phrases such as, \"GIS data derived, modified, reduced, and/or processed from SanGIS downloadable data - www.sangis.org Copyright SanGIS 2009\"</div><div>&nbsp;</div><div>E. Conventions on the Citation of SanGIS Data</div><div>&nbsp;</div><div>End users are encouraged to cite SanGIS with the following Modern Language Association (MLA) 2008 accepted citation format for websites and website content when it is included in reports, papers, publications, and presentations:</div><div>&nbsp;</div><div>&lt; Name of Dataset Author &gt;. \"Name of Dataset as downloaded\" Name of Organization associated with Author SanGIS Data Warehouse. &lt; Date the Dataset was Created &gt;. San Diego Geographic Information Source - JPA. &lt; Date Downloaded &gt; &lt; https://www.sangis.org/download/index.html &gt;.</div><div>&nbsp;</div><div>When unaltered SanGIS data is included in map publications the use of the following disclaimer is also highly encouraged for members of the public and required use by SanGIS staff and SanGIS JPA members:</div><div>&nbsp;</div><div>THIS MAP/DATA IS PROVIDED WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</div><div>&nbsp;</div><div>Copyright SanGIS 2015 - All Rights Reserved.</div><div>&nbsp;</div><div>This Agreement shall be construed in accordance with the laws of the United States and the State of California. In any litigation brought to enforce or interpret this Agreement, venue shall rest solely in the County of San Diego, State of California.</div><div>&nbsp;</div><div>Date: April 2, 2015</div>",
+  "culture": "en-us",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_Intersection/FeatureServer",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 9286767,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": false,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 117,
+  "privateUrl": "https://geo.sandag.org/server/rest/services/Hosted/Roads_Intersection/FeatureServer",
+  "scoreCompleteness": 100,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "lastViewed": -1
+}

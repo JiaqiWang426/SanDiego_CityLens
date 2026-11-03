@@ -1,0 +1,791 @@
+{
+  "isCoGoEnabled": false,
+  "extent": {
+    "ymin": 1775442.363798231,
+    "xmin": 6152307.00005281,
+    "ymax": 2129332.531344563,
+    "xmax": 6613087.990890548,
+    "spatialReference": {
+      "falseM": -100000,
+      "xyTolerance": 0.003280833333333333,
+      "mUnits": 10000,
+      "zUnits": 10000,
+      "latestWkid": 2230,
+      "zTolerance": 0.001,
+      "wkid": 102646,
+      "xyUnits": 3048.0060960121928,
+      "mTolerance": 0.001,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000
+    }
+  },
+  "isDataBranchVersioned": false,
+  "supportsApplyEditsWithGlobalIds": false,
+  "maxRecordCount": 2000,
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "datesInUnknownTimezone": false,
+  "type": "Feature Layer",
+  "syncEnabled": false,
+  "supportsAttachmentsByUploadId": true,
+  "editingInfo": {
+    "lastEditDate": 1791297833198
+  },
+  "relationships": [],
+  "supportedAppendCapabilities": "Features,Attachments",
+  "supportsAttachmentsResizing": true,
+  "cimVersion": "3.7.0",
+  "isDataArchived": false,
+  "id": 0,
+  "spatialReference": {
+    "falseM": -100000,
+    "xyTolerance": 0.003280833333333333,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "latestWkid": 2230,
+    "zTolerance": 0.001,
+    "wkid": 102646,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "supportsSubtypeEditing": true,
+  "supportsStatistics": true,
+  "supportedExportFormats": "csv,excel,featureCollection,filegdb,geojson,kml,shapefile,sqlite",
+  "hasLastEditTime": false,
+  "standardMaxRecordCount": 16000,
+  "isDataVersioned": false,
+  "templates": [
+    {
+      "name": "Address_Points",
+      "description": "",
+      "drawingTool": "esriFeatureEditToolPoint",
+      "prototype": {
+        "attributes": {
+          "usng": null,
+          "addrjur": null,
+          "x_coord": null,
+          "orig_oid": null,
+          "addrfrac": null,
+          "addrname": null,
+          "addrsfx": null,
+          "address_type": null,
+          "addrzip": null,
+          "addrpostd": null,
+          "community": null,
+          "addrpdir": null,
+          "addrapnid": null,
+          "parcelid": null,
+          "roadsegid": null,
+          "asource": null,
+          "placement_location": null,
+          "addrunit": null,
+          "y_coord": null,
+          "state": "CA",
+          "apn": null,
+          "addrnmbr": null
+        }
+      }
+    }
+  ],
+  "supportsAdvancedQueries": true,
+  "parentLayer": null,
+  "currentVersion": 12.1,
+  "canScaleSymbols": false,
+  "hasZ": false,
+  "advancedEditingCapabilities": {
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportsReturnEditResults": true,
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "objectIdField": "objectid",
+  "supportsQuantizationEditMode": true,
+  "hasContingentValuesDefinition": false,
+  "name": "Address_Points",
+  "displayField": "addrname",
+  "supportsCalculate": true,
+  "fields": [
+    {
+      "modelName": "objectid",
+      "nullable": false,
+      "defaultValue": null,
+      "editable": false,
+      "domain": null,
+      "length": 4,
+      "name": "objectid",
+      "alias": "objectid",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "modelName": "ADDRNMBR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrnmbr",
+      "alias": "NUMBER",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "ADDRFRAC",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrfrac",
+      "length": 3,
+      "alias": "FRACTION",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRPDIR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrpdir",
+      "length": 2,
+      "alias": "PREDIRECTION",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRNAME",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrname",
+      "length": 30,
+      "alias": "NAME",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRPOSTD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrpostd",
+      "length": 2,
+      "alias": "POST_DIRECTION",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRSFX",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrsfx",
+      "length": 4,
+      "alias": "SUFFIX",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRUNIT",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrunit",
+      "length": 8,
+      "alias": "UNIT",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRJUR",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Juisdiction",
+        "description": "",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "CB",
+            "name": "Carlsbad"
+          },
+          {
+            "code": "CN",
+            "name": "County of San Diego"
+          },
+          {
+            "code": "CO",
+            "name": "Coronado"
+          },
+          {
+            "code": "CV",
+            "name": "Chula Vista"
+          },
+          {
+            "code": "DM",
+            "name": "Del Mar"
+          },
+          {
+            "code": "EC",
+            "name": "El Cajon"
+          },
+          {
+            "code": "EN",
+            "name": "Encinitas"
+          },
+          {
+            "code": "ES",
+            "name": "Escondido"
+          },
+          {
+            "code": "IB",
+            "name": "Imperial Beach"
+          },
+          {
+            "code": "LG",
+            "name": "Lemon Grove"
+          },
+          {
+            "code": "LM",
+            "name": "La Mesa"
+          },
+          {
+            "code": "NC",
+            "name": "National City"
+          },
+          {
+            "code": "OC",
+            "name": "Oceanside"
+          },
+          {
+            "code": "PW",
+            "name": "Poway"
+          },
+          {
+            "code": "SD",
+            "name": "San Diego"
+          },
+          {
+            "code": "SM",
+            "name": "San Marcos"
+          },
+          {
+            "code": "SO",
+            "name": "Solana Beach"
+          },
+          {
+            "code": "ST",
+            "name": "Santee"
+          },
+          {
+            "code": "VS",
+            "name": "Vista"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "addrjur",
+      "length": 2,
+      "alias": "JURISDICTION",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRZIP",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrzip",
+      "length": 5,
+      "alias": "ZIP",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ROADSEGID",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "roadsegid",
+      "alias": "ROADSEGID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "APN",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "apn",
+      "length": 10,
+      "alias": "APN",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "SOURCE",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Address Source",
+        "description": "",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "M",
+            "name": "Assessor Master Property Record"
+          },
+          {
+            "code": "S",
+            "name": "SanGIS"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "asource",
+      "length": 1,
+      "alias": "ASOURCE",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "X_COORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "x_coord",
+      "alias": "X_COORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "Y_COORD",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "y_coord",
+      "alias": "Y_COORD",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "modelName": "STATE",
+      "nullable": false,
+      "editable": true,
+      "defaultValue": "CA",
+      "domain": null,
+      "name": "state",
+      "length": 2,
+      "alias": "STATE",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "PLACEMENT_LOCATION",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDefaultValue",
+        "name": "Placement_Location",
+        "description": "Location of address point on parcel",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "S",
+            "name": "Structure"
+          },
+          {
+            "code": "E",
+            "name": "Entrance"
+          },
+          {
+            "code": "C",
+            "name": "Centroid"
+          },
+          {
+            "code": "U",
+            "name": "Unknown"
+          },
+          {
+            "code": "R",
+            "name": "Review"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "placement_location",
+      "length": 1,
+      "alias": "PLACEMENT_LOCATION",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "COMMUNITY",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "community",
+      "length": 20,
+      "alias": "POSTAL_COMMUNITY",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "ADDRESS_TYPE",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": {
+        "splitPolicy": "esriSPTDuplicate",
+        "name": "Address Type",
+        "description": "Types of address points",
+        "type": "codedValue",
+        "codedValues": [
+          {
+            "code": "A",
+            "name": "ATM; Automatic Teller Machine"
+          },
+          {
+            "code": "B",
+            "name": "Comfort Station"
+          },
+          {
+            "code": "C",
+            "name": "Cable TV"
+          },
+          {
+            "code": "D",
+            "name": "SD Unified Port Dist Tidelands"
+          },
+          {
+            "code": "E",
+            "name": "Elec; Meter, Pedestal, Temp Sv"
+          },
+          {
+            "code": "F",
+            "name": "Parks and Recreation"
+          },
+          {
+            "code": "G",
+            "name": "Federal Property, Caltrans"
+          },
+          {
+            "code": "H",
+            "name": "Fire Department"
+          },
+          {
+            "code": "I",
+            "name": "Irrigation System; Meter"
+          },
+          {
+            "code": "J",
+            "name": "County Property"
+          },
+          {
+            "code": "K",
+            "name": "Kiosk"
+          },
+          {
+            "code": "L",
+            "name": "Stop Light, Street Light"
+          },
+          {
+            "code": "M",
+            "name": "State Property, Caltrans"
+          },
+          {
+            "code": "P",
+            "name": "Pacbel Equip, Sub Station, etc"
+          },
+          {
+            "code": "Q",
+            "name": "Police Department"
+          },
+          {
+            "code": "R",
+            "name": "Retaining Wall, Crib Wall"
+          },
+          {
+            "code": "S",
+            "name": "Sign"
+          },
+          {
+            "code": "T",
+            "name": "Pole; Telephone, Meter, Power"
+          },
+          {
+            "code": "V",
+            "name": "Other City Departments"
+          },
+          {
+            "code": "X",
+            "name": "Alias Address"
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue"
+      },
+      "name": "address_type",
+      "length": 1,
+      "alias": "ADDRESS_TYPE",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "addrapnid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "addrapnid",
+      "length": 25,
+      "alias": "ADDRAPNID",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "parcelid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "parcelid",
+      "alias": "PARCELID",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "modelName": "usng",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "usng",
+      "length": 255,
+      "alias": "USNG",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "modelName": "orig_oid",
+      "nullable": true,
+      "editable": true,
+      "defaultValue": null,
+      "domain": null,
+      "name": "orig_oid",
+      "alias": "ORIG_OID",
+      "type": "esriFieldTypeInteger"
+    }
+  ],
+  "maxRecordCountFactor": 1,
+  "dateFieldsTimeReference": {
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false,
+    "timeZone": "UTC"
+  },
+  "supportsFieldDescriptionProperty": true,
+  "hasM": false,
+  "allowGeometryUpdates": true,
+  "useStandardizedQueries": true,
+  "globalIdField": null,
+  "sourceSpatialReference": {
+    "wkt": "PROJCS[\"NAD_1983_StatePlane_California_VI_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"False_Easting\",6561666.666666666],PARAMETER[\"False_Northing\",1640416.666666667],PARAMETER[\"Central_Meridian\",-116.25],PARAMETER[\"Standard_Parallel_1\",32.78333333333333],PARAMETER[\"Standard_Parallel_2\",33.88333333333333],PARAMETER[\"Latitude_Of_Origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]",
+    "falseM": -100000,
+    "mUnits": 10000,
+    "zUnits": 10000,
+    "zTolerance": 0.001,
+    "wkid": 2230,
+    "xyUnits": 3048.0060960121928,
+    "mTolerance": 0.001,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000
+  },
+  "description": "SITUS address points within the County of San Diego with corresponding Assessor Parcel Number (APN). The dataset includes address fields, x y coordinates, US National Grid coordinates, address type, and placement location (e.g. structure or centroid) for each feature. These are SITUS addresses. That is, they refer to the officially assigned address for a tax parcel. They may not be the house or mailing address or the owner address of the property.Address points in this layer are derived from two sources: The County of San Diego's Assessor's Office Master Property Record (MPR) and address points provided to SanGIS by the addressing authority in each jurisdiction (18 cities and the County of San Diego). Not all jurisdictions provide address points to SanGIS. SanGIS attempts to eliminate duplicate points so that only one address-APN combination is present for each parcel (although there may be multiple addresses on the property). Priority is given to the SanGIS address point over the one derived from the MPR under the assumption that the points from the addressing authority of each jurisidiction is more current. Address point source is indicated in the ASOURCE field.SanGIS is in the process of updating address point locations to more accurately reflect the SITUS address. Where possible, address points are being located to the primary structure on the property. This is a long term, ongoing effort and many points have not yet been relocated. Address points are tagged with a placement location of 'Review' until they are reviewed and edited accordingly. The location of the address point is indicated in the PLACEMENT_LOCATION attribute. All points derived from the Assessor's MPR are placed at the centroid of the parcel.Refer to field descriptions under Resources for a full listing.",
+  "syncCanReturnChanges": true,
+  "supportsAsyncDelete": true,
+  "supportsAdminApi": true,
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin"
+  ],
+  "supportsRollbackOnFailureParameter": true,
+  "isDataReplicaTracked": false,
+  "standardMaxRecordCountNoGeometry": 16000,
+  "supportsTruncate": true,
+  "indexes": [
+    {
+      "name": "r2979_sde_rowid_uk",
+      "isUnique": true,
+      "description": "",
+      "fields": "objectid",
+      "isAscending": true
+    },
+    {
+      "name": "a2873_ix1",
+      "isUnique": false,
+      "description": "",
+      "fields": "shape",
+      "isAscending": true
+    }
+  ],
+  "supportedAppendSourceFilterFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "editFieldsInfo": null,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "GUIDFormat": "O",
+  "minScale": 0,
+  "hasAttachments": false,
+  "queryBinsCapabilities": {
+    "supportedNormalizationTypes": [
+      "boxCox",
+      "field",
+      "inverse",
+      "log",
+      "naturalLog",
+      "percentOfTotal",
+      "squareRoot"
+    ],
+    "supportsNormalization": true,
+    "supportsSnapToData": true,
+    "supportsFixedIntervalBin": true,
+    "supportsStackBy": true,
+    "supportsDateBin": true,
+    "supportsSplitBy": true,
+    "supportsClassificationBin": true,
+    "supportsAggIds": true,
+    "supportsReturnFullIntervalBin": true,
+    "supportsFirstDayOfWeek": true,
+    "supportedStatisticTypes": [
+      "count",
+      "sum",
+      "min",
+      "max",
+      "avg",
+      "stddev",
+      "var",
+      "percentile_cont",
+      "percentile_disc"
+    ],
+    "supportsAutoIntervalBin": true,
+    "supportsFixedBoundariesBin": true
+  },
+  "advancedQueryCapabilities": {
+    "supportsSqlExpression": true,
+    "supportsQueryWithResultType": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithCacheHint": false,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsCurrentUserQueries": true,
+    "supportsQueryAttachmentsWithReturnUrl": true,
+    "fullTextSearchCapabilities": {
+      "supportsOperator": true,
+      "supportsSearchOperator": true
+    },
+    "supportsDefaultSR": true,
+    "supportsQueryDateBins": true,
+    "supportsQueryBins": true,
+    "supportsQueryWithLodSR": true,
+    "supportsPaginationOnAggregatedQueries": true,
+    "supportsPagination": true,
+    "supportsMaxRecordCountFactor": true,
+    "supportsDegeneratedQuantizedGeometry": true,
+    "fullTextSearchableFields": [],
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsQueryAttachmentWithTypeWildcard": true,
+    "supportsFullTextSearch": true,
+    "supportsQueryWithDistance": true,
+    "supportsLod": true,
+    "supportsQueryAttachmentOrderByFields": true,
+    "supportsCountDistinct": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsQueryAttachments": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryAttachmentsCountOnly": true,
+    "supportsISODOW": true,
+    "supportsOrderByOnlyOnLayerFields": false,
+    "supportsOutFieldSqlExpression": true,
+    "supportsTopFeaturesQuery": true,
+    "supportsReturningGeometryEnvelope": false,
+    "supportsDistinct": true,
+    "supportsReturningGeometryCentroid": false,
+    "supportsQueryAnalytic": true,
+    "supportsPercentileStatistics": true,
+    "supportsISOWeek": true,
+    "supportsHavingClause": true
+  },
+  "subtypeField": "",
+  "supportsValidateSQL": true,
+  "enableZDefaults": true,
+  "serviceItemId": "e58eba41d6a349dd92e97e64b4e62074",
+  "allowUpdateWithoutMValues": true,
+  "supportsCoordinatesQuantization": true,
+  "types": [],
+  "capabilities": "Query,Extract",
+  "maxScale": 0,
+  "supportsAppend": true,
+  "supportsExceedsLimitStatistics": true,
+  "defaultVisibility": true,
+  "advancedQueryAnalyticCapabilities": {
+    "supportsAsync": true,
+    "supportsLinearRegression": true,
+    "supportsPercentileAnalytic": false
+  },
+  "hasMetadata": true,
+  "supportedAppendFormats": "csv,excel,featureCollection,featureService,geojson,imageCollection,jsonl,pbf,shapefile",
+  "tileMaxRecordCount": 4000,
+  "typeIdField": "",
+  "supportsASyncCalculate": true,
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "sqlParserVersion": "PG_11.4.0",
+  "drawingInfo": {
+    "renderer": {
+      "symbol": {
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "width": 0.7
+        },
+        "color": [
+          152,
+          60,
+          163,
+          255
+        ],
+        "size": 4,
+        "yoffset": 0,
+        "xoffset": 0,
+        "angle": 0,
+        "style": "esriSMSCircle",
+        "type": "esriSMS"
+      },
+      "type": "simple"
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "geometryField": {
+    "sqlType": "sqlTypeDistinct",
+    "nullable": true,
+    "editable": true,
+    "name": "shape",
+    "typeName": "st_point",
+    "length": 2147483647,
+    "type": "esriFieldTypeGeometry"
+  },
+  "copyrightText": "SanGIS using legal recorded data provided by the County Assessors Office and addressing authorities from the 18 incorporated cities in the County.",
+  "zDefault": 0,
+  "geometryType": "esriGeometryPoint",
+  "supportsLayerOverrides": true
+}

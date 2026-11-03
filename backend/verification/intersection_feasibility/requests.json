@@ -1,0 +1,241 @@
+{
+  "hard_cap": 64,
+  "attempts": [
+    {
+      "kind": "metadata",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0?f=json",
+      "status": "captured_before_query_design"
+    },
+    {
+      "kind": "metadata",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_Intersection/FeatureServer/0?f=json",
+      "status": "captured_before_query_design"
+    },
+    {
+      "kind": "metadata",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer?f=json",
+      "status": "captured_before_query_design"
+    },
+    {
+      "kind": "metadata",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8?f=json",
+      "status": "captured_before_query_design"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%2707TH+AVE%27%2C%2711TH+AVE%27%2C%2713TH+ST%27%2C%2715%27%2C%2730TH+ST%27%2C%2739TH+ST%27%2C%2760TH+ST%27%2C%277TH+AVE%27%2C%27ADAMS+AVE%27%2C%27ALABAMA+ST%27%2C%27ALAQUINAS+DR%27%2C%27BERNARDO+HEIGHTS+PKWY%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:00.596713+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27BEYER+BLVD%27%2C%27BLACK+MOUNTAIN+RD%27%2C%27BROADWAY%27%2C%27C+ST%27%2C%27CALLE+SAUCILLO%27%2C%27CALLE+TRES+LOMAS%27%2C%27CAM+DE+LA+COSTA%27%2C%27CAM+DEL+RIO+W%27%2C%27CAM+DEL+RIO+WEST%27%2C%27CAM+DEL+SUR%27%2C%27CAMINO+DE+LA+COSTA%27%2C%27CAMINO+DEL+RIO+W%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:03.243679+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27CAMINO+DEL+RIO+WEST%27%2C%27CAMINO+DEL+SUR%27%2C%27CARMEL+VALLEY+RD%27%2C%27CERRO+DEL+SUR+CT%27%2C%27COLLEGE+AVE%27%2C%27CURB+LINE%27%2C%27CURB+LINE+OF+LINDA+VISTA+RD%27%2C%27DEEP+DELL+RD%27%2C%27E+ALLEY+OF+1000+25TH+ST%27%2C%27E+CURBLINE%27%2C%27E+EDGE+OF+THE+NORTHBOUND+I-5+OFF-RAMP%27%2C%27E+ST%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:05.885330+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27EAST+CURBLINE%27%2C%27EAST+EDGE+OF+THE+NORTHBOUND+I-5+OFF-RAMP%27%2C%27EL+CAJON+BLVD%27%2C%27EL+CAMINO+REAL%27%2C%27FRIARS+RD%27%2C%27GENESEE+AVE%27%2C%27GRAND+AVE%27%2C%27GROVE+AVE%27%2C%27HIGHLANDS+VILLAGE+PL%27%2C%27HILLERY+DR%27%2C%27I-5+SB%27%2C%27IMPERIAL+AVE%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:08.491541+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27INGRAHAM+ST%27%2C%27INTERSECTION+OF+INT+805+SB+OFFRAMP%27%2C%27INTERSTATE%27%2C%27INTERSTATE+15+SB%27%2C%27INTERSTATE+15+SB+OFF+RAMP%27%2C%27INTERSTATE+RAMP%27%2C%27IVANHOE+EAST+AVE%27%2C%27KENDALL+ST%27%2C%27LA+JOLLA+BLVD%27%2C%27LA+JOLLA+SHORES+DR%27%2C%27LIVINGSTON+ST%27%2C%27MAIN+ST%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:11.333274+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27MARTIN+AVE%27%2C%27MIRA+MESA+BLVD%27%2C%27MISSION+VILLAGE+DR%27%2C%27MORENA+BLVD%27%2C%27N+BOUND+I15+EXIT+ONTO+EB+EL+CAJON+BLVD%27%2C%27N+LN%27%2C%27N+PARK+WAY%27%2C%27NATIONAL+AVE%27%2C%27NORMAL+ST%27%2C%27NORTH+BOUND+I15+EXIT+ONTO+EB+EL+CAJON+BLVD%27%2C%27NORTH+LN%27%2C%27NORTH+PARK+WAY%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:14.076802+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27OCEAN+VIEW+BLVD%27%2C%27OLD+EL+CAMINO+REAL%27%2C%27PACIFIC+HWY%27%2C%27PALM+AVE%27%2C%27PARADISE+VALLEY+RD%27%2C%27PARK+BLVD%27%2C%27PARK+BOULVARD%27%2C%27PASEO+LUCIDO%27%2C%27POMERADO+RD%27%2C%27QUIVIRA+RD%27%2C%27RANCHO+BERNARDO+RD%27%2C%27RAY+ST%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:16.554061+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27ROANOKE+ST%27%2C%27S+32ND+ST%27%2C%27S+45TH+ST%27%2C%27S+47TH+ST%27%2C%27S+CURB+LINE%27%2C%27SAMPSON+ST%27%2C%27SAN+DIEGUITO+RD%27%2C%27SATURN+BLVD%27%2C%27SCRANTON+RD%27%2C%27SEA+WORLD+DR%27%2C%27SORRENTO+VALLEY+BLVD%27%2C%27SOUTH+CURB+LINE%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:19.406239+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27TELEGRAPH+PL%27%2C%27TORREY+PINES+RD%27%2C%27UNIVERSITY+AVE%27%2C%27VIA+DE+LA+VALLE%27%2C%27VIA+DE+SAN+YSIDRO%27%2C%27VIA+DEL+CANON%27%2C%27VIA+LAS+CUMBRES%27%2C%27W%27%2C%27W+ALLEY+OF+4000+FRONT+ST%27%2C%27W+BERNARDO+DR%27%2C%27W+CURB+LINE%27%2C%27W+MISSION+BAY+DR%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:21.989124+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "road_names",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=UPPER%28rd30full%29+IN+%28%27W+MISSION+BAY+RD%27%2C%27W+SAN+YSIDRO+BLVD%27%2C%27W+WASHINGTON+ST%27%2C%27WEST%27%2C%27WEST+BERNARDO+DR%27%2C%27WEST+CURB+LINE%27%2C%27WEST+WASHINGTON+ST%27%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json&geometry=%7B%22xmin%22%3A+-117.6%2C+%22ymin%22%3A+32.5%2C+%22xmax%22%3A+-116.8%2C+%22ymax%22%3A+33.2%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+      "started_at": "2026-11-03T03:07:24.589066+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "nodes",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_Intersection/FeatureServer/0/query?where=interid+IN+%2844342%2C47720%2C49054%2C49110%2C49229%2C49743%2C51429%2C54526%2C56210%2C56213%2C56215%2C56218%2C56220%2C56229%2C56231%2C56233%2C56236%2C56239%2C56240%2C56254%2C56265%2C56268%2C56308%2C56466%2C56536%2C56537%2C56547%2C56552%2C56556%2C56579%2C56618%2C56727%2C56805%2C56853%2C56901%2C56920%2C56967%2C56986%2C57041%2C57074%2C57160%2C57375%2C57658%2C57858%2C57973%2C57976%2C58031%2C61803%2C62842%2C69500%2C72127%2C72129%2C72132%2C74249%2C77391%2C81872%2C82149%2C83063%2C83306%2C83457%2C83715%2C84261%2C84571%2C84655%2C84780%2C85412%2C85835%2C86423%2C86576%2C87006%2C87298%2C87540%2C87569%2C87846%2C87976%2C88003%2C88262%2C88410%2C88695%2C89016%2C89459%2C89773%2C89951%2C90149%2C90456%2C91339%2C91852%2C92487%2C92978%2C93481%2C94184%2C94575%2C94838%2C94905%2C94963%2C94995%2C95017%2C95029%2C95060%2C95380%2C96044%2C96189%2C96406%2C96655%2C96884%2C96890%2C97138%2C97142%2C97415%2C97632%2C97867%2C98115%2C98310%2C98458%2C98540%2C98665%2C98772%2C98978%2C99029%2C99164%29&outFields=objectid%2Cinterid%2Ctype&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json",
+      "started_at": "2026-11-03T03:07:30.513705+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "incidence",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=fnode+IN+%2844342%2C47720%2C49054%2C49110%2C49229%2C49743%2C51429%2C54526%2C56210%2C56213%2C56215%2C56218%2C56220%2C56229%2C56231%2C56233%2C56236%2C56239%2C56240%2C56254%2C56265%2C56268%2C56308%2C56466%2C56536%2C56537%2C56547%2C56552%2C56556%2C56579%2C56618%2C56727%2C56805%2C56853%2C56901%2C56920%2C56967%2C56986%2C57041%2C57074%2C57160%2C57375%2C57658%2C57858%2C57973%2C57976%2C58031%2C61803%2C62842%2C69500%2C72127%2C72129%2C72132%2C74249%2C77391%2C81872%2C82149%2C83063%2C83306%2C83457%2C83715%2C84261%2C84571%2C84655%2C84780%2C85412%2C85835%2C86423%2C86576%2C87006%2C87298%2C87540%2C87569%2C87846%2C87976%2C88003%2C88262%2C88410%2C88695%2C89016%2C89459%2C89773%2C89951%2C90149%2C90456%2C91339%2C91852%2C92487%2C92978%2C93481%2C94184%2C94575%2C94838%2C94905%2C94963%2C94995%2C95017%2C95029%2C95060%2C95380%2C96044%2C96189%2C96406%2C96655%2C96884%2C96890%2C97138%2C97142%2C97415%2C97632%2C97867%2C98115%2C98310%2C98458%2C98540%2C98665%2C98772%2C98978%2C99029%2C99164%29+OR+tnode+IN+%2844342%2C47720%2C49054%2C49110%2C49229%2C49743%2C51429%2C54526%2C56210%2C56213%2C56215%2C56218%2C56220%2C56229%2C56231%2C56233%2C56236%2C56239%2C56240%2C56254%2C56265%2C56268%2C56308%2C56466%2C56536%2C56537%2C56547%2C56552%2C56556%2C56579%2C56618%2C56727%2C56805%2C56853%2C56901%2C56920%2C56967%2C56986%2C57041%2C57074%2C57160%2C57375%2C57658%2C57858%2C57973%2C57976%2C58031%2C61803%2C62842%2C69500%2C72127%2C72129%2C72132%2C74249%2C77391%2C81872%2C82149%2C83063%2C83306%2C83457%2C83715%2C84261%2C84571%2C84655%2C84780%2C85412%2C85835%2C86423%2C86576%2C87006%2C87298%2C87540%2C87569%2C87846%2C87976%2C88003%2C88262%2C88410%2C88695%2C89016%2C89459%2C89773%2C89951%2C90149%2C90456%2C91339%2C91852%2C92487%2C92978%2C93481%2C94184%2C94575%2C94838%2C94905%2C94963%2C94995%2C95017%2C95029%2C95060%2C95380%2C96044%2C96189%2C96406%2C96655%2C96884%2C96890%2C97138%2C97142%2C97415%2C97632%2C97867%2C98115%2C98310%2C98458%2C98540%2C98665%2C98772%2C98978%2C99029%2C99164%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json",
+      "started_at": "2026-11-03T03:07:30.866897+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "nodes",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_Intersection/FeatureServer/0/query?where=interid+IN+%2899251%2C99284%2C99306%2C99322%2C99399%2C99448%2C99458%2C99551%2C99628%2C99684%2C99694%2C99705%2C99769%2C99859%2C99941%2C100033%2C100122%2C100151%2C100152%2C100153%2C100154%2C100155%2C100156%2C100157%2C100158%2C100159%2C100160%2C100161%2C100162%2C100166%2C100167%2C100168%2C100169%2C100170%2C100171%2C100172%2C100173%2C100174%2C100176%2C100177%2C100178%2C100179%2C100212%2C100309%2C100326%2C100327%2C100334%2C100336%2C100338%2C100339%2C100340%2C100342%2C100344%2C100348%2C100356%2C100360%2C100364%2C100365%2C100366%2C100368%2C100369%2C100370%2C100372%2C100373%2C100380%2C100381%2C100385%2C100390%2C100391%2C100392%2C100396%2C100399%2C100406%2C100485%2C100526%2C100546%2C100586%2C100610%2C100649%2C100664%2C100675%2C100771%2C100830%2C100907%2C100990%2C101063%2C101131%2C101228%2C101330%2C101353%2C101410%2C101566%2C101607%2C104466%2C115922%2C116927%2C117096%2C163139%2C163159%2C163164%2C163165%2C163168%2C163169%2C163490%2C173086%2C173087%2C175672%2C175680%2C176256%2C176265%2C176655%2C180741%2C180774%2C181955%2C181956%2C181957%29&outFields=objectid%2Cinterid%2Ctype&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json",
+      "started_at": "2026-11-03T03:07:31.597274+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "incidence",
+      "url": "https://geo.sandag.org/server/rest/services/Hosted/Roads_All/FeatureServer/0/query?where=fnode+IN+%2899251%2C99284%2C99306%2C99322%2C99399%2C99448%2C99458%2C99551%2C99628%2C99684%2C99694%2C99705%2C99769%2C99859%2C99941%2C100033%2C100122%2C100151%2C100152%2C100153%2C100154%2C100155%2C100156%2C100157%2C100158%2C100159%2C100160%2C100161%2C100162%2C100166%2C100167%2C100168%2C100169%2C100170%2C100171%2C100172%2C100173%2C100174%2C100176%2C100177%2C100178%2C100179%2C100212%2C100309%2C100326%2C100327%2C100334%2C100336%2C100338%2C100339%2C100340%2C100342%2C100344%2C100348%2C100356%2C100360%2C100364%2C100365%2C100366%2C100368%2C100369%2C100370%2C100372%2C100373%2C100380%2C100381%2C100385%2C100390%2C100391%2C100392%2C100396%2C100399%2C100406%2C100485%2C100526%2C100546%2C100586%2C100610%2C100649%2C100664%2C100675%2C100771%2C100830%2C100907%2C100990%2C101063%2C101131%2C101228%2C101330%2C101353%2C101410%2C101566%2C101607%2C104466%2C115922%2C116927%2C117096%2C163139%2C163159%2C163164%2C163165%2C163168%2C163169%2C163490%2C173086%2C173087%2C175672%2C175680%2C176256%2C176265%2C176655%2C180741%2C180774%2C181955%2C181956%2C181957%29+OR+tnode+IN+%2899251%2C99284%2C99306%2C99322%2C99399%2C99448%2C99458%2C99551%2C99628%2C99684%2C99694%2C99705%2C99769%2C99859%2C99941%2C100033%2C100122%2C100151%2C100152%2C100153%2C100154%2C100155%2C100156%2C100157%2C100158%2C100159%2C100160%2C100161%2C100162%2C100166%2C100167%2C100168%2C100169%2C100170%2C100171%2C100172%2C100173%2C100174%2C100176%2C100177%2C100178%2C100179%2C100212%2C100309%2C100326%2C100327%2C100334%2C100336%2C100338%2C100339%2C100340%2C100342%2C100344%2C100348%2C100356%2C100360%2C100364%2C100365%2C100366%2C100368%2C100369%2C100370%2C100372%2C100373%2C100380%2C100381%2C100385%2C100390%2C100391%2C100392%2C100396%2C100399%2C100406%2C100485%2C100526%2C100546%2C100586%2C100610%2C100649%2C100664%2C100675%2C100771%2C100830%2C100907%2C100990%2C101063%2C101131%2C101228%2C101330%2C101353%2C101410%2C101566%2C101607%2C104466%2C115922%2C116927%2C117096%2C163139%2C163159%2C163164%2C163165%2C163168%2C163169%2C163490%2C173086%2C173087%2C175672%2C175680%2C176256%2C176265%2C176655%2C180741%2C180774%2C181955%2C181956%2C181957%29&outFields=objectid%2Croadsegid%2Cfnode%2Ctnode%2Cf_level%2Ct_level%2Crd30full%2Crd30pred%2Crd30name%2Crd30sfx%2Crd30postd%2Csegstat%2Csegclass%2Cfunclass%2Coneway%2Cljurisdic%2Crjurisdic&outSR=4326&returnGeometry=true&resultRecordCount=2000&f=json",
+      "started_at": "2026-11-03T03:07:31.869861+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.15480627179055%2C+%22ymin%22%3A+32.70428371346455%2C+%22xmax%22%3A+-117.15080627179056%2C+%22ymax%22%3A+32.70828371346455%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.15480627179055%2C32.70428371346455%2C-117.15080627179056%2C32.70828371346455&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:36.720768+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11831976971307%2C+%22ymin%22%3A+32.91510923035098%2C+%22xmax%22%3A+-117.11431976971308%2C+%22ymax%22%3A+32.91910923035098%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11831976971307%2C32.91510923035098%2C-117.11431976971308%2C32.91910923035098&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:37.513477+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12221410328705%2C+%22ymin%22%3A+32.78472568066863%2C+%22xmax%22%3A+-117.11821410328706%2C+%22ymax%22%3A+32.788725680668634%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12221410328705%2C32.78472568066863%2C-117.11821410328706%2C32.788725680668634&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:38.795829+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.22876360132541%2C+%22ymin%22%3A+32.98118973615317%2C+%22xmax%22%3A+-117.22476360132542%2C+%22ymax%22%3A+32.985189736153174%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.22876360132541%2C32.98118973615317%2C-117.22476360132542%2C32.985189736153174&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:39.441995+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23252624914129%2C+%22ymin%22%3A+32.98070128299028%2C+%22xmax%22%3A+-117.2285262491413%2C+%22ymax%22%3A+32.98470128299029%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23252624914129%2C32.98070128299028%2C-117.2285262491413%2C32.98470128299029&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:40.171978+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1271873058826%2C+%22ymin%22%3A+32.69743363937597%2C+%22xmax%22%3A+-117.12318730588261%2C+%22ymax%22%3A+32.70143363937598%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1271873058826%2C32.69743363937597%2C-117.12318730588261%2C32.70143363937598&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:40.882599+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12718816273816%2C+%22ymin%22%3A+32.69711151419046%2C+%22xmax%22%3A+-117.12318816273817%2C+%22ymax%22%3A+32.701111514190465%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12718816273816%2C32.69711151419046%2C-117.12318816273817%2C32.701111514190465&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:41.475005+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.1567003688362%2C+%22ymin%22%3A+32.71270026611018%2C+%22xmax%22%3A+-117.15270036883621%2C+%22ymax%22%3A+32.71670026611019%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.1567003688362%2C32.71270026611018%2C-117.15270036883621%2C32.71670026611019&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:41.925700+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.05695977621774%2C+%22ymin%22%3A+32.67308222004544%2C+%22xmax%22%3A+-117.05295977621775%2C+%22ymax%22%3A+32.67708222004544%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.05695977621774%2C32.67308222004544%2C-117.05295977621775%2C32.67708222004544&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:42.488363+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.23314058908647%2C+%22ymin%22%3A+32.97368293408971%2C+%22xmax%22%3A+-117.22914058908648%2C+%22ymax%22%3A+32.977682934089714%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.23314058908647%2C32.97368293408971%2C-117.22914058908648%2C32.977682934089714&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:43.045145+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.14366990248747%2C+%22ymin%22%3A+32.69360435662332%2C+%22xmax%22%3A+-117.13966990248748%2C+%22ymax%22%3A+32.69760435662332%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.14366990248747%2C32.69360435662332%2C-117.13966990248748%2C32.69760435662332&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:43.592938+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.09998602731375%2C+%22ymin%22%3A+32.70215322342726%2C+%22xmax%22%3A+-117.09598602731376%2C+%22ymax%22%3A+32.706153223427265%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.09998602731375%2C32.70215322342726%2C-117.09598602731376%2C32.706153223427265&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:44.153942+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.04653529551005%2C+%22ymin%22%3A+32.5562873321196%2C+%22xmax%22%3A+-117.04253529551006%2C+%22ymax%22%3A+32.56028733211961%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.04653529551005%2C32.5562873321196%2C-117.04253529551006%2C32.56028733211961&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:45.007520+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.12633657099555%2C+%22ymin%22%3A+32.91089704914616%2C+%22xmax%22%3A+-117.12233657099556%2C+%22ymax%22%3A+32.91489704914616%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.12633657099555%2C32.91089704914616%2C-117.12233657099556%2C32.91489704914616&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:45.706196+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.06998729974218%2C+%22ymin%22%3A+32.70735536719854%2C+%22xmax%22%3A+-117.06598729974219%2C+%22ymax%22%3A+32.71135536719854%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.06998729974218%2C32.70735536719854%2C-117.06598729974219%2C32.71135536719854&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:46.266611+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.18564580501648%2C+%22ymin%22%3A+32.764269428113415%2C+%22xmax%22%3A+-117.18164580501649%2C+%22ymax%22%3A+32.76826942811342%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.18564580501648%2C32.764269428113415%2C-117.18164580501649%2C32.76826942811342&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:46.802339+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.13207687349158%2C+%22ymin%22%3A+32.74536305191828%2C+%22xmax%22%3A+-117.1280768734916%2C+%22ymax%22%3A+32.74936305191829%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.13207687349158%2C32.74536305191828%2C-117.1280768734916%2C32.74936305191829&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:47.408814+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.15186584983262%2C+%22ymin%22%3A+32.74645713837883%2C+%22xmax%22%3A+-117.14786584983263%2C+%22ymax%22%3A+32.750457138378835%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.15186584983262%2C32.74645713837883%2C-117.14786584983263%2C32.750457138378835&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:48.048232+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.11264065340514%2C+%22ymin%22%3A+32.74769896667913%2C+%22xmax%22%3A+-117.10864065340515%2C+%22ymax%22%3A+32.751698966679136%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.11264065340514%2C32.74769896667913%2C-117.10864065340515%2C32.751698966679136&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:48.588429+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.20354378879415%2C+%22ymin%22%3A+32.89070236745487%2C+%22xmax%22%3A+-117.19954378879416%2C+%22ymax%22%3A+32.894702367454876%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.20354378879415%2C32.89070236745487%2C-117.19954378879416%2C32.894702367454876&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:49.532107+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.16035216285805%2C+%22ymin%22%3A+32.71371510823933%2C+%22xmax%22%3A+-117.15635216285806%2C+%22ymax%22%3A+32.71771510823933%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.16035216285805%2C32.71371510823933%2C-117.15635216285806%2C32.71771510823933&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:50.065037+00:00",
+      "status": "ok"
+    },
+    {
+      "kind": "independent_tiger",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/identify?geometry=%7B%22xmin%22%3A+-117.27387662142506%2C+%22ymin%22%3A+32.815572816904925%2C+%22xmax%22%3A+-117.26987662142507%2C+%22ymax%22%3A+32.81957281690493%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&sr=4326&layers=all%3A2%2C6%2C8&tolerance=0&mapExtent=-117.27387662142506%2C32.815572816904925%2C-117.26987662142507%2C32.81957281690493&imageDisplay=800%2C800%2C96&returnGeometry=true&returnFieldName=true&f=json",
+      "started_at": "2026-11-03T03:07:50.721551+00:00",
+      "status": "ok"
+    }
+  ]
+}

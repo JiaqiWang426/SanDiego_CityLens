@@ -1,0 +1,234 @@
+{
+  "address_id": "04",
+  "provider": "sangis",
+  "input_address": "9800 Mira Lee Way, San Diego, CA 92126",
+  "request_url": "https://geo.sandag.org/server/rest/services/Hosted/Address_Points/FeatureServer/0/query?where=addrnmbr%3D9800+AND+UPPER%28addrname%29%3D%27MIRA+LEE%27&outFields=%2A&outSR=4326&returnGeometry=true&resultRecordCount=200&f=json",
+  "fetched_at": "2026-11-03T00:09:36.346201+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "addrjur": "SD",
+          "x_coord": 6295216.63675,
+          "usng": "11S MS 88939 42682",
+          "orig_oid": 710403,
+          "addrfrac": null,
+          "addrname": "MIRA LEE",
+          "addrsfx": "WAY",
+          "address_type": null,
+          "addrzip": "92126",
+          "addrpostd": null,
+          "community": "San Diego",
+          "addrpdir": null,
+          "addrapnid": "846039",
+          "parcelid": 5325558,
+          "roadsegid": 221662,
+          "asource": "S",
+          "placement_location": "S",
+          "addrunit": null,
+          "y_coord": 1916473.69075,
+          "state": "CA",
+          "objectid": 707287,
+          "apn": "3184103800",
+          "addrnmbr": 9800
+        },
+        "geometry": {
+          "x": -117.1183146426874,
+          "y": 32.92232753316194
+        }
+      }
+    ],
+    "exceededTransferLimit": false,
+    "hasM": false,
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "modelName": "objectid",
+        "defaultValue": null,
+        "name": "objectid",
+        "length": 4,
+        "alias": "objectid",
+        "type": "esriFieldTypeOID"
+      },
+      {
+        "modelName": "ADDRNMBR",
+        "defaultValue": null,
+        "name": "addrnmbr",
+        "alias": "NUMBER",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "ADDRFRAC",
+        "defaultValue": null,
+        "name": "addrfrac",
+        "length": 3,
+        "alias": "FRACTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPDIR",
+        "defaultValue": null,
+        "name": "addrpdir",
+        "length": 2,
+        "alias": "PREDIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRNAME",
+        "defaultValue": null,
+        "name": "addrname",
+        "length": 30,
+        "alias": "NAME",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRPOSTD",
+        "defaultValue": null,
+        "name": "addrpostd",
+        "length": 2,
+        "alias": "POST_DIRECTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRSFX",
+        "defaultValue": null,
+        "name": "addrsfx",
+        "length": 4,
+        "alias": "SUFFIX",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRUNIT",
+        "defaultValue": null,
+        "name": "addrunit",
+        "length": 8,
+        "alias": "UNIT",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRJUR",
+        "defaultValue": null,
+        "name": "addrjur",
+        "length": 2,
+        "alias": "JURISDICTION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRZIP",
+        "defaultValue": null,
+        "name": "addrzip",
+        "length": 5,
+        "alias": "ZIP",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ROADSEGID",
+        "defaultValue": null,
+        "name": "roadsegid",
+        "alias": "ROADSEGID",
+        "type": "esriFieldTypeInteger"
+      },
+      {
+        "modelName": "APN",
+        "defaultValue": null,
+        "name": "apn",
+        "length": 10,
+        "alias": "APN",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "SOURCE",
+        "defaultValue": null,
+        "name": "asource",
+        "length": 1,
+        "alias": "ASOURCE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "X_COORD",
+        "defaultValue": null,
+        "name": "x_coord",
+        "alias": "X_COORD",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "Y_COORD",
+        "defaultValue": null,
+        "name": "y_coord",
+        "alias": "Y_COORD",
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "modelName": "STATE",
+        "defaultValue": "CA",
+        "name": "state",
+        "length": 2,
+        "alias": "STATE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "PLACEMENT_LOCATION",
+        "defaultValue": null,
+        "name": "placement_location",
+        "length": 1,
+        "alias": "PLACEMENT_LOCATION",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "COMMUNITY",
+        "defaultValue": null,
+        "name": "community",
+        "length": 20,
+        "alias": "POSTAL_COMMUNITY",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "ADDRESS_TYPE",
+        "defaultValue": null,
+        "name": "address_type",
+        "length": 1,
+        "alias": "ADDRESS_TYPE",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "addrapnid",
+        "defaultValue": null,
+        "name": "addrapnid",
+        "length": 25,
+        "alias": "ADDRAPNID",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "parcelid",
+        "defaultValue": null,
+        "name": "parcelid",
+        "alias": "PARCELID",
+        "type": "esriFieldTypeInteger"
+      },
+      {
+        "modelName": "usng",
+        "defaultValue": null,
+        "name": "usng",
+        "length": 255,
+        "alias": "USNG",
+        "type": "esriFieldTypeString"
+      },
+      {
+        "modelName": "orig_oid",
+        "defaultValue": null,
+        "name": "orig_oid",
+        "alias": "ORIG_OID",
+        "type": "esriFieldTypeInteger"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPoint"
+  },
+  "transport_status": "ok",
+  "latency_ms": 293.971
+}

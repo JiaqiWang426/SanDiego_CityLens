@@ -1,0 +1,25 @@
+{
+  "pair_ids": [
+    "6825450a535c20e4",
+    "371bcc7c6380874c",
+    "242251467d3df5ed",
+    "1431bea964cb7690",
+    "90f2e3cb4c5b5a01",
+    "5419a381204aed34",
+    "d63bbd0d867ecd0c",
+    "520bb69be6c08d29",
+    "7e06819094d49ca7",
+    "72bc67aca24d5a9b",
+    "9e8db964c157600d",
+    "905847d2bd52bf62",
+    "26f196ec89750829",
+    "57f77b98841d3b45",
+    "f0ca740cd7227de8",
+    "595db6890393b779",
+    "a1d2ddd01484cc0a",
+    "da073203a6dc928d",
+    "b3c9014a58966f3f",
+    "55f41d68bca0ae79"
+  ],
+  "method": "Frozen initial 20-pair workload reconstructed from the original recorded request centers after conservative parser refinement; no additional queries"
+}

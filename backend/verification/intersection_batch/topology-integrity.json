@@ -1,0 +1,903 @@
+{
+  "snapshot_id": "0aa3c4d45aabeb493257e7b5c01e5b22e6ab9797f236af729f018f74d76fe9fc",
+  "checked_at": "2026-11-03T03:48:39.131659+00:00",
+  "agent_reference_permissions": {
+    "schema_write": false,
+    "table_write": false
+  },
+  "road_segments": {
+    "count": 164584,
+    "empty_geometry": 0,
+    "invalid_geometry": 0,
+    "invalid_srid": 0,
+    "geometry_z_count": 164584
+  },
+  "road_nodes": {
+    "count": 130637,
+    "empty_geometry": 0,
+    "invalid_geometry": 0,
+    "invalid_srid": 0,
+    "geometry_z_count": 130637
+  },
+  "endpoints": {
+    "count": 329168,
+    "missing_identity": 9,
+    "dangling_references": 62,
+    "duplicate_node_references": 12,
+    "invalid_levels": 0,
+    "max_distance_m": 45230.213042420335,
+    "distance_quantiles_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "beyond_2m": 21,
+    "beyond_1cm": 53
+  },
+  "duplicate_node_ids": [
+    {
+      "interid": 0,
+      "records": 7,
+      "objectids": [
+        36891,
+        38410,
+        39505,
+        49565,
+        59856,
+        75869,
+        91582
+      ]
+    },
+    {
+      "interid": 94245,
+      "records": 2,
+      "objectids": [
+        7550,
+        39933
+      ]
+    }
+  ],
+  "invalid_node_ids": 7,
+  "dangling_examples": [
+    {
+      "roadsegid": 5645,
+      "fnode": 87697,
+      "tnode": 87655,
+      "segclass": "3",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 5647,
+      "fnode": 87812,
+      "tnode": 87697,
+      "segclass": "3",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 14537,
+      "fnode": 29089,
+      "tnode": 29101,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 16083,
+      "fnode": 54600,
+      "tnode": 54595,
+      "segclass": "3",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 16086,
+      "fnode": 54607,
+      "tnode": 54600,
+      "segclass": "3",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 22851,
+      "fnode": 26324,
+      "tnode": 26324,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 28662,
+      "fnode": 1055381,
+      "tnode": 29344,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 33833,
+      "fnode": 93451,
+      "tnode": 93450,
+      "segclass": "3",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 41021,
+      "fnode": 20898,
+      "tnode": 1055416,
+      "segclass": "P",
+      "segstat": "R"
+    },
+    {
+      "roadsegid": 43095,
+      "fnode": 1056269,
+      "tnode": 17401,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 44664,
+      "fnode": 72263,
+      "tnode": 72093,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 44666,
+      "fnode": 72263,
+      "tnode": 72276,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 74622,
+      "fnode": 4623,
+      "tnode": 4643,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 78163,
+      "fnode": 189597,
+      "tnode": 46042,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 98108,
+      "fnode": 29540,
+      "tnode": 29466,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 98112,
+      "fnode": 29466,
+      "tnode": 1054331,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 99508,
+      "fnode": 20886,
+      "tnode": 20898,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 103547,
+      "fnode": 1056025,
+      "tnode": 1056028,
+      "segclass": "7",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 105284,
+      "fnode": 1054157,
+      "tnode": 1054158,
+      "segclass": "5",
+      "segstat": " "
+    },
+    {
+      "roadsegid": 125652,
+      "fnode": 87692,
+      "tnode": 87697,
+      "segclass": "A",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 132261,
+      "fnode": 191481,
+      "tnode": 104568,
+      "segclass": "P",
+      "segstat": "R"
+    },
+    {
+      "roadsegid": 162048,
+      "fnode": 1055844,
+      "tnode": 1055842,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 188252,
+      "fnode": 116110,
+      "tnode": 160336,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 190266,
+      "fnode": 163380,
+      "tnode": 191481,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 193698,
+      "fnode": 165828,
+      "tnode": 165837,
+      "segclass": "5",
+      "segstat": "M"
+    },
+    {
+      "roadsegid": 195210,
+      "fnode": 105538,
+      "tnode": 166797,
+      "segclass": "7",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 195260,
+      "fnode": 166818,
+      "tnode": 166829,
+      "segclass": "7",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 206654,
+      "fnode": 174631,
+      "tnode": 4623,
+      "segclass": "Z",
+      "segstat": "C"
+    },
+    {
+      "roadsegid": 218292,
+      "fnode": 180916,
+      "tnode": 180918,
+      "segclass": "5",
+      "segstat": "R"
+    },
+    {
+      "roadsegid": 218587,
+      "fnode": 1053604,
+      "tnode": 1053598,
+      "segclass": "Z",
+      "segstat": "A"
+    }
+  ],
+  "orphan_nodes": 292,
+  "segclass": [
+    {
+      "value": "1",
+      "count": 3305
+    },
+    {
+      "value": "2",
+      "count": 2128
+    },
+    {
+      "value": "3",
+      "count": 8423
+    },
+    {
+      "value": "4",
+      "count": 11967
+    },
+    {
+      "value": "5",
+      "count": 76985
+    },
+    {
+      "value": "6",
+      "count": 3539
+    },
+    {
+      "value": "7",
+      "count": 18518
+    },
+    {
+      "value": "8",
+      "count": 1227
+    },
+    {
+      "value": "9",
+      "count": 2267
+    },
+    {
+      "value": "A",
+      "count": 4708
+    },
+    {
+      "value": "H",
+      "count": 1327
+    },
+    {
+      "value": "K",
+      "count": 3
+    },
+    {
+      "value": "M",
+      "count": 5841
+    },
+    {
+      "value": "P",
+      "count": 2638
+    },
+    {
+      "value": "W",
+      "count": 241
+    },
+    {
+      "value": "Y",
+      "count": 1
+    },
+    {
+      "value": "Z",
+      "count": 21447
+    },
+    {
+      "value": null,
+      "count": 19
+    }
+  ],
+  "segstat": [
+    {
+      "value": " ",
+      "count": 5921
+    },
+    {
+      "value": "A",
+      "count": 2597
+    },
+    {
+      "value": "C",
+      "count": 40980
+    },
+    {
+      "value": "M",
+      "count": 111061
+    },
+    {
+      "value": "R",
+      "count": 3961
+    },
+    {
+      "value": "T",
+      "count": 4
+    },
+    {
+      "value": null,
+      "count": 60
+    }
+  ],
+  "node_type": [
+    {
+      "value": "B",
+      "count": 834
+    },
+    {
+      "value": "C",
+      "count": 11613
+    },
+    {
+      "value": "D",
+      "count": 825
+    },
+    {
+      "value": "E",
+      "count": 22616
+    },
+    {
+      "value": "I",
+      "count": 81881
+    },
+    {
+      "value": "J",
+      "count": 248
+    },
+    {
+      "value": "N",
+      "count": 3948
+    },
+    {
+      "value": "P",
+      "count": 2074
+    },
+    {
+      "value": "Q",
+      "count": 1
+    },
+    {
+      "value": "R",
+      "count": 3465
+    },
+    {
+      "value": "T",
+      "count": 534
+    },
+    {
+      "value": "X",
+      "count": 944
+    },
+    {
+      "value": "Z",
+      "count": 1422
+    },
+    {
+      "value": null,
+      "count": 232
+    }
+  ],
+  "f_level": [
+    {
+      "value": 0,
+      "count": 5
+    },
+    {
+      "value": 1,
+      "count": 160726
+    },
+    {
+      "value": 2,
+      "count": 2254
+    },
+    {
+      "value": 3,
+      "count": 196
+    },
+    {
+      "value": 4,
+      "count": 48
+    },
+    {
+      "value": 9,
+      "count": 1355
+    }
+  ],
+  "t_level": [
+    {
+      "value": 0,
+      "count": 7
+    },
+    {
+      "value": 1,
+      "count": 160714
+    },
+    {
+      "value": 2,
+      "count": 2256
+    },
+    {
+      "value": 3,
+      "count": 192
+    },
+    {
+      "value": 4,
+      "count": 48
+    },
+    {
+      "value": 7,
+      "count": 1
+    },
+    {
+      "value": 9,
+      "count": 1366
+    }
+  ],
+  "multipart_roads": 0,
+  "nonsimple_roads": 17,
+  "duplicate_geometry_groups": 2,
+  "overlapping_segment_pairs": 44,
+  "overlap_examples": [
+    {
+      "first_id": 159621,
+      "second_id": 229081,
+      "first_road": "RED GATE RD",
+      "second_road": "PASALL RD",
+      "first_status": " ",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 154011,
+      "second_id": 154018,
+      "first_road": "PRIVATE RD",
+      "second_road": "PRIVATE RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 28300,
+      "second_id": 82106,
+      "first_road": "EXPLORER RD",
+      "second_road": "DESOTO CT",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 153860,
+      "second_id": 153861,
+      "first_road": "PRIVATE RD",
+      "second_road": "PRIVATE RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 154010,
+      "second_id": 154011,
+      "first_road": "PRIVATE RD",
+      "second_road": "PRIVATE RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 154010,
+      "second_id": 154018,
+      "first_road": "PRIVATE RD",
+      "second_road": "PRIVATE RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 76299,
+      "second_id": 3001565,
+      "first_road": "EDEN VALLEY LN",
+      "second_road": "EDEN VALLEY LN",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 105235,
+      "second_id": 105297,
+      "first_road": "MONTFORT CT",
+      "second_road": "CHIPPENHAM WAY",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202986,
+      "second_id": 226340,
+      "first_road": "LONG TROT DR",
+      "second_road": "LONG TROT DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202986,
+      "second_id": 226341,
+      "first_road": "LONG TROT DR",
+      "second_road": "LONG TROT DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202988,
+      "second_id": 226321,
+      "first_road": "LONG TROT DR",
+      "second_road": "LONG TROT DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202988,
+      "second_id": 226322,
+      "first_road": "LONG TROT DR",
+      "second_road": "LONG TROT DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 29466,
+      "second_id": 211916,
+      "first_road": "G ST",
+      "second_road": "MARINA PKY",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202998,
+      "second_id": 226424,
+      "first_road": "DEER GRASS DR",
+      "second_road": "DEER GRASS DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202998,
+      "second_id": 226423,
+      "first_road": "DEER GRASS DR",
+      "second_road": "DEER GRASS DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 202998,
+      "second_id": 226381,
+      "first_road": "DEER GRASS DR",
+      "second_road": "DEER GRASS DR",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 118117,
+      "second_id": 118119,
+      "first_road": "BOULDER OAKS RD",
+      "second_road": "PRIVATE RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 36542,
+      "second_id": 3002786,
+      "first_road": "E VISTA WAY",
+      "second_road": "OLD TAYLOR ST",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 17174,
+      "second_id": 156675,
+      "first_road": "CAMINO SANTA FE",
+      "second_road": "PURPLE LEAF WAY",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 230442,
+      "second_id": 230452,
+      "first_road": "VIA DE LA AMISTAD",
+      "second_road": "ENTERPRISE RD",
+      "first_status": "R",
+      "second_status": "R",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 227217,
+      "second_id": 227510,
+      "first_road": "CANAL RD",
+      "second_road": "CANAL RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 227217,
+      "second_id": 227512,
+      "first_road": "CANAL RD",
+      "second_road": "PEART RD",
+      "first_status": "C",
+      "second_status": "C",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 226891,
+      "second_id": 227273,
+      "first_road": "UNNAMED MILITARY RD",
+      "second_road": "UNNAMED MILITARY RD",
+      "first_status": "M",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 228939,
+      "second_id": 228949,
+      "first_road": "STRATA ST",
+      "second_road": "PRIVATE RD",
+      "first_status": "R",
+      "second_status": "A",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    },
+    {
+      "first_id": 227571,
+      "second_id": 227578,
+      "first_road": "E CANAL RD",
+      "second_road": "OOS RD",
+      "first_status": "C",
+      "second_status": "M",
+      "first_levels": [
+        1,
+        1
+      ],
+      "second_levels": [
+        1,
+        1
+      ]
+    }
+  ],
+  "disconnected_coincident_endpoint_groups": 28,
+  "pyproj_postgis_max_degrees": 4.050093593832571e-13,
+  "counts_match_manifest": true,
+  "usable_for_conservative_proposals": true,
+  "tolerance_basis": "Stage A 2m endpoint consistency ceiling only, never creates links. Native XY tolerance 0.0032808333ft (~1mm); full-network discrepancy distribution reported. Exact integer node identity is mandatory. No snapping or geometry repair."
+}

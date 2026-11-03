@@ -1,0 +1,55 @@
+{
+  "address_id": "32",
+  "provider": "census",
+  "input_address": "2920 Zoo Dr, San Diego, CA 92101",
+  "request_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2920+Zoo+Dr&city=San+Diego&state=CA&benchmark=Public_AR_Current&format=json&zip=92101",
+  "fetched_at": "2026-11-03T00:18:42.146278+00:00",
+  "http_attempts": 1,
+  "payload": {
+    "result": {
+      "input": {
+        "address": {
+          "zip": "92101",
+          "city": "San Diego",
+          "street": "2920 Zoo Dr",
+          "state": "CA"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "L",
+            "tigerLineId": "650435011"
+          },
+          "coordinates": {
+            "x": -117.148806799024,
+            "y": 32.737858928029
+          },
+          "addressComponents": {
+            "zip": "92101",
+            "streetName": "ZOO",
+            "preType": "",
+            "city": "SAN DIEGO",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "2858",
+            "state": "CA",
+            "suffixType": "DR",
+            "toAddress": "3052",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "2920 ZOO DR, SAN DIEGO, CA, 92101"
+        }
+      ]
+    }
+  },
+  "transport_status": "ok",
+  "latency_ms": 407.006
+}
