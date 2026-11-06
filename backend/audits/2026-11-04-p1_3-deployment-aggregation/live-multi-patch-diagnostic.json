@@ -1,0 +1,43 @@
+{
+  "mode": "followup",
+  "radius_meters": null,
+  "radius_quote": null,
+  "time_range": null,
+  "time_quote": null,
+  "plan": {
+    "intent": "compare_locations",
+    "tools": [
+      "aggregate_service_requests"
+    ],
+    "period": "month",
+    "collision_filters": {
+      "min_injured": null,
+      "max_injured": null,
+      "min_killed": null,
+      "max_killed": null,
+      "hit_run": null,
+      "street_name": null,
+      "hit_run_level": null
+    },
+    "exclude_linked_duplicates": false,
+    "service_request_aggregation": {
+      "group_by": "both",
+      "service_name": null,
+      "status": null,
+      "service_names": [
+        "PAVEMENT MAINTENANCE",
+        "POTHOLE"
+      ]
+    },
+    "filter_quote": "Only include Pothole and Pavement Maintenance.",
+    "unsupported_dimensions": [
+      "unavailable_dimension"
+    ]
+  },
+  "changed_plan_fields": [
+    "tools",
+    "service_request_aggregation.service_names"
+  ],
+  "change_quote": "Only include Pothole and Pavement Maintenance.",
+  "clarification": null
+}

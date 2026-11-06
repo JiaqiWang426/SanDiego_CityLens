@@ -1,0 +1,172 @@
+{
+  "runtime_role": {
+    "rolname": "citylens_sessions",
+    "rolsuper": false,
+    "rolcreatedb": false,
+    "rolcreaterole": false,
+    "rolreplication": false,
+    "rolbypassrls": false
+  },
+  "table_grants": [
+    {
+      "relation": "citylens.collision_imports",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens.collision_source_rows",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens.ingestions",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens.service_requests",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens.sessions",
+      "can_select": true,
+      "can_mutate": true,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens.traffic_collisions",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_blobs",
+      "can_select": true,
+      "can_mutate": true,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_migrations",
+      "can_select": true,
+      "can_mutate": true,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_writes",
+      "can_select": true,
+      "can_mutate": true,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoints",
+      "can_select": true,
+      "can_mutate": true,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_ref.geocode_apply_history",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_ref.geocode_apply_runs",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_ref.road_nodes",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_ref.road_segments",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    },
+    {
+      "relation": "citylens_ref.snapshots",
+      "can_select": false,
+      "can_mutate": false,
+      "reader_can_mutate": false
+    }
+  ],
+  "checkpoint_migrations": [
+    {
+      "v": 0
+    },
+    {
+      "v": 1
+    },
+    {
+      "v": 2
+    },
+    {
+      "v": 3
+    },
+    {
+      "v": 4
+    },
+    {
+      "v": 5
+    },
+    {
+      "v": 6
+    },
+    {
+      "v": 7
+    },
+    {
+      "v": 8
+    },
+    {
+      "v": 9
+    }
+  ],
+  "indexes": [
+    {
+      "schemaname": "citylens",
+      "indexname": "sessions_pkey"
+    },
+    {
+      "schemaname": "citylens",
+      "indexname": "sessions_recent_idx"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoint_blobs_pkey"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoint_blobs_thread_id_idx"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoint_migrations_pkey"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoint_writes_pkey"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoint_writes_thread_id_idx"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoints_pkey"
+    },
+    {
+      "schemaname": "citylens_checkpoints",
+      "indexname": "checkpoints_thread_id_idx"
+    }
+  ]
+}

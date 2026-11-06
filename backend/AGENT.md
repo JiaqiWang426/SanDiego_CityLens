@@ -1,5 +1,11 @@
 # CityLens Phase 0 Agent
 
+[P1.3 session persistence](P1_3.md) wraps the analysis graph in a PostgreSQL-backed
+LangGraph conversation graph. Saved messages, pending confirmations and validated
+scope/plan survive restarts. The request-local analysis graph and its deterministic
+tools/verification retain their responsibilities. Persistence is enabled only by
+the separately configured session writer; see P1.3 for migration and Windows startup.
+
 P1.2 adds [address interpretation and confirmation](P1_2.md) through
 `POST /api/v1/agent/chat` and the frontend's default street-address mode.
 The same configured model produces a structured proposed analysis/address
@@ -51,8 +57,10 @@ POST /api/v1/agent/query
 ```
 
 There is one configured LLM for interpretation/planning/composition. Analysis
-graph state is explicit and request-local; address conversations additionally
-use bounded process-local pending state with revision checks and 30-minute expiry.
+graph state is explicit and request-local. With P1.3 persistence configured,
+the outer conversation graph saves structured context and pending address state.
+Without it, legacy address requests use bounded process-local pending state
+with revision checks and 30-minute expiry.
 Conditional edges route unsupported/failed requests to
 abstention; independent tool failures preserve successful evidence. Claims are
 constructed **before** verification; final validation runs **after** composition.
@@ -118,10 +126,10 @@ Discrepancies / decisions relative to the proposed specification:
   traceability, not a deterministic proof of semantic interpretation. Clients
   should inspect executed filters for nuanced questions. Source field contents
   never override policy; the model cannot change structured dates or pins.
-- The coordinate endpoint accepts `conversation_id` for compatibility and remains
-  stateless. The new chat endpoint retains pending question, scope, plan and
-  address/candidate confirmations in memory. It is not a durable conversation
-  store: restart/reload recovery and sharing across server workers are not implemented.
+- The coordinate endpoint accepts legacy `conversation_id` without changing its
+  stateless behavior. P1.3 adds optional `session_id` for durable storage. With
+  session persistence enabled, the chat endpoint retains pending requests and
+  confirmations in PostgreSQL and supports follow-ups across server restarts.
 - No cross-request cache is used without reliable dataset versioning. Plans are
   deduplicated within each request. SQL calls are not retried; the interactive
   SanGIS HTTP adapter permits at most two attempts for transient transport errors.
@@ -195,7 +203,7 @@ $env:OPENAI_MODEL = 'YOUR_ENABLED_STRUCTURED_OUTPUT_MODEL'
 
 Use a model enabled for your account that supports Responses structured outputs.
 No implicit model is chosen. API usage can incur charges. OpenAPI is available
-at `http://127.0.0.1:8000/docs`. The app uses only `AGENT_DATABASE_URL`, with no
+at `http://127.0.0.1:8000/docs`. The SQL tools use only `AGENT_DATABASE_URL`, with no
 fallback to administrative `DATABASE_URL`. It rejects superuser/owner or
 effectively write-capable credentials even though queries also run read-only.
 Keep this Phase 0 server local: authentication and public deployment hardening

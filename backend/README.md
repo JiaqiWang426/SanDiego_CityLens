@@ -1,5 +1,18 @@
 # Local data infrastructure
 
+P1.3 adds PostgreSQL conversation history, resumable address confirmations,
+structured follow-up context, and create/list/resume/delete controls in the
+existing frontend. See [session setup, API contracts and implementation report](P1_3.md).
+It requires a separate `SESSION_DATABASE_URL` and explicit checkpoint migration;
+the SQL tools continue to use the restricted reader. On Windows, start the API
+with `python -m backend.scripts.serve` for psycopg's selector event loop.
+
+The [local deployment and aggregation audit](../P1_3_DEPLOYMENT_AND_AGGREGATION_REPORT.md)
+records the applied local session migration, real restart/browser verification,
+and optional validated multi-category filtering. The original service-query
+signatures remain available; the additive SQL lives in
+`sql/tools/045_aggregate_service_request_categories.sql`.
+
 P1.2 adds natural-language street-address questions to the frontend: review the
 proposed addresses, explicitly confirm, resolve through Census (with SanGIS
 Address Points fallback only after Census no-match), then run the

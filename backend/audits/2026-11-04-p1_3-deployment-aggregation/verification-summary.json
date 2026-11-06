@@ -1,0 +1,23 @@
+{
+  "client_date": "2026-11-04",
+  "timezone": "America/Los_Angeles",
+  "local_url": "http://127.0.0.1:8000/",
+  "backend_tests": {"passed": 516, "failed": 0, "skipped": 0, "seconds": 60.98},
+  "local_direct_sql_cases_passed": 22,
+  "frontend_regression_suites_passed": 3,
+  "real_edge_browser_checks_passed": true,
+  "actual_backend_restart_state_match": true,
+  "live_openai_used": true,
+  "source_reference_tables_preserved": 10,
+  "source_reference_rows_preserved": 763889,
+  "existing_function_definitions_and_grants_preserved": true,
+  "existing_role_attributes_and_memberships_preserved": true,
+  "task_sessions_cleaned_up": 3,
+  "remaining_sessions": 0,
+  "dependency_check_passed": true,
+  "git_diff_whitespace_check_passed": true,
+  "reviewable_file_secret_matches": 0,
+  "remaining_live_model_limitation": "Spurious unsupported-dimension annotations observed; numerical results and filter scopes independently verified",
+  "production_changes": false,
+  "commits_or_pushes": false
+}

@@ -1,0 +1,9 @@
+{
+  "backend_restart_exact_state_match": true,
+  "message_count": 6,
+  "radius": 1200.0,
+  "live_model_used": true,
+  "real_browser": "headless Microsoft Edge via Playwright",
+  "frontend_list_resume_refresh_independence": true,
+  "browser_errors": []
+}

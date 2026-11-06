@@ -1,0 +1,20 @@
+{
+  "live_model_used": true,
+  "status": "complete",
+  "selected_categories": [
+    "PAVEMENT MAINTENANCE",
+    "POTHOLE"
+  ],
+  "preserved_fields": [
+    "locations",
+    "radius_meters",
+    "time_range"
+  ],
+  "radius": 800.0,
+  "values": [
+    14,
+    12
+  ],
+  "direct_sql_matches": true,
+  "verified_claims": 3
+}

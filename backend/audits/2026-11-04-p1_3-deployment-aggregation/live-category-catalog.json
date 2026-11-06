@@ -1,0 +1,70 @@
+{
+  "service_names": [
+    "BICYCLE-RELATED ISSUE",
+    "BIOHAZARD",
+    "BUILDING AND LAND USE ENFORCEMENT",
+    "CONTAINER REQUEST",
+    "COVID-19",
+    "DEAD ANIMAL",
+    "DEVELOPMENT SERVICES - CODE ENFORCEMENT",
+    "ENCAMPMENT",
+    "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+    "ESD COLLECTIONS",
+    "GRAFFITI",
+    "GRAFFITI - CODE ENFORCEMENT",
+    "GRAFFITI - PRIVATE",
+    "GRAFFITI - PUBLIC",
+    "HOMELESS OUTREACH",
+    "ILLEGAL DUMPING",
+    "MISSED COLLECTION",
+    "OTHER",
+    "OVERSIZED VEHICLE",
+    "PARKING",
+    "PARKING - 72-HOURS",
+    "PARKING VIOLATION",
+    "PARKS ISSUE",
+    "PAVEMENT MAINTENANCE",
+    "POTHOLE",
+    "RIGHT-OF-WAY CODE ENFORCEMENT",
+    "ROW MAINTENANCE",
+    "SHARED MOBILITY DEVICE",
+    "SIDEWALK REPAIR ISSUE",
+    "STORMWATER",
+    "STORMWATER CODE ENFORCEMENT",
+    "STREET FLOODED",
+    "STREET LIGHT MAINTENANCE",
+    "STREET SWEEPING",
+    "STRO VIOLATION",
+    "TRAFFIC ENGINEERING",
+    "TRAFFIC SIGN MAINTENANCE",
+    "TRAFFIC SIGNAL ISSUE",
+    "TRAFFIC SIGNAL TIMING",
+    "TRASH/RECYCLING COLLECTION",
+    "TREE MAINTENANCE",
+    "VEGETATION ENCROACHMENT",
+    "WASTE ON PRIVATE PROPERTY",
+    "WEED CLEANUP"
+  ],
+  "unknown_category_available": true,
+  "road_scope_suggestions": {
+    "road_surface": [
+      "POTHOLE",
+      "PAVEMENT MAINTENANCE"
+    ],
+    "traffic_infrastructure": [
+      "TRAFFIC SIGN MAINTENANCE",
+      "TRAFFIC SIGNAL ISSUE",
+      "TRAFFIC SIGNAL TIMING",
+      "TRAFFIC ENGINEERING",
+      "STREET LIGHT MAINTENANCE"
+    ],
+    "optional_street_and_pedestrian_maintenance": [
+      "SIDEWALK REPAIR ISSUE",
+      "ROW MAINTENANCE",
+      "RIGHT-OF-WAY CODE ENFORCEMENT",
+      "STREET SWEEPING",
+      "STREET FLOODED"
+    ]
+  },
+  "mapping_policy": "Suggestions require explicit category selection; road-related has no automatic mapping"
+}

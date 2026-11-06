@@ -15,6 +15,8 @@ from .models import (CollisionFilters,Location,Model,TimeRange,ToolName,ToolLog,
                      MeasurementToolName,Domain,ServiceRequestAggregation)
 from .diagnostics import log_failure
 from ..dataset_metadata import DatasetMetadata
+from .service_categories import (service_categories, validate_service_categories,
+                                 UnsupportedServiceCategory)
 
 
 class ToolCall(Model):
@@ -67,6 +69,8 @@ class ReaderRoleMissing(PermissionError):
 def database_failure_code(exc: Exception,stage: str) -> str:
     """libpq often omits SQLSTATE on startup failures; never log its raw text."""
     state=getattr(exc,'sqlstate',None) or ''
+    if isinstance(exc,UnsupportedServiceCategory):
+        return 'unsupported_service_category'
     if isinstance(exc,ReaderRoleMissing):
         return 'reader_role_missing'
     if isinstance(exc,PermissionError):
@@ -141,10 +145,12 @@ def query_spec(call: ToolCall | MetadataCall) -> tuple[str, tuple]:
              call.time_range.start,call.time_range.end,call.exclude_linked_duplicates))
     if call.name=='aggregate_service_requests':
         f=call.service_request_aggregation
-        return ('SELECT * FROM citylens.aggregate_service_requests('+','.join(['%s']*9)+')',
-            (call.location.latitude,call.location.longitude,call.radius_meters,
+        params=(call.location.latitude,call.location.longitude,call.radius_meters,
              call.time_range.start,call.time_range.end,call.exclude_linked_duplicates,
-             f.group_by,f.service_name,f.status))
+             f.group_by,f.service_name,f.status)
+        if f.service_names is not None:
+            params=(*params,f.service_names)
+        return ('SELECT * FROM citylens.aggregate_service_requests('+','.join(['%s']*len(params))+')',params)
     if call.name == 'aggregate_traffic_collisions':
         return ('SELECT * FROM citylens.aggregate_traffic_collisions('+','.join(['%s']*14)+')',
                 (*_filters(call),call.period,call.time_range.calendar_timezone))
@@ -203,6 +209,16 @@ class DatabaseTools:
     def __init__(self, database_url: str | None):
         self.database_url=database_url
 
+    def service_categories(self):
+        """Discover canonical stored labels, without model calls or cached counts."""
+        if not self.database_url:
+            raise PermissionError('Database is not configured')
+        with psycopg.connect(self.database_url,connect_timeout=3) as conn:
+            conn.execute('SET TRANSACTION READ ONLY')
+            conn.execute("SET LOCAL statement_timeout='10s'")
+            ensure_reader(conn)
+            return service_categories(conn)
+
     def execute(self, call: ToolCall | MetadataCall) -> ToolResult:
         """One read-only repeatable-read snapshot with bounded statements."""
         # Revalidate at the execution boundary, including injected/test callers.
@@ -222,6 +238,9 @@ class DatabaseTools:
                 conn.execute("SET LOCAL lock_timeout='2s'")
                 stage='reader_check'
                 ensure_reader(conn)
+                if isinstance(call,ToolCall) and call.name=='aggregate_service_requests':
+                    stage='category_validation'
+                    validate_service_categories(conn,call.service_request_aggregation)
                 stage='query'
                 result.rows=execute_query(conn,call)
                 stage='metadata'
@@ -233,7 +252,7 @@ class DatabaseTools:
                     result.status='unavailable'
                     result.rows=[]
                     result.error_code='dataset_empty'
-        except (PermissionError,psycopg.Error) as exc:
+        except (UnsupportedServiceCategory,PermissionError,psycopg.Error) as exc:
             result.status='error'
             result.error_code=database_failure_code(exc,stage)
             log_failure(result.error_code,exc,stage=stage,query_id=result.query_id)

@@ -1,0 +1,109 @@
+{
+  "all_source_table_fingerprints_unchanged": true,
+  "tables_checked": 10,
+  "source_and_reference_rows_unchanged": 763889,
+  "existing_roles_and_memberships_unchanged": true,
+  "existing_functions_and_grants_unchanged": true,
+  "added_function": [
+    "aggregate_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean,text,text,text,text[])"
+  ],
+  "task_checkpoint_rows_after_cleanup": {
+    "checkpoints": 0,
+    "checkpoint_blobs": 0,
+    "checkpoint_writes": 0
+  },
+  "existing_sessions_before": 0,
+  "remaining_sessions_after": 0,
+  "runtime_privileges": [
+    {
+      "relation": "citylens.collision_imports",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens.collision_source_rows",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens.ingestions",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens.service_requests",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens.sessions",
+      "session_select": true,
+      "session_mutate": true,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens.traffic_collisions",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_blobs",
+      "session_select": true,
+      "session_mutate": true,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_migrations",
+      "session_select": true,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoint_writes",
+      "session_select": true,
+      "session_mutate": true,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_checkpoints.checkpoints",
+      "session_select": true,
+      "session_mutate": true,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_ref.geocode_apply_history",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_ref.geocode_apply_runs",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_ref.road_nodes",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_ref.road_segments",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    },
+    {
+      "relation": "citylens_ref.snapshots",
+      "session_select": false,
+      "session_mutate": false,
+      "reader_mutate": false
+    }
+  ]
+}

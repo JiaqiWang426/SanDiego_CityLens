@@ -3,6 +3,8 @@
 const $ = id => document.getElementById(id);
 let responseData = null, busy = false;
 let conversationData = null;
+let sessionsEnabled = false, selectedSessionId = null, savedSessions = [];
+let hasSavedContext = false;
 const json = value => JSON.stringify(value, null, 2);
 function el(tag, text, className) {
   const node = document.createElement(tag);
@@ -34,6 +36,8 @@ function setBusy(value, message) {
   busy = value; $("ask").disabled = value;
   $("manual-run").disabled = value || (addressMode() && conversationData?.status !== "complete");
   $("location-mode").disabled = value;
+  $("new-chat").disabled = value || !sessionsEnabled;
+  document.querySelectorAll(".session-action").forEach(node => { node.disabled = value; });
   document.querySelectorAll(".conversation-action").forEach(node => { node.disabled = value; });
   document.querySelectorAll(".replay").forEach(node => { node.disabled = value; });
   if (message) $("status").textContent = message;
@@ -109,7 +113,8 @@ async function executeManual(args, expected = null) {
 }
 $("investigate").addEventListener("submit", async event => {
   event.preventDefault(); if (busy) return;
-  if (addressMode()) {
+  await configurationReady;
+  if (addressMode() || (selectedSessionId && hasSavedContext && $("continue-context").checked)) {
     let action = "ask";
     const message = $("question").value.trim();
     if (pendingConversation()) {
@@ -122,7 +127,12 @@ $("investigate").addEventListener("submit", async event => {
   }
   conversationData = null;
   setBusy(true, "Planning and executing… tool logs appear on completion."); error(null);
-  try { const data = await post("/api/v1/agent/query", request()); render(data); tab("answer"); $("status").textContent = `${data.status} · ${data.tool_calls?.length || 0} calls · ${data.tool_trace_id}`; }
+  try {
+    await ensureSession();
+    const body = request(); if (selectedSessionId) body.session_id = selectedSessionId;
+    const data = await post("/api/v1/agent/query", body); render(data); tab("answer"); $("status").textContent = `${data.status} · ${data.tool_calls?.length || 0} calls · ${data.tool_trace_id}`;
+    await refreshSavedConversation();
+  }
   catch (e) { error(e.message); $("status").textContent = "Request failed"; }
   finally { setBusy(false); }
 });
@@ -136,6 +146,7 @@ document.querySelectorAll("[data-preset]").forEach(button => button.addEventList
   $("location-mode").value = "coordinates"; conversationData = null; syncLocationMode();
   $("question-label").textContent = "Your question"; $("ask").textContent = "Ask the agent →";
   const mode = button.dataset.preset; $("compare").checked = mode !== "count"; $("location-b").hidden = mode === "count";
+  $("continue-context").checked = false;
   $("domain-collisions").checked = mode === "compare"; $("domain-requests").checked = mode === "compare";
   $("question").value = mode === "compare" ? "Compare apartments A and B based on Get It Done reports and traffic collisions." : mode === "crime" ? "Which apartment has a lower crime rate?" : "How many traffic collisions were recorded near location A during this period?";
 }));
@@ -153,13 +164,22 @@ async function loadConfiguration() {
     const s = await response.json();
     window.configuredMaxRows = s.max_rows;
     $("configuration").textContent = `OpenAI: ${s.openai_configured ? "configured" : "not configured"} · Database: ${s.database_configured ? "configured" : "not configured"}. Configuration presence only; connectivity is checked on execution.`;
+    sessionsEnabled = s.sessions_configured === true;
   } catch (_) {
     $("configuration").textContent = "Could not read server configuration within 5 seconds. Check FastAPI and reload the page.";
   } finally {
     clearTimeout(timeout);
   }
+  if (sessionsEnabled) {
+    try {
+      await loadHistory();
+      const saved = currentSession();
+      if (saved) await selectSession(saved);
+    } catch (e) { error(e.message); $("history-status").textContent = "Conversation storage could not be loaded. Retry by reloading the page."; }
+  } else $("history-status").textContent = "Conversation storage is not configured. Current requests will not be saved.";
+  $("new-chat").disabled = !sessionsEnabled;
 }
-loadConfiguration();
+const configurationReady = loadConfiguration();
 
 function addressMode() { return $("location-mode").value !== "coordinates"; }
 function pendingConversation() { return conversationData && !["complete", "cancelled", "error"].includes(conversationData.status); }
@@ -190,10 +210,14 @@ async function conversationTurn(action, extra = {}) {
   setBusy(true, action === "ask" ? "Interpreting addresses and query conditions…" : "Processing your confirmed conversation step…");
   error(null);
   try {
+    await ensureSession();
+    if (selectedSessionId) body.session_id = selectedSessionId;
     const data = await post("/api/v1/agent/chat", {action, ...body});
     conversationData = data;
+    if (!["complete", "cancelled", "error"].includes(data.status)) $("location-mode").value = "addresses";
     renderConversation(data);
     $("status").textContent = data.status.replaceAll("_", " ");
+    await refreshSavedConversation();
   } catch (e) { error(e.message); $("status").textContent = "Conversation step failed"; }
   finally { setBusy(false); }
 }
@@ -215,9 +239,10 @@ function renderConversation(data) {
   if (data.result) {
     render(data.result);
     $("raw-json").textContent = json(data);
-    data.resolved_locations.forEach(r => {
-      $("lat-" + r.location.id.toLowerCase()).value = r.location.latitude;
-      $("lng-" + r.location.id.toLowerCase()).value = r.location.longitude;
+    data.resolved_locations.forEach((r, index) => {
+      const slot = index === 0 ? "a" : "b";
+      $("lat-" + slot).value = r.location.latitude;
+      $("lng-" + slot).value = r.location.longitude;
     });
     $("compare").checked = data.resolved_locations.length === 2;
     $("location-b").hidden = !$("compare").checked;
@@ -271,3 +296,139 @@ function renderConversation(data) {
   panel.append(actions);
 }
 syncLocationMode();
+
+function currentSession(value) {
+  try {
+    if (value === undefined) return window.localStorage?.getItem("citylens.session_id");
+    if (value) window.localStorage?.setItem("citylens.session_id", value);
+    else window.localStorage?.removeItem("citylens.session_id");
+  } catch (_) { /* Storage may be blocked; PostgreSQL history still works. */ }
+  return null;
+}
+async function readSaved(path, method = "GET") {
+  const controller = new AbortController(), timeout = setTimeout(() => controller.abort(), 10000);
+  try {
+    const response = await fetch(path, {method, signal: controller.signal});
+    if (response.status === 204) return null;
+    const value = await response.json();
+    if (!response.ok) {
+      const failure = new Error(typeof value.detail === "string" ? value.detail : "Conversation request failed");
+      failure.status = response.status; throw failure;
+    }
+    return value;
+  } finally { clearTimeout(timeout); }
+}
+async function loadHistory(more = false) {
+  const page = await readSaved(`/api/v1/sessions?limit=100&offset=${more ? savedSessions.length : 0}`);
+  savedSessions = more ? savedSessions.concat(page) : page;
+  $("history-more").hidden = page.length < 100;
+  const list = $("session-list"); list.replaceChildren();
+  for (const session of savedSessions) {
+    const row = el("div", undefined, "session-row");
+    const select = el("button", session.title, "session-action session-select");
+    select.type = "button"; select.setAttribute("aria-pressed", String(session.session_id === selectedSessionId));
+    select.title = `Last activity: ${new Date(session.updated_at).toLocaleString()}`;
+    select.addEventListener("click", () => selectSession(session.session_id).catch(e => error(e.message)));
+    const remove = el("button", "Delete", "session-action session-delete"); remove.type = "button";
+    remove.setAttribute("aria-label", `Delete conversation: ${session.title}`);
+    remove.addEventListener("click", () => deleteSession(session).catch(e => error(e.message)));
+    row.append(select, remove); list.append(row);
+  }
+  $("history-status").textContent = savedSessions.length ? "Saved conversations · most recent first" : "No saved conversations yet.";
+}
+async function ensureSession() {
+  if (!sessionsEnabled || selectedSessionId) return;
+  const session = await post("/api/v1/sessions", {});
+  selectedSessionId = session.session_id; currentSession(selectedSessionId);
+}
+function clearConversation() {
+  conversationData = null; responseData = null; selectedSessionId = null; currentSession(null);
+  hasSavedContext = false; $("continue-context-label").hidden = true; $("continue-context").checked = true;
+  $("transcript").replaceChildren(); $("transcript").hidden = true;
+  $("location-confirmation").replaceChildren(); $("location-confirmation").hidden = true;
+  $("answer").replaceChildren(el("h2", "Start a new conversation"), el("p", "Ask a question with locations and a date interval."));
+  ["calls", "evidence", "verification-result"].forEach(id => $(id).replaceChildren());
+  $("raw-json").textContent = "No response yet."; $("download").disabled = true;
+  $("question").value = ""; $("question-label").textContent = "Your question";
+  $("ask").textContent = "Ask the agent →"; $("status").textContent = "Ready for a new conversation";
+  syncLocationMode(); tab("answer");
+}
+function restoreScope(context) {
+  hasSavedContext = !!context; $("continue-context-label").hidden = !context;
+  if (!context) return;
+  const req = context.request;
+  $("radius").value = req.radius_meters;
+  $("start").value = req.time_range.start; $("end").value = req.time_range.end;
+  $("timezone").value = req.time_range.calendar_timezone;
+  req.locations.forEach((loc, index) => { const slot = index === 0 ? "a" : "b"; $("lat-" + slot).value = loc.latitude; $("lng-" + slot).value = loc.longitude; });
+  $("compare").checked = req.locations.length === 2; $("location-b").hidden = req.locations.length !== 2;
+  $("domain-collisions").checked = context.plan.tools.some(name => name.includes("traffic_collisions"));
+  $("domain-requests").checked = context.plan.tools.some(name => name.includes("service_requests"));
+}
+function renderTranscript(messages) {
+  const panel = $("transcript"); panel.hidden = !messages.length;
+  panel.replaceChildren(el("h2", "Conversation"), el("p", "Saved findings reflect their original execution. Follow-up analyses query the database again.", "hint"));
+  messages.forEach(message => {
+    const entry = el("article", undefined, "message " + message.role);
+    entry.append(el("h3", message.role === "user" ? "You" : "CityLens"), el("p", message.content));
+    if (message.response) {
+      const inspect = el("button", "Inspect saved response", "session-action"); inspect.type = "button";
+      inspect.addEventListener("click", () => {
+        // Historical inspection must not replace the active confirmation state.
+        const response = message.response.result || (message.response_kind === "query" ? message.response : null);
+        if (response) { render(response); tab("answer"); }
+        else { $("raw-json").textContent = json(message.response); tab("json"); }
+      }); entry.append(inspect);
+    }
+    panel.append(entry);
+  });
+}
+async function selectSession(id) {
+  if (busy) return;
+  setBusy(true, "Loading saved conversation…"); error(null);
+  try {
+    const saved = await readSaved("/api/v1/sessions/" + encodeURIComponent(id));
+    clearConversation(); selectedSessionId = id; currentSession(id);
+    $("location-mode").value = saved.response_kind === "query" ? "coordinates" : "addresses";
+    restoreScope(saved.query_context);
+    if (saved.latest_response) {
+      if (saved.response_kind === "chat") { conversationData = saved.latest_response; renderConversation(conversationData); }
+      else render(saved.latest_response);
+    }
+    renderTranscript(saved.messages); syncLocationMode();
+    $("status").textContent = "Saved conversation restored";
+    await loadHistory();
+  } catch (e) {
+    if (e.status === 404) { clearConversation(); await loadHistory(); }
+    throw e;
+  } finally { setBusy(false); }
+}
+async function refreshSavedConversation() {
+  if (!sessionsEnabled || !selectedSessionId) return;
+  // A history refresh failure must not discard a successfully verified answer.
+  try {
+    const saved = await readSaved("/api/v1/sessions/" + selectedSessionId);
+    if (!pendingConversation()) restoreScope(saved.query_context);
+    renderTranscript(saved.messages); await loadHistory();
+  } catch (e) { error("The answer completed, but conversation history could not be refreshed: " + e.message); }
+}
+async function deleteSession(session) {
+  if (busy || !window.confirm(`Delete “${session.title}” and all its saved messages and query context?`)) return;
+  setBusy(true, "Deleting conversation…");
+  try {
+    await readSaved("/api/v1/sessions/" + session.session_id, "DELETE");
+    if (selectedSessionId === session.session_id) clearConversation();
+    await loadHistory(); $("status").textContent = "Conversation deleted";
+  } finally { setBusy(false); }
+}
+$("new-chat").addEventListener("click", async () => {
+  if (busy || !sessionsEnabled) return;
+  setBusy(true, "Creating conversation…"); error(null);
+  try {
+    const session = await post("/api/v1/sessions", {});
+    clearConversation(); selectedSessionId = session.session_id; currentSession(selectedSessionId);
+    await loadHistory();
+  } catch (e) { error(e.message); }
+  finally { setBusy(false); }
+});
+$("history-more").addEventListener("click", () => { if (!busy) loadHistory(true).catch(e => error(e.message)); });

@@ -78,10 +78,15 @@ def reference(group_by,exclude=False,service_name=None,status=None,radius=800,st
     return {tuple(None if pd.isna(x) else x for x in key):int(value) for key,value in counts.items()}
 
 
+# A service-only plan must be paired with a service question: the validator now
+# rejects plans that omit a dimension the question names (e.g. collisions).
+SERVICE_QUESTION='How many Get It Done requests were submitted?'
+
+
 def test_new_tool_parameter_validation_and_sql_binding():
     with pytest.raises(ValidationError): ServiceRequestAggregation(group_by='free_sql')
     with pytest.raises(ValidationError): MetadataCall(domain='crime')
-    call=validated_calls(request(),Plan(intent='request_count',tools=['aggregate_service_requests']),Settings())[0]
+    call=validated_calls(request(question=SERVICE_QUESTION),Plan(intent='request_count',tools=['aggregate_service_requests']),Settings())[0]
     statement,params=query_spec(call)
     assert statement.startswith('SELECT * FROM citylens.aggregate_service_requests(')
     assert len(params)==9 and params[6]=='service_name'
@@ -89,7 +94,7 @@ def test_new_tool_parameter_validation_and_sql_binding():
 
 
 def test_group_evidence_and_claim_attribution_are_preserved():
-    call=validated_calls(request(),Plan(intent='request_count',tools=['aggregate_service_requests'],
+    call=validated_calls(request(question=SERVICE_QUESTION),Plan(intent='request_count',tools=['aggregate_service_requests'],
         service_request_aggregation=ServiceRequestAggregation(group_by='both')),Settings())[0]
     result=ToolResult(call,rows=[dict(service_name=None,status='NEW',request_id_count=2),
                                dict(service_name='POTHOLE',status='CLOSED',request_id_count=3)])
@@ -296,7 +301,8 @@ def test_metadata_rejects_invalid_domain_and_functions_do_not_elevate_privileges
         names=conn.execute("""SELECT p.proname,p.prosecdef,p.provolatile FROM pg_proc p
             JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname='citylens'
             AND p.proname IN ('get_dataset_metadata','aggregate_service_requests')""").fetchall()
-        assert len(names)==2 and all(not row[1] and row[2]=='s' for row in names)
+        assert sorted(row[0] for row in names)==['aggregate_service_requests','aggregate_service_requests','get_dataset_metadata']
+        assert all(not row[1] and row[2]=='s' for row in names)
         with pytest.raises(psycopg.errors.InvalidParameterValue):
             conn.execute("SELECT citylens.get_dataset_metadata('unknown')")
 

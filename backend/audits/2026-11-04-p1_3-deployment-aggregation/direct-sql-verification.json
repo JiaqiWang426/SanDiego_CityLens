@@ -1,0 +1,1698 @@
+[
+  {
+    "case": "A_all_by_service",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 64,
+    "groups": [
+      {
+        "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENCAMPMENT",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ESD COLLECTIONS",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "GRAFFITI - PUBLIC",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ILLEGAL DUMPING",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "MISSED COLLECTION",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "OTHER",
+        "status": null,
+        "request_id_count": 5
+      },
+      {
+        "service_name": "PARKS ISSUE",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": null,
+        "request_id_count": 11
+      },
+      {
+        "service_name": "ROW MAINTENANCE",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "SIDEWALK REPAIR ISSUE",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "STORMWATER",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "STREET LIGHT MAINTENANCE",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "STREET SWEEPING",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC SIGN MAINTENANCE",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL ISSUE",
+        "status": null,
+        "request_id_count": 15
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL TIMING",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TREE MAINTENANCE",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "VEGETATION ENCROACHMENT",
+        "status": null,
+        "request_id_count": 2
+      }
+    ],
+    "query_id": "q_e30032f12ffa4944b158191d38a4714d",
+    "evidence_id": "ev_090bee17c810418d8982185bcccc0b06",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_all_by_status",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 64,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 51
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 5
+      },
+      {
+        "service_name": null,
+        "status": "REFERRED",
+        "request_id_count": 8
+      }
+    ],
+    "query_id": "q_03b5c2671d3e4c1b9c031eddbb644e00",
+    "evidence_id": "ev_160ea57412d943a086373be591d37fd3",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_all_by_both",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 64,
+    "groups": [
+      {
+        "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENCAMPMENT",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ESD COLLECTIONS",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "GRAFFITI - PUBLIC",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ILLEGAL DUMPING",
+        "status": "CLOSED",
+        "request_id_count": 3
+      },
+      {
+        "service_name": "MISSED COLLECTION",
+        "status": "CLOSED",
+        "request_id_count": 3
+      },
+      {
+        "service_name": "OTHER",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "OTHER",
+        "status": "REFERRED",
+        "request_id_count": 4
+      },
+      {
+        "service_name": "PARKS ISSUE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "REFERRED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 11
+      },
+      {
+        "service_name": "ROW MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "ROW MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "SIDEWALK REPAIR ISSUE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "SIDEWALK REPAIR ISSUE",
+        "status": "REFERRED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STORMWATER",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "STORMWATER",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STREET LIGHT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STREET LIGHT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STREET SWEEPING",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC SIGN MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL ISSUE",
+        "status": "CLOSED",
+        "request_id_count": 15
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL TIMING",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TREE MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "VEGETATION ENCROACHMENT",
+        "status": "REFERRED",
+        "request_id_count": 2
+      }
+    ],
+    "query_id": "q_cd9e46cbb79b40cf831bcb67417b38e2",
+    "evidence_id": "ev_0b095f543543462ea028b4078b35045b",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_pothole",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": " pothole ",
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 11,
+    "groups": [
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 11
+      }
+    ],
+    "query_id": "q_a367afab788744bca44d274fbf077a34",
+    "evidence_id": "ev_e57bb6c58ca545348d031b83e541342f",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_road_surface",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 14,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "REFERRED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 11
+      }
+    ],
+    "query_id": "q_225c5cbaf18e4496bc909ce743e5a990",
+    "evidence_id": "ev_7d7cab6db0414a1f91d14cf70798bc57",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_road_surface_by_status",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 14,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 12
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": null,
+        "status": "REFERRED",
+        "request_id_count": 1
+      }
+    ],
+    "query_id": "q_458a36efe0844843a7a32f5edbf29c26",
+    "evidence_id": "ev_dacefee5961044c497d6503bdf94d0d7",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_road_surface_exclude_parent",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": true,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 12,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "REFERRED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 9
+      }
+    ],
+    "query_id": "q_38f76eee327c4d23b21b441ff0bec818",
+    "evidence_id": "ev_e815e0be60154be197be967334ead450",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_repeated_label",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          " POTHOLE ",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 14,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "REFERRED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 11
+      }
+    ],
+    "query_id": "q_e0a9e85f8e594f48a316546d5b03eebd",
+    "evidence_id": "ev_584a617648d84d0a8cecabec8439e63e",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_closed_road_surface",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": " closed ",
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 12,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 11
+      }
+    ],
+    "query_id": "q_517b835ff37f41188f6d2aa47d0742c0",
+    "evidence_id": "ev_edbb03325eb04aa7b3a0f301c1fc5224",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "A_unknown_category",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 50000.0,
+      "time_range": {
+        "start": "2017-01-01T00:00:00-08:00",
+        "end": "2026-11-01T00:00:00-07:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          ""
+        ]
+      }
+    },
+    "count": 328,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 290
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 34
+      },
+      {
+        "service_name": null,
+        "status": "REFERRED",
+        "request_id_count": 4
+      }
+    ],
+    "query_id": "q_3a673671c5a44962a4ea289d8ab4641e",
+    "evidence_id": "ev_2d0a6bce6e524e0b8146a595ba9bb19a",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_all_by_service",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 107,
+    "groups": [
+      {
+        "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "DEAD ANIMAL",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+        "status": null,
+        "request_id_count": 52
+      },
+      {
+        "service_name": "ESD COLLECTIONS",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "ILLEGAL DUMPING",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "MISSED COLLECTION",
+        "status": null,
+        "request_id_count": 8
+      },
+      {
+        "service_name": "OTHER",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "PARKING - 72-HOURS",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PARKING VIOLATION",
+        "status": null,
+        "request_id_count": 8
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": null,
+        "request_id_count": 3
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": null,
+        "request_id_count": 9
+      },
+      {
+        "service_name": "ROW MAINTENANCE",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STORMWATER",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "STORMWATER CODE ENFORCEMENT",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STREET SWEEPING",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRAFFIC ENGINEERING",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRAFFIC SIGN MAINTENANCE",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL TIMING",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRASH/RECYCLING COLLECTION",
+        "status": null,
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TREE MAINTENANCE",
+        "status": null,
+        "request_id_count": 2
+      },
+      {
+        "service_name": "VEGETATION ENCROACHMENT",
+        "status": null,
+        "request_id_count": 2
+      }
+    ],
+    "query_id": "q_64d6a72f44784113bed138d5362f6226",
+    "evidence_id": "ev_0e462d6bc62440e98f1595a8d4513f22",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_all_by_status",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 107,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 95
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 6
+      },
+      {
+        "service_name": null,
+        "status": "NEW",
+        "request_id_count": 2
+      },
+      {
+        "service_name": null,
+        "status": "REFERRED",
+        "request_id_count": 4
+      }
+    ],
+    "query_id": "q_c35b0886670f4e6ea2ec6a255240172b",
+    "evidence_id": "ev_86b6f3fd48f6412aab33b5e6a1d91eb4",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_all_by_both",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 107,
+    "groups": [
+      {
+        "service_name": "BUILDING AND LAND USE ENFORCEMENT",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "DEAD ANIMAL",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ENVIRONMENTAL SERVICES CODE COMPLIANCE",
+        "status": "CLOSED",
+        "request_id_count": 52
+      },
+      {
+        "service_name": "ESD COLLECTIONS",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "ILLEGAL DUMPING",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "MISSED COLLECTION",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "OTHER",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "OTHER",
+        "status": "REFERRED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PARKING - 72-HOURS",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PARKING VIOLATION",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "ROW MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STORMWATER",
+        "status": "IN PROCESS",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "STORMWATER CODE ENFORCEMENT",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "STREET SWEEPING",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRAFFIC ENGINEERING",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC ENGINEERING",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC SIGN MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TRAFFIC SIGNAL TIMING",
+        "status": "REFERRED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "TRASH/RECYCLING COLLECTION",
+        "status": "CLOSED",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "TREE MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "VEGETATION ENCROACHMENT",
+        "status": "NEW",
+        "request_id_count": 2
+      }
+    ],
+    "query_id": "q_0df0b57cc24e45f88e0254a1f8442ca0",
+    "evidence_id": "ev_3bc5510a5f2a48dd9b032ac5610b473f",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_pothole",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": " pothole ",
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 9,
+    "groups": [
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      }
+    ],
+    "query_id": "q_71d736940ddc423ca93152f2943c14b9",
+    "evidence_id": "ev_31e9030e52ef468c92572afa0f2445ef",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_road_surface",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 12,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      }
+    ],
+    "query_id": "q_810e0e48533b437780ca8a35b88cfeab",
+    "evidence_id": "ev_32ca858b6326424fabc513df747cffbb",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_road_surface_by_status",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "status",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 12,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 10
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 2
+      }
+    ],
+    "query_id": "q_8ecfdf41cac74246923c18fed6a3e2ef",
+    "evidence_id": "ev_15a2f914efa546ab8e3f138c129d2ead",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_road_surface_exclude_parent",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": true,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 8,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 6
+      }
+    ],
+    "query_id": "q_6e7fdb2dbba64686a00a86327f8df2b7",
+    "evidence_id": "ev_6b314385637b4183811ca2fd36b3a59b",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_repeated_label",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          "Pothole",
+          " POTHOLE ",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 12,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 8
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "IN PROCESS",
+        "request_id_count": 1
+      }
+    ],
+    "query_id": "q_db57e0ba8c9a4512b8847cd3223e2f5f",
+    "evidence_id": "ev_3506e5bcc6514277b2c470d5bd7af2e4",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_closed_road_surface",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2026-01-01T00:00:00-08:00",
+        "end": "2026-03-01T00:00:00-08:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": " closed ",
+        "service_names": [
+          "Pothole",
+          "Pavement Maintenance"
+        ]
+      }
+    },
+    "count": 10,
+    "groups": [
+      {
+        "service_name": "PAVEMENT MAINTENANCE",
+        "status": "CLOSED",
+        "request_id_count": 2
+      },
+      {
+        "service_name": "POTHOLE",
+        "status": "CLOSED",
+        "request_id_count": 8
+      }
+    ],
+    "query_id": "q_286bccb65ccb428a865430954e01bf2b",
+    "evidence_id": "ev_651d551f61c9407e9f2bef919c264fc7",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "B_unknown_category",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "B",
+        "label": null,
+        "latitude": 32.85,
+        "longitude": -117.24
+      },
+      "radius_meters": 50000.0,
+      "time_range": {
+        "start": "2017-01-01T00:00:00-08:00",
+        "end": "2026-11-01T00:00:00-07:00",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "both",
+        "service_name": null,
+        "status": null,
+        "service_names": [
+          ""
+        ]
+      }
+    },
+    "count": 328,
+    "groups": [
+      {
+        "service_name": null,
+        "status": "CLOSED",
+        "request_id_count": 290
+      },
+      {
+        "service_name": null,
+        "status": "IN PROCESS",
+        "request_id_count": 34
+      },
+      {
+        "service_name": null,
+        "status": "REFERRED",
+        "request_id_count": 4
+      }
+    ],
+    "query_id": "q_c986303c6037444aac0de9e34aca79a7",
+    "evidence_id": "ev_67f5230211f8402fa197b0bac2c8a4c1",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "inclusive_start",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2016-05-23T19:03:00Z",
+        "end": "2016-05-23T19:03:00.000001Z",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 1,
+    "groups": [
+      {
+        "service_name": "POTHOLE",
+        "status": null,
+        "request_id_count": 1
+      }
+    ],
+    "query_id": "q_3508c28d6d7b4fc29d276b4093e6fda4",
+    "evidence_id": "ev_7ff92e0154324a358bc94449c717d708",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  },
+  {
+    "case": "exclusive_end",
+    "scope": {
+      "name": "aggregate_service_requests",
+      "location": {
+        "id": "A",
+        "label": null,
+        "latitude": 32.84,
+        "longitude": -117.25
+      },
+      "radius_meters": 800.0,
+      "time_range": {
+        "start": "2016-05-23T19:02:59.999999Z",
+        "end": "2016-05-23T19:03:00Z",
+        "calendar_timezone": "America/Los_Angeles"
+      },
+      "collision_filters": {
+        "min_injured": null,
+        "max_injured": null,
+        "min_killed": null,
+        "max_killed": null,
+        "hit_run": null,
+        "street_name": null,
+        "hit_run_level": null
+      },
+      "period": "month",
+      "exclude_linked_duplicates": false,
+      "limit": 100,
+      "service_request_aggregation": {
+        "group_by": "service_name",
+        "service_name": null,
+        "status": null,
+        "service_names": null
+      }
+    },
+    "count": 0,
+    "groups": [],
+    "query_id": "q_c4a1b67d3f0744b49f11bb2ba088e444",
+    "evidence_id": "ev_f64fb24858a64f89a9c85009dfac4ca9",
+    "direct_sql_matches": true,
+    "claims_verified": true
+  }
+]

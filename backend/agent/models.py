@@ -59,6 +59,7 @@ class QueryRequest(Model):
     time_range: TimeRange
     preferences: list[str] = Field(default_factory=list, max_length=8)
     conversation_id: str | None = Field(default=None, max_length=100)
+    session_id: str | None = Field(default=None, pattern=r'^[0-9a-f]{32}$')
 
     @model_validator(mode='after')
     def valid_names(self):
@@ -92,6 +93,16 @@ class ServiceRequestAggregation(Model):
     group_by: Literal['service_name','status','both']='service_name'
     service_name: str | None=Field(default=None,max_length=200)
     status: str | None=Field(default=None,max_length=100)
+    service_names: list[str] | None=Field(default=None,min_length=1,max_length=20)
+
+    @model_validator(mode='after')
+    def exclusive_service_filters(self):
+        if self.service_names is not None:
+            if self.service_name is not None:
+                raise ValueError('Use service_name or service_names, not both')
+            if any(len(name)>200 for name in self.service_names):
+                raise ValueError('Service category labels must be at most 200 characters')
+        return self
 
 
 class Plan(Model):
@@ -137,6 +148,7 @@ class ServiceRequestAggregationOutput(Model):
     group_by: Literal['service_name','status','both']
     service_name: str | None
     status: str | None
+    service_names: list[str] | None=None
 
 
 PlanOutput.model_rebuild()

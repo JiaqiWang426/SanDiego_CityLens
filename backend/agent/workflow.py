@@ -19,6 +19,7 @@ from .tools import DatabaseTools, ToolCall, ToolResult, tool_log
 from .location_flow import LocationConversations
 from .location_models import ChatTurn,ChatResponse
 from .sangis_geocoding import FallbackAddressGeocoder
+from .dimensions import COLLISION_PATTERN, SERVICE_PATTERN, mentioned_dimensions
 
 
 class AgentState(TypedDict, total=False):
@@ -51,7 +52,7 @@ UNSUPPORTED_PATTERNS = {
     # Status grouping is supported; repair-completion claims still are not.
     'service_status_breakdown':r'\b(repaired|repair completion)\b',
 }
-SUPPORTED_PATTERN=r'\b(collisions?|traffic|crashes?|get it done|service requests?|complaints?|public service|potholes?)\b'
+SUPPORTED_PATTERN='(?:'+COLLISION_PATTERN+'|'+SERVICE_PATTERN+')'
 
 
 def guard_scope(request: QueryRequest) -> tuple[list[str], bool]:
@@ -95,20 +96,28 @@ def validated_calls(request: QueryRequest, plan: Plan, settings: Settings) -> li
     category_requested=bool(re.search(r'\b(potholes?|streetlights?|graffiti|trash|sidewalks?|service categor\w*)\b',request.question.lower()))
     if (unavailable_service or category_requested) and 'count_service_requests' in plan.tools:
         raise ValueError('An all-category count cannot substitute for unavailable service filters')
+    required=set(request.preferences) | set(mentioned_dimensions(request.question))
     for pref,tool in [('service_requests','count_service_requests'),('traffic_collisions','aggregate_traffic_collisions')]:
         if pref=='service_requests' and unavailable_service:
             continue
         if pref=='service_requests' and 'aggregate_service_requests' in plan.tools:
             continue
-        if pref in request.preferences and tool not in plan.tools:
+        # A single-pin drilldown may return a bounded page, explicitly labelled
+        # as such. Two-pin comparisons and count requests still need aggregates.
+        if (pref=='traffic_collisions' and pref not in request.preferences and len(request.locations)==1
+                and plan.intent=='collision_drilldown' and 'get_traffic_collisions' in plan.tools):
+            continue
+        if pref in required and tool not in plan.tools:
             raise ValueError('Plan omitted an explicitly requested supported dimension')
     service=plan.service_request_aggregation
     if category_requested and 'aggregate_service_requests' not in plan.tools:
         raise ValueError('Service categories require aggregate_service_requests')
     specific_service=bool(re.search(r'\b(potholes?|streetlights?|graffiti|trash|sidewalks?)\b',request.question.lower()))
-    if specific_service and service.service_name is None:
+    if specific_service and service.service_name is None and service.service_names is None:
         raise ValueError('A specific service question requires an explicit service_name filter')
-    service_filter=service.service_name is not None or service.status is not None
+    service_filter=service.service_name is not None or service.service_names is not None or service.status is not None
+    if re.search(r'\broad[- ]related\b',request.question.lower()) and service.service_name is None and service.service_names is None:
+        raise ValueError('Road-related scope requires explicit service categories; clarify the intended labels')
     if service_filter and 'aggregate_service_requests' not in plan.tools:
         raise ValueError('Service filters require aggregate_service_requests')
     nondefault=plan.exclude_linked_duplicates or service_filter or any(v is not None for v in plan.collision_filters.model_dump().values())
@@ -116,7 +125,7 @@ def validated_calls(request: QueryRequest, plan: Plan, settings: Settings) -> li
         raise ValueError('Nondefault filters need an exact supporting question quote')
     if service_filter:
         quote=' '.join(plan.filter_quote.upper().split())
-        for value in (service.service_name,service.status):
+        for value in (service.service_name,service.status,*(service.service_names or [])):
             if value and ' '.join(value.upper().split()) not in quote:
                 raise ValueError('Service filter must use a label present in the supporting quote')
     if len(plan.tools)*len(request.locations)>settings.max_tool_calls:
@@ -194,16 +203,21 @@ class Agent:
         graph.add_edge('compose_answer','final_validate')
         graph.add_edge('final_validate',END)
         graph.add_edge('abstain',END)
-        self.graph=graph.compile()
+        # The conversation graph checkpoints completed turns. This request-local
+        # graph contains live locks/tool objects and must not inherit its saver.
+        self.graph=graph.compile(checkpointer=False)
 
-    async def query(self, request: QueryRequest) -> QueryResponse:
+    async def query(self, request: QueryRequest, *, plan=None, state_out=None) -> QueryResponse:
         state=await self.graph.ainvoke({'request':request,'trace_id':'trace_'+uuid4().hex,
+            'confirmed_plan':plan,
             'codes':[],'unsupported':[],'evidence':[],'claims':[],'comparisons':[]},
             config={'recursion_limit':16})
+        if state_out is not None:
+            state_out.update(state)
         return state['response']
 
-    async def chat(self,turn: ChatTurn) -> ChatResponse:
-        session=self.conversations.session(turn)
+    async def chat(self,turn: ChatTurn, *, session=None) -> ChatResponse:
+        session=session if session is not None else self.conversations.session(turn)
         async with session.lock:
             state=await self.graph.ainvoke({'turn':turn,'session':session,'trace_id':'trace_'+uuid4().hex,
                 'codes':[],'unsupported':[],'evidence':[],'claims':[],'comparisons':[]},config={'recursion_limit':18})

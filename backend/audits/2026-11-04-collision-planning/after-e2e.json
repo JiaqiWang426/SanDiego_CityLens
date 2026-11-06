@@ -1,0 +1,247 @@
+{
+ "geocode_San Diego": {
+  "status": "resolved",
+  "provider": "US Census Geocoder",
+  "matched": "3950 MAHAILA AVE, SAN DIEGO, CA, 92122",
+  "lat": 32.869511858293,
+  "lon": -117.220200782746,
+  "precision": "interpolated_address",
+  "attempts": null
+ },
+ "geocode_La Jolla": {
+  "status": "resolved",
+  "provider": "US Census Geocoder",
+  "matched": "3950 MAHAILA AVE, SAN DIEGO, CA, 92122",
+  "lat": 32.869511858293,
+  "lon": -117.220200782746,
+  "precision": "interpolated_address",
+  "attempts": null
+ },
+ "pending": {
+  "status": "needs_confirmation",
+  "message": "Please confirm these proposed address interpretations and query conditions. Addresses have not yet been geographically verified.",
+  "locations": [
+   {
+    "id": "A",
+    "source_quote": "9237 Regents Road",
+    "house_number": "9237",
+    "street_name": "Regents",
+    "street_suffix": "Rd",
+    "direction": null,
+    "city": "San Diego",
+    "state": "CA",
+    "postal_code": null,
+    "post_direction": null
+   },
+   {
+    "id": "B",
+    "source_quote": "3950 Mahaila Ave",
+    "house_number": "3950",
+    "street_name": "Mahaila",
+    "street_suffix": "Ave",
+    "direction": null,
+    "city": "San Diego",
+    "state": "CA",
+    "postal_code": "92122",
+    "post_direction": null
+   }
+  ],
+  "plan": {
+   "intent": "compare_locations",
+   "tools": [
+    "aggregate_traffic_collisions"
+   ],
+   "period": "month",
+   "collision_filters": {
+    "min_injured": null,
+    "max_injured": null,
+    "min_killed": null,
+    "max_killed": null,
+    "hit_run": null,
+    "street_name": null,
+    "hit_run_level": null
+   },
+   "exclude_linked_duplicates": false,
+   "service_request_aggregation": {
+    "group_by": "service_name",
+    "service_name": null,
+    "status": null,
+    "service_names": null
+   },
+   "filter_quote": null,
+   "unsupported_dimensions": []
+  },
+  "radius": 800.0,
+  "time_range": {
+   "start": "2025-01-01T00:00:00-08:00",
+   "end": "2026-01-01T00:00:00-08:00",
+   "calendar_timezone": "America/Los_Angeles"
+  },
+  "preferences_after_narrowing": [
+   "traffic_collisions"
+  ]
+ },
+ "final": {
+  "status": "complete",
+  "result_status": "partial",
+  "codes": [
+   "coverage_unknown",
+   "freshness_unknown"
+  ],
+  "resolved": [
+   {
+    "id": "A",
+    "label": "9237 REGENTS RD, SAN DIEGO, CA, 92122",
+    "lat": 32.871562300114,
+    "lon": -117.218253568198,
+    "provider": "US Census Geocoder"
+   },
+   {
+    "id": "B",
+    "label": "3950 MAHAILA AVE, SAN DIEGO, CA, 92122",
+    "lat": 32.869511858293,
+    "lon": -117.220200782746,
+    "provider": "US Census Geocoder"
+   }
+  ],
+  "execution_plan": [
+   {
+    "name": "aggregate_traffic_collisions",
+    "location": {
+     "id": "A",
+     "label": "9237 REGENTS RD, SAN DIEGO, CA, 92122",
+     "latitude": 32.871562300114,
+     "longitude": -117.218253568198
+    },
+    "radius_meters": 800.0,
+    "time_range": {
+     "start": "2025-01-01T00:00:00-08:00",
+     "end": "2026-01-01T00:00:00-08:00",
+     "calendar_timezone": "America/Los_Angeles"
+    },
+    "collision_filters": {
+     "min_injured": null,
+     "max_injured": null,
+     "min_killed": null,
+     "max_killed": null,
+     "hit_run": null,
+     "street_name": null,
+     "hit_run_level": null
+    },
+    "period": "month",
+    "exclude_linked_duplicates": false,
+    "limit": 100,
+    "service_request_aggregation": {
+     "group_by": "service_name",
+     "service_name": null,
+     "status": null,
+     "service_names": null
+    }
+   },
+   {
+    "name": "aggregate_traffic_collisions",
+    "location": {
+     "id": "B",
+     "label": "3950 MAHAILA AVE, SAN DIEGO, CA, 92122",
+     "latitude": 32.869511858293,
+     "longitude": -117.220200782746
+    },
+    "radius_meters": 800.0,
+    "time_range": {
+     "start": "2025-01-01T00:00:00-08:00",
+     "end": "2026-01-01T00:00:00-08:00",
+     "calendar_timezone": "America/Los_Angeles"
+    },
+    "collision_filters": {
+     "min_injured": null,
+     "max_injured": null,
+     "min_killed": null,
+     "max_killed": null,
+     "hit_run": null,
+     "street_name": null,
+     "hit_run_level": null
+    },
+    "period": "month",
+    "exclude_linked_duplicates": false,
+    "limit": 100,
+    "service_request_aggregation": {
+     "group_by": "service_name",
+     "service_name": null,
+     "status": null,
+     "service_names": null
+    }
+   }
+  ],
+  "evidence": [
+   {
+    "id": "ev_3e9836ac212845668536932d883723b2",
+    "query_id": "q_d8e48fdd802c45c898362784a6439005",
+    "loc": "A",
+    "metric": "geocoded_collision_report_count",
+    "value": 40,
+    "status": "partial",
+    "table": "citylens.traffic_collisions"
+   },
+   {
+    "id": "ev_1a4266b6523346e5a02287121d2085a2",
+    "query_id": "q_2777aa3021134a28a802365f33d07d72",
+    "loc": "B",
+    "metric": "geocoded_collision_report_count",
+    "value": 35,
+    "status": "partial",
+    "table": "citylens.traffic_collisions"
+   }
+  ],
+  "comparison": [
+   {
+    "metric": "geocoded_collision_report_count",
+    "location_a": "A",
+    "location_b": "B",
+    "value_a": 40,
+    "value_b": 35,
+    "difference_b_minus_a": -5,
+    "evidence_ids": [
+     "ev_3e9836ac212845668536932d883723b2",
+     "ev_1a4266b6523346e5a02287121d2085a2"
+    ],
+    "overlapping_circles": true,
+    "limitations": [
+     "Geographic completeness and source freshness are not verified.",
+     "Import timestamps do not establish source freshness; upserts retain older records.",
+     "Source wall timestamps are assumed to be America/Los_Angeles; the source timezone is unverified.",
+     "Police-recorded reports only; these counts do not measure collision risk, crime, or safety.",
+     "Spatial results exclude unlocated reports; their number within the radius cannot be determined.",
+     "Collision coordinates are approximate (road block or road intersection), never exact crash positions; radius membership is uncertain near boundaries.",
+     "Missing calendar buckets are zero-filled matches, not verified data coverage.",
+     "Query circles overlap; counts may share records and are not independent samples."
+    ]
+   }
+  ],
+  "claims": [
+   {
+    "text": "A: 40 imported, geocoded police collision reports matched the recorded query filters [ev_3e9836ac212845668536932d883723b2].",
+    "evidence_ids": [
+     "ev_3e9836ac212845668536932d883723b2"
+    ]
+   },
+   {
+    "text": "B: 35 imported, geocoded police collision reports matched the recorded query filters [ev_1a4266b6523346e5a02287121d2085a2].",
+    "evidence_ids": [
+     "ev_1a4266b6523346e5a02287121d2085a2"
+    ]
+   },
+   {
+    "text": "geocoded_collision_report_count: B minus A is -5 reports [ev_3e9836ac212845668536932d883723b2, ev_1a4266b6523346e5a02287121d2085a2].",
+    "evidence_ids": [
+     "ev_3e9836ac212845668536932d883723b2",
+     "ev_1a4266b6523346e5a02287121d2085a2"
+    ]
+   }
+  ],
+  "answer": "This comparison describes imported record counts, not safety or service quality. Locations: A: 9237 REGENTS RD, SAN DIEGO, CA, 92122; B: 3950 MAHAILA AVE, SAN DIEGO, CA, 92122. Scope: within 800 meters of each selected pin, from 2025-01-01T00:00:00-08:00 (inclusive) to 2026-01-01T00:00:00-08:00 (exclusive); calendar timezone America/Los_Angeles. A: 40 imported, geocoded police collision reports matched the recorded query filters [ev_3e9836ac212845668536932d883723b2]. B: 35 imported, geocoded police collision reports matched the recorded query filters [ev_1a4266b6523346e5a02287121d2085a2]. geocoded_collision_report_count: B minus A is -5 reports [ev_3e9836ac212845668536932d883723b2, ev_1a4266b6523346e5a02287121d2085a2]. Coverage and freshness are unknown. Unlocated collision reports are excluded; collision positions are approximate (road block or intersection). Zero matches do not establish absence of incidents."
+ },
+ "independent_sql": {
+  "A": 40,
+  "B": 35
+ }
+}

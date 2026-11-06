@@ -1,0 +1,338 @@
+{
+  "definitions": [
+    {
+      "signature": "aggregate_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean,text,text,text)",
+      "definition": "CREATE OR REPLACE FUNCTION citylens.aggregate_service_requests(latitude double precision, longitude double precision, radius_meters double precision, start_time timestamp with time zone, end_time timestamp with time zone, exclude_linked_duplicates boolean DEFAULT false, group_by text DEFAULT 'service_name'::text, service_name_filter text DEFAULT NULL::text, status_filter text DEFAULT NULL::text)\n RETURNS TABLE(service_name text, status text, request_id_count bigint)\n LANGUAGE plpgsql\n STABLE\nAS $function$\r\nBEGIN\r\n    IF latitude IS NULL OR NOT latitude BETWEEN -90 AND 90\r\n        OR longitude IS NULL OR NOT longitude BETWEEN -180 AND 180\r\n        OR radius_meters IS NULL OR NOT radius_meters BETWEEN 0 AND 50000\r\n        OR start_time IS NULL OR end_time IS NULL OR start_time >= end_time\r\n        OR NOT isfinite(start_time) OR NOT isfinite(end_time)\r\n        OR exclude_linked_duplicates IS NULL\r\n        OR group_by IS NULL OR group_by NOT IN ('service_name','status','both') THEN\r\n        RAISE EXCEPTION 'Invalid coordinate, radius, time interval, duplicate policy or grouping'\r\n            USING ERRCODE='22023';\r\n    END IF;\r\n    RETURN QUERY\r\n    WITH normalized AS (\r\n        SELECT r.service_request_id,\r\n            citylens.normalize_request_category(r.service_name) AS service,\r\n            citylens.normalize_request_category(r.status) AS state\r\n        FROM citylens.service_requests r\r\n        WHERE r.requested_at>=start_time AND r.requested_at<end_time\r\n            AND (NOT exclude_linked_duplicates OR r.parent_id IS NULL)\r\n            AND ST_DWithin(r.location,\r\n                ST_SetSRID(ST_MakePoint(longitude,latitude),4326)::geography,radius_meters)\r\n    ), matching AS (\r\n        SELECT n.service_request_id,\r\n            CASE WHEN group_by IN ('service_name','both') THEN n.service END AS service,\r\n            CASE WHEN group_by IN ('status','both') THEN n.state END AS state\r\n        FROM normalized n\r\n        WHERE (service_name_filter IS NULL OR n.service IS NOT DISTINCT FROM citylens.normalize_request_category(service_name_filter))\r\n          AND (status_filter IS NULL OR n.state IS NOT DISTINCT FROM citylens.normalize_request_category(status_filter))\r\n    )\r\n    SELECT m.service,m.state,count(DISTINCT m.service_request_id)\r\n    FROM matching m GROUP BY m.service,m.state\r\n    ORDER BY m.service COLLATE \"C\" NULLS FIRST,m.state COLLATE \"C\" NULLS FIRST;\r\nEND;\r\n$function$\n"
+    },
+    {
+      "signature": "count_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean)",
+      "definition": "CREATE OR REPLACE FUNCTION citylens.count_service_requests(latitude double precision, longitude double precision, radius_meters double precision, start_time timestamp with time zone, end_time timestamp with time zone, exclude_linked_duplicates boolean DEFAULT false)\n RETURNS bigint\n LANGUAGE plpgsql\n STABLE\nAS $function$\nBEGIN\n    -- Reject NULLs, invalid numeric ranges, infinite dates, and empty/reversed\n    -- intervals. SQLSTATE 22023 means invalid_parameter_value for callers/tests.\n    IF latitude IS NULL OR NOT latitude BETWEEN -90 AND 90\n       OR longitude IS NULL OR NOT longitude BETWEEN -180 AND 180\n       OR radius_meters IS NULL OR NOT radius_meters BETWEEN 0 AND 50000\n       OR start_time IS NULL OR end_time IS NULL OR start_time >= end_time\n       OR NOT isfinite(start_time) OR NOT isfinite(end_time)\n       OR exclude_linked_duplicates IS NULL THEN\n        RAISE EXCEPTION 'Invalid coordinates, radius (0..50000 meters), or time interval'\n            USING ERRCODE = '22023';\n    END IF;\n    RETURN (\n        -- The primary key already ensures one row per request ID, so count(*)\n        -- cannot double-count repeated CSV occurrences after ingestion.\n        SELECT count(*) FROM citylens.service_requests r\n        -- Half-open intervals avoid counting a boundary timestamp twice when\n        -- querying adjacent periods, such as January followed by February.\n        WHERE r.requested_at >= start_time AND r.requested_at < end_time\n          -- Flag false: NOT false is true, so every parent-link state passes.\n          -- Flag true: only rows with no explicit parent link pass. This does\n          -- not discover unlinked duplicates or merge records into real issues.\n          AND (NOT exclude_linked_duplicates OR r.parent_id IS NULL)\n          -- geography uses spheroidal distance in meters by default. Assigning\n          -- SRID labels the coordinate system; it does not transform coordinates.\n          -- NULL locations cannot satisfy this filter and are not counted.\n          AND ST_DWithin(r.location,\n              ST_SetSRID(ST_MakePoint(longitude, latitude),4326)::geography,\n              radius_meters)\n    );\nEND;\n$function$\n"
+    }
+  ],
+  "service_categories": [
+    {
+      "service_name": "Missed Collection",
+      "records": 39729,
+      "distinct_ids": 39729,
+      "first_record": "2018-08-27 14:03:00+00:00",
+      "last_record": "2026-10-27 05:13:19+00:00"
+    },
+    {
+      "service_name": "Illegal Dumping",
+      "records": 34098,
+      "distinct_ids": 34098,
+      "first_record": "2016-05-30 18:18:00+00:00",
+      "last_record": "2026-10-27 02:23:20+00:00"
+    },
+    {
+      "service_name": "Parking",
+      "records": 26415,
+      "distinct_ids": 26415,
+      "first_record": "2016-06-03 17:52:00+00:00",
+      "last_record": "2025-06-10 16:47:00+00:00"
+    },
+    {
+      "service_name": "Pothole",
+      "records": 21883,
+      "distinct_ids": 21883,
+      "first_record": "2016-05-20 17:43:00+00:00",
+      "last_record": "2026-10-26 23:41:09+00:00"
+    },
+    {
+      "service_name": "Parking Violation",
+      "records": 18276,
+      "distinct_ids": 18276,
+      "first_record": "2020-03-08 17:56:00+00:00",
+      "last_record": "2026-10-26 23:37:08+00:00"
+    },
+    {
+      "service_name": "Encampment",
+      "records": 17731,
+      "distinct_ids": 17731,
+      "first_record": "2018-08-31 01:05:00+00:00",
+      "last_record": "2026-10-27 04:13:21+00:00"
+    },
+    {
+      "service_name": "Other",
+      "records": 13292,
+      "distinct_ids": 13292,
+      "first_record": "2016-06-02 16:22:00+00:00",
+      "last_record": "2026-10-27 05:33:40+00:00"
+    },
+    {
+      "service_name": "Shared Mobility Device",
+      "records": 11614,
+      "distinct_ids": 11614,
+      "first_record": "2019-05-24 02:04:00+00:00",
+      "last_record": "2025-01-19 21:36:00+00:00"
+    },
+    {
+      "service_name": "Street Light Maintenance",
+      "records": 11381,
+      "distinct_ids": 11381,
+      "first_record": "2016-05-21 14:34:00+00:00",
+      "last_record": "2026-10-27 03:57:55+00:00"
+    },
+    {
+      "service_name": "Tree Maintenance",
+      "records": 10964,
+      "distinct_ids": 10964,
+      "first_record": "2016-05-20 18:41:00+00:00",
+      "last_record": "2026-10-27 01:28:33+00:00"
+    },
+    {
+      "service_name": "Traffic Signal Issue",
+      "records": 8254,
+      "distinct_ids": 8254,
+      "first_record": "2016-05-20 23:53:00+00:00",
+      "last_record": "2026-10-27 00:20:54+00:00"
+    },
+    {
+      "service_name": "Graffiti",
+      "records": 7380,
+      "distinct_ids": 7380,
+      "first_record": "2016-05-25 05:29:00+00:00",
+      "last_record": "2022-08-17 18:33:00+00:00"
+    },
+    {
+      "service_name": "Sidewalk Repair Issue",
+      "records": 6759,
+      "distinct_ids": 6759,
+      "first_record": "2016-05-20 23:08:00+00:00",
+      "last_record": "2026-10-23 20:33:20+00:00"
+    },
+    {
+      "service_name": "ROW Maintenance",
+      "records": 6411,
+      "distinct_ids": 6411,
+      "first_record": "2016-06-26 19:42:00+00:00",
+      "last_record": "2026-10-27 05:47:39+00:00"
+    },
+    {
+      "service_name": "Parks Issue",
+      "records": 5885,
+      "distinct_ids": 5885,
+      "first_record": "2016-09-08 15:48:00+00:00",
+      "last_record": "2026-10-27 01:16:43+00:00"
+    },
+    {
+      "service_name": "Traffic Sign Maintenance",
+      "records": 5289,
+      "distinct_ids": 5289,
+      "first_record": "2016-06-05 06:56:00+00:00",
+      "last_record": "2026-10-22 17:28:12+00:00"
+    },
+    {
+      "service_name": "Stormwater Code Enforcement",
+      "records": 5243,
+      "distinct_ids": 5243,
+      "first_record": "2016-05-20 16:10:00+00:00",
+      "last_record": "2026-10-24 21:10:51+00:00"
+    },
+    {
+      "service_name": "Environmental Services Code Compliance",
+      "records": 5123,
+      "distinct_ids": 5123,
+      "first_record": "2018-07-07 15:59:00+00:00",
+      "last_record": "2026-10-26 16:15:51+00:00"
+    },
+    {
+      "service_name": "Parking - 72-Hours",
+      "records": 4828,
+      "distinct_ids": 4828,
+      "first_record": "2025-04-10 19:30:00+00:00",
+      "last_record": "2026-10-27 03:00:25+00:00"
+    },
+    {
+      "service_name": "Traffic Engineering",
+      "records": 4741,
+      "distinct_ids": 4741,
+      "first_record": "2016-05-23 19:13:00+00:00",
+      "last_record": "2026-10-27 03:34:07+00:00"
+    },
+    {
+      "service_name": "Traffic Signal Timing",
+      "records": 4601,
+      "distinct_ids": 4601,
+      "first_record": "2016-05-23 16:41:00+00:00",
+      "last_record": "2026-10-27 01:00:55+00:00"
+    },
+    {
+      "service_name": "Graffiti - Public",
+      "records": 4369,
+      "distinct_ids": 4369,
+      "first_record": "2021-04-23 00:13:00+00:00",
+      "last_record": "2026-10-26 22:15:46+00:00"
+    },
+    {
+      "service_name": "Stormwater",
+      "records": 3467,
+      "distinct_ids": 3467,
+      "first_record": "2016-05-23 18:34:00+00:00",
+      "last_record": "2026-10-26 16:15:19+00:00"
+    },
+    {
+      "service_name": "Pavement Maintenance",
+      "records": 3302,
+      "distinct_ids": 3302,
+      "first_record": "2016-05-20 20:34:00+00:00",
+      "last_record": "2026-10-23 22:10:52+00:00"
+    },
+    {
+      "service_name": "Dead Animal",
+      "records": 3018,
+      "distinct_ids": 3018,
+      "first_record": "2016-06-01 22:37:00+00:00",
+      "last_record": "2026-10-25 21:26:33+00:00"
+    },
+    {
+      "service_name": "Street Sweeping",
+      "records": 2650,
+      "distinct_ids": 2650,
+      "first_record": "2016-05-25 17:03:00+00:00",
+      "last_record": "2026-10-23 05:30:48+00:00"
+    },
+    {
+      "service_name": "Graffiti - Code Enforcement",
+      "records": 2634,
+      "distinct_ids": 2634,
+      "first_record": "2016-06-06 17:39:00+00:00",
+      "last_record": "2026-10-23 20:52:56+00:00"
+    },
+    {
+      "service_name": "Vegetation Encroachment",
+      "records": 2006,
+      "distinct_ids": 2006,
+      "first_record": "2017-11-30 02:44:27+00:00",
+      "last_record": "2026-10-26 18:34:47+00:00"
+    },
+    {
+      "service_name": "Trash/Recycling Collection",
+      "records": 1684,
+      "distinct_ids": 1684,
+      "first_record": "2018-08-25 17:24:00+00:00",
+      "last_record": "2026-10-15 18:23:43+00:00"
+    },
+    {
+      "service_name": "ESD Collections",
+      "records": 1398,
+      "distinct_ids": 1398,
+      "first_record": "2025-08-19 22:45:00+00:00",
+      "last_record": "2026-02-08 15:32:00+00:00"
+    },
+    {
+      "service_name": "STRO Violation",
+      "records": 1247,
+      "distinct_ids": 1247,
+      "first_record": "2023-05-01 16:36:00+00:00",
+      "last_record": "2026-10-27 03:29:05+00:00"
+    },
+    {
+      "service_name": "Weed Cleanup",
+      "records": 1247,
+      "distinct_ids": 1247,
+      "first_record": "2017-03-16 22:46:00+00:00",
+      "last_record": "2026-10-21 00:46:33+00:00"
+    },
+    {
+      "service_name": "Development Services - Code Enforcement",
+      "records": 1215,
+      "distinct_ids": 1215,
+      "first_record": "2016-10-20 20:38:00+00:00",
+      "last_record": "2025-10-28 18:09:00+00:00"
+    },
+    {
+      "service_name": "Street Flooded",
+      "records": 1170,
+      "distinct_ids": 1170,
+      "first_record": "2017-07-22 03:35:00+00:00",
+      "last_record": "2024-06-28 16:30:00+00:00"
+    },
+    {
+      "service_name": "Waste on Private Property",
+      "records": 1054,
+      "distinct_ids": 1054,
+      "first_record": "2018-09-13 20:24:00+00:00",
+      "last_record": "2026-10-22 20:23:48+00:00"
+    },
+    {
+      "service_name": "Oversized Vehicle",
+      "records": 844,
+      "distinct_ids": 844,
+      "first_record": "2021-05-25 14:29:00+00:00",
+      "last_record": "2026-10-26 23:12:19+00:00"
+    },
+    {
+      "service_name": "Right-of-Way Code Enforcement",
+      "records": 815,
+      "distinct_ids": 815,
+      "first_record": "2017-03-10 17:25:00+00:00",
+      "last_record": "2026-09-16 21:14:38+00:00"
+    },
+    {
+      "service_name": "Building and Land Use Enforcement",
+      "records": 488,
+      "distinct_ids": 488,
+      "first_record": "2023-04-21 15:19:00+00:00",
+      "last_record": "2026-10-26 18:22:02+00:00"
+    },
+    {
+      "service_name": "",
+      "records": 424,
+      "distinct_ids": 424,
+      "first_record": "2016-07-29 06:40:00+00:00",
+      "last_record": "2026-10-26 19:51:44+00:00"
+    },
+    {
+      "service_name": "COVID-19",
+      "records": 157,
+      "distinct_ids": 157,
+      "first_record": "2020-10-29 23:54:00+00:00",
+      "last_record": "2021-06-10 22:32:00+00:00"
+    },
+    {
+      "service_name": "Homeless Outreach",
+      "records": 75,
+      "distinct_ids": 75,
+      "first_record": "2021-09-14 04:41:00+00:00",
+      "last_record": "2022-03-06 16:44:00+00:00"
+    },
+    {
+      "service_name": "Graffiti - Private",
+      "records": 57,
+      "distinct_ids": 57,
+      "first_record": "2023-07-17 18:16:00+00:00",
+      "last_record": "2026-10-09 18:45:00+00:00"
+    },
+    {
+      "service_name": "Biohazard",
+      "records": 3,
+      "distinct_ids": 3,
+      "first_record": "2023-06-23 18:10:00+00:00",
+      "last_record": "2025-01-17 17:16:00+00:00"
+    },
+    {
+      "service_name": "Bicycle-Related Issue",
+      "records": 2,
+      "distinct_ids": 2,
+      "first_record": "2024-08-30 14:53:00+00:00",
+      "last_record": "2026-03-14 22:13:40+00:00"
+    },
+    {
+      "service_name": "Container Request",
+      "records": 2,
+      "distinct_ids": 2,
+      "first_record": "2018-12-06 01:24:00+00:00",
+      "last_record": "2025-04-27 16:45:00+00:00"
+    }
+  ],
+  "quality": {
+    "records": 303225,
+    "distinct_ids": 303225,
+    "null_service": 0,
+    "empty_service": 424,
+    "null_status": 0,
+    "null_location": 0,
+    "null_date": 0
+  }
+}

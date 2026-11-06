@@ -1,0 +1,38 @@
+{
+  "mode": "followup",
+  "radius_meters": 1200.0,
+  "radius_quote": "Change only the radius to 1,200 meters.",
+  "time_range": null,
+  "time_quote": null,
+  "plan": {
+    "intent": "request_count",
+    "tools": [
+      "count_service_requests"
+    ],
+    "period": "month",
+    "collision_filters": {
+      "min_injured": null,
+      "max_injured": null,
+      "min_killed": null,
+      "max_killed": null,
+      "hit_run": null,
+      "street_name": null,
+      "hit_run_level": null
+    },
+    "exclude_linked_duplicates": false,
+    "service_request_aggregation": {
+      "group_by": "service_name",
+      "service_name": null,
+      "status": null
+    },
+    "filter_quote": null,
+    "unsupported_dimensions": [
+      "development"
+    ]
+  },
+  "changed_plan_fields": [
+    "radius_meters"
+  ],
+  "change_quote": "Change only the radius to 1,200 meters.",
+  "clarification": null
+}

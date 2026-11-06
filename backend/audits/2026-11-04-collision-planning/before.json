@@ -1,0 +1,191 @@
+{
+  "tables": [
+    {
+      "schema": "citylens",
+      "name": "collision_imports",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 1,
+      "content_hash_sum": "-8268611358396401142"
+    },
+    {
+      "schema": "citylens",
+      "name": "collision_source_rows",
+      "acl": null,
+      "owner": "citylens",
+      "rows": 78494,
+      "content_hash_sum": "3710777674337615750597"
+    },
+    {
+      "schema": "citylens",
+      "name": "ingestions",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 1,
+      "content_hash_sum": "5396158612374017489"
+    },
+    {
+      "schema": "citylens",
+      "name": "service_requests",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 303225,
+      "content_hash_sum": "1039490990210766121119"
+    },
+    {
+      "schema": "citylens",
+      "name": "traffic_collisions",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 78494,
+      "content_hash_sum": "-634849018213379986019"
+    },
+    {
+      "schema": "citylens_ref",
+      "name": "geocode_apply_history",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 8441,
+      "content_hash_sum": "-61087796042560425660"
+    },
+    {
+      "schema": "citylens_ref",
+      "name": "geocode_apply_runs",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 11,
+      "content_hash_sum": "11240901865367711790"
+    },
+    {
+      "schema": "citylens_ref",
+      "name": "road_nodes",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 130637,
+      "content_hash_sum": "-2809121407616371758429"
+    },
+    {
+      "schema": "citylens_ref",
+      "name": "road_segments",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 164584,
+      "content_hash_sum": "-409574548729031239480"
+    },
+    {
+      "schema": "citylens_ref",
+      "name": "snapshots",
+      "acl": "{citylens=arwdDxtm/citylens,citylens_agent_reader=r/citylens}",
+      "owner": "citylens",
+      "rows": 1,
+      "content_hash_sum": "8885515740288258628"
+    }
+  ],
+  "roles": [
+    {
+      "rolname": "citylens",
+      "rolsuper": true,
+      "rolcreatedb": true,
+      "rolcreaterole": true,
+      "rolreplication": true,
+      "rolbypassrls": true,
+      "rolcanlogin": true,
+      "rolconfig": null
+    },
+    {
+      "rolname": "citylens_agent",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false,
+      "rolcanlogin": true,
+      "rolconfig": null
+    },
+    {
+      "rolname": "citylens_agent_reader",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false,
+      "rolcanlogin": false,
+      "rolconfig": null
+    },
+    {
+      "rolname": "citylens_sessions",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolreplication": false,
+      "rolbypassrls": false,
+      "rolcanlogin": true,
+      "rolconfig": null
+    }
+  ],
+  "memberships": [
+    {
+      "member": "citylens_agent",
+      "parent": "citylens_agent_reader"
+    }
+  ],
+  "functions": [
+    {
+      "signature": "aggregate_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean,text,text,text)",
+      "acl": null,
+      "owner": "citylens",
+      "definition_sha256": "78467a5f7ec9549dfaaffaea47f7fc16d97fb92339a8a4a68ab6c2b2383d8e2d"
+    },
+    {
+      "signature": "aggregate_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean,text,text,text,text[])",
+      "acl": "{citylens=X/citylens,citylens_agent_reader=X/citylens}",
+      "owner": "citylens",
+      "definition_sha256": "26b87b892d9a69e0e81ad03470dd8bb75fa98a074388d31e2756f3cb3f07da0a"
+    },
+    {
+      "signature": "aggregate_traffic_collisions(timestamp with time zone,timestamp with time zone,double precision,double precision,double precision,integer,integer,integer,integer,boolean,text,text,text,text)",
+      "acl": "{=X/citylens,citylens=X/citylens,citylens_agent_reader=X/citylens}",
+      "owner": "citylens",
+      "definition_sha256": "b3feee6820db3cb0f4fda57662e75ce14f105fbd9cdfe54042e8f7c3e8ae66a1"
+    },
+    {
+      "signature": "count_service_requests(double precision,double precision,double precision,timestamp with time zone,timestamp with time zone,boolean)",
+      "acl": "{=X/citylens,citylens=X/citylens,citylens_agent_reader=X/citylens}",
+      "owner": "citylens",
+      "definition_sha256": "c9c30c3b2930ba08032b7497679a6e6555f4fdf73d626aabe9dc0009e0d6822e"
+    },
+    {
+      "signature": "filter_traffic_collisions(timestamp with time zone,timestamp with time zone,double precision,double precision,double precision,integer,integer,integer,integer,boolean,text,text)",
+      "acl": "{=X/citylens,citylens=X/citylens,citylens_agent_reader=X/citylens}",
+      "owner": "citylens",
+      "definition_sha256": "4545ad8813f3a4337f5aeef628acf4844ad7a9b5f33a6a8a113820a2c588040f"
+    },
+    {
+      "signature": "get_dataset_metadata(text)",
+      "acl": null,
+      "owner": "citylens",
+      "definition_sha256": "23727bcbbf2b885595108b5e5d480945ce94e66016869d7f0c84aee4088afe09"
+    },
+    {
+      "signature": "get_traffic_collisions(timestamp with time zone,timestamp with time zone,double precision,double precision,double precision,integer,integer,integer,integer,boolean,text,text,integer,integer)",
+      "acl": "{=X/citylens,citylens=X/citylens,citylens_agent_reader=X/citylens}",
+      "owner": "citylens",
+      "definition_sha256": "cd9c73c5fb89d9e05a96a76e432347ba69ab6803a5726805b33db2c565e16044"
+    },
+    {
+      "signature": "normalize_request_category(text)",
+      "acl": null,
+      "owner": "citylens",
+      "definition_sha256": "cd1d93b1f9a9c36258d1b0b761fe1d81bf624e658c5d8d20b946f5d2fe8a30e2"
+    }
+  ],
+  "session_table_existed": true,
+  "sessions": [
+    {
+      "session_id": "f37aa83b618a44f396740b1c6ab095db",
+      "title": "Compare the number of traffic collisions between 9237 Regents Road and 3950 Mahaila Ave in 2026, in ",
+      "created_at": "2026-11-05 01:06:44.256748+00:00",
+      "updated_at": "2026-11-05 01:07:15.546553+00:00"
+    }
+  ]
+}

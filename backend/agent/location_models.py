@@ -51,6 +51,7 @@ class ChatTurn(Model):
     action: Literal['ask','confirm','correct','clarify','cancel','choose_candidates']='ask'
     message: str | None=Field(default=None,max_length=4000)
     conversation_id: str | None=Field(default=None,max_length=100)
+    session_id: str | None=Field(default=None,pattern=r'^[0-9a-f]{32}$')
     revision: int | None=Field(default=None,ge=1)
     # Supplied UI values are fallbacks only when the question omits scope.
     time_range: TimeRange | None=None
@@ -76,6 +77,7 @@ class ChatResponse(Model):
                     'geocoding_failed','complete','cancelled','error']
     message: str
     conversation_id: str | None=None
+    session_id: str | None=None
     revision: int | None=None
     original_question: str | None=None
     locations: list[AddressProposal]=Field(default_factory=list)

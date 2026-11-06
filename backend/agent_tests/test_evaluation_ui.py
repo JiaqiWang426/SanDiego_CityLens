@@ -42,7 +42,7 @@ def test_trace_replay_does_not_use_model_and_retains_scope():
 def test_manual_runner_rejects_arbitrary_sql_and_budget_overrides():
     agent=Agent(FakeModel(),FakeTools(),Settings(max_rows=10))
     app.dependency_overrides[get_agent]=lambda:agent
-    args=validated_calls(request(),Plan(intent='location_summary',tools=['count_service_requests']),agent.settings)[0].model_dump(mode='json')
+    args=validated_calls(request(question='How many Get It Done requests were submitted?'),Plan(intent='location_summary',tools=['count_service_requests']),agent.settings)[0].model_dump(mode='json')
     try:
         with TestClient(app) as client:
             for update in [{'name':'execute_sql'},{'sql':'DROP TABLE citylens.ingestions'},{'limit':11}]:

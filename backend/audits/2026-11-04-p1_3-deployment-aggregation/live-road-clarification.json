@@ -1,0 +1,23 @@
+{
+  "status": "needs_clarification",
+  "message": "Road-related has no single validated category mapping in these records. Available interpretations using stored service labels are road surface: POTHOLE, PAVEMENT MAINTENANCE; traffic infrastructure: TRAFFIC SIGN MAINTENANCE, TRAFFIC SIGNAL ISSUE, TRAFFIC SIGNAL TIMING, TRAFFIC ENGINEERING, STREET LIGHT MAINTENANCE; optional street and pedestrian maintenance: SIDEWALK REPAIR ISSUE, ROW MAINTENANCE, RIGHT-OF-WAY CODE ENFORCEMENT, STREET SWEEPING, STREET FLOODED. Reply with the exact service labels to include. Parking, vegetation and other potentially related categories are not included automatically. Your locations, radius and dates are preserved; no analytical SQL ran.",
+  "conversation_id": "1f5e3bebcf004b47abe9f848b210d8a6",
+  "session_id": "1f5e3bebcf004b47abe9f848b210d8a6",
+  "revision": null,
+  "original_question": null,
+  "locations": [],
+  "candidates": {},
+  "resolved_locations": [],
+  "radius_meters": 800.0,
+  "time_range": {
+    "start": "2026-01-01T00:00:00-08:00",
+    "end": "2026-03-01T00:00:00-08:00",
+    "calendar_timezone": "America/Los_Angeles"
+  },
+  "proposed_plan": null,
+  "result": null,
+  "diagnostic_codes": [
+    "service_category_scope_required"
+  ],
+  "geocoding_diagnostics": {}
+}

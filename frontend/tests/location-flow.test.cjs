@@ -12,10 +12,12 @@ function reply(status, revision = 1) {
     proposed_plan:{tools:['aggregate_service_requests']},candidates:{},resolved_locations:[]};
 }
 
-async function app(responses) {
+async function app(responses, options = {}) {
   const elements = new Map(), all = [], requests = [];
   class Node {
     constructor(tag) { this.tagName=tag; this.value=''; this.checked=false; this.children=[]; this.events={}; this.classList={toggle(){}}; all.push(this); }
+    set value(value) { this._value=String(value); }
+    get value() { return this._value; }
     set id(value) { this._id=value; elements.set(value,this); }
     get id() { return this._id; }
     addEventListener(name,handler) { this.events[name]=handler; }
@@ -28,10 +30,15 @@ async function app(responses) {
   Object.entries({'location-mode':'addresses',question,radius:'800',start:'2026-01-01T00:00:00-08:00',end:'2026-03-01T00:00:00-08:00',timezone:'America/Los_Angeles','lat-a':'32.84','lng-a':'-117.25'}).forEach(([id,value])=>node(id).value=value);
   const sandbox={document:{getElementById:node,createElement:tag=>new Node(tag),
     querySelectorAll:selector=>selector.startsWith('.')?all.filter(n=>(n.className||'').split(' ').includes(selector.slice(1))):[]},
-    AbortController,setTimeout,clearTimeout,
-    fetch:async(url,options)=>{
-      if (url==='/api/v1/status') return {ok:true,json:async()=>({max_rows:100})};
-      requests.push({url,body:JSON.parse(options.body)});
+    AbortController,setTimeout,clearTimeout,localStorage:options.storage,
+    confirm:options.confirm || (() => true),
+    fetch:async(url,init={})=>{
+      if (url==='/api/v1/status') return {ok:true,json:async()=>({max_rows:100,sessions_configured:!!options.sessions})};
+      requests.push({url,method:init.method||'GET',body:init.body ? JSON.parse(init.body) : undefined});
+      if (options.route) {
+        const result = await options.route(requests.at(-1));
+        return {ok:result.status<400,status:result.status,json:async()=>result.body};
+      }
       assert.ok(responses.length,'Unexpected extra request');
       return {ok:true,json:async()=>responses.shift()};
     }};
@@ -77,7 +84,7 @@ module.exports=async function run() {
   await second.button('Confirm selected provider candidates').fire('click');
   assert.equal(second.requests[2].body.action,'choose_candidates');
   assert.deepEqual(second.requests[2].body.candidate_choices,{A:'candidate_a'});
-  assert.equal(second.node('lat-a').value,32.84);
+  assert.equal(second.node('lat-a').value,'32.84');
   assert.ok(!second.node('manual-run').disabled);
 
   const third=await app([reply('needs_clarification')]);
@@ -91,4 +98,5 @@ module.exports=async function run() {
   assert.ok(!('locations' in third.requests[0].body),'Address requests do not manufacture coordinate pins');
   return '3 frontend location-flow scenarios passed (correction/cancel, candidate confirmation, unbound yes).';
 };
+module.exports.app=app;
 if (require.main===module) module.exports().then(console.log).catch(error=>{console.error(error);process.exitCode=1;});

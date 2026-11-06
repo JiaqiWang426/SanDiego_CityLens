@@ -18,6 +18,7 @@ from .diagnostics import log_failure,model_failure_code
 from .location_models import (AddressCorrectionOutput,ChatResponse,InterpretationOutput)
 from .models import Plan,QueryRequest,TimeRange
 from .llm import ModelNotConfigured
+from .dimensions import chat_preferences
 
 
 @dataclass
@@ -110,6 +111,12 @@ class LocationConversations:
                 raise ValueError('A suffix or meaningful address component was added or discarded')
             if (address.state or 'CA').upper()!='CA' or (address.city or 'San Diego').upper() not in {'SAN DIEGO','LA JOLLA'}:
                 raise ValueError('Only San Diego or La Jolla, CA addresses are supported')
+            # San Diego is the application default. Another postal city changes
+            # provider lookups, so it must come from the user, never from
+            # branding such as "Axiom La Jolla" or a remembered neighborhood.
+            city=' '.join((address.city or 'San Diego').split())
+            if city.upper()!='SAN DIEGO' and not re.search(r'\b'+r'\s+'.join(map(re.escape,city.split()))+r'\b',source,re.I):
+                raise ValueError('A non-default postal city must be supported by user text')
             if address.postal_code and not re.search(r'\b'+re.escape(address.postal_code)+r'\b',source):
                 raise ValueError('A ZIP code must be supported by user text')
         return ready
@@ -126,6 +133,7 @@ class LocationConversations:
                 if [a.id for a in output.locations]!=[a.id for a in session.locations]:
                     raise ValueError('Corrections must preserve existing location identifiers')
             else:
+                session.preferences=chat_preferences(session.analysis_question,session.preferences)
                 defaults=dict(radius_meters=turn.radius_meters,time_range=turn.time_range.model_dump(mode='json') if turn.time_range else None,
                               preferences=session.preferences)
                 raw=await asyncio.wait_for(agent.model.interpret_locations(session.analysis_question,defaults,

@@ -2,3 +2,5 @@ Locate to your project path in PowerShell
 Open docker
 Start the database docker compose up -d
 Run a SQL query: docker compose exec db psql -U citylens -d citylens
+.\.venv\Scripts\python.exe -m backend.scripts.serve --port 8000
+http://127.0.0.1:8000/

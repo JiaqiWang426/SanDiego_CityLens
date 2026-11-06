@@ -15,11 +15,13 @@ class Settings:
     max_output_tokens: int = 2500
     llm_timeout_seconds: float = 25
     request_timeout_seconds: float = 120
+    session_database_url: str | None = None
 
     @classmethod
     def from_env(cls):
         load_environment()
         return cls(database_url=os.getenv('AGENT_DATABASE_URL'),
+                   session_database_url=os.getenv('SESSION_DATABASE_URL'),
                    openai_api_key=os.getenv('OPENAI_API_KEY'), model=os.getenv('OPENAI_MODEL'),
                    max_tool_calls=int(os.getenv('AGENT_MAX_TOOL_CALLS','6')),
                    max_rows=int(os.getenv('AGENT_MAX_ROWS','100')),

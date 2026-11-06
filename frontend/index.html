@@ -1,16 +1,22 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CityLens · Evaluation desk</title><link rel="stylesheet" href="/assets/styles.css"><script src="/assets/app.js?v=4" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CityLens · Evaluation desk</title><link rel="stylesheet" href="/assets/styles.css"><script src="/assets/app.js?v=5" defer></script></head>
 <body>
-<header><a class="brand" href="/">CITY<span>LENS</span></a><span class="tag">SAN DIEGO / P1.2</span><a href="/docs" target="_blank" rel="noopener">API documentation ↗</a></header>
+<header><a class="brand" href="/">CITY<span>LENS</span></a><span class="tag">SAN DIEGO / P1.3</span><a href="/docs" target="_blank" rel="noopener">API documentation ↗</a></header>
 <main>
 <div class="intro"><div><p class="eyebrow">FOLLOW THE EVIDENCE</p><h1>Ask. Inspect. Verify.</h1><p>Explore civic records, follow every tool call, and check the numbers yourself.</p></div><div id="configuration" class="configuration" aria-live="polite">Checking configuration…</div></div>
 <div class="workspace">
 <section class="panel inputs"><h2>Investigation</h2>
+<section class="history" aria-label="Conversation history">
+<div class="actions"><h3>Conversations</h3><button id="new-chat" type="button" disabled>New Chat</button></div>
+<p id="history-status" class="hint" role="status">Checking conversation storage…</p>
+<div id="session-list"></div><button id="history-more" type="button" hidden>Load older conversations</button>
+</section>
 <div class="presets"><button type="button" data-preset="count">Collision count</button><button type="button" data-preset="compare">Compare A / B</button><button type="button" data-preset="crime">Unsupported crime</button></div>
 <form id="investigate">
 <label for="location-mode">Location input</label><select id="location-mode"><option value="addresses">Street addresses in my question</option><option value="coordinates">Coordinate pins / manual SQL</option></select>
 <label for="question" id="question-label">Your question</label><textarea id="question" rows="4" required maxlength="4000">Compare pothole complaints near 9000 Regents Driev and 9500 Gilman Drive within 800 meters over the past six months.</textarea>
 <p id="address-hint" class="hint">Review and confirm proposed addresses before Census is contacted. You can correct or cancel the request.</p>
+<label id="continue-context-label" class="check" hidden><input id="continue-context" type="checkbox" checked> Use saved scope for this follow-up; describe changes in your question</label>
 <div id="coordinate-inputs" hidden>
 <div class="location"><h3>Location A</h3><div class="pair"><div><label for="lat-a">Latitude</label><input id="lat-a" type="number" step="any" value="32.84" required></div><div><label for="lng-a">Longitude</label><input id="lng-a" type="number" step="any" value="-117.25" required></div></div></div>
 <label class="check"><input id="compare" type="checkbox"> Include location B</label>
@@ -36,6 +42,7 @@
 </section>
 <section class="results" aria-label="Investigation results">
 <div class="panel statusbar"><span id="status" role="status">Ready for an investigation</span><button id="download" type="button" disabled>Download JSON</button></div>
+<section id="transcript" class="panel transcript" aria-label="Conversation messages" hidden></section>
 <div id="error" class="error" role="alert" hidden></div>
 <div id="location-confirmation" class="panel confirmation" aria-live="polite" hidden></div>
 <div class="tabs" role="tablist" aria-label="Result views"><button class="active" role="tab" aria-selected="true" data-tab="answer">Answer</button><button role="tab" aria-selected="false" data-tab="calls">Tool calls</button><button role="tab" aria-selected="false" data-tab="evidence">Evidence</button><button role="tab" aria-selected="false" data-tab="verify">SQL verification</button><button role="tab" aria-selected="false" data-tab="json">Raw JSON</button></div>

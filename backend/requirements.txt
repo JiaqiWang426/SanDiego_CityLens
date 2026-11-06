@@ -4,6 +4,7 @@ pyproj>=3.7,<4
 fastapi>=0.115,<1
 pydantic>=2.10,<3
 langgraph>=1,<2
+langgraph-checkpoint-postgres>=3.2,<4
 openai>=2,<3
 uvicorn>=0.34,<1
 python-dotenv>=1.2,<2

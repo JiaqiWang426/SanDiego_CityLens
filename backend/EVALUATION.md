@@ -1,5 +1,13 @@
 # Evaluate CityLens in your browser
 
+P1.3 adds **New Chat**, saved conversation selection, a transcript, and confirmed
+deletion. Configure the separate session writer and run the explicit migration
+in [P1_3.md](P1_3.md) first. Only the selected session ID is stored in the browser.
+After a coordinate analysis, the saved-scope checkbox sends follow-up text through
+the chat endpoint; uncheck it to submit a complete coordinate request instead.
+Saved responses can be inspected without rerunning SQL. New follow-up analyses
+always execute tools again. On Windows use `python -m backend.scripts.serve`.
+
 The local evaluation desk is served by FastAPI at **http://127.0.0.1:8000/**.
 It uses the real agent; there is no automatic fake response mode. No separate
 frontend installation or Node.js build is needed.

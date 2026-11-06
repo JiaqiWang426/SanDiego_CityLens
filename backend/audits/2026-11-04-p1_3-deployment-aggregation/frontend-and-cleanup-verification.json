@@ -1,0 +1,16 @@
+{
+  "real_browser": "Microsoft Edge / Playwright",
+  "transcript_messages": 8,
+  "multi_category_response_restored": true,
+  "refresh_recovers_selected_session": true,
+  "mobile_no_horizontal_overflow": true,
+  "delete_confirmation_cancelled_then_accepted": true,
+  "stale_deleted_id_cleared": true,
+  "browser_errors": [],
+  "only_task_sessions_deleted": [
+    "9debd87e16254be88aa9ca9462afdae4",
+    "9740aa68881f4e398ac66666b04c44b3",
+    "1f5e3bebcf004b47abe9f848b210d8a6"
+  ],
+  "remaining_sessions": []
+}
