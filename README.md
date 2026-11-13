@@ -1,3 +1,7 @@
+## Course proposal explorer
+
+The [District 1 Service Request Explorer](COURSE_EXPLORER.md) implements the original DSC 200 proposal's 2026 Get It Done visualization. It has a local CSV processing path, map, filters, charts, paginated reports and details. Start it with `.venv/bin/python -m uvicorn backend.explorer_app:app --host 127.0.0.1 --port 8011`; Docker and an LLM key are not needed for this course demo.
+
 Development Status
 
 # Phase 1 — Reliable Location Intelligence

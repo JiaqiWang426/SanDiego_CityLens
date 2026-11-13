@@ -5,6 +5,7 @@
 .secrets/
 secrets.local.*
 .venv/
+.local/
 __pycache__/
 *.pyc
 backend/reference_data/
