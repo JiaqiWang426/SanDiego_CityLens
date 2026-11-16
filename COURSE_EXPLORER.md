@@ -14,7 +14,7 @@ From the repository root on macOS/Linux:
 Open <http://127.0.0.1:8011/>. API documentation is at <http://127.0.0.1:8011/docs>.
 On another platform, substitute the Python executable in your virtual environment. The original agent evaluation desk remains available with `backend.main:app` on a separate port when its database and session credentials are configured.
 
-The first start builds an ignored `.local/explorer.sqlite3` cache from `backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv`. Later starts reuse the cache while the source file's size and modification time match. Restart the server after changing the CSV, or explicitly rebuild with:
+The first start builds an ignored `.local/explorer.sqlite3` cache from `backend/Raw Data/Get it done/get_it_done_requests_CD1_datasd.csv`. Later starts reuse the cache while the source signature, schema version and category mapping SHA-256 match. Startup safely rebuilds older caches to include the approved classification. Restart the server after changing the CSV or mapping, or explicitly rebuild with:
 
 ```bash
 .venv/bin/python -m backend.explorer_data
@@ -27,6 +27,7 @@ The source CSV is never edited. The build is atomic, so an import error does not
 - Filters the **2026 District 1** snapshot by inclusive date range, issue type, source status, community planning area (`comm_plan_name`) and ZIP code. The optional linked-report switch excludes rows with a source parent ID; it cannot identify all real-world duplicates.
 - Shows all matching records in the KPI totals and charts. The map queries only its visible bounds. It returns individual report points for at most 700 matches in a viewport and otherwise returns grouped bubbles whose counts include every located match. Pan or zoom to explore; the record table remains a separate paginated view.
 - Shows month and issue-type counts and a 12-row report page. Clicking a map point or a table row opens source fields useful for inspection. The public free-text description is never placed in the explorer cache or returned by the API.
+- Adds `main_category`, `sub_category` and `classification_method` to request records while preserving legacy `category`. The backend supports main/subcategory filters, a complete metadata hierarchy, and monthly/community comparison endpoints. See the [frontend integration contract](docs/explorer_classification_api.md). The frontend files are unchanged.
 
 ## Data meaning and limits
 
@@ -39,7 +40,7 @@ The map library is vendored locally under `frontend/vendor/`; visible OpenStreet
 `backend/explorer_data.py` makes the scoped cache; `backend/explorer_api.py` serves bounded read-only queries; `backend/explorer_app.py` serves the page and API. `frontend/explorer.html`, `explorer.css` and `explorer.js` implement the dashboard. The existing agent backend, PostGIS tables, and original evaluation desk are separate.
 
 ```bash
-.venv/bin/python -m pytest backend/explorer_tests/test_explorer.py -q
+.venv/bin/python -m pytest backend/explorer_tests -q
 node --check frontend/explorer.js
 ```
 

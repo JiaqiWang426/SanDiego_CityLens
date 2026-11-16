@@ -15,11 +15,14 @@ router = APIRouter(prefix='/api/v1/explorer', tags=['Service request explorer'])
 def filters(start: date = date(2026, 1, 1), end: date = date(2026, 12, 31),
             category: str | None = Query(None, max_length=200), status: str | None = Query(None, max_length=100),
             community: str | None = Query(None, max_length=200), zipcode: str | None = Query(None, max_length=20),
+            main_category: str | None = Query(None, max_length=200),
+            sub_category: str | None = Query(None, max_length=200),
             exclude_linked: bool = False):
     if start > end or start.year != 2026 or end.year != 2026:
         raise HTTPException(422, 'Choose an increasing date range within 2026.')
     clauses, args = ['requested >= ?', 'requested < ?'], [start.isoformat(), (end + timedelta(days=1)).isoformat()]
-    for field, value in [('category', category), ('status', status), ('community', community), ('zipcode', zipcode)]:
+    for field, value in [('category', category), ('status', status), ('community', community), ('zipcode', zipcode),
+                         ('main_category', main_category), ('sub_category', sub_category)]:
         if value == '__missing__':
             clauses.append(field + ' IS NULL')
         elif value is not None:
@@ -37,7 +40,7 @@ def metadata():
         result.pop('signature', None)
         result['facets'] = {field: [dict(r) for r in db.execute(
             f'SELECT {field} AS label,count(*) AS count FROM requests GROUP BY {field} ORDER BY count DESC')]
-            for field in ['category', 'status', 'community', 'zipcode']}
+            for field in ['category', 'status', 'community', 'zipcode', 'main_category', 'sub_category']}
         return result
 
 
@@ -58,6 +61,28 @@ def summary(scope=Depends(filters)):
         return totals
 
 
+@router.get('/comparisons/monthly')
+def monthly_comparison(scope=Depends(filters)):
+    """Return observed month/main/sub groups for all matching requests."""
+    where, args = scope
+    with data.connect() as db:
+        rows = db.execute(f'''SELECT substr(requested,1,7) AS month,main_category,sub_category,count(*) AS count
+            FROM requests WHERE {where} GROUP BY month,main_category,sub_category
+            ORDER BY month,main_category,sub_category''', args)
+        return {'data': [dict(row) for row in rows]}
+
+
+@router.get('/comparisons/community')
+def community_comparison(scope=Depends(filters)):
+    """Keep unknown communities as explicit JSON null groups, without dropping rows."""
+    where, args = scope
+    with data.connect() as db:
+        rows = db.execute(f'''SELECT community,main_category,sub_category,count(*) AS count
+            FROM requests WHERE {where} GROUP BY community,main_category,sub_category
+            ORDER BY community,main_category,sub_category''', args)
+        return {'data': [dict(row) for row in rows]}
+
+
 @router.get('/map')
 def map_points(west: float = Query(-180, ge=-180, le=180), south: float = Query(-90, ge=-90, le=90),
                east: float = Query(180, ge=-180, le=180), north: float = Query(90, ge=-90, le=90),
@@ -71,7 +96,8 @@ def map_points(west: float = Query(-180, ge=-180, le=180), south: float = Query(
         count = db.execute(f'SELECT count(*) FROM requests WHERE {where}', args).fetchone()[0]
         if count <= 700:
             return {'mode': 'points', 'total': count, 'items': [dict(r) for r in db.execute(
-                f'SELECT id,lat,lng,category,status FROM requests WHERE {where} ORDER BY requested DESC,id LIMIT 700', args)]}
+                f'SELECT id,lat,lng,category,status,main_category,sub_category,classification_method '
+                f'FROM requests WHERE {where} ORDER BY requested DESC,id LIMIT 700', args)]}
         # Adapt cell width to viewport too: the response remains bounded even
         # for a wide viewport at an unusual zoom. Each request counts once.
         cell = max(360 / (2 ** zoom) * .12, (east-west)/30, (north-south)/30)

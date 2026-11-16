@@ -124,4 +124,4 @@ The first command regenerates this concise report and prints the complete Englis
 
 ## Backend integration status
 
-The approved mapping and deterministic classification checks are ready for the next backend integration phase. They are not connected to the current API or dashboard yet. API contracts, cache/schema migration and integration tests remain separate work. No Explorer source code, frontend file, original CSV or existing SQLite cache was modified.
+The approved mapping is integrated into the Explorer SQLite projection and API, with main/subcategory filters, the complete metadata hierarchy and monthly/community comparisons. See [the API integration contract](explorer_classification_api.md). The frontend and source CSV remain unchanged. Versioned local caches rebuild atomically when the source signature, schema version or mapping content changes. This analysis script itself remains read-only except for explicitly requested report generation. Frontend integration is the next step.
