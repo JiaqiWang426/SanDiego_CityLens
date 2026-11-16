@@ -1,0 +1,510 @@
+{
+  "status": "verified",
+  "csv": {
+    "source_name": "get_it_done_requests_CD1_datasd.csv",
+    "sha256": "abfee4106a3ea97fdc824e0d9c68c3bcf1889a4350811bbe3763b5dd69e95544",
+    "source_rows": 303226,
+    "records": 31667
+  },
+  "postgres": {
+    "records": 31667,
+    "first_date": "2026-01-01T03:48:00",
+    "last_date": "2026-10-26T22:47:39",
+    "unlocated": 0,
+    "linked_requests": 3490,
+    "facets": {
+      "category": [
+        {
+          "label": "Parking - 72-Hours",
+          "count": 4032
+        },
+        {
+          "label": "Missed Collection",
+          "count": 3727
+        },
+        {
+          "label": "Illegal Dumping",
+          "count": 3593
+        },
+        {
+          "label": "Parking Violation",
+          "count": 2918
+        },
+        {
+          "label": "Encampment",
+          "count": 2748
+        },
+        {
+          "label": "Pothole",
+          "count": 1561
+        },
+        {
+          "label": "Parks Issue",
+          "count": 1522
+        },
+        {
+          "label": "Other",
+          "count": 1154
+        },
+        {
+          "label": "ROW Maintenance",
+          "count": 912
+        },
+        {
+          "label": "Tree Maintenance",
+          "count": 837
+        },
+        {
+          "label": "Environmental Services Code Compliance",
+          "count": 767
+        },
+        {
+          "label": "Oversized Vehicle",
+          "count": 707
+        },
+        {
+          "label": "Street Light Maintenance",
+          "count": 662
+        },
+        {
+          "label": "Traffic Signal Issue",
+          "count": 657
+        },
+        {
+          "label": "Graffiti - Public",
+          "count": 597
+        },
+        {
+          "label": "Sidewalk Repair Issue",
+          "count": 514
+        },
+        {
+          "label": "STRO Violation",
+          "count": 501
+        },
+        {
+          "label": "Traffic Signal Timing",
+          "count": 481
+        },
+        {
+          "label": "Vegetation Encroachment",
+          "count": 449
+        },
+        {
+          "label": "ESD Collections",
+          "count": 388
+        },
+        {
+          "label": "Stormwater",
+          "count": 364
+        },
+        {
+          "label": "Building and Land Use Enforcement",
+          "count": 354
+        },
+        {
+          "label": null,
+          "count": 319
+        },
+        {
+          "label": "Traffic Engineering",
+          "count": 293
+        },
+        {
+          "label": "Dead Animal",
+          "count": 291
+        },
+        {
+          "label": "Stormwater Code Enforcement",
+          "count": 279
+        },
+        {
+          "label": "Street Sweeping",
+          "count": 252
+        },
+        {
+          "label": "Traffic Sign Maintenance",
+          "count": 172
+        },
+        {
+          "label": "Pavement Maintenance",
+          "count": 158
+        },
+        {
+          "label": "Trash/Recycling Collection",
+          "count": 148
+        },
+        {
+          "label": "Graffiti - Code Enforcement",
+          "count": 145
+        },
+        {
+          "label": "Waste on Private Property",
+          "count": 98
+        },
+        {
+          "label": "Weed Cleanup",
+          "count": 29
+        },
+        {
+          "label": "Graffiti - Private",
+          "count": 21
+        },
+        {
+          "label": "Right-of-Way Code Enforcement",
+          "count": 16
+        },
+        {
+          "label": "Bicycle-Related Issue",
+          "count": 1
+        }
+      ],
+      "status": [
+        {
+          "label": "Closed",
+          "count": 26177
+        },
+        {
+          "label": "In Process",
+          "count": 3281
+        },
+        {
+          "label": "Referred",
+          "count": 1593
+        },
+        {
+          "label": "New",
+          "count": 616
+        }
+      ],
+      "community": [
+        {
+          "label": "PACIFIC BEACH",
+          "count": 16173
+        },
+        {
+          "label": "LA JOLLA",
+          "count": 8043
+        },
+        {
+          "label": "CARMEL VALLEY",
+          "count": 2582
+        },
+        {
+          "label": "UNIVERSITY",
+          "count": 1279
+        },
+        {
+          "label": "TORREY PINES",
+          "count": 1273
+        },
+        {
+          "label": "MISSION BAY PARK",
+          "count": 809
+        },
+        {
+          "label": "PACIFIC HIGHLANDS RANCH",
+          "count": 528
+        },
+        {
+          "label": "TORREY HILLS",
+          "count": 441
+        },
+        {
+          "label": "RESERVE AREA-Not a community plan",
+          "count": 171
+        },
+        {
+          "label": "TORREY HIGHLANDS",
+          "count": 158
+        },
+        {
+          "label": "NCFUA SUBAREA II",
+          "count": 81
+        },
+        {
+          "label": "DEL MAR MESA",
+          "count": 51
+        },
+        {
+          "label": "VIA DE LA VALLE",
+          "count": 35
+        },
+        {
+          "label": "FAIRBANKS RANCH COUNTRY CLUB",
+          "count": 19
+        },
+        {
+          "label": "CLAIREMONT MESA",
+          "count": 10
+        },
+        {
+          "label": "LOS PENASQUITOS CANYON",
+          "count": 8
+        },
+        {
+          "label": "MIRA MESA",
+          "count": 3
+        },
+        {
+          "label": null,
+          "count": 2
+        },
+        {
+          "label": "MISSION BEACH",
+          "count": 1
+        }
+      ],
+      "zipcode": [
+        {
+          "label": "92109",
+          "count": 16381
+        },
+        {
+          "label": "92037",
+          "count": 8593
+        },
+        {
+          "label": "92130",
+          "count": 3532
+        },
+        {
+          "label": null,
+          "count": 1241
+        },
+        {
+          "label": "92014",
+          "count": 949
+        },
+        {
+          "label": "92121",
+          "count": 682
+        },
+        {
+          "label": "92093",
+          "count": 199
+        },
+        {
+          "label": "92129",
+          "count": 19
+        },
+        {
+          "label": "92127",
+          "count": 17
+        },
+        {
+          "label": "92161",
+          "count": 16
+        },
+        {
+          "label": "92101",
+          "count": 12
+        },
+        {
+          "label": "92117",
+          "count": 8
+        },
+        {
+          "label": "92075",
+          "count": 5
+        },
+        {
+          "label": "92110",
+          "count": 3
+        },
+        {
+          "label": "92122",
+          "count": 2
+        },
+        {
+          "label": "92128",
+          "count": 2
+        },
+        {
+          "label": "92067",
+          "count": 1
+        },
+        {
+          "label": "92105",
+          "count": 1
+        },
+        {
+          "label": "92108",
+          "count": 1
+        },
+        {
+          "label": "92113",
+          "count": 1
+        },
+        {
+          "label": "92154",
+          "count": 1
+        },
+        {
+          "label": "93027",
+          "count": 1
+        }
+      ]
+    },
+    "dataset_coverage": {
+      "records": 303225,
+      "located": 303225,
+      "first_date": "2016-05-20T16:10:00+00:00",
+      "last_date": "2026-10-27T05:47:39+00:00"
+    },
+    "imports": [
+      {
+        "id": 2,
+        "source_file": "get_it_done_requests_CD1_datasd.csv",
+        "sha256": "01852715f3edd5b6f362a6af50921695dd709966eb8d4293999f02ea8bfe7ec7",
+        "imported_at": "2026-10-28T06:19:28.788577+00:00"
+      }
+    ],
+    "imports_truncated": false,
+    "dataset": "service_requests",
+    "source_name": "citylens.service_requests",
+    "storage": "postgresql",
+    "year": 2026,
+    "district": 1,
+    "snapshot_policy": "upsert_current_records_not_historical_snapshot",
+    "source_freshness_verified": false,
+    "historical_csv_records": 31667,
+    "historical_count_difference": 0,
+    "limitations": [
+      "Counts describe current imported records; source completeness and freshness are unknown.",
+      "Closed is a source status and does not establish that an issue was repaired.",
+      "Planning areas and ZIP values are source fields, not verified geographic boundaries."
+    ]
+  },
+  "collisions": {
+    "records": 6250,
+    "first_date": "2026-01-01T00:00:00",
+    "last_date": "2026-10-26T16:52:00",
+    "unlocated": 889,
+    "linked_requests": 0,
+    "facets": {
+      "category": [
+        {
+          "label": "Traffic collision",
+          "count": 6250
+        }
+      ],
+      "status": [
+        {
+          "label": "matched",
+          "count": 5361
+        },
+        {
+          "label": "pending",
+          "count": 431
+        },
+        {
+          "label": "no_match",
+          "count": 292
+        },
+        {
+          "label": "ambiguous",
+          "count": 166
+        }
+      ],
+      "community": [
+        {
+          "label": null,
+          "count": 6250
+        }
+      ],
+      "zipcode": [
+        {
+          "label": null,
+          "count": 6250
+        }
+      ]
+    },
+    "dataset_coverage": {
+      "records": 78494,
+      "located": 68068,
+      "first_date": "2015-03-19T19:00:00+00:00",
+      "last_date": "2026-10-26T23:52:00+00:00"
+    },
+    "imports": [
+      {
+        "id": 7,
+        "source_file": "pd_collisions_datasd.csv",
+        "sha256": "6c6f38e687667e177bb7a4b88bada124859ee3fec17ba37a70d11e50d5332dc8",
+        "imported_at": "2026-10-28T09:15:49.310466+00:00"
+      }
+    ],
+    "imports_truncated": false,
+    "dataset": "traffic_collisions",
+    "source_name": "citylens.traffic_collisions",
+    "storage": "postgresql",
+    "year": 2026,
+    "district": null,
+    "snapshot_policy": "upsert_current_records_not_historical_snapshot",
+    "source_freshness_verified": false,
+    "historical_csv_records": null,
+    "historical_count_difference": null,
+    "limitations": [
+      "Collision locations are approximate stored geocoding results; unlocated reports cannot appear on the map.",
+      "Collision scope is the imported 2026 dataset, not a verified District 1 boundary.",
+      "Collision status means geocoding status, not whether a case is open or closed."
+    ]
+  },
+  "district_counts": [
+    {
+      "district": "1",
+      "records": 303225
+    }
+  ],
+  "missing_source_fields": {
+    "missing_district": 0,
+    "missing_zipcode": 68665,
+    "missing_planning_area": 23
+  },
+  "comparison": {
+    "csv_only_count": 0,
+    "postgres_only_count": 0,
+    "changed_record_count": 27770,
+    "differing_fields": {
+      "requested": 0,
+      "category": 0,
+      "status": 0,
+      "zipcode": 0,
+      "community": 0,
+      "lat": 0,
+      "lng": 0,
+      "address": 0,
+      "closed": 27770,
+      "parent_id": 0
+    },
+    "csv_only_sample": [],
+    "postgres_only_sample": [],
+    "changed_id_sample": [
+      "5510723",
+      "5510744",
+      "5510750",
+      "5510786",
+      "5510813",
+      "5510828",
+      "5510832",
+      "5510870",
+      "5510896",
+      "5510928",
+      "5510939",
+      "5510944",
+      "5510945",
+      "5510976",
+      "5511025",
+      "5511026",
+      "5511044",
+      "5511046",
+      "5511103",
+      "5511126"
+    ]
+  },
+  "semantics": [
+    "Service requests: current upsert rows, LA-local 2026, raw council_district exactly 1.",
+    "Collisions: imported 2026 records; no District 1 assignment is inferred.",
+    "A matching count alone does not establish row-level parity. No source data was modified."
+  ]
+}
