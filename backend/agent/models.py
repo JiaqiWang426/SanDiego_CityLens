@@ -6,6 +6,7 @@ from typing import Literal
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from pydantic import BaseModel, ConfigDict, Field, AwareDatetime, model_validator
+from ..explorer_models import MapVisualization
 
 Domain = Literal['service_requests', 'traffic_collisions']
 MeasurementToolName = Literal['count_service_requests', 'get_traffic_collisions', 'aggregate_traffic_collisions','aggregate_service_requests']
@@ -307,3 +308,5 @@ class QueryResponse(Model):
     tool_trace_id: str
     execution_plan: list[dict] = Field(default_factory=list)
     tool_calls: list[ToolLog] = Field(default_factory=list)
+    visualization: MapVisualization | None = None
+    presentation: dict | None = None

@@ -1,5 +1,10 @@
 # Local data infrastructure
 
+The Explorer and Agent now share the existing PostgreSQL/PostGIS data and one app.
+Open `/` for the map with the embedded Agent, or `/agent` for the original workspace.
+On Windows use `python -m backend.scripts.serve --port 8000`. See the
+[unified implementation and verification report](../EXPLORER_AGENT_INTEGRATION.md).
+
 P1.3 adds PostgreSQL conversation history, resumable address confirmations,
 structured follow-up context, and create/list/resume/delete controls in the
 existing frontend. See [session setup, API contracts and implementation report](P1_3.md).

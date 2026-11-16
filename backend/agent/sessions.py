@@ -116,6 +116,9 @@ def apply_followup(context, message, patch, settings):
         data['radius_meters'] = patch.radius_meters
     if patch.time_range is not None:
         data['time_range'] = patch.time_range.model_dump()
+    from .scope_resolution import resolve_scope
+    interval, radius = resolve_scope(message, TimeRange.model_validate(data['time_range']), data['radius_meters'])
+    data.update(time_range=interval.model_dump(), radius_meters=radius)
     # Explicit domain changes also update required-domain validation. Radius or
     # filter changes preserve the original dataset selection/preferences.
     if 'tools' in paths:
@@ -169,6 +172,23 @@ class ConversationRunner:
             turn = ChatTurn.model_validate(state['payload'])
             message = turn.message or {'confirm': 'Confirm addresses', 'choose_candidates': 'Confirm selected candidates',
                                        'cancel': 'Cancel request'}.get(turn.action, turn.action)
+            from .map_analysis import ViewportAnalysis, requests_viewport
+            if turn.action in {'ask', 'clarify'} and (requests_viewport(turn.message) or (context and context.get('mode') == 'viewport')):
+                if pending and pending.stage not in {'complete', 'cancelled'}:
+                    raise HTTPException(409, 'Confirm, correct or cancel the pending address request first.')
+                reply, map_context = await ViewportAnalysis(agent).run(turn, context)
+                if reply is not None:
+                    reply.session_id = reply.conversation_id = session_id
+                    return self.result(state, None, map_context, reply, 'chat', message, reply.message)
+                # Explicit location/radius questions leave viewport mode and
+                # re-enter the established address-confirmation workflow.
+                context = query_context = None
+                pending = None
+            if context and context.get('mode') == 'viewport':
+                if turn.action == 'cancel':
+                    reply = ChatResponse(status='cancelled', message='Map follow-up cancelled.', session_id=session_id, conversation_id=session_id)
+                    return self.result(state, None, None, reply, 'chat', message, reply.message)
+                raise HTTPException(409, 'Ask a map follow-up or provide a new address question.')
             if context and turn.action == 'cancel' and (not pending or pending.stage in {'complete', 'cancelled'}):
                 reply = ChatResponse(status='cancelled', message='Follow-up cancelled. No additional analysis will run.',
                     session_id=session_id, conversation_id=session_id)
@@ -176,7 +196,9 @@ class ConversationRunner:
             if context and turn.action in {'ask', 'clarify'} and (not pending or pending.stage in {'complete', 'cancelled'}):
                 reply, query_context, new_locations = await self.followup(session_id, turn, context, pending)
                 if new_locations:
-                    if pending and pending.locations:
+                    from .scope_resolution import explicit_scope
+                    explicit_time,explicit_radius=explicit_scope(turn.message or '')
+                    if pending and pending.locations and explicit_time is None and explicit_radius is None:
                         # Reuse address correction to preserve unchanged A/B
                         # addresses and require confirmation for revised pins.
                         pending.stage = 'clarify'
@@ -202,7 +224,7 @@ class ConversationRunner:
                     raise HTTPException(422, 'A question is required')
                 pending = PendingRequest(session_id, turn.message, list(turn.preferences),
                     analysis_question=turn.message, source_text=turn.message,
-                    radius=turn.radius_meters, time_range=turn.time_range)
+                    radius=turn.radius_meters, time_range=turn.time_range,confirmation_policy=turn.confirmation_policy)
             elif pending is None:
                 raise HTTPException(409, 'No pending address request to confirm or correct')
             reply = await agent.chat(turn, session=pending)

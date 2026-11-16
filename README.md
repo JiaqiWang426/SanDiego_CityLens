@@ -1,3 +1,7 @@
+## Course proposal explorer
+
+The [District 1 Service Request Explorer](COURSE_EXPLORER.md) and the existing LangGraph Agent now share one FastAPI application and the existing PostgreSQL/PostGIS database. On Windows, start with `.\.venv\Scripts\python.exe -m backend.scripts.serve --port 8000` after configuring the existing database reader in `.env`. Open <http://127.0.0.1:8000/> for the map and embedded Agent. See [architecture, field mapping, verification and Windows setup](EXPLORER_AGENT_INTEGRATION.md). The runtime no longer uses the legacy SQLite cache.
+
 Development Status
 
 # Phase 1 — Reliable Location Intelligence

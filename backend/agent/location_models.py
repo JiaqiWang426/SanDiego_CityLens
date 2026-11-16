@@ -1,8 +1,10 @@
 """Additive conversational contracts; coordinates are never LLM output fields."""
 from typing import Literal
-from pydantic import Field
+from pydantic import Field, model_validator
+from datetime import date
 
 from .models import Model,Plan,PlanOutput,TimeRange,QueryResponse,Location
+from ..explorer_models import ViewportContext, MapVisualization
 
 
 class AddressProposal(Model):
@@ -16,6 +18,8 @@ class AddressProposal(Model):
     state: str | None
     postal_code: str | None=Field(default=None,pattern=r'^\d{5}(?:-\d{4})?$')
     post_direction: str | None=None
+    entity_type: Literal['street_address','building_or_poi','intersection','region','coordinates'] = 'street_address'
+    location_text: str | None = Field(default=None, max_length=240)
 
     @property
     def street(self):
@@ -23,6 +27,8 @@ class AddressProposal(Model):
 
     @property
     def display(self):
+        if self.entity_type != 'street_address':
+            return self.location_text or self.source_quote
         return ', '.join(x for x in [' '.join(x for x in [self.house_number,self.street] if x),
                                     self.city or 'San Diego',' '.join(x for x in [self.state or 'CA',self.postal_code] if x)] if x)
 
@@ -31,6 +37,26 @@ class ExtractedTimeRange(Model):
     start: str
     end: str
     calendar_timezone: str
+
+    @model_validator(mode='after')
+    def localize_naive_timestamps(self):
+        """Models sometimes omit the UTC offset ("2026-01-01T00:00:00").
+        Interpret such wall-clock values in the stated calendar timezone,
+        including the correct DST offset, instead of failing the whole turn."""
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        try:
+            zone=ZoneInfo(self.calendar_timezone)
+        except Exception:
+            return self  # TimeRange validation rejects an unknown zone later.
+        for name in ('start','end'):
+            try:
+                value=datetime.fromisoformat(getattr(self,name))
+            except ValueError:
+                continue
+            if value.tzinfo is None:
+                object.__setattr__(self,name,value.replace(tzinfo=zone).isoformat())
+        return self
 
 
 class InterpretationOutput(Model):
@@ -47,8 +73,32 @@ class AddressCorrectionOutput(Model):
     clarification: str | None
 
 
+class ConfirmationEdits(Model):
+    start: date | None = None
+    through: date | None = None
+    radius_meters: float | None = Field(default=None, ge=0, le=50000)
+
+    @model_validator(mode='after')
+    def complete_interval(self):
+        if (self.start is None) != (self.through is None) or (self.start and self.start > self.through):
+            raise ValueError('Confirmation date edits require an increasing start/through pair.')
+        return self
+
+
+class ManualPoint(Model):
+    latitude: float = Field(ge=-90, le=90)
+    longitude: float = Field(ge=-180, le=180)
+    source: Literal['user_coordinates','manual_open_map']
+    confirmed: Literal[True]
+
+
+class PlaceChoice(Model):
+    place_id: str = Field(min_length=1, max_length=250, pattern=r'^[A-Za-z0-9_-]+$')
+    search_token: str = Field(pattern=r'^[0-9a-f]{32}$')
+
+
 class ChatTurn(Model):
-    action: Literal['ask','confirm','correct','clarify','cancel','choose_candidates']='ask'
+    action: Literal['ask','confirm','correct','clarify','cancel','choose_candidates','choose_place','select_manual_locations']='ask'
     message: str | None=Field(default=None,max_length=4000)
     conversation_id: str | None=Field(default=None,max_length=100)
     session_id: str | None=Field(default=None,pattern=r'^[0-9a-f]{32}$')
@@ -58,6 +108,11 @@ class ChatTurn(Model):
     radius_meters: float=Field(default=800,ge=0,le=50000)
     preferences: list[str]=Field(default_factory=list,max_length=8)
     candidate_choices: dict[str,str]=Field(default_factory=dict,max_length=2)
+    viewport_context: ViewportContext | None = None
+    confirmation_policy: Literal['always','conditional'] = 'always'
+    confirmation_edits: ConfirmationEdits | None = None
+    manual_points: dict[str,ManualPoint] = Field(default_factory=dict,max_length=2)
+    place_choices: dict[str,PlaceChoice] = Field(default_factory=dict,max_length=2)
 
 
 class GeocodedCandidate(Model):
@@ -89,3 +144,7 @@ class ChatResponse(Model):
     result: QueryResponse | None=None
     diagnostic_codes: list[str]=Field(default_factory=list)
     geocoding_diagnostics: dict[str,dict]=Field(default_factory=dict)
+    viewport_analysis: dict | None = None
+    visualization: MapVisualization | None = None
+    selected_place_ids: dict[str,str] = Field(default_factory=dict)
+    confirmation_edits: ConfirmationEdits | None = None

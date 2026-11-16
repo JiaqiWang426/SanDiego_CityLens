@@ -16,11 +16,21 @@ class Settings:
     llm_timeout_seconds: float = 25
     request_timeout_seconds: float = 120
     session_database_url: str | None = None
+    google_places_api_key: str | None = None
+    google_maps_browser_api_key: str | None = None
+    independent_poi_url: str | None = None
+    independent_poi_attribution: str | None = None
+    independent_poi_user_agent: str | None = None
 
     @classmethod
     def from_env(cls):
         load_environment()
         return cls(database_url=os.getenv('AGENT_DATABASE_URL'),
+                   google_places_api_key=os.getenv('GOOGLE_PLACES_API_KEY'),
+                   google_maps_browser_api_key=os.getenv('GOOGLE_MAPS_BROWSER_API_KEY'),
+                   independent_poi_url=os.getenv('CITYLENS_INDEPENDENT_SEARCH_URL'),
+                   independent_poi_attribution=os.getenv('CITYLENS_INDEPENDENT_SEARCH_ATTRIBUTION'),
+                   independent_poi_user_agent=os.getenv('CITYLENS_INDEPENDENT_SEARCH_USER_AGENT'),
                    session_database_url=os.getenv('SESSION_DATABASE_URL'),
                    openai_api_key=os.getenv('OPENAI_API_KEY'), model=os.getenv('OPENAI_MODEL'),
                    max_tool_calls=int(os.getenv('AGENT_MAX_TOOL_CALLS','6')),

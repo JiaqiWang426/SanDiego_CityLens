@@ -13,12 +13,11 @@ from .evidence import (compare_pair, comparison_claim, make_evidence, record_cla
 from .llm import LanguageModel, ModelNotConfigured
 from .diagnostics import log_failure,model_failure_code
 from .models import (Claim, Comparison, ComparisonMetric, Composition, EvidenceRecord,
-                     Plan, QueryRequest, QueryResponse)
+                     Plan, QueryRequest, QueryResponse, TimeRange)
 from .settings import Settings
 from .tools import DatabaseTools, ToolCall, ToolResult, tool_log
 from .location_flow import LocationConversations
 from .location_models import ChatTurn,ChatResponse
-from .sangis_geocoding import FallbackAddressGeocoder
 from .dimensions import COLLISION_PATTERN, SERVICE_PATTERN, mentioned_dimensions
 
 
@@ -180,7 +179,8 @@ def render_answer(request: QueryRequest, claims: list[Claim], unsupported: list[
 class Agent:
     def __init__(self, model: LanguageModel, tools: DatabaseTools, settings: Settings, *, geocoder=None):
         self.model,self.tools,self.settings=model,tools,settings
-        self.conversations=LocationConversations(geocoder or FallbackAddressGeocoder())
+        from .user_locations import UserLocationResolver
+        self.conversations=LocationConversations(geocoder or UserLocationResolver(settings))
         graph=StateGraph(AgentState)
         graph.add_node('resolve_locations',self.resolve_locations)
         graph.add_node('resolve_scope',self.resolve_scope)
@@ -217,6 +217,39 @@ class Agent:
         return state['response']
 
     async def chat(self,turn: ChatTurn, *, session=None) -> ChatResponse:
+        from .map_analysis import ViewportAnalysis
+        process_local=session is None
+        previous = session or self.conversations.pending.get(turn.conversation_id)
+        saved = getattr(previous, 'viewport_context', None)
+        if session is None and turn.action in {'ask', 'clarify'}:
+            from .map_analysis import requests_viewport
+            if previous and previous.stage not in {'complete', 'cancelled'} and requests_viewport(turn.message):
+                from fastapi import HTTPException
+                raise HTTPException(409, 'Confirm, correct or cancel the pending address request first.')
+            reply, context = await ViewportAnalysis(self).run(turn, saved)
+            if reply is not None:
+                previous = previous or self.conversations.session(turn)
+                async with previous.lock:
+                    previous.viewport_context = context
+                    previous.stage = 'complete'
+                    previous.reply = reply
+                    reply.conversation_id = previous.id
+                    return reply
+            if previous and previous.stage=='complete' and previous.query_context and turn.action=='ask':
+                from .sessions import ConversationRunner
+                reply,context,new_locations=await ConversationRunner(self).followup(previous.id,turn,previous.query_context,previous)
+                if not new_locations:
+                    previous.query_context=context;previous.reply=reply
+                    return reply
+                from .scope_resolution import explicit_scope
+                explicit_time,explicit_radius=explicit_scope(turn.message or '')
+                if explicit_time is not None or explicit_radius is not None:
+                    old=previous.query_context['request']
+                    turn=turn.model_copy(update={'time_range':TimeRange.model_validate(old['time_range']),
+                        'radius_meters':old['radius_meters'],'preferences':old['preferences']})
+                else:
+                    previous.stage='clarify'
+                    turn=turn.model_copy(update={'action':'correct','revision':previous.revision})
         session=session if session is not None else self.conversations.session(turn)
         async with session.lock:
             state=await self.graph.ainvoke({'turn':turn,'session':session,'trace_id':'trace_'+uuid4().hex,
@@ -231,6 +264,9 @@ class Agent:
                      if status=='error' else 'Analysis completed for the confirmed, resolved addresses. Numerical findings remain subject to dataset coverage limitations.')
             session.reply=self.conversations.reply(session,status,message)
             session.reply.result=response
+            if process_local and state.get('request') and state.get('plan'):
+                from .sessions import ConversationRunner
+                session.query_context=ConversationRunner.context(state['request'],state['plan'])
             return session.reply
 
     async def resolve_locations(self,state: AgentState) -> dict:
@@ -377,6 +413,10 @@ class Agent:
                 raise ValueError('Unverified answer prose')
             response.execution_plan=[call.model_dump(mode='json') for call in state.get('calls',[])]
             response.tool_calls=[tool_log(result) for result in state.get('results',[])]
+            from .map_analysis import radius_visualization
+            response.visualization = radius_visualization(response.evidence)
+            from .presentation import build_presentation
+            response.presentation = build_presentation(response,state['request']).model_dump(mode='json')
             return {'response':response}
         except (ValueError,KeyError):
             return self.abstain({**state,'fatal':True,'codes':state['codes']+['final_validation_failed']})

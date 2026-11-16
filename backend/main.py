@@ -1,5 +1,6 @@
 """Run from the repository root: python -m uvicorn backend.main:app."""
 import asyncio
+import os
 from functools import lru_cache
 from uuid import uuid4
 from pathlib import Path
@@ -21,6 +22,8 @@ from .agent.session_models import SessionCreate, SessionMetadata
 from .agent.sessions import SessionStore
 from .agent.diagnostics import log_failure
 from .agent.service_categories import road_scope_suggestions
+from .explorer_api import router as explorer_router
+from .agent.places import router as places_router
 
 
 @asynccontextmanager
@@ -40,6 +43,8 @@ async def lifespan(app: FastAPI):
 
 
 app=FastAPI(title='San Diego CityLens Phase 0',version='0.1.0',lifespan=lifespan)
+app.include_router(explorer_router)
+app.include_router(places_router)
 # Resolve the sibling frontend directory independently of the shell's cwd.
 FRONTEND=Path(__file__).resolve().parent.parent/'frontend'
 app.mount('/assets',StaticFiles(directory=FRONTEND),name='assets')
@@ -82,7 +87,35 @@ async def delete_session(session_id: str,store: SessionStore=Depends(get_session
 
 @app.get('/',include_in_schema=False)
 def frontend():
+    return FileResponse(FRONTEND/'explorer.html')
+
+
+@app.get('/agent',include_in_schema=False)
+def agent_frontend():
     return FileResponse(FRONTEND/'index.html')
+
+
+@app.get('/pick-location',include_in_schema=False)
+def manual_picker():
+    return FileResponse(FRONTEND/'pick-location.html')
+
+
+@app.get('/service-notices',include_in_schema=False)
+def service_notices():
+    return FileResponse(FRONTEND/'service-notices.html')
+
+
+@app.get('/api/v1/ui-config')
+def ui_configuration(response:Response):
+    settings=Settings.from_env()
+    response.headers['Cache-Control']='no-store'
+    # Browser Maps keys are intentionally public; restrict HTTP referrers/APIs.
+    # The server Places key and all database/model credentials stay server-side.
+    return dict(google_maps_browser_api_key=settings.google_maps_browser_api_key or '',
+        google_maps_map_id=os.getenv('GOOGLE_MAPS_MAP_ID',''),
+        google_places_configured=bool(settings.google_places_api_key),
+        independent_search_configured=bool(settings.independent_poi_url and settings.independent_poi_attribution),
+        coordinate_policy='Google discovery content is ephemeral. Only independent/user-provided coordinates may enter analysis.')
 
 
 @app.get('/api/v1/status')

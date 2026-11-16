@@ -11,7 +11,8 @@ from backend.agent_tests.helpers import FakeModel,FakeTools,request
 def test_frontend_and_static_files():
     with TestClient(app) as client:
         response=client.get('/')
-        assert response.status_code==200 and 'Ask. Inspect. Verify.' in response.text
+        assert response.status_code==200 and 'chat-form' in response.text and '<iframe' not in response.text
+        assert 'Ask. Inspect. Verify.' in client.get('/agent').text
         assert client.get('/assets/app.js').status_code==200
         assert client.get('/assets/styles.css').status_code==200
 

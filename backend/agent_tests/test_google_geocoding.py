@@ -274,7 +274,7 @@ def test_multiple_google_results_are_all_compared_without_resolution():
     assert len(pairs['google_census'])==len(pairs['google_sangis'])==2
 
 
-def test_google_candidate_selection_preserves_mixed_provider_filters_and_sql_gate():
+def test_google_coordinates_cannot_enter_user_analytical_queries():
     async def exercise():
         class Resolver(Geocoder):
             def resolve(self,a):
@@ -287,12 +287,8 @@ def test_google_candidate_selection_preserves_mixed_provider_filters_and_sql_gat
         pending=await a.chat(ChatTurn(message=QUESTION))
         assert not a.tools.calls
         candidates=await a.chat(follow(pending))
-        assert candidates.status=='needs_candidate_confirmation' and not a.tools.calls
-        final=await a.chat(follow(candidates,'choose_candidates',candidate_choices={'B':candidates.candidates['B'][0].candidate_id}))
-        assert final.status=='complete' and len(a.tools.calls)==2
-        assert [c.provider for c in final.resolved_locations]==['US Census Geocoder','Google Maps']
-        x,y=a.tools.calls
-        assert x.model_dump(exclude={'location'})==y.model_dump(exclude={'location'})
+        assert candidates.status=='geocoding_failed' and not a.tools.calls
+        assert not candidates.candidates.get('B')
     asyncio.run(exercise())
 
 

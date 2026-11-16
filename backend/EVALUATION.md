@@ -8,7 +8,9 @@ the chat endpoint; uncheck it to submit a complete coordinate request instead.
 Saved responses can be inspected without rerunning SQL. New follow-up analyses
 always execute tools again. On Windows use `python -m backend.scripts.serve`.
 
-The local evaluation desk is served by FastAPI at **http://127.0.0.1:8000/**.
+The local evaluation desk is served by FastAPI at **http://127.0.0.1:8000/agent**
+and embedded in the unified map at **http://127.0.0.1:8000/**.
+See the [Explorer integration report](../EXPLORER_AGENT_INTEGRATION.md).
 It uses the real agent; there is no automatic fake response mode. No separate
 frontend installation or Node.js build is needed.
 
@@ -26,12 +28,12 @@ The root `.env` takes precedence over existing shell variables. The shell-based
 alternative below applies only to keys absent from `.env`:
 
 ```powershell
-cd 'E:\Github Projects\SanDiego_CityLens'
+cd 'E:\Github Projects\SanDiego_CityLens_QHY'
 .\.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
 $env:AGENT_DATABASE_URL = 'postgresql://citylens_agent:YOUR_URL_ENCODED_PASSWORD@127.0.0.1:54329/citylens'
 $env:OPENAI_API_KEY = 'YOUR_KEY'
 $env:OPENAI_MODEL = 'YOUR_ENABLED_STRUCTURED_OUTPUT_MODEL'
-.\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
+.\.venv\Scripts\python.exe -m backend.scripts.serve --host 127.0.0.1 --port 8000
 ```
 
 Open http://127.0.0.1:8000/ in your browser. Keep PowerShell running; Ctrl+C

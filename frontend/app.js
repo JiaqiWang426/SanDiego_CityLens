@@ -34,7 +34,7 @@ function request() {
 }
 function setBusy(value, message) {
   busy = value; $("ask").disabled = value;
-  $("manual-run").disabled = value || (addressMode() && conversationData?.status !== "complete");
+  $("manual-run").disabled = value || (addressMode() && (conversationData?.status !== "complete" || !conversationData?.result));
   $("location-mode").disabled = value;
   $("new-chat").disabled = value || !sessionsEnabled;
   document.querySelectorAll(".session-action").forEach(node => { node.disabled = value; });
@@ -54,6 +54,7 @@ function claimLink(id) {
   b.addEventListener("click", () => { tab("evidence"); document.getElementById(id)?.scrollIntoView({behavior:"smooth", block:"center"}); }); return b;
 }
 function render(data) {
+  publishVisualization(data.visualization || null);
   responseData = data; $("download").disabled = false; $("raw-json").textContent = json(data);
   const answer = $("answer"); answer.replaceChildren(el("p", "THE AGENT’S RESPONSE", "eyebrow"), el("span", data.status, "badge"), el("h2", data.intent.replaceAll("_", " ")), el("p", data.answer, "answer-text"));
   if (data.limitation_codes?.length) answer.append(el("p", "Diagnostics: " + data.limitation_codes.join(", "), "hint"));
@@ -137,7 +138,7 @@ $("investigate").addEventListener("submit", async event => {
   finally { setBusy(false); }
 });
 $("manual-run").addEventListener("click", async () => {
-  if (addressMode() && conversationData?.status !== "complete") { error("Confirm and resolve the current addresses first, or select coordinate pins for manual SQL."); return; }
+  if (addressMode() && (conversationData?.status !== "complete" || !conversationData?.result)) { error("Confirm and resolve the current addresses first, or select coordinate pins for manual SQL."); return; }
   try { const filters = JSON.parse($("filters").value); await executeManual({name:$("manual-tool").value, location:selectedLocation($("manual-location").value), ...scope(), collision_filters:filters, period:$("period").value, exclude_linked_duplicates:$("exclude").checked, limit:Math.min(100, window.configuredMaxRows || 100)}); }
   catch (e) { error(e.message); }
 });
@@ -212,6 +213,11 @@ async function conversationTurn(action, extra = {}) {
   try {
     await ensureSession();
     if (selectedSessionId) body.session_id = selectedSessionId;
+    if (action === 'ask' || action === 'clarify') {
+      const context = await requestMapContext();
+      if (context) body.viewport_context = context;
+      if (!selectedSessionId && conversationData?.viewport_analysis) body.conversation_id = conversationData.conversation_id;
+    }
     const data = await post("/api/v1/agent/chat", {action, ...body});
     conversationData = data;
     if (!["complete", "cancelled", "error"].includes(data.status)) $("location-mode").value = "addresses";
@@ -223,6 +229,8 @@ async function conversationTurn(action, extra = {}) {
 }
 
 function renderConversation(data) {
+  if (data.viewport_analysis) { renderViewportAnalysis(data); return; }
+  if (!data.result) publishVisualization(null);
   const panel = $("location-confirmation");
   panel.hidden = false;
   panel.replaceChildren(el("h2", data.status === "complete" ? "Resolved locations" : "Review locations"), el("p", data.message));
@@ -342,6 +350,7 @@ async function ensureSession() {
   selectedSessionId = session.session_id; currentSession(selectedSessionId);
 }
 function clearConversation() {
+  publishVisualization(null);
   conversationData = null; responseData = null; selectedSessionId = null; currentSession(null);
   hasSavedContext = false; $("continue-context-label").hidden = true; $("continue-context").checked = true;
   $("transcript").replaceChildren(); $("transcript").hidden = true;
@@ -356,6 +365,7 @@ function clearConversation() {
 function restoreScope(context) {
   hasSavedContext = !!context; $("continue-context-label").hidden = !context;
   if (!context) return;
+  if (context.mode === 'viewport') return;
   const req = context.request;
   $("radius").value = req.radius_meters;
   $("start").value = req.time_range.start; $("end").value = req.time_range.end;
@@ -432,3 +442,43 @@ $("new-chat").addEventListener("click", async () => {
   finally { setBusy(false); }
 });
 $("history-more").addEventListener("click", () => { if (!busy) loadHistory(true).catch(e => error(e.message)); });
+
+
+function publishVisualization(visualization) {
+  if (window.parent && window.parent !== window) window.parent.postMessage({type:'citylens:visualization',visualization},window.location.origin);
+}
+
+function requestMapContext() {
+  if (!window.parent || window.parent === window) return Promise.resolve(null);
+  return new Promise(resolve => {
+    const receive = event => {
+      if (event.source !== window.parent || event.origin !== window.location.origin || event.data?.type !== 'citylens:map-context') return;
+      clearTimeout(timer); window.removeEventListener('message',receive); resolve(event.data.context);
+    };
+    const timer = setTimeout(() => { window.removeEventListener('message',receive); resolve(null); },1000);
+    window.addEventListener('message',receive);
+    window.parent.postMessage({type:'citylens:request-map-context'},window.location.origin);
+  });
+}
+
+function renderViewportAnalysis(data) {
+  responseData=data; $('download').disabled=false; $('raw-json').textContent=json(data);
+  const evidence=data.viewport_analysis;
+  const panel=$('location-confirmation'); panel.hidden=false;
+  panel.replaceChildren(el('h2','Verified map-view scope'),el('p',data.message));
+  details(panel,'Exact bounds and filters',evidence.scope);
+  const answer=$('answer'); answer.replaceChildren(el('h2','Map-view summary'),el('p',data.message));
+  details(answer,'Issue type counts',evidence.summary.categories);
+  details(answer,'Source status counts',evidence.summary.statuses);
+  details(answer,'Monthly counts',evidence.summary.months);
+  details(answer,'Limitations',evidence.limitations);
+  $('calls').replaceChildren(el('h2','Deterministic viewport query'),el('p','A validated bounding box and filters were queried using the restricted PostgreSQL reader.'));
+  details($('calls'),'Database provenance',evidence.summary.provenance || {});
+  details($('calls'),'Parameterized count query',evidence.summary.verification_query || {});
+  $('evidence').replaceChildren(el('h2','Viewport evidence')); details($('evidence'),evidence.evidence_id,evidence);
+  $('verification-result').replaceChildren();
+  $('question-label').textContent='Your next question'; $('question').value='';
+  $('question').placeholder='For example: only Pothole reports, or compare two street addresses.';
+  $('ask').textContent='Ask the agent →';
+  publishVisualization(data.visualization); tab('answer');
+}

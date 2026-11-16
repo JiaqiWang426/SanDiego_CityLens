@@ -65,6 +65,7 @@ class LanguageModel(Protocol):
     async def interpret_locations(self,question,defaults,reference_time) -> InterpretationOutput: ...
     async def correct_locations(self,message,current) -> AddressCorrectionOutput: ...
     async def followup(self,message,context) -> FollowupOutput: ...
+    async def plan_viewport(self,message,context): ...
 
 
 class ModelNotConfigured(RuntimeError):
@@ -102,6 +103,10 @@ class OpenAIModel:
     async def plan(self, request: QueryRequest) -> PlanOutput:
         return await self._parse(PLANNER_PROMPT,request.model_dump_json(),PlanOutput)
 
+    async def plan_viewport(self, message, context):
+        from .map_analysis import VIEWPORT_PROMPT, ViewportPlanOutput
+        return await self._parse(VIEWPORT_PROMPT, json.dumps({'message': message, 'context': context}), ViewportPlanOutput)
+
     async def interpret_locations(self,question,defaults,reference_time):
         return await self._parse(PLANNER_PROMPT+LOCATION_PROMPT,
             json.dumps(dict(question=question,defaults=defaults,reference_time=reference_time)),InterpretationOutput)
@@ -130,12 +135,28 @@ do not silently ignore such a change.''',
 
 
 LOCATION_PROMPT='''
+Classify each location using entity_type: street_address, building_or_poi,
+intersection, region, or coordinates. Preserve the original expression verbatim
+in location_text and source_quote. For non-street entities all street component
+fields are null. Never force a building name into a conventional address.
+"1 Miramar St" and "9237 Regents Rd" are street addresses. "One Miramar Street",
+"One Miramar Street Apartments" and "Regents La Jolla" may be building/POI
+names: search them as names, never assume that the name One means house number 1.
+Written numbers may be normalized ONLY for an unambiguously stated conventional
+street address (for example "the street address One Main Street"). Preserve its
+original quote. Abbreviations St/Street and Rd/Road are equivalent suffixes.
+For user coordinates quote the exact latitude,longitude pair; never output
+coordinate fields. The backend alone parses the quoted user input.
+Recognized names/intersections/regions are valid location proposals even without
+a house number: leave clarification null unless their meaning/scope is unclear.
+"in 2026" means the complete calendar year [2026-01-01,2027-01-01) in Los Angeles.
+Never shorten a requested year to the database coverage or UI fallback interval.
 The earlier instructions about a plan not returning dates apply to the nested
 plan field only. For this entry stage, root scope fields must be extracted;
 the question takes precedence over optional UI fallback scope values.
 For this conversational entry step, interpret the question into the requested
-structured schema; do not execute anything. Extract one or two San Diego street
-addresses (IDs A then B), analytical plan, radius and offset-aware time interval.
+structured schema; do not execute anything. Extract one or two geographic
+entities (IDs A then B), analytical plan, radius and offset-aware time interval.
 Resolve explicit relative dates using reference_time in America/Los_Angeles;
 for past six months use calendar months and the same local time. Question scope
 overrides UI defaults; use defaults only for omitted scope. Leave time_range null
@@ -148,8 +169,8 @@ Never invent house numbers, street names or unit information. Preserve postal_co
 only when the user supplied a ZIP; otherwise return null. Preserve post_direction
 separately from pre-direction and suffix, or null when absent. street_name must
 retain the actual name from the user's quoted address, excluding direction and
-suffix; source_quote must be an exact address substring of user text. Missing
-house number/name or ambiguous interpretation requires clarification and nullable
+suffix; source_quote must be an exact address substring of user text. For STREET
+addresses only, missing house number/name requires clarification and nullable
 components. San Diego/CA may be supplied from this application's local context;
 preserve an explicitly different locality so it can be rejected. Do not infer
 coordinates. source_quote should quote just the supplied street-number/street
@@ -163,6 +184,11 @@ or collision service categories have no supported parameter. Do not claim answer
 
 
 FOLLOWUP_PROMPT='''
+Explicit current scope overrides inherited scope: "in 2026" means the full
+calendar year [2026-01-01,2027-01-01), never only Jan-March. A new explicit radius
+overrides the saved radius. Never shorten requested dates to available coverage.
+Return new_locations for changed building/POI names, intersections, regions or
+user coordinate expressions as well as new street addresses.
 This is a follow-up using saved validated query context, not historical facts.
 Never return coordinates or infer counts from memory. A new analysis always
 executes tools. Preserve every parameter the user has not explicitly changed.

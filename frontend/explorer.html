@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173d43"><title>CityLens · Investigate a place</title>
+  <link rel="stylesheet" href="/assets/investigation.css">
+  <script src="/assets/maps.js" defer></script><script src="/assets/explorer.js" defer></script>
+  <script src="/assets/investigation.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="logo" href="/" aria-label="CityLens home">C<span>↗</span></a>
+    <div class="nav-items">
+      <button id="nav-investigation" class="nav-item active" type="button" aria-label="Investigation"><span aria-hidden="true">✧</span><small>Investigate</small></button>
+      <button id="nav-explorer" class="nav-item" type="button" aria-label="Map Explorer"><span aria-hidden="true">⌖</span><small>Explore</small></button>
+      <button id="nav-history" class="nav-item" type="button" aria-label="History and saved analyses"><span aria-hidden="true">◷</span><small>History</small></button>
+    </div>
+    <a class="nav-item advanced-link" href="/agent" target="_blank" rel="noopener"><span aria-hidden="true">⚙</span><small>Advanced</small></a>
+    <div class="nav-city">SD<span>CALIFORNIA</span></div>
+  </nav>
+
+  <main class="investigation" id="investigation" aria-label="Agent investigation workspace">
+    <header class="workspace-header"><div><span class="wordmark">CITY<span>LENS</span></span><span class="city-label">SAN DIEGO</span></div><button id="new-investigation" type="button" class="text-button">＋ New investigation</button></header>
+    <div id="conversation-scroll" class="conversation-scroll">
+      <section id="welcome" class="welcome">
+        <div class="eyebrow"><span class="small-dot"></span> A LITTLE MORE CONTEXT. A BETTER DECISION.</div>
+        <h1>Get to know<br>the place <em>around you.</em></h1>
+        <p>Ask about a location. Compare your options.<br>Follow the evidence behind every answer.</p>
+        <div class="suggestions" aria-label="Example investigations">
+          <button type="button" data-question="Compare traffic collisions near 9237 Regents Rd and 3969 Miramar St in 2026."><span>COMPARE TWO PLACES</span>What’s been reported near these apartments? <b>↗</b></button>
+          <button type="button" data-question="Find traffic collisions near One Miramar Street Apartments in 2026."><span>INVESTIGATE A LOCATION</span>Look around a building or address <b>↗</b></button>
+          <button type="button" data-question="Summarize Get It Done reports in my current map view."><span>FOLLOW THE MAP</span>Explore reports in the area I’m viewing <b>↗</b></button>
+        </div>
+        <p class="welcome-note">Public records add context. They don’t tell the whole story.</p>
+      </section>
+      <div id="conversation" class="conversation" aria-live="polite"></div>
+      <div id="pending-card" class="pending-card" hidden></div>
+    </div>
+    <div class="composer-area">
+      <div id="chat-error" class="notice error" role="alert" hidden></div>
+      <form id="chat-form" class="composer"><label class="sr-only" for="chat-input">Ask CityLens about a location</label><textarea id="chat-input" rows="2" maxlength="4000" placeholder="Ask about an address, a building, or a place…" required></textarea><button id="chat-send" type="submit" aria-label="Send question">↑</button></form>
+      <div class="composer-foot"><span id="chat-status" role="status">Your question sets the dates, distance, and locations.</span><a href="/service-notices" target="_blank" rel="noopener">Privacy & sources</a></div>
+    </div>
+  </main>
+
+  <aside id="explorer-panel" class="explorer-panel" aria-label="Independent Map Explorer">
+    <header class="explorer-header"><div><div class="eyebrow">THE LOCAL PICTURE</div><h2>Map Explorer</h2></div><span class="live-label">SOURCE RECORDS</span></header>
+    <p id="dataset-scope-label" class="scope-note">Get It Done · District 1 · 2026</p>
+    <div class="map-wrap"><div id="map" aria-label="Map showing Explorer records and Agent analysis"></div><div class="map-legend"><span class="legend-point"></span> Explorer records <span class="legend-analysis"></span> Agent scope</div></div>
+    <div class="map-foot"><span id="map-count">Loading map…</span><button id="clear-analysis" type="button" class="text-button">Clear analysis</button></div>
+    <p id="analysis-map-status" class="small-note" role="status">Analysis overlays appear after verified queries.</p>
+
+    <details class="explorer-filters" open><summary>Explorer filters <span>Map, charts & records only</span></summary>
+      <form id="filters">
+        <label for="dataset">Dataset</label><select id="dataset"><option value="service_requests">Get It Done · District 1</option><option value="traffic_collisions">Traffic collisions · imported coverage</option></select>
+        <div class="form-pair"><label>From<input id="start" type="date" min="2026-01-01" max="2026-12-31" value="2026-01-01" required></label><label>Through<input id="end" type="date" min="2026-01-01" max="2026-12-31" value="2026-10-26" required></label></div>
+        <div class="form-pair"><label>Issue type<select id="category"><option value="">All issue types</option></select></label><label>Status<select id="status"><option value="">All statuses</option></select></label></div>
+        <div class="form-pair"><label>Planning area<select id="community"><option value="">All areas</option></select></label><label>ZIP code<select id="zipcode"><option value="">All ZIP codes</option></select></label></div>
+        <label class="checkbox"><input id="exclude-linked" type="checkbox"> Exclude reports linked to a parent request</label>
+        <div class="filter-actions"><button class="apply-button" type="submit">Apply to Explorer</button><button id="reset" class="text-button" type="button">Reset</button></div>
+      </form>
+    </details>
+    <div class="data-line"><span id="source-range">Loading source data…</span><span id="selection-summary">All available records</span></div>
+    <div id="message" class="notice" role="status" hidden></div>
+    <section class="metric-grid" aria-label="Explorer totals">
+      <article class="metric-card"><span class="metric-label">TOTAL REPORTS</span><strong id="metric-total">—</strong><small>all filtered records</small></article>
+      <article class="metric-card"><span id="metric-closed-label" class="metric-label">CLOSED REPORTS</span><strong id="metric-closed">—</strong><small id="metric-closed-note">source status: Closed</small></article>
+      <article class="metric-card"><span class="metric-label">PLANNING AREAS</span><strong id="metric-communities">—</strong><small id="metric-community-note">represented in results</small></article>
+      <article class="metric-card"><span class="metric-label">UNLOCATED</span><strong id="metric-unlocated">—</strong><small>included in totals</small></article>
+    </section>
+    <details class="explorer-charts"><summary>Patterns in the source records</summary><h3>Top issue types</h3><div id="category-chart" class="category-chart"></div><h3>Reports by month</h3><div id="month-chart" class="month-chart"></div></details>
+    <section class="records-panel" aria-labelledby="records-heading"><div class="records-heading"><div><div class="eyebrow">RAW SOURCE RECORDS</div><h3 id="records-heading">Explorer Results</h3></div><span id="records-count" class="small-note"></span></div><p class="small-note">Matches the Explorer filters. These are source records, not Agent-generated reports.</p><div class="table-wrap"><table><thead><tr><th>Report ID</th><th>Issue type</th><th>Planning area</th><th>Submitted</th><th>Status</th><th>Details</th></tr></thead><tbody id="records-body"><tr><td colspan="6">Loading records…</td></tr></tbody></table></div><div class="pagination"><span id="page-label">—</span><div><button id="prev" type="button" disabled>← Previous</button><button id="next" type="button" disabled>Next →</button></div></div></section>
+    <details class="source-notes"><summary>Data coverage & source notes</summary><p id="source-limitations"></p><p>Closed is a source status, not proof of repair. Source coverage and location accuracy are not independently verified.</p><a href="https://data.sandiego.gov/" target="_blank" rel="noopener">City of San Diego Open Data ↗</a></details>
+  </aside>
+</div>
+<dialog id="history-dialog"><div class="dialog-heading"><h2>Saved investigations</h2><button id="history-close" class="text-button" type="button">Close ×</button></div><p id="history-status" class="small-note"></p><div id="history-list"></div></dialog>
+<dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-heading"><span class="eyebrow">PUBLIC SOURCE RECORD</span><button id="detail-close" class="text-button" type="button" aria-label="Close details">Close ×</button></div><h2 id="detail-title">Report details</h2><div id="detail-body"></div><p class="small-note">A report records a submission, not a verified physical condition.</p></dialog>
+</body></html>
