@@ -126,6 +126,7 @@ def build_cache(source=SOURCE, target=CACHE, mapping=MAPPING):
                          mapping_sha256=rules.sha256, category_hierarchy=rules.hierarchy())
             db.execute('INSERT INTO metadata VALUES (?)', (json.dumps(stats),))
             db.execute('ANALYZE')
+        db.close()
         os.replace(temp, target)
         return stats
     finally:

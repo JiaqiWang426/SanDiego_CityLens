@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#172c34">
   <meta name="description" content="Explore public Get It Done service requests in San Diego City Council District 1 during 2026.">
-  <title>District 1 Explorer · CityLens</title>
+  <title>San Diego District 1 Explorer · CityLens</title>
   <link rel="stylesheet" href="/assets/vendor/leaflet.css">
   <link rel="stylesheet" href="/assets/explorer.css">
   <script src="/assets/vendor/leaflet.js" defer></script>
@@ -14,19 +14,20 @@
 <body>
   <header class="topbar">
     <a class="brand" href="/" aria-label="CityLens District 1 Explorer home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>CITY<span class="brand-light">LENS</span></span></a>
-    <div class="topbar-center"><span class="topbar-divider"></span> District 1 <span class="dot">·</span> Service Request Explorer</div>
+    <div class="topbar-center"><span class="topbar-divider"></span> San Diego District 1 <span class="dot">·</span> Service Request Explorer</div>
     <a class="source-link" href="https://data.sandiego.gov/datasets/get-it-done-reports/" target="_blank" rel="noopener noreferrer">About the data <span aria-hidden="true">↗</span></a>
   </header>
 
   <div class="shell">
     <aside class="sidebar" aria-labelledby="filter-title">
-      <div class="sidebar-heading"><span class="eyebrow">EXPLORE THE DATA</span><h2 id="filter-title">Refine your view</h2><p>Explore reports submitted to the City of San Diego in District 1.</p></div>
+      <div class="sidebar-heading"><span class="eyebrow">EXPLORE THE DATA</span><h2 id="filter-title">Refine your view</h2></div>
       <form id="filters">
         <div class="filter-group"><div class="group-label"><span class="group-icon" aria-hidden="true">01</span><span>Time period</span></div>
           <div class="date-pair"><label>From <input id="start" name="start" type="date" min="2026-01-01" max="2026-12-31" value="2026-01-01" required></label><label>Through <input id="end" name="end" type="date" min="2026-01-01" max="2026-12-31" value="2026-10-26" required></label></div>
         </div>
         <div class="filter-group"><div class="group-label"><span class="group-icon" aria-hidden="true">02</span><span>Report details</span></div>
-          <label for="category">Issue type</label><select id="category" name="category"><option value="">All issue types</option></select>
+          <label for="main-category">Main category</label><select id="main-category" name="main_category"><option value="">All main categories</option></select>
+          <label for="sub-category">Subcategory</label><select id="sub-category" name="sub_category" disabled><option value="">Choose a main category first</option></select>   
           <label for="status">Status</label><select id="status" name="status"><option value="">All statuses</option></select>
         </div>
         <div class="filter-group"><div class="group-label"><span class="group-icon" aria-hidden="true">03</span><span>Place</span></div>
@@ -34,13 +35,13 @@
           <label for="zipcode">ZIP code</label><select id="zipcode" name="zipcode"><option value="">All ZIP codes</option></select>
         </div>
         <label class="checkbox"><input id="exclude-linked" name="exclude_linked" type="checkbox"><span>Exclude reports linked to a parent request</span></label>
-        <div class="filter-actions"><button class="apply-button" type="submit">Apply filters <span aria-hidden="true">→</span></button><button id="reset" class="reset-button" type="button">Reset filters</button></div>
+        <div class="filter-actions"><button class="apply-button" type="submit">Apply filters <span aria-hidden="true">→</span></button><button id="reset-filters" class="reset-button" type="button">Reset filters</button></div>
       </form>
       <div class="sidebar-note"><span class="note-icon" aria-hidden="true">i</span><p>These are reports submitted by residents. A closed case does not confirm that an issue was repaired.</p></div>
     </aside>
 
     <main class="main-content">
-      <div class="hero"><div><div class="eyebrow hero-eyebrow"><span class="live-dot"></span> SAN DIEGO OPEN DATA · 2026</div><h1>See what’s being<br><em>reported</em> nearby.</h1><p>Explore service requests by place, time, type, and status. Follow the patterns behind District 1’s public reports.</p></div><div class="hero-badge"><span>01</span><small>CITY COUNCIL<br>DISTRICT</small></div></div>
+      <div class="hero"><div><div class="eyebrow hero-eyebrow"><span class="live-dot"></span> SAN DIEGO OPEN DATA · 2026</div><h1>See what’s being<br><em>reported</em> nearby.</h1></div><div class="hero-badge"><span>01</span><small>CITY COUNCIL<br>DISTRICT</small></div></div>
       <div class="data-line"><span id="source-range">Loading source data…</span><span class="data-line-separator">/</span><span id="selection-summary">All available records</span></div>
       <div id="message" class="message" role="status" aria-live="polite" hidden></div>
 
@@ -53,13 +54,30 @@
 
       <div class="analysis-grid">
         <section class="panel map-panel" aria-labelledby="map-heading"><div class="panel-heading"><div><span class="eyebrow">GEOGRAPHY</span><h2 id="map-heading">Reports on the map</h2></div><div id="map-count" class="count-pill">Loading…</div></div><p class="panel-subtitle">Pan or zoom to explore. Counts above and charts cover every filtered report; the map shows the current view.</p><div class="map-frame"><div id="map" aria-label="Map of District 1 service requests"></div><div class="map-key"><span class="key-dot"></span> Individual report <span class="key-cluster">12</span> Nearby reports</div></div><div class="panel-foot"><span>Map tiles © OpenStreetMap contributors</span><span>Click a report for details</span></div></section>
-        <section class="panel category-panel" aria-labelledby="category-heading"><div class="panel-heading"><div><span class="eyebrow">BREAKDOWN</span><h2 id="category-heading">Top issue types</h2></div></div><p class="panel-subtitle">Select a bar to filter the full dashboard.</p><div id="category-chart" class="category-chart" aria-label="Issue type counts"></div><p class="chart-note">Counts are submitted requests, including linked reports unless excluded.</p></section>
+        <section class="panel category-panel" aria-labelledby="category-heading"><div class="panel-heading"><div><span class="eyebrow">BREAKDOWN</span><h2 id="category-heading">Top issue types</h2></div></div><p class="panel-subtitle">Ranked by number of reports under the current filters.</p><div id="category-chart" class="category-chart" aria-label="Issue type counts"></div><p class="chart-note">Counts are submitted requests, including linked reports unless excluded.</p></section>
       </div>
 
       <section class="panel trend-panel" aria-labelledby="trend-heading"><div class="panel-heading"><div><span class="eyebrow">OVER TIME</span><h2 id="trend-heading">Reports by month</h2></div><span class="panel-caption">JAN — DEC 2026</span></div><p class="panel-subtitle">Monthly counts for the selected filters. Select a month to focus the date range.</p><div id="month-chart" class="month-chart" role="group" aria-label="Monthly request counts"></div></section>
+      <div class="analysis-grid compare-grid">
+        <section class="panel compare-panel" aria-labelledby="monthly-compare-heading">
+          <div class="panel-heading"><div><span class="eyebrow">CATEGORY TREND</span><h2 id="monthly-compare-heading">Monthly comparison by category</h2></div><div class="heat-legend" aria-hidden="true"><span>Fewer</span><span class="heat-scale"></span><span>More</span></div></div>
+          <p class="panel-subtitle">Darker cells mean more reports. Hover a cell to see the exact count. Choose an issue type to compare its subcategories.</p>
+          <div id="monthly-compare" class="table-wrap" aria-label="Monthly counts by category"></div>
+          <p class="chart-note">Uses all active filters. Grey cells mean no reports that month.</p>
+        </section>
+        <section class="panel compare-panel" aria-labelledby="community-compare-heading">
+          <div class="panel-heading"><div><span class="eyebrow">BY PLACE</span><h2 id="community-compare-heading">Community comparison</h2></div></div>
+          <p class="panel-subtitle">Select a bar to filter the dashboard by that planning area.</p>
+          <div id="community-compare" class="category-chart" aria-label="Community request counts"></div>
+          <p class="chart-note">Top 10 areas. Uses the date range, category and subcategory filters only.</p>
+        </section>
+      </div>
 
-      <section class="panel records-panel" aria-labelledby="records-heading"><div class="panel-heading"><div><span class="eyebrow">THE RECORDS</span><h2 id="records-heading">Latest matching reports</h2></div><span id="records-count" class="panel-caption"></span></div><div class="table-wrap"><table><thead><tr><th scope="col">Report ID</th><th scope="col">Issue type</th><th scope="col">Community planning area</th><th scope="col">Submitted</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Open details</span></th></tr></thead><tbody id="records-body"><tr><td colspan="6">Loading reports…</td></tr></tbody></table></div><div class="pagination"><span id="page-label">—</span><div><button id="prev" type="button" disabled>← Previous</button><button id="next" type="button" disabled>Next →</button></div></div></section>
-      <footer class="footer">CityLens · District 1 Service Request Explorer <span>Source: City of San Diego Get It Done data. Location accuracy and completeness are not independently verified.</span></footer>
+      <section class="panel records-panel" aria-labelledby="records-heading">
+        <div class="panel-heading"><div><span class="eyebrow">THE RECORDS</span>
+          <h2 id="records-heading">Latest matching reports</h2></div><span id="records-count" class="panel-caption"></span></div><div class="table-wrap"><table><thead><tr><th scope="col">Report ID</th><th scope="col">Issue type</th><th scope="col">Community planning area</th><th scope="col">Submitted</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Open details</span></th></tr></thead><tbody id="records-body"><tr><td colspan="6">Loading reports…</td></tr></tbody></table></div>
+          <div class="pagination"><span id="page-label">—</span><div class="pager"><button id="prev" type="button" disabled>← Previous</button><span id="page-numbers" class="page-numbers"></span><button id="next" type="button" disabled>Next →</button><label class="page-jump">Go to <input id="page-jump" type="number" min="1" inputmode="numeric" placeholder="Page"></label></div></div>      </section>
+      <footer class="footer">CityLens · San Diego District 1 Service Request Explorer <span>Source: City of San Diego Get It Done data. Location accuracy and completeness are not independently verified.</span></footer>
     </main>
   </div>
 
