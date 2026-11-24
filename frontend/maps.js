@@ -18,7 +18,7 @@
 
   class GoogleExplorerMap {
     constructor(target,config) {
-      this.reports=[];this.analysis=[];
+      this.reports=[];this.analysis=[];this.scope=[];
       this.map=new google.maps.Map(target,{center:{lat:32.88,lng:-117.20},zoom:10,
         mapId:config.google_maps_map_id || 'DEMO_MAP_ID',streetViewControl:false,mapTypeControl:false,fullscreenControl:true});
     }
@@ -47,6 +47,13 @@
           else onDetail(item.id);
         }));
       }
+    }
+    /* Explorer analysis area: separate from Agent overlays; never refits the map. */
+    drawScope(bounds){
+      this.clear(this.scope);
+      if(!bounds)return;
+      this.scope.push(new google.maps.Rectangle({map:this.map,bounds,clickable:false,strokeColor:'#df785e',
+        strokeOpacity:.9,strokeWeight:2,fillOpacity:0}));
     }
     drawAnalysis(visualization){
       this.clear(this.analysis);
@@ -82,11 +89,11 @@
   }
   class LeafletExplorerMap {
     constructor(target){
-      this.provider='open_map';this.reports=L.layerGroup();this.analysis=L.layerGroup();
+      this.provider='open_map';this.reports=L.layerGroup();this.analysis=L.layerGroup();this.scope=L.layerGroup();
       this.map=L.map(target,{preferCanvas:true}).setView([32.88,-117.20],11);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,
         attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(this.map);
-      this.reports.addTo(this.map);this.analysis.addTo(this.map);
+      this.reports.addTo(this.map);this.analysis.addTo(this.map);this.scope.addTo(this.map);
     }
     on(event,callback){this.map.on(event,callback);}
     getZoom(){return this.map.getZoom();}
@@ -106,6 +113,12 @@
           point.on('click',()=>onDetail(item.id));this.reports.addLayer(point);
         }
       }
+    }
+    drawScope(bounds){
+      this.scope.clearLayers();
+      if(!bounds)return;
+      this.scope.addLayer(L.rectangle([[bounds.south,bounds.west],[bounds.north,bounds.east]],
+        {color:'#df785e',weight:2,dashArray:'6 5',fill:false,interactive:false}));
     }
     drawAnalysis(visualization){
       this.analysis.clearLayers();

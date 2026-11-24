@@ -26,6 +26,8 @@ class ViewportPlanOutput(MapModel):
     community: str | None
     zipcode: str | None
     exclude_linked: bool | None
+    main_category: str | None
+    sub_category: str | None
     change_quote: str | None
     clarification: str | None
 
@@ -44,7 +46,10 @@ Keep the supplied bounds: there is no output field that can change them.
 Null replacement fields inherit current filters. To clear a filter return an
 empty string. Dates are inclusive YYYY-MM-DD within 2026. Every replacement needs
 change_quote, an exact substring of the user message. Category/status/planning
-area/ZIP labels must appear literally in that quote (case-insensitive). Do not
+area/ZIP labels must appear literally in that quote (case-insensitive). category
+is the ORIGINAL source service name; main_category and sub_category are the
+derived CityLens grouping (e.g. main "Graffiti", sub "Park graffiti") and also
+must appear literally in the quote. Never translate between the two. Do not
 invent synonyms: unresolved is not an authoritative source status. Clarify if
 the request cannot be represented. Collision status is GEOCODING status; it has
 no planning-area/ZIP/linked-request fields. Do not drop unsupported constraints.
@@ -104,7 +109,7 @@ class ViewportAnalysis:
                 quote = plan.change_quote
                 if not quote or quote not in state['message']:
                     raise ValueError('Filter changes require an exact user quote.')
-                for key in ['category', 'status', 'community', 'zipcode']:
+                for key in ['category', 'status', 'community', 'zipcode', 'main_category', 'sub_category']:
                     if changes.get(key) and changes[key].casefold() not in quote.casefold():
                         raise ValueError('Filter label is absent from the user quote.')
                 if 'dataset' in changes and changes['dataset'] != state['scope'].filters.dataset:
@@ -128,7 +133,8 @@ class ViewportAnalysis:
             scope = ViewportContext(bounds=scope.bounds, filters=summary.get('applied_filters', scope.filters.model_dump()))
             total = summary['total']
             if not isinstance(total, int) or total < 0 or any(
-                sum(row['count'] or 0 for row in summary[key]) != total for key in ['categories', 'statuses', 'months']):
+                sum(row['count'] or 0 for row in summary[key]) != total
+                for key in ['categories', 'statuses', 'months', 'main_categories', 'sub_categories']):
                 raise ValueError('Aggregate evidence failed consistency verification')
             evidence_id = 'viewport_' + uuid4().hex
             evidence = dict(evidence_id=evidence_id, source_table='citylens.' + scope.filters.dataset,

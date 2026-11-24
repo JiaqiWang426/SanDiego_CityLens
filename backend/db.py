@@ -37,6 +37,17 @@ def initialize(conn):
     conn.execute((sql_dir / 'traffic_collisions.sql').read_text(encoding='utf-8'))
     for tool_file in sorted((sql_dir / 'tools').glob('*.sql')):
         conn.execute(tool_file.read_text(encoding='utf-8'))
+    # Additive migrations (sql/migrations) plus the category mapping sync and
+    # classification backfill. Idempotent; a no-op backfill on an empty table.
+    return classification().apply(conn)
+
+
+def classification():
+    if __package__:
+        from . import service_classification
+    else:
+        import service_classification
+    return service_classification
 
 
 def load_csv(conn, path):
@@ -114,6 +125,8 @@ def load_csv(conn, path):
     # implausible future values or missing geographic/temporal source coverage.
     # %s placeholders bind values separately from SQL text.
     conn.execute('''INSERT INTO citylens.service_requests
+        (service_request_id, parent_id, requested_at, service_name, status,
+         location, raw_record, ingestion_id)
         SELECT DISTINCT ON (record->>'service_request_id')
             record->>'service_request_id',
             nullif(record->>'service_request_parent_id',''),
@@ -130,10 +143,17 @@ def load_csv(conn, path):
             service_name=EXCLUDED.service_name, status=EXCLUDED.status,
             location=EXCLUDED.location, raw_record=EXCLUDED.raw_record,
             ingestion_id=EXCLUDED.ingestion_id''', (run[0],))
+    # Classify new and changed rows in this same transaction. The backfill only
+    # updates rows whose stored main/sub category differs from the active
+    # category_mapping.csv, so unchanged records are not rewritten. Unknown
+    # future service names become an explicit 'unmapped' Needs Review label.
+    classified = classification().apply(conn)
     # Refresh planner statistics after bulk loading so PostgreSQL can choose
     # between the spatial index, time index, and other execution strategies.
     conn.execute('ANALYZE citylens.service_requests')
-    print(json.dumps(dict(ingestion_id=run[0], source_rows=run[1], distinct_requests=run[2])))
+    print(json.dumps(dict(ingestion_id=run[0], source_rows=run[1], distinct_requests=run[2],
+                          classification={key: classified[key] for key in
+                                          ('mapping_sha256', 'changed_rows', 'unclassified', 'unmapped')})))
 
 
 def main():
@@ -141,6 +161,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     sub.add_parser('init')
+    sub.add_parser('migrate', help='apply sql/migrations, sync category_mapping.csv and backfill classification')
     load = sub.add_parser('load')
     # Default source is relative to this script, independent of the shell's
     # working directory. An explicit path selects another Get It Done CSV.
@@ -169,6 +190,8 @@ def main():
     with psycopg.connect(os.environ['DATABASE_URL'], connect_timeout=10) as conn:
         if args.command == 'init':
             initialize(conn)
+        elif args.command == 'migrate':
+            print(json.dumps(classification().apply(conn), indent=2))
         elif args.command == 'load':
             load_csv(conn, args.csv)
         else:

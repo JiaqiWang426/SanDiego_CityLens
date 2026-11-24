@@ -1,0 +1,80 @@
+service_name,main_category,sub_category,detail_match,detail_values,notes
+Missed Collection,Sanitation & Waste,Missed collection,fallback,,Preserve the reported missed collection; delayed and potential cases have explicit conditions.
+Missed Collection,Sanitation & Waste,Delayed collection,in,Delayed Collection,A delay is not the same as a confirmed missed collection.
+Missed Collection,Sanitation & Waste,Potential missed collection,in,Potential Missed Collection,Preserve the uncertainty stated in the source detail.
+Illegal Dumping,Sanitation & Waste,Illegal dumping,fallback,,Retain the dumping theme; explicit litter and shopping cart details are separate.
+Illegal Dumping,Sanitation & Waste,Litter,in,Litter,Exact detail condition takes priority over the service default.
+Illegal Dumping,Sanitation & Waste,Shopping cart,in,Shopping Cart,Exact detail condition takes priority over the service default.
+Parking,Parking & Vehicles,Parking - unspecified,fallback,,Insufficient detail; do not expand AVA or infer a specific parking violation.
+Parking,Parking & Vehicles,Parking - 72 hours,in,72 Hour Violation,Align the explicit 72-hour detail with the dedicated source category.
+Parking,Parking & Vehicles,Oversized vehicle,in,Oversized Vehicle Complaints,Group the vehicle issue with parking; do not infer an encampment.
+Parking,Parking & Vehicles,Parking obstruction,in,Alley|Bike Lane|Lane of Traffic|Sidewalk,Retain original details to distinguish the obstructed location.
+Parking,Parking & Vehicles,Parking zone or time restriction,in,Blue Disabled Zone|Fire Hydrant|Green/Time Limited|Parking Meter|Parking Zone Violation|Passenger Zone (White)|Red Zone|Yellow Commercial Zone,Group reported parking restrictions; preserve exact source details.
+Parking,Parking & Vehicles,Residential parking permit,in,No Residential Permit,Retain the residential parking permit issue.
+Parking Violation,Parking & Vehicles,Parking - unspecified,fallback,,Insufficient detail; do not expand AVA or infer a specific parking violation.
+Parking Violation,Parking & Vehicles,Parking - 72 hours,in,72 Hour Violation,Align the explicit 72-hour detail with the dedicated source category.
+Parking Violation,Parking & Vehicles,Oversized vehicle,in,Oversized Vehicle Complaints,Group the vehicle issue with parking; do not infer an encampment.
+Parking Violation,Parking & Vehicles,Parking obstruction,in,Alley|Bike Lane|Blocked Driveway|Lane of Traffic|Parking Within 20 Feet of Crosswalk|Sidewalk,Retain original details to distinguish the obstructed location.
+Parking Violation,Parking & Vehicles,Parking zone or time restriction,in,Blue Disabled Zone|EV Charger|Fire Hydrant|Green/Time Limited|Parking Zone Violation|Passenger Zone (White)|Red Zone|Timed Zone Violation|Yellow Commercial Zone,Group reported parking restrictions; preserve exact source details.
+Parking Violation,Parking & Vehicles,Residential parking permit,in,No Residential Permit,Retain the residential parking permit issue.
+Parking - 72-Hours,Parking & Vehicles,Parking - 72 hours,any,,Align the explicit 72-hour detail with the dedicated source category.
+Oversized Vehicle,Parking & Vehicles,Oversized vehicle,any,,Group the vehicle issue with parking; do not infer an encampment.
+Shared Mobility Device,Traffic & Mobility,Shared mobility device,any,,No detailed evidence supports inferring a parking violation.
+Bicycle-Related Issue,Traffic & Mobility,Bicycle-related issue,any,,Missing detail; preserve the source issue without guessing its cause.
+Pothole,Roads & Sidewalks,Pothole,any,,A report is not a complete assessment of road quality.
+Pavement Maintenance,Roads & Sidewalks,Pavement maintenance,fallback,,Retain source material and work-order details for later review.
+Pavement Maintenance,Water & Drainage,Surface water flow,in,SURFACE FLOW ISSUE,Use the explicit surface-water detail to select the drainage theme.
+Sidewalk Repair Issue,Roads & Sidewalks,Sidewalk repair,any,,Retain original curb and accessibility details for later review.
+ROW Maintenance,Roads & Sidewalks,Right-of-way maintenance - unspecified,fallback,,Missing or broad detail; do not infer a particular defect.
+ROW Maintenance,Traffic & Mobility,Road markings,in,PAINT CURB - MAINTENANCE|PAINT LEGEND - MAINTENANCE|PAINT STRIPING - MAINTENANCE,Exact detail condition takes priority over the service default.
+ROW Maintenance,Traffic & Mobility,Traffic devices and delineators,in,TRAFFIC DEVICES|MARKERS/DELINIATORS - MAINTENANCE,Exact detail condition takes priority over the service default.
+ROW Maintenance,Traffic & Mobility,Traffic maintenance - unspecified,in,TRAFFIC MAINTENANCE - OTHER,The source explicitly identifies traffic maintenance but not a specific issue.
+ROW Maintenance,Traffic & Mobility,Traffic sign maintenance,in,SIGN - MAINT - BIKE|SIGN - MAINT - DO NOT ENTER|SIGN - MAINT - OTHER|SIGN - MAINT - PARKING|SIGN - MAINT - PED|SIGN - MAINT - SCHOOL|SIGN - MAINT - SPEED|SIGN - MAINT - STOP|SIGN - MAINT - STREET NAME|SIGN - MAINT - TRAFFIC|SIGN - MAINT - WRONG WAY|SIGN - MAINT - YIELD|TRAFFIC SIGN - NEW AND MODIFICATIONS,Group explicit sign service details; retain new-sign requests in the source detail.
+ROW Maintenance,Roads & Sidewalks,Roadside barriers and structures,in,BRIDGE/RAILINGS/STAIRS REPAIR|CHAIN LINK FENCE REPAIR|GUARDRAILS/BARRIER METAL/WOODEN|GUARDRAILS/BARRIER METAL/WOODEN MAINT,Exact detail condition takes priority over the service default.
+ROW Maintenance,Traffic & Mobility,Bicycle facility maintenance,in,BICYCLE FACILITIES MAINTENANCE|BIKE MAINT-SIGNAGE|BIKE MAINT-SIGNAL LOOP DETECTION|BIKE MAINT-STRIPING/MARKINGS,Classify by the explicit bicycle-facility purpose.
+ROW Maintenance,Water & Drainage,Street flooding and ponding,in,FLOODED|PONDING WATER IN GUTTER/STREET,Align explicit flooded or ponding details with the dedicated flooding category.
+ROW Maintenance,Sanitation & Waste,Illegal dumping,in,Illegal Dumping,Retain the dumping theme; explicit litter and shopping cart details are separate.
+ROW Maintenance,Sanitation & Waste,Waste on private property,in,Waste on Private Property,Exact detail condition takes priority over the service default.
+Right-of-Way Code Enforcement,Roads & Sidewalks,Right-of-way enforcement - unspecified,fallback,,Retain a fallback for future unknown details without inferring an enforcement issue.
+Right-of-Way Code Enforcement,Roads & Sidewalks,Trenches and right-of-way enforcement,in,Trenches,The source explicitly identifies trenches.
+Right-of-Way Code Enforcement,Parks & Vegetation,Vegetation encroachment,in,Vegetation Encroachment,Align explicit vegetation details with the dedicated source category.
+Street Light Maintenance,Traffic & Mobility,Street lighting,any,,Keep lighting separate from traffic signal faults; main-category placement remains reviewable.
+Traffic Sign Maintenance,Traffic & Mobility,Traffic sign maintenance,any,,Group explicit sign service details; retain new-sign requests in the source detail.
+Traffic Signal Issue,Traffic & Mobility,Traffic signal fault,any,,Keep reported faults separate from signal timing requests.
+Traffic Signal Timing,Traffic & Mobility,Traffic signal timing,any,,Keep timing requests separate from reported equipment faults.
+Traffic Engineering,Traffic & Mobility,Traffic engineering and evaluation,any,,An evaluation or design request does not establish an equipment failure.
+Parks Issue,Parks & Vegetation,Parks - other or unspecified,fallback,,Retain park context for source Other details; do not infer a specific issue.
+Parks Issue,Parks & Vegetation,Park feedback and improvements,in,Feedback - General Feedback|Feedback - Requested Park Improvement,Feedback and improvement requests are distinguishable from unknown issues.
+Parks Issue,Parks & Vegetation,Park facilities,in,Beach Shower Issue|Broken Playground Equipment|Drinking fountain|Electrical Issue|Fencing|Gate/Access Closure|Grill/Hot Coal Container|Park Equipment|Park Equipment (missing from recent change request)|Park Furniture/Bench/Table|Park Lighting Issue|Park Sign|Pet Waste Bags|Portable Restroom|Restroom|Restroom - Litter/Cleanliness|Restroom - Sink|Restroom - Supplies|Restroom - Urinal/Toilet|Restroom/Comfort Station|Swing Set,Keep facility maintenance here; lighting and restroom-cleanliness boundaries remain under review.
+Parks Issue,Parks & Vegetation,Park vegetation and grounds,in,Beach/Sand Maintenance|Bee Hive|Brush Management|Brush Management/Weeds|Grass/Turf Issue|Potential Tree Hazard|Tree hazard/Brush management|Vegetation Maintenance|Weed Abatement,Retain grounds context without inferring the severity of a tree hazard.
+Parks Issue,Parks & Vegetation,Park irrigation and drainage,in,Broken Storm Drain|Sprinkler/Irrigation|Sprinkler/Irrigation problem,Existing mapping retained pending separate review of drainage and irrigation details.
+Parks Issue,Graffiti,Park graffiti,in,Graffiti,Issue type takes priority over location; this condition overrides the Parks Issue default.
+Parks Issue,Sanitation & Waste,Park litter and bins,in,Trash Can/Overflowing|Trash/Litter,Issue type takes priority over location; both explicit litter details map to sanitation.
+Parks Issue,Parks & Vegetation,Park activity and enforcement,in,Dog Off Leash|E-Bikes/Scooters/E-Boards|Illegal Activity|Illegal Fires|Illegal Parking|Park Enforcement|Park Enforcement (missing from recent change request)|Security Issue|Sidewalk Vendor/Expressive Activity|Unpermitted Activity/Event,Mixed issues retained pending review; a report does not establish a violation.
+Parks Issue,Parks & Vegetation,Park paths and pavement,in,Path/Walkway/Road Pavement/Pothole|Pavement Striping|Pothole/Asphalt|Trail Maintenance,Existing mapping retained pending further review.
+Tree Maintenance,Parks & Vegetation,Tree maintenance,any,,Preserve source details for later discussion of trimming and fallen trees.
+Vegetation Encroachment,Parks & Vegetation,Vegetation encroachment,any,,Align explicit vegetation details with the dedicated source category.
+Weed Cleanup,Parks & Vegetation,Weed cleanup,any,,Keep weed cleanup distinguishable from tree maintenance.
+Stormwater,Water & Drainage,Stormwater infrastructure,any,,Keep infrastructure maintenance separate from pollution enforcement.
+Stormwater Code Enforcement,Water & Drainage,Stormwater compliance,any,,Preserve original SWPP spelling; do not edit source fields.
+Street Flooded,Water & Drainage,Street flooding and ponding,any,,Align explicit flooded or ponding details with the dedicated flooding category.
+Environmental Services Code Compliance,Sanitation & Waste,Environmental services compliance,any,,Container and recycling compliance; a department label does not establish site conditions.
+ESD Collections,Sanitation & Waste,ESD collections - unspecified,any,,Details are absent; do not infer missed collection.
+Trash/Recycling Collection,Sanitation & Waste,Trash and recycling collection,any,,Preserve original container and collection details.
+Container Request,Sanitation & Waste,Container request,any,,Two source rows; one specifies Additional Container(s).
+Dead Animal,Sanitation & Waste,Dead animal removal,any,,Preserve the source issue without inferring unsupported detail.
+Street Sweeping,Sanitation & Waste,Street sweeping,any,,Preserve the source issue without inferring unsupported detail.
+Waste on Private Property,Sanitation & Waste,Waste on private property,any,,Preserve the source issue without inferring unsupported detail.
+Biohazard,Sanitation & Waste,Biohazard report,any,,Do not infer a specific hazardous material.
+Graffiti,Graffiti,Graffiti removal - unspecified,any,,Graffiti Removal alone does not establish public or private ownership.
+Graffiti - Public,Graffiti,Public graffiti,any,,Preserve the public-scope source label.
+Graffiti - Private,Graffiti,Private graffiti,any,,Preserve the private-scope source label.
+Graffiti - Code Enforcement,Graffiti,Graffiti enforcement,any,,Preserve the enforcement route; do not assume all affected property is private.
+Encampment,Community & Property Services,Encampment report,any,,A report theme is not a public-safety assessment.
+Homeless Outreach,Community & Property Services,Homeless outreach,any,,Keep outreach service requests distinct from encampment reports.
+STRO Violation,Community & Property Services,STRO violation report,any,,Retain the source abbreviation; a report is not a confirmed violation.
+Building and Land Use Enforcement,Community & Property Services,Building and land-use enforcement,any,,Do not assume this source label is equivalent to Development Services.
+Development Services - Code Enforcement,Community & Property Services,Development services enforcement,any,,DSD BLUE and Quality of Life Issues remain broad; preserve original details.
+COVID-19,Community & Property Services,COVID-19 service report,any,,Historical source category; do not infer disease or individual case status.
+Other,Needs Review,Source Other - unresolved,any,,Details are absent; the receiving workflow is not sufficient evidence of issue type.
+,Needs Review,Missing service name,any,,Preserve missing source values; do not impute issue type from department or proportions.

@@ -1,7 +1,7 @@
 """Database integration: the installed schema matches the table-definition contract.
 
-Expected values are transcribed by hand from backend/sql/get_it_done.sql and
-backend/sql/traffic_collisions.sql. Constraint probes run inside transactions
+Expected values are transcribed by hand from backend/sql/get_it_done.sql,
+backend/sql/traffic_collisions.sql and backend/sql/migrations/001_service_request_classification.sql. Constraint probes run inside transactions
 that are always rolled back.
 """
 import psycopg
@@ -22,7 +22,17 @@ COLUMNS = {
         "service_request_id": ("text", True), "parent_id": ("text", False),
         "requested_at": ("timestamp with time zone", True), "service_name": ("text", False),
         "status": ("text", False), "location": ("geography(Point,4326)", False),
-        "raw_record": ("jsonb", True), "ingestion_id": ("bigint", True)},
+        "raw_record": ("jsonb", True), "ingestion_id": ("bigint", True),
+        # Migration 001: nullable derived classification (NULL = not yet classified).
+        "main_category": ("text", False), "sub_category": ("text", False),
+        "classification_method": ("text", False), "classification_version": ("text", False)},
+    "service_category_mappings": {
+        "sha256": ("text", True), "source_file": ("text", True), "rule_count": ("integer", True),
+        "hierarchy": ("jsonb", True), "applied_at": ("timestamp with time zone", True),
+        "is_active": ("boolean", True)},
+    "service_category_rules": {
+        "ordinal": ("integer", True), "service_name": ("text", True), "detail": ("text", False),
+        "main_category": ("text", True), "sub_category": ("text", True), "mapping_sha256": ("text", True)},
     "collision_imports": {
         "id": ("bigint", True), "source_file": ("text", True), "sha256": ("text", True),
         "imported_at": ("timestamp with time zone", True), "source_rows": ("bigint", True),
@@ -46,11 +56,13 @@ COLUMNS = {
 PRIMARY_KEYS = {
     "ingestions": ["id"], "service_requests": ["service_request_id"], "collision_imports": ["id"],
     "collision_source_rows": ["import_id", "row_number"], "traffic_collisions": ["report_id"],
+    "service_category_mappings": ["sha256"], "service_category_rules": ["ordinal"],
 }
 FOREIGN_KEYS = {
     ("service_requests", "ingestion_id", "ingestions", "id"),
     ("collision_source_rows", "import_id", "collision_imports", "id"),
     ("traffic_collisions", "import_id", "collision_imports", "id"),
+    ("service_category_rules", "mapping_sha256", "service_category_mappings", "sha256"),
 }
 INDEXES = {  # (table, column, access method)
     ("service_requests", "location", "gist"), ("service_requests", "requested_at", "btree"),

@@ -47,31 +47,46 @@
   <aside id="explorer-panel" class="explorer-panel" aria-label="Independent Map Explorer">
     <header class="explorer-header"><div><div class="eyebrow">THE LOCAL PICTURE</div><h2>Map Explorer</h2></div><span class="live-label">SOURCE RECORDS</span></header>
     <p id="dataset-scope-label" class="scope-note">Get It Done · District 1 · 2026</p>
-    <div class="map-wrap"><div id="map" aria-label="Map showing Explorer records and Agent analysis"></div><div class="map-legend"><span class="legend-point"></span> Explorer records <span class="legend-analysis"></span> Agent scope</div></div>
+    <div class="map-wrap"><div id="map" aria-label="Map showing Explorer records and Agent analysis"></div><div class="map-legend"><span class="legend-point"></span> Explorer records <span class="legend-analysis"></span> Agent scope <span class="legend-area"></span> Analysis area</div></div>
     <div class="map-foot"><span id="map-count">Loading map…</span><button id="clear-analysis" type="button" class="text-button">Clear analysis</button></div>
     <p id="analysis-map-status" class="small-note" role="status">Analysis overlays appear after verified queries.</p>
 
-    <details class="explorer-filters" open><summary>Explorer filters <span>Map, charts & records only</span></summary>
+    <details class="explorer-filters" open><summary>Explorer filters <span>Map, dashboard &amp; records · not used by the Agent</span></summary>
       <form id="filters">
         <label for="dataset">Dataset</label><select id="dataset"><option value="service_requests">Get It Done · District 1</option><option value="traffic_collisions">Traffic collisions · imported coverage</option></select>
         <div class="form-pair"><label>From<input id="start" type="date" min="2026-01-01" max="2026-12-31" value="2026-01-01" required></label><label>Through<input id="end" type="date" min="2026-01-01" max="2026-12-31" value="2026-10-26" required></label></div>
-        <div class="form-pair"><label>Issue type<select id="category"><option value="">All issue types</option></select></label><label>Status<select id="status"><option value="">All statuses</option></select></label></div>
+        <div class="form-pair"><label>Main category<select id="main-category"><option value="">All main categories</option></select></label><label>Subcategory<select id="sub-category" disabled><option value="">Choose a main category first</option></select></label></div>
+        <div class="form-pair"><label>Original issue type<select id="category"><option value="">All issue types</option></select></label><label>Status<select id="status"><option value="">All statuses</option></select></label></div>
         <div class="form-pair"><label>Planning area<select id="community"><option value="">All areas</option></select></label><label>ZIP code<select id="zipcode"><option value="">All ZIP codes</option></select></label></div>
+        <div class="area-control"><div><span class="area-label">Analysis area</span><span id="area-summary">Whole dataset scope · panning the map does not change totals</span></div><div class="area-actions"><button id="area-use-view" class="secondary-button" type="button">Use current map view</button><button id="area-clear" class="text-button" type="button" hidden>Clear area</button></div></div>
         <label class="checkbox"><input id="exclude-linked" type="checkbox"> Exclude reports linked to a parent request</label>
         <div class="filter-actions"><button class="apply-button" type="submit">Apply to Explorer</button><button id="reset" class="text-button" type="button">Reset</button></div>
       </form>
     </details>
-    <div class="data-line"><span id="source-range">Loading source data…</span><span id="selection-summary">All available records</span></div>
-    <div id="message" class="notice" role="status" hidden></div>
-    <section class="metric-grid" aria-label="Explorer totals">
-      <article class="metric-card"><span class="metric-label">TOTAL REPORTS</span><strong id="metric-total">—</strong><small>all filtered records</small></article>
-      <article class="metric-card"><span id="metric-closed-label" class="metric-label">CLOSED REPORTS</span><strong id="metric-closed">—</strong><small id="metric-closed-note">source status: Closed</small></article>
-      <article class="metric-card"><span class="metric-label">PLANNING AREAS</span><strong id="metric-communities">—</strong><small id="metric-community-note">represented in results</small></article>
-      <article class="metric-card"><span class="metric-label">UNLOCATED</span><strong id="metric-unlocated">—</strong><small>included in totals</small></article>
+
+    <section id="dashboard" class="dashboard" aria-labelledby="dashboard-heading" aria-busy="true">
+      <div class="dashboard-heading"><div><div class="eyebrow">ANALYTICAL DASHBOARD</div><h3 id="dashboard-heading">Service request patterns</h3></div><span id="dashboard-status" class="small-note" role="status">Loading…</span></div>
+      <div class="data-line"><span id="source-range">Loading source data…</span><span id="selection-summary">All available records</span></div>
+      <div id="message" class="notice" role="status" hidden></div>
+      <section class="metric-grid" aria-label="Explorer totals">
+        <article class="metric-card"><span class="metric-label">TOTAL REPORTS</span><strong id="metric-total">—</strong><small>all filtered records</small></article>
+        <article class="metric-card"><span id="metric-closed-label" class="metric-label">CLOSED REPORTS</span><strong id="metric-closed">—</strong><small id="metric-closed-note">source status: Closed</small></article>
+        <article class="metric-card"><span class="metric-label">PLANNING AREAS</span><strong id="metric-communities">—</strong><small id="metric-community-note">represented in results</small></article>
+        <article class="metric-card"><span class="metric-label">UNLOCATED</span><strong id="metric-unlocated">—</strong><small id="metric-unlocated-note">included in totals</small></article>
+      </section>
+
+      <article class="chart-card" id="card-trend" data-state="loading"><header><div><span class="eyebrow">OVER TIME</span><h4>Reports by month</h4></div><span class="chart-unit">reports / month · 2026</span></header><p class="chart-subtitle">Select a month to focus the date range. Grey months are beyond the source data.</p><div class="card-status" role="status"></div><div id="month-chart" class="month-chart" role="group" aria-label="Monthly report counts"></div></article>
+
+      <article class="chart-card" id="card-distribution" data-state="loading"><header><div><span class="eyebrow">DISTRIBUTION</span><h4 id="distribution-heading">Reports by main category</h4></div><div class="segmented" role="group" aria-label="Distribution grouping"><button type="button" data-view="main" aria-pressed="true">Main</button><button type="button" data-view="sub" aria-pressed="false">Subcategory</button><button type="button" data-view="original" aria-pressed="false">Original type</button></div></header><p id="distribution-subtitle" class="chart-subtitle">Reports per category under the current filters. Select a bar to filter.</p><div class="card-status" role="status"></div><div id="category-chart" class="category-chart" aria-label="Report counts by category"></div><p id="distribution-note" class="chart-note"></p></article>
+
+      <article class="chart-card" id="card-heatmap" data-state="loading"><header><div><span class="eyebrow">CATEGORY TREND</span><h4 id="heatmap-heading">Monthly comparison by main category</h4></div><div class="heat-legend" aria-hidden="true"><span>Fewer</span><span class="heat-scale"></span><span>More</span></div></header><p class="chart-subtitle">Reports per category and month (cell = count). Choose a main category to compare its subcategories.</p><div class="card-status" role="status"></div><div id="monthly-compare" class="heatmap-wrap" aria-label="Monthly counts by category"></div></article>
+
+      <article class="chart-card" id="card-community" data-state="loading"><header><div><span class="eyebrow">BY PLACE</span><h4>Community comparison</h4></div><span class="chart-unit">reports · top 10 areas</span></header><p class="chart-subtitle">All planning areas under the other filters, so areas stay comparable. Select a bar to filter by that area.</p><div class="card-status" role="status"></div><div id="community-compare" class="category-chart" aria-label="Report counts by community planning area"></div></article>
+
+      <section class="records-panel chart-card" id="card-records" data-state="loading" aria-labelledby="records-heading"><header><div><div class="eyebrow">SOURCE RECORDS</div><h4 id="records-heading">Matching reports</h4></div><span id="records-count" class="chart-unit"></span></header><p class="chart-subtitle">Newest first, using the same filters as the charts and map. These are source records, not Agent-generated reports.</p><div class="table-wrap"><table><thead><tr><th scope="col">Report ID</th><th scope="col">Category</th><th scope="col">Original issue type</th><th scope="col">Planning area</th><th scope="col">Submitted</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Details</span></th></tr></thead><tbody id="records-body"><tr><td colspan="7">Loading records…</td></tr></tbody></table></div><div class="pagination"><span id="page-label">—</span><div><button id="prev" type="button" disabled>← Previous</button><span id="page-numbers" class="page-numbers"></span><button id="next" type="button" disabled>Next →</button></div></div></section>
     </section>
-    <details class="explorer-charts"><summary>Patterns in the source records</summary><h3>Top issue types</h3><div id="category-chart" class="category-chart"></div><h3>Reports by month</h3><div id="month-chart" class="month-chart"></div></details>
-    <section class="records-panel" aria-labelledby="records-heading"><div class="records-heading"><div><div class="eyebrow">RAW SOURCE RECORDS</div><h3 id="records-heading">Explorer Results</h3></div><span id="records-count" class="small-note"></span></div><p class="small-note">Matches the Explorer filters. These are source records, not Agent-generated reports.</p><div class="table-wrap"><table><thead><tr><th>Report ID</th><th>Issue type</th><th>Planning area</th><th>Submitted</th><th>Status</th><th>Details</th></tr></thead><tbody id="records-body"><tr><td colspan="6">Loading records…</td></tr></tbody></table></div><div class="pagination"><span id="page-label">—</span><div><button id="prev" type="button" disabled>← Previous</button><button id="next" type="button" disabled>Next →</button></div></div></section>
-    <details class="source-notes"><summary>Data coverage & source notes</summary><p id="source-limitations"></p><p>Closed is a source status, not proof of repair. Source coverage and location accuracy are not independently verified.</p><a href="https://data.sandiego.gov/" target="_blank" rel="noopener">City of San Diego Open Data ↗</a></details>
+    <details class="source-notes"><summary>Data coverage &amp; source notes</summary><p id="source-limitations"></p><p id="classification-note"></p><p>Closed is a source status, not proof of repair. Source coverage and location accuracy are not independently verified.</p><a href="https://data.sandiego.gov/" target="_blank" rel="noopener">City of San Diego Open Data ↗</a></details>
+    <div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden></div>
   </aside>
 </div>
 <dialog id="history-dialog"><div class="dialog-heading"><h2>Saved investigations</h2><button id="history-close" class="text-button" type="button">Close ×</button></div><p id="history-status" class="small-note"></p><div id="history-list"></div></dialog>

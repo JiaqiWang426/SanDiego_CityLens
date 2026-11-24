@@ -29,6 +29,10 @@ GRANT EXECUTE ON FUNCTION citylens.aggregate_service_requests(
     double precision,double precision,double precision,timestamptz,timestamptz,boolean,text,text,text)
     TO citylens_agent_reader;
 GRANT EXECUTE ON FUNCTION citylens.get_dataset_metadata(text) TO citylens_agent_reader;
+-- Migration 001 (service request classification): read-only mapping metadata
+-- used by the Explorer hierarchy. The classified columns are on service_requests.
+GRANT SELECT ON citylens.service_category_mappings,citylens.service_category_rules TO citylens_agent_reader;
+GRANT EXECUTE ON FUNCTION citylens.normalize_label(text) TO citylens_agent_reader;
 
 -- The uncapped helper's EXECUTE privilege supports SECURITY INVOKER wrappers;
 -- it is NOT in the agent tool registry. These functions do not elevate users.

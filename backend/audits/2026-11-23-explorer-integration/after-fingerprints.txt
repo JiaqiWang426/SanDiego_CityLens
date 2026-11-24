@@ -1,0 +1,5 @@
+sessions|3|
+ingestions|1|1484122b61fa2eda6865420230cd8175
+traffic_collisions|78494|a95e9209c2dae7d220a4a5f0323c1fd6
+collision_geocoded|68068|7b2d030d8c749fcd9de92999a07252bd
+service_requests|303225|3a6648957043b4947112229ef2689bf4

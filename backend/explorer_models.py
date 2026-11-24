@@ -30,13 +30,18 @@ class ExplorerFilters(MapModel):
     community: str | None = Field(default=None, max_length=200)
     zipcode: str | None = Field(default=None, max_length=20)
     exclude_linked: bool = False
+    # Derived classification (category_mapping.csv). category stays the original
+    # source service_name; '__missing__' selects records not yet classified.
+    main_category: str | None = Field(default=None, max_length=200)
+    sub_category: str | None = Field(default=None, max_length=200)
 
     @model_validator(mode='after')
     def valid_dates(self):
         if self.start > self.end or self.start.year != 2026 or self.end.year != 2026:
             raise ValueError('Choose an increasing date range within 2026.')
-        if self.dataset == 'traffic_collisions' and (self.community or self.zipcode or self.exclude_linked):
-            raise ValueError('Planning area, ZIP and linked-request filters apply only to service requests.')
+        if self.dataset == 'traffic_collisions' and (self.community or self.zipcode or self.exclude_linked
+                                                    or self.main_category or self.sub_category):
+            raise ValueError('Planning area, ZIP, linked-request and category-hierarchy filters apply only to service requests.')
         return self
 
 

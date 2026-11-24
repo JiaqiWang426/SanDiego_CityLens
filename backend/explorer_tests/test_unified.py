@@ -31,6 +31,8 @@ def plan(**updates):
 def summary(total=3):
     return dict(total=total, categories=[dict(label='Pothole',count=total)],
                 statuses=[dict(label='New',count=total)], months=[dict(month='2026-01',count=total)],
+                main_categories=[dict(label='Roads & Sidewalks',count=total)],
+                sub_categories=[dict(main_category='Roads & Sidewalks',sub_category='Pothole',count=total)],
                 provenance={'source_table':'citylens.service_requests'})
 
 

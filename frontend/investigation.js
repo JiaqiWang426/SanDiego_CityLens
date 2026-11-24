@@ -110,6 +110,7 @@
     a.append(node('h2','Your map-view investigation'),node('p',data.message,'answer-summary'));
     const k=node('div',null,'result-kpi');k.append(node('small','LOCATED SOURCE REPORTS'),node('strong',number(e.value)));a.append(k);
     a.append(node('p',`${e.scope.filters.start} through ${e.scope.filters.end} · the explicitly requested map area`,'interpretation'));
+    if(e.summary.main_categories)details(a,'Main categories',e.summary.main_categories);
     details(a,'Issue types',e.summary.categories);details(a,'Source statuses',e.summary.statuses);
     details(a,'Evidence, requested scope & data provenance',e);details(a,'Limitations',e.limitations);overlay(data.visualization);
   }

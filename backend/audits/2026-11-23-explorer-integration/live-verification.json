@@ -1,0 +1,729 @@
+{
+  "executed_at": "2026-11-24T00:12:42.374510+00:00",
+  "checks": [
+    {
+      "name": "all rows: stored classification == Python rules",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "all: summary.total",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    },
+    {
+      "name": "all: main categories",
+      "expected": {
+        "Community & Property Services": 3603,
+        "Graffiti": 915,
+        "Needs Review": 1473,
+        "Parking & Vehicles": 7657,
+        "Parks & Vegetation": 2632,
+        "Roads & Sidewalks": 2293,
+        "Sanitation & Waste": 9317,
+        "Traffic & Mobility": 2917,
+        "Water & Drainage": 860
+      },
+      "actual": {
+        "Sanitation & Waste": 9317,
+        "Parking & Vehicles": 7657,
+        "Community & Property Services": 3603,
+        "Traffic & Mobility": 2917,
+        "Parks & Vegetation": 2632,
+        "Roads & Sidewalks": 2293,
+        "Needs Review": 1473,
+        "Graffiti": 915,
+        "Water & Drainage": 860
+      },
+      "ok": true
+    },
+    {
+      "name": "all: sub categories sum",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    },
+    {
+      "name": "all: months",
+      "expected": {
+        "2026-01": 3754,
+        "2026-02": 2657,
+        "2026-03": 3242,
+        "2026-04": 2897,
+        "2026-05": 2883,
+        "2026-06": 3296,
+        "2026-07": 3387,
+        "2026-08": 3550,
+        "2026-09": 3274,
+        "2026-10": 2727
+      },
+      "actual": {
+        "2026-01": 3754,
+        "2026-02": 2657,
+        "2026-03": 3242,
+        "2026-04": 2897,
+        "2026-05": 2883,
+        "2026-06": 3296,
+        "2026-07": 3387,
+        "2026-08": 3550,
+        "2026-09": 3274,
+        "2026-10": 2727
+      },
+      "ok": true
+    },
+    {
+      "name": "all: monthly comparison sum",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    },
+    {
+      "name": "all: community comparison sum",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    },
+    {
+      "name": "all: requests.total",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: summary.total",
+      "expected": 915,
+      "actual": 915,
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: main categories",
+      "expected": {
+        "Graffiti": 915
+      },
+      "actual": {
+        "Graffiti": 915
+      },
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: sub categories sum",
+      "expected": 915,
+      "actual": 915,
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: months",
+      "expected": {
+        "2026-01": 89,
+        "2026-02": 89,
+        "2026-03": 127,
+        "2026-04": 113,
+        "2026-05": 97,
+        "2026-06": 97,
+        "2026-07": 75,
+        "2026-08": 71,
+        "2026-09": 71,
+        "2026-10": 86
+      },
+      "actual": {
+        "2026-01": 89,
+        "2026-02": 89,
+        "2026-03": 127,
+        "2026-04": 113,
+        "2026-05": 97,
+        "2026-06": 97,
+        "2026-07": 75,
+        "2026-08": 71,
+        "2026-09": 71,
+        "2026-10": 86
+      },
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: monthly comparison sum",
+      "expected": 915,
+      "actual": 915,
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: community comparison sum",
+      "expected": 915,
+      "actual": 915,
+      "ok": true
+    },
+    {
+      "name": "main Graffiti: requests.total",
+      "expected": 915,
+      "actual": 915,
+      "ok": true
+    },
+    {
+      "name": "main+sub: summary.total",
+      "expected": 1511,
+      "actual": 1511,
+      "ok": true
+    },
+    {
+      "name": "main+sub: main categories",
+      "expected": {
+        "Parking & Vehicles": 1511
+      },
+      "actual": {
+        "Parking & Vehicles": 1511
+      },
+      "ok": true
+    },
+    {
+      "name": "main+sub: sub categories sum",
+      "expected": 1511,
+      "actual": 1511,
+      "ok": true
+    },
+    {
+      "name": "main+sub: months",
+      "expected": {
+        "2026-01": 113,
+        "2026-02": 105,
+        "2026-03": 218,
+        "2026-04": 174,
+        "2026-05": 152,
+        "2026-06": 138,
+        "2026-07": 219,
+        "2026-08": 162,
+        "2026-09": 129,
+        "2026-10": 101
+      },
+      "actual": {
+        "2026-01": 113,
+        "2026-02": 105,
+        "2026-03": 218,
+        "2026-04": 174,
+        "2026-05": 152,
+        "2026-06": 138,
+        "2026-07": 219,
+        "2026-08": 162,
+        "2026-09": 129,
+        "2026-10": 101
+      },
+      "ok": true
+    },
+    {
+      "name": "main+sub: monthly comparison sum",
+      "expected": 1511,
+      "actual": 1511,
+      "ok": true
+    },
+    {
+      "name": "main+sub: community comparison sum",
+      "expected": 1511,
+      "actual": 1511,
+      "ok": true
+    },
+    {
+      "name": "main+sub: requests.total",
+      "expected": 1511,
+      "actual": 1511,
+      "ok": true
+    },
+    {
+      "name": "sub only: summary.total",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "sub only: main categories",
+      "expected": {
+        "Graffiti": 152
+      },
+      "actual": {
+        "Graffiti": 152
+      },
+      "ok": true
+    },
+    {
+      "name": "sub only: sub categories sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "sub only: months",
+      "expected": {
+        "2026-01": 17,
+        "2026-02": 10,
+        "2026-03": 16,
+        "2026-04": 16,
+        "2026-05": 21,
+        "2026-06": 21,
+        "2026-07": 9,
+        "2026-08": 11,
+        "2026-09": 14,
+        "2026-10": 17
+      },
+      "actual": {
+        "2026-01": 17,
+        "2026-02": 10,
+        "2026-03": 16,
+        "2026-04": 16,
+        "2026-05": 21,
+        "2026-06": 21,
+        "2026-07": 9,
+        "2026-08": 11,
+        "2026-09": 14,
+        "2026-10": 17
+      },
+      "ok": true
+    },
+    {
+      "name": "sub only: monthly comparison sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "sub only: community comparison sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "sub only: requests.total",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "original+main: summary.total",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "original+main: main categories",
+      "expected": {
+        "Graffiti": 152
+      },
+      "actual": {
+        "Graffiti": 152
+      },
+      "ok": true
+    },
+    {
+      "name": "original+main: sub categories sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "original+main: months",
+      "expected": {
+        "2026-01": 17,
+        "2026-02": 10,
+        "2026-03": 16,
+        "2026-04": 16,
+        "2026-05": 21,
+        "2026-06": 21,
+        "2026-07": 9,
+        "2026-08": 11,
+        "2026-09": 14,
+        "2026-10": 17
+      },
+      "actual": {
+        "2026-01": 17,
+        "2026-02": 10,
+        "2026-03": 16,
+        "2026-04": 16,
+        "2026-05": 21,
+        "2026-06": 21,
+        "2026-07": 9,
+        "2026-08": 11,
+        "2026-09": 14,
+        "2026-10": 17
+      },
+      "ok": true
+    },
+    {
+      "name": "original+main: monthly comparison sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "original+main: community comparison sum",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "original+main: requests.total",
+      "expected": 152,
+      "actual": 152,
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: summary.total",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: main categories",
+      "expected": {},
+      "actual": {},
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: sub categories sum",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: months",
+      "expected": {},
+      "actual": {},
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: monthly comparison sum",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: community comparison sum",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "incompatible pair: requests.total",
+      "expected": 0,
+      "actual": 0,
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: summary.total",
+      "expected": 5610,
+      "actual": 5610,
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: main categories",
+      "expected": {
+        "Community & Property Services": 427,
+        "Graffiti": 84,
+        "Needs Review": 225,
+        "Parking & Vehicles": 1531,
+        "Parks & Vegetation": 448,
+        "Roads & Sidewalks": 529,
+        "Sanitation & Waste": 1836,
+        "Traffic & Mobility": 345,
+        "Water & Drainage": 185
+      },
+      "actual": {
+        "Sanitation & Waste": 1836,
+        "Parking & Vehicles": 1531,
+        "Roads & Sidewalks": 529,
+        "Parks & Vegetation": 448,
+        "Community & Property Services": 427,
+        "Traffic & Mobility": 345,
+        "Needs Review": 225,
+        "Water & Drainage": 185,
+        "Graffiti": 84
+      },
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: sub categories sum",
+      "expected": 5610,
+      "actual": 5610,
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: months",
+      "expected": {
+        "2026-01": 543,
+        "2026-02": 569,
+        "2026-03": 639,
+        "2026-04": 584,
+        "2026-05": 489,
+        "2026-06": 651,
+        "2026-07": 598,
+        "2026-08": 668,
+        "2026-09": 565,
+        "2026-10": 304
+      },
+      "actual": {
+        "2026-01": 543,
+        "2026-02": 569,
+        "2026-03": 639,
+        "2026-04": 584,
+        "2026-05": 489,
+        "2026-06": 651,
+        "2026-07": 598,
+        "2026-08": 668,
+        "2026-09": 565,
+        "2026-10": 304
+      },
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: monthly comparison sum",
+      "expected": 5610,
+      "actual": 5610,
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: community comparison sum",
+      "expected": 5610,
+      "actual": 5610,
+      "ok": true
+    },
+    {
+      "name": "status+community+zip+linked: requests.total",
+      "expected": 5610,
+      "actual": 5610,
+      "ok": true
+    },
+    {
+      "name": "march parking: summary.total",
+      "expected": 861,
+      "actual": 861,
+      "ok": true
+    },
+    {
+      "name": "march parking: main categories",
+      "expected": {
+        "Parking & Vehicles": 861
+      },
+      "actual": {
+        "Parking & Vehicles": 861
+      },
+      "ok": true
+    },
+    {
+      "name": "march parking: sub categories sum",
+      "expected": 861,
+      "actual": 861,
+      "ok": true
+    },
+    {
+      "name": "march parking: months",
+      "expected": {
+        "2026-03": 861
+      },
+      "actual": {
+        "2026-03": 861
+      },
+      "ok": true
+    },
+    {
+      "name": "march parking: monthly comparison sum",
+      "expected": 861,
+      "actual": 861,
+      "ok": true
+    },
+    {
+      "name": "march parking: community comparison sum",
+      "expected": 861,
+      "actual": 861,
+      "ok": true
+    },
+    {
+      "name": "march parking: requests.total",
+      "expected": 861,
+      "actual": 861,
+      "ok": true
+    },
+    {
+      "name": "area: summary.total",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "area: main categories",
+      "expected": {
+        "Community & Property Services": 1951,
+        "Graffiti": 456,
+        "Needs Review": 576,
+        "Parking & Vehicles": 4170,
+        "Parks & Vegetation": 816,
+        "Roads & Sidewalks": 658,
+        "Sanitation & Waste": 5241,
+        "Traffic & Mobility": 762,
+        "Water & Drainage": 236
+      },
+      "actual": {
+        "Sanitation & Waste": 5241,
+        "Parking & Vehicles": 4170,
+        "Community & Property Services": 1951,
+        "Parks & Vegetation": 816,
+        "Traffic & Mobility": 762,
+        "Roads & Sidewalks": 658,
+        "Needs Review": 576,
+        "Graffiti": 456,
+        "Water & Drainage": 236
+      },
+      "ok": true
+    },
+    {
+      "name": "area: sub categories sum",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "area: months",
+      "expected": {
+        "2026-01": 1766,
+        "2026-02": 1160,
+        "2026-03": 1488,
+        "2026-04": 1353,
+        "2026-05": 1385,
+        "2026-06": 1541,
+        "2026-07": 1641,
+        "2026-08": 1613,
+        "2026-09": 1522,
+        "2026-10": 1397
+      },
+      "actual": {
+        "2026-01": 1766,
+        "2026-02": 1160,
+        "2026-03": 1488,
+        "2026-04": 1353,
+        "2026-05": 1385,
+        "2026-06": 1541,
+        "2026-07": 1641,
+        "2026-08": 1613,
+        "2026-09": 1522,
+        "2026-10": 1397
+      },
+      "ok": true
+    },
+    {
+      "name": "area: monthly comparison sum",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "area: community comparison sum",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "area: requests.total",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "area+main: summary.total",
+      "expected": 5241,
+      "actual": 5241,
+      "ok": true
+    },
+    {
+      "name": "area+main: main categories",
+      "expected": {
+        "Sanitation & Waste": 5241
+      },
+      "actual": {
+        "Sanitation & Waste": 5241
+      },
+      "ok": true
+    },
+    {
+      "name": "area+main: sub categories sum",
+      "expected": 5241,
+      "actual": 5241,
+      "ok": true
+    },
+    {
+      "name": "area+main: months",
+      "expected": {
+        "2026-01": 870,
+        "2026-02": 438,
+        "2026-03": 468,
+        "2026-04": 409,
+        "2026-05": 457,
+        "2026-06": 562,
+        "2026-07": 576,
+        "2026-08": 565,
+        "2026-09": 458,
+        "2026-10": 438
+      },
+      "actual": {
+        "2026-01": 870,
+        "2026-02": 438,
+        "2026-03": 468,
+        "2026-04": 409,
+        "2026-05": 457,
+        "2026-06": 562,
+        "2026-07": 576,
+        "2026-08": 565,
+        "2026-09": 458,
+        "2026-10": 438
+      },
+      "ok": true
+    },
+    {
+      "name": "area+main: monthly comparison sum",
+      "expected": 5241,
+      "actual": 5241,
+      "ok": true
+    },
+    {
+      "name": "area+main: community comparison sum",
+      "expected": 5241,
+      "actual": 5241,
+      "ok": true
+    },
+    {
+      "name": "area+main: requests.total",
+      "expected": 5241,
+      "actual": 5241,
+      "ok": true
+    },
+    {
+      "name": "metadata: mapping current",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    },
+    {
+      "name": "metadata: hierarchy size",
+      "expected": [
+        9,
+        66
+      ],
+      "actual": [
+        9,
+        66
+      ],
+      "ok": true
+    },
+    {
+      "name": "map viewport total == area summary total",
+      "expected": 14866,
+      "actual": 14866,
+      "ok": true
+    },
+    {
+      "name": "summary ignores viewport",
+      "expected": 31667,
+      "actual": 31667,
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "rows_checked": 303225,
+  "mismatch_examples": [],
+  "passed": true
+}
